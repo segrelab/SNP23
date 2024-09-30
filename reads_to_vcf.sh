@@ -33,7 +33,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     vcf="$directory""$label".vcf
     f_vcf="$directory"filtered_"$label".vcf
 
-  #actually runnning tools 
+    #actually runnning tools 
     trimmomatic PE -threads 10 $read_1 $read_2 \ $trim_1 $trimu_1 \ $trim_2 $trimu_2 \ ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
 
     bwa index $ref
