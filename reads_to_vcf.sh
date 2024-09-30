@@ -15,7 +15,7 @@ skip_first_row=true # A flag to skip the first row, set to false if the column n
 
 # These must match the order of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
-    # TODO: Skip the first row (not a real sample, just a header)
+    # Skip the first row (not a real sample, just a header)
     if $skip_first_row; then
         skip_first_row=false
         continue
