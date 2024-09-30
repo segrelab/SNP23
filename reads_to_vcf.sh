@@ -8,11 +8,13 @@ module load bwa/0.7.17
 module load samtools
 module load trimmomatic/0.36
 module load bcftools
-# TODO: Replace with the metafile everyone else is using
-input_fi=/projectnb2/hfsp/Challenge21/joseline/data_info/paths_label_only.csv
-{
-  read 
-  while IFS=, read -r ref label;do
+# Set the path to the metafile
+input_fi="metafile.csv"
+
+# These must match the order of columns in the input file
+while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
+    # TODO: Skip the first row (not a real sample, just a header)
+
   #setting up variables for inputs, file names and etc
     # TODO: Replace with the original results folder /projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/
     directory=/projectnb2/hfsp/Challenge21/joseline/data_for_analysis/$label-4500T/
@@ -43,5 +45,4 @@ input_fi=/projectnb2/hfsp/Challenge21/joseline/data_info/paths_label_only.csv
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
-  done 
-}< $input_fi
+done < $input_fi
