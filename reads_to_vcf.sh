@@ -10,6 +10,7 @@ module load trimmomatic/0.36
 # module load bcftools
 
 # Set the path to the metafile
+# FIXME: I need the path to the reference files in the metafile, not just the reference file name
 input_fi="metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
