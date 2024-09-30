@@ -15,7 +15,7 @@ input_fi="metafile.csv"
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
     # TODO: Skip the first row (not a real sample, just a header)
 
-  #setting up variables for inputs, file names and etc
+    #setting up variables for inputs, file names and etc
     # TODO: Replace with the original results folder /projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/
     directory=/projectnb2/hfsp/Challenge21/joseline/data_for_analysis/$label-4500T/
     read_1="$directory"200219Seg_"$label"_1_sequence.fastq.gz
