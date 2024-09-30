@@ -13,7 +13,7 @@ module load bcftools
 input_fi="metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
-# These must match the order of columns in the input file
+# These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
     # Skip the first row (not a real sample, just a header)
     if $skip_first_row; then
