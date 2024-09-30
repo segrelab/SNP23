@@ -20,9 +20,8 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         skip_first_row=false
         continue
 
-    #setting up variables for inputs, file names and etc
-    # TODO: Replace with the original results folder /projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/
-    directory=/projectnb2/hfsp/Challenge21/joseline/data_for_analysis/$label-4500T/
+    # Setting up variables for inputs, file names and etc
+    directory=/projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/$sample_name
     read_1="$directory"200219Seg_"$label"_1_sequence.fastq.gz
     read_2="$directory"200219Seg_"$label"_2_sequence.fastq.gz
 
@@ -41,6 +40,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     #actually runnning tools 
     trimmomatic PE -threads 10 $read_1 $read_2 \ $trim_1 $trimu_1 \ $trim_2 $trimu_2 \ ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
 
+    # TODO: Which of these tools is mapping the reads? I need to collect the total number of reads, the number of reads mapped, and the number of orphan reads, and add that to the survival table.
     bwa index $ref
     samtools faidx $ref
     bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
