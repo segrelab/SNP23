@@ -7,14 +7,3 @@
 
 ## 🔗 Useful Links:
 Shared Notes on Google Drive: https://drive.google.com/drive/folders/1ZNowof5NB3n_OAjHu4QRoAtlrP9T6WHK?usp=drive_link
-
-Here is a simple flow chart:
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
