@@ -8,12 +8,17 @@ module load bwa/0.7.17
 module load samtools
 module load trimmomatic/0.36
 module load bcftools
+
 # Set the path to the metafile
 input_fi="metafile.csv"
+skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # These must match the order of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
     # TODO: Skip the first row (not a real sample, just a header)
+    if $skip_first_row; then
+        skip_first_row=false
+        continue
 
     #setting up variables for inputs, file names and etc
     # TODO: Replace with the original results folder /projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/
@@ -45,4 +50,4 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
-done < $input_fi
+done < "$input_fi"
