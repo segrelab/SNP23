@@ -8,15 +8,18 @@ module load bwa/0.7.17
 module load samtools
 module load trimmomatic/0.36
 module load bcftools
+# TODO: Replace with the metafile everyone else is using
 input_fi=/projectnb2/hfsp/Challenge21/joseline/data_info/paths_label_only.csv
 {
   read 
   while IFS=, read -r ref label;do
   #setting up variables for inputs, file names and etc
+    # TODO: Replace with the original results folder /projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/
     directory=/projectnb2/hfsp/Challenge21/joseline/data_for_analysis/$label-4500T/
     read_1="$directory"200219Seg_"$label"_1_sequence.fastq.gz
     read_2="$directory"200219Seg_"$label"_2_sequence.fastq.gz
 
+    # TODO: Should these files be version controlled? Or saved in the original folder?
     trim_1="$directory"trimmed_"$label"_1_sequence.fastq.gz
     trimu_1="$directory"trimmedu_"$label"_1_sequence.fastq.gz
 
