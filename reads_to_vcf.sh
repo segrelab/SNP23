@@ -7,7 +7,7 @@
 module load bwa/0.7.17 
 module load samtools
 module load trimmomatic/0.36
-module load bcftools
+# module load bcftools
 
 # Set the path to the metafile
 input_fi="metafile.csv"
@@ -19,6 +19,10 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     if $skip_first_row; then
         skip_first_row=false
         continue
+    fi
+
+    # Get the sample label, the sample_name minus the -4500T, eg D20-160027
+    label="${sample_name%-4500T}"
 
     # Setting up variables for inputs, file names and etc
     directory=/projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/$sample_name
