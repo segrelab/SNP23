@@ -47,19 +47,19 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
 
     # Setting up variables for inputs, file names and etc
     directory=/projectnb/hfsp/Strain_Library/Raw_Illumina_200219Seg/$sample_name
-    read_1="$directory"200219Seg_"$label"_1_sequence.fastq.gz
-    read_2="$directory"200219Seg_"$label"_2_sequence.fastq.gz
+    read_1="$directory"/200219Seg_"$label"_1_sequence.fastq.gz
+    read_2="$directory"/200219Seg_"$label"_2_sequence.fastq.gz
 
-    trim_1="$directory"trimmed_"$label"_1_sequence.fastq.gz
-    trimu_1="$directory"trimmedu_"$label"_1_sequence.fastq.gz
+    trim_1="$directory"/trimmed_"$label"_1_sequence.fastq.gz
+    trimu_1="$directory"/trimmedu_"$label"_1_sequence.fastq.gz
 
-    trim_2="$directory"trimmed_"$label"_2_sequence.fastq.gz
-    trimu_2="$directory"trimmedu_"$label"_2_sequence.fastq.gz
+    trim_2="$directory"/trimmed_"$label"_2_sequence.fastq.gz
+    trimu_2="$directory"/trimmedu_"$label"_2_sequence.fastq.gz
 
-    bam_file="$directory""$label".bam
-    sorted_bam_file="$directory""$label".sorted.bam
-    vcf="$directory""$label".vcf
-    f_vcf="$directory"filtered_"$label".vcf
+    bam_file="$directory"/"$label".bam
+    sorted_bam_file="$directory"/"$label".sorted.bam
+    vcf="$directory"/"$label".vcf
+    f_vcf="$directory"/filtered_"$label".vcf
 
     ## Actually runnning tools
     # Trimming
@@ -80,6 +80,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
             # 10: Simple clip threshold; this is used to remove simple adapter sequences.
             # 1: Minimum length of a match that will be clipped.
             # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
+    # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
     trimmomatic PE -threads 10 $read_1 $read_2 \ $trim_1 $trimu_1 \ $trim_2 $trimu_2 \ ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
 
     # Create an index for the reference genome
