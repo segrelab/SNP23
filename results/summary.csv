@@ -1,3 +1,3 @@
-sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,SNPs
-D20-160028-4500T,2687453488.fna,319108,319108,0,0,0,639597,639113,484,61851
-D20-160029-4500T,GCA_000299995.fna,285179,285179,0,0,0,570787,570001,786,63864
+sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs
+D20-160028-4500T,2687453488.fna,319108,319108,0,0,0,639597,639113,484,20.8849,0,105,61851
+D20-160029-4500T,GCA_000299995.fna,285179,285179,0,0,0,570787,570001,786,21.6106,0,123,63864
