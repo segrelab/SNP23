@@ -143,5 +143,5 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
     #  Append the sample name and results to the CSV file
-    echo "$sample_name,$input_pairs,$surviving_pairs,$one_direction_only,$dropped_pairs$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
+    echo "$sample_name,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
 done < "$input_fi"
