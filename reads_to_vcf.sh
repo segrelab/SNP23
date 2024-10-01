@@ -21,13 +21,20 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         continue
     fi
 
-    # Trim any leading/trailing whitespace from ref_path
-    ref_path_trimmed=$(echo "$ref_path" | xargs)
+    # Trim any leading/trailing whitespace including special characters
+    ref_path_trimmed=$(echo "$ref_path" | xargs | tr -d '\r')
+    ref_genome_trimmed=$(echo "$ref_genome" | xargs | tr -d '\r')
+
+    # Remove any trailing slashes from ref_path_trimmed
+    ref_path_trimmed="${ref_path_trimmed%/}"
 
     # If the reference genome path is empty, skip it
     if [ -z "$ref_path_trimmed" ]; then
         continue
     fi
+
+    # Create a single varaible for the refernece genome path and file name
+    ref="${ref_path_trimmed}/${ref_genome_trimmed}"
 
     # Get the sample label, the sample_name minus the -4500T, eg D20-160027
     label="${sample_name%-4500T}"
