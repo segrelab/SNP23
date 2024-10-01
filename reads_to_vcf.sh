@@ -37,7 +37,6 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     read_1="$directory"200219Seg_"$label"_1_sequence.fastq.gz
     read_2="$directory"200219Seg_"$label"_2_sequence.fastq.gz
 
-    # TODO: Should these files be version controlled? Or saved in the original folder?
     trim_1="$directory"trimmed_"$label"_1_sequence.fastq.gz
     trimu_1="$directory"trimmedu_"$label"_1_sequence.fastq.gz
 
