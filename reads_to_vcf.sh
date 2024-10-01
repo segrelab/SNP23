@@ -15,9 +15,9 @@ input_fi="mini_metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # Define a file name for the read count spreadsheet
-read_count_file="read_counts.csv"
+output_csv="results/summary.csv"
 # Initialize the read count file with headers
-echo "sample_name,total_reads,mapped_reads,unmapped_reads" > $read_count_file
+echo "sample_name,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
@@ -101,9 +101,6 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     mapped_reads=$(samtools view -c -F 4 $bam_file) # -F 4 excludes reads that have the "unmapped" flag set (so it only counts mapped reads).
     unmapped_reads=$(samtools view -c -f 4 $bam_file) # -f 4 includes only reads that have the "unmapped" flag set.
 
-    # Append the sample name and counts to the CSV file
-    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads" >> $read_count_file
-
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
 
@@ -129,4 +126,11 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # bcftools view: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
         # -v snps: Specifies that only SNPs should be retained in the output.
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
+
+    # Get the number of SNPs in the filtered VCF file
+    # -H option is used to suppress the header lines in the output, so only the SNP records are counted.
+    snp_count=$(bcftools view -H $f_vcf | wc -l)
+
+    #  Append the sample name and results to the CSV file
+    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
 done < "$input_fi"
