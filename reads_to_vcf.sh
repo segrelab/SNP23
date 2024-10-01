@@ -17,7 +17,7 @@ skip_first_row=true # A flag to skip the first row, set to false if the column n
 # Define a file name for the read count spreadsheet
 output_csv="results/summary.csv"
 # Initialize the read count file with headers
-echo "sample_name,input_pairs,surviving_pairs,one_direction_only,dropped_pairs,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
+echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
@@ -143,5 +143,5 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
     #  Append the sample name and results to the CSV file
-    echo "$sample_name,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
+    echo "$sample_name,$ref_genome_trimmed,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
 done < "$input_fi"
