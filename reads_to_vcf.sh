@@ -102,7 +102,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     unmapped_reads=$(samtools view -c -f 4 $bam_file) # -f 4 includes only reads that have the "unmapped" flag set.
 
     # Append the sample name and counts to the CSV file
-    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads" >> $output_csv
+    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads" >> $read_count_file
 
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
