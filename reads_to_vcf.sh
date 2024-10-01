@@ -17,7 +17,7 @@ skip_first_row=true # A flag to skip the first row, set to false if the column n
 # Define a file name for the read count spreadsheet
 output_csv="results/summary.csv"
 # Initialize the read count file with headers
-echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
+echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs" > $output_csv
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
@@ -60,6 +60,8 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
 
     bam_file="$directory"/"$label".bam
     sorted_bam_file="$directory"/"$label".sorted.bam
+    depth_file="$directory/${label}_depth.txt"
+
     vcf="$directory"/"$label".vcf
     f_vcf="$directory"/filtered_"$label".vcf
 
@@ -115,6 +117,20 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
 
+    # Get the coverage depth and save it to a file
+    samtools depth -a $sorted_bam_file > $depth_file
+
+    # Calculate the average, minimum, and maximum coverage using awk
+    if [ -s $depth_file ]; then
+        avg_coverage=$(awk '{sum+=$3} END {if (NR>0) print sum/NR; else print 0}' $depth_file)
+        min_coverage=$(awk 'NR == 1 || $3 < min {min = $3} END {if (NR>0) print min; else print 0}' $depth_file)
+        max_coverage=$(awk 'NR == 1 || $3 > max {max = $3} END {if (NR>0) print max; else print 0}' $depth_file)
+    else
+        avg_coverage=0
+        min_coverage=0
+        max_coverage=0
+    fi
+
     # Generate a VCF file with bcftools
     # bcftools mpileup: Generates a pilup of reads aligned to a reference genome. The pileup format summarizes the base calls at each position of the reference genome, which is then used to detect variants (such as SNPs or indels).
         # -B: which is used to improve the accuracy of indel calling. If you remove this, the pileup will be faster but less accurate in detecting indels.
@@ -143,5 +159,5 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
     #  Append the sample name and results to the CSV file
-    echo "$sample_name,$ref_genome_trimmed,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
+    echo "$sample_name,$ref_genome_trimmed,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$avg_coverage,$min_coverage,$max_coverage,$snp_count" >> $output_csv
 done < "$input_fi"
