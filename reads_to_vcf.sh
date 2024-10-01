@@ -13,6 +13,11 @@ module load trimmomatic/0.36
 input_fi="metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
+# Define a file name for the read count spreadsheet
+read_count_file="read_counts.csv"
+# Initialize the read count file with headers
+echo "sample_name,total_reads,mapped_reads,unmapped_reads" > $output_csv
+
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
     # Skip the first row (not a real sample, just a header)
@@ -88,6 +93,15 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # Align the reads with bwa and convert to a bam file using samtools
     # The BWA MEM algorithm aligns the paired-end reads ($trim_1 and $trim_2) to the reference genome ($ref) and produces alignments in the SAM (Sequence Alignment/Map) format.
     bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
+
+    # Get total, mapped, and unmapped reads
+    total_reads=$(samtools view -c $bam_file) # -c is the option that tells samtools view to count the total number of reads in the BAM file.
+    mapped_reads=$(samtools view -c -F 4 $bam_file) # -F 4 excludes reads that have the "unmapped" flag set (so it only counts mapped reads).
+    unmapped_reads=$(samtools view -c -f 4 $bam_file) # -f 4 includes only reads that have the "unmapped" flag set.
+
+    # Append the sample name and counts to the CSV file
+    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads" >> $output_csv
+    
     samtools sort $bam_file -o $sorted_bam_file
     
     samtools faidx $ref
