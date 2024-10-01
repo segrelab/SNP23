@@ -105,7 +105,26 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
 
+    # Generate a VCF file with bcftools
+    # bcftools mpileup: Generates a pilup of reads aligned to a reference genome. The pileup format summarizes the base calls at each position of the reference genome, which is then used to detect variants (such as SNPs or indels).
+        # -B: which is used to improve the accuracy of indel calling. If you remove this, the pileup will be faster but less accurate in detecting indels.
+        # -q: Filters out reads with a mapping quality lower than the given number (e.g. 30). Reads with low mapping quality are more likely to be incorrectly aligned, so this helps to reduce noise in the variant calling process.
+        # FIXME: Check what -g really is in the documentation. ChatGPT and copilot disagreed.
+        # -g: Specifies the maximum per-sample depth to use. This avoids excessive computation at positions with very high coverage (more than 50 reads at a single position).
+        # -Ou: Output the pileup in uncompressed BCF format, which is more efficient for piping into the next command (bcftools call).
+        # -f $ref: Specifies the reference genome file (FASTA format) that the reads are aligned to. The $ref variable points to the reference genome.
+    # bcftools call: Performs the variant calling
+        # --ploidy 1: Specifies that the organism is haploid (1 copy of each chromosome).
+        # -m: Use the multiallelic caller model. This model can call multiple alleles at the same position, which is useful for handling complex variants.
+        # FIXME: Check what -A really is in the documentation. ChatGPT and copilot disagreed.
+        # -A: Output all sites, including non-variant sites. This is useful for generating a complete VCF file with all positions in the reference genome.
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
+    # Filter the VCF file to remove low-quality variants and retain only SNPs
+    # bcftools filter: Filters the VCF file to remove variants marked as "LowQual"
+        # -s LowQual: Specifies the filter to apply. Variants marked as "LowQual" will be removed.
+        # bcftools view -v snps: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
+    # bcftools view: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
+        # -v snps: Specifies that only SNPs should be retained in the output.
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
 done < "$input_fi"
