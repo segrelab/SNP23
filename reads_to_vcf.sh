@@ -10,15 +10,22 @@ module load trimmomatic/0.36
 # module load bcftools
 
 # Set the path to the metafile
-# FIXME: I need the path to the reference files in the metafile, not just the reference file name
 input_fi="metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # These variables must match the order/contents of columns in the input file
-while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome;do
+while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
     # Skip the first row (not a real sample, just a header)
     if $skip_first_row; then
         skip_first_row=false
+        continue
+    fi
+
+    # Trim any leading/trailing whitespace from ref_path
+    ref_path_trimmed=$(echo "$ref_path" | xargs)
+
+    # If the reference genome path is empty, skip it
+    if [ -z "$ref_path_trimmed" ]; then
         continue
     fi
 
