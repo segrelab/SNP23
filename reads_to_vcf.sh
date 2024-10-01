@@ -7,7 +7,8 @@
 module load bwa/0.7.17 
 module load samtools
 module load trimmomatic/0.36
-module load bcftools
+module load htslib/1.16
+module load bcftools/1.16
 
 # Set the path to the metafile
 input_fi="mini_metafile.csv"
