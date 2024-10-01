@@ -94,10 +94,6 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     reverse_surviving=$(grep -oP '(?<=Reverse Only Surviving: )\d+' $trimmomatic_log)
     dropped_pairs=$(grep -oP '(?<=Dropped: )\d+' $trimmomatic_log)
 
-    # Debugging: Print the extracted statistics
-    cat $trimmomatic_log
-    printf "Input pairs: %s\nSurviving pairs: %s\nForward surviving: %s\nReverse surviving: %s\nDropped pairs: %s\n" $input_pairs $surviving_pairs $forward_surviving $reverse_surviving $dropped_pairs
-
     # Create an index for the reference genome
     # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
     bwa index $ref
