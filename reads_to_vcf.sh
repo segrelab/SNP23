@@ -50,6 +50,8 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     read_1="$directory"/200219Seg_"$label"_1_sequence.fastq.gz
     read_2="$directory"/200219Seg_"$label"_2_sequence.fastq.gz
 
+    trimmomatic_log="$directory/${label}_trimmomatic.log"
+
     trim_1="$directory"/trimmed_"$label"_1_sequence.fastq.gz
     trimu_1="$directory"/trimmedu_"$label"_1_sequence.fastq.gz
 
@@ -83,13 +85,18 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
     trimmomatic PE -threads 10 $read_1 $read_2 \
         $trim_1 $trimu_1 $trim_2 $trimu_2 \
-        ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
+        ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
 
     # Extract key statistics from the Trimmomatic log file
     input_pairs=$(grep -oP '(?<=Input Read Pairs: )\d+' $trimmomatic_log)
     surviving_pairs=$(grep -oP '(?<=Both Surviving: )\d+' $trimmomatic_log)
-    one_direction_only=$(grep -oP '(?<=Only One Surviving: )\d+' $trimmomatic_log)
+    forward_surviving=$(grep -oP '(?<=Forward Only Surviving: )\d+' $trimmomatic_log)
+    reverse_surviving=$(grep -oP '(?<=Reverse Only Surviving: )\d+' $trimmomatic_log)
     dropped_pairs=$(grep -oP '(?<=Dropped: )\d+' $trimmomatic_log)
+
+    # Debugging: Print the extracted statistics
+    cat $trimmomatic_log
+    printf "Input pairs: %s\nSurviving pairs: %s\nForward surviving: %s\nReverse surviving: %s\nDropped pairs: %s\n" $input_pairs $surviving_pairs $forward_surviving $reverse_surviving $dropped_pairs
 
     # Create an index for the reference genome
     # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
