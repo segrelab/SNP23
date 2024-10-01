@@ -17,7 +17,7 @@ skip_first_row=true # A flag to skip the first row, set to false if the column n
 # Define a file name for the read count spreadsheet
 output_csv="results/summary.csv"
 # Initialize the read count file with headers
-echo "sample_name,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
+echo "sample_name,input_pairs,surviving_pairs,one_direction_only,dropped_pairs,total_reads,mapped_reads,unmapped_reads,SNPs" > $output_csv
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
@@ -81,7 +81,15 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
             # 1: Minimum length of a match that will be clipped.
             # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
     # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
-    trimmomatic PE -threads 10 $read_1 $read_2 \ $trim_1 $trimu_1 \ $trim_2 $trimu_2 \ ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
+    trimmomatic PE -threads 10 $read_1 $read_2 \
+        $trim_1 $trimu_1 $trim_2 $trimu_2 \
+        ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
+
+    # Extract key statistics from the Trimmomatic log file
+    input_pairs=$(grep -oP '(?<=Input Read Pairs: )\d+' $trimmomatic_log)
+    surviving_pairs=$(grep -oP '(?<=Both Surviving: )\d+' $trimmomatic_log)
+    one_direction_only=$(grep -oP '(?<=Only One Surviving: )\d+' $trimmomatic_log)
+    dropped_pairs=$(grep -oP '(?<=Dropped: )\d+' $trimmomatic_log)
 
     # Create an index for the reference genome
     # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
@@ -132,5 +140,5 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
     #  Append the sample name and results to the CSV file
-    echo "$sample_name,$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
+    echo "$sample_name,$input_pairs,$surviving_pairs,$one_direction_only,$dropped_pairs$total_reads,$mapped_reads,$unmapped_reads,$snp_count" >> $output_csv
 done < "$input_fi"
