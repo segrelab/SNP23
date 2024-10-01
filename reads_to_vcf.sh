@@ -105,7 +105,6 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
     
-    samtools faidx $ref
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
