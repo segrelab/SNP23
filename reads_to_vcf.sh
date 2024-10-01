@@ -55,12 +55,38 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     vcf="$directory""$label".vcf
     f_vcf="$directory"filtered_"$label".vcf
 
-    #actually runnning tools 
+    ## Actually runnning tools
+    # Trimming
+    # trimmomatic PE: Invokes Trimmomatic in paired-end mode (PE). Paired-end mode means the tool is processing two files of paired sequencing reads (typically from two ends of a DNA fragment).
+    # -threads 10: Specifies the number of CPU threads to use for parallel processing. In this case, 10 threads are being used to speed up the trimming process.
+    # $read_1: The file containing the first set of paired-end reads (forward reads).
+    # $read_2: The file containing the second set of paired-end reads (reverse reads).
+    # $trim_1: The output file for the trimmed forward reads (surviving paired reads from the first file).
+    # $trimu_1: The output file for unpaired reads that were originally part of the forward reads but lost their pair during trimming.
+    # $trim_2: The output file for the trimmed reverse reads (surviving paired reads from the second file).
+    # $trimu_2: The output file for unpaired reads that were originally part of the reverse reads but lost their pair during trimming.
+    # ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE:
+        # ILLUMINACLIP: This is a specific step in Trimmomatic to clip (remove) adapter sequences from the reads. Adapters are sequences added to the ends of DNA fragments during library preparation and can interfere with downstream analysis.
+        # /usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa: Path to the adapter sequence file, which contains the adapter sequences that need to be clipped. In this case, the file is for NexteraPE adapters.
+        # 2:30:10:1:TRUE: These are parameters for the adapter clipping step:
+            # 2: Minimum number of seed mismatches to allow in adapter matching.
+            # 30: Palindrome clip threshold for identifying "adapter dimer" artifacts, where the forward and reverse adapters are ligated together.
+            # 10: Simple clip threshold; this is used to remove simple adapter sequences.
+            # 1: Minimum length of a match that will be clipped.
+            # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
     trimmomatic PE -threads 10 $read_1 $read_2 \ $trim_1 $trimu_1 \ $trim_2 $trimu_2 \ ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE
 
-    # TODO: Which of these tools is mapping the reads? I need to collect the total number of reads, the number of reads mapped, and the number of orphan reads, and add that to the survival table.
+    # Create an index for the reference genome
+    # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
     bwa index $ref
+
+    # Use samtools to generate a FASTA index for the reference genome
+    # This will create a .fai file. This file contains the byte offsets and lengths of each sequence in the FASTA file, allowing for quick lookup of specific sequences.
+    # Indexing the reference genome is required for efficient random access to the genome's sequences. Many bioinformatics tools, including Samtools, BWA, and bcftools, use the .fai index file to quickly retrieve specific regions of the reference genome during tasks like read alignment or variant calling. Without the index, every operation would require reloading the entire genome into memory, which would be slow and inefficient for large genomes.
     samtools faidx $ref
+
+    # Align the reads with bwa and convert to a bam file using samtools
+    # The BWA MEM algorithm aligns the paired-end reads ($trim_1 and $trim_2) to the reference genome ($ref) and produces alignments in the SAM (Sequence Alignment/Map) format.
     bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
     samtools sort $bam_file -o $sorted_bam_file
     
