@@ -17,7 +17,7 @@ skip_first_row=true # A flag to skip the first row, set to false if the column n
 # Define a file name for the read count spreadsheet
 read_count_file="read_counts.csv"
 # Initialize the read count file with headers
-echo "sample_name,total_reads,mapped_reads,unmapped_reads" > $output_csv
+echo "sample_name,total_reads,mapped_reads,unmapped_reads" > $read_count_file
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
