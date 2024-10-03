@@ -1,8 +1,8 @@
 #!/bin/bash -l
-#$ -l h_rt=75:00:00
-#$ -j y
-#$ -P hfsp
-#$ -pe omp 10
+#$ -l h_rt=75:00:00 # Specify the hard time limit for the job
+#$ -j y             # Merge the error and output streams into a single file
+#$ -P hfsp          # Specify the SCC project name you want to use
+#$ -pe omp 10       # Request multiple slots for the Shared Memory application (OpenMP)
 
 module load bwa/0.7.17 
 module load samtools
