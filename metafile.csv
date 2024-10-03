@@ -44,13 +44,6 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 69,D20-160069-4500T,Simiduia agarivorans SA1 = DSM 21679,Simid,Y,,,Simid,2519103097.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 70,D20-160070-4500T,Sulfitobacter pseudonitzschiae (Luca1),Nitsch,Same as nitzsch?,,,Nitsch,GCF_002222635.1_ASM222263v1_genomic.fna.gz,
 74,D20-160074-4500T,Echinicola vietnamensis,DSM 17526,,,,Evi17526,2509276020.fna,
-75,D20-160075-4500T,Pseudomonas pelagia,DSM 25163,,,,25163,GCF_000410875.1_KCCM90073_genomic.fna.gz,
-76,D20-160076-4500T,Algoriphagus marincola,DSM 16067,,,,16067,GCF_000429405.1_ASM42940v1_genomic.fna.gz,
-77,D20-160077-4500T,Rhodococcus qingshengii,DSM 45222,,,,45222,GCF_002893965.1_ASM289396v1_genomic.fna.gz,
-78,D20-160078-4500T,Bacillus abyssalis,DSM 25875,,,,DSM 25875,GCF_002019595.1_ASM201959v1_genomic.fna.gz,
-79,D20-160079-4500T,Echinicola pacifica,DSM 19836,,,,DSM 19836,GCF_000373245.1_ASM37324v1_genomic.fna.gz,
-80,D20-160080-4500T,Domibacillus iocasae,DSM 29979,,,,Dio29979,GCF_001750285.1_ASM175028v1_genomic.fna.gz,
-81,D20-160081-4500T,Salinispora arenicola,DSM 44819,,,,SAR44819,GCF_006716065.1_ASM671606v1_genomic.fna.gz,
 82,D20-160082-4500T,Sinorhizobium meliloti DSM 23913,23913,,,,23913,2597490345.fna,
 83,D20-160083-4500T,Halomonas campaniensis,DSM 15293,,,,15293,GCF_000696485.1_ASM69648v1_genomic.fna.gz,
 84,D20-160084-4500T,Pontibacillus halophilus,DSM 19796,,,,19796,GCF_000425205.1_ASM42520v1_genomic.fna.gz,
