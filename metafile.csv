@@ -12,7 +12,7 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 36,D20-160036-4500T,Gramella forsetii,FORS,Y,,,FORS,GCA_000060345.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 37,D20-160037-4500T,Marinobacter adhaerens,HP15,Y,,,HP15,650377991.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 38,D20-160038-4500T,Marinomonas mediterranea,MMB1,Y,,,MMB1,2506210002.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,citrea_ASM23837.v4,
+39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic,
 40,D20-160040-4500T,Rhodobacter sphaeroides,RSpher,Y,,,RSpher,GCF_000012905.2_ASM1290v2_genomic.fna.gz,
 41,D20-160041-4500T,Roseovarius mucosus (Luca2),Roseo,Y,,,Roseo,Roseovarius_mucosus_SMR3.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 42,D20-160042-4500T,"Ruegeria pomeroyi ",DSS-3,Y,,,DSS-3,GCA_000011965.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
@@ -27,7 +27,7 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 52,D20-160052-4500T,"Phaeobacter gallaeciensis ",Pga11,Same as Pgall?,,,Pga11,GCA_000511385.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 53,D20-160053-4500T,"Pseudoalteromonas atlantica ",T6C,Y,,,T6C,2606217322.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 54,D20-160054-4500T,"Pseudoalteromonas haloplanktis ",Phalo,Y,,,Phalo,GCA_000230555.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-55,D20-160055-4500T,"Shewanella baltica ",Shew,Same as shewden?,,,Shew,shew_GCF_000015845.1,
+55,D20-160055-4500T,"Shewanella baltica ",Shew,Same as shewden?,,,Shew,GCF_000015845.1_ASM1584v1_genomic.fna,
 56,D20-160056-4500T,Alcanivorax dieselolei,Dies,Y,,,Dies,GCA_000300005.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 57,D20-160057-4500T,Halobacillus kuroshimensis,Kuro,Y,,,Kuro,2523533634.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 58,D20-160058-4500T,Corynebacterium stationis,Cstat,Y,,,Cstat,2623620535.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
