@@ -20,7 +20,6 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 44,D20-160044-4500T,Sphingorhabdus flavimaris,SMR4y,,,,SMR4y,Sphingorhabdus_flavimaris_SMR4y.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 45,D20-160045-4500T,"Sulfitobacter pseudonitzschiae ",SMR1,,,,SMR1,Sulfitobacter_pseudonitzschiae_SMR1.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 46,D20-160046-4500T,Vibrio natriegens,Vnat,Y,,,Vnat,GCF_001456255.1_ASM145625v1_genomic.fna.gz,
-47,D20-160047-4500T,Algoriphagus machipongonensis,Pr1white,Y,,,Pr1w,,/projectnb/hfsp/IAMM_genomes_from_Luca
 48,D20-160048-4500T,Algoriphagus machipongonensis,Pr1red,Y,,,Pr1r,GCF_000166275.1_ASM16627v1_genomic.fna.gz,
 49,D20-160049-4500T,Pseudoalteromonas haloplanktis (from CIP),Cip,Y,,,Cip,GCA_000026085.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 50,D20-160050-4500T,"Croceibacter atlanticus ",atlcs,Y,,,atlcs,2526164557.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
