@@ -43,9 +43,6 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 68,D20-160068-4500T,Haliea salexigens DSM 19537,Salex,Y,,,Salex,2523533559.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 69,D20-160069-4500T,Simiduia agarivorans SA1 = DSM 21679,Simid,Y,,,Simid,2519103097.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 70,D20-160070-4500T,Sulfitobacter pseudonitzschiae (Luca1),Nitsch,Same as nitzsch?,,,Nitsch,GCF_002222635.1_ASM222263v1_genomic.fna.gz,
-71,D20-160071-4500T,Kocuria sp.,DSM 17348,,,,17348,GCF_001942375.1_ASM194237v1_genomic.fna.gz,
-72,D20-160072-4500T,Serinicoccus marinus,DSM 15273,,,,Sma15273,GCF_008386315.1_ASM838631v1_genomic.fna.gz,
-73,D20-160073-4500T,Microbacterium indicum,DSM 19969,,,,19969,GCF_000422385.1_ASM42238v1_genomic.fna.gz,
 74,D20-160074-4500T,Echinicola vietnamensis,DSM 17526,,,,Evi17526,2509276020.fna,
 75,D20-160075-4500T,Pseudomonas pelagia,DSM 25163,,,,25163,GCF_000410875.1_KCCM90073_genomic.fna.gz,
 76,D20-160076-4500T,Algoriphagus marincola,DSM 16067,,,,16067,GCF_000429405.1_ASM42940v1_genomic.fna.gz,
