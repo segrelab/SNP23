@@ -21,7 +21,7 @@ output_csv="results/summary.csv"
 echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs" > $output_csv
 
 # Set a variable of if you want to rerun the analysis
-force_rerun=false
+force_rerun=true
 
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
