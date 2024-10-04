@@ -21,7 +21,7 @@ output_csv="results/summary.csv"
 echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs" > $output_csv
 
 # Set a variable of if you want to rerun the analysis
-force_rerun=true
+force_rerun=false
 
 # Function to run the analysis pipeline (from timming to variant calling)
 run_analysis_pipeline() {
