@@ -12,7 +12,7 @@ module load htslib/1.16
 module load bcftools/1.16
 
 # Set the path to the metafile
-input_fi="mini_metafile.csv"
+input_fi="metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # Define a file name for the read count spreadsheet
