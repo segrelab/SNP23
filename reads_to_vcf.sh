@@ -23,57 +23,32 @@ echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving
 # Set a variable of if you want to rerun the analysis
 force_rerun=true
 
-# These variables must match the order/contents of columns in the input file
-while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path;do
-    # Skip the first row (not a real sample, just a header)
-    if $skip_first_row; then
-        skip_first_row=false
-        continue
-    fi
-
-    # Trim any leading/trailing whitespace including special characters
-    ref_path_trimmed=$(echo "$ref_path" | xargs | tr -d '\r')
-    ref_genome_trimmed=$(echo "$ref_genome" | xargs | tr -d '\r')
-
-    # Remove any trailing slashes from ref_path_trimmed
-    ref_path_trimmed="${ref_path_trimmed%/}"
-
-    # If the reference genome path is empty, skip it
-    if [ -z "$ref_path_trimmed" ]; then
-        continue
-    fi
-
-    # Create a single varaible for the refernece genome path and file name
-    ref="${ref_path_trimmed}/${ref_genome_trimmed}"
-
-    # Check that the reference genome file exists
-    if [ ! -f "$ref" ]; then
-        echo "Reference genome file not found for $sample_name: $ref"
-        continue
-    fi
-
-    # Get the sample label, the sample_name minus the -4500T, eg D20-160027
-    label="${sample_name%-4500T}"
+# Function to run the analysis pipeline (from timming to variant calling)
+run_analysis_pipeline() {
+    local sample_name = $1
+    local label = $2
+    local ref = $3
+    local in_directory = $4
+    local out_directory = $5
 
     # Setting up variables for inputs, file names and etc
-    directory=results/raw_files/$sample_name
-    read_1="$directory"/200219Seg_"$label"_1_sequence.fastq.gz
-    read_2="$directory"/200219Seg_"$label"_2_sequence.fastq.gz
+    read_1="$in_directory"/200219Seg_"$label"_1_sequence.fastq.gz
+    read_2="$in_directory"/200219Seg_"$label"_2_sequence.fastq.gz
 
-    trimmomatic_log="$directory/${label}_trimmomatic.log"
+    trimmomatic_log="$out_directory/${label}_trimmomatic.log"
 
-    trim_1="$directory"/trimmed_"$label"_1_sequence.fastq.gz
-    trimu_1="$directory"/trimmedu_"$label"_1_sequence.fastq.gz
+    trim_1="$out_directory"/trimmed_"$label"_1_sequence.fastq.gz
+    trimu_1="$out_directory"/trimmedu_"$label"_1_sequence.fastq.gz
 
-    trim_2="$directory"/trimmed_"$label"_2_sequence.fastq.gz
-    trimu_2="$directory"/trimmedu_"$label"_2_sequence.fastq.gz
+    trim_2="$out_directory"/trimmed_"$label"_2_sequence.fastq.gz
+    trimu_2="$out_directory"/trimmedu_"$label"_2_sequence.fastq.gz
 
-    bam_file="$directory"/"$label".bam
-    sorted_bam_file="$directory"/"$label".sorted.bam
-    depth_file="$directory/${label}_depth.txt"
+    bam_file="$out_directory"/"$label".bam
+    sorted_bam_file="$out_directory"/"$label".sorted.bam
+    depth_file="$out_directory/${label}_depth.txt"
 
-    vcf="$directory"/"$label".vcf
-    f_vcf="$directory"/filtered_"$label".vcf
+    vcf="$out_directory"/"$label".vcf
+    f_vcf="$out_directory"/filtered_"$label".vcf
 
     # If the output files already exist and force_rerun is false, skip this sample
     if [ -f "$f_vcf" ] && [ ! $force_rerun ]; then
@@ -175,5 +150,70 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
     #  Append the sample name and results to the CSV file
-    echo "$sample_name,$ref_genome_trimmed,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$avg_coverage,$min_coverage,$max_coverage,$snp_count" >> $output_csv
+    echo "$sample_name,$ref,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$avg_coverage,$min_coverage,$max_coverage,$snp_count" >> $output_csv
+}
+
+# Process each sample in the input file
+# These variables must match the order/contents of columns in the input file
+while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path pos_cntrl_genome pos_cntrl_path neg_cntrl_genome neg_cntrl_path;do
+    # Skip the first row (not a real sample, just a header)
+    # TODO: Check that this is skipping the header, and not sample 27
+    if $skip_first_row; then
+        skip_first_row=false
+        continue
+    fi
+
+    # Trim any leading/trailing whitespace including special characters
+    ref_path_trimmed=$(echo "$ref_path" | xargs | tr -d '\r')
+    ref_genome_trimmed=$(echo "$ref_genome" | xargs | tr -d '\r')
+
+    # Remove any trailing slashes from ref_path_trimmed
+    ref_path_trimmed="${ref_path_trimmed%/}"
+
+    # If the reference genome path is empty, skip it
+    if [ -z "$ref_path_trimmed" ]; then
+        continue
+    fi
+
+    # Create a single varaible for the refernece genome path and file name
+    ref="${ref_path_trimmed}/${ref_genome_trimmed}"
+
+    # Check that the reference genome file exists
+    if [ ! -f "$ref" ]; then
+        echo "Reference genome file not found for $sample_name: $ref"
+        continue
+    fi
+
+    # Get the sample label, the sample_name minus the -4500T, eg D20-160027
+    label="${sample_name%-4500T}"
+
+    # Get the directory to the raw results (in this repo)
+    # TODO: Make this a variable that I set at the top of the script
+    directory=results/raw_files/$sample_name
+
+    # Run the analysis pipeline for the current sample
+    run_analysis_pipeline $sample_name $label $ref $directory $directory
+
+    # Process positive control if present
+     if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_path" ]; then
+        pos_cntrl_path_trimmed=$(echo "$pos_cntrl_path" | xargs | tr -d '\r')
+        pos_cntrl_genome_trimmed=$(echo "$pos_cntrl_genome" | xargs | tr -d '\r')
+        pos_cntrl_ref="${pos_cntrl_path_trimmed}/${pos_cntrl_genome_trimmed}"
+        pos_cntrl_directory="results/raw_files/$sample_name/controls/positive_control"  # TODO: Make this a variable that I set at the top of the script
+        
+        mkdir -p "$pos_cntrl_directory"
+        run_analysis_pipeline "${sample_name}_pos_cntrl" "$label" "$pos_cntrl_ref" "$directory" "$pos_cntrl_directory"
+    fi
+
+    # Process negative control if present
+    if [ -n "$neg_cntrl_genome" ] && [ -n "$neg_cntrl_path" ]; then
+        neg_cntrl_path_trimmed=$(echo "$neg_cntrl_path" | xargs | tr -d '\r')
+        neg_cntrl_genome_trimmed=$(echo "$neg_cntrl_genome" | xargs | tr -d '\r')
+        neg_cntrl_ref="${neg_cntrl_path_trimmed}/${neg_cntrl_genome_trimmed}"
+        neg_cntrl_directory="results/raw_files/$sample_name/controls/negative_control"
+        
+        mkdir -p "$neg_cntrl_directory"
+        run_analysis_pipeline "${sample_name}_neg_cntrl" "$label" "$neg_cntrl_ref" "$directory" "$neg_cntrl_directory"
+    fi
+
 done < "$input_fi"
