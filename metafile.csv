@@ -12,7 +12,7 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 36,D20-160036-4500T,Gramella forsetii,FORS,Y,,,FORS,GCA_000060345.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 37,D20-160037-4500T,Marinobacter adhaerens,HP15,Y,,,HP15,650377991.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 38,D20-160038-4500T,Marinomonas mediterranea,MMB1,Y,,,MMB1,2506210002.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic,/projectnb/hfsp/IAMM_genomes_from_Luca
+39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 40,D20-160040-4500T,Rhodobacter sphaeroides,RSpher,Y,,,RSpher,GCF_000012905.2_ASM1290v2_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 41,D20-160041-4500T,Roseovarius mucosus (Luca2),Roseo,Y,,,Roseo,Roseovarius_mucosus_SMR3.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 42,D20-160042-4500T,"Ruegeria pomeroyi ",DSS-3,Y,,,DSS-3,GCA_000011965.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
