@@ -12,7 +12,7 @@ module load htslib/1.16
 module load bcftools/1.16
 
 # Set the path to the metafile
-input_fi="metafile.csv"
+input_fi="mini_metafile.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # Define a file name for the read count spreadsheet
@@ -25,11 +25,11 @@ force_rerun=true
 
 # Function to run the analysis pipeline (from timming to variant calling)
 run_analysis_pipeline() {
-    local sample_name = $1
-    local label = $2
-    local ref = $3
-    local in_directory = $4
-    local out_directory = $5
+    local sample_name=$1
+    local label=$2
+    local ref=$3
+    local in_directory=$4
+    local out_directory=$5
 
     # Setting up variables for inputs, file names and etc
     read_1="$in_directory"/200219Seg_"$label"_1_sequence.fastq.gz
@@ -157,7 +157,6 @@ run_analysis_pipeline() {
 # These variables must match the order/contents of columns in the input file
 while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM accession_number source dna_prep ref_genome ref_path pos_cntrl_genome pos_cntrl_path neg_cntrl_genome neg_cntrl_path;do
     # Skip the first row (not a real sample, just a header)
-    # TODO: Check that this is skipping the header, and not sample 27
     if $skip_first_row; then
         skip_first_row=false
         continue
@@ -200,7 +199,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         pos_cntrl_genome_trimmed=$(echo "$pos_cntrl_genome" | xargs | tr -d '\r')
         pos_cntrl_ref="${pos_cntrl_path_trimmed}/${pos_cntrl_genome_trimmed}"
         pos_cntrl_directory="results/raw_files/$sample_name/controls/positive_control"  # TODO: Make this a variable that I set at the top of the script
-        
+
         mkdir -p "$pos_cntrl_directory"
         run_analysis_pipeline "${sample_name}_pos_cntrl" "$label" "$pos_cntrl_ref" "$directory" "$pos_cntrl_directory"
     fi
@@ -211,7 +210,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         neg_cntrl_genome_trimmed=$(echo "$neg_cntrl_genome" | xargs | tr -d '\r')
         neg_cntrl_ref="${neg_cntrl_path_trimmed}/${neg_cntrl_genome_trimmed}"
         neg_cntrl_directory="results/raw_files/$sample_name/controls/negative_control"
-        
+
         mkdir -p "$neg_cntrl_directory"
         run_analysis_pipeline "${sample_name}_neg_cntrl" "$label" "$neg_cntrl_ref" "$directory" "$neg_cntrl_directory"
     fi
