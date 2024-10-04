@@ -43,6 +43,12 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
     # Create a single varaible for the refernece genome path and file name
     ref="${ref_path_trimmed}/${ref_genome_trimmed}"
 
+    # Check that the reference genome file exists
+    if [ ! -f "$ref" ]; then
+        echo "Reference genome file not found for $sample_name: $ref"
+        continue
+    fi
+
     # Get the sample label, the sample_name minus the -4500T, eg D20-160027
     label="${sample_name%-4500T}"
 
