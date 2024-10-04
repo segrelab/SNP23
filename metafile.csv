@@ -3,7 +3,7 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 ",,,,AM27126,GCA_000172635.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 28,D20-160028-4500T,"Alteromonas macleodii ",Hot1A3,Y,,,Hot1A3,2687453488.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 29,D20-160029-4500T,Alteromonas macleodii,BS11,Y,,,BS11,GCA_000299995.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-30,D20-160030-4500T,Alteromonas mediterraneae,DE1,Y,,,DE1,GCF_000310085.1_ASM31008v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
+30,D20-160030-4500T,Alteromonas mediterraneae,DE1,Y,,,DE1,GCF_000310085.1_ASM31008v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 31,D20-160031-4500T,Alteromonas macleodii 'Aegean Sea MED64'  DSM 26499,26499,Y,,,26499,2545824627.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 32,D20-160032-4500T,Arenibacter algicola strain SMS7,SMS7,,,,SMS7,Arenibacter_algicola_SMS7.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 33,D20-160033-4500T,Loktanella vestfoldensis,Luca5,,,,Luka5,Loktanella_vestfoldensis_SMR4r.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
@@ -13,14 +13,14 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 37,D20-160037-4500T,Marinobacter adhaerens,HP15,Y,,,HP15,650377991.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 38,D20-160038-4500T,Marinomonas mediterranea,MMB1,Y,,,MMB1,2506210002.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic,/projectnb/hfsp/IAMM_genomes_from_Luca
-40,D20-160040-4500T,Rhodobacter sphaeroides,RSpher,Y,,,RSpher,GCF_000012905.2_ASM1290v2_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
+40,D20-160040-4500T,Rhodobacter sphaeroides,RSpher,Y,,,RSpher,GCF_000012905.2_ASM1290v2_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 41,D20-160041-4500T,Roseovarius mucosus (Luca2),Roseo,Y,,,Roseo,Roseovarius_mucosus_SMR3.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 42,D20-160042-4500T,"Ruegeria pomeroyi ",DSS-3,Y,,,DSS-3,GCA_000011965.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 43,D20-160043-4500T,"Shewanella woodyi ",Woodyi,Y,,,Woodyi,GCA_000019525.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 44,D20-160044-4500T,Sphingorhabdus flavimaris,SMR4y,,,,SMR4y,Sphingorhabdus_flavimaris_SMR4y.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 45,D20-160045-4500T,"Sulfitobacter pseudonitzschiae ",SMR1,,,,SMR1,Sulfitobacter_pseudonitzschiae_SMR1.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-46,D20-160046-4500T,Vibrio natriegens,Vnat,Y,,,Vnat,GCF_001456255.1_ASM145625v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
-48,D20-160048-4500T,Algoriphagus machipongonensis,Pr1red,Y,,,Pr1r,GCF_000166275.1_ASM16627v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
+46,D20-160046-4500T,Vibrio natriegens,Vnat,Y,,,Vnat,GCF_001456255.1_ASM145625v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
+48,D20-160048-4500T,Algoriphagus machipongonensis,Pr1red,Y,,,Pr1r,GCF_000166275.1_ASM16627v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 49,D20-160049-4500T,Pseudoalteromonas haloplanktis (from CIP),Cip,Y,,,Cip,GCA_000026085.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 50,D20-160050-4500T,"Croceibacter atlanticus ",atlcs,Y,,,atlcs,2526164557.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 51,D20-160051-4500T,"Pelagibacterium halotolerans ",B2,Same as B2China?,,,B2,GCA_000230555.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
@@ -37,11 +37,11 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 62,D20-160062-4500T,Serratia sp.,Ser,Same as serr?,,,Ser,2526164535.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 63,D20-160063-4500T,Escherichia coli MRE600,Mre,Same as MRE600?,,,Mre,2622736468.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 64,D20-160064-4500T,Rhodococcus erythropolis,eryth,Y,,,eryth,GCA_000010105.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-65,D20-160065-4500T,Kordia algicida Sohn et al. 2004,kordia,Y,,,kordia,GCF_000154725.1_ASM15472v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
-66,D20-160066-4500T,Pelagibaca bermudensis,bermu,Y,,,bermu,GCF_000153725.1_ASM15372v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
-67,D20-160067-4500T,Pseudobacteriovorax antillogorgiicola,Vorax,Y,,,Vorax,GCF_004346105.1_ASM434610v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
+65,D20-160065-4500T,Kordia algicida Sohn et al. 2004,kordia,Y,,,kordia,GCF_000154725.1_ASM15472v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
+66,D20-160066-4500T,Pelagibaca bermudensis,bermu,Y,,,bermu,GCF_000153725.1_ASM15372v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
+67,D20-160067-4500T,Pseudobacteriovorax antillogorgiicola,Vorax,Y,,,Vorax,GCF_004346105.1_ASM434610v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 68,D20-160068-4500T,Haliea salexigens DSM 19537,Salex,Y,,,Salex,2523533559.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 69,D20-160069-4500T,Simiduia agarivorans SA1 = DSM 21679,Simid,Y,,,Simid,2519103097.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
-70,D20-160070-4500T,Sulfitobacter pseudonitzschiae (Luca1),Nitsch,Same as nitzsch?,,,Nitsch,GCF_002222635.1_ASM222263v1_genomic.fna.gz,/projectnb/hfsp/IAMM_genomes_from_Luca
+70,D20-160070-4500T,Sulfitobacter pseudonitzschiae (Luca1),Nitsch,Same as nitzsch?,,,Nitsch,GCF_002222635.1_ASM222263v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 74,D20-160074-4500T,Echinicola vietnamensis,DSM 17526,,,,Evi17526,2509276020.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
 82,D20-160082-4500T,Sinorhizobium meliloti DSM 23913,23913,,,,23913,2597490345.fna,/projectnb/hfsp/IAMM_genomes_from_Luca
