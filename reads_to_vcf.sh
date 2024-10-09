@@ -53,6 +53,9 @@ run_analysis_pipeline() {
     # If the output files already exist and force_rerun is false, skip this sample
     if [ -f "$f_vcf" ] && [ ! $force_rerun ]; then
         echo "Output files already exist for $sample_name, skipping..."
+        # Add the results to the CSV file
+        gather_results_and_write_csv $sample_name $ref $trimmomatic_log $bam_file $depth_file $f_vcf
+        # Skip the rest of the processing for this sample
         continue
     fi
 
@@ -80,13 +83,6 @@ run_analysis_pipeline() {
         $trim_1 $trimu_1 $trim_2 $trimu_2 \
         ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
 
-    # Extract key statistics from the Trimmomatic log file
-    input_pairs=$(grep -oP '(?<=Input Read Pairs: )\d+' $trimmomatic_log)
-    surviving_pairs=$(grep -oP '(?<=Both Surviving: )\d+' $trimmomatic_log)
-    forward_surviving=$(grep -oP '(?<=Forward Only Surviving: )\d+' $trimmomatic_log)
-    reverse_surviving=$(grep -oP '(?<=Reverse Only Surviving: )\d+' $trimmomatic_log)
-    dropped_pairs=$(grep -oP '(?<=Dropped: )\d+' $trimmomatic_log)
-
     # Create an index for the reference genome
     # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
     bwa index $ref
@@ -100,27 +96,11 @@ run_analysis_pipeline() {
     # The BWA MEM algorithm aligns the paired-end reads ($trim_1 and $trim_2) to the reference genome ($ref) and produces alignments in the SAM (Sequence Alignment/Map) format.
     bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
 
-    # Get total, mapped, and unmapped reads
-    total_reads=$(samtools view -c $bam_file) # -c is the option that tells samtools view to count the total number of reads in the BAM file.
-    mapped_reads=$(samtools view -c -F 4 $bam_file) # -F 4 excludes reads that have the "unmapped" flag set (so it only counts mapped reads).
-    unmapped_reads=$(samtools view -c -f 4 $bam_file) # -f 4 includes only reads that have the "unmapped" flag set.
-
     # Sort the bam file by genomic coordinates and save the sorted output to a new file
     samtools sort $bam_file -o $sorted_bam_file
 
     # Get the coverage depth and save it to a file
     samtools depth -a $sorted_bam_file > $depth_file
-
-    # Calculate the average, minimum, and maximum coverage using awk
-    if [ -s $depth_file ]; then
-        avg_coverage=$(awk '{sum+=$3} END {if (NR>0) print sum/NR; else print 0}' $depth_file)
-        min_coverage=$(awk 'NR == 1 || $3 < min {min = $3} END {if (NR>0) print min; else print 0}' $depth_file)
-        max_coverage=$(awk 'NR == 1 || $3 > max {max = $3} END {if (NR>0) print max; else print 0}' $depth_file)
-    else
-        avg_coverage=0
-        min_coverage=0
-        max_coverage=0
-    fi
 
     # Generate a VCF file with bcftools
     # bcftools mpileup: Generates a pilup of reads aligned to a reference genome. The pileup format summarizes the base calls at each position of the reference genome, which is then used to detect variants (such as SNPs or indels).
@@ -145,11 +125,47 @@ run_analysis_pipeline() {
         # -v snps: Specifies that only SNPs should be retained in the output.
     bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
 
+    #  Append the sample name and results to the CSV file
+    gather_results_and_write_csv $sample_name $ref $trimmomatic_log $sorted_bam_file $depth_file $f_vcf
+}
+
+# Function to gather results and write to the CSV file
+gather_results_and_write_csv() {
+    local sample_name=$1
+    local ref=$2
+    local trimmomatic_log=$3
+    local bam_file=$4
+    local depth_file=$5
+    local f_vcf=$6
+
+    # Extract key statistics from the Trimmomatic log file
+    input_pairs=$(grep -oP '(?<=Input Read Pairs: )\d+' $trimmomatic_log)
+    surviving_pairs=$(grep -oP '(?<=Both Surviving: )\d+' $trimmomatic_log)
+    forward_surviving=$(grep -oP '(?<=Forward Only Surviving: )\d+' $trimmomatic_log)
+    reverse_surviving=$(grep -oP '(?<=Reverse Only Surviving: )\d+' $trimmomatic_log)
+    dropped_pairs=$(grep -oP '(?<=Dropped: )\d+' $trimmomatic_log)
+
+    # Get total, mapped, and unmapped reads
+    total_reads=$(samtools view -c $bam_file) # -c is the option that tells samtools view to count the total number of reads in the BAM file.
+    mapped_reads=$(samtools view -c -F 4 $bam_file) # -F 4 excludes reads that have the "unmapped" flag set (so it only counts mapped reads).
+    unmapped_reads=$(samtools view -c -f 4 $bam_file) # -f 4 includes only reads that have the "unmapped" flag set.
+
+    # Calculate coverage statistics
+    if [ -s $depth_file ]; then
+        avg_coverage=$(awk '{sum+=$3} END {if (NR>0) print sum/NR; else print 0}' $depth_file)
+        min_coverage=$(awk 'NR == 1 || $3 < min {min = $3} END {if (NR>0) print min; else print 0}' $depth_file)
+        max_coverage=$(awk 'NR == 1 || $3 > max {max = $3} END {if (NR>0) print max; else print 0}' $depth_file)
+    else
+        avg_coverage=0
+        min_coverage=0
+        max_coverage=0
+    fi
+
     # Get the number of SNPs in the filtered VCF file
     # -H option is used to suppress the header lines in the output, so only the SNP records are counted.
     snp_count=$(bcftools view -H $f_vcf | wc -l)
 
-    #  Append the sample name and results to the CSV file
+    # Append results to CSV
     echo "$sample_name,$ref,$input_pairs,$surviving_pairs,$forward_surviving,$reverse_surviving,$dropped_pairs,$total_reads,$mapped_reads,$unmapped_reads,$avg_coverage,$min_coverage,$max_coverage,$snp_count" >> $output_csv
 }
 
