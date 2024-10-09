@@ -50,83 +50,84 @@ run_analysis_pipeline() {
     vcf="$out_directory"/"$label".vcf
     f_vcf="$out_directory"/filtered_"$label".vcf
 
-    # If the output files already exist and force_rerun is false, skip this sample
-    if [ -f "$f_vcf" ] && [ ! $force_rerun ]; then
+    # If the output files already exist and force_rerun is false, skip this sample, but add the existing results to the summary table
+    if [ -f "$f_vcf" ] && [ fiforce_rerun ]; then
         echo "Output files already exist for $sample_name, skipping..."
         # Add the results to the CSV file
-        gather_results_and_write_csv $sample_name $ref $trimmomatic_log $bam_file $depth_file $f_vcf
-        # Skip the rest of the processing for this sample
-        continue
+        # gather_results_and_write_csv $sample_name $ref $trimmomatic_log $bam_file $depth_file $f_vcf
+        # Exit the function without running the rest of the processing for this sample
+        return
     fi
+    echo "Not finding a file for $sample_name"
 
-    ## Actually runnning tools
-    # Trimming
-    # trimmomatic PE: Invokes Trimmomatic in paired-end mode (PE). Paired-end mode means the tool is processing two files of paired sequencing reads (typically from two ends of a DNA fragment).
-    # -threads 10: Specifies the number of CPU threads to use for parallel processing. In this case, 10 threads are being used to speed up the trimming process.
-    # $read_1: The file containing the first set of paired-end reads (forward reads).
-    # $read_2: The file containing the second set of paired-end reads (reverse reads).
-    # $trim_1: The output file for the trimmed forward reads (surviving paired reads from the first file).
-    # $trimu_1: The output file for unpaired reads that were originally part of the forward reads but lost their pair during trimming.
-    # $trim_2: The output file for the trimmed reverse reads (surviving paired reads from the second file).
-    # $trimu_2: The output file for unpaired reads that were originally part of the reverse reads but lost their pair during trimming.
-    # ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE:
-        # ILLUMINACLIP: This is a specific step in Trimmomatic to clip (remove) adapter sequences from the reads. Adapters are sequences added to the ends of DNA fragments during library preparation and can interfere with downstream analysis.
-        # /usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa: Path to the adapter sequence file, which contains the adapter sequences that need to be clipped. In this case, the file is for NexteraPE adapters.
-        # 2:30:10:1:TRUE: These are parameters for the adapter clipping step:
-            # 2: Minimum number of seed mismatches to allow in adapter matching.
-            # 30: Palindrome clip threshold for identifying "adapter dimer" artifacts, where the forward and reverse adapters are ligated together.
-            # 10: Simple clip threshold; this is used to remove simple adapter sequences.
-            # 1: Minimum length of a match that will be clipped.
-            # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
-    # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
-    trimmomatic PE -threads 10 $read_1 $read_2 \
-        $trim_1 $trimu_1 $trim_2 $trimu_2 \
-        ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
+    # ## Actually runnning tools
+    # # Trimming
+    # # trimmomatic PE: Invokes Trimmomatic in paired-end mode (PE). Paired-end mode means the tool is processing two files of paired sequencing reads (typically from two ends of a DNA fragment).
+    # # -threads 10: Specifies the number of CPU threads to use for parallel processing. In this case, 10 threads are being used to speed up the trimming process.
+    # # $read_1: The file containing the first set of paired-end reads (forward reads).
+    # # $read_2: The file containing the second set of paired-end reads (reverse reads).
+    # # $trim_1: The output file for the trimmed forward reads (surviving paired reads from the first file).
+    # # $trimu_1: The output file for unpaired reads that were originally part of the forward reads but lost their pair during trimming.
+    # # $trim_2: The output file for the trimmed reverse reads (surviving paired reads from the second file).
+    # # $trimu_2: The output file for unpaired reads that were originally part of the reverse reads but lost their pair during trimming.
+    # # ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE:
+    #     # ILLUMINACLIP: This is a specific step in Trimmomatic to clip (remove) adapter sequences from the reads. Adapters are sequences added to the ends of DNA fragments during library preparation and can interfere with downstream analysis.
+    #     # /usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa: Path to the adapter sequence file, which contains the adapter sequences that need to be clipped. In this case, the file is for NexteraPE adapters.
+    #     # 2:30:10:1:TRUE: These are parameters for the adapter clipping step:
+    #         # 2: Minimum number of seed mismatches to allow in adapter matching.
+    #         # 30: Palindrome clip threshold for identifying "adapter dimer" artifacts, where the forward and reverse adapters are ligated together.
+    #         # 10: Simple clip threshold; this is used to remove simple adapter sequences.
+    #         # 1: Minimum length of a match that will be clipped.
+    #         # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
+    # # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
+    # trimmomatic PE -threads 10 $read_1 $read_2 \
+    #     $trim_1 $trimu_1 $trim_2 $trimu_2 \
+    #     ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
 
-    # Create an index for the reference genome
-    # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
-    bwa index $ref
+    # # Create an index for the reference genome
+    # # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
+    # bwa index $ref
 
-    # Use samtools to generate a FASTA index for the reference genome
-    # This will create a .fai file. This file contains the byte offsets and lengths of each sequence in the FASTA file, allowing for quick lookup of specific sequences.
-    # Indexing the reference genome is required for efficient random access to the genome's sequences. Many bioinformatics tools, including Samtools, BWA, and bcftools, use the .fai index file to quickly retrieve specific regions of the reference genome during tasks like read alignment or variant calling. Without the index, every operation would require reloading the entire genome into memory, which would be slow and inefficient for large genomes.
-    samtools faidx $ref
+    # # Use samtools to generate a FASTA index for the reference genome
+    # # This will create a .fai file. This file contains the byte offsets and lengths of each sequence in the FASTA file, allowing for quick lookup of specific sequences.
+    # # Indexing the reference genome is required for efficient random access to the genome's sequences. Many bioinformatics tools, including Samtools, BWA, and bcftools, use the .fai index file to quickly retrieve specific regions of the reference genome during tasks like read alignment or variant calling. Without the index, every operation would require reloading the entire genome into memory, which would be slow and inefficient for large genomes.
+    # samtools faidx $ref
 
-    # Align the reads with bwa and convert to a bam file using samtools
-    # The BWA MEM algorithm aligns the paired-end reads ($trim_1 and $trim_2) to the reference genome ($ref) and produces alignments in the SAM (Sequence Alignment/Map) format.
-    bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
+    # # Align the reads with bwa and convert to a bam file using samtools
+    # # The BWA MEM algorithm aligns the paired-end reads ($trim_1 and $trim_2) to the reference genome ($ref) and produces alignments in the SAM (Sequence Alignment/Map) format.
+    # bwa mem $ref $trim_1 $trim_2 | samtools view -S -b > $bam_file
 
-    # Sort the bam file by genomic coordinates and save the sorted output to a new file
-    samtools sort $bam_file -o $sorted_bam_file
+    # # Sort the bam file by genomic coordinates and save the sorted output to a new file
+    # samtools sort $bam_file -o $sorted_bam_file
 
-    # Get the coverage depth and save it to a file
-    samtools depth -a $sorted_bam_file > $depth_file
+    # # Get the coverage depth and save it to a file
+    # samtools depth -a $sorted_bam_file > $depth_file
 
-    # Generate a VCF file with bcftools
-    # bcftools mpileup: Generates a pilup of reads aligned to a reference genome. The pileup format summarizes the base calls at each position of the reference genome, which is then used to detect variants (such as SNPs or indels).
-        # -B: which is used to improve the accuracy of indel calling. If you remove this, the pileup will be faster but less accurate in detecting indels.
-        # -q: Filters out reads with a mapping quality lower than the given number (e.g. 30). Reads with low mapping quality are more likely to be incorrectly aligned, so this helps to reduce noise in the variant calling process.
-        # FIXME: Check what -g really is in the documentation. ChatGPT and copilot disagreed.
-        # -g: Specifies the maximum per-sample depth to use. This avoids excessive computation at positions with very high coverage (more than 50 reads at a single position).
-        # -Ou: Output the pileup in uncompressed BCF format, which is more efficient for piping into the next command (bcftools call).
-        # -f $ref: Specifies the reference genome file (FASTA format) that the reads are aligned to. The $ref variable points to the reference genome.
-    # bcftools call: Performs the variant calling
-        # --ploidy 1: Specifies that the organism is haploid (1 copy of each chromosome).
-        # -m: Use the multiallelic caller model. This model can call multiple alleles at the same position, which is useful for handling complex variants.
-        # FIXME: Check what -A really is in the documentation. ChatGPT and copilot disagreed.
-        # -A: Output all sites, including non-variant sites. This is useful for generating a complete VCF file with all positions in the reference genome.
-    bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
+    # # Generate a VCF file with bcftools
+    # # bcftools mpileup: Generates a pilup of reads aligned to a reference genome. The pileup format summarizes the base calls at each position of the reference genome, which is then used to detect variants (such as SNPs or indels).
+    #     # -B: which is used to improve the accuracy of indel calling. If you remove this, the pileup will be faster but less accurate in detecting indels.
+    #     # -q: Filters out reads with a mapping quality lower than the given number (e.g. 30). Reads with low mapping quality are more likely to be incorrectly aligned, so this helps to reduce noise in the variant calling process.
+    #     # FIXME: Check what -g really is in the documentation. ChatGPT and copilot disagreed.
+    #     # -g: Specifies the maximum per-sample depth to use. This avoids excessive computation at positions with very high coverage (more than 50 reads at a single position).
+    #     # -Ou: Output the pileup in uncompressed BCF format, which is more efficient for piping into the next command (bcftools call).
+    #     # -f $ref: Specifies the reference genome file (FASTA format) that the reads are aligned to. The $ref variable points to the reference genome.
+    # # bcftools call: Performs the variant calling
+    #     # --ploidy 1: Specifies that the organism is haploid (1 copy of each chromosome).
+    #     # -m: Use the multiallelic caller model. This model can call multiple alleles at the same position, which is useful for handling complex variants.
+    #     # FIXME: Check what -A really is in the documentation. ChatGPT and copilot disagreed.
+    #     # -A: Output all sites, including non-variant sites. This is useful for generating a complete VCF file with all positions in the reference genome.
+    # bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
-    # Filter the VCF file to remove low-quality variants and retain only SNPs
-    # bcftools filter: Filters the VCF file to remove variants marked as "LowQual"
-        # -s LowQual: Specifies the filter to apply. Variants marked as "LowQual" will be removed.
-        # bcftools view -v snps: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
-    # bcftools view: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
-        # -v snps: Specifies that only SNPs should be retained in the output.
-    bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
+    # # Filter the VCF file to remove low-quality variants and retain only SNPs
+    # # bcftools filter: Filters the VCF file to remove variants marked as "LowQual"
+    #     # -s LowQual: Specifies the filter to apply. Variants marked as "LowQual" will be removed.
+    #     # bcftools view -v snps: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
+    # # bcftools view: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
+    #     # -v snps: Specifies that only SNPs should be retained in the output.
+    # bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
 
-    #  Append the sample name and results to the CSV file
-    gather_results_and_write_csv $sample_name $ref $trimmomatic_log $sorted_bam_file $depth_file $f_vcf
+    # #  Append the sample name and results to the CSV file
+    # gather_results_and_write_csv $sample_name $ref $trimmomatic_log $sorted_bam_file $depth_file $f_vcf
 }
 
 # Function to gather results and write to the CSV file
