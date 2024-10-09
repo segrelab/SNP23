@@ -1,6 +1,6 @@
 sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source,dna_prep,ref_genome,path_to_ref,pos_cntrl_genome,pos_cntrl_genome_path,neg_cntrl_genome,neg_cntrl_genome_path
 27,D20-160027-4500T,"Alteromonas macleodii ",ATCC 27126 (alt),,,,AM27126,GCA_000172635.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-28,D20-160028-4500T,"Alteromonas macleodii ",Hot1A3,Y,,,Hot1A3,2687453488.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,GCA_000172635.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,D20-160028_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160028-4500T
+28,D20-160028-4500T,"Alteromonas macleodii ",Hot1A3,Y,,,Hot1A3,2687453488.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,GCA_000172635.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,D20-160028_assembly.fasta,/projectnb/hfsp/IAMM_genomes_from_Luca
 29,D20-160029-4500T,Alteromonas macleodii,BS11,Y,,,BS11,GCA_000299995.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 30,D20-160030-4500T,Alteromonas mediterraneae,DE1,Y,,,DE1,GCF_000310085.1_ASM31008v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 31,D20-160031-4500T,Alteromonas macleodii 'Aegean Sea MED64'  DSM 26499,26499,Y,,,26499,2545824627.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
