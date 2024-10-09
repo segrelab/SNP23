@@ -2,7 +2,7 @@ sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,rever
 D20-160027-4500T,/projectnb/hfsp/IAMM_genomes_from_Luca/GCA_000172635.fna,271862,271862,0,0,0,544994,541204,3790,18.4867,0,161,60469
 D20-160028-4500T,/projectnb/hfsp/IAMM_genomes_from_Luca/2687453488.fna,319108,319108,0,0,0,639597,639113,484,20.8849,0,105,61851
 D20-160028-4500T_pos_cntrl,/projectnb/hfsp/IAMM_genomes_from_Luca/GCA_000172635.fna,319108,319108,0,0,0,640761,544706,96055,18.1358,0,280,123584
-D20-160028-4500T_neg_cntrl,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160028-4500T/D20-160028_assembly.fasta,319108,319108,0,0,0,,,,0,0,0,0
+D20-160028-4500T_neg_cntrl,/projectnb/hfsp/IAMM_genomes_from_Luca/D20-160028_assembly.fasta,319108,319108,0,0,0,1160449,1158962,1487,29.838,0,2006,62132
 D20-160029-4500T,/projectnb/hfsp/IAMM_genomes_from_Luca/GCA_000299995.fna,285179,285179,0,0,0,570787,570001,786,21.6106,0,123,63864
 D20-160030-4500T,/projectnb/hfsp/IAMM_genomes_from_Luca/GCF_000310085.1_ASM31008v1_genomic.fna,296860,296860,0,0,0,594390,589618,4772,19.5278,0,106,66755
 D20-160031-4500T,/projectnb/hfsp/IAMM_genomes_from_Luca/2545824627.fna,318473,318473,0,0,0,637737,610371,27366,23.1094,0,267,79157
