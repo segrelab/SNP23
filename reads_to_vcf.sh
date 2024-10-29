@@ -121,7 +121,7 @@ run_analysis_pipeline() {
     # bcftools view: View, subset and filter VCF or BCF files by position and filtering expression.
         # -i (--include): Include only sites for which the following expression is true.
             # '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5': This expression filters the VCF file to include only sites where the frequency of the alternate allele is at least 50% (i.e., the alternate allele is present in at least half of the reads at that position) and the total depth of coverage is at least 5 reads.
-                # DP4 is a field in VCF files that contains the read depths for each of four categories:
+                # DP4 is a field in VCF files that contains the high-quality read depths for each of four categories:
                     # DP4[0]: Reference reads on the forward strand.
                     # DP4[1]: Reference reads on the reverse strand.
                     # DP4[2]: Alternate reads on the forward strand.
