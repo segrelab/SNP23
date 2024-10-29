@@ -3,7 +3,7 @@
 #$ -j y             # Merge the error and output streams into a single file
 #$ -P hfsp          # Specify the SCC project name you want to use
 #$ -N reads_to_vcf  # Give your job a name
-#$ -pe omp 10       # Request multiple slots for the Shared Memory application (OpenMP)
+#$ -pe omp 5       # Request multiple slots for the Shared Memory application (OpenMP)
 
 module load bwa/0.7.17 
 module load samtools
