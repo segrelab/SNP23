@@ -131,7 +131,7 @@ run_analysis_pipeline() {
                 # (DP4[2] + DP4[3]) / sum(DP4) >= 0.5  keeps only variants where at least 50% of the total reads support the alternate allele.
                 # sum(DP4) >= 5 ensures that the total depth of coverage is at least 5 reads.
     # TODO: Does this keep only SNPs?
-    bcftools view -i '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5' > $f_vcf
+    bcftools view -i '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5' $vcf > $f_vcf
 
     #  Append the sample name and results to the CSV file
     gather_results_and_write_csv $sample_name $ref $trimmomatic_log $sorted_bam_file $depth_file $f_vcf
