@@ -118,8 +118,19 @@ run_analysis_pipeline() {
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
     # Filter the VCF file for all variants with a frequency of at least 50% at a given position
+    # bcftools view: View, subset and filter VCF or BCF files by position and filtering expression.
+        # -i (--include): Include only sites for which the following expression is true.
+            # '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5': This expression filters the VCF file to include only sites where the frequency of the alternate allele is at least 50% (i.e., the alternate allele is present in at least half of the reads at that position) and the total depth of coverage is at least 5 reads.
+                # DP4 is a field in VCF files that contains the read depths for each of four categories:
+                    # DP4[0]: Reference reads on the forward strand.
+                    # DP4[1]: Reference reads on the reverse strand.
+                    # DP4[2]: Alternate reads on the forward strand.
+                    # DP4[3]: Alternate reads on the reverse strand.
+                # DP4[2] + DP4[3] calculates the total number of reads supporting the alternate allele (both forward and reverse strands).
+                # sum(DP4) calculates the total depth of coverage at a given position, including both reference and alternate reads.
+                # (DP4[2] + DP4[3]) / sum(DP4) >= 0.5  keeps only variants where at least 50% of the total reads support the alternate allele.
+                # sum(DP4) >= 5 ensures that the total depth of coverage is at least 5 reads.
     # TODO: Does this keep only SNPs?
-    # TODO: What does DP4 mean?
     bcftools view -i '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5' > $f_vcf
 
     #  Append the sample name and results to the CSV file
