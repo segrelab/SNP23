@@ -21,7 +21,7 @@ output_csv="results/summary.csv"
 echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs" > $output_csv
 
 # Set a variable of if you want to rerun the analysis
-force_rerun=false
+force_rerun=true
 
 # Function to run the analysis pipeline (from timming to variant calling)
 run_analysis_pipeline() {
@@ -117,13 +117,10 @@ run_analysis_pipeline() {
         # -A: Output all sites, including non-variant sites. This is useful for generating a complete VCF file with all positions in the reference genome.
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
-    # Filter the VCF file to remove low-quality variants and retain only SNPs
-    # bcftools filter: Filters the VCF file to remove variants marked as "LowQual"
-        # -s LowQual: Specifies the filter to apply. Variants marked as "LowQual" will be removed.
-        # bcftools view -v snps: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
-    # bcftools view: Filters the VCF file to retain only SNPs (single nucleotide polymorphisms).
-        # -v snps: Specifies that only SNPs should be retained in the output.
-    bcftools filter -s LowQual $vcf | bcftools view -v snps > $f_vcf
+    # Filter the VCF file for all variants with a frequency of at least 50% at a given position
+    # TODO: Does this keep only SNPs?
+    # TODO: What does DP4 mean?
+    bcftools view -i '(DP4[2]+DP4[3])/sum(DP4) >= 0.5 & sum(DP4)>=5' > $f_vcf
 
     #  Append the sample name and results to the CSV file
     gather_results_and_write_csv $sample_name $ref $trimmomatic_log $sorted_bam_file $depth_file $f_vcf
