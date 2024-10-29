@@ -51,7 +51,7 @@ run_analysis_pipeline() {
     f_vcf="$out_directory"/filtered_"$label".vcf
 
     # If the output files already exist and force_rerun is false, skip this sample, but add the existing results to the summary table
-    if [ -f "$f_vcf" ] && [ fiforce_rerun ]; then
+    if [ -f "$f_vcf" ] && [ $force_rerun = false ]; then
         echo "Output files already exist for $sample_name, skipping..."
         # Add the results to the CSV file
         gather_results_and_write_csv $sample_name $ref $trimmomatic_log $bam_file $depth_file $f_vcf
