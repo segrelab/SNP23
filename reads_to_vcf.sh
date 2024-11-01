@@ -71,17 +71,16 @@ run_analysis_pipeline() {
     # $trimu_2: The output file for unpaired reads that were originally part of the reverse reads but lost their pair during trimming.
     # ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE:
         # ILLUMINACLIP: This is a specific step in Trimmomatic to clip (remove) adapter sequences from the reads. Adapters are sequences added to the ends of DNA fragments during library preparation and can interfere with downstream analysis.
-        # /usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa: Path to the adapter sequence file, which contains the adapter sequences that need to be clipped. In this case, the file is for NexteraPE adapters.
+        # /share/pkg/trimmomatic/0.36/src/Trimmomatic-0.36/adapters/NexteraPE-PE.fa: Path to the adapter sequence file, which contains the adapter sequences that need to be clipped. In this case, the file is for NexteraPE adapters.
         # 2:30:10:1:TRUE: These are parameters for the adapter clipping step:
             # 2: Minimum number of seed mismatches to allow in adapter matching.
             # 30: Palindrome clip threshold for identifying "adapter dimer" artifacts, where the forward and reverse adapters are ligated together.
             # 10: Simple clip threshold; this is used to remove simple adapter sequences.
             # 1: Minimum length of a match that will be clipped.
             # TRUE: Specifies that the reads should be clipped only if both reads (forward and reverse) contain adapters.
-    # FIXME: The file usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa is not found
     trimmomatic PE -threads 10 $read_1 $read_2 \
         $trim_1 $trimu_1 $trim_2 $trimu_2 \
-        ILLUMINACLIP:/usr4/bf527/smit2/.conda/pkgs/trimmomatic-0.39-1/share/trimmomatic/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
+        ILLUMINACLIP:/share/pkg/trimmomatic/0.36/src/Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10:1:TRUE 2> $trimmomatic_log
 
     # Create an index for the reference genome
     # When you run bwa index, BWA will create several index files, typically with extensions like .amb, .ann, .bwt, .pac, and .sa. These files are saved in the same directory as the reference genome and are used in the alignment step to map sequencing reads to the reference.
