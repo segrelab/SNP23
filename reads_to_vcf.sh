@@ -1,6 +1,7 @@
 #!/bin/bash -l
 #$ -l h_rt=75:00:00 # Specify the hard time limit for the job
 #$ -j y             # Merge the error and output streams into a single file
+#$ -o reads_to_vcf.out # Specify the output file
 #$ -P hfsp          # Specify the SCC project name you want to use
 #$ -N reads_to_vcf  # Give your job a name
 #$ -pe omp 5       # Request multiple slots for the Shared Memory application (OpenMP)
