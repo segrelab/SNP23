@@ -113,8 +113,7 @@ run_analysis_pipeline() {
     # bcftools call: Performs the variant calling
         # --ploidy 1: Specifies that the organism is haploid (1 copy of each chromosome).
         # -m: Use the multiallelic caller model. This model can call multiple alleles at the same position, which is useful for handling complex variants.
-        # FIXME: Check what -A really is in the documentation. ChatGPT and copilot disagreed.
-        # -A: Output all sites, including non-variant sites. This is useful for generating a complete VCF file with all positions in the reference genome.
+        # -A (--keep-alts): Output all alternate alleles present in the alignments even if they do not appear in any of the genotypes
     bcftools mpileup -B -q 30 -g 50 -Ou -f $ref $sorted_bam_file | bcftools call --ploidy 1 -m -A > $vcf
 
     # Filter the VCF file for all variants with a frequency of at least 50% at a given position
