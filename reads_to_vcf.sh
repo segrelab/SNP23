@@ -24,7 +24,7 @@ echo "sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving
 # Set a variable of if you want to rerun the analysis
 force_rerun=false
 
-# Function to run the analysis pipeline (from timming to variant calling)
+# Function to run the analysis pipeline (from trimming to variant calling)
 run_analysis_pipeline() {
     local sample_name=$1
     local label=$2
@@ -60,7 +60,7 @@ run_analysis_pipeline() {
         return
     fi
     
-    ## Actually runnning tools
+    ## Actually running tools
     # Trimming
     # trimmomatic PE: Invokes Trimmomatic in paired-end mode (PE). Paired-end mode means the tool is processing two files of paired sequencing reads (typically from two ends of a DNA fragment).
     # -threads 10: Specifies the number of CPU threads to use for parallel processing. In this case, 10 threads are being used to speed up the trimming process.
