@@ -235,6 +235,9 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         neg_cntrl_directory="results/raw_files/$sample_name/controls/negative_control"
 
         mkdir -p "$neg_cntrl_directory"
+        echo "Running analysis pipeline for negative control:"
+        echo $neg_cntrl_directory
+        echo $neg_cntrl_ref
         run_analysis_pipeline "${sample_name}_neg_cntrl" "$label" "$neg_cntrl_ref" "$directory" "$neg_cntrl_directory"
     fi
 
