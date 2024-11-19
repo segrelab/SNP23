@@ -5,20 +5,20 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 30,D20-160030-4500T,Alteromonas mediterraneae,DE1,Y,,,DE1,GCF_000310085.1_ASM31008v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 31,D20-160031-4500T,Alteromonas macleodii 'Aegean Sea MED64'  DSM 26499,26499,Y,,,26499,2545824627.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 32,D20-160032-4500T,Arenibacter algicola strain SMS7,SMS7,,,,SMS7,Arenibacter_algicola_SMS7.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-33,D20-160033-4500T,Loktanella vestfoldensis,Luca5,,,,Luka5,Loktanella_vestfoldensis_SMR4r.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
+33,D20-160033-4500T,Loktanella vestfoldensis,Luca5,,,,Luka5,Loktanella_vestfoldensis_SMR4r.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,D20-160033_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160033-4500T
 34,D20-160034-4500T,Brevundimonas diminuta,Bdim,Y,,,Bdim,GCF_004102925.1_ASM410292v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 35,D20-160035-4500T,Dinoroseobacter shibae,DFL12,Y,,,DFL12,GCA_000018145.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 36,D20-160036-4500T,Gramella forsetii,FORS,Y,,,FORS,GCA_000060345.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 37,D20-160037-4500T,Marinobacter adhaerens,HP15,Y,,,HP15,650377991.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 38,D20-160038-4500T,Marinomonas mediterranea,MMB1,Y,,,MMB1,2506210002.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
+39,D20-160039-4500T,Pseudoalteromonas citrea,Citrea,Y,,,Citrea,GCF_000238375.3_ASM23837v4_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,D20-160039_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160039-4500T
 40,D20-160040-4500T,Rhodobacter sphaeroides,RSpher,Y,,,RSpher,GCF_000012905.2_ASM1290v2_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 41,D20-160041-4500T,Roseovarius mucosus (Luca2),Roseo,Y,,,Roseo,Roseovarius_mucosus_SMR3.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-42,D20-160042-4500T,"Ruegeria pomeroyi ",DSS-3,Y,,,DSS-3,GCA_000011965.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
+42,D20-160042-4500T,"Ruegeria pomeroyi ",DSS-3,Y,,,DSS-3,GCA_000011965.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,D20-160042_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160042-4500T
 43,D20-160043-4500T,"Shewanella woodyi ",Woodyi,Y,,,Woodyi,GCA_000019525.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 44,D20-160044-4500T,Sphingorhabdus flavimaris,SMR4y,,,,SMR4y,Sphingorhabdus_flavimaris_SMR4y.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 45,D20-160045-4500T,"Sulfitobacter pseudonitzschiae ",SMR1,,,,SMR1,Sulfitobacter_pseudonitzschiae_SMR1.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-46,D20-160046-4500T,Vibrio natriegens,Vnat,Y,,,Vnat,GCF_001456255.1_ASM145625v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
+46,D20-160046-4500T,Vibrio natriegens,Vnat,Y,,,Vnat,GCF_001456255.1_ASM145625v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,D20-160046_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160046-4500T
 48,D20-160048-4500T,Algoriphagus machipongonensis,Pr1red,Y,,,Pr1r,GCF_000166275.1_ASM16627v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 49,D20-160049-4500T,Pseudoalteromonas haloplanktis (from CIP),Cip,Y,,,Cip,GCA_000026085.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 50,D20-160050-4500T,"Croceibacter atlanticus ",atlcs,Y,,,atlcs,2526164557.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
@@ -26,7 +26,7 @@ sample_number,sample_name,species_name,strain_id,in_IAMM,accession_number,source
 52,D20-160052-4500T,"Phaeobacter gallaeciensis ",Pga11,Same as Pgall?,,,Pga11,GCA_000511385.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 53,D20-160053-4500T,"Pseudoalteromonas atlantica ",T6C,Y,,,T6C,2606217322.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 54,D20-160054-4500T,"Pseudoalteromonas haloplanktis ",Phalo,Y,,,Phalo,GCA_000230555.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
-55,D20-160055-4500T,"Shewanella baltica ",Shew,Same as shewden?,,,Shew,GCF_000015845.1_ASM1584v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
+55,D20-160055-4500T,"Shewanella baltica ",Shew,Same as shewden?,,,Shew,GCF_000015845.1_ASM1584v1_genomic.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,D20-160055_assembly.fasta,/projectnb/hfsp/SNP23/krupa/assembled_genomes/D20-160055-4500T
 56,D20-160056-4500T,Alcanivorax dieselolei,Dies,Y,,,Dies,GCA_000300005.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 57,D20-160057-4500T,Halobacillus kuroshimensis,Kuro,Y,,,Kuro,2523533634.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
 58,D20-160058-4500T,Corynebacterium stationis,Cstat,Y,,,Cstat,2623620535.fna,/projectnb/hfsp/IAMM_genomes_from_Luca,,,,
