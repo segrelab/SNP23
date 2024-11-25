@@ -1,0 +1,2 @@
+sample_name,reference_genome,input_pairs,surviving_pairs,forward_surviving,reverse_surviving,dropped_pairs,total_reads,mapped_reads,unmapped_reads,avg_coverage,min_coverage,max_coverage,SNPs
+/projectnb/hfsp/SNP23/M_mycoides_test_reads/CP014940.1.fasta,NONE,NA,NA,NA,NA,NA,,,,0.015625,,using,0

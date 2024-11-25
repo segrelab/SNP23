@@ -1,2 +1,6 @@
 krupa/*
 results/raw_files/*
+
+M_mycoides_test_reads/*.fastq
+M_mycoides_test_reads/*.fasta*
+M_mycoides_test_reads/raw_results/M_mycoides*
