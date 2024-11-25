@@ -197,7 +197,7 @@ while IFS=, read -r sample_number sample_name species_name strain_id in_IAMM acc
         continue
     fi
 
-    # Create a single varaible for the refernece genome path and file name
+    # Create a single variable for the reference genome path and file name
     ref="${ref_path_trimmed}/${ref_genome_trimmed}"
 
     # Check that the reference genome file exists
