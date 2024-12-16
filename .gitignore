@@ -4,3 +4,12 @@ results/raw_files/*
 M_mycoides_test_reads/*.fastq
 M_mycoides_test_reads/*.fasta*
 M_mycoides_test_reads/raw_results/M_mycoides*
+
+breseq_test/01-HOT1A3_genbank_read1/*
+breseq_test/02-HOT1A3_genbank_read2/*
+breseq_test/03-HOT1A3_genbank_both_reads/*
+breseq_test/04-HOT1A3_fast_both_reads/*
+breseq_test/HOT1A3_genbak_Daniel/*
+
+
+envs/*
