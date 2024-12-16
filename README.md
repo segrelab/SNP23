@@ -7,3 +7,10 @@
 
 ## 🔗 Useful Links:
 Shared Notes on Google Drive: https://drive.google.com/drive/folders/1ZNowof5NB3n_OAjHu4QRoAtlrP9T6WHK?usp=drive_link
+
+## For the Boston University Community: Running on the BU SCC
+Breseq is insalled on the BU SCC, along with all of the dependencies to run this pipeline. To activate the conda environment with these tools, run:
+```
+module load miniconda
+conda activate /projectnb/hfsp/SNP23/envs/brese
+```
