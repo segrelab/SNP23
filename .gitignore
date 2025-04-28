@@ -9,7 +9,19 @@ breseq_test/01-HOT1A3_genbank_read1/*
 breseq_test/02-HOT1A3_genbank_read2/*
 breseq_test/03-HOT1A3_genbank_both_reads/*
 breseq_test/04-HOT1A3_fast_both_reads/*
+breseq_test/05-HOT1A3_neg_cntrl/*
+breseq_test/06-Luca5_neg_ctrl/*
+breseq_test/07-citrea_neg_ctrl/*
+breseq_test/08-dss3_neg_ctrl/*
+breseq_test/09-hot1a3-plasmidsaurus/*
+breseq_test/10-hot5_e6-plasmidsaurus/*
+breseq_test/11-hot1a3-plasmidsaurus-neg-cntrl/*
+breseq_test/12-hot5_e6-plasmidsaurus-neg-cntrl/*
+breseq_test/13-hot5_e6-plasmidsaurus-gbk/*
 breseq_test/HOT1A3_genbak_Daniel/*
+breseq_test/breseq_test/05-HOT1A3_neg_cntrl/*
+breseq_test/breseq_test/09-hot1a3-plasmidsaurus/*
 
 
 envs/*
+
