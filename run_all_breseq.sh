@@ -61,7 +61,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     out_dir="breseq_results/raw_files/${plasmidsaurus_id}"
 
     # Run the breseq for the current sample
-    breseq -r $ref -o $out_dir $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz
+    breseq -r $ref -o $out_dir $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
 
     # # Process positive control if present
     #  if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_path" ]; then
