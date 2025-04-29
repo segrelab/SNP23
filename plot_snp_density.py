@@ -89,6 +89,6 @@ plt.title("SNP Density Heatmap")
 plt.tight_layout()
 
 # Save
-plot_path = os.path.join(PLOT_DIR, "snp_density_heatmap.png")
+plot_path = os.path.join(PLOT_DIR, "snp_density.png")
 plt.savefig(plot_path)
 plt.close()
