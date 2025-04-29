@@ -114,6 +114,10 @@ sns.heatmap(
     mask=heatmap_df.isna(),  # Mask NaN values to make them white
     )
 
+# Only plot X-ticks for the megabase positions
+xticks = np.arange(0, len(heatmap_df.columns), 100)
+plt.xticks(xticks, [f"{int(x * BIN_SIZE / 1e6)} Mb" for x in xticks], rotation=45)
+
 plt.xlabel("Genomic Bin Start Position (bp)")
 plt.ylabel("Sample")
 plt.title("SNP Density Heatmap")
