@@ -9,7 +9,7 @@ from collections import defaultdict
 
 # PARAMETERS
 VCF_GLOB = "breseq_results/raw_files/*/output/*.vcf"  # adjust if needed
-BIN_SIZE = 1000  # bp window size for SNP density
+BIN_SIZE = 10000  # bp window size for SNP density
 PLOT_DIR = "breseq_results/plots"
 
 os.makedirs(PLOT_DIR, exist_ok=True)
@@ -52,7 +52,6 @@ def bin_positions(positions, bin_size):
 all_samples = glob.glob(VCF_GLOB)
 print(f"Found {len(all_samples)} VCF files.")
 
-all_bins = set()
 snp_matrix = {}
 gen_lengths = {}
 
@@ -73,11 +72,13 @@ for vcf_file in all_samples:
     positions, gen_length = parse_vcf(vcf_file)
     bins = bin_positions(positions, BIN_SIZE)
 
-    all_bins.update(bins.keys())
     snp_matrix[sample_name] = bins
     gen_lengths[sample_name] = gen_length
 
-# Create a sorted list of all bin starts
+# Create a sorted list of all possible bin starts
+# Get the list of all possible bin starts from the length of the longest genome
+all_bins = set()
+all_bins.update(range(0, max(gen_lengths.values())+1, BIN_SIZE))
 all_bins_sorted = sorted(all_bins)
 
 # Create a dataframe with samples as rows, bins as columns
