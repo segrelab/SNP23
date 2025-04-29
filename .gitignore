@@ -24,4 +24,6 @@ breseq_test/breseq_test/09-hot1a3-plasmidsaurus/*
 
 
 envs/*
-
+.vscode/*
+breseq_results/raw_files/*
+*.out
