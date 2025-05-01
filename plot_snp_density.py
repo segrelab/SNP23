@@ -16,30 +16,30 @@ os.makedirs(PLOT_DIR, exist_ok=True)
 
 # Read the VCF file and extract the genome length and the position of all SNPs
 def parse_vcf(vcf_file):
-    positions = []
+    contigs = {}
+    current_contig = None
+
     with open(vcf_file, 'r') as f:
-        contigs_found = False
         for line in f:
             if line.startswith('#'):
-                # Search for the header line to get the length of the genome
+                # Parse contig metadata from the header
                 if line.startswith('##contig'):
-                    # If there are multiple contigs, throw an error
-                    if contigs_found:
-                        raise ValueError("Multiple contigs found in VCF file.")
-                        # TODO: Handle this case
-                    # Mark when a contig line is found, so we can track if there are multiple
-                    contigs_found = True
-                    # Extract the genome length from the header
-                    # We are assuming header line looks like:
-                    # ##contig=<ID=NEIAMEAH_1,length=4653851>
-                    # So first split on the coma, and then on the equal sign and remove the ">"
                     line_parts = line.strip().split(',')
-                    gen_length = int(line_parts[1].split('=')[1][:-1])
-                continue  # skip headers
+                    contig_id = line_parts[0].split('ID=')[1]  # Extract contig ID
+                    contig_length = int(line_parts[1].split('length=')[1][:-1])  # Extract contig length
+                    contigs[contig_id] = {'length': contig_length, 'positions': []}
+                continue  # Skip other header lines
+
+            # Parse SNP entries
             parts = line.strip().split('\t')
-            pos = int(parts[1])  # 2nd column is POS
-            positions.append(pos)
-    return positions, gen_length
+            chrom = parts[0]  # CHROM column
+            pos = int(parts[1])  # POS column
+
+            # Add SNP position to the correct contig
+            if chrom in contigs:
+                contigs[chrom]['positions'].append(pos)
+
+    return contigs
 
 def bin_positions(positions, bin_size):
     bins = defaultdict(int)
@@ -60,20 +60,18 @@ for vcf_file in all_samples:
     sample_name = vcf_file.split(os.sep)[2]  # "TKDHS4_23_S55"
     print(f"Processing {sample_name}")
 
-    # Harcode skipping samples with multiple contigs, until I figure out how to handle them
-    if sample_name not in ["B9NRXP_1_S105",
-                          "B9NRXP_2_S106",
-                          "TKDHS4_5_S37",
-                          "TKDHS4_19_S51",
-                          "TKDHS4_22_S54"]:
-        print(f"Skipping {sample_name} due to multiple contigs.")
-        continue
+    contigs = parse_vcf(vcf_file)
 
-    positions, gen_length = parse_vcf(vcf_file)
-    bins = bin_positions(positions, BIN_SIZE)
+    for contig in contigs:
+        positions = contigs[contig]['positions']
+        gen_length = contigs[contig]['length']
 
-    snp_matrix[sample_name] = bins
-    gen_lengths[sample_name] = gen_length
+        # Bin the SNP positions
+        bins = bin_positions(positions, BIN_SIZE)
+
+        # Add the binned SNP counts to the matrix
+        snp_matrix[sample_name + "_" + contig] = bins
+        gen_lengths[sample_name + "_" + contig] = gen_length
 
 # Create a sorted list of all possible bin starts
 # Get the list of all possible bin starts from the length of the longest genome
