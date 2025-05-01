@@ -107,12 +107,16 @@ custom_cmap = mcolors.ListedColormap(new_colors)
 
 # Plot heatmap
 plt.figure(figsize=(20, len(heatmap_df) * 0.5))
-sns.heatmap(
+ax = sns.heatmap(
     heatmap_df,
     cmap=custom_cmap,
     cbar_kws={'label': 'SNP Count'},
-    mask=heatmap_df.isna(),  # Mask NaN values to make them white
+    mask=heatmap_df.isna(),  # Mask NaN values to make them white,
     )
+
+# Add white lines between rows
+for y in range(1, heatmap_df.shape[0]):  # Iterate over row indices
+    ax.hlines(y=y, xmin=0, xmax=heatmap_df.shape[1], color='white', linewidth=2)
 
 # Only plot X-ticks for the megabase positions
 xticks = np.arange(0, len(heatmap_df.columns), 100)
