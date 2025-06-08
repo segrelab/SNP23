@@ -60,38 +60,30 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     sample_name=$(echo "$plasmidsaurus_id" | cut -d'_' -f1-2)
 
     # Get the directory to the raw results
-    # TODO: Make this a variable that I set at the top of the script
     in_dir=/projectnb/hfsp/Plasmidsaurus25/archive/${batch}_polished_results/${sample_name}_polish
 
     # Set the directiory for the results
     out_dir="breseq_results/raw_files/${strain_id}"
 
     # Run the breseq for the current sample
-    breseq -r $ref -o $out_dir $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
+    breseq -r $ref -o ${out_dir}/plasmidsaurus_vs_ref $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
 
-    # # Process positive control if present
-    #  if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_path" ]; then
-    #     pos_cntrl_path_trimmed=$(echo "$pos_cntrl_path" | xargs | tr -d '\r')
-    #     pos_cntrl_genome_trimmed=$(echo "$pos_cntrl_genome" | xargs | tr -d '\r')
-    #     pos_cntrl_ref="${pos_cntrl_path_trimmed}/${pos_cntrl_genome_trimmed}"
-    #     pos_cntrl_directory="results/raw_files/$sample_name/controls/positive_control"  # TODO: Make this a variable that I set at the top of the script
+    # Process positive control if present
+     if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_path" ]; then
+        pos_cntrl_path_trimmed=$(echo "$pos_cntrl_path" | xargs | tr -d '\r')
+        pos_cntrl_genome_trimmed=$(echo "$pos_cntrl_genome" | xargs | tr -d '\r')
+        pos_cntrl_ref="${pos_cntrl_path_trimmed}/${pos_cntrl_genome_trimmed}"
 
-    #     mkdir -p "$pos_cntrl_directory"
-    #     run_analysis_pipeline "${sample_name}_pos_cntrl" "$label" "$pos_cntrl_ref" "$directory" "$pos_cntrl_directory"
-    # fi
+        breseq -r $pos_cntrl_ref -o ${out_dir}/pos_cntrl $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
+    fi
 
-    # # Process negative control if present
-    # if [ -n "$neg_cntrl_genome" ] && [ -n "$neg_cntrl_path" ]; then
-    #     neg_cntrl_path_trimmed=$(echo "$neg_cntrl_path" | xargs | tr -d '\r')
-    #     neg_cntrl_genome_trimmed=$(echo "$neg_cntrl_genome" | xargs | tr -d '\r')
-    #     neg_cntrl_ref="${neg_cntrl_path_trimmed}/${neg_cntrl_genome_trimmed}"
-    #     neg_cntrl_directory="results/raw_files/$sample_name/controls/negative_control"
+    # Process negative control if present
+    if [ -n "$neg_cntrl_genome" ] && [ -n "$neg_cntrl_path" ]; then
+        neg_cntrl_path_trimmed=$(echo "$neg_cntrl_path" | xargs | tr -d '\r')
+        neg_cntrl_genome_trimmed=$(echo "$neg_cntrl_genome" | xargs | tr -d '\r')
+        neg_cntrl_ref="${neg_cntrl_path_trimmed}/${neg_cntrl_genome_trimmed}"
 
-    #     mkdir -p "$neg_cntrl_directory"
-    #     echo "Running analysis pipeline for negative control:"
-    #     echo $neg_cntrl_directory
-    #     echo $neg_cntrl_ref
-    #     run_analysis_pipeline "${sample_name}_neg_cntrl" "$label" "$neg_cntrl_ref" "$directory" "$neg_cntrl_directory"
-    # fi
+        breseq -r $neg_cntrl_ref -o ${out_dir}/neg_cntrl $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
+    fi
 
 done < "$input_fi"
