@@ -25,6 +25,12 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
         continue
     fi
 
+    # Skip if there is no plasmidsaurus_id
+    if [ -z "$plasmidsaurus_id" ]; then
+        echo "Skipping sample with empty plasmidsaurus_id"
+        continue
+    fi
+
     # Trim any leading/trailing whitespace including special characters
     ref_path_trimmed=$(echo "$path_to_gbk" | xargs | tr -d '\r')
     ref_genome_trimmed=$(echo "$gbk_ref_genome" | xargs | tr -d '\r')
@@ -58,7 +64,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     in_dir=/projectnb/hfsp/Plasmidsaurus25/archive/${batch}_polished_results/${sample_name}_polish
 
     # Set the directiory for the results
-    out_dir="breseq_results/raw_files/${plasmidsaurus_id}"
+    out_dir="breseq_results/raw_files/${strain_id}"
 
     # Run the breseq for the current sample
     breseq -r $ref -o $out_dir $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
