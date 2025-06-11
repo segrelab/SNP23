@@ -48,7 +48,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
 
     # Check that the reference genome file exists
     if [ ! -f "$ref" ]; then
-        echo "Reference genome file not found for $plasmidsaurus_id: $ref"
+        echo "Reference genome file not found for $strain_id: $ref"
         continue
     fi
 
@@ -69,7 +69,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     breseq -r $ref -o ${out_dir}/plasmidsaurus_vs_ref $in_dir/${plasmidsaurus_id}_R1_001.fastq.gz $in_dir/${plasmidsaurus_id}_R2_001.fastq.gz
 
     # Process positive control if present
-     if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_path" ]; then
+    if [ -n "$pos_cntrl_genome" ] && [ -n "$pos_cntrl_genome_path" ]; then
         pos_cntrl_path_trimmed=$(echo "$pos_cntrl_path" | xargs | tr -d '\r')
         pos_cntrl_genome_trimmed=$(echo "$pos_cntrl_genome" | xargs | tr -d '\r')
         pos_cntrl_ref="${pos_cntrl_path_trimmed}/${pos_cntrl_genome_trimmed}"
@@ -78,7 +78,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     fi
 
     # Process negative control if present
-    if [ -n "$neg_cntrl_genome" ] && [ -n "$neg_cntrl_path" ]; then
+    if [ -n "$neg_cntrl_genome" ] && [ -n "$neg_cntrl_genome_path" ]; then
         neg_cntrl_path_trimmed=$(echo "$neg_cntrl_path" | xargs | tr -d '\r')
         neg_cntrl_genome_trimmed=$(echo "$neg_cntrl_genome" | xargs | tr -d '\r')
         neg_cntrl_ref="${neg_cntrl_path_trimmed}/${neg_cntrl_genome_trimmed}"
