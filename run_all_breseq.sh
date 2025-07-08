@@ -1,46 +1,51 @@
 #!/bin/bash -l
-#$ -l h_rt=75:00:00 # Specify the hard time limit for the job
-#$ -j y             # Merge the error and output streams into a single file
-#$ -o run_all_breseq.out # Specify the output file
-#$ -P hfsp          # Specify the SCC project name you want to use
-#$ -N breseq  # Give your job a name
-#$ -pe omp 8       # Request multiple slots for the Shared Memory application (OpenMP)
+#$ -l h_rt=75:00:00                 # Specify the hard time limit for the job
+#$ -j y                             # Merge the error and output streams into a single file
+#$ -o run_all_breseq.$JOB_ID.out    # Specify the output file
+#$ -P hfsp                          # Specify the SCC project name you want to use
+#$ -N breseq                        # Give your job a name
+#$ -pe omp 8                       # Request multiple slots for the Shared Memory application (OpenMP)
 
 module load parallel  # To use GNU parallel for running multiple jobs in parallel
 module load miniconda
 conda activate /projectnb/hfsp/SNP23/envs/breseq
 
+# Set the path to the reference genome directory
+ref_path_trimmed="/projectnb/hfsp/IAMM_reference_files/prokka_results"
+
+# Merge the plasmidsuarus metafile with the iamm reference genomes metafile
+# python3 merge_metafiles.py
+
 # Set the path to the metafile
-input_fi="plasmidsaurus_metafile.csv"
+input_fi="/projectnb/hfsp/SNP23/breseq_results/merged_metafiles.csv"
 skip_first_row=true # A flag to skip the first row, set to false if the column names are not included in the metafile
 
 # Set a variable of if you want to rerun the analysis
-force_rerun=false
+force_rerun=true
 
 # Create a temporary file to store commands for parallel execution
 commands_file=$(mktemp)
 
 # Process each sample in the input file
 # These variables must match the order/contents of columns in the input file
-while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_to_gbk pos_cntrl_genome pos_cntrl_genome_path neg_cntrl_genome neg_cntrl_genome_path Notes;do
+while IFS=, read -r strain_id plasmidsaurus_id pos_cntrl_genome pos_cntrl_genome_path neg_cntrl_genome neg_cntrl_genome_path Notes ref_genome_name;do
     # Skip the first row (not a real sample, just a header)
     if $skip_first_row; then
         skip_first_row=false
         continue
     fi
 
+    # Print the strain ID to keep track of progress
+    echo "Processing strain ID: $strain_id"
+
     # Skip if there is no plasmidsaurus_id
     if [ -z "$plasmidsaurus_id" ]; then
-        echo "Skipping sample with empty plasmidsaurus_id"
+        echo "Skipping sample with empty plasmidsaurus_id: $strain_id"
         continue
     fi
 
     # Trim any leading/trailing whitespace including special characters
-    ref_path_trimmed=$(echo "$path_to_gbk" | xargs | tr -d '\r')
-    ref_genome_trimmed=$(echo "$gbk_ref_genome" | xargs | tr -d '\r')
-
-    # Remove any trailing slashes from ref_path_trimmed
-    ref_path_trimmed="${ref_path_trimmed%/}"
+    ref_genome_trimmed=$(echo "$ref_genome_name" | xargs | tr -d '\r')
 
     # If the reference genome file name is empty, skip it
     if [ -z "$ref_genome_trimmed" ]; then
@@ -48,7 +53,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     fi
 
     # Create a single variable for the reference genome path and file name
-    ref="${ref_path_trimmed}/${ref_genome_trimmed}"
+    ref="${ref_path_trimmed}/${ref_genome_trimmed}/${ref_genome_trimmed}.fna"
 
     # Check that the reference genome file exists
     if [ ! -f "$ref" ]; then
@@ -70,7 +75,7 @@ while IFS=, read -r strain_id species_name plasmidsaurus_id gbk_ref_genome path_
     out_dir="breseq_results/raw_files/${strain_id}"
 
     # Check if the final output file already exists
-    final_output_file="${out_dir}/plasmidsaurus_vs_ref/output/index.html"
+    final_output_file="${out_dir}/plasmidsaurus_vs_ref/output/output.tsv"
 
     # If the final output file exists and force_rerun is false, skip this sample
     if [ -f "$final_output_file" ] && [ "$force_rerun" = false ]; then
