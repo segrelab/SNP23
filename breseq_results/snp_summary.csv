@@ -1,4 +1,4 @@
-sample_id,total_snps,gene_with_highest_density,snp_density_snps_per_kb,snp_intergenic,large_deletion,small_indel,large_insertion,large_substitution
+sample_id,total_predicted_mutations,gene_with_highest_density,mutation_density_mutations_per_kb,snp_intergenic,large_deletion,small_indel,large_insertion,large_substitution
 citrea,94,N/A,0.0,61.0,23.0,10.0,,
 salex,81,N/A,0.0,76.0,1.0,4.0,,
 nitzsch,175,N/A,0.0,152.0,,23.0,,

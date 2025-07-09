@@ -3,26 +3,29 @@ import glob
 import os
 from Bio import SeqIO
 
-def parse_genbank_for_lengths(gbk_path):
+def parse_genbank_for_genes_and_lengths(gbk_path):
     """Parses a GenBank file to extract lengths of all genes by locus_tag."""
-    locus_lengths = {}
+    genbank_info = []
     try:
         for record in SeqIO.parse(gbk_path, "genbank"):
             for feature in record.features:
-                if feature.type == 'gene':
-                    locus_tag = feature.qualifiers.get('locus_tag', [None])[0]
-                    if locus_tag:
-                        locus_lengths[locus_tag] = len(feature)
-                    
-                    # Also check for old_locus_tag for compatibility
-                    old_locus_tag = feature.qualifiers.get('old_locus_tag', [None])[0]
-                    if old_locus_tag and old_locus_tag not in locus_lengths:
-                         locus_lengths[old_locus_tag] = len(feature)
+                if feature.type == 'CDS':
+                    gene_name = feature.qualifiers.get('gene', [None])[0]
+                    if gene_name:
+                        feature_info = {}
+                        feature_info['gene_name'] = gene_name
+                        feature_info['length'] = len(feature)
+                        feature_info['start_pos'] = feature.location.start
+                        feature_info['end_pos'] = feature.location.end
+                        # Add the feature info to the list
+                        genbank_info.append(feature_info)
+        # Convert the list of dictionaries to a DataFrame
+        genbank_df = pd.DataFrame(genbank_info)
     except FileNotFoundError:
         print(f"  - WARNING: GenBank file not found at {gbk_path}")
     except Exception as e:
         print(f"  - WARNING: Could not parse GenBank file {gbk_path}. Error: {e}")
-    return locus_lengths
+    return genbank_df
 
 def get_gene_lengths_for_row(row, locus_lengths_map):
     """Finds gene lengths for all locus tags in a given row."""
@@ -97,22 +100,27 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
             # Get the counts of each unique value in the 'mutation_category' column
             mutation_type_counts = df['mutation_category'].value_counts().to_dict()
 
-            locus_lengths_map = {}
+            # Get the path to the GenBank file and make sure it exists
             try:
                 gbk_filename = meta_df.loc[sample_id, 'ref_genome_name']
                 if pd.notna(gbk_filename):
                     gbk_path = os.path.join(gbk_base_dir, gbk_filename, f"{gbk_filename}.gbk")
-                    if gbk_path not in gbk_cache:
-                        print(f"  - Parsing GenBank file: {gbk_path}")
-                        gbk_cache[gbk_path] = parse_genbank_for_lengths(gbk_path)
-                    locus_lengths_map = gbk_cache[gbk_path]
                 else:
                     print(f"  - WARNING: No GenBank file listed for sample {sample_id} in metadata.")
             except KeyError:
                 print(f"  - WARNING: Sample ID '{sample_id}' not found in metadata file.")
-            
-            if locus_lengths_map:
-                df['gene_length'] = df.apply(get_gene_lengths_for_row, axis=1, args=(locus_lengths_map,))
+
+            # Get the locus gene names and lengths from the GenBank file
+            if gbk_path not in gbk_cache:
+                print(f"  - Parsing GenBank file: {gbk_path}")
+                gbk_cache[gbk_path] = parse_genbank_for_genes_and_lengths(gbk_path)
+            genbank_df = gbk_cache[gbk_path]
+                
+            if genbank_df:
+                # Add the gene name to the output DataFrame
+                df['gene_name'] = df['position'].apply(lambda x: genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].values[0] if not genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].empty else None)
+                # Add the gene lengths to the output DataFrame
+                df['gene_length'] = df.apply(lambda row: get_gene_lengths_for_row(row, genbank_df.set_index('gene_name')['length'].to_dict()), axis=1)
                 detailed_filename = os.path.join(detailed_output_dir, f"{sample_id}_details_with_lengths.csv")
                 df.to_csv(detailed_filename, index=False)
                 print(f"  - Saved detailed analysis with gene lengths to: {detailed_filename}")
