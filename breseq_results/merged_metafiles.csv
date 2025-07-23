@@ -46,7 +46,7 @@ roseo,NDPXLJ_7,,,,,,Roseovarius_mucosus_SMR3
 rsphaer,B9NRXP_18_S122,,,,,,GCF_000012905.2_ASM1290v2_genomic
 salex,B9NRXP_14_S118,,,,,,2523533559
 sedthio,6LTRG8_2,,,,,,2609459601
-serr,TKDHS4_18_S50,,,,,,2526164535
+serr,TKDHS4_18_S50,,,,,,2526164535-custom-contig-name
 sflavi,TKDHS4_1_S33,,,,,,Sphingorhabdus_flavimaris_SMR4y
 shewden,TKDHS4_11_S43,,,,,Same as sflavi?,2524023135
 t2,B9NRXP_19_S123,,,,,,GCF_000160775.2_ASM16077v2_genomic
