@@ -53,7 +53,7 @@ while IFS=, read -r strain_id plasmidsaurus_id pos_cntrl_genome pos_cntrl_genome
     fi
 
     # Create a single variable for the reference genome path and file name
-    ref="${ref_path_trimmed}/${ref_genome_trimmed}/${ref_genome_trimmed}.fna"
+    ref="${ref_path_trimmed}/${ref_genome_trimmed}/${ref_genome_trimmed}.gbk"
 
     # Check that the reference genome file exists
     if [ ! -f "$ref" ]; then
