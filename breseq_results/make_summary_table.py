@@ -116,7 +116,7 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
                 gbk_cache[gbk_path] = parse_genbank_for_genes_and_lengths(gbk_path)
             genbank_df = gbk_cache[gbk_path]
                 
-            if genbank_df:
+            if not genbank_df.empty:
                 # Add the gene name to the output DataFrame
                 df['gene_name'] = df['position'].apply(lambda x: genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].values[0] if not genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].empty else None)
                 # Add the gene lengths to the output DataFrame
