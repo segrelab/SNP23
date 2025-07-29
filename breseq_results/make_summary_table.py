@@ -2,6 +2,7 @@ import pandas as pd
 import glob
 import os
 from Bio import SeqIO
+import json
 
 def parse_genbank_for_genes_and_lengths(gbk_path):
     """Parses a GenBank file to extract lengths of all genes by locus_tag."""
@@ -156,12 +157,45 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
                             gene_with_highest_density = snp_density.idxmax()
                             highest_density = snp_density.max()
 
+            # Get the number of contigs and the fit_mean for the longest contig from the sample's summary.json file
+            summary_json_path = os.path.join(os.path.dirname(path), 'summary.json')
+            num_contigs = None
+            coverage_of_longest = None
+
+            if os.path.exists(summary_json_path):
+                try:
+                    with open(summary_json_path, 'r') as f:
+                        summary_json = json.load(f)
+                    
+                    # Safely get the dictionary of references
+                    references_dict = summary_json.get('references', {}).get('reference', {})
+
+                    if references_dict:
+                        # Get the total number of contigs (references)
+                        num_contigs = len(references_dict)
+
+                        # Find the dictionary of the reference with the maximum length
+                        # The .get('length', 0) makes it safe if a reference is missing a 'length' key
+                        longest_ref_data = max(references_dict.values(), key=lambda ref: ref.get('length', 0))
+                        
+                        # Get the coverage average for that longest reference
+                        coverage_of_longest = longest_ref_data.get('coverage_average')
+                    else:
+                        num_contigs = 0
+
+                except Exception as e:
+                    print(f"  - WARNING: Could not read or process summary.json for {sample_id}. Error: {e}")
+            else:
+                print(f"  - WARNING: No summary.json found for {sample_id}.")
+
             # Prepare the base summary data for the current sample
             sample_summary = {
                 'sample_id': sample_id,
                 'total_predicted_mutations': snp_count,
                 'gene_with_highest_density': gene_with_highest_density,
-                'mutation_density_mutations_per_kb': highest_density * 1000
+                'mutation_density_mutations_per_kb': highest_density * 1000,
+                'num_contigs': num_contigs,
+                'avg_coverage_longest_contig': coverage_of_longest
             }
 
             # Add the dynamic mutation category counts to the summary
