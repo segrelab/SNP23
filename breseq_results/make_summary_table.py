@@ -117,10 +117,15 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
             genbank_df = gbk_cache[gbk_path]
                 
             if not genbank_df.empty:
-                # Add the gene name to the output DataFrame
-                df['gene_name'] = df['position'].apply(lambda x: genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].values[0] if not genbank_df.loc[genbank_df['start_pos'] <= x <= genbank_df['end_pos'], 'gene_name'].empty else None)
-                # Add the gene lengths to the output DataFrame
-                df['gene_length'] = df.apply(lambda row: get_gene_lengths_for_row(row, genbank_df.set_index('gene_name')['length'].to_dict()), axis=1)
+                # Create the gene length mapping dictionary once for efficiency
+                gene_length_map = genbank_df.set_index('gene_name')['length'].to_dict()
+
+                # Add gene lengths, but only if the mutation is not 'intergenic'
+                df['gene_length'] = df.apply(
+                    lambda row: get_gene_lengths_for_row(row, gene_length_map)
+                    if 'intergenic' not in str(row.get('gene_position', '')) else None,
+                    axis=1
+                )
                 detailed_filename = os.path.join(detailed_output_dir, f"{sample_id}_details_with_lengths.csv")
                 df.to_csv(detailed_filename, index=False)
                 print(f"  - Saved detailed analysis with gene lengths to: {detailed_filename}")
