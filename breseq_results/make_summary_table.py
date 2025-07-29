@@ -27,38 +27,29 @@ def parse_genbank_for_genes_and_lengths(gbk_path):
         print(f"  - WARNING: Could not parse GenBank file {gbk_path}. Error: {e}")
     return genbank_df
 
-def get_gene_lengths_for_row(row, locus_lengths_map):
-    """Finds gene lengths for all locus tags in a given row."""
-    tags_to_check = set()
-    locus_columns = ['locus_tag', 'locus_tags_inactivated', 'locus_tags_overlapping', 'locus_tags_promoter']
-    
-    for col in locus_columns:
-        if col in row and pd.notna(row[col]):
-            tags = str(row[col]).split('/')
-            for tag in tags:
-                if tag:
-                    tags_to_check.add(tag.strip())
 
-    if not tags_to_check:
+def get_gene_length(row, length_map):
+    """
+    Safely gets a gene's length from the pre-computed map.
+    Returns None if the mutation is intergenic or the gene is not found.
+    """
+    # 1. If the mutation is intergenic, return None immediately.
+    if 'intergenic' in str(row.get('gene_position', '')):
         return None
     
-    # If there are multiple tags, skip the row
-    if len(tags_to_check) > 1:
-        print(f"  - WARNING: Multiple locus tags found for gene {row['gene_name'] if 'gene_name' in row else 'N/A'}")
-        return None
+    gene_name = row.get('gene_name')
+
+    # 2. Check if the gene_name exists and is a key in the map.
+    if pd.notna(gene_name) and gene_name in length_map:
+        # 3. If it exists, return the length.
+        return length_map[gene_name]
     
-    return locus_lengths_map.get(next(iter(tags_to_check)), None)
+    # 4. If it's not found, print a warning and return None.
+    # Avoid printing warnings for common non-gene entries like '–/–'.
+    if pd.notna(gene_name) and gene_name != '–/–':
+        print(f"  - WARNING: Gene '{gene_name}' not found in the reference GenBank length map.")
+    return None
 
-    # TODO: Handle multiple tags
-    # found_lengths = []
-    # for tag in sorted(list(tags_to_check)):
-    #     length = locus_lengths_map.get(tag)
-    #     if length is not None:
-    #         found_lengths.append(length)
-    #     else:
-    #         found_lengths.append("Not Found")
-
-    # return '; '.join(found_lengths) if found_lengths else 'N/A'
 
 def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_dir, detailed_output_dir):
     """
@@ -122,8 +113,7 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
 
                 # Add gene lengths, but only if the mutation is not 'intergenic'
                 df['gene_length'] = df.apply(
-                    lambda row: get_gene_lengths_for_row(row, gene_length_map)
-                    if 'intergenic' not in str(row.get('gene_position', '')) else None,
+                    lambda row: get_gene_length(row, gene_length_map),
                     axis=1
                 )
                 detailed_filename = os.path.join(detailed_output_dir, f"{sample_id}_details_with_lengths.csv")
