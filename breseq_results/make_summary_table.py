@@ -92,70 +92,70 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
             # Get the counts of each unique value in the 'mutation_category' column
             mutation_type_counts = df['mutation_category'].value_counts().to_dict()
 
-            # Get the path to the GenBank file and make sure it exists
-            try:
-                gbk_filename = meta_df.loc[sample_id, 'ref_genome_name']
-                if pd.notna(gbk_filename):
-                    gbk_path = os.path.join(gbk_base_dir, gbk_filename, f"{gbk_filename}.gbk")
-                else:
-                    print(f"  - WARNING: No GenBank file listed for sample {sample_id} in metadata.")
-            except KeyError:
-                print(f"  - WARNING: Sample ID '{sample_id}' not found in metadata file.")
+            # # Get the path to the GenBank file and make sure it exists
+            # try:
+            #     gbk_filename = meta_df.loc[sample_id, 'ref_genome_name']
+            #     if pd.notna(gbk_filename):
+            #         gbk_path = os.path.join(gbk_base_dir, gbk_filename, f"{gbk_filename}.gbk")
+            #     else:
+            #         print(f"  - WARNING: No GenBank file listed for sample {sample_id} in metadata.")
+            # except KeyError:
+            #     print(f"  - WARNING: Sample ID '{sample_id}' not found in metadata file.")
 
-            # Get the locus gene names and lengths from the GenBank file
-            if gbk_path not in gbk_cache:
-                print(f"  - Parsing GenBank file: {gbk_path}")
-                gbk_cache[gbk_path] = parse_genbank_for_genes_and_lengths(gbk_path)
-            genbank_df = gbk_cache[gbk_path]
+            # # Get the locus gene names and lengths from the GenBank file
+            # if gbk_path not in gbk_cache:
+            #     print(f"  - Parsing GenBank file: {gbk_path}")
+            #     gbk_cache[gbk_path] = parse_genbank_for_genes_and_lengths(gbk_path)
+            # genbank_df = gbk_cache[gbk_path]
                 
-            if not genbank_df.empty:
-                # Create the gene length mapping dictionary once for efficiency
-                gene_length_map = genbank_df.set_index('gene_name')['length'].to_dict()
+            # if not genbank_df.empty:
+            #     # Create the gene length mapping dictionary once for efficiency
+            #     gene_length_map = genbank_df.set_index('gene_name')['length'].to_dict()
 
-                # Add gene lengths, but only if the mutation is not 'intergenic'
-                df['gene_length'] = df.apply(
-                    lambda row: get_gene_length(row, gene_length_map),
-                    axis=1
-                )
-                detailed_filename = os.path.join(detailed_output_dir, f"{sample_id}_details_with_lengths.csv")
-                df.to_csv(detailed_filename, index=False)
-                print(f"  - Saved detailed analysis with gene lengths to: {detailed_filename}")
-            else:
-                print("  - Skipping gene length analysis due to missing GenBank info.")
+            #     # Add gene lengths, but only if the mutation is not 'intergenic'
+            #     df['gene_length'] = df.apply(
+            #         lambda row: get_gene_length(row, gene_length_map),
+            #         axis=1
+            #     )
+            #     detailed_filename = os.path.join(detailed_output_dir, f"{sample_id}_details_with_lengths.csv")
+            #     df.to_csv(detailed_filename, index=False)
+            #     print(f"  - Saved detailed analysis with gene lengths to: {detailed_filename}")
+            # else:
+            #     print("  - Skipping gene length analysis due to missing GenBank info.")
 
-            # --- Calculate SNP density to find the gene with the most mutations per base pair ---
-            gene_with_highest_density = 'N/A'
-            highest_density = 0.0
+            # # --- Calculate SNP density to find the gene with the most mutations per base pair ---
+            # gene_with_highest_density = 'N/A'
+            # highest_density = 0.0
 
-            # Proceed only if the gene_length column was successfully added
-            if 'gene_length' in df.columns:
-                # Create a working copy, filtering for rows with valid gene names and lengths
-                coding_mutations = df.dropna(subset=['gene_name', 'gene_length']).copy()
+            # # Proceed only if the gene_length column was successfully added
+            # if 'gene_length' in df.columns:
+            #     # Create a working copy, filtering for rows with valid gene names and lengths
+            #     coding_mutations = df.dropna(subset=['gene_name', 'gene_length']).copy()
                 
-                # Ensure gene_length is a numeric type, converting non-numeric values (like 'N/A') to NaN
-                coding_mutations['gene_length'] = pd.to_numeric(coding_mutations['gene_length'], errors='coerce')
-                coding_mutations.dropna(subset=['gene_length'], inplace=True)
+            #     # Ensure gene_length is a numeric type, converting non-numeric values (like 'N/A') to NaN
+            #     coding_mutations['gene_length'] = pd.to_numeric(coding_mutations['gene_length'], errors='coerce')
+            #     coding_mutations.dropna(subset=['gene_length'], inplace=True)
                 
-                # Ensure gene lengths are > 0 to avoid division-by-zero errors
-                coding_mutations = coding_mutations[coding_mutations['gene_length'] > 0]
+            #     # Ensure gene lengths are > 0 to avoid division-by-zero errors
+            #     coding_mutations = coding_mutations[coding_mutations['gene_length'] > 0]
 
-                if not coding_mutations.empty:
-                    # 1. Get SNP counts for each gene
-                    gene_counts = coding_mutations['gene_name'].value_counts()
+            #     if not coding_mutations.empty:
+            #         # 1. Get SNP counts for each gene
+            #         gene_counts = coding_mutations['gene_name'].value_counts()
 
-                    # 2. Get the unique length for each gene
-                    gene_lengths = coding_mutations.drop_duplicates('gene_name').set_index('gene_name')['gene_length']
+            #         # 2. Get the unique length for each gene
+            #         gene_lengths = coding_mutations.drop_duplicates('gene_name').set_index('gene_name')['gene_length']
                     
-                    # 3. Align counts and lengths to ensure we only divide where both values exist
-                    aligned_counts, aligned_lengths = gene_counts.align(gene_lengths, join='inner')
+            #         # 3. Align counts and lengths to ensure we only divide where both values exist
+            #         aligned_counts, aligned_lengths = gene_counts.align(gene_lengths, join='inner')
 
-                    if not aligned_counts.empty:
-                        # 4. Calculate density (SNPs per base pair)
-                        snp_density = aligned_counts / aligned_lengths
+            #         if not aligned_counts.empty:
+            #             # 4. Calculate density (SNPs per base pair)
+            #             snp_density = aligned_counts / aligned_lengths
                         
-                        if not snp_density.empty:
-                            gene_with_highest_density = snp_density.idxmax()
-                            highest_density = snp_density.max()
+            #             if not snp_density.empty:
+            #                 gene_with_highest_density = snp_density.idxmax()
+            #                 highest_density = snp_density.max()
 
             # Get the number of contigs and the fit_mean for the longest contig from the sample's summary.json file
             summary_json_path = os.path.join(os.path.dirname(path), 'summary.json')
@@ -192,8 +192,8 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
             sample_summary = {
                 'sample_id': sample_id,
                 'total_predicted_mutations': snp_count,
-                'gene_with_highest_density': gene_with_highest_density,
-                'mutation_density_mutations_per_kb': highest_density * 1000,
+                # 'gene_with_highest_density': gene_with_highest_density,
+                # 'mutation_density_mutations_per_kb': highest_density * 1000,
                 'num_contigs': num_contigs,
                 'avg_coverage_longest_contig': coverage_of_longest
             }
