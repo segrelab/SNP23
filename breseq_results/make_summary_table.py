@@ -157,7 +157,7 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
             #                 gene_with_highest_density = snp_density.idxmax()
             #                 highest_density = snp_density.max()
 
-            # Get the number of contigs and the fit_mean for the longest contig from the sample's summary.json file
+            # Get the total number of reads and the number of contigs and the fit_mean for the longest contig from the sample's summary.json file
             summary_json_path = os.path.join(os.path.dirname(path), 'summary.json')
             num_contigs = None
             coverage_of_longest = None
@@ -166,6 +166,9 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
                 try:
                     with open(summary_json_path, 'r') as f:
                         summary_json = json.load(f)
+
+                    # Get the total number of reads from "reads"
+                    total_reads = summary_json.get('reads', {}).get('total_reads', 0)
                     
                     # Safely get the dictionary of references
                     references_dict = summary_json.get('references', {}).get('reference', {})
@@ -181,7 +184,9 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
                         # Get the coverage average for that longest reference
                         coverage_of_longest = longest_ref_data.get('coverage_average')
                     else:
+                        total_reads = 0
                         num_contigs = 0
+                        coverage_of_longest = None
 
                 except Exception as e:
                     print(f"  - WARNING: Could not read or process summary.json for {sample_id}. Error: {e}")
@@ -194,6 +199,7 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
                 'total_predicted_mutations': snp_count,
                 # 'gene_with_highest_density': gene_with_highest_density,
                 # 'mutation_density_mutations_per_kb': highest_density * 1000,
+                'total_reads': total_reads,
                 'num_contigs': num_contigs,
                 'avg_coverage_longest_contig': coverage_of_longest
             }
