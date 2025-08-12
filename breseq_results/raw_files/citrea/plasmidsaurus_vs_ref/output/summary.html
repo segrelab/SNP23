@@ -1,0 +1,153 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Summary Statistics</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<h2>Read File Information</h2>
+<table border="0" cellspace="1" cellpadding="5">
+<tr ><th></th><th>read file</th><th>reads</th><th>bases</th><th>passed&nbsp;filters</th><th>average</th><th>longest</th><th>mapped</th></tr>
+<tr ><td><a href="calibration/TKDHS4_9_S41_R1_001.error_rates.pdf">errors</a></td><td>TKDHS4_9_S41_R1_001</td><td align="right">9,384,768</td><td align="right">1,492,178,112</td><td align="right">100.0%</td><td align="right">159.0&nbsp;bases</td><td align="right">159&nbsp;bases</td><td align="right">0.0%</td></tr><tr ><td><a href="calibration/TKDHS4_9_S41_R2_001.error_rates.pdf">errors</a></td><td>TKDHS4_9_S41_R2_001</td><td align="right">9,351,759</td><td align="right">1,486,929,681</td><td align="right">99.6%</td><td align="right">159.0&nbsp;bases</td><td align="right">159&nbsp;bases</td><td align="right">0.0%</td></tr><tr class="highlight_table_row"><td></td><td><b>total</b></td><td align="right"><b>18,736,527</b></td><td align="right"><b>2,979,107,793</b></td><td align="right">99.8%</td><td align="right">159.0&nbsp;bases</td><td align="right"><b>159</b>&nbsp;bases</td><td align="right">0.0%</td></tr></table><h2>Reference Sequence Information</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5" >
+<tr><th></th><th></th><th>seq id</th><th>length</th><th align="center">fit mean</th><th align="center">fit dispersion</th><th align="center">% mapped reads</th><th align="left">description</th></tr>
+<tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000001.1.overview.png">coverage</a></td><td><a href="calibration/0.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000001.1</td><td align="right">505</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000002.1.overview.png">coverage</a></td><td><a href="calibration/1.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000002.1</td><td align="right">521</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000003.1.overview.png">coverage</a></td><td><a href="calibration/2.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000003.1</td><td align="right">569</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000004.1.overview.png">coverage</a></td><td><a href="calibration/3.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000004.1</td><td align="right">624</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000005.1.overview.png">coverage</a></td><td><a href="calibration/4.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000005.1</td><td align="right">624</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000006.1.overview.png">coverage</a></td><td><a href="calibration/5.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000006.1</td><td align="right">639</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000007.1.overview.png">coverage</a></td><td><a href="calibration/6.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000007.1</td><td align="right">713</td><td align="center">NA</td><td align="center">NA</td><td align="center">11.8%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000008.1.overview.png">coverage</a></td><td><a href="calibration/7.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000008.1</td><td align="right">774</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000009.1.overview.png">coverage</a></td><td><a href="calibration/8.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000009.1</td><td align="right">1,140</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000010.1.overview.png">coverage</a></td><td><a href="calibration/9.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000010.1</td><td align="right">1,434</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000011.1.overview.png">coverage</a></td><td><a href="calibration/10.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000011.1</td><td align="right">1,638</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000012.1.overview.png">coverage</a></td><td><a href="calibration/11.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000012.1</td><td align="right">732,536</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.4%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000013.1.overview.png">coverage</a></td><td><a href="calibration/12.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000013.1</td><td align="right">2,899</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="reject_table_row"><td><a href="evidence/NZ_AHBZ03000014.1.overview.png">coverage</a></td><td><a href="calibration/13.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000014.1</td><td align="right">946,721</td><td align="center">[6.6]</td><td align="center">[18.0]</td><td align="center">27.6%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000015.1.overview.png">coverage</a></td><td><a href="calibration/14.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000015.1</td><td align="right">615,534</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.3%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000016.1.overview.png">coverage</a></td><td><a href="calibration/15.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000016.1</td><td align="right">203,006</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.3%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000017.1.overview.png">coverage</a></td><td><a href="calibration/16.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000017.1</td><td align="right">186,460</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000018.1.overview.png">coverage</a></td><td><a href="calibration/17.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000018.1</td><td align="right">3,938</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000019.1.overview.png">coverage</a></td><td><a href="calibration/18.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000019.1</td><td align="right">583</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000020.1.overview.png">coverage</a></td><td><a href="calibration/19.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000020.1</td><td align="right">4,093</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000021.1.overview.png">coverage</a></td><td><a href="calibration/20.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000021.1</td><td align="right">598,714</td><td align="center">NA</td><td align="center">NA</td><td align="center">27.4%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/NZ_AHBZ03000022.1.overview.png">coverage</a></td><td><a href="calibration/21.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000022.1</td><td align="right">423,149</td><td align="center">1.3</td><td align="center">1.7</td><td align="center">29.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/NZ_AHBZ03000023.1.overview.png">coverage</a></td><td><a href="calibration/22.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000023.1</td><td align="right">387,644</td><td align="center">1.5</td><td align="center">1.8</td><td align="center">2.5%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000024.1.overview.png">coverage</a></td><td><a href="calibration/23.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000024.1</td><td align="right">26,615</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000025.1.overview.png">coverage</a></td><td><a href="calibration/24.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000025.1</td><td align="right">80,914</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="gray_table_row"><td><a href="evidence/NZ_AHBZ03000026.1.overview.png">coverage</a></td><td><a href="calibration/25.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000026.1</td><td align="right">48,157</td><td align="center">NA</td><td align="center">NA</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="reject_table_row"><td><a href="evidence/NZ_AHBZ03000027.1.overview.png">coverage</a></td><td><a href="calibration/26.unique_coverage.pdf">distribution</a></td><td>NZ_AHBZ03000027.1</td><td align="right">1,164,454</td><td align="center">[3.1]</td><td align="center">[0.8]</td><td align="center">0.3%</td><td>Genus species strain strain.</td></tr><tr class="highlight_table_row"><td></td><td></td><td><b>total</b></td><td align="right"><b>5,434,598</b></td><td></td><td></td><td align="center">100.0%</td><td></td></tr>
+</table>
+<p><b>fit dispersion</b> is the ratio of the variance to the mean for the negative binomial fit. It is =1 for Poisson and >1 for over-dispersed data.
+<p><span class="reject_table_row">Fit failed</span> Negative binomial fit failed for this reference sequence. It may have an unusual coverage depth distribution. JC and MC predictions may be less accurate.
+<p><span class="gray_table_row">Insufficient coverage</span> Reference sequence counted as entirely deleted due to low coverage. Try either the <code>-t,--targeted-sequencing</code> or the <code>-c,--contig-reference </code> option if you want mutations called for these reference sequences.
+<h2>New Junction Evidence</h2>
+<p>
+<h3>Junction Candidates Tested</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">limit</th><th align="center">actual</th></tr><tr><td>Number of alignment pairs examined for constructing junction candidates</td><td align="center">&le;&nbsp;100000</td><td align="center">8</td></tr><tr><td>Coverage evenness (position-hash) score of junction candidates</td><td align="center">&ge;&nbsp;2</td><td align="center">&ge;&nbsp;0</td></tr><tr><td>Test this many junction candidates (n). May be smaller if not enough passed the coverage evenness threshold</td><td align="center">100&nbsp;&le;&nbsp;n&nbsp;&le;&nbsp;5000</td><td align="center">0</td></tr><tr><td>Total length of all junction candidates (factor times the reference genome length)</td><td align="center">&le;&nbsp;0.1</td><td align="center">0.000</td></tr></table>
+<h3>Junction Skew Score Calculation</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr ><th>reference sequence</th><th>pr(no read start)</th></tr>
+<tr >
+<td>NZ_AHBZ03000001.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000002.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000003.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000004.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000005.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000006.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000007.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000008.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000009.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000010.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000011.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000012.1</td><td align="center">1.00000</td></tr><tr >
+<td>NZ_AHBZ03000013.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000014.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000015.1</td><td align="center">1.00000</td></tr><tr >
+<td>NZ_AHBZ03000016.1</td><td align="center">0.99999</td></tr><tr >
+<td>NZ_AHBZ03000017.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000018.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000019.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000020.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000021.1</td><td align="center">1.00000</td></tr><tr >
+<td>NZ_AHBZ03000022.1</td><td align="center">0.99997</td></tr><tr >
+<td>NZ_AHBZ03000023.1</td><td align="center">0.99998</td></tr><tr >
+<td>NZ_AHBZ03000024.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000025.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000026.1</td><td align="center">NA</td></tr><tr >
+<td>NZ_AHBZ03000027.1</td><td align="center">NA</td></tr></table><p><b>pr(no read start)</b> is the probability that there will not be an aligned read whose first base matches a given position on a given strand.
+<h3>Final Junction Predictions</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">value</th></tr><tr><td>Coverage evenness (position-hash) score of predicted junctions must be</td><td align="center">&ge;&nbsp;3</td></tr><tr><td>Minimum probablilty assigned that no mapped read will start at a given position and strand for junction prediction</td><td align="center">0.1</td></tr><tr><td>Junction allow suboptimal matches</td><td align="center">FALSE</td></tr><tr><td>Skew score of predicted junction (&minus;log10 probability of unusual coverage evenness) must be</td><td align="center">&le;&nbsp;3</td></tr><tr><td>Number of bases that at least one read must overlap each uniquely aligned side of a predicted junction</td><td align="center">&ge;&nbsp;1</td></tr></table>
+<h2>Read Alignment Evidence</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>option</th><th>value</th></tr><tr><td>Mode</td><td>Consensus/Mixed Base</td></tr><tr><td>Ploidy</td><td>1 (haploid)</td></tr><tr><td>Consensus mutation E-value cutoff</td><td>10</td></tr><tr><td>Consensus frequency cutoff</td><td>0.8</td></tr><tr><td>Consensus minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum variant coverage</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism E-value cutoff</td><td>10</td></tr><tr><td>Polymorphism frequency cutoff</td><td>0.2</td></tr><tr><td>Polymorphism minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum variant coverage</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism bias cutoff</td><td>OFF</td></tr><tr><td>Predict indel polymorphisms</td><td>YES</td></tr><tr><td>Skip indel polymorphisms in homopolymers runs of</td><td>OFF</td></tr><tr><td>Skip base substitutions when they create a homopolymer flanked on each side by</td><td>OFF</td></tr></table><p>
+<h2>Software Versions</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>program</th><th>version</th></tr>
+<tr><td>bowtie2</td><td>2.4.1</td></tr>
+<tr><td>R</td><td>4.3.1</td></tr>
+</table><p>
+<h2>Execution Times</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>step</th><th>start</th><th>end</th><th>elapsed</th></tr>
+<tr><td>Read and reference sequence file input</td><td>10:24:24&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:28:19&nbsp;24&nbsp;Jul&nbsp;2025</td><td>3&nbsp;minutes&nbsp;55&nbsp;seconds</td></tr>
+<tr><td>Read alignment to reference genome</td><td>10:28:19&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:21:17&nbsp;24&nbsp;Jul&nbsp;2025</td><td>52&nbsp;minutes&nbsp;58&nbsp;seconds</td></tr>
+<tr><td>Preprocessing alignments for candidate junction identification</td><td>11:21:17&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:21:18&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;second</td></tr>
+<tr><td>Preliminary analysis of coverage distribution</td><td>11:21:18&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11&nbsp;seconds</td></tr>
+<tr><td>Identifying junction candidates</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Re-alignment to junction candidates</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Resolving best read alignments</td><td>11:21:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>2&nbsp;minutes&nbsp;1&nbsp;second</td></tr>
+<tr><td>Creating BAM files</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Tabulating error counts</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Re-calibrating base error rates</td><td>11:23:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:39&nbsp;24&nbsp;Jul&nbsp;2025</td><td>9&nbsp;seconds</td></tr>
+<tr><td>Examining read alignment evidence</td><td>11:23:39&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:55&nbsp;24&nbsp;Jul&nbsp;2025</td><td>16&nbsp;seconds</td></tr>
+<tr><td>Polymorphism statistics</td><td>11:23:55&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:55&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Output</td><td>11:23:55&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:24:50&nbsp;24&nbsp;Jul&nbsp;2025</td><td>55&nbsp;seconds</td></tr>
+<tr><td>Output :: Mutation Prediction</td><td>11:23:55&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:56&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;second</td></tr>
+<tr><td>Output :: Mutation Annotation</td><td>11:23:56&nbsp;24&nbsp;Jul&nbsp;2025</td><td>11:23:56&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr class="highlight_table_row">
+<td colspan="3" ><b>Total</b></td>
+<td><b>1&nbsp;hour&nbsp;27&nbsp;seconds</b></td>
+</tr>
+</table></body></html>

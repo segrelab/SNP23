@@ -1,0 +1,391 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_22.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">1,516,380</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">51.8%
+</td><td align="center">13.9
+/&nbsp;26.7
+</td><td align="center">27</td><td align="center"><font class="snp_type_nonsynonymous">Y482S</font>&nbsp;(T<font class="mutation_in_codon">A</font>C&rarr;T<font class="mutation_in_codon">C</font>C)&nbsp;</td><td align="center"><i>BLDMHDEB_01390</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_47.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">1,516,873</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">51.2%
+</td><td align="center">12.3
+/&nbsp;48.3
+</td><td align="center">41</td><td align="center">intergenic&nbsp;(&#8209;280/+404)</td><td align="center"><i>deaD_2/adhB_1</i></td><td align="left">ATP&#8209;dependent RNA helicase DeaD/Alcohol dehydrogenase 2</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_27.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,986,475</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">47.2%
+</td><td align="center">27.6
+/&nbsp;18.6
+</td><td align="center">37</td><td align="center"><font class="snp_type_nonsynonymous">N7H</font>&nbsp;(<font class="mutation_in_codon">A</font>AC&rarr;<font class="mutation_in_codon">C</font>AC)&nbsp;</td><td align="center"><i>mdtL_1</i></td><td align="left">Multidrug resistance protein MdtL</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_28.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,986,479</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">47.2%
+</td><td align="center">33.1
+/&nbsp;10.2
+</td><td align="center">36</td><td align="center"><font class="snp_type_nonsynonymous">S8N</font>&nbsp;(A<font class="mutation_in_codon">G</font>T&rarr;A<font class="mutation_in_codon">A</font>T)&nbsp;</td><td align="center"><i>mdtL_1</i></td><td align="left">Multidrug resistance protein MdtL</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_26.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,986,463</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">46.3%
+</td><td align="center">23.2
+/&nbsp;24.7
+</td><td align="center">41</td><td align="center"><font class="snp_type_nonsynonymous">S3R</font>&nbsp;(<font class="mutation_in_codon">A</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;</td><td align="center"><i>mdtL_1</i></td><td align="left">Multidrug resistance protein MdtL</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_25.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,649,686</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">44.2%
+</td><td align="center">76.5
+/&nbsp;44.0
+</td><td align="center">77</td><td align="center"><font class="snp_type_nonsynonymous">A77T</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;&Dagger;</td><td align="center"><i>BLDMHDEB_02434</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_42.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">834,276</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">43.8%
+</td><td align="center">35.5
+/&nbsp;16.8
+</td><td align="center">32</td><td align="center"><font class="snp_type_nonsynonymous">Q349K</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">A</font>AA)&nbsp;</td><td align="center"><i>BLDMHDEB_03730</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_49.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">1,525,450</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">43.1%
+</td><td align="center">43.2
+/&nbsp;26.3
+</td><td align="center">51</td><td align="center"><font class="snp_type_synonymous">K298K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>mrpD</i></td><td align="left">Na(+)/H(+) antiporter subunit D</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_43.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">977,150</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">40.9%
+</td><td align="center">10.9
+/&nbsp;11.0
+</td><td align="center">22</td><td align="center">intergenic&nbsp;(+14/&#8209;69)</td><td align="center"><i>BLDMHDEB_03850/BLDMHDEB_03851</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_19.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">759,881</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">37.8%
+</td><td align="center">51.4
+/&nbsp;13.2
+</td><td align="center">45</td><td align="center"><font class="snp_type_nonsynonymous">T157P</font>&nbsp;(<font class="mutation_in_codon">A</font>CT&rarr;<font class="mutation_in_codon">C</font>CT)&nbsp;</td><td align="center"><i>ycfH</i></td><td align="left">putative metal&#8209;dependent hydrolase YcfH</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_48.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">1,525,449</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">37.2%
+</td><td align="center">42.7
+/&nbsp;31.6
+</td><td align="center">51</td><td align="center"><font class="snp_type_nonsynonymous">I299V</font>&nbsp;(<font class="mutation_in_codon">A</font>TC&rarr;<font class="mutation_in_codon">G</font>TC)&nbsp;</td><td align="center"><i>mrpD</i></td><td align="left">Na(+)/H(+) antiporter subunit D</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_39.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">57,827</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">34.5%
+</td><td align="center">65.8
+/&nbsp;14.2
+</td><td align="center">56</td><td align="center"><font class="snp_type_nonsynonymous">I255L</font>&nbsp;(<font class="mutation_in_codon">A</font>TT&rarr;<font class="mutation_in_codon">C</font>TT)&nbsp;</td><td align="center"><i>ycfS</i></td><td align="left">putative L,D&#8209;transpeptidase YcfS</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_45.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">1,190,292</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">30.6%
+</td><td align="center">48.0
+/&nbsp;10.7
+</td><td align="center">36</td><td align="center"><font class="snp_type_synonymous">K2K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>smc_2</i></td><td align="left">Chromosome partition protein Smc</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_40.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">77,475</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">30.4%
+</td><td align="center">68.1
+/&nbsp;11.9
+</td><td align="center">48</td><td align="center"><font class="snp_type_nonsynonymous">S451N</font>&nbsp;(A<font class="mutation_in_codon">G</font>C&rarr;A<font class="mutation_in_codon">A</font>C)&nbsp;</td><td align="center"><i>BLDMHDEB_03061</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_46.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">1,434,846</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">27.9%
+</td><td align="center">75.8
+/&nbsp;12.0
+</td><td align="center">44</td><td align="center">intergenic&nbsp;(&#8209;926/+45)</td><td align="center"><i>BLDMHDEB_04250/yidK</i></td><td align="left">D&#8209;(&#8209;)&#8209;3&#8209;hydroxybutyrate oligomer hydrolase/putative symporter YidK</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_41.html">*</a></td><td align="center">NZ_CP009978.1</td><td align="right">353,197</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">25.6%
+</td><td align="center">70.8
+/&nbsp;10.1
+</td><td align="center">43</td><td align="center"><font class="snp_type_synonymous">S22S</font>&nbsp;(AG<font class="mutation_in_codon">C</font>&rarr;AG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>BLDMHDEB_03289</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_20.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">1,186,972</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">22.9%
+</td><td align="center">58.6
+/&nbsp;17.8
+</td><td align="center">35</td><td align="center"><font class="snp_type_synonymous">S2137S</font>&nbsp;(AG<font class="mutation_in_codon">C</font>&rarr;AG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>BLDMHDEB_01088</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_24.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,649,684</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">22.1%
+</td><td align="center">143.7
+/&nbsp;12.4
+</td><td align="center">77</td><td align="center"><font class="snp_type_synonymous">A77A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;&Dagger;</td><td align="center"><i>BLDMHDEB_02434</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_23.html">*</a></td><td align="center">NZ_CP009977.1</td><td align="right">2,139,340</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">21.6%
+</td><td align="center">78.1
+/&nbsp;14.5
+</td><td align="center">37</td><td align="center">intergenic&nbsp;(+19/&#8209;13)</td><td align="center"><i>BLDMHDEB_01958/BLDMHDEB_01959</i></td><td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 65 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_92.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_92.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">215747&nbsp;=</td><td align="center" class="junction_gene">46 (1.100)</td><td rowspan="2" align="center">9 (0.230)</td>
+<td rowspan="2" align="center">8/292</td>
+<td rowspan="2" align="center">2.8</td>
+<td rowspan="2" align="center">18.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;835/+76)</td>
+<td align="center" class="junction_gene"><i>lsdA/katG_1</i></td>
+<td class="junction_gene">Levansucrase/Catalase&#8209;peroxidase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_92.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">215776&nbsp;=</td>
+<td align="center" class="junction_gene">38 (0.980)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;864/+47)</td>
+<td align="center" class="junction_gene"><i>lsdA/katG_1</i></td>
+<td class="junction_gene">Levansucrase/Catalase&#8209;peroxidase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_81.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_81.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2759782&nbsp;=</td><td align="center" class="junction_gene">34 (0.830)</td><td rowspan="2" align="center">7 (0.190)</td>
+<td rowspan="2" align="center">6/284</td>
+<td rowspan="2" align="center">3.3</td>
+<td rowspan="2" align="center">17.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+22/+61)</td>
+<td align="center" class="junction_gene"><i>yhgF/BLDMHDEB_02532</i></td>
+<td class="junction_gene">Protein YhgF/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_81.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2759820&nbsp;=</td>
+<td align="center" class="junction_gene">37 (1.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+60/+23)</td>
+<td align="center" class="junction_gene"><i>yhgF/BLDMHDEB_02532</i></td>
+<td class="junction_gene">Protein YhgF/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_106.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_106.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">1067794&nbsp;=</td><td align="center" class="junction_gene">45 (1.080)</td><td rowspan="2" align="center">5 (0.150)</td>
+<td rowspan="2" align="center">5/256</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">13.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+12/+200)</td>
+<td align="center" class="junction_gene"><i>puuC_3/ynfM_3</i></td>
+<td class="junction_gene">NADP/NAD&#8209;dependent aldehyde dehydrogenase PuuC/Inner membrane transport protein YnfM</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_106.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">1067824&nbsp;=</td>
+<td align="center" class="junction_gene">29 (0.860)</td><td align="center" class="junction_gene">intergenic&nbsp;(+42/+170)</td>
+<td align="center" class="junction_gene"><i>puuC_3/ynfM_3</i></td>
+<td class="junction_gene">NADP/NAD&#8209;dependent aldehyde dehydrogenase PuuC/Inner membrane transport protein YnfM</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_74.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_74.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2498094&nbsp;=</td><td align="center" class="junction_gene">33 (0.800)</td><td rowspan="2" align="center">7 (0.180)</td>
+<td rowspan="2" align="center">6/294</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">17.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;66/+45)</td>
+<td align="center" class="junction_gene"><i>glnE/pctB_2</i></td>
+<td class="junction_gene">Bifunctional glutamine synthetase adenylyltransferase/adenylyl&#8209;removing enzyme/Methyl&#8209;accepting chemotaxis protein PctB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_74.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2498119&nbsp;=</td>
+<td align="center" class="junction_gene">34 (0.890)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;91/+20)</td>
+<td align="center" class="junction_gene"><i>glnE/pctB_2</i></td>
+<td class="junction_gene">Bifunctional glutamine synthetase adenylyltransferase/adenylyl&#8209;removing enzyme/Methyl&#8209;accepting chemotaxis protein PctB</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_70.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_70.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;2164654</td><td align="center" class="junction_gene">28 (0.680)</td><td rowspan="2" align="center">6 (0.160)</td>
+<td rowspan="2" align="center">6/294</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">19.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+22/+51)</td>
+<td align="center" class="junction_gene"><i>BLDMHDEB_01998/treA</i></td>
+<td class="junction_gene">hypothetical protein/Trehalose&#8209;6&#8209;phosphate hydrolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_70.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;2164662</td>
+<td align="center" class="junction_gene">25 (0.650)</td><td align="center" class="junction_gene">intergenic&nbsp;(+30/+43)</td>
+<td align="center" class="junction_gene"><i>BLDMHDEB_01998/treA</i></td>
+<td class="junction_gene">hypothetical protein/Trehalose&#8209;6&#8209;phosphate hydrolase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_62.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_62.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">1150785&nbsp;=</td><td align="center" class="junction_gene">31 (0.760)</td><td rowspan="2" align="center">7 (0.190)</td>
+<td rowspan="2" align="center">6/288</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">22.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+163/&#8209;104)</td>
+<td align="center" class="junction_gene"><i>BLDMHDEB_01061/BLDMHDEB_01062</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_62.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">1150820&nbsp;=</td>
+<td align="center" class="junction_gene">20 (0.530)</td><td align="center" class="junction_gene">intergenic&nbsp;(+198/&#8209;69)</td>
+<td align="center" class="junction_gene"><i>BLDMHDEB_01061/BLDMHDEB_01062</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_103.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_103.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">=&nbsp;923426</td><td align="center" class="junction_gene">34 (0.810)</td><td rowspan="2" align="center">7 (0.180)</td>
+<td rowspan="2" align="center">6/294</td>
+<td rowspan="2" align="center">3.5</td>
+<td rowspan="2" align="center">18.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+56/&#8209;497)</td>
+<td align="center" class="junction_gene"><i>ycjG_1/BLDMHDEB_03807</i></td>
+<td class="junction_gene">L&#8209;Ala&#8209;D/L&#8209;Glu epimerase/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_103.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009978.1</td>
+<td align="center" class="junction_gene">=&nbsp;923431</td>
+<td align="center" class="junction_gene">31 (0.800)</td><td align="center" class="junction_gene">intergenic&nbsp;(+61/&#8209;492)</td>
+<td align="center" class="junction_gene"><i>ycjG_1/BLDMHDEB_03807</i></td>
+<td class="junction_gene">L&#8209;Ala&#8209;D/L&#8209;Glu epimerase/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_86.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_86.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;3053702</td><td align="center" class="junction_gene">38 (0.930)</td><td rowspan="2" align="center">6 (0.160)</td>
+<td rowspan="2" align="center">6/296</td>
+<td rowspan="2" align="center">3.5</td>
+<td rowspan="2" align="center">15.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1922/2427&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>plsB</i></td>
+<td class="junction_gene">Glycerol&#8209;3&#8209;phosphate acyltransferase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_86.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;3053725</td>
+<td align="center" class="junction_gene">30 (0.780)</td><td align="center" class="junction_gene">coding&nbsp;(1899/2427&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>plsB</i></td>
+<td class="junction_gene">Glycerol&#8209;3&#8209;phosphate acyltransferase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_79.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_79.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2713581&nbsp;=</td><td align="center" class="junction_gene">51 (1.240)</td><td rowspan="2" align="center">5 (0.130)</td>
+<td rowspan="2" align="center">5/290</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">9.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(612/1068&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rfaQ</i></td>
+<td class="junction_gene">Lipopolysaccharide core heptosyltransferase RfaQ</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_79.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">2713619&nbsp;=</td>
+<td align="center" class="junction_gene">54 (1.430)</td><td align="center" class="junction_gene">coding&nbsp;(650/1068&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rfaQ</i></td>
+<td class="junction_gene">Lipopolysaccharide core heptosyltransferase RfaQ</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_75.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_75.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;2553428</td><td align="center" class="junction_gene">36 (0.880)</td><td rowspan="2" align="center">5 (0.130)</td>
+<td rowspan="2" align="center">5/294</td>
+<td rowspan="2" align="center">3.8</td>
+<td rowspan="2" align="center">13.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+38/&#8209;36)</td>
+<td align="center" class="junction_gene"><i>leuB/leuC</i></td>
+<td class="junction_gene">3&#8209;isopropylmalate dehydrogenase/3&#8209;isopropylmalate dehydratase large subunit</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_75.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP009977.1</td>
+<td align="center" class="junction_gene">=&nbsp;2553432</td>
+<td align="center" class="junction_gene">32 (0.840)</td><td align="center" class="junction_gene">intergenic&nbsp;(+42/&#8209;32)</td>
+<td align="center" class="junction_gene"><i>leuB/leuC</i></td>
+<td class="junction_gene">3&#8209;isopropylmalate dehydrogenase/3&#8209;isopropylmalate dehydratase large subunit</td>
+</tr>
+</table>
+</body></html>

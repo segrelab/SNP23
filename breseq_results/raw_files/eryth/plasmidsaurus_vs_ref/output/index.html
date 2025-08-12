@@ -1,0 +1,463 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">628,927</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A149A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>HDEJIKFF_00571</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_22.html">MC</a>&nbsp;<a href="evidence/JC_42.html">JC</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">1,451,167</td><!-- Position -->
+<td align="center">&Delta;3,866&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[rkpK_2]</i>&#8211;<i>[hscA_1]</i></td>
+<td align="left"><i>[rkpK_2]</i>, <i>HDEJIKFF_01352</i>, <i>HDEJIKFF_01353</i>, <i>rkpK_3</i>, <i>[hscA_1]</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_28.html">MC</a>&nbsp;<a href="evidence/JC_47.html">JC</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">4,177,827</td><!-- Position -->
+<td align="center">&Delta;42&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+18/+13)</td>
+<td align="center"><i>pepN_3</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>HDEJIKFF_03927</i></td>
+<td align="left">Aminopeptidase N/putative protein/MSMEI_4575</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">4,281,250</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+1442/+443)</td>
+<td align="center"><i>HDEJIKFF_04013</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>murA</i></td>
+<td align="left">hypothetical protein/UDP&#8209;N&#8209;acetylglucosamine 1&#8209;carboxyvinyltransferase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">4,342,791</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S68S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>cutC</i>&nbsp;&larr;</td>
+<td align="left">Copper homeostasis protein CutC</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_29.html">MC</a>&nbsp;<a href="evidence/JC_48.html">JC</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">4,347,151</td><!-- Position -->
+<td align="center">&Delta;1,263&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[nagE2]</i></td>
+<td align="left"><i>[nagE2]</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">5,127,544</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">T88M</font>&nbsp;(A<font class="mutation_in_codon">C</font>G&rarr;A<font class="mutation_in_codon">T</font>G)&nbsp;</td>
+<td align="center"><i>HDEJIKFF_04824</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000010105.AP0089576516310</td><!-- Seq_Id -->
+<td align="right">6,012,582</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">L234R</font>&nbsp;(C<font class="mutation_in_codon">T</font>G&rarr;C<font class="mutation_in_codon">G</font>G)&nbsp;</td>
+<td align="center"><i>HDEJIKFF_05709</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_19.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_19.html">*</a></td>
+<td><a href="evidence/MC_PLOT_19.html">&divide;</a></td>
+<td>GCA_000010105.AP008931271577</td>
+<td align="right">1</td>
+<td align="right">166</td>
+<td align="right">166</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[32]&nbsp;34</td>
+<td align="center"><i>&#8211;/HDEJIKFF_06295</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_20.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_20.html">*</a></td>
+<td><a href="evidence/MC_PLOT_20.html">&divide;</a></td>
+<td>GCA_000010105.AP008931271577</td>
+<td align="right">266344</td>
+<td align="right">271577</td>
+<td align="right">5234</td>
+<td align="center">33&nbsp;[32]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[xerC_7]&#8211;phzG_2</i></td>
+<td align="left">[xerC_7],HDEJIKFF_06591,HDEJIKFF_06592,HDEJIKFF_06593,phzG_2</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_21.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_21.html">*</a></td>
+<td><a href="evidence/MC_PLOT_21.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">1415279</td>
+<td align="right">1415290</td>
+<td align="right">12</td>
+<td align="center">6&nbsp;[2]</td>
+<td align="center">[0]&nbsp;4</td>
+<td align="center"><i>HDEJIKFF_01324/HDEJIKFF_01325</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_23.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_23.html">*</a></td>
+<td><a href="evidence/MC_PLOT_23.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">2420989</td>
+<td align="right">2421147</td>
+<td align="right">159</td>
+<td align="center">4&nbsp;[3]</td>
+<td align="center">[3]&nbsp;4</td>
+<td align="center"><i>HDEJIKFF_02266</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_24.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_24.html">*</a></td>
+<td><a href="evidence/MC_PLOT_24.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">2815748</td>
+<td align="right">2815792</td>
+<td align="right">45</td>
+<td align="center">4&nbsp;[3]</td>
+<td align="center">[2]&nbsp;4</td>
+<td align="center"><i>HDEJIKFF_02696/HDEJIKFF_02697</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_25.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_25.html">*</a></td>
+<td><a href="evidence/MC_PLOT_25.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">3907535</td>
+<td align="right">3907579</td>
+<td align="right">45</td>
+<td align="center">4&nbsp;[3]</td>
+<td align="center">[3]&nbsp;4</td>
+<td align="center"><i>mraZ/HDEJIKFF_03665</i></td>
+<td align="left">Transcriptional regulator MraZ/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_26.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_26.html">*</a></td>
+<td><a href="evidence/MC_PLOT_26.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">4004946</td>
+<td align="right">4005096</td>
+<td align="right">151</td>
+<td align="center">4&nbsp;[3]</td>
+<td align="center">[3]&nbsp;5</td>
+<td align="center"><i>HDEJIKFF_03763</i></td>
+<td align="left">putative aminotransferase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_27.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_27.html">*</a></td>
+<td><a href="evidence/MC_PLOT_27.html">&divide;</a></td>
+<td>GCA_000010105.AP0089576516310</td>
+<td align="right">4167773</td>
+<td align="right">4167796</td>
+<td align="right">24</td>
+<td align="center">4&nbsp;[3]</td>
+<td align="center">[1]&nbsp;4</td>
+<td align="center"><i>clpP1_1/tig</i></td>
+<td align="left">ATP&#8209;dependent Clp protease proteolytic subunit 1/Trigger factor</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_35.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_35.html">?</a></td>
+<td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">591880&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">12 (0.440)</td>
+<td rowspan="2" align="center">6/296</td>
+<td rowspan="2" align="center">1.7</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+2289/+4019)</td>
+<td align="center" class="junction_repeat"><i>srlR_1/HDEJIKFF_00546</i></td>
+<td class="junction_repeat">Glucitol operon repressor/IS21 family transposase IS1415</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_35.html">?</a></td><td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">591902&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+2311/+3997)</td>
+<td align="center" class="junction_repeat"><i>srlR_1/HDEJIKFF_00546</i></td>
+<td class="junction_repeat">Glucitol operon repressor/IS21 family transposase IS1415</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_36.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_36.html">?</a></td>
+<td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">591978&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">17 (0.610)</td>
+<td rowspan="2" align="center">10/300</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+2387/+3921)</td>
+<td align="center" class="junction_repeat"><i>srlR_1/HDEJIKFF_00546</i></td>
+<td class="junction_repeat">Glucitol operon repressor/IS21 family transposase IS1415</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_36.html">?</a></td><td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">591995&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+2404/+3904)</td>
+<td align="center" class="junction_repeat"><i>srlR_1/HDEJIKFF_00546</i></td>
+<td class="junction_repeat">Glucitol operon repressor/IS21 family transposase IS1415</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_37.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_37.html">?</a></td>
+<td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">595786&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">20 (0.690)</td>
+<td rowspan="2" align="center">15/316</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">66.7%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+6195/+113)</td>
+<td align="center" class="junction_repeat"><i>srlR_1/HDEJIKFF_00546</i></td>
+<td class="junction_repeat">Glucitol operon repressor/IS21 family transposase IS1415</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_37.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">898577&nbsp;=</td>
+<td align="center" class="junction_gene">10 (0.340)</td><td align="center" class="junction_gene">coding&nbsp;(190/3303&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>pknD_2</i></td>
+<td class="junction_gene">Serine/threonine&#8209;protein kinase PknD</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_38.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_38.html">?</a></td>
+<td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">=&nbsp;598364</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">21 (0.720)</td>
+<td rowspan="2" align="center">17/316</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">65.6%</td>
+<td align="center" class="junction_repeat">coding&nbsp;(1382/1467&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>gabR_1</i></td>
+<td class="junction_repeat">HTH&#8209;type transcriptional regulatory protein GabR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_38.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">=&nbsp;898582</td>
+<td align="center" class="junction_gene">11 (0.380)</td><td align="center" class="junction_gene">coding&nbsp;(195/3303&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>pknD_2</i></td>
+<td class="junction_gene">Serine/threonine&#8209;protein kinase PknD</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_41.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_41.html">?</a></td>
+<td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">=&nbsp;1286376</td><td align="center" class="junction_gene">18 (0.620)</td><td rowspan="2" align="center">14 (0.520)</td>
+<td rowspan="2" align="center">13/294</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">39.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+3/+67)</td>
+<td align="center" class="junction_gene"><i>HDEJIKFF_01173/HDEJIKFF_01174</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_41.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">1286433&nbsp;=</td>
+<td align="center" class="junction_gene">26 (0.960)</td><td align="center" class="junction_gene">intergenic&nbsp;(+60/+10)</td>
+<td align="center" class="junction_gene"><i>HDEJIKFF_01173/HDEJIKFF_01174</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_45.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_45.html">?</a></td>
+<td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">2660608&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">23 (0.790)</td>
+<td rowspan="2" align="center">15/316</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">92.0%</td>
+<td align="center" class="junction_repeat">coding&nbsp;(60/579&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>rtcB_1</i></td>
+<td class="junction_repeat">RNA&#8209;splicing ligase RtcB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_45.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">=&nbsp;3084021</td>
+<td align="center" class="junction_gene">2 (0.070)</td><td align="center" class="junction_gene">coding&nbsp;(103/345&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HDEJIKFF_02956</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_46.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_46.html">?</a></td>
+<td rowspan="1" class="junction_gene">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_gene">3084016&nbsp;=</td><td align="center" class="junction_gene">2 (0.070)</td><td rowspan="2" align="center">20 (0.690)</td>
+<td rowspan="2" align="center">17/316</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">90.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(108/345&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HDEJIKFF_02956</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_46.html">?</a></td><td rowspan="1" class="junction_repeat">GCA_000010105.AP0089576516310</td>
+<td align="center" class="junction_repeat">4422383&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;216/&#8209;154)</td>
+<td align="center" class="junction_repeat"><i>HDEJIKFF_04157/HDEJIKFF_04158</i></td>
+<td class="junction_repeat">hypothetical protein/hypothetical protein</td>
+</tr>
+</table>
+</body></html>

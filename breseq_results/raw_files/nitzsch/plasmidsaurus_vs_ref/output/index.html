@@ -1,0 +1,2391 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.chrom3572445</td><!-- Seq_Id -->
+<td align="right">1,079,492</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A153E</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>ccmA</i>&nbsp;&rarr;</td>
+<td align="left">Cytochrome c biogenesis ATP&#8209;binding export protein CcmA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_2.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;2292917</td><!-- Seq_Id -->
+<td align="right">126,025</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(56/540&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04064</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,327</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F417F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,333</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R415R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,339</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L413L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,363</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K405K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,387</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G397G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,393</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P395P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,396</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S394S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_10.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,399</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S393S</font>&nbsp;(TC<font class="mutation_in_codon">C</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_11.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,401</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1176&#8209;1177/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_12.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,405</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E391E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_13.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,414</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">C388C</font>&nbsp;(TG<font class="mutation_in_codon">T</font>&rarr;TG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_14.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,416</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1161&#8209;1162/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_15.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,429</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V383V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,435</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A381A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_17.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,438</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L380F</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_18.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,440</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L380F</font>&nbsp;(<font class="mutation_in_codon">C</font>TG&rarr;<font class="mutation_in_codon">T</font>TT)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,444</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A378A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_20.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,450</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A376A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_21.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,459</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1118&#8209;1119/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_22.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,467</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1110&#8209;1111/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_23.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,474</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q368Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,477</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A367A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_25.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,498</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S360S</font>&nbsp;(TC<font class="mutation_in_codon">C</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,501</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V359I</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_27.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,503</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V359I</font>&nbsp;(<font class="mutation_in_codon">G</font>TG&rarr;<font class="mutation_in_codon">A</font>TT)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_28.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,516</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R354R</font>&nbsp;(AG<font class="mutation_in_codon">A</font>&rarr;AG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_29.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,522</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q352Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,537</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">H347H</font>&nbsp;(CA<font class="mutation_in_codon">C</font>&rarr;CA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_31.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,555</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K341K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_32.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,588</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A330A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_33.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,591</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F329F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_34.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,594</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E328E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_35.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,597</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P327P</font>&nbsp;(CC<font class="mutation_in_codon">C</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_36.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,603</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A325A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_37.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,612</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V322I</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_38.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,614</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V322I</font>&nbsp;(<font class="mutation_in_codon">G</font>TG&rarr;<font class="mutation_in_codon">A</font>TC)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_39.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,618</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P320P</font>&nbsp;(CC<font class="mutation_in_codon">C</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_40.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,623</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(954&#8209;955/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_41.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,627</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L317L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_42.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,633</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A315A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_43.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,635</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(942&#8209;943/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_44.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,648</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V310V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_45.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,654</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A308A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_46.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,657</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V307V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_47.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,663</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E305D</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_48.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,672</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E302E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_49.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,677</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R301G</font>&nbsp;(<font class="mutation_in_codon">A</font>GG&rarr;<font class="mutation_in_codon">G</font>GG)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_50.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,685</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">Q298R</font>&nbsp;(C<font class="mutation_in_codon">A</font>G&rarr;C<font class="mutation_in_codon">G</font>G)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_51.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,687</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D297E</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_52.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,690</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E296E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_53.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,696</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(881&#8209;882/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_54.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,699</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A293A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_55.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,705</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P291P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_56.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,711</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V289V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_57.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,714</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(863&#8209;864/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_58.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,720</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(857&#8209;858/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_59.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,729</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N283K</font>&nbsp;(AA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_60.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,735</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S281S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_61.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,746</td><!-- Position -->
+<td align="center">3&nbsp;bp&rarr;TTA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(830&#8209;832/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_62.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,757</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N274I</font>&nbsp;(A<font class="mutation_in_codon">A</font>T&rarr;A<font class="mutation_in_codon">T</font>T)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_63.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,765</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">N271N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_64.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,783</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P265P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_65.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,897</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A227A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_66.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,900</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E226E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_67.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,903</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V225V</font>&nbsp;(GT<font class="mutation_in_codon">T</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_68.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,906</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R224R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_69.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,918</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E220E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_70.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,921</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K219K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_71.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,930</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T216T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_72.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,932</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(645&#8209;646/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_73.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,936</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L214L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_74.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,939</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R213R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_75.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,943</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V212E</font>&nbsp;(G<font class="mutation_in_codon">T</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_76.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,945</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L211L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_77.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,948</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q210Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_78.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,951</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E209E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_79.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,954</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S208S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_80.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,962</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E206Q</font>&nbsp;(<font class="mutation_in_codon">G</font>AA&rarr;<font class="mutation_in_codon">C</font>AA)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_81.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,966</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R204R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_82.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">11,978</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R200R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_83.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,002</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G192G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_84.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,023</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G185G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_85.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,031</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">M183L</font>&nbsp;(<font class="mutation_in_codon">A</font>TG&rarr;<font class="mutation_in_codon">T</font>TG)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_86.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,037</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">S181G</font>&nbsp;(<font class="mutation_in_codon">A</font>GC&rarr;<font class="mutation_in_codon">G</font>GC)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_87.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,041</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V179V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_88.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,044</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A178A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_89.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,047</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A177A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_90.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,059</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A173A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_91.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,068</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">M170I</font>&nbsp;(AT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_92.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,071</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R169R</font>&nbsp;(CG<font class="mutation_in_codon">T</font>&rarr;CG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_93.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,077</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A167A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_94.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,080</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V166V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_95.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,092</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R162R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_96.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,100</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L160L</font>&nbsp;(<font class="mutation_in_codon">C</font>TG&rarr;<font class="mutation_in_codon">T</font>TG)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_97.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,107</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">C157C</font>&nbsp;(TG<font class="mutation_in_codon">T</font>&rarr;TG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_98.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,131</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D149E</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_99.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,137</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">H147Q</font>&nbsp;(CA<font class="mutation_in_codon">T</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_100.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,140</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L146L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_101.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,146</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E144E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_102.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,149</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F143F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_103.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,161</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R139R</font>&nbsp;(CG<font class="mutation_in_codon">T</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_104.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,164</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A138A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_105.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,167</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S137S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_106.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,191</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Y129Y</font>&nbsp;(TA<font class="mutation_in_codon">T</font>&rarr;TA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_107.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,206</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R124R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_108.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,215</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A121A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_109.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,221</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R119R</font>&nbsp;(AG<font class="mutation_in_codon">G</font>&rarr;AG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_110.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,236</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K114K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_111.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,242</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">N112N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_112.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,245</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P111P</font>&nbsp;(CC<font class="mutation_in_codon">A</font>&rarr;CC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_113.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,251</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D109D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_114.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,260</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S106S</font>&nbsp;(TC<font class="mutation_in_codon">C</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_115.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,269</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G103G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_116.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,273</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">I102N</font>&nbsp;(A<font class="mutation_in_codon">T</font>C&rarr;A<font class="mutation_in_codon">A</font>C)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_117.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,278</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A100A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_118.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,284</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R98R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_119.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,290</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A96A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_120.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,296</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R94R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_121.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,302</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L92L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_122.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,305</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A91A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_123.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,308</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S90S</font>&nbsp;(TC<font class="mutation_in_codon">C</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_124.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,311</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L89L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_125.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,314</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S88S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_126.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,320</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G86G</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_127.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,329</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E83E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_128.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,347</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S77S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_129.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,350</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A76A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_130.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,371</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G69G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_131.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,392</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q62Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_132.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,395</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T61T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_133.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,398</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F60F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_134.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,407</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L57L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_135.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,410</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T56T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_136.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,413</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D55D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_137.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,431</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G49G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_138.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,440</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L46L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_139.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,443</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G45G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_140.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,446</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I44I</font>&nbsp;(AT<font class="mutation_in_codon">T</font>&rarr;AT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_141.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,449</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Y43Y</font>&nbsp;(TA<font class="mutation_in_codon">C</font>&rarr;TA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_142.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,451</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(126&#8209;127/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_143.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,461</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R39R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_144.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,467</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V37V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_145.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,469</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(108&#8209;109/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_146.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,476</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F34F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_147.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,479</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A33A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_148.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,485</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T31T</font>&nbsp;(AC<font class="mutation_in_codon">A</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_149.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,488</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K30K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_150.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,493</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">S29P</font>&nbsp;(<font class="mutation_in_codon">T</font>CC&rarr;<font class="mutation_in_codon">C</font>CC)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_151.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,496</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(81&#8209;82/1281&nbsp;nt)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_152.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,504</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">Q25R</font>&nbsp;(C<font class="mutation_in_codon">A</font>G&rarr;C<font class="mutation_in_codon">G</font>G)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_153.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,530</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A16A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_154.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,536</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G14G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_155.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,584</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;7/+154)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_156.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,595</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;18/+143)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_157.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,597</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;20/+141)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_158.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,599</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;22/+139)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_159.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,626</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;49/+112)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_160.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,627</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TC</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;50/+110)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_161.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,631</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AA</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;54/+106)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_162.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,638</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;61/+100)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_163.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,640</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;63/+98)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_164.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,652</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;75/+86)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_165.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,655</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;78/+82)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_166.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,658</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;81/+80)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_167.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,663</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;86/+74)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_168.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,671</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GA</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;94/+66)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_169.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,674</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;97/+64)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_170.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,676</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;99/+62)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_171.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,685</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CA</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;108/+52)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_172.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,689</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;112/+49)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_173.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,694</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;117/+44)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_174.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,709</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;132/+29)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_175.html">RA</a></td><!-- Evidence -->
+<td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td><!-- Seq_Id -->
+<td align="right">12,711</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;134/+27)</td>
+<td align="center"><i>PEIKNMDC_04843</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>PEIKNMDC_04844</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_852.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_852.html">*</a></td>
+<td><a href="evidence/MC_PLOT_852.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="right">3572442</td>
+<td align="right">3572445</td>
+<td align="right">4</td>
+<td align="center">393&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>PEIKNMDC_03538/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_853.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_853.html">*</a></td>
+<td><a href="evidence/MC_PLOT_853.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;1428095</td>
+<td align="right">428094</td>
+<td align="right">428095</td>
+<td align="right">2</td>
+<td align="center">345&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>PEIKNMDC_03949/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_854.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_854.html">*</a></td>
+<td><a href="evidence/MC_PLOT_854.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;5142107</td>
+<td align="right">52006</td>
+<td align="right">65638&#8211;64252</td>
+<td align="right">12247&#8211;13633</td>
+<td align="center">700&nbsp;[0]</td>
+<td align="center">[291]&nbsp;294</td>
+<td align="center"><i>[PEIKNMDC_04736]&#8211;[PEIKNMDC_04749]</i></td>
+<td align="left">[PEIKNMDC_04736],PEIKNMDC_04737,dctP_4,PEIKNMDC_04739,dctM_25,PEIKNMDC_04741,PEIKNMDC_04742,proC_5,PEIKNMDC_04744,hutI_2,PEIKNMDC_04746,PEIKNMDC_04747,dctM_26,[PEIKNMDC_04749]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_855.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_855.html">*</a></td>
+<td><a href="evidence/MC_PLOT_855.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td>
+<td align="right">1</td>
+<td align="right">11308</td>
+<td align="right">11308</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[13]&nbsp;14</td>
+<td align="center"><i>PEIKNMDC_04832&#8211;[PEIKNMDC_04843]</i></td>
+<td align="left">PEIKNMDC_04832,PEIKNMDC_04833,PEIKNMDC_04834,PEIKNMDC_04835,PEIKNMDC_04836,PEIKNMDC_04837,ftsH_2,PEIKNMDC_04839,scpB_4,PEIKNMDC_04841,xerC_9,[PEIKNMDC_04843]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_856.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_856.html">*</a></td>
+<td><a href="evidence/MC_PLOT_856.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td>
+<td align="right">11816</td>
+<td align="right">11883</td>
+<td align="right">68</td>
+<td align="center">15&nbsp;[13]</td>
+<td align="center">[10]&nbsp;26</td>
+<td align="center"><i>PEIKNMDC_04843</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_857.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_857.html">*</a></td>
+<td><a href="evidence/MC_PLOT_857.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;699245</td>
+<td align="right">12734</td>
+<td align="right">99245</td>
+<td align="right">86512</td>
+<td align="center">20&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>PEIKNMDC_04844&#8211;PEIKNMDC_04924</i></td>
+<td align="left">PEIKNMDC_04844,PEIKNMDC_04845,PEIKNMDC_04846,PEIKNMDC_04847,PEIKNMDC_04848,PEIKNMDC_04849,PEIKNMDC_04850,yabJ_2,PEIKNMDC_04852,PEIKNMDC_04853,dctM_27,PEIKNMDC_04855,PEIKNMDC_04856,apc4_3,PEIKNMDC_04858,gltR_2,dadA1_3,PEIKNMDC_04861,PEIKNMDC_04862,PEIKNMDC_04863,stcD_4,proC_6,PEIKNMDC_04866,stcD_5,PEIKNMDC_04868,PEIKNMDC_04869,PEIKNMDC_04870,PEIKNMDC_04871,PEIKNMDC_04872,PEIKNMDC_04873,PEIKNMDC_04874,PEIKNMDC_04875,PEIKNMDC_04876,abo_8,livF_11,livF_12,PEIKNMDC_04880,livH_10,PEIKNMDC_04882,apc4_4,apc3_3,puuR,etfB_3,etfA_3,folD_2,purU_3,puuE,davD_2,gdhA_2,ndh,PEIKNMDC_04894,PEIKNMDC_04895,PEIKNMDC_04896,PEIKNMDC_04897,mltF_4,PEIKNMDC_04899,PEIKNMDC_04900,virB4_4,PEIKNMDC_04902,mltF_5,PEIKNMDC_04904,PEIKNMDC_04905,PEIKNMDC_04906,ptlE_2,virB9_4,PEIKNMDC_04909,PEIKNMDC_04910,PEIKNMDC_04911,PEIKNMDC_04912,PEIKNMDC_04913,PEIKNMDC_04914,PEIKNMDC_04915,PEIKNMDC_04916,PEIKNMDC_04917,PEIKNMDC_04918,virD4_3,PEIKNMDC_04920,PEIKNMDC_04921,PEIKNMDC_04922,PEIKNMDC_04923,PEIKNMDC_04924</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_858.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_858.html">*</a></td>
+<td><a href="evidence/MC_PLOT_858.html">&divide;</a></td>
+<td>S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td>
+<td align="right">92788</td>
+<td align="right">92794</td>
+<td align="right">7</td>
+<td align="center">339&nbsp;[31]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>PEIKNMDC_05012/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_859.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_859.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">391 (1.150)<br>+TCC</td>
+<td rowspan="2" align="center">96/310</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;6)</td>
+<td align="center" class="junction_gene"><i>&#8211;/PEIKNMDC_00001</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_859.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;3572441</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;241/&#8211;)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03538/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1062.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1062.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;1428095</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">345 (0.880)<br>+TCG</td>
+<td rowspan="2" align="center">94/310</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;270)</td>
+<td align="center" class="junction_gene"><i>&#8211;/PEIKNMDC_03539</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1062.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;1428095</td>
+<td align="center" class="junction_gene">=&nbsp;428093</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;267/&#8211;)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03949/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1224.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1224.html">?</a></td>
+<td rowspan="1" class="junction_repeat">S_pseudonitzschiae_SMR1.pSMR1&#8209;5142107</td>
+<td align="center" class="junction_repeat">=&nbsp;49633</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">699 (1.280)</td>
+<td rowspan="2" align="center">130/316</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;77/&#8209;261)</td>
+<td align="center" class="junction_repeat"><i>PEIKNMDC_04733/betI_4</i></td>
+<td class="junction_repeat">ISKra4 family transposase ISUnCu19/HTH&#8209;type transcriptional regulator BetI</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1224.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;5142107</td>
+<td align="center" class="junction_gene">=&nbsp;52005</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(481/1362&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_04736</i></td>
+<td class="junction_gene">IS110 family transposase ISWpi13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1232.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1232.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">284 (0.800)</td>
+<td rowspan="2" align="center">94/306</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;133)</td>
+<td align="center" class="junction_gene"><i>&#8211;/prlF</i></td>
+<td class="junction_gene">&#8211;/Antitoxin PrlF</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1232.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td>
+<td align="center" class="junction_gene">=&nbsp;92787</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+643/&#8211;)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_05012/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+</table>
+</body></html>

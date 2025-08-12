@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 88 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_732.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">985,064</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">79.8%
+</td><td align="center">695.1
+/&nbsp;167.5
+</td><td align="center">259</td><td align="center">coding&nbsp;(636/741&nbsp;nt)</td><td align="center"><i>GFGNBMJF_01019</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_682.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">613,704</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">79.1%
+</td><td align="center">782.1
+/&nbsp;189.2
+</td><td align="center">285</td><td align="center">coding&nbsp;(221/318&nbsp;nt)</td><td align="center"><i>GFGNBMJF_00631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_950.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,430,169</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">72.0%
+</td><td align="center">931.8
+/&nbsp;inf
+</td><td align="center">375</td><td align="center">intergenic&nbsp;(&#8209;4/+983)</td><td align="center"><i>GFGNBMJF_02509/GFGNBMJF_02510</i></td><td align="left">hypothetical protein/ISL3 family transposase ISRso21</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1070.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,216,683</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">35.9%
+</td><td align="center">134.1
+/&nbsp;66.8
+</td><td align="center">170</td><td align="center">intergenic&nbsp;(+13/&#8209;76)</td><td align="center"><i>dppA_2/gsiC_2</i></td><td align="left">Periplasmic dipeptide transport protein/Glutathione transport system permease protein GsiC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_783.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">1,288,149</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">35.9%
+</td><td align="center">123.7
+/&nbsp;36.1
+</td><td align="center">145</td><td align="center"><font class="snp_type_nonsynonymous">R371G</font>&nbsp;(<font class="mutation_in_codon">A</font>GG&rarr;<font class="mutation_in_codon">G</font>GG)&nbsp;</td><td align="center"><i>GFGNBMJF_01335</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1054.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,044,176</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">35.1%
+</td><td align="center">63.1
+/&nbsp;16.0
+</td><td align="center">44</td><td align="center">intergenic&nbsp;(+316/&#8209;51)</td><td align="center"><i>gucD/GFGNBMJF_03169</i></td><td align="left">Alpha&#8209;ketoglutaric semialdehyde dehydrogenase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1016.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,888,557</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">32.2%
+</td><td align="center">165.9
+/&nbsp;21.6
+</td><td align="center">119</td><td align="center">intergenic&nbsp;(+75/&#8209;251)</td><td align="center"><i>thiE_2/GFGNBMJF_03005</i></td><td align="left">Thiamine&#8209;phosphate synthase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_788.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">1,312,079</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">31.9%
+</td><td align="center">353.6
+/&nbsp;46.3
+</td><td align="center">208</td><td align="center"><font class="snp_type_nonsynonymous">W89L</font>&nbsp;(T<font class="mutation_in_codon">G</font>G&rarr;T<font class="mutation_in_codon">T</font>G)&nbsp;</td><td align="center"><i>putA</i></td><td align="left">Bifunctional protein PutA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1071.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,216,686</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">29.5%
+</td><td align="center">165.2
+/&nbsp;11.7
+</td><td align="center">170</td><td align="center">intergenic&nbsp;(+16/&#8209;73)</td><td align="center"><i>dppA_2/gsiC_2</i></td><td align="left">Periplasmic dipeptide transport protein/Glutathione transport system permease protein GsiC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1085.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,315,680</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">29.5%
+</td><td align="center">380.0
+/&nbsp;68.9
+</td><td align="center">209</td><td align="center">intergenic&nbsp;(+94/+25)</td><td align="center"><i>GFGNBMJF_03419/GFGNBMJF_03420</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1007.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,856,551</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">29.0%
+</td><td align="center">235.1
+/&nbsp;68.6
+</td><td align="center">187</td><td align="center"><font class="snp_type_nonsynonymous">R25P</font>&nbsp;(C<font class="mutation_in_codon">G</font>C&rarr;C<font class="mutation_in_codon">C</font>C)&nbsp;</td><td align="center"><i>GFGNBMJF_02968</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1103.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,441,300</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">28.7%
+</td><td align="center">276.6
+/&nbsp;16.7
+</td><td align="center">208</td><td align="center">intergenic&nbsp;(&#8209;105/+215)</td><td align="center"><i>pheT/GFGNBMJF_03557</i></td><td align="left">Phenylalanine&#8209;&#8209;tRNA ligase beta subunit/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1064.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,173,070</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">28.7%
+</td><td align="center">157.7
+/&nbsp;15.9
+</td><td align="center">138</td><td align="center"><font class="snp_type_nonsynonymous">R25Q</font>&nbsp;(C<font class="mutation_in_codon">G</font>G&rarr;C<font class="mutation_in_codon">A</font>G)&nbsp;</td><td align="center"><i>norW</i></td><td align="left">Nitric oxide reductase FlRd&#8209;NAD(+) reductase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_935.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,275,620</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">28.3%
+</td><td align="center">677.7
+/&nbsp;100.0
+</td><td align="center">403</td><td align="center"><font class="snp_type_nonsynonymous">I278V</font>&nbsp;(<font class="mutation_in_codon">A</font>TC&rarr;<font class="mutation_in_codon">G</font>TC)&nbsp;</td><td align="center"><i>GFGNBMJF_02344</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_702.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">721,011</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">28.2%
+</td><td align="center">513.5
+/&nbsp;35.9
+</td><td align="center">280</td><td align="center">intergenic&nbsp;(&#8209;85/+68)</td><td align="center"><i>actP_1/GFGNBMJF_00741</i></td><td align="left">Copper&#8209;transporting P&#8209;type ATPase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1175.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">3,848,276</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">27.8%
+</td><td align="center">69.0
+/&nbsp;12.8
+</td><td align="center">39</td><td align="center">intergenic&nbsp;(+95/&#8209;112)</td><td align="center"><i>uvrC/pgsA</i></td><td align="left">UvrABC system protein C/CDP&#8209;diacylglycerol&#8209;&#8209;glycerol&#8209;3&#8209;phosphate 3&#8209;phosphatidyltransferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_904.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,055,070</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">27.5%
+</td><td align="center">523.8
+/&nbsp;32.1
+</td><td align="center">289</td><td align="center">intergenic&nbsp;(&#8209;259/+27)</td><td align="center"><i>thiC/GFGNBMJF_02118</i></td><td align="left">Phosphomethylpyrimidine synthase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_854.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">1,678,971</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">27.3%
+</td><td align="center">533.4
+/&nbsp;74.6
+</td><td align="center">332</td><td align="center"><font class="snp_type_synonymous">E33E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>xseA</i></td><td align="left">Exodeoxyribonuclease 7 large subunit</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_867.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">1,733,198</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">26.8%
+</td><td align="center">619.5
+/&nbsp;59.1
+</td><td align="center">320</td><td align="center"><font class="snp_type_nonsynonymous">S39R</font>&nbsp;(<font class="mutation_in_codon">A</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;</td><td align="center"><i>GFGNBMJF_01800</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1015.html">*</a></td><td align="center">B08&#8209;chromosome</td><td align="right">2,886,035</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">26.8%
+</td><td align="center">216.0
+/&nbsp;14.9
+</td><td align="center">189</td><td align="center"><font class="snp_type_nonsynonymous">A34T</font>&nbsp;(<font class="mutation_in_codon">G</font>CC&rarr;<font class="mutation_in_codon">A</font>CC)&nbsp;</td><td align="center"><i>mnmC_3</i></td><td align="left">tRNA 5&#8209;methylaminomethyl&#8209;2&#8209;thiouridine biosynthesis bifunctional protein MnmC</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 202 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1271.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1271.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">91215&nbsp;=</td><td align="center" class="junction_gene">527 (1.470)</td><td rowspan="2" align="center">41 (0.120)</td>
+<td rowspan="2" align="center">17/300</td>
+<td rowspan="2" align="center">10.6</td>
+<td rowspan="2" align="center">7.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1600/1785&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_00096</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1271.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">91239&nbsp;=</td>
+<td align="center" class="junction_gene">513 (1.510)</td><td align="center" class="junction_gene">coding&nbsp;(1576/1785&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_00096</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1362.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1362.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">2091560&nbsp;=</td><td align="center" class="junction_gene">335 (0.930)</td><td rowspan="2" align="center">20 (0.060)</td>
+<td rowspan="2" align="center">15/280</td>
+<td rowspan="2" align="center">10.7</td>
+<td rowspan="2" align="center">6.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(177/363&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_02157</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1362.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">2091578&nbsp;=</td>
+<td align="center" class="junction_gene">298 (0.940)</td><td align="center" class="junction_gene">coding&nbsp;(195/363&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_02157</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1415.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1415.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;3511556</td><td align="center" class="junction_gene">415 (1.160)</td><td rowspan="2" align="center">32 (0.100)</td>
+<td rowspan="2" align="center">15/294</td>
+<td rowspan="2" align="center">11.1</td>
+<td rowspan="2" align="center">7.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+157/+72)</td>
+<td align="center" class="junction_gene"><i>gsiA_3/cpo_2</i></td>
+<td class="junction_gene">Glutathione import ATP&#8209;binding protein GsiA/Non&#8209;heme chloroperoxidase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1415.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;3511564</td>
+<td align="center" class="junction_gene">374 (1.120)</td><td align="center" class="junction_gene">intergenic&nbsp;(+165/+64)</td>
+<td align="center" class="junction_gene"><i>gsiA_3/cpo_2</i></td>
+<td class="junction_gene">Glutathione import ATP&#8209;binding protein GsiA/Non&#8209;heme chloroperoxidase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1309.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1309.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1041431&nbsp;=</td><td align="center" class="junction_gene">246 (0.690)</td><td rowspan="2" align="center">21 (0.060)</td>
+<td rowspan="2" align="center">13/288</td>
+<td rowspan="2" align="center">11.8</td>
+<td rowspan="2" align="center">8.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(113/597&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_01077</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1309.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;1041427</td>
+<td align="center" class="junction_gene">238 (0.730)</td><td align="center" class="junction_gene">coding&nbsp;(117/597&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GFGNBMJF_01077</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1334.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1334.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1465096&nbsp;=</td><td align="center" class="junction_gene">537 (1.500)</td><td rowspan="2" align="center">30 (0.090)</td>
+<td rowspan="2" align="center">13/298</td>
+<td rowspan="2" align="center">12.1</td>
+<td rowspan="2" align="center">5.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(136/642&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>todT_1</i></td>
+<td class="junction_gene">Response regulator protein TodT</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1334.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1465124&nbsp;=</td>
+<td align="center" class="junction_gene">534 (1.580)</td><td align="center" class="junction_gene">coding&nbsp;(164/642&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>todT_1</i></td>
+<td class="junction_gene">Response regulator protein TodT</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1357.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1357.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1984999&nbsp;=</td><td align="center" class="junction_gene">362 (1.010)</td><td rowspan="2" align="center">13 (0.040)</td>
+<td rowspan="2" align="center">12/288</td>
+<td rowspan="2" align="center">12.2</td>
+<td rowspan="2" align="center">3.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(40/477&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>dsbB</i></td>
+<td class="junction_gene">Disulfide bond formation protein B</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1357.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1985013&nbsp;=</td>
+<td align="center" class="junction_gene">344 (1.050)</td><td align="center" class="junction_gene">coding&nbsp;(26/477&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>dsbB</i></td>
+<td class="junction_gene">Disulfide bond formation protein B</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1322.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1322.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1294398&nbsp;=</td><td align="center" class="junction_gene">310 (0.860)</td><td rowspan="2" align="center">23 (0.070)</td>
+<td rowspan="2" align="center">13/302</td>
+<td rowspan="2" align="center">12.3</td>
+<td rowspan="2" align="center">7.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+81/&#8209;37)</td>
+<td align="center" class="junction_gene"><i>bepC/GFGNBMJF_01345</i></td>
+<td class="junction_gene">Outer membrane efflux protein BepC/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1322.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">1294413&nbsp;=</td>
+<td align="center" class="junction_gene">297 (0.870)</td><td align="center" class="junction_gene">intergenic&nbsp;(+96/&#8209;22)</td>
+<td align="center" class="junction_gene"><i>bepC/GFGNBMJF_01345</i></td>
+<td class="junction_gene">Outer membrane efflux protein BepC/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1468.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1468.html">?</a></td>
+<td rowspan="1" class="junction_repeat">B08&#8209;replicon_1</td>
+<td align="center" class="junction_repeat">=&nbsp;154109</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">106 (0.250)</td>
+<td rowspan="2" align="center">21/306</td>
+<td rowspan="2" align="center">12.5</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;6/+153)</td>
+<td align="center" class="junction_repeat"><i>GFGNBMJF_04496/GFGNBMJF_04497</i></td>
+<td class="junction_repeat">IS3 family transposase ISPye57/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1468.html">?</a></td><td rowspan="1" class="junction_repeat">B08&#8209;replicon_1</td>
+<td align="center" class="junction_repeat">=&nbsp;154123</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;20/+139)</td>
+<td align="center" class="junction_repeat"><i>GFGNBMJF_04496/GFGNBMJF_04497</i></td>
+<td class="junction_repeat">IS3 family transposase ISPye57/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1393.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1393.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">2851802&nbsp;=</td><td align="center" class="junction_gene">374 (1.040)</td><td rowspan="2" align="center">20 (0.060)</td>
+<td rowspan="2" align="center">12/298</td>
+<td rowspan="2" align="center">12.6</td>
+<td rowspan="2" align="center">5.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(410/792&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>fabI_2</i></td>
+<td class="junction_gene">Enoyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase [NADH] FabI</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1393.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">2851846&nbsp;=</td>
+<td align="center" class="junction_gene">354 (1.050)</td><td align="center" class="junction_gene">coding&nbsp;(366/792&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>fabI_2</i></td>
+<td class="junction_gene">Enoyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase [NADH] FabI</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1310.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1310.html">?</a></td>
+<td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;1051627</td><td align="center" class="junction_gene">335 (0.930)</td><td rowspan="2" align="center">18 (0.050)</td>
+<td rowspan="2" align="center">12/302</td>
+<td rowspan="2" align="center">12.7</td>
+<td rowspan="2" align="center">5.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(26/1494&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>cntA</i></td>
+<td class="junction_gene">Metal&#8209;staphylopine&#8209;binding protein CntA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1310.html">?</a></td><td rowspan="1" class="junction_gene">B08&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;1051634</td>
+<td align="center" class="junction_gene">312 (0.910)</td><td align="center" class="junction_gene">coding&nbsp;(33/1494&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>cntA</i></td>
+<td class="junction_gene">Metal&#8209;staphylopine&#8209;binding protein CntA</td>
+</tr>
+</table>
+</body></html>

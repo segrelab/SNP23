@@ -1,0 +1,4 @@
+Fri Aug  8 17:28:34 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/HOT5_F03/HOT5_F03.gbk -o breseq_results/raw_files/hot5_f3/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/NDPXLJ_polished_results/NDPXLJ_6_polish/NDPXLJ_6_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/NDPXLJ_polished_results/NDPXLJ_6_polish/NDPXLJ_6_R2_001.fastq.gz
+

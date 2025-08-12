@@ -1,0 +1,206 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 63 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_62.html">*</a></td><td align="center">H615DRAFT_scaffold00007.7213318</td><td align="right">26</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">67.7%
+</td><td align="center">10.7
+/&nbsp;26.9
+</td><td align="center">31</td><td align="center">intergenic&nbsp;(&#8211;/+444)</td><td align="center"><i>&#8211;/JBIFAAJI_03437</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_65.html">*</a></td><td align="center">H615DRAFT_scaffold00007.7213318</td><td align="right">59</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">67.1%
+</td><td align="center">47.0
+/&nbsp;68.7
+</td><td align="center">73</td><td align="center">intergenic&nbsp;(&#8211;/+411)</td><td align="center"><i>&#8211;/JBIFAAJI_03437</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_91.html">*</a></td><td align="center">H615DRAFT_scaffold00014.1450965</td><td align="right">50,647</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">65.5%
+</td><td align="center">13.3
+/&nbsp;25.5
+</td><td align="center">29</td><td align="center">intergenic&nbsp;(&#8209;287/&#8211;)</td><td align="center"><i>JBIFAAJI_00433/&#8211;</i></td><td align="left">hypothetical protein/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_89.html">*</a></td><td align="center">H615DRAFT_scaffold00014.1450965</td><td align="right">50,598</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">64.3%
+</td><td align="center">14.0
+/&nbsp;20.1
+</td><td align="center">28</td><td align="center">intergenic&nbsp;(&#8209;238/&#8211;)</td><td align="center"><i>JBIFAAJI_00433/&#8211;</i></td><td align="left">hypothetical protein/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_95.html">*</a></td><td align="center">H615DRAFT_scaffold00016.164803</td><td align="right">101</td><td align="right">0</td><td align="center">A</td><td align="center">.</td><td align="right">64.3%
+</td><td align="center">8.5
+/&nbsp;20.3
+</td><td align="center">14</td><td align="center">intergenic&nbsp;(&#8211;/&#8209;1248)</td><td align="center"><i>&#8211;/JBIFAAJI_03979</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_75.html">*</a></td><td align="center">H615DRAFT_scaffold00008.8176179</td><td align="right">132</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">61.1%
+</td><td align="center">16.1
+/&nbsp;35.0
+</td><td align="center">36</td><td align="center">intergenic&nbsp;(&#8211;/+179)</td><td align="center"><i>&#8211;/JBIFAAJI_03668</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_77.html">*</a></td><td align="center">H615DRAFT_scaffold00008.8176179</td><td align="right">86,540</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">60.0%
+</td><td align="center">&#8209;4.1
+/&nbsp;14.8
+</td><td align="center">15</td><td align="center">intergenic&nbsp;(+163/+405)</td><td align="center"><i>cspB_2/map_2</i></td><td align="left">Cold shock protein CspB/Methionine aminopeptidase 1</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_92.html">*</a></td><td align="center">H615DRAFT_scaffold00014.1450965</td><td align="right">50,660</td><td align="right">0</td><td align="center">A</td><td align="center">.</td><td align="right">60.0%
+</td><td align="center">36.7
+/&nbsp;57.1
+</td><td align="center">30</td><td align="center">intergenic&nbsp;(&#8209;300/&#8211;)</td><td align="center"><i>JBIFAAJI_00433/&#8211;</i></td><td align="left">hypothetical protein/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_93.html">*</a></td><td align="center">H615DRAFT_scaffold00014.1450965</td><td align="right">50,662</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">60.0%
+</td><td align="center">0.5
+/&nbsp;32.2
+</td><td align="center">30</td><td align="center">intergenic&nbsp;(&#8209;302/&#8211;)</td><td align="center"><i>JBIFAAJI_00433/&#8211;</i></td><td align="left">hypothetical protein/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_43.html">*</a></td><td align="center">H615DRAFT_scaffold00004.4360355</td><td align="right">264,144</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">56.7%
+</td><td align="center">4.9
+/&nbsp;32.9
+</td><td align="center">30</td><td align="center">intergenic&nbsp;(+170/&#8209;127)</td><td align="center"><i>dagK_2/rlmCD</i></td><td align="left">Diacylglycerol kinase/23S rRNA (uracil&#8209;C(5))&#8209;methyltransferase RlmCD</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_31.html">*</a></td><td align="center">H615DRAFT_scaffold00001.11160998</td><td align="right">519,954</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">54.8%
+</td><td align="center">4.3
+/&nbsp;56.2
+</td><td align="center">42</td><td align="center">intergenic&nbsp;(+370/+59)</td><td align="center"><i>copZ_1/JBIFAAJI_01027</i></td><td align="left">Copper chaperone CopZ/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_55.html">*</a></td><td align="center">H615DRAFT_scaffold00006.6221391</td><td align="right">31,902</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">54.3%
+</td><td align="center">11.0
+/&nbsp;41.4
+</td><td align="center">35</td><td align="center">intergenic&nbsp;(+291/+141)</td><td align="center"><i>JBIFAAJI_03237/dksA</i></td><td align="left">hypothetical protein/RNA polymerase&#8209;binding transcription factor DksA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_29.html">*</a></td><td align="center">H615DRAFT_scaffold00001.11160998</td><td align="right">519,909</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">50.0%
+</td><td align="center">0.8
+/&nbsp;58.8
+</td><td align="center">28</td><td align="center">intergenic&nbsp;(+325/+104)</td><td align="center"><i>copZ_1/JBIFAAJI_01027</i></td><td align="left">Copper chaperone CopZ/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_57.html">*</a></td><td align="center">H615DRAFT_scaffold00006.6221391</td><td align="right">31,925</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">48.6%
+</td><td align="center">1.3
+/&nbsp;53.4
+</td><td align="center">37</td><td align="center">intergenic&nbsp;(+314/+118)</td><td align="center"><i>JBIFAAJI_03237/dksA</i></td><td align="left">hypothetical protein/RNA polymerase&#8209;binding transcription factor DksA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_53.html">*</a></td><td align="center">H615DRAFT_scaffold00006.6221391</td><td align="right">31,863</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">48.6%
+</td><td align="center">&#8209;1.7
+/&nbsp;52.6
+</td><td align="center">35</td><td align="center">intergenic&nbsp;(+252/+180)</td><td align="center"><i>JBIFAAJI_03237/dksA</i></td><td align="left">hypothetical protein/RNA polymerase&#8209;binding transcription factor DksA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_54.html">*</a></td><td align="center">H615DRAFT_scaffold00006.6221391</td><td align="right">31,865</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">48.6%
+</td><td align="center">&#8209;0.0
+/&nbsp;52.7
+</td><td align="center">35</td><td align="center">intergenic&nbsp;(+254/+178)</td><td align="center"><i>JBIFAAJI_03237/dksA</i></td><td align="left">hypothetical protein/RNA polymerase&#8209;binding transcription factor DksA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_30.html">*</a></td><td align="center">H615DRAFT_scaffold00001.11160998</td><td align="right">519,912</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">48.1%
+</td><td align="center">15.5
+/&nbsp;34.6
+</td><td align="center">28</td><td align="center">intergenic&nbsp;(+328/+101)</td><td align="center"><i>copZ_1/JBIFAAJI_01027</i></td><td align="left">Copper chaperone CopZ/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_32.html">*</a></td><td align="center">H615DRAFT_scaffold00001.11160998</td><td align="right">1,123,451</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">47.8%
+</td><td align="center">14.0
+/&nbsp;29.4
+</td><td align="center">24</td><td align="center">intergenic&nbsp;(+137/+550)</td><td align="center"><i>JBIFAAJI_01657/nfdA_3</i></td><td align="left">hypothetical protein/N&#8209;substituted formamide deformylase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_94.html">*</a></td><td align="center">H615DRAFT_scaffold00016.164803</td><td align="right">21</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">47.5%
+</td><td align="center">&#8209;0.5
+/&nbsp;60.5
+</td><td align="center">40</td><td align="center">intergenic&nbsp;(&#8211;/&#8209;1328)</td><td align="center"><i>&#8211;/JBIFAAJI_03979</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_85.html">*</a></td><td align="center">H615DRAFT_scaffold00012.1276876</td><td align="right">49,914</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">46.2%
+</td><td align="center">&#8209;2.2
+/&nbsp;22.9
+</td><td align="center">13</td><td align="center">intergenic&nbsp;(&#8209;63/&#8209;136)</td><td align="center"><i>cdgJ/petC_1</i></td><td align="left">Cyclic di&#8209;GMP phosphodiesterase CdgJ/Cytochrome b6&#8209;f complex iron&#8209;sulfur subunit</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (sorted from low to high skew)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_125.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_125.html">?</a></td>
+<td rowspan="1" class="junction_gene">H615DRAFT_scaffold00010.10117691</td>
+<td align="center" class="junction_gene">=&nbsp;3451</td><td align="center" class="junction_gene">15 (0.760)</td><td rowspan="2" align="center">11 (0.170)<br>+32 bp</td>
+<td rowspan="2" align="center">8/252</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">14.6%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(1/77&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>JBIFAAJI_00010</i></td>
+<td class="junction_gene">tRNA&#8209;Ile</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_125.html">?</a></td><td rowspan="1" class="junction_gene">H615DRAFT_scaffold00016.164803</td>
+<td align="center" class="junction_gene">=&nbsp;1758</td>
+<td align="center" class="junction_gene">146 (0.990)</td><td align="center" class="junction_gene">intergenic&nbsp;(+155/&#8211;)</td>
+<td align="center" class="junction_gene"><i>JBIFAAJI_03979/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+</table>
+</body></html>

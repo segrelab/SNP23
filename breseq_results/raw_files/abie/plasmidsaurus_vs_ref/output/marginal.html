@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 148 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_127.html">*</a></td><td align="center">Ga0104642_140</td><td align="right">5,080</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">79.5%
+</td><td align="center">370.8
+/&nbsp;113.8
+</td><td align="center">215</td><td align="center">intergenic&nbsp;(&#8209;1670/&#8211;)</td><td align="center"><i>HBEENCOK_06605/&#8211;</i></td><td align="left">tRNA&#8209;Ile/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_123.html">*</a></td><td align="center">Ga0104642_138</td><td align="right">2,490</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">78.2%
+</td><td align="center">88.1
+/&nbsp;29.8
+</td><td align="center">55</td><td align="center">intergenic&nbsp;(&#8209;188/+385)</td><td align="center"><i>HBEENCOK_06593/HBEENCOK_06594</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_98.html">*</a></td><td align="center">Ga0104642_112</td><td align="right">139,478</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">72.7%
+</td><td align="center">109.0
+/&nbsp;29.1
+</td><td align="center">55</td><td align="center"><font class="snp_type_synonymous">A64A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>HBEENCOK_04421</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_121.html">*</a></td><td align="center">Ga0104642_138</td><td align="right">2,042</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">69.6%
+</td><td align="center">65.5
+/&nbsp;31.6
+</td><td align="center">46</td><td align="center"><font class="snp_type_synonymous">L87L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>HBEENCOK_06593</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_74.html">*</a></td><td align="center">Ga0104642_106</td><td align="right">3,777</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">68.5%
+</td><td align="center">3.3
+/&nbsp;47.8
+</td><td align="center">54</td><td align="center"><font class="snp_type_synonymous">T2759T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>HBEENCOK_02572</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_73.html">*</a></td><td align="center">Ga0104642_106</td><td align="right">3,755</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">66.7%
+</td><td align="center">0.8
+/&nbsp;44.2
+</td><td align="center">54</td><td align="center"><font class="snp_type_nonsynonymous">F2767L</font>&nbsp;(<font class="mutation_in_codon">T</font>TC&rarr;<font class="mutation_in_codon">C</font>TC)&nbsp;</td><td align="center"><i>HBEENCOK_02572</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_97.html">*</a></td><td align="center">Ga0104642_112</td><td align="right">139,373</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">66.0%
+</td><td align="center">52.4
+/&nbsp;46.7
+</td><td align="center">50</td><td align="center"><font class="snp_type_synonymous">D99D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>HBEENCOK_04421</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_122.html">*</a></td><td align="center">Ga0104642_138</td><td align="right">2,060</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">66.0%
+</td><td align="center">60.7
+/&nbsp;37.2
+</td><td align="center">47</td><td align="center"><font class="snp_type_synonymous">D81D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>HBEENCOK_06593</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_158.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">386</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">64.5%
+</td><td align="center">117.6
+/&nbsp;92.2
+</td><td align="center">107</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_156.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">319</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">64.4%
+</td><td align="center">86.5
+/&nbsp;85.9
+</td><td align="center">87</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_157.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">323</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">64.4%
+</td><td align="center">89.9
+/&nbsp;81.7
+</td><td align="center">88</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_155.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">298</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">63.6%
+</td><td align="center">112.0
+/&nbsp;63.6
+</td><td align="center">88</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_169.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">1,204</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">62.4%
+</td><td align="center">84.7
+/&nbsp;112.8
+</td><td align="center">102</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_159.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">392</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">62.2%
+</td><td align="center">125.4
+/&nbsp;164.2
+</td><td align="center">112</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_133.html">*</a></td><td align="center">Ga0104642_140</td><td align="right">5,227</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">61.8%
+</td><td align="center">195.4
+/&nbsp;267.0
+</td><td align="center">236</td><td align="center">intergenic&nbsp;(&#8209;1817/&#8211;)</td><td align="center"><i>HBEENCOK_06605/&#8211;</i></td><td align="left">tRNA&#8209;Ile/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_160.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">404</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">61.3%
+</td><td align="center">79.9
+/&nbsp;120.6
+</td><td align="center">106</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_152.html">*</a></td><td align="center">Ga0104642_146</td><td align="right">452</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">59.6%
+</td><td align="center">20.2
+/&nbsp;56.0
+</td><td align="center">47</td><td align="center">intergenic&nbsp;(&#8211;/&#8209;43)</td><td align="center"><i>&#8211;/HBEENCOK_06621</i></td><td align="left">&#8211;/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_167.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">809</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">59.3%
+</td><td align="center">94.0
+/&nbsp;176.1
+</td><td align="center">108</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_154.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">276</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">59.0%
+</td><td align="center">71.7
+/&nbsp;101.9
+</td><td align="center">95</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_172.html">*</a></td><td align="center">Ga0104642_147</td><td align="right">1,593</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">58.7%
+</td><td align="center">70.7
+/&nbsp;151.8
+</td><td align="center">104</td><td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td><td align="center"><i>&#8211;/&#8211;</i></td><td align="left">&#8211;/&#8211;</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 21 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_242.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_242.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_105</td>
+<td align="center" class="junction_gene">397392&nbsp;=</td><td align="center" class="junction_gene">42 (1.300)</td><td rowspan="2" align="center">7 (0.250)</td>
+<td rowspan="2" align="center">5/270</td>
+<td rowspan="2" align="center">2.3</td>
+<td rowspan="2" align="center">17.1%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(63/85&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_02566</i></td>
+<td class="junction_gene">tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_242.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_113</td>
+<td align="center" class="junction_gene">=&nbsp;35979</td>
+<td align="center" class="junction_gene">32 (1.140)</td><td align="center" class="junction_gene">intergenic&nbsp;(+85/+308)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_04559/qseC_5</i></td>
+<td class="junction_gene">hypothetical protein/Sensor protein QseC</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_269.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_269.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_134</td>
+<td align="center" class="junction_gene">6654&nbsp;=</td><td align="center" class="junction_gene">37 (1.140)</td><td rowspan="2" align="center">7 (0.230)</td>
+<td rowspan="2" align="center">6/300</td>
+<td rowspan="2" align="center">2.4</td>
+<td rowspan="2" align="center">17.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;67/+49)</td>
+<td align="center" class="junction_gene"><i>clpX/clpP_2</i></td>
+<td class="junction_gene">ATP&#8209;dependent Clp protease ATP&#8209;binding subunit ClpX/ATP&#8209;dependent Clp protease proteolytic subunit</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_269.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_134</td>
+<td align="center" class="junction_gene">6682&nbsp;=</td>
+<td align="center" class="junction_gene">33 (1.070)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;95/+21)</td>
+<td align="center" class="junction_gene"><i>clpX/clpP_2</i></td>
+<td class="junction_gene">ATP&#8209;dependent Clp protease ATP&#8209;binding subunit ClpX/ATP&#8209;dependent Clp protease proteolytic subunit</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_264.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_264.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_120</td>
+<td align="center" class="junction_gene">5568&nbsp;=</td><td align="center" class="junction_gene">38 (1.170)</td><td rowspan="2" align="center">5 (0.160)</td>
+<td rowspan="2" align="center">5/304</td>
+<td rowspan="2" align="center">2.5</td>
+<td rowspan="2" align="center">12.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(490/1149&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>argE_2</i></td>
+<td class="junction_gene">Acetylornithine deacetylase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_264.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_120</td>
+<td align="center" class="junction_gene">5599&nbsp;=</td>
+<td align="center" class="junction_gene">34 (1.090)</td><td align="center" class="junction_gene">coding&nbsp;(521/1149&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>argE_2</i></td>
+<td class="junction_gene">Acetylornithine deacetylase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_256.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_256.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_115</td>
+<td align="center" class="junction_gene">16816&nbsp;=</td><td align="center" class="junction_gene">20 (0.670)</td><td rowspan="2" align="center">3 (0.130)</td>
+<td rowspan="2" align="center">3/240</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">14.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(536/885&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_04905</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_256.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_115</td>
+<td align="center" class="junction_gene">=&nbsp;16812</td>
+<td align="center" class="junction_gene">20 (0.880)</td><td align="center" class="junction_gene">coding&nbsp;(532/885&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_04905</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_231.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_231.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_102</td>
+<td align="center" class="junction_gene">=&nbsp;488825</td><td align="center" class="junction_gene">32 (1.050)</td><td rowspan="2" align="center">5 (0.170)</td>
+<td rowspan="2" align="center">4/298</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">14.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;25/+100)</td>
+<td align="center" class="junction_gene"><i>hcf136_1/HBEENCOK_01138</i></td>
+<td class="junction_gene">Ycf48&#8209;like protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_231.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_102</td>
+<td align="center" class="junction_gene">=&nbsp;488831</td>
+<td align="center" class="junction_gene">30 (1.050)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;31/+94)</td>
+<td align="center" class="junction_gene"><i>hcf136_1/HBEENCOK_01138</i></td>
+<td class="junction_gene">Ycf48&#8209;like protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_258.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_258.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_115</td>
+<td align="center" class="junction_gene">129814&nbsp;=</td><td align="center" class="junction_gene">43 (1.440)</td><td rowspan="2" align="center">6 (0.200)</td>
+<td rowspan="2" align="center">4/314</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">17.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+395/+863)</td>
+<td align="center" class="junction_gene"><i>fbp_2/HBEENCOK_05013</i></td>
+<td class="junction_gene">FK506&#8209;binding protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_258.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_116</td>
+<td align="center" class="junction_gene">=&nbsp;167294</td>
+<td align="center" class="junction_gene">15 (0.470)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;468/&#8211;)</td>
+<td align="center" class="junction_gene"><i>rlmI_2/&#8211;</i></td>
+<td class="junction_gene">Ribosomal RNA large subunit methyltransferase I/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_247.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_247.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_109</td>
+<td align="center" class="junction_gene">=&nbsp;213683</td><td align="center" class="junction_gene">12 (0.380)</td><td rowspan="2" align="center">5 (0.170)</td>
+<td rowspan="2" align="center">4/302</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">29.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;24/+154)</td>
+<td align="center" class="junction_gene"><i>yfdE_2/HBEENCOK_03746</i></td>
+<td class="junction_gene">Acetyl&#8209;CoA:oxalate CoA&#8209;transferase/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_247.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_109</td>
+<td align="center" class="junction_gene">213817&nbsp;=</td>
+<td align="center" class="junction_gene">13 (0.430)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;158/+20)</td>
+<td align="center" class="junction_gene"><i>yfdE_2/HBEENCOK_03746</i></td>
+<td class="junction_gene">Acetyl&#8209;CoA:oxalate CoA&#8209;transferase/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_245.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_245.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_109</td>
+<td align="center" class="junction_gene">=&nbsp;146693</td><td align="center" class="junction_gene">13 (0.410)</td><td rowspan="2" align="center">6 (0.200)</td>
+<td rowspan="2" align="center">4/302</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">29.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+33/+116)</td>
+<td align="center" class="junction_gene"><i>argE_1/gltC_5</i></td>
+<td class="junction_gene">Acetylornithine deacetylase/HTH&#8209;type transcriptional regulator GltC</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_245.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_109</td>
+<td align="center" class="junction_gene">146773&nbsp;=</td>
+<td align="center" class="junction_gene">16 (0.530)</td><td align="center" class="junction_gene">intergenic&nbsp;(+113/+36)</td>
+<td align="center" class="junction_gene"><i>argE_1/gltC_5</i></td>
+<td class="junction_gene">Acetylornithine deacetylase/HTH&#8209;type transcriptional regulator GltC</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_236.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_236.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_104</td>
+<td align="center" class="junction_gene">=&nbsp;281323</td><td align="center" class="junction_gene">34 (1.020)</td><td rowspan="2" align="center">3 (0.110)</td>
+<td rowspan="2" align="center">3/268</td>
+<td rowspan="2" align="center">3.1</td>
+<td rowspan="2" align="center">13.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+169/+6)</td>
+<td align="center" class="junction_gene"><i>rlmI_1/HBEENCOK_02097</i></td>
+<td class="junction_gene">Ribosomal RNA large subunit methyltransferase I/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_236.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_104</td>
+<td align="center" class="junction_gene">281965&nbsp;=</td>
+<td align="center" class="junction_gene">9 (0.320)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;178/&#8209;262)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_02097/ilvD</i></td>
+<td class="junction_gene">hypothetical protein/Dihydroxy&#8209;acid dehydratase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_229.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_229.html">?</a></td>
+<td rowspan="1" class="junction_gene">Ga0104642_102</td>
+<td align="center" class="junction_gene">=&nbsp;4004</td><td align="center" class="junction_gene">27 (0.890)</td><td rowspan="2" align="center">3 (0.110)</td>
+<td rowspan="2" align="center">3/296</td>
+<td rowspan="2" align="center">3.1</td>
+<td rowspan="2" align="center">10.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1414/2187&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>glgX</i></td>
+<td class="junction_gene">Glycogen operon protein GlgX</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_229.html">?</a></td><td rowspan="1" class="junction_gene">Ga0104642_102</td>
+<td align="center" class="junction_gene">=&nbsp;573921</td>
+<td align="center" class="junction_gene">25 (0.880)</td><td align="center" class="junction_gene">coding&nbsp;(1721/1824&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HBEENCOK_01215</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+</table>
+</body></html>

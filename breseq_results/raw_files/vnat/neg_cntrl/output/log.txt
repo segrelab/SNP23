@@ -1,0 +1,8 @@
+Thu Jul 24 14:28:31 2025
+
+breseq -r /TKDHS4_3_polished.fasta -o breseq_results/raw_files/vnat/neg_cntrl /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_3_polish/TKDHS4_3_S35_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_3_polish/TKDHS4_3_S35_R2_001.fastq.gz
+
+Sun Jul 27 15:28:42 2025
+
+breseq -r /TKDHS4_3_polished.fasta -o breseq_results/raw_files/vnat/neg_cntrl /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_3_polish/TKDHS4_3_S35_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_3_polish/TKDHS4_3_S35_R2_001.fastq.gz
+

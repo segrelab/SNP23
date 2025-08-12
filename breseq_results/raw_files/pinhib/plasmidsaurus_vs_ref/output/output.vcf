@@ -1,0 +1,13 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=GCA_000154765.CP0029763821831,length=3821831>
+##contig=<ID=GCA_000154765.CP002977261820,length=261820>
+##contig=<ID=GCA_000154765.CP002979,length=65245>
+##contig=<ID=GCA_000154765.CP002978,length=78238>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+GCA_000154765.CP002977261820	153517	.	C	CC	54.3	PASS	AF=1.0000;AD=15;DP=15

@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 50 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_150.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">47.6
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_151.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">2</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">42.9
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_152.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">3</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">47.6
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_153.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">4</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">46.5
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_154.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">5</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">46.5
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_155.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">6</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">47.6
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_156.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">7</td><td align="center">.</td><td align="center">G</td><td align="right">77.8%
+</td><td align="center">43.8
+/&nbsp;12.8
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_82.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,237,927</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">76.9%
+</td><td align="center">177.9
+/&nbsp;58.0
+</td><td align="center">66</td><td align="center">coding&nbsp;(761/819&nbsp;nt)</td><td align="center"><i>phoC</i></td><td align="left">Major phosphate&#8209;irrepressible acid phosphatase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_103.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">76.7%
+</td><td align="center">71.5
+/&nbsp;21.9
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_105.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">3</td><td align="center">.</td><td align="center">G</td><td align="right">76.7%
+</td><td align="center">64.8
+/&nbsp;21.9
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_106.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">4</td><td align="center">.</td><td align="center">C</td><td align="right">76.7%
+</td><td align="center">79.6
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_107.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">5</td><td align="center">.</td><td align="center">C</td><td align="right">76.7%
+</td><td align="center">81.7
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_108.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">6</td><td align="center">.</td><td align="center">C</td><td align="right">76.7%
+</td><td align="center">73.8
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_110.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">8</td><td align="center">.</td><td align="center">C</td><td align="right">76.7%
+</td><td align="center">83.8
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_104.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">2</td><td align="center">.</td><td align="center">C</td><td align="right">75.9%
+</td><td align="center">67.1
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_109.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">7</td><td align="center">.</td><td align="center">G</td><td align="right">75.9%
+</td><td align="center">67.7
+/&nbsp;21.9
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_111.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,483,591</td><td align="right">9</td><td align="center">.</td><td align="center">C</td><td align="right">75.9%
+</td><td align="center">76.6
+/&nbsp;19.7
+</td><td align="center">30</td><td align="center">coding&nbsp;(678/897&nbsp;nt)</td><td align="center"><i>NKGAAHME_01503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_83.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">1,237,927</td><td align="right">2</td><td align="center">.</td><td align="center">G</td><td align="right">75.8%
+</td><td align="center">177.8
+/&nbsp;62.4
+</td><td align="center">66</td><td align="center">coding&nbsp;(761/819&nbsp;nt)</td><td align="center"><i>phoC</i></td><td align="left">Major phosphate&#8209;irrepressible acid phosphatase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_157.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">8</td><td align="center">.</td><td align="center">G</td><td align="right">75.0%
+</td><td align="center">31.0
+/&nbsp;12.9
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_158.html">*</a></td><td align="center">NZ_CP035093.1</td><td align="right">3,451,664</td><td align="right">9</td><td align="center">.</td><td align="center">G</td><td align="right">62.5%
+</td><td align="center">22.2
+/&nbsp;23.3
+</td><td align="center">18</td><td align="center">intergenic&nbsp;(&#8209;183/+33)</td><td align="center"><i>gdx_2/btuB_30</i></td><td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 43 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_220.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_220.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3451664</td><td align="center" class="junction_gene">23 (0.150)</td><td rowspan="2" align="center">45 (0.320)<br>+GGGGGGGGGGGA</td>
+<td rowspan="2" align="center">20/286</td>
+<td rowspan="2" align="center">3.5</td>
+<td rowspan="2" align="center">67.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;183/+33)</td>
+<td align="center" class="junction_gene"><i>gdx_2/btuB_30</i></td>
+<td class="junction_gene">Guanidinium exporter/Vitamin B12 transporter BtuB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_220.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3451665&nbsp;=</td>
+<td align="center" class="junction_gene">23 (0.150)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;184/+32)</td>
+<td align="center" class="junction_gene"><i>gdx_2/btuB_30</i></td>
+<td class="junction_gene">Guanidinium exporter/Vitamin B12 transporter BtuB</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_225.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_225.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3532706</td><td align="center" class="junction_gene">48 (0.320)</td><td rowspan="2" align="center">34 (0.240)</td>
+<td rowspan="2" align="center">18/296</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">30.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+25/+145)</td>
+<td align="center" class="junction_gene"><i>tldD/selU</i></td>
+<td class="junction_gene">Metalloprotease TldD/tRNA 2&#8209;selenouridine synthase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_225.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3532877&nbsp;=</td>
+<td align="center" class="junction_gene">110 (0.770)</td><td align="center" class="junction_gene">coding&nbsp;(1036/1062&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>selU</i></td>
+<td class="junction_gene">tRNA 2&#8209;selenouridine synthase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_194.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_194.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;1483591</td><td align="center" class="junction_gene">3 (0.020)</td><td rowspan="2" align="center">34 (0.240)<br>+GCGCCCGCC</td>
+<td rowspan="2" align="center">18/294</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">92.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(678/897&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_01503</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_194.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">1483592&nbsp;=</td>
+<td align="center" class="junction_gene">3 (0.020)</td><td align="center" class="junction_gene">coding&nbsp;(679/897&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_01503</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_216.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_216.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3255823</td><td align="center" class="junction_gene">127 (0.840)</td><td rowspan="2" align="center">21 (0.150)</td>
+<td rowspan="2" align="center">17/296</td>
+<td rowspan="2" align="center">4.3</td>
+<td rowspan="2" align="center">16.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+25/+67)</td>
+<td align="center" class="junction_gene"><i>purK/NKGAAHME_03198</i></td>
+<td class="junction_gene">N5&#8209;carboxyaminoimidazole ribonucleotide synthase/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_216.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3256344&nbsp;=</td>
+<td align="center" class="junction_gene">100 (0.700)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;101/+14)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_03198/NKGAAHME_03199</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_217.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_217.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3255834</td><td align="center" class="junction_gene">119 (0.780)</td><td rowspan="2" align="center">25 (0.170)</td>
+<td rowspan="2" align="center">16/298</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">18.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+36/+56)</td>
+<td align="center" class="junction_gene"><i>purK/NKGAAHME_03198</i></td>
+<td class="junction_gene">N5&#8209;carboxyaminoimidazole ribonucleotide synthase/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_217.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3256355&nbsp;=</td>
+<td align="center" class="junction_gene">116 (0.810)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;112/+3)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_03198/NKGAAHME_03199</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_197.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_197.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;1585170</td><td align="center" class="junction_gene">159 (1.050)</td><td rowspan="2" align="center">24 (0.170)</td>
+<td rowspan="2" align="center">16/298</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">17.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+15/+161)</td>
+<td align="center" class="junction_gene"><i>lpxC/yfiH</i></td>
+<td class="junction_gene">UDP&#8209;3&#8209;O&#8209;acyl&#8209;N&#8209;acetylglucosamine deacetylase/Polyphenol oxidase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_197.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">1585316&nbsp;=</td>
+<td align="center" class="junction_gene">75 (0.520)</td><td align="center" class="junction_gene">intergenic&nbsp;(+161/+15)</td>
+<td align="center" class="junction_gene"><i>lpxC/yfiH</i></td>
+<td class="junction_gene">UDP&#8209;3&#8209;O&#8209;acyl&#8209;N&#8209;acetylglucosamine deacetylase/Polyphenol oxidase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_179.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_179.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;113558</td><td align="center" class="junction_gene">146 (0.960)</td><td rowspan="2" align="center">19 (0.130)</td>
+<td rowspan="2" align="center">16/298</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">12.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+29/&#8209;140)</td>
+<td align="center" class="junction_gene"><i>uvrB/NKGAAHME_00107</i></td>
+<td class="junction_gene">UvrABC system protein B/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_179.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">114198&nbsp;=</td>
+<td align="center" class="junction_gene">139 (0.970)</td><td align="center" class="junction_gene">intergenic&nbsp;(+150/&#8209;741)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_00107/NKGAAHME_00108</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_224.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_224.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3532695</td><td align="center" class="junction_gene">57 (0.370)</td><td rowspan="2" align="center">25 (0.180)</td>
+<td rowspan="2" align="center">13/296</td>
+<td rowspan="2" align="center">5.3</td>
+<td rowspan="2" align="center">24.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+14/+156)</td>
+<td align="center" class="junction_gene"><i>tldD/selU</i></td>
+<td class="junction_gene">Metalloprotease TldD/tRNA 2&#8209;selenouridine synthase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_224.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3532866&nbsp;=</td>
+<td align="center" class="junction_gene">101 (0.710)</td><td align="center" class="junction_gene">coding&nbsp;(1047/1062&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>selU</i></td>
+<td class="junction_gene">tRNA 2&#8209;selenouridine synthase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_200.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_200.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;1677263</td><td align="center" class="junction_gene">104 (0.680)</td><td rowspan="2" align="center">16 (0.110)</td>
+<td rowspan="2" align="center">13/296</td>
+<td rowspan="2" align="center">5.3</td>
+<td rowspan="2" align="center">13.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+28/&#8209;56)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_01698/pld_1</i></td>
+<td class="junction_gene">hypothetical protein/Phospholipase D</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_200.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">1677344&nbsp;=</td>
+<td align="center" class="junction_gene">113 (0.790)</td><td align="center" class="junction_gene">coding&nbsp;(26/1635&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>pld_1</i></td>
+<td class="junction_gene">Phospholipase D</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_193.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_193.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;1452455</td><td align="center" class="junction_gene">82 (0.540)</td><td rowspan="2" align="center">18 (0.130)</td>
+<td rowspan="2" align="center">13/298</td>
+<td rowspan="2" align="center">5.3</td>
+<td rowspan="2" align="center">12.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+33/+201)</td>
+<td align="center" class="junction_gene"><i>yncE/fecE_1</i></td>
+<td class="junction_gene">putative protein YncE/Fe(3+) dicitrate transport ATP&#8209;binding protein FecE</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_193.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">1452651&nbsp;=</td>
+<td align="center" class="junction_gene">166 (1.160)</td><td align="center" class="junction_gene">intergenic&nbsp;(+229/+5)</td>
+<td align="center" class="junction_gene"><i>yncE/fecE_1</i></td>
+<td class="junction_gene">putative protein YncE/Fe(3+) dicitrate transport ATP&#8209;binding protein FecE</td>
+</tr>
+</table>
+</body></html>

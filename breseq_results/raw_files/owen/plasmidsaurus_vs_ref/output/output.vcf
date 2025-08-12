@@ -1,0 +1,15 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=Oweho_Contig158.1,length=4000057>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+Oweho_Contig158.1	1777571	.	A	G	476.9	PASS	AF=1.0000;AD=289;DP=361
+Oweho_Contig158.1	1777577	.	T	G	563.4	PASS	AF=1.0000;AD=293;DP=353
+Oweho_Contig158.1	1958568	.	A	G	1923.8	PASS	AF=1.0000;AD=486;DP=488
+Oweho_Contig158.1	2126153	.	T	G	636.3	PASS	AF=1.0000;AD=175;DP=175
+Oweho_Contig158.1	2544069	.	A	AATA	.	PASS	AF=1.0000;AD=564;DP=567
+Oweho_Contig158.1	3781441	.	A	AA	1278.9	PASS	AF=1.0000;AD=345;DP=427

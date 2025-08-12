@@ -1,0 +1,599 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">192,811</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D133G</font>&nbsp;(G<font class="mutation_in_codon">A</font>C&rarr;G<font class="mutation_in_codon">G</font>C)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_00175</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_2.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">197,940</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;9/+55)</td>
+<td align="center"><i>flgG_2</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>GMAPDCMF_00183</i></td>
+<td align="left">Flagellar basal&#8209;body rod protein FlgG/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_3.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">508,812</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+36/&#8209;141)</td>
+<td align="center"><i>rpoA</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>rplQ</i></td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha/50S ribosomal protein L17</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">602,657</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">C249W</font>&nbsp;(TG<font class="mutation_in_codon">C</font>&rarr;TG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_00592</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">932,331</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D465A</font>&nbsp;(G<font class="mutation_in_codon">A</font>C&rarr;G<font class="mutation_in_codon">C</font>C)&nbsp;</td>
+<td align="center"><i>xanP</i>&nbsp;&rarr;</td>
+<td align="left">Xanthine permease XanP</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_6.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">972,918</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(2/987&nbsp;nt)</td>
+<td align="center"><i>mdtA_2</i>&nbsp;&rarr;</td>
+<td align="left">Multidrug resistance protein MdtA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_7.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,011,067</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;16/+182)</td>
+<td align="center"><i>GMAPDCMF_00962</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>ribN_2</i></td>
+<td align="left">hypothetical protein/Riboflavin transporter</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_8.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,144,875</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+68/&#8209;55)</td>
+<td align="center"><i>betA</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GMAPDCMF_01108</i></td>
+<td align="left">Oxygen&#8209;dependent choline dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,150,911</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+51/&#8209;166)</td>
+<td align="center"><i>pccB_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GMAPDCMF_01114</i></td>
+<td align="left">Propionyl&#8209;CoA carboxylase beta chain/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_10.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,168,226</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(9/534&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_01134</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_11.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,407,173</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+12/&#8209;145)</td>
+<td align="center"><i>purD</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GMAPDCMF_01378</i></td>
+<td align="left">Phosphoribosylamine&#8209;&#8209;glycine ligase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_12.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,441,808</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+14/+33)</td>
+<td align="center"><i>GMAPDCMF_01409</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>GMAPDCMF_01410</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_13.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,549,917</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+30/&#8209;16)</td>
+<td align="center"><i>nagR_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>leuC_2</i></td>
+<td align="left">HTH&#8209;type transcriptional repressor NagR/3&#8209;isopropylmalate dehydratase large subunit</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_14.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,565,710</td><!-- Position -->
+<td align="center">(G)<sub>9&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(664&#8209;665/1749&nbsp;nt)</td>
+<td align="center"><i>btuD_3</i>&nbsp;&rarr;</td>
+<td align="left">Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_15.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,565,722</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(676/1749&nbsp;nt)</td>
+<td align="center"><i>btuD_3</i>&nbsp;&rarr;</td>
+<td align="left">Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,774,048</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">K8R</font>&nbsp;(A<font class="mutation_in_codon">A</font>G&rarr;A<font class="mutation_in_codon">G</font>G)&nbsp;</td>
+<td align="center"><i>dxr</i>&nbsp;&rarr;</td>
+<td align="left">1&#8209;deoxy&#8209;D&#8209;xylulose 5&#8209;phosphate reductoisomerase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_17.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,809,265</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(74/597&nbsp;nt)</td>
+<td align="center"><i>maiA_2</i>&nbsp;&rarr;</td>
+<td align="left">Maleate isomerase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_112.html">MC</a>&nbsp;<a href="evidence/JC_152.html">JC</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">1,960,744</td><!-- Position -->
+<td align="center">&Delta;105&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(305&#8209;409/777&nbsp;nt)</td>
+<td align="center"><i>nagR_2</i>&nbsp;&rarr;</td>
+<td align="left">HTH&#8209;type transcriptional repressor NagR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,029,021</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">P3A</font>&nbsp;(<font class="mutation_in_codon">C</font>CA&rarr;<font class="mutation_in_codon">G</font>CA)&nbsp;</td>
+<td align="center"><i>fumC</i>&nbsp;&larr;</td>
+<td align="left">Fumarate hydratase class II</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_20.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,151,425</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">P264T</font>&nbsp;(<font class="mutation_in_codon">C</font>CA&rarr;<font class="mutation_in_codon">A</font>CA)&nbsp;</td>
+<td align="center"><i>iscS</i>&nbsp;&larr;</td>
+<td align="left">Cysteine desulfurase IscS</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_21.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,190,100</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">C155W</font>&nbsp;(TG<font class="mutation_in_codon">C</font>&rarr;TG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_02107</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_22.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,254,171</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(641/927&nbsp;nt)</td>
+<td align="center"><i>arcA</i>&nbsp;&rarr;</td>
+<td align="left">Arginase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_23.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,254,176</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(646/927&nbsp;nt)</td>
+<td align="center"><i>arcA</i>&nbsp;&rarr;</td>
+<td align="left">Arginase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_24.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">2,718,279</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+67/&#8209;816)</td>
+<td align="center"><i>GMAPDCMF_02630</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GMAPDCMF_02631</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_25.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,114,875</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+34/&#8209;21)</td>
+<td align="center"><i>dmdC_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GMAPDCMF_02989</i></td>
+<td align="left">3&#8209;methylmercaptopropionyl&#8209;CoA dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,119,442</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A575A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>fadJ_2</i>&nbsp;&rarr;</td>
+<td align="left">Fatty acid oxidation complex subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_27.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,188,645</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(228/420&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03064</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_28.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,188,648</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(225/420&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03064</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_29.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,222,389</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(897/1638&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03094</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,253,518</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E151A</font>&nbsp;(G<font class="mutation_in_codon">A</font>G&rarr;G<font class="mutation_in_codon">C</font>G)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_03115</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_31.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,302,998</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(461/981&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03168</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_32.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,401,669</td><!-- Position -->
+<td align="center">(G)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(829/981&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03266</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_33.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,401,676</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(822/981&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03266</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_34.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,515,146</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(378/420&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03391</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_35.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,515,149</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(375/420&nbsp;nt)</td>
+<td align="center"><i>GMAPDCMF_03391</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_36.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,801,606</td><!-- Position -->
+<td align="center">+A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;207/+62)</td>
+<td align="center"><i>GMAPDCMF_03674</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>pheS</i></td>
+<td align="left">hypothetical protein/Phenylalanine&#8209;&#8209;tRNA ligase alpha subunit</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_37.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,920,500</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">S102G</font>&nbsp;(<font class="mutation_in_codon">A</font>GC&rarr;<font class="mutation_in_codon">G</font>GC)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_03793</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_38.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,978,784</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(2414/4533&nbsp;nt)</td>
+<td align="center"><i>gltB</i>&nbsp;&larr;</td>
+<td align="left">Glutamate synthase [NADPH] large chain</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_39.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP0000314109437</td><!-- Seq_Id -->
+<td align="right">3,978,791</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(2407/4533&nbsp;nt)</td>
+<td align="center"><i>gltB</i>&nbsp;&larr;</td>
+<td align="left">Glutamate synthase [NADPH] large chain</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_40.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP000032491611</td><!-- Seq_Id -->
+<td align="right">221,020</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;13/+540)</td>
+<td align="center"><i>GMAPDCMF_04199</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>GMAPDCMF_04200</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_41.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP000032491611</td><!-- Seq_Id -->
+<td align="right">233,809</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N44S</font>&nbsp;(A<font class="mutation_in_codon">A</font>C&rarr;A<font class="mutation_in_codon">G</font>C)&nbsp;</td>
+<td align="center"><i>GMAPDCMF_04206</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_42.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP000032491611</td><!-- Seq_Id -->
+<td align="right">264,578</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+34/+188)</td>
+<td align="center"><i>dctM_12</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>gnl_2</i></td>
+<td align="left">C4&#8209;dicarboxylate TRAP transporter large permease protein DctM/Gluconolactonase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_43.html">RA</a></td><!-- Evidence -->
+<td align="center">GCA_000011965.CP000032491611</td><!-- Seq_Id -->
+<td align="right">339,181</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(797/807&nbsp;nt)</td>
+<td align="center"><i>ifcA_3</i>&nbsp;&larr;</td>
+<td align="left">Fumarate reductase flavoprotein subunit</td>
+</tr>
+<!-- End Table Row -->
+</table>
+</body></html>

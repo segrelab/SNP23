@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 413 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_242.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,216</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">68.6%
+</td><td align="center">566.0
+/&nbsp;inf
+</td><td align="center">507</td><td align="center"><font class="snp_type_synonymous">T606T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_243.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,226</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">67.6%
+</td><td align="center">516.7
+/&nbsp;inf
+</td><td align="center">513</td><td align="center"><font class="snp_type_nonsynonymous">V603A</font>&nbsp;(G<font class="mutation_in_codon">T</font>A&rarr;G<font class="mutation_in_codon">C</font>A)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_833.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">5,021,490</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">67.2%
+</td><td align="center">234.0
+/&nbsp;inf
+</td><td align="center">459</td><td align="center"><font class="snp_type_nonsynonymous">N604D</font>&nbsp;(<font class="mutation_in_codon">A</font>AT&rarr;<font class="mutation_in_codon">G</font>AT)&nbsp;</td><td align="center"><i>JOPOCONL_04468</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_244.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,240</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">66.2%
+</td><td align="center">467.1
+/&nbsp;inf
+</td><td align="center">489</td><td align="center"><font class="snp_type_nonsynonymous">M598I</font>&nbsp;(AT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_245.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,249</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">65.2%
+</td><td align="center">373.9
+/&nbsp;inf
+</td><td align="center">457</td><td align="center"><font class="snp_type_synonymous">G595G</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_241.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,201</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">64.6%
+</td><td align="center">367.5
+/&nbsp;inf
+</td><td align="center">475</td><td align="center"><font class="snp_type_synonymous">I611I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_237.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,189</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">64.3%
+</td><td align="center">467.3
+/&nbsp;inf
+</td><td align="center">448</td><td align="center"><font class="snp_type_synonymous">I615I</font>&nbsp;(AT<font class="mutation_in_codon">T</font>&rarr;AT<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_238.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,192</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">64.3%
+</td><td align="center">471.5
+/&nbsp;inf
+</td><td align="center">447</td><td align="center"><font class="snp_type_synonymous">G614G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_239.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,196</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">63.9%
+</td><td align="center">361.8
+/&nbsp;inf
+</td><td align="center">449</td><td align="center"><font class="snp_type_nonsynonymous">K613R</font>&nbsp;(A<font class="mutation_in_codon">A</font>A&rarr;A<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_246.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,255</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">62.8%
+</td><td align="center">249.9
+/&nbsp;inf
+</td><td align="center">450</td><td align="center"><font class="snp_type_synonymous">G593G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_247.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,270</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">61.8%
+</td><td align="center">170.7
+/&nbsp;inf
+</td><td align="center">383</td><td align="center"><font class="snp_type_synonymous">D588D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_821.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">5,020,525</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">61.2%
+</td><td align="center">251.7
+/&nbsp;inf
+</td><td align="center">727</td><td align="center"><font class="snp_type_nonsynonymous">T282R</font>&nbsp;(A<font class="mutation_in_codon">C</font>G&rarr;A<font class="mutation_in_codon">G</font>G)&nbsp;&Dagger;</td><td align="center"><i>JOPOCONL_04468</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_822.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">5,020,526</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">60.4%
+</td><td align="center">147.5
+/&nbsp;inf
+</td><td align="center">730</td><td align="center"><font class="snp_type_synonymous">T282T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;&Dagger;</td><td align="center"><i>JOPOCONL_04468</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_318.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">1,068,899</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">58.5%
+</td><td align="center">262.4
+/&nbsp;inf
+</td><td align="center">402</td><td align="center"><font class="snp_type_synonymous">A292A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>gspF</i></td><td align="left">Putative type II secretion system protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_319.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">1,068,907</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">58.4%
+</td><td align="center">178.6
+/&nbsp;inf
+</td><td align="center">392</td><td align="center"><font class="snp_type_nonsynonymous">Q290K</font>&nbsp;(<font class="mutation_in_codon">C</font>AA&rarr;<font class="mutation_in_codon">A</font>AA)&nbsp;</td><td align="center"><i>gspF</i></td><td align="left">Putative type II secretion system protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_317.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">1,068,832</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">57.9%
+</td><td align="center">203.1
+/&nbsp;inf
+</td><td align="center">366</td><td align="center"><font class="snp_type_nonsynonymous">A315T</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;</td><td align="center"><i>gspF</i></td><td align="left">Putative type II secretion system protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_332.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">1,069,346</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">57.2%
+</td><td align="center">147.2
+/&nbsp;inf
+</td><td align="center">320</td><td align="center"><font class="snp_type_synonymous">A143A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>gspF</i></td><td align="left">Putative type II secretion system protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_330.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">1,069,162</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">56.9%
+</td><td align="center">199.1
+/&nbsp;inf
+</td><td align="center">332</td><td align="center"><font class="snp_type_nonsynonymous">V205M</font>&nbsp;(<font class="mutation_in_codon">G</font>TG&rarr;<font class="mutation_in_codon">A</font>TG)&nbsp;</td><td align="center"><i>gspF</i></td><td align="left">Putative type II secretion system protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_248.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,285</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">56.8%
+</td><td align="center">12.9
+/&nbsp;inf
+</td><td align="center">347</td><td align="center"><font class="snp_type_synonymous">S583S</font>&nbsp;(TC<font class="mutation_in_codon">T</font>&rarr;TC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_249.html">*</a></td><td align="center">NZ_DS544873.1</td><td align="right">793,288</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">56.6%
+</td><td align="center">6.3
+/&nbsp;inf
+</td><td align="center">347</td><td align="center"><font class="snp_type_synonymous">N582N</font>&nbsp;(AA<font class="mutation_in_codon">C</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>JOPOCONL_00737</i></td><td align="left">hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 743 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1538.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1538.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4317215&nbsp;=</td><td align="center" class="junction_gene">141 (0.690)</td><td rowspan="2" align="center">49 (0.270)<br>+AGCAAAGCGATCCAAA</td>
+<td rowspan="2" align="center">33/284</td>
+<td rowspan="2" align="center">3.6</td>
+<td rowspan="2" align="center">27.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+1/+431)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_03823/JOPOCONL_03824</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1538.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;4934466</td>
+<td align="center" class="junction_gene">142 (0.700)</td><td align="center" class="junction_gene">intergenic&nbsp;(+256/+80)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1541.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1541.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;4317370</td><td align="center" class="junction_gene">171 (0.840)</td><td rowspan="2" align="center">115 (0.610)</td>
+<td rowspan="2" align="center">32/292</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">41.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+156/+276)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_03823/JOPOCONL_03824</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1541.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4934223&nbsp;=</td>
+<td align="center" class="junction_gene">161 (0.860)</td><td align="center" class="junction_gene">intergenic&nbsp;(+13/+323)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1051.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1051.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;1005362</td><td align="center" class="junction_gene">28 (0.140)</td><td rowspan="2" align="center">108 (0.570)</td>
+<td rowspan="2" align="center">32/292</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">53.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;115/+162)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_00867/JOPOCONL_00868</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1051.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4934223&nbsp;=</td>
+<td align="center" class="junction_gene">161 (0.860)</td><td align="center" class="junction_gene">intergenic&nbsp;(+13/+323)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1215.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1215.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">1971258&nbsp;=</td><td align="center" class="junction_gene">154 (0.760)</td><td rowspan="2" align="center">71 (0.360)</td>
+<td rowspan="2" align="center">31/308</td>
+<td rowspan="2" align="center">4.6</td>
+<td rowspan="2" align="center">31.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+106/&#8209;329)</td>
+<td align="center" class="junction_gene"><i>hutI_1/JOPOCONL_01740</i></td>
+<td class="junction_gene">Imidazolonepropionase/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1215.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;1971488</td>
+<td align="center" class="junction_gene">162 (0.820)</td><td align="center" class="junction_gene">intergenic&nbsp;(+336/&#8209;99)</td>
+<td align="center" class="junction_gene"><i>hutI_1/JOPOCONL_01740</i></td>
+<td class="junction_gene">Imidazolonepropionase/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1065.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1065.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;1005384</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">52 (0.310)<br>+30 bp</td>
+<td rowspan="2" align="center">24/256</td>
+<td rowspan="2" align="center">4.7</td>
+<td rowspan="2" align="center">41.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;137/+140)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_00867/JOPOCONL_00868</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1065.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4934211&nbsp;=</td>
+<td align="center" class="junction_gene">180 (0.880)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1/+335)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1045.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1045.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">1005270&nbsp;=</td><td align="center" class="junction_gene">114 (0.560)</td><td rowspan="2" align="center">127 (0.630)</td>
+<td rowspan="2" align="center">31/314</td>
+<td rowspan="2" align="center">4.7</td>
+<td rowspan="2" align="center">50.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;23/+254)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_00867/JOPOCONL_00868</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1045.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;4934465</td>
+<td align="center" class="junction_gene">139 (0.690)</td><td align="center" class="junction_gene">intergenic&nbsp;(+255/+81)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1066.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1066.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;1005384</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">117 (0.580)</td>
+<td rowspan="2" align="center">30/312</td>
+<td rowspan="2" align="center">4.9</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;137/+140)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_00867/JOPOCONL_00868</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1066.html">?</a></td><td rowspan="1" class="junction_repeat">NZ_DS544873.1</td>
+<td align="center" class="junction_repeat">4934213&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+3/+333)</td>
+<td align="center" class="junction_repeat"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_repeat">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1543.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1543.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;4317406</td><td align="center" class="junction_gene">131 (0.640)</td><td rowspan="2" align="center">126 (0.620)</td>
+<td rowspan="2" align="center">30/316</td>
+<td rowspan="2" align="center">5.0</td>
+<td rowspan="2" align="center">44.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+192/+240)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_03823/JOPOCONL_03824</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1543.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4934211&nbsp;=</td>
+<td align="center" class="junction_gene">180 (0.880)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1/+335)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1166.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1166.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">1612885&nbsp;=</td><td align="center" class="junction_gene">138 (0.680)</td><td rowspan="2" align="center">59 (0.330)<br>+TGCTTTTGGATCGCTTTGCT</td>
+<td rowspan="2" align="center">25/276</td>
+<td rowspan="2" align="center">5.0</td>
+<td rowspan="2" align="center">29.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+12/+83)</td>
+<td align="center" class="junction_gene"><i>rutE/nreC_3</i></td>
+<td class="junction_gene">malonic semialdehyde reductase RutE/Oxygen regulatory protein NreC</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1166.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">4934211&nbsp;=</td>
+<td align="center" class="junction_gene">180 (0.880)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1/+335)</td>
+<td align="center" class="junction_gene"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_gene">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1053.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1053.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS544873.1</td>
+<td align="center" class="junction_gene">=&nbsp;1005378</td><td align="center" class="junction_gene">15 (0.070)</td><td rowspan="2" align="center">96 (0.510)</td>
+<td rowspan="2" align="center">27/292</td>
+<td rowspan="2" align="center">5.0</td>
+<td rowspan="2" align="center">87.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;131/+146)</td>
+<td align="center" class="junction_gene"><i>JOPOCONL_00867/JOPOCONL_00868</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1053.html">?</a></td><td rowspan="1" class="junction_repeat">NZ_DS544873.1</td>
+<td align="center" class="junction_repeat">4934223&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+13/+323)</td>
+<td align="center" class="junction_repeat"><i>birA/JOPOCONL_04393</i></td>
+<td class="junction_repeat">Bifunctional ligase/repressor BirA/hypothetical protein</td>
+</tr>
+</table>
+</body></html>

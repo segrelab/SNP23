@@ -1,0 +1,145 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Evidence</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutation</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="MC_PLOT_78592.html">MC</a>&nbsp;<a href="JC_78931.html">JC</a></td><!-- Evidence -->
+<td align="center">NC_019393.1</td><!-- Seq_Id -->
+<td align="right">1,918,430</td><!-- Position -->
+<td align="center">&Delta;56,052&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[sbcB]</i>&#8211;<i>JGJDFHEM_01803</i></td>
+<td align="left"><b>82 genes </b><noscript><i>[sbcB]</i>, <i>intA</i>, <i>JGJDFHEM_01724</i>, <i>JGJDFHEM_01725</i>, <i>JGJDFHEM_01726</i>, <i>JGJDFHEM_01727</i>, <i>JGJDFHEM_01728</i>, <i>JGJDFHEM_01729</i>, <i>JGJDFHEM_01730</i>, <i>rdgC_2</i>, <i>JGJDFHEM_01732</i>, <i>JGJDFHEM_01733</i>, <i>JGJDFHEM_01734</i>, <i>JGJDFHEM_01735</i>, <i>JGJDFHEM_01736</i>, <i>JGJDFHEM_01737</i>, <i>JGJDFHEM_01738</i>, <i>JGJDFHEM_01739</i>, <i>JGJDFHEM_01740</i>, <i>JGJDFHEM_01741</i>, <i>JGJDFHEM_01742</i>, <i>JGJDFHEM_01743</i>, <i>JGJDFHEM_01744</i>, <i>JGJDFHEM_01745</i>, <i>JGJDFHEM_01746</i>, <i>JGJDFHEM_01747</i>, <i>JGJDFHEM_01748</i>, <i>JGJDFHEM_01749</i>, <i>JGJDFHEM_01750</i>, <i>JGJDFHEM_01751</i>, <i>JGJDFHEM_01752</i>, <i>JGJDFHEM_01753</i>, <i>JGJDFHEM_01754</i>, <i>JGJDFHEM_01755</i>, <i>JGJDFHEM_01756</i>, <i>JGJDFHEM_01757</i>, <i>JGJDFHEM_01758</i>, <i>JGJDFHEM_01759</i>, <i>JGJDFHEM_01760</i>, <i>dnaB_1</i>, <i>lexA_1</i>, <i>JGJDFHEM_01763</i>, <i>JGJDFHEM_01764</i>, <i>JGJDFHEM_01765</i>, <i>JGJDFHEM_01766</i>, <i>JGJDFHEM_01767</i>, <i>JGJDFHEM_01768</i>, <i>JGJDFHEM_01769</i>, <i>JGJDFHEM_01770</i>, <i>JGJDFHEM_01771</i>, <i>JGJDFHEM_01772</i>, <i>JGJDFHEM_01773</i>, <i>JGJDFHEM_01774</i>, <i>JGJDFHEM_01775</i>, <i>JGJDFHEM_01776</i>, <i>JGJDFHEM_01777</i>, <i>JGJDFHEM_01778</i>, <i>JGJDFHEM_01779</i>, <i>JGJDFHEM_01780</i>, <i>JGJDFHEM_01781</i>, <i>JGJDFHEM_01782</i>, <i>JGJDFHEM_01783</i>, <i>JGJDFHEM_01784</i>, <i>JGJDFHEM_01785</i>, <i>JGJDFHEM_01786</i>, <i>JGJDFHEM_01787</i>, <i>JGJDFHEM_01788</i>, <i>JGJDFHEM_01789</i>, <i>JGJDFHEM_01790</i>, <i>JGJDFHEM_01791</i>, <i>JGJDFHEM_01792</i>, <i>JGJDFHEM_01793</i>, <i>JGJDFHEM_01794</i>, <i>JGJDFHEM_01795</i>, <i>JGJDFHEM_01796</i>, <i>JGJDFHEM_01797</i>, <i>JGJDFHEM_01798</i>, <i>JGJDFHEM_01799</i>, <i>JGJDFHEM_01800</i>, <i>JGJDFHEM_01801</i>, <i>JGJDFHEM_01802</i>, <i>JGJDFHEM_01803</i></noscript><div id="gene_hide_DEL_16267" class="hidden"><i>[sbcB]</i>, <i>intA</i>, <i>JGJDFHEM_01724</i>, <i>JGJDFHEM_01725</i>, <i>JGJDFHEM_01726</i>, <i>JGJDFHEM_01727</i>, <i>JGJDFHEM_01728</i>, <i>JGJDFHEM_01729</i>, <i>JGJDFHEM_01730</i>, <i>rdgC_2</i>, <i>JGJDFHEM_01732</i>, <i>JGJDFHEM_01733</i>, <i>JGJDFHEM_01734</i>, <i>JGJDFHEM_01735</i>, <i>JGJDFHEM_01736</i>, <i>JGJDFHEM_01737</i>, <i>JGJDFHEM_01738</i>, <i>JGJDFHEM_01739</i>, <i>JGJDFHEM_01740</i>, <i>JGJDFHEM_01741</i>, <i>JGJDFHEM_01742</i>, <i>JGJDFHEM_01743</i>, <i>JGJDFHEM_01744</i>, <i>JGJDFHEM_01745</i>, <i>JGJDFHEM_01746</i>, <i>JGJDFHEM_01747</i>, <i>JGJDFHEM_01748</i>, <i>JGJDFHEM_01749</i>, <i>JGJDFHEM_01750</i>, <i>JGJDFHEM_01751</i>, <i>JGJDFHEM_01752</i>, <i>JGJDFHEM_01753</i>, <i>JGJDFHEM_01754</i>, <i>JGJDFHEM_01755</i>, <i>JGJDFHEM_01756</i>, <i>JGJDFHEM_01757</i>, <i>JGJDFHEM_01758</i>, <i>JGJDFHEM_01759</i>, <i>JGJDFHEM_01760</i>, <i>dnaB_1</i>, <i>lexA_1</i>, <i>JGJDFHEM_01763</i>, <i>JGJDFHEM_01764</i>, <i>JGJDFHEM_01765</i>, <i>JGJDFHEM_01766</i>, <i>JGJDFHEM_01767</i>, <i>JGJDFHEM_01768</i>, <i>JGJDFHEM_01769</i>, <i>JGJDFHEM_01770</i>, <i>JGJDFHEM_01771</i>, <i>JGJDFHEM_01772</i>, <i>JGJDFHEM_01773</i>, <i>JGJDFHEM_01774</i>, <i>JGJDFHEM_01775</i>, <i>JGJDFHEM_01776</i>, <i>JGJDFHEM_01777</i>, <i>JGJDFHEM_01778</i>, <i>JGJDFHEM_01779</i>, <i>JGJDFHEM_01780</i>, <i>JGJDFHEM_01781</i>, <i>JGJDFHEM_01782</i>, <i>JGJDFHEM_01783</i>, <i>JGJDFHEM_01784</i>, <i>JGJDFHEM_01785</i>, <i>JGJDFHEM_01786</i>, <i>JGJDFHEM_01787</i>, <i>JGJDFHEM_01788</i>, <i>JGJDFHEM_01789</i>, <i>JGJDFHEM_01790</i>, <i>JGJDFHEM_01791</i>, <i>JGJDFHEM_01792</i>, <i>JGJDFHEM_01793</i>, <i>JGJDFHEM_01794</i>, <i>JGJDFHEM_01795</i>, <i>JGJDFHEM_01796</i>, <i>JGJDFHEM_01797</i>, <i>JGJDFHEM_01798</i>, <i>JGJDFHEM_01799</i>, <i>JGJDFHEM_01800</i>, <i>JGJDFHEM_01801</i>, <i>JGJDFHEM_01802</i>, <i>JGJDFHEM_01803</i></div><input id="gene_hide_DEL_16267_button" type="button" onclick="hideTog('gene_hide_DEL_16267');showTog('gene_hide_DEL_16267_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+</table><p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Missing coverage evidence...</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="MC_SIDE_1_78592.html">*</a></td>
+<td><a href="MC_SIDE_2_78592.html">*</a></td>
+<td><a href="MC_PLOT_78592.html">&divide;</a></td>
+<td>NC_019393.1</td>
+<td align="right">1918430</td>
+<td align="right">1974481</td>
+<td align="right">56052</td>
+<td align="center">36&nbsp;[0]</td>
+<td align="center">[0]&nbsp;36</td>
+<td align="center"><i>[sbcB]&#8211;JGJDFHEM_01803</i></td>
+<td align="left">[sbcB],intA,JGJDFHEM_01724,JGJDFHEM_01725,JGJDFHEM_01726,JGJDFHEM_01727,JGJDFHEM_01728,JGJDFHEM_01729,JGJDFHEM_01730,rdgC_2,JGJDFHEM_01732,JGJDFHEM_01733,JGJDFHEM_01734,JGJDFHEM_01735,JGJDFHEM_01736,JGJDFHEM_01737,JGJDFHEM_01738,JGJDFHEM_01739,JGJDFHEM_01740,JGJDFHEM_01741,JGJDFHEM_01742,JGJDFHEM_01743,JGJDFHEM_01744,JGJDFHEM_01745,JGJDFHEM_01746,JGJDFHEM_01747,JGJDFHEM_01748,JGJDFHEM_01749,JGJDFHEM_01750,JGJDFHEM_01751,JGJDFHEM_01752,JGJDFHEM_01753,JGJDFHEM_01754,JGJDFHEM_01755,JGJDFHEM_01756,JGJDFHEM_01757,JGJDFHEM_01758,JGJDFHEM_01759,JGJDFHEM_01760,dnaB_1,lexA_1,JGJDFHEM_01763,JGJDFHEM_01764,JGJDFHEM_01765,JGJDFHEM_01766,JGJDFHEM_01767,JGJDFHEM_01768,JGJDFHEM_01769,JGJDFHEM_01770,JGJDFHEM_01771,JGJDFHEM_01772,JGJDFHEM_01773,JGJDFHEM_01774,JGJDFHEM_01775,JGJDFHEM_01776,JGJDFHEM_01777,JGJDFHEM_01778,JGJDFHEM_01779,JGJDFHEM_01780,JGJDFHEM_01781,JGJDFHEM_01782,JGJDFHEM_01783,JGJDFHEM_01784,JGJDFHEM_01785,JGJDFHEM_01786,JGJDFHEM_01787,JGJDFHEM_01788,JGJDFHEM_01789,JGJDFHEM_01790,JGJDFHEM_01791,JGJDFHEM_01792,JGJDFHEM_01793,JGJDFHEM_01794,JGJDFHEM_01795,JGJDFHEM_01796,JGJDFHEM_01797,JGJDFHEM_01798,JGJDFHEM_01799,JGJDFHEM_01800,JGJDFHEM_01801,JGJDFHEM_01802,JGJDFHEM_01803</td>
+</tr>
+</table>
+<p><table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">New junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="JC_78931.html">*</a></td>
+<td rowspan="1"><a href="JC_SIDE_1_78931.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_019393.1</td>
+<td align="center" class="junction_gene">=&nbsp;1918429</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">36 (0.940)</td>
+<td rowspan="2" align="center">18/302</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">coding&nbsp;(79/1488&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>sbcB</i></td>
+<td class="junction_gene">Exodeoxyribonuclease I</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="JC_SIDE_2_78931.html">?</a></td><td rowspan="1" class="junction_gene">NC_019393.1</td>
+<td align="center" class="junction_gene">1974482&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+311/&#8209;254)</td>
+<td align="center" class="junction_gene"><i>JGJDFHEM_01803/rcsC_12</i></td>
+<td class="junction_gene">hypothetical protein/Sensor histidine kinase RcsC</td>
+</tr>
+</table>
+<p><div align="left"><img src="NC_019393.1_1918430-1974481.png" width=800 /></div></body></html>

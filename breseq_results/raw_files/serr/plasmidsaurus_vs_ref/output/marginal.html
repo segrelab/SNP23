@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 242 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_306.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,946,052</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">68.9%
+</td><td align="center">487.3
+/&nbsp;252.0
+</td><td align="center">309</td><td align="center">intergenic&nbsp;(+418/&#8211;)</td><td align="center"><i>AKMKGJEL_04487/&#8211;</i></td><td align="left">tRNA&#8209;Leu/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_180.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,689</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">67.0%
+</td><td align="center">908.4
+/&nbsp;inf
+</td><td align="center">778</td><td align="center"><font class="snp_type_synonymous">A290A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_169.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,569</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">64.3%
+</td><td align="center">154.9
+/&nbsp;inf
+</td><td align="center">693</td><td align="center"><font class="snp_type_synonymous">D330D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_308.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,946,079</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">63.7%
+</td><td align="center">203.3
+/&nbsp;176.2
+</td><td align="center">171</td><td align="center">intergenic&nbsp;(+445/&#8211;)</td><td align="center"><i>AKMKGJEL_04487/&#8211;</i></td><td align="left">tRNA&#8209;Leu/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_303.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,946,037</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">62.5%
+</td><td align="center">311.5
+/&nbsp;288.7
+</td><td align="center">327</td><td align="center">intergenic&nbsp;(+403/&#8211;)</td><td align="center"><i>AKMKGJEL_04487/&#8211;</i></td><td align="left">tRNA&#8209;Leu/&#8211;</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_206.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,597,514</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">60.9%
+</td><td align="center">143.7
+/&nbsp;257.6
+</td><td align="center">240</td><td align="center"><font class="snp_type_synonymous">A1633A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_04155</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_167.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,551</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">58.9%
+</td><td align="center">107.3
+/&nbsp;inf
+</td><td align="center">740</td><td align="center"><font class="snp_type_synonymous">S336S</font>&nbsp;(AG<font class="mutation_in_codon">T</font>&rarr;AG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_165.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,514</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">58.4%
+</td><td align="center">37.4
+/&nbsp;inf
+</td><td align="center">647</td><td align="center"><font class="snp_type_nonsynonymous">T349A</font>&nbsp;(<font class="mutation_in_codon">A</font>CT&rarr;<font class="mutation_in_codon">G</font>CT)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_120.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">3,861,535</td><td align="right">0</td><td align="center">G</td><td align="center">.</td><td align="right">57.8%
+</td><td align="center">190.6
+/&nbsp;inf
+</td><td align="center">206</td><td align="center">coding&nbsp;(229/240&nbsp;nt)</td><td align="center"><i>AKMKGJEL_03491</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_203.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,597,402</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">57.4%
+</td><td align="center">110.1
+/&nbsp;inf
+</td><td align="center">265</td><td align="center">intergenic&nbsp;(&#8209;862/+64)</td><td align="center"><i>AKMKGJEL_04154/AKMKGJEL_04155</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_181.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,713</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">57.0%
+</td><td align="center">239.2
+/&nbsp;inf
+</td><td align="center">565</td><td align="center"><font class="snp_type_synonymous">T282T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_144.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,181</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">54.5%
+</td><td align="center">245.4
+/&nbsp;inf
+</td><td align="center">265</td><td align="center"><font class="snp_type_nonsynonymous">A460T</font>&nbsp;(<font class="mutation_in_codon">G</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_264.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,944,754</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">54.3%
+</td><td align="center">15.0
+/&nbsp;107.6
+</td><td align="center">82</td><td align="center">intergenic&nbsp;(&#8209;182/&#8209;794)</td><td align="center"><i>AKMKGJEL_04486/AKMKGJEL_04487</i></td><td align="left">hypothetical protein/tRNA&#8209;Leu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_147.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,196</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">54.1%
+</td><td align="center">270.2
+/&nbsp;inf
+</td><td align="center">290</td><td align="center"><font class="snp_type_nonsynonymous">T455A</font>&nbsp;(<font class="mutation_in_codon">A</font>CC&rarr;<font class="mutation_in_codon">G</font>CC)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_204.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,597,471</td><td align="right">0</td><td align="center">A</td><td align="center">.</td><td align="right">52.9%
+</td><td align="center">357.5
+/&nbsp;inf
+</td><td align="center">262</td><td align="center">coding&nbsp;(4942/4947&nbsp;nt)</td><td align="center"><i>AKMKGJEL_04155</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_215.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,597,614</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">52.8%
+</td><td align="center">79.8
+/&nbsp;300.4
+</td><td align="center">212</td><td align="center"><font class="snp_type_nonsynonymous">A1600V</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">T</font>G)&nbsp;</td><td align="center"><i>AKMKGJEL_04155</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_166.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,524</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">52.3%
+</td><td align="center">26.8
+/&nbsp;inf
+</td><td align="center">700</td><td align="center"><font class="snp_type_synonymous">A345A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_170.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,118,578</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">52.0%
+</td><td align="center">182.1
+/&nbsp;inf
+</td><td align="center">743</td><td align="center"><font class="snp_type_synonymous">S327S</font>&nbsp;(AG<font class="mutation_in_codon">T</font>&rarr;AG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_03732</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_216.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,597,646</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">51.6%
+</td><td align="center">99.3
+/&nbsp;277.3
+</td><td align="center">184</td><td align="center"><font class="snp_type_synonymous">A1589A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AKMKGJEL_04155</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_234.html">*</a></td><td align="center">SER39009_Serratia_390064947661</td><td align="right">4,700,292</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">50.8%
+</td><td align="center">131.3
+/&nbsp;inf
+</td><td align="center">392</td><td align="center">intergenic&nbsp;(+149/&#8209;18)</td><td align="center"><i>AKMKGJEL_04262/AKMKGJEL_04263</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 675 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_895.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_895.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4118706</td><td align="center" class="junction_gene">436 (2.300)</td><td rowspan="2" align="center">76 (0.540)<br>+40 bp</td>
+<td rowspan="2" align="center">29/236</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">19.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(853/4920&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_03732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_895.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4944977&nbsp;=</td>
+<td align="center" class="junction_gene">421 (2.220)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;405/&#8209;571)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04486/AKMKGJEL_04487</i></td>
+<td class="junction_gene">hypothetical protein/tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_894.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_894.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4118691</td><td align="center" class="junction_gene">506 (2.670)</td><td rowspan="2" align="center">77 (0.460)<br>+CTGATTCAGAACATTATCC</td>
+<td rowspan="2" align="center">32/278</td>
+<td rowspan="2" align="center">3.1</td>
+<td rowspan="2" align="center">25.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(868/4920&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_03732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_894.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4946825</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1191/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1027.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1027.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4946171</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">100 (0.540)<br>+CACC</td>
+<td rowspan="2" align="center">36/308</td>
+<td rowspan="2" align="center">3.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+537/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1027.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4947564&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1930/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1001.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1001.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4944921</td><td align="center" class="junction_gene">550 (2.910)</td><td rowspan="2" align="center">108 (0.680)</td>
+<td rowspan="2" align="center">30/264</td>
+<td rowspan="2" align="center">3.2</td>
+<td rowspan="2" align="center">32.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;349/&#8209;627)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04486/AKMKGJEL_04487</i></td>
+<td class="junction_gene">hypothetical protein/tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1001.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4947587&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1953/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_884.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_884.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4118514&nbsp;=</td><td align="center" class="junction_gene">547 (2.890)</td><td rowspan="2" align="center">55 (0.490)<br>+65 bp</td>
+<td rowspan="2" align="center">19/186</td>
+<td rowspan="2" align="center">3.3</td>
+<td rowspan="2" align="center">25.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1045/4920&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_03732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_884.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4947661</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+2027/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_875.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_875.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4118336&nbsp;=</td><td align="center" class="junction_gene">149 (0.790)</td><td rowspan="2" align="center">58 (0.400)<br>+36 bp</td>
+<td rowspan="2" align="center">26/244</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">47.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1223/4920&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_03732</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_875.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4946127</td>
+<td align="center" class="junction_gene">20 (0.110)</td><td align="center" class="junction_gene">intergenic&nbsp;(+493/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_358.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_358.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;41606</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">283 (1.500)</td>
+<td rowspan="2" align="center">35/314</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">96.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;754/+3431)</td>
+<td align="center" class="junction_gene"><i>metAS/AKMKGJEL_00033</i></td>
+<td class="junction_gene">Homoserine O&#8209;succinyltransferase/tRNA&#8209;Ala</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_358.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4207842&nbsp;=</td>
+<td align="center" class="junction_gene">18 (0.100)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;121/+158)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_03822/AKMKGJEL_03823</i></td>
+<td class="junction_gene">tRNA&#8209;Asp/tRNA&#8209;Thr</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_357.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_357.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;41606</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">360 (1.910)</td>
+<td rowspan="2" align="center">35/314</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;754/+3431)</td>
+<td align="center" class="junction_gene"><i>metAS/AKMKGJEL_00033</i></td>
+<td class="junction_gene">Homoserine O&#8209;succinyltransferase/tRNA&#8209;Ala</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_357.html">?</a></td><td rowspan="1" class="junction_repeat">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_repeat">291737&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;121/+3578)</td>
+<td align="center" class="junction_repeat"><i>AKMKGJEL_00280/AKMKGJEL_00281</i></td>
+<td class="junction_repeat">tRNA&#8209;Asp/tRNA&#8209;Glu</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_388.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_388.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">244313&nbsp;=</td><td align="center" class="junction_gene">186 (0.980)</td><td rowspan="2" align="center">24 (0.240)<br>+74 bp</td>
+<td rowspan="2" align="center">15/168</td>
+<td rowspan="2" align="center">3.7</td>
+<td rowspan="2" align="center">18.9%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(46/87&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_00240</i></td>
+<td class="junction_gene">tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_388.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;244359</td>
+<td align="center" class="junction_gene">201 (1.060)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;1/+21)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_00240/AKMKGJEL_00241</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/tRNA&#8209;His</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1008.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1008.html">?</a></td>
+<td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">=&nbsp;4945080</td><td align="center" class="junction_gene">11 (0.060)</td><td rowspan="2" align="center">52 (0.310)<br>+TACGCTGCCGGGTACGCTGA</td>
+<td rowspan="2" align="center">26/276</td>
+<td rowspan="2" align="center">4.1</td>
+<td rowspan="2" align="center">91.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;508/&#8209;468)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04486/AKMKGJEL_04487</i></td>
+<td class="junction_gene">hypothetical protein/tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1008.html">?</a></td><td rowspan="1" class="junction_gene">SER39009_Serratia_390064947661</td>
+<td align="center" class="junction_gene">4946272&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+638/&#8211;)</td>
+<td align="center" class="junction_gene"><i>AKMKGJEL_04487/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/&#8211;</td>
+</tr>
+</table>
+</body></html>

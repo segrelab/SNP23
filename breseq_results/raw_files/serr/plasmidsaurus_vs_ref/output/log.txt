@@ -1,0 +1,8 @@
+Thu Jul 24 14:01:25 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/2526164535-custom-contig-name/2526164535-custom-contig-name.gbk -o breseq_results/raw_files/serr/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_18_polish/TKDHS4_18_S50_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_18_polish/TKDHS4_18_S50_R2_001.fastq.gz
+
+Sun Jul 27 15:28:41 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/2526164535-custom-contig-name/2526164535-custom-contig-name.gbk -o breseq_results/raw_files/serr/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_18_polish/TKDHS4_18_S50_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_18_polish/TKDHS4_18_S50_R2_001.fastq.gz
+

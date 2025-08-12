@@ -1,0 +1,4 @@
+Fri Aug  8 17:28:36 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/2609459601/2609459601.gbk -o breseq_results/raw_files/sedthio/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/6LTRG8_polished_results/6LTRG8_2_polish/6LTRG8_2_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/6LTRG8_polished_results/6LTRG8_2_polish/6LTRG8_2_R2_001.fastq.gz
+

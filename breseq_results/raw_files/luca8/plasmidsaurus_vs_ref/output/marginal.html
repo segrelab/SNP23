@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 417 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_180.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;5142107</td><td align="right">127,959</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">61.2%
+</td><td align="center">50.4
+/&nbsp;74.9
+</td><td align="center">67</td><td align="center">intergenic&nbsp;(&#8209;247/&#8209;86)</td><td align="center"><i>PEIKNMDC_04809/PEIKNMDC_04810</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_386.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">822</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">52.0%
+</td><td align="center">&#8209;5.5
+/&nbsp;142.5
+</td><td align="center">98</td><td align="center"><font class="snp_type_synonymous">L122L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>PEIKNMDC_04926</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_385.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">765</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">50.0%
+</td><td align="center">0.9
+/&nbsp;210.0
+</td><td align="center">120</td><td align="center"><font class="snp_type_synonymous">R103R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>PEIKNMDC_04926</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_442.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,837</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">50.0%
+</td><td align="center">&#8209;0.2
+/&nbsp;64.8
+</td><td align="center">46</td><td align="center"><font class="snp_type_synonymous">G52G</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>traC_3</i></td><td align="left">DNA primase TraC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_440.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,729</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">49.2%
+</td><td align="center">&#8209;0.0
+/&nbsp;94.7
+</td><td align="center">65</td><td align="center"><font class="snp_type_synonymous">T16T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>traC_3</i></td><td align="left">DNA primase TraC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_621.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">90,865</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">49.1%
+</td><td align="center">&#8209;6.5
+/&nbsp;84.0
+</td><td align="center">57</td><td align="center"><font class="snp_type_synonymous">S458S</font>&nbsp;(AG<font class="mutation_in_codon">C</font>&rarr;AG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>noc_7</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_441.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,834</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">48.9%
+</td><td align="center">2.3
+/&nbsp;64.3
+</td><td align="center">47</td><td align="center"><font class="snp_type_synonymous">Q51Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>traC_3</i></td><td align="left">DNA primase TraC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_383.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">729</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">48.8%
+</td><td align="center">0.4
+/&nbsp;179.7
+</td><td align="center">123</td><td align="center"><font class="snp_type_synonymous">R91R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>PEIKNMDC_04926</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_408.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,498</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">48.2%
+</td><td align="center">1.8
+/&nbsp;124.7
+</td><td align="center">83</td><td align="center"><font class="snp_type_synonymous">L110L</font>&nbsp;(<font class="mutation_in_codon">T</font>TG&rarr;<font class="mutation_in_codon">C</font>TG)&nbsp;</td><td align="center"><i>PEIKNMDC_05007</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_597.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">90,340</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">48.0%
+</td><td align="center">2.4
+/&nbsp;84.3
+</td><td align="center">50</td><td align="center"><font class="snp_type_synonymous">V283V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>noc_7</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_406.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,484</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">47.5%
+</td><td align="center">&#8209;4.9
+/&nbsp;117.7
+</td><td align="center">82</td><td align="center"><font class="snp_type_nonsynonymous">T105I</font>&nbsp;(A<font class="mutation_in_codon">C</font>C&rarr;A<font class="mutation_in_codon">T</font>C)&nbsp;</td><td align="center"><i>PEIKNMDC_05007</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_407.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,489</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">47.5%
+</td><td align="center">11.4
+/&nbsp;153.2
+</td><td align="center">80</td><td align="center"><font class="snp_type_nonsynonymous">F107I</font>&nbsp;(<font class="mutation_in_codon">T</font>TC&rarr;<font class="mutation_in_codon">A</font>TC)&nbsp;</td><td align="center"><i>PEIKNMDC_05007</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_384.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">744</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">47.4%
+</td><td align="center">21.6
+/&nbsp;164.4
+</td><td align="center">116</td><td align="center"><font class="snp_type_synonymous">Q96Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>PEIKNMDC_04926</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_359.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">381</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">47.0%
+</td><td align="center">17.1
+/&nbsp;141.5
+</td><td align="center">100</td><td align="center"><font class="snp_type_nonsynonymous">A83V</font>&nbsp;(G<font class="mutation_in_codon">C</font>T&rarr;G<font class="mutation_in_codon">T</font>T)&nbsp;</td><td align="center"><i>prlF</i></td><td align="left">Antitoxin PrlF</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_689.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">91,907</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">46.8%
+</td><td align="center">17.5
+/&nbsp;96.9
+</td><td align="center">62</td><td align="center"><font class="snp_type_synonymous">L119L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>PEIKNMDC_05012</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_409.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,504</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">46.0%
+</td><td align="center">18.8
+/&nbsp;98.6
+</td><td align="center">74</td><td align="center"><font class="snp_type_nonsynonymous">C112R</font>&nbsp;(<font class="mutation_in_codon">T</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;&Dagger;</td><td align="center"><i>PEIKNMDC_05007</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_410.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">87,506</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">46.0%
+</td><td align="center">12.7
+/&nbsp;120.4
+</td><td align="center">74</td><td align="center"><font class="snp_type_nonsynonymous">C112W</font>&nbsp;(TG<font class="mutation_in_codon">C</font>&rarr;TG<font class="mutation_in_codon">G</font>)&nbsp;&Dagger;</td><td align="center"><i>PEIKNMDC_05007</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_462.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">88,224</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">46.0%
+</td><td align="center">17.9
+/&nbsp;100.1
+</td><td align="center">74</td><td align="center"><font class="snp_type_synonymous">E181E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>traC_3</i></td><td align="left">DNA primase TraC</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_632.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">91,063</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">45.8%
+</td><td align="center">18.3
+/&nbsp;100.6
+</td><td align="center">72</td><td align="center"><font class="snp_type_synonymous">L524L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_7</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_633.html">*</a></td><td align="center">S_pseudonitzschiae_SMR1.pSMR1&#8209;792794</td><td align="right">91,066</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">45.8%
+</td><td align="center">20.5
+/&nbsp;115.1
+</td><td align="center">72</td><td align="center"><font class="snp_type_synonymous">V525V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_7</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 18 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_734.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_734.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">2483894&nbsp;=</td><td align="center" class="junction_gene">74 (1.490)</td><td rowspan="2" align="center">6 (0.130)</td>
+<td rowspan="2" align="center">6/300</td>
+<td rowspan="2" align="center">3.2</td>
+<td rowspan="2" align="center">8.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(316/1002&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ispB</i></td>
+<td class="junction_gene">Octaprenyl diphosphate synthase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_734.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">2483916&nbsp;=</td>
+<td align="center" class="junction_gene">65 (1.380)</td><td align="center" class="junction_gene">coding&nbsp;(338/1002&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ispB</i></td>
+<td class="junction_gene">Octaprenyl diphosphate synthase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_736.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_736.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">3198247&nbsp;=</td><td align="center" class="junction_gene">99 (2.000)</td><td rowspan="2" align="center">4 (0.080)</td>
+<td rowspan="2" align="center">4/302</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">3.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(93/450&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03172</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_736.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">3198270&nbsp;=</td>
+<td align="center" class="junction_gene">104 (2.200)</td><td align="center" class="junction_gene">coding&nbsp;(70/450&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03172</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_743.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_743.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;3284777</td>
+<td align="center" class="junction_gene">248628&nbsp;=</td><td align="center" class="junction_gene">54 (0.870)</td><td rowspan="2" align="center">8 (0.130)<br>+TGATCG</td>
+<td rowspan="2" align="center">4/304</td>
+<td rowspan="2" align="center">4.1</td>
+<td rowspan="2" align="center">9.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+60/&#8209;85)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_04449/PEIKNMDC_04450</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_743.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;5142107</td>
+<td align="center" class="junction_gene">=&nbsp;24997</td>
+<td align="center" class="junction_gene">99 (1.470)</td><td align="center" class="junction_gene">coding&nbsp;(7/2295&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_04710</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_731.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_731.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;1401300</td><td align="center" class="junction_gene">42 (0.850)</td><td rowspan="2" align="center">3 (0.070)</td>
+<td rowspan="2" align="center">3/290</td>
+<td rowspan="2" align="center">4.3</td>
+<td rowspan="2" align="center">7.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(394/900&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ltnD</i></td>
+<td class="junction_gene">L&#8209;threonate dehydrogenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_731.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1402011&nbsp;=</td>
+<td align="center" class="junction_gene">31 (0.680)</td><td align="center" class="junction_gene">coding&nbsp;(209/1248&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>otnK</i></td>
+<td class="junction_gene">3&#8209;oxo&#8209;tetronate kinase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_737.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_737.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">3518915&nbsp;=</td><td align="center" class="junction_gene">68 (1.370)</td><td rowspan="2" align="center">4 (0.080)</td>
+<td rowspan="2" align="center">3/302</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">6.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(90/591&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03490</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_737.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">3518952&nbsp;=</td>
+<td align="center" class="junction_gene">54 (1.140)</td><td align="center" class="junction_gene">coding&nbsp;(53/591&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_03490</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_733.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_733.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1892576&nbsp;=</td><td align="center" class="junction_gene">51 (1.030)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/302</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">5.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1621/2055&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>nuoL</i></td>
+<td class="junction_gene">NADH&#8209;quinone oxidoreductase subunit L</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_733.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1892599&nbsp;=</td>
+<td align="center" class="junction_gene">50 (1.060)</td><td align="center" class="junction_gene">coding&nbsp;(1598/2055&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>nuoL</i></td>
+<td class="junction_gene">NADH&#8209;quinone oxidoreductase subunit L</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_732.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_732.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;1780464</td><td align="center" class="junction_gene">45 (0.910)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/302</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">6.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(139/741&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01738</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_732.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;1780469</td>
+<td align="center" class="junction_gene">47 (0.990)</td><td align="center" class="junction_gene">coding&nbsp;(134/741&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01738</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_730.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_730.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;1256407</td><td align="center" class="junction_gene">46 (0.930)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/300</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">6.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+126/&#8209;80)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01213/PEIKNMDC_01214</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_730.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">=&nbsp;1256413</td>
+<td align="center" class="junction_gene">45 (0.960)</td><td align="center" class="junction_gene">intergenic&nbsp;(+132/&#8209;74)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01213/PEIKNMDC_01214</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_729.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_729.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1231473&nbsp;=</td><td align="center" class="junction_gene">62 (1.250)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/302</td>
+<td rowspan="2" align="center">4.4</td>
+<td rowspan="2" align="center">4.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(427/1332&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01191</i></td>
+<td class="junction_gene">Sulfatase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_729.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.chrom3572445</td>
+<td align="center" class="junction_gene">1231496&nbsp;=</td>
+<td align="center" class="junction_gene">62 (1.310)</td><td align="center" class="junction_gene">coding&nbsp;(404/1332&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PEIKNMDC_01191</i></td>
+<td class="junction_gene">Sulfatase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_739.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_739.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;1428095</td>
+<td align="center" class="junction_gene">=&nbsp;305386</td><td align="center" class="junction_gene">62 (1.080)</td><td rowspan="2" align="center">5 (0.090)</td>
+<td rowspan="2" align="center">5/302</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">7.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(326/1398&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>glmM_2</i></td>
+<td class="junction_gene">Phosphoglucosamine mutase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_739.html">?</a></td><td rowspan="1" class="junction_gene">S_pseudonitzschiae_SMR1.pSMR1&#8209;1428095</td>
+<td align="center" class="junction_gene">=&nbsp;305409</td>
+<td align="center" class="junction_gene">63 (1.150)</td><td align="center" class="junction_gene">coding&nbsp;(303/1398&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>glmM_2</i></td>
+<td class="junction_gene">Phosphoglucosamine mutase</td>
+</tr>
+</table>
+</body></html>

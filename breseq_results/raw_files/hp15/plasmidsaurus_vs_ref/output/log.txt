@@ -1,0 +1,8 @@
+Thu Jul 24 11:37:38 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/650377991/650377991.gbk -o breseq_results/raw_files/hp15/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_7_polish/B9NRXP_7_S111_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_7_polish/B9NRXP_7_S111_R2_001.fastq.gz
+
+Sun Jul 27 15:28:39 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/650377991/650377991.gbk -o breseq_results/raw_files/hp15/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_7_polish/B9NRXP_7_S111_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_7_polish/B9NRXP_7_S111_R2_001.fastq.gz
+

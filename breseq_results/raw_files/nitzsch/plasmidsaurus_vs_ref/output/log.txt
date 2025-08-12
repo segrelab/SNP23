@@ -1,0 +1,8 @@
+Thu Jul 24 12:01:35 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/Sulfitobacter_pseudonitzschiae_SMR1/Sulfitobacter_pseudonitzschiae_SMR1.gbk -o breseq_results/raw_files/nitzsch/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_13_polish/B9NRXP_13_S117_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_13_polish/B9NRXP_13_S117_R2_001.fastq.gz
+
+Sun Jul 27 15:28:40 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/Sulfitobacter_pseudonitzschiae_SMR1/Sulfitobacter_pseudonitzschiae_SMR1.gbk -o breseq_results/raw_files/nitzsch/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_13_polish/B9NRXP_13_S117_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_13_polish/B9NRXP_13_S117_R2_001.fastq.gz
+

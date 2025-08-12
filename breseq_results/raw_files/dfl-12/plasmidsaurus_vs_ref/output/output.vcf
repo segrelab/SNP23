@@ -1,0 +1,17 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=GCA_000018145.CP0008303789584,length=3789584>
+##contig=<ID=GCA_000018145.CP000831190506,length=190506>
+##contig=<ID=GCA_000018145.CP000832152970,length=152970>
+##contig=<ID=GCA_000018145.CP000833126304,length=126304>
+##contig=<ID=GCA_000018145.CP000834,length=86208>
+##contig=<ID=GCA_000018145.CP000835,length=72296>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+GCA_000018145.CP0008303789584	1235982	.	CCGCGAGC	C	.	PASS	AF=1.0000;AD=121;DP=129
+GCA_000018145.CP0008303789584	2488029	.	T	C	529.2	PASS	AF=1.0000;AD=146;DP=146
+GCA_000018145.CP0008303789584	3331918	.	G	GG	776.6	PASS	AF=1.0000;AD=201;DP=212

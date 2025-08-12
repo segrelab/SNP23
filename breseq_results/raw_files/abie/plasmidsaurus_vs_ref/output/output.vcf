@@ -1,0 +1,85 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=Ga0104642_101,length=805289>
+##contig=<ID=Ga0104642_102,length=766006>
+##contig=<ID=Ga0104642_103,length=532875>
+##contig=<ID=Ga0104642_104,length=416065>
+##contig=<ID=Ga0104642_105,length=399789>
+##contig=<ID=Ga0104642_106,length=373316>
+##contig=<ID=Ga0104642_107,length=357714>
+##contig=<ID=Ga0104642_108,length=325146>
+##contig=<ID=Ga0104642_109,length=288338>
+##contig=<ID=Ga0104642_110,length=275910>
+##contig=<ID=Ga0104642_111,length=266161>
+##contig=<ID=Ga0104642_112,length=233195>
+##contig=<ID=Ga0104642_113,length=201699>
+##contig=<ID=Ga0104642_114,length=192020>
+##contig=<ID=Ga0104642_115,length=186477>
+##contig=<ID=Ga0104642_116,length=167348>
+##contig=<ID=Ga0104642_117,length=166348>
+##contig=<ID=Ga0104642_118,length=145385>
+##contig=<ID=Ga0104642_119,length=140658>
+##contig=<ID=Ga0104642_120,length=127391>
+##contig=<ID=Ga0104642_121,length=126746>
+##contig=<ID=Ga0104642_122,length=96350>
+##contig=<ID=Ga0104642_123,length=78706>
+##contig=<ID=Ga0104642_124,length=67578>
+##contig=<ID=Ga0104642_125,length=59427>
+##contig=<ID=Ga0104642_126,length=59111>
+##contig=<ID=Ga0104642_127,length=48088>
+##contig=<ID=Ga0104642_128,length=47628>
+##contig=<ID=Ga0104642_129,length=42897>
+##contig=<ID=Ga0104642_130,length=42300>
+##contig=<ID=Ga0104642_131,length=34982>
+##contig=<ID=Ga0104642_132,length=29047>
+##contig=<ID=Ga0104642_133,length=23143>
+##contig=<ID=Ga0104642_134,length=18570>
+##contig=<ID=Ga0104642_135,length=17491>
+##contig=<ID=Ga0104642_136,length=8443>
+##contig=<ID=Ga0104642_137,length=7006>
+##contig=<ID=Ga0104642_138,length=6728>
+##contig=<ID=Ga0104642_139,length=6482>
+##contig=<ID=Ga0104642_140,length=5346>
+##contig=<ID=Ga0104642_141,length=4848>
+##contig=<ID=Ga0104642_142,length=4374>
+##contig=<ID=Ga0104642_143,length=2571>
+##contig=<ID=Ga0104642_144,length=2543>
+##contig=<ID=Ga0104642_145,length=2358>
+##contig=<ID=Ga0104642_146,length=2298>
+##contig=<ID=Ga0104642_147,length=1832>
+##contig=<ID=Ga0104642_148,length=1547>
+##contig=<ID=Ga0104642_149,length=1385>
+##contig=<ID=Ga0104642_150,length=1216>
+##contig=<ID=Ga0104642_151,length=1115>
+##contig=<ID=Ga0104642_152,length=1102>
+##contig=<ID=Ga0104642_153,length=1051>
+##contig=<ID=Ga0104642_154,length=1012>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+Ga0104642_101	122575	.	T	G	31.8	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122577	.	A	C	31.5	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122581	.	A	C	31.7	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122586	.	AC	CT	31.2	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122590	.	A	G	31.4	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122593	.	TGTTT	GACCA	31.2	PASS	AF=1.0000;AD=17.8;DP=18
+Ga0104642_101	122599	.	TT	GG	31.5	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122602	.	C	G	31.4	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	122605	.	G	A	31.6	PASS	AF=1.0000;AD=18;DP=18
+Ga0104642_101	225683	.	C	G	122.1	PASS	AF=1.0000;AD=36;DP=37
+Ga0104642_105	46397	.	C	CC	99.7	PASS	AF=1.0000;AD=29;DP=31
+Ga0104642_106	18803	.	G	C	145.0	PASS	AF=1.0000;AD=38;DP=38
+Ga0104642_110	12323	.	C	A	67.3	PASS	AF=1.0000;AD=23;DP=23
+Ga0104642_111	194238	.	G	T	80.8	PASS	AF=1.0000;AD=28;DP=30
+Ga0104642_112	139490	.	A	G	133.5	PASS	AF=1.0000;AD=45;DP=55
+Ga0104642_114	128191	.	C	T	126.2	PASS	AF=1.0000;AD=41;DP=41
+Ga0104642_121	85075	.	T	G	227.0	PASS	AF=1.0000;AD=60;DP=60
+Ga0104642_140	5094	.	T	A	543.5	PASS	AF=1.0000;AD=180;DP=216
+Ga0104642_142	3901	.	G	C	80.7	PASS	AF=1.0000;AD=24;DP=24
+Ga0104642_142	4165	.	T	C	34.3	PASS	AF=1.0000;AD=12;DP=12
+Ga0104642_142	4213	.	A	G	25.9	PASS	AF=1.0000;AD=13;DP=13
+Ga0104642_142	4279	.	T	C	29.6	PASS	AF=1.0000;AD=14;DP=14
+Ga0104642_142	4313	.	C	A	25.3	PASS	AF=1.0000;AD=14;DP=14

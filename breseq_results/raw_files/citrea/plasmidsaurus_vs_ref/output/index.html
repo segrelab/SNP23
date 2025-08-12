@@ -1,0 +1,1575 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_177.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000001.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;505&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_00001</i></td>
+<td align="left">PHGPABBB_00001</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_178.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000002.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;521&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>xerC_1</i></td>
+<td align="left">xerC_1</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_179.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000003.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;569&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_180.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000004.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;624&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_181.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000005.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;624&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_182.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000006.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;639&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_183.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000007.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;713&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_184.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000008.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;774&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_185.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000009.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,140&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>tufA</i></td>
+<td align="left">tufA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_186.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000010.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,434&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_187.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000011.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,638&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_00004</i>&#8211;<i>PHGPABBB_00005</i></td>
+<td align="left"><i>PHGPABBB_00004</i>, <i>PHGPABBB_00005</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_188.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000012.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;732,536&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_00006</i>&#8211;<i>PHGPABBB_00663</i></td>
+<td align="left"><b>657 genes </b><noscript><i>PHGPABBB_00006</i>, <i>PHGPABBB_00007</i>, <i>PHGPABBB_00008</i>, <i>PHGPABBB_00009</i>, <i>PHGPABBB_00010</i>, <i>PHGPABBB_00011</i>, <i>PHGPABBB_00012</i>, <i>PHGPABBB_00013</i>, <i>PHGPABBB_00014</i>, <i>PHGPABBB_00015</i>, <i>pgsA</i>, <i>uvrC</i>, <i>uvrY</i>, <i>sstT</i>, <i>PHGPABBB_00020</i>, <i>cysK</i>, <i>PHGPABBB_00022</i>, <i>PHGPABBB_00023</i>, <i>opuE</i>, <i>cdgJ_1</i>, <i>PHGPABBB_00026</i>, <i>PHGPABBB_00027</i>, <i>PHGPABBB_00028</i>, <i>fecA</i>, <i>PHGPABBB_00030</i>, <i>PHGPABBB_00031</i>, <i>PHGPABBB_00032</i>, <i>gltC_1</i>, <i>ilvC</i>, <i>mcpH_1</i>, <i>PHGPABBB_00036</i>, <i>PHGPABBB_00037</i>, <i>PHGPABBB_00038</i>, <i>bamE</i>, <i>PHGPABBB_00040</i>, <i>ratA</i>, <i>smpB</i>, <i>fabB</i>, <i>mnmC_1</i>, <i>pal_1</i>, <i>rnt</i>, <i>gap</i>, <i>eda</i>, <i>edd</i>, <i>PHGPABBB_00050</i>, <i>PHGPABBB_00051</i>, <i>PHGPABBB_00052</i>, <i>PHGPABBB_00053</i>, <i>PHGPABBB_00054</i>, <i>PHGPABBB_00055</i>, <i>PHGPABBB_00056</i>, <i>PHGPABBB_00057</i>, <i>PHGPABBB_00058</i>, <i>PHGPABBB_00059</i>, <i>PHGPABBB_00060</i>, <i>PHGPABBB_00061</i>, <i>PHGPABBB_00062</i>, <i>PHGPABBB_00064</i>, <i>dap_1</i>, <i>PHGPABBB_00066</i>, <i>PHGPABBB_00067</i>, <i>PHGPABBB_00068</i>, <i>PHGPABBB_00069</i>, <i>PHGPABBB_00070</i>, <i>cmoM</i>, <i>PHGPABBB_00072</i>, <i>PHGPABBB_00073</i>, <i>PHGPABBB_00074</i>, <i>cysJ_1</i>, <i>PHGPABBB_00076</i>, <i>PHGPABBB_00077</i>, <i>PHGPABBB_00078</i>, <i>cyoE</i>, <i>cyoD</i>, <i>cyoC</i>, <i>cyoB</i>, <i>cyoA</i>, <i>PHGPABBB_00084</i>, <i>pld_1</i>, <i>sdaC</i>, <i>PHGPABBB_00087</i>, <i>PHGPABBB_00088</i>, <i>PHGPABBB_00089</i>, <i>PHGPABBB_00090</i>, <i>sasA_1</i>, <i>abgT_1</i>, <i>PHGPABBB_00093</i>, <i>PHGPABBB_00094</i>, <i>PHGPABBB_00095</i>, <i>PHGPABBB_00096</i>, <i>PHGPABBB_00097</i>, <i>PHGPABBB_00098</i>, <i>epmC</i>, <i>fadJ</i>, <i>fadI</i>, <i>PHGPABBB_00102</i>, <i>PHGPABBB_00103</i>, <i>PHGPABBB_00104</i>, <i>PHGPABBB_00105</i>, <i>PHGPABBB_00106</i>, <i>PHGPABBB_00107</i>, <i>sigW_1</i>, <i>PHGPABBB_00109</i>, <i>PHGPABBB_00110</i>, <i>PHGPABBB_00111</i>, <i>PHGPABBB_00112</i>, <i>PHGPABBB_00113</i>, <i>cat_1</i>, <i>PHGPABBB_00115</i>, <i>PHGPABBB_00116</i>, <i>PHGPABBB_00117</i>, <i>hddC_1</i>, <i>PHGPABBB_00119</i>, <i>PHGPABBB_00120</i>, <i>PHGPABBB_00121</i>, <i>PHGPABBB_00122</i>, <i>yejK_1</i>, <i>PHGPABBB_00124</i>, <i>PHGPABBB_00125</i>, <i>PHGPABBB_00126</i>, <i>PHGPABBB_00127</i>, <i>PHGPABBB_00128</i>, <i>PHGPABBB_00129</i>, <i>PHGPABBB_00130</i>, <i>PHGPABBB_00131</i>, <i>PHGPABBB_00132</i>, <i>PHGPABBB_00133</i>, <i>pdxJ</i>, <i>recO</i>, <i>era</i>, <i>rnc</i>, <i>lepB</i>, <i>lepA</i>, <i>rseC</i>, <i>rseB</i>, <i>PHGPABBB_00142</i>, <i>rpoE_1</i>, <i>nadB</i>, <i>sdhE</i>, <i>ygfZ</i>, <i>slyD_1</i>, <i>PHGPABBB_00148</i>, <i>PHGPABBB_00149</i>, <i>PHGPABBB_00150</i>, <i>dpgD</i>, <i>cidA</i>, <i>yohK</i>, <i>mscS_1</i>, <i>PHGPABBB_00155</i>, <i>cysS</i>, <i>ppiB_1</i>, <i>lpxH_1</i>, <i>PHGPABBB_00159</i>, <i>PHGPABBB_00160</i>, <i>PHGPABBB_00161</i>, <i>yohC</i>, <i>purF</i>, <i>cvpA</i>, <i>dedD</i>, <i>folC</i>, <i>accD</i>, <i>truA</i>, <i>PHGPABBB_00169</i>, <i>asd2</i>, <i>pdxB</i>, <i>PHGPABBB_00172</i>, <i>fadE_1</i>, <i>PHGPABBB_00174</i>, <i>btuD</i>, <i>PGdx_1</i>, <i>vgb</i>, <i>PHGPABBB_00178</i>, <i>PHGPABBB_00179</i>, <i>PHGPABBB_00180</i>, <i>PHGPABBB_00181</i>, <i>PHGPABBB_00182</i>, <i>PHGPABBB_00183</i>, <i>PHGPABBB_00184</i>, <i>PHGPABBB_00185</i>, <i>PHGPABBB_00186</i>, <i>PHGPABBB_00187</i>, <i>PHGPABBB_00188</i>, <i>dnaQ</i>, <i>rnhA_1</i>, <i>PHGPABBB_00191</i>, <i>gloB_1</i>, <i>mltD_1</i>, <i>PHGPABBB_00194</i>, <i>truC</i>, <i>PHGPABBB_00196</i>, <i>PHGPABBB_00197</i>, <i>PHGPABBB_00198</i>, <i>PHGPABBB_00199</i>, <i>mccF_1</i>, <i>rcsC_1</i>, <i>PHGPABBB_00202</i>, <i>ygeA</i>, <i>sspA_1</i>, <i>hdfR_1</i>, <i>PHGPABBB_00206</i>, <i>PHGPABBB_00207</i>, <i>PHGPABBB_00208</i>, <i>PHGPABBB_00209</i>, <i>srrA</i>, <i>rcsC_2</i>, <i>PHGPABBB_00212</i>, <i>baeR_1</i>, <i>baeS</i>, <i>PHGPABBB_00215</i>, <i>PHGPABBB_00216</i>, <i>PHGPABBB_00217</i>, <i>PHGPABBB_00218</i>, <i>rcsC_3</i>, <i>SIRT5</i>, <i>PHGPABBB_00221</i>, <i>PHGPABBB_00222</i>, <i>PHGPABBB_00223</i>, <i>ctpH</i>, <i>PHGPABBB_00225</i>, <i>PHGPABBB_00226</i>, <i>sasA_2</i>, <i>uvrB</i>, <i>mdtK_1</i>, <i>PHGPABBB_00230</i>, <i>PHGPABBB_00231</i>, <i>PHGPABBB_00232</i>, <i>PHGPABBB_00233</i>, <i>PHGPABBB_00234</i>, <i>rnfA</i>, <i>rnfB</i>, <i>rsxC</i>, <i>rnfD</i>, <i>rsxG</i>, <i>rnfE</i>, <i>nth</i>, <i>PHGPABBB_00242</i>, <i>PHGPABBB_00243</i>, <i>pgrR_1</i>, <i>PHGPABBB_00245</i>, <i>sasA_3</i>, <i>yhaJ</i>, <i>mhqP</i>, <i>yhhW</i>, <i>yqjG</i>, <i>aer_1</i>, <i>PHGPABBB_00252</i>, <i>PHGPABBB_00253</i>, <i>PHGPABBB_00254</i>, <i>PHGPABBB_00255</i>, <i>PHGPABBB_00256</i>, <i>PHGPABBB_00257</i>, <i>PHGPABBB_00258</i>, <i>PHGPABBB_00259</i>, <i>PHGPABBB_00260</i>, <i>PHGPABBB_00261</i>, <i>PHGPABBB_00262</i>, <i>PHGPABBB_00263</i>, <i>msrB</i>, <i>PHGPABBB_00265</i>, <i>ligA_1</i>, <i>zipA</i>, <i>smc_1</i>, <i>rlmB_1</i>, <i>PHGPABBB_00270</i>, <i>PHGPABBB_00271</i>, <i>csgB</i>, <i>PHGPABBB_00273</i>, <i>PHGPABBB_00274</i>, <i>PHGPABBB_00275</i>, <i>csgG</i>, <i>PHGPABBB_00277</i>, <i>PHGPABBB_00278</i>, <i>PHGPABBB_00279</i>, <i>PHGPABBB_00280</i>, <i>cysZ</i>, <i>PHGPABBB_00282</i>, <i>rlmM</i>, <i>PHGPABBB_00284</i>, <i>PHGPABBB_00285</i>, <i>gcvA_1</i>, <i>kdsA_1</i>, <i>PHGPABBB_00288</i>, <i>PHGPABBB_00289</i>, <i>PHGPABBB_00290</i>, <i>PHGPABBB_00291</i>, <i>prmC</i>, <i>prfA</i>, <i>hemA</i>, <i>lolB</i>, <i>ispE</i>, <i>prs</i>, <i>rplY</i>, <i>pth</i>, <i>ychF</i>, <i>PHGPABBB_00301</i>, <i>PHGPABBB_00302</i>, <i>PHGPABBB_00303</i>, <i>PHGPABBB_00304</i>, <i>PHGPABBB_00305</i>, <i>PHGPABBB_00306</i>, <i>PHGPABBB_00307</i>, <i>PHGPABBB_00308</i>, <i>PHGPABBB_00309</i>, <i>PHGPABBB_00310</i>, <i>PHGPABBB_00311</i>, <i>ubiF</i>, <i>miaB</i>, <i>ybeZ</i>, <i>ybeY</i>, <i>corC</i>, <i>lnt</i>, <i>rhlE_1</i>, <i>blaI_1</i>, <i>PHGPABBB_00320</i>, <i>PHGPABBB_00321</i>, <i>PHGPABBB_00322</i>, <i>PHGPABBB_00323</i>, <i>PHGPABBB_00324</i>, <i>PHGPABBB_00325</i>, <i>PHGPABBB_00326</i>, <i>rebO</i>, <i>kdc</i>, <i>PHGPABBB_00329</i>, <i>PHGPABBB_00330</i>, <i>PHGPABBB_00331</i>, <i>PHGPABBB_00332</i>, <i>nosF</i>, <i>PHGPABBB_00334</i>, <i>mdtH</i>, <i>PHGPABBB_00336</i>, <i>mdtA_1</i>, <i>czcA_1</i>, <i>cntO_1</i>, <i>PHGPABBB_00340</i>, <i>PHGPABBB_00341</i>, <i>PHGPABBB_00342</i>, <i>PHGPABBB_00343</i>, <i>PHGPABBB_00344</i>, <i>hin</i>, <i>PHGPABBB_00346</i>, <i>PHGPABBB_00347</i>, <i>PHGPABBB_00348</i>, <i>PHGPABBB_00349</i>, <i>PHGPABBB_00350</i>, <i>xerC_2</i>, <i>PHGPABBB_00352</i>, <i>PHGPABBB_00353</i>, <i>PHGPABBB_00354</i>, <i>kefB</i>, <i>PHGPABBB_00356</i>, <i>PHGPABBB_00357</i>, <i>tilS</i>, <i>accA</i>, <i>dnaE</i>, <i>rnhB</i>, <i>lpxB</i>, <i>lpxA</i>, <i>fabZ</i>, <i>lpxD</i>, <i>skp</i>, <i>bamA</i>, <i>rseP</i>, <i>dxr</i>, <i>cdsA</i>, <i>ispU</i>, <i>frr</i>, <i>pyrH</i>, <i>tsf</i>, <i>rpsB</i>, <i>map_1</i>, <i>glnD</i>, <i>dapD_1</i>, <i>PHGPABBB_00379</i>, <i>phhA</i>, <i>mgl</i>, <i>PHGPABBB_00382</i>, <i>ycjX</i>, <i>pspC</i>, <i>pspB</i>, <i>pspA_1</i>, <i>pspF</i>, <i>dppA</i>, <i>dppB</i>, <i>sapC</i>, <i>sapD</i>, <i>sapF</i>, <i>tolB_1</i>, <i>mtfA</i>, <i>PHGPABBB_00395</i>, <i>btuB_1</i>, <i>btuB_2</i>, <i>polB</i>, <i>dinG_1</i>, <i>yfcA</i>, <i>PHGPABBB_00401</i>, <i>PHGPABBB_00402</i>, <i>PHGPABBB_00403</i>, <i>PHGPABBB_00404</i>, <i>PHGPABBB_00405</i>, <i>bepE_1</i>, <i>mdtA_2</i>, <i>PHGPABBB_00408</i>, <i>PHGPABBB_00409</i>, <i>PHGPABBB_00410</i>, <i>PHGPABBB_00411</i>, <i>PHGPABBB_00412</i>, <i>ibpA_1</i>, <i>dapE_1</i>, <i>ompW</i>, <i>PHGPABBB_00416</i>, <i>PHGPABBB_00417</i>, <i>tyrR</i>, <i>PHGPABBB_00419</i>, <i>PHGPABBB_00420</i>, <i>PHGPABBB_00421</i>, <i>PHGPABBB_00422</i>, <i>PHGPABBB_00423</i>, <i>PHGPABBB_00424</i>, <i>PHGPABBB_00425</i>, <i>PHGPABBB_00426</i>, <i>dtpT_1</i>, <i>melA</i>, <i>PHGPABBB_00429</i>, <i>PHGPABBB_00430</i>, <i>PHGPABBB_00431</i>, <i>PHGPABBB_00432</i>, <i>mdtL_1</i>, <i>leuE_1</i>, <i>dnaK_1</i>, <i>ligA_2</i>, <i>PHGPABBB_00437</i>, <i>PHGPABBB_00438</i>, <i>btuB_3</i>, <i>sixA</i>, <i>ptrA_1</i>, <i>PHGPABBB_00442</i>, <i>PHGPABBB_00443</i>, <i>PHGPABBB_00444</i>, <i>PHGPABBB_00445</i>, <i>nhaD_1</i>, <i>PHGPABBB_00447</i>, <i>PHGPABBB_00448</i>, <i>PHGPABBB_00449</i>, <i>djlA</i>, <i>murU</i>, <i>amgK</i>, <i>lptD</i>, <i>surA</i>, <i>pdxA</i>, <i>rsmA</i>, <i>apaG</i>, <i>apaH_1</i>, <i>PHGPABBB_00459</i>, <i>tktA</i>, <i>metK</i>, <i>PHGPABBB_00462</i>, <i>yabJ_1</i>, <i>PHGPABBB_00464</i>, <i>dhfrIII</i>, <i>obg</i>, <i>rpmA</i>, <i>rplU</i>, <i>ispB</i>, <i>yggX</i>, <i>mutY</i>, <i>trmB_1</i>, <i>rsmC</i>, <i>sasA_4</i>, <i>PHGPABBB_00475</i>, <i>arcA</i>, <i>arcB_1</i>, <i>folE2</i>, <i>PHGPABBB_00479</i>, <i>mtnN</i>, <i>cbiB</i>, <i>tyrS</i>, <i>mepM_1</i>, <i>PHGPABBB_00484</i>, <i>PHGPABBB_00485</i>, <i>PHGPABBB_00486</i>, <i>PHGPABBB_00487</i>, <i>PHGPABBB_00488</i>, <i>PHGPABBB_00489</i>, <i>PHGPABBB_00490</i>, <i>PHGPABBB_00491</i>, <i>pspA_2</i>, <i>dusA</i>, <i>PHGPABBB_00494</i>, <i>PHGPABBB_00495</i>, <i>PHGPABBB_00496</i>, <i>PHGPABBB_00497</i>, <i>PHGPABBB_00498</i>, <i>wbbD</i>, <i>kpsF</i>, <i>kdsB_1</i>, <i>kdsC_1</i>, <i>kdsA_2</i>, <i>kdsA_3</i>, <i>PHGPABBB_00505</i>, <i>PHGPABBB_00506</i>, <i>PHGPABBB_00507</i>, <i>PHGPABBB_00508</i>, <i>PHGPABBB_00509</i>, <i>PHGPABBB_00510</i>, <i>wecC</i>, <i>wecB</i>, <i>wzc</i>, <i>wzb</i>, <i>PHGPABBB_00515</i>, <i>PHGPABBB_00516</i>, <i>glmM_1</i>, <i>manC1</i>, <i>tarA</i>, <i>ugd_1</i>, <i>mshA_1</i>, <i>PHGPABBB_00522</i>, <i>PHGPABBB_00523</i>, <i>dapH_1</i>, <i>PHGPABBB_00525</i>, <i>PHGPABBB_00526</i>, <i>rffG</i>, <i>rffH</i>, <i>wecD</i>, <i>wecE</i>, <i>wecF</i>, <i>PHGPABBB_00532</i>, <i>wecA</i>, <i>PHGPABBB_00534</i>, <i>PHGPABBB_00535</i>, <i>PHGPABBB_00536</i>, <i>PHGPABBB_00537</i>, <i>xpsD</i>, <i>PHGPABBB_00539</i>, <i>PHGPABBB_00540</i>, <i>PHGPABBB_00541</i>, <i>PHGPABBB_00542</i>, <i>PHGPABBB_00543</i>, <i>PHGPABBB_00544</i>, <i>PHGPABBB_00545</i>, <i>epsF_1</i>, <i>xpsE</i>, <i>xcpT</i>, <i>PHGPABBB_00549</i>, <i>PHGPABBB_00550</i>, <i>PHGPABBB_00551</i>, <i>PHGPABBB_00552</i>, <i>mscS_2</i>, <i>PHGPABBB_00554</i>, <i>PHGPABBB_00555</i>, <i>PHGPABBB_00556</i>, <i>fucP_1</i>, <i>chb_1</i>, <i>pepO</i>, <i>mutT</i>, <i>secA</i>, <i>PHGPABBB_00562</i>, <i>lpxC</i>, <i>ftsZ</i>, <i>ftsA_1</i>, <i>ftsQ</i>, <i>ddl</i>, <i>murC</i>, <i>murG</i>, <i>ftsW</i>, <i>murD</i>, <i>mraY</i>, <i>murF</i>, <i>murE</i>, <i>ftsI</i>, <i>ftsL</i>, <i>rsmH</i>, <i>mraZ</i>, <i>PHGPABBB_00579</i>, <i>PHGPABBB_00580</i>, <i>PHGPABBB_00581</i>, <i>cvrA</i>, <i>rhlE_2</i>, <i>PHGPABBB_00584</i>, <i>PHGPABBB_00585</i>, <i>rsmI</i>, <i>lpoA</i>, <i>PHGPABBB_00588</i>, <i>diaA</i>, <i>PHGPABBB_00590</i>, <i>sspB</i>, <i>sspA_2</i>, <i>petC</i>, <i>petB</i>, <i>petA</i>, <i>rpsI</i>, <i>rplM</i>, <i>zapE_1</i>, <i>PHGPABBB_00599</i>, <i>degQ</i>, <i>degS</i>, <i>murA</i>, <i>ibaG</i>, <i>PHGPABBB_00604</i>, <i>mlaC_1</i>, <i>mlaD</i>, <i>mlaE</i>, <i>mlaF</i>, <i>yrbG</i>, <i>kdsD</i>, <i>kdsC_2</i>, <i>lptC</i>, <i>lptA</i>, <i>lptB</i>, <i>rpoN</i>, <i>hpf_1</i>, <i>ptsN</i>, <i>rapZ</i>, <i>ptsO</i>, <i>mgtE</i>, <i>pmbA</i>, <i>PHGPABBB_00622</i>, <i>tldD</i>, <i>nit1</i>, <i>PHGPABBB_00625</i>, <i>rng</i>, <i>yhdE</i>, <i>mreD</i>, <i>mreC</i>, <i>mreB</i>, <i>egtB</i>, <i>cuyA</i>, <i>PHGPABBB_00633</i>, <i>PHGPABBB_00634</i>, <i>COQ3_1</i>, <i>PHGPABBB_00636</i>, <i>PHGPABBB_00637</i>, <i>PHGPABBB_00638</i>, <i>recD2</i>, <i>PHGPABBB_00640</i>, <i>PHGPABBB_00641</i>, <i>PHGPABBB_00642</i>, <i>PHGPABBB_00643</i>, <i>xerC_3</i>, <i>ssb</i>, <i>yajR</i>, <i>PHGPABBB_00647</i>, <i>uvrA</i>, <i>PHGPABBB_00649</i>, <i>PHGPABBB_00650</i>, <i>PHGPABBB_00651</i>, <i>PHGPABBB_00652</i>, <i>PHGPABBB_00653</i>, <i>PHGPABBB_00654</i>, <i>atoE</i>, <i>PHGPABBB_00656</i>, <i>rssB_1</i>, <i>PHGPABBB_00658</i>, <i>PHGPABBB_00659</i>, <i>mprA_1</i>, <i>comM</i>, <i>PHGPABBB_00662</i>, <i>PHGPABBB_00663</i></noscript><div id="gene_hide_DEL_12" class="hidden"><i>PHGPABBB_00006</i>, <i>PHGPABBB_00007</i>, <i>PHGPABBB_00008</i>, <i>PHGPABBB_00009</i>, <i>PHGPABBB_00010</i>, <i>PHGPABBB_00011</i>, <i>PHGPABBB_00012</i>, <i>PHGPABBB_00013</i>, <i>PHGPABBB_00014</i>, <i>PHGPABBB_00015</i>, <i>pgsA</i>, <i>uvrC</i>, <i>uvrY</i>, <i>sstT</i>, <i>PHGPABBB_00020</i>, <i>cysK</i>, <i>PHGPABBB_00022</i>, <i>PHGPABBB_00023</i>, <i>opuE</i>, <i>cdgJ_1</i>, <i>PHGPABBB_00026</i>, <i>PHGPABBB_00027</i>, <i>PHGPABBB_00028</i>, <i>fecA</i>, <i>PHGPABBB_00030</i>, <i>PHGPABBB_00031</i>, <i>PHGPABBB_00032</i>, <i>gltC_1</i>, <i>ilvC</i>, <i>mcpH_1</i>, <i>PHGPABBB_00036</i>, <i>PHGPABBB_00037</i>, <i>PHGPABBB_00038</i>, <i>bamE</i>, <i>PHGPABBB_00040</i>, <i>ratA</i>, <i>smpB</i>, <i>fabB</i>, <i>mnmC_1</i>, <i>pal_1</i>, <i>rnt</i>, <i>gap</i>, <i>eda</i>, <i>edd</i>, <i>PHGPABBB_00050</i>, <i>PHGPABBB_00051</i>, <i>PHGPABBB_00052</i>, <i>PHGPABBB_00053</i>, <i>PHGPABBB_00054</i>, <i>PHGPABBB_00055</i>, <i>PHGPABBB_00056</i>, <i>PHGPABBB_00057</i>, <i>PHGPABBB_00058</i>, <i>PHGPABBB_00059</i>, <i>PHGPABBB_00060</i>, <i>PHGPABBB_00061</i>, <i>PHGPABBB_00062</i>, <i>PHGPABBB_00064</i>, <i>dap_1</i>, <i>PHGPABBB_00066</i>, <i>PHGPABBB_00067</i>, <i>PHGPABBB_00068</i>, <i>PHGPABBB_00069</i>, <i>PHGPABBB_00070</i>, <i>cmoM</i>, <i>PHGPABBB_00072</i>, <i>PHGPABBB_00073</i>, <i>PHGPABBB_00074</i>, <i>cysJ_1</i>, <i>PHGPABBB_00076</i>, <i>PHGPABBB_00077</i>, <i>PHGPABBB_00078</i>, <i>cyoE</i>, <i>cyoD</i>, <i>cyoC</i>, <i>cyoB</i>, <i>cyoA</i>, <i>PHGPABBB_00084</i>, <i>pld_1</i>, <i>sdaC</i>, <i>PHGPABBB_00087</i>, <i>PHGPABBB_00088</i>, <i>PHGPABBB_00089</i>, <i>PHGPABBB_00090</i>, <i>sasA_1</i>, <i>abgT_1</i>, <i>PHGPABBB_00093</i>, <i>PHGPABBB_00094</i>, <i>PHGPABBB_00095</i>, <i>PHGPABBB_00096</i>, <i>PHGPABBB_00097</i>, <i>PHGPABBB_00098</i>, <i>epmC</i>, <i>fadJ</i>, <i>fadI</i>, <i>PHGPABBB_00102</i>, <i>PHGPABBB_00103</i>, <i>PHGPABBB_00104</i>, <i>PHGPABBB_00105</i>, <i>PHGPABBB_00106</i>, <i>PHGPABBB_00107</i>, <i>sigW_1</i>, <i>PHGPABBB_00109</i>, <i>PHGPABBB_00110</i>, <i>PHGPABBB_00111</i>, <i>PHGPABBB_00112</i>, <i>PHGPABBB_00113</i>, <i>cat_1</i>, <i>PHGPABBB_00115</i>, <i>PHGPABBB_00116</i>, <i>PHGPABBB_00117</i>, <i>hddC_1</i>, <i>PHGPABBB_00119</i>, <i>PHGPABBB_00120</i>, <i>PHGPABBB_00121</i>, <i>PHGPABBB_00122</i>, <i>yejK_1</i>, <i>PHGPABBB_00124</i>, <i>PHGPABBB_00125</i>, <i>PHGPABBB_00126</i>, <i>PHGPABBB_00127</i>, <i>PHGPABBB_00128</i>, <i>PHGPABBB_00129</i>, <i>PHGPABBB_00130</i>, <i>PHGPABBB_00131</i>, <i>PHGPABBB_00132</i>, <i>PHGPABBB_00133</i>, <i>pdxJ</i>, <i>recO</i>, <i>era</i>, <i>rnc</i>, <i>lepB</i>, <i>lepA</i>, <i>rseC</i>, <i>rseB</i>, <i>PHGPABBB_00142</i>, <i>rpoE_1</i>, <i>nadB</i>, <i>sdhE</i>, <i>ygfZ</i>, <i>slyD_1</i>, <i>PHGPABBB_00148</i>, <i>PHGPABBB_00149</i>, <i>PHGPABBB_00150</i>, <i>dpgD</i>, <i>cidA</i>, <i>yohK</i>, <i>mscS_1</i>, <i>PHGPABBB_00155</i>, <i>cysS</i>, <i>ppiB_1</i>, <i>lpxH_1</i>, <i>PHGPABBB_00159</i>, <i>PHGPABBB_00160</i>, <i>PHGPABBB_00161</i>, <i>yohC</i>, <i>purF</i>, <i>cvpA</i>, <i>dedD</i>, <i>folC</i>, <i>accD</i>, <i>truA</i>, <i>PHGPABBB_00169</i>, <i>asd2</i>, <i>pdxB</i>, <i>PHGPABBB_00172</i>, <i>fadE_1</i>, <i>PHGPABBB_00174</i>, <i>btuD</i>, <i>PGdx_1</i>, <i>vgb</i>, <i>PHGPABBB_00178</i>, <i>PHGPABBB_00179</i>, <i>PHGPABBB_00180</i>, <i>PHGPABBB_00181</i>, <i>PHGPABBB_00182</i>, <i>PHGPABBB_00183</i>, <i>PHGPABBB_00184</i>, <i>PHGPABBB_00185</i>, <i>PHGPABBB_00186</i>, <i>PHGPABBB_00187</i>, <i>PHGPABBB_00188</i>, <i>dnaQ</i>, <i>rnhA_1</i>, <i>PHGPABBB_00191</i>, <i>gloB_1</i>, <i>mltD_1</i>, <i>PHGPABBB_00194</i>, <i>truC</i>, <i>PHGPABBB_00196</i>, <i>PHGPABBB_00197</i>, <i>PHGPABBB_00198</i>, <i>PHGPABBB_00199</i>, <i>mccF_1</i>, <i>rcsC_1</i>, <i>PHGPABBB_00202</i>, <i>ygeA</i>, <i>sspA_1</i>, <i>hdfR_1</i>, <i>PHGPABBB_00206</i>, <i>PHGPABBB_00207</i>, <i>PHGPABBB_00208</i>, <i>PHGPABBB_00209</i>, <i>srrA</i>, <i>rcsC_2</i>, <i>PHGPABBB_00212</i>, <i>baeR_1</i>, <i>baeS</i>, <i>PHGPABBB_00215</i>, <i>PHGPABBB_00216</i>, <i>PHGPABBB_00217</i>, <i>PHGPABBB_00218</i>, <i>rcsC_3</i>, <i>SIRT5</i>, <i>PHGPABBB_00221</i>, <i>PHGPABBB_00222</i>, <i>PHGPABBB_00223</i>, <i>ctpH</i>, <i>PHGPABBB_00225</i>, <i>PHGPABBB_00226</i>, <i>sasA_2</i>, <i>uvrB</i>, <i>mdtK_1</i>, <i>PHGPABBB_00230</i>, <i>PHGPABBB_00231</i>, <i>PHGPABBB_00232</i>, <i>PHGPABBB_00233</i>, <i>PHGPABBB_00234</i>, <i>rnfA</i>, <i>rnfB</i>, <i>rsxC</i>, <i>rnfD</i>, <i>rsxG</i>, <i>rnfE</i>, <i>nth</i>, <i>PHGPABBB_00242</i>, <i>PHGPABBB_00243</i>, <i>pgrR_1</i>, <i>PHGPABBB_00245</i>, <i>sasA_3</i>, <i>yhaJ</i>, <i>mhqP</i>, <i>yhhW</i>, <i>yqjG</i>, <i>aer_1</i>, <i>PHGPABBB_00252</i>, <i>PHGPABBB_00253</i>, <i>PHGPABBB_00254</i>, <i>PHGPABBB_00255</i>, <i>PHGPABBB_00256</i>, <i>PHGPABBB_00257</i>, <i>PHGPABBB_00258</i>, <i>PHGPABBB_00259</i>, <i>PHGPABBB_00260</i>, <i>PHGPABBB_00261</i>, <i>PHGPABBB_00262</i>, <i>PHGPABBB_00263</i>, <i>msrB</i>, <i>PHGPABBB_00265</i>, <i>ligA_1</i>, <i>zipA</i>, <i>smc_1</i>, <i>rlmB_1</i>, <i>PHGPABBB_00270</i>, <i>PHGPABBB_00271</i>, <i>csgB</i>, <i>PHGPABBB_00273</i>, <i>PHGPABBB_00274</i>, <i>PHGPABBB_00275</i>, <i>csgG</i>, <i>PHGPABBB_00277</i>, <i>PHGPABBB_00278</i>, <i>PHGPABBB_00279</i>, <i>PHGPABBB_00280</i>, <i>cysZ</i>, <i>PHGPABBB_00282</i>, <i>rlmM</i>, <i>PHGPABBB_00284</i>, <i>PHGPABBB_00285</i>, <i>gcvA_1</i>, <i>kdsA_1</i>, <i>PHGPABBB_00288</i>, <i>PHGPABBB_00289</i>, <i>PHGPABBB_00290</i>, <i>PHGPABBB_00291</i>, <i>prmC</i>, <i>prfA</i>, <i>hemA</i>, <i>lolB</i>, <i>ispE</i>, <i>prs</i>, <i>rplY</i>, <i>pth</i>, <i>ychF</i>, <i>PHGPABBB_00301</i>, <i>PHGPABBB_00302</i>, <i>PHGPABBB_00303</i>, <i>PHGPABBB_00304</i>, <i>PHGPABBB_00305</i>, <i>PHGPABBB_00306</i>, <i>PHGPABBB_00307</i>, <i>PHGPABBB_00308</i>, <i>PHGPABBB_00309</i>, <i>PHGPABBB_00310</i>, <i>PHGPABBB_00311</i>, <i>ubiF</i>, <i>miaB</i>, <i>ybeZ</i>, <i>ybeY</i>, <i>corC</i>, <i>lnt</i>, <i>rhlE_1</i>, <i>blaI_1</i>, <i>PHGPABBB_00320</i>, <i>PHGPABBB_00321</i>, <i>PHGPABBB_00322</i>, <i>PHGPABBB_00323</i>, <i>PHGPABBB_00324</i>, <i>PHGPABBB_00325</i>, <i>PHGPABBB_00326</i>, <i>rebO</i>, <i>kdc</i>, <i>PHGPABBB_00329</i>, <i>PHGPABBB_00330</i>, <i>PHGPABBB_00331</i>, <i>PHGPABBB_00332</i>, <i>nosF</i>, <i>PHGPABBB_00334</i>, <i>mdtH</i>, <i>PHGPABBB_00336</i>, <i>mdtA_1</i>, <i>czcA_1</i>, <i>cntO_1</i>, <i>PHGPABBB_00340</i>, <i>PHGPABBB_00341</i>, <i>PHGPABBB_00342</i>, <i>PHGPABBB_00343</i>, <i>PHGPABBB_00344</i>, <i>hin</i>, <i>PHGPABBB_00346</i>, <i>PHGPABBB_00347</i>, <i>PHGPABBB_00348</i>, <i>PHGPABBB_00349</i>, <i>PHGPABBB_00350</i>, <i>xerC_2</i>, <i>PHGPABBB_00352</i>, <i>PHGPABBB_00353</i>, <i>PHGPABBB_00354</i>, <i>kefB</i>, <i>PHGPABBB_00356</i>, <i>PHGPABBB_00357</i>, <i>tilS</i>, <i>accA</i>, <i>dnaE</i>, <i>rnhB</i>, <i>lpxB</i>, <i>lpxA</i>, <i>fabZ</i>, <i>lpxD</i>, <i>skp</i>, <i>bamA</i>, <i>rseP</i>, <i>dxr</i>, <i>cdsA</i>, <i>ispU</i>, <i>frr</i>, <i>pyrH</i>, <i>tsf</i>, <i>rpsB</i>, <i>map_1</i>, <i>glnD</i>, <i>dapD_1</i>, <i>PHGPABBB_00379</i>, <i>phhA</i>, <i>mgl</i>, <i>PHGPABBB_00382</i>, <i>ycjX</i>, <i>pspC</i>, <i>pspB</i>, <i>pspA_1</i>, <i>pspF</i>, <i>dppA</i>, <i>dppB</i>, <i>sapC</i>, <i>sapD</i>, <i>sapF</i>, <i>tolB_1</i>, <i>mtfA</i>, <i>PHGPABBB_00395</i>, <i>btuB_1</i>, <i>btuB_2</i>, <i>polB</i>, <i>dinG_1</i>, <i>yfcA</i>, <i>PHGPABBB_00401</i>, <i>PHGPABBB_00402</i>, <i>PHGPABBB_00403</i>, <i>PHGPABBB_00404</i>, <i>PHGPABBB_00405</i>, <i>bepE_1</i>, <i>mdtA_2</i>, <i>PHGPABBB_00408</i>, <i>PHGPABBB_00409</i>, <i>PHGPABBB_00410</i>, <i>PHGPABBB_00411</i>, <i>PHGPABBB_00412</i>, <i>ibpA_1</i>, <i>dapE_1</i>, <i>ompW</i>, <i>PHGPABBB_00416</i>, <i>PHGPABBB_00417</i>, <i>tyrR</i>, <i>PHGPABBB_00419</i>, <i>PHGPABBB_00420</i>, <i>PHGPABBB_00421</i>, <i>PHGPABBB_00422</i>, <i>PHGPABBB_00423</i>, <i>PHGPABBB_00424</i>, <i>PHGPABBB_00425</i>, <i>PHGPABBB_00426</i>, <i>dtpT_1</i>, <i>melA</i>, <i>PHGPABBB_00429</i>, <i>PHGPABBB_00430</i>, <i>PHGPABBB_00431</i>, <i>PHGPABBB_00432</i>, <i>mdtL_1</i>, <i>leuE_1</i>, <i>dnaK_1</i>, <i>ligA_2</i>, <i>PHGPABBB_00437</i>, <i>PHGPABBB_00438</i>, <i>btuB_3</i>, <i>sixA</i>, <i>ptrA_1</i>, <i>PHGPABBB_00442</i>, <i>PHGPABBB_00443</i>, <i>PHGPABBB_00444</i>, <i>PHGPABBB_00445</i>, <i>nhaD_1</i>, <i>PHGPABBB_00447</i>, <i>PHGPABBB_00448</i>, <i>PHGPABBB_00449</i>, <i>djlA</i>, <i>murU</i>, <i>amgK</i>, <i>lptD</i>, <i>surA</i>, <i>pdxA</i>, <i>rsmA</i>, <i>apaG</i>, <i>apaH_1</i>, <i>PHGPABBB_00459</i>, <i>tktA</i>, <i>metK</i>, <i>PHGPABBB_00462</i>, <i>yabJ_1</i>, <i>PHGPABBB_00464</i>, <i>dhfrIII</i>, <i>obg</i>, <i>rpmA</i>, <i>rplU</i>, <i>ispB</i>, <i>yggX</i>, <i>mutY</i>, <i>trmB_1</i>, <i>rsmC</i>, <i>sasA_4</i>, <i>PHGPABBB_00475</i>, <i>arcA</i>, <i>arcB_1</i>, <i>folE2</i>, <i>PHGPABBB_00479</i>, <i>mtnN</i>, <i>cbiB</i>, <i>tyrS</i>, <i>mepM_1</i>, <i>PHGPABBB_00484</i>, <i>PHGPABBB_00485</i>, <i>PHGPABBB_00486</i>, <i>PHGPABBB_00487</i>, <i>PHGPABBB_00488</i>, <i>PHGPABBB_00489</i>, <i>PHGPABBB_00490</i>, <i>PHGPABBB_00491</i>, <i>pspA_2</i>, <i>dusA</i>, <i>PHGPABBB_00494</i>, <i>PHGPABBB_00495</i>, <i>PHGPABBB_00496</i>, <i>PHGPABBB_00497</i>, <i>PHGPABBB_00498</i>, <i>wbbD</i>, <i>kpsF</i>, <i>kdsB_1</i>, <i>kdsC_1</i>, <i>kdsA_2</i>, <i>kdsA_3</i>, <i>PHGPABBB_00505</i>, <i>PHGPABBB_00506</i>, <i>PHGPABBB_00507</i>, <i>PHGPABBB_00508</i>, <i>PHGPABBB_00509</i>, <i>PHGPABBB_00510</i>, <i>wecC</i>, <i>wecB</i>, <i>wzc</i>, <i>wzb</i>, <i>PHGPABBB_00515</i>, <i>PHGPABBB_00516</i>, <i>glmM_1</i>, <i>manC1</i>, <i>tarA</i>, <i>ugd_1</i>, <i>mshA_1</i>, <i>PHGPABBB_00522</i>, <i>PHGPABBB_00523</i>, <i>dapH_1</i>, <i>PHGPABBB_00525</i>, <i>PHGPABBB_00526</i>, <i>rffG</i>, <i>rffH</i>, <i>wecD</i>, <i>wecE</i>, <i>wecF</i>, <i>PHGPABBB_00532</i>, <i>wecA</i>, <i>PHGPABBB_00534</i>, <i>PHGPABBB_00535</i>, <i>PHGPABBB_00536</i>, <i>PHGPABBB_00537</i>, <i>xpsD</i>, <i>PHGPABBB_00539</i>, <i>PHGPABBB_00540</i>, <i>PHGPABBB_00541</i>, <i>PHGPABBB_00542</i>, <i>PHGPABBB_00543</i>, <i>PHGPABBB_00544</i>, <i>PHGPABBB_00545</i>, <i>epsF_1</i>, <i>xpsE</i>, <i>xcpT</i>, <i>PHGPABBB_00549</i>, <i>PHGPABBB_00550</i>, <i>PHGPABBB_00551</i>, <i>PHGPABBB_00552</i>, <i>mscS_2</i>, <i>PHGPABBB_00554</i>, <i>PHGPABBB_00555</i>, <i>PHGPABBB_00556</i>, <i>fucP_1</i>, <i>chb_1</i>, <i>pepO</i>, <i>mutT</i>, <i>secA</i>, <i>PHGPABBB_00562</i>, <i>lpxC</i>, <i>ftsZ</i>, <i>ftsA_1</i>, <i>ftsQ</i>, <i>ddl</i>, <i>murC</i>, <i>murG</i>, <i>ftsW</i>, <i>murD</i>, <i>mraY</i>, <i>murF</i>, <i>murE</i>, <i>ftsI</i>, <i>ftsL</i>, <i>rsmH</i>, <i>mraZ</i>, <i>PHGPABBB_00579</i>, <i>PHGPABBB_00580</i>, <i>PHGPABBB_00581</i>, <i>cvrA</i>, <i>rhlE_2</i>, <i>PHGPABBB_00584</i>, <i>PHGPABBB_00585</i>, <i>rsmI</i>, <i>lpoA</i>, <i>PHGPABBB_00588</i>, <i>diaA</i>, <i>PHGPABBB_00590</i>, <i>sspB</i>, <i>sspA_2</i>, <i>petC</i>, <i>petB</i>, <i>petA</i>, <i>rpsI</i>, <i>rplM</i>, <i>zapE_1</i>, <i>PHGPABBB_00599</i>, <i>degQ</i>, <i>degS</i>, <i>murA</i>, <i>ibaG</i>, <i>PHGPABBB_00604</i>, <i>mlaC_1</i>, <i>mlaD</i>, <i>mlaE</i>, <i>mlaF</i>, <i>yrbG</i>, <i>kdsD</i>, <i>kdsC_2</i>, <i>lptC</i>, <i>lptA</i>, <i>lptB</i>, <i>rpoN</i>, <i>hpf_1</i>, <i>ptsN</i>, <i>rapZ</i>, <i>ptsO</i>, <i>mgtE</i>, <i>pmbA</i>, <i>PHGPABBB_00622</i>, <i>tldD</i>, <i>nit1</i>, <i>PHGPABBB_00625</i>, <i>rng</i>, <i>yhdE</i>, <i>mreD</i>, <i>mreC</i>, <i>mreB</i>, <i>egtB</i>, <i>cuyA</i>, <i>PHGPABBB_00633</i>, <i>PHGPABBB_00634</i>, <i>COQ3_1</i>, <i>PHGPABBB_00636</i>, <i>PHGPABBB_00637</i>, <i>PHGPABBB_00638</i>, <i>recD2</i>, <i>PHGPABBB_00640</i>, <i>PHGPABBB_00641</i>, <i>PHGPABBB_00642</i>, <i>PHGPABBB_00643</i>, <i>xerC_3</i>, <i>ssb</i>, <i>yajR</i>, <i>PHGPABBB_00647</i>, <i>uvrA</i>, <i>PHGPABBB_00649</i>, <i>PHGPABBB_00650</i>, <i>PHGPABBB_00651</i>, <i>PHGPABBB_00652</i>, <i>PHGPABBB_00653</i>, <i>PHGPABBB_00654</i>, <i>atoE</i>, <i>PHGPABBB_00656</i>, <i>rssB_1</i>, <i>PHGPABBB_00658</i>, <i>PHGPABBB_00659</i>, <i>mprA_1</i>, <i>comM</i>, <i>PHGPABBB_00662</i>, <i>PHGPABBB_00663</i></div><input id="gene_hide_DEL_12_button" type="button" onclick="hideTog('gene_hide_DEL_12');showTog('gene_hide_DEL_12_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_189.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000013.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;2,899&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_00664</i>&#8211;<i>PHGPABBB_00667</i></td>
+<td align="left"><i>PHGPABBB_00664</i>, <i>PHGPABBB_00665</i>, <i>PHGPABBB_00666</i>, <i>PHGPABBB_00667</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_14.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,230</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G559G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_15.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,239</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A562A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,242</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K563K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_17.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,246</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L565L</font>&nbsp;(<font class="mutation_in_codon">C</font>TG&rarr;<font class="mutation_in_codon">T</font>TA)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_18.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,248</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L565L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,254</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I567I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_20.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,257</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V568V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_21.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,278</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1725&#8209;1726/2223&nbsp;nt)</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_22.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,284</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F577F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_23.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,293</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G580G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,296</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A581A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_25.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,299</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G582G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,302</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G583G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_27.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,311</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P586P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_28.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,314</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K587K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_29.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,320</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V589V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,326</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q591Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_31.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,329</td><!-- Position -->
+<td align="center">3&nbsp;bp&rarr;CTT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1776&#8209;1778/2223&nbsp;nt)</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_32.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,333</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">K594E</font>&nbsp;(<font class="mutation_in_codon">A</font>AA&rarr;<font class="mutation_in_codon">G</font>AG)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_33.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,335</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K594E</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_34.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,339</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N596D</font>&nbsp;(<font class="mutation_in_codon">A</font>AC&rarr;<font class="mutation_in_codon">G</font>AC)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_35.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,365</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G604G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_36.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000014.1</td><!-- Seq_Id -->
+<td align="right">127,371</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F606F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>icd2</i>&nbsp;&rarr;</td>
+<td align="left">Isocitrate dehydrogenase [NADP] 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_194.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000015.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;615,534&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_01512</i>&#8211;<i>PHGPABBB_02089</i></td>
+<td align="left"><b>578 genes </b><noscript><i>PHGPABBB_01512</i>, <i>PHGPABBB_01513</i>, <i>PHGPABBB_01514</i>, <i>PHGPABBB_01515</i>, <i>PHGPABBB_01516</i>, <i>PHGPABBB_01517</i>, <i>hchA_1</i>, <i>dap_2</i>, <i>PHGPABBB_01520</i>, <i>PHGPABBB_01521</i>, <i>PHGPABBB_01522</i>, <i>PHGPABBB_01523</i>, <i>dapH_2</i>, <i>lgrE_2</i>, <i>PHGPABBB_01526</i>, <i>PHGPABBB_01527</i>, <i>tycC_1</i>, <i>PHGPABBB_01529</i>, <i>valG</i>, <i>PHGPABBB_01531</i>, <i>PHGPABBB_01532</i>, <i>xecA1</i>, <i>PHGPABBB_01534</i>, <i>PHGPABBB_01535</i>, <i>PHGPABBB_01536</i>, <i>PHGPABBB_01537</i>, <i>PHGPABBB_01538</i>, <i>PHGPABBB_01539</i>, <i>PHGPABBB_01540</i>, <i>PHGPABBB_01541</i>, <i>PHGPABBB_01542</i>, <i>PHGPABBB_01543</i>, <i>phoP_2</i>, <i>rcsC_11</i>, <i>PHGPABBB_01546</i>, <i>PHGPABBB_01547</i>, <i>PHGPABBB_01548</i>, <i>PHGPABBB_01549</i>, <i>PHGPABBB_01550</i>, <i>PHGPABBB_01551</i>, <i>PHGPABBB_01552</i>, <i>PHGPABBB_01553</i>, <i>PHGPABBB_01554</i>, <i>PHGPABBB_01555</i>, <i>PHGPABBB_01556</i>, <i>PHGPABBB_01557</i>, <i>PHGPABBB_01558</i>, <i>PHGPABBB_01559</i>, <i>PHGPABBB_01560</i>, <i>PHGPABBB_01561</i>, <i>PHGPABBB_01562</i>, <i>PHGPABBB_01563</i>, <i>PHGPABBB_01564</i>, <i>PHGPABBB_01565</i>, <i>gcvP</i>, <i>gcvH</i>, <i>gcvT</i>, <i>PHGPABBB_01569</i>, <i>gltC_2</i>, <i>ubiI</i>, <i>ubiH</i>, <i>pepP</i>, <i>PHGPABBB_01574</i>, <i>rcsC_12</i>, <i>rimI</i>, <i>PHGPABBB_01577</i>, <i>PHGPABBB_01578</i>, <i>guaA</i>, <i>guaB</i>, <i>xseA</i>, <i>cysE_1</i>, <i>PHGPABBB_01583</i>, <i>PHGPABBB_01584</i>, <i>PHGPABBB_01585</i>, <i>rhlE_3</i>, <i>PHGPABBB_01587</i>, <i>gltX</i>, <i>PHGPABBB_01589</i>, <i>PHGPABBB_01590</i>, <i>proB_2</i>, <i>PHGPABBB_01592</i>, <i>PHGPABBB_01593</i>, <i>nfdA_1</i>, <i>PHGPABBB_01595</i>, <i>PHGPABBB_01596</i>, <i>PHGPABBB_01597</i>, <i>PHGPABBB_01598</i>, <i>parC</i>, <i>PHGPABBB_01600</i>, <i>parE</i>, <i>PHGPABBB_01602</i>, <i>cpdA</i>, <i>PHGPABBB_01604</i>, <i>nudF</i>, <i>tolC_1</i>, <i>lpxL</i>, <i>PHGPABBB_01608</i>, <i>glnE</i>, <i>PHGPABBB_01610</i>, <i>PHGPABBB_01611</i>, <i>rsmE</i>, <i>gshB_1</i>, <i>PHGPABBB_01614</i>, <i>yqgF</i>, <i>PHGPABBB_01616</i>, <i>pilT_1</i>, <i>pilT_2</i>, <i>yggS</i>, <i>proC</i>, <i>PHGPABBB_01621</i>, <i>PHGPABBB_01622</i>, <i>rdgB</i>, <i>hemW</i>, <i>PHGPABBB_01625</i>, <i>rcsC_13</i>, <i>PHGPABBB_01627</i>, <i>PHGPABBB_01628</i>, <i>lptG</i>, <i>lptF</i>, <i>pepA_3</i>, <i>holC</i>, <i>valS</i>, <i>PHGPABBB_01634</i>, <i>PHGPABBB_01635</i>, <i>PHGPABBB_01636</i>, <i>rraB</i>, <i>plsC</i>, <i>rpoH</i>, <i>ftsX</i>, <i>ftsE</i>, <i>ftsY_2</i>, <i>rsmD</i>, <i>rpsU</i>, <i>yqeY</i>, <i>dnaG</i>, <i>rpoD</i>, <i>prmA</i>, <i>dusB</i>, <i>fis</i>, <i>purH</i>, <i>PHGPABBB_01652</i>, <i>purD</i>, <i>PHGPABBB_01654</i>, <i>PHGPABBB_01655</i>, <i>rpiA</i>, <i>serA</i>, <i>PHGPABBB_01658</i>, <i>radA</i>, <i>PHGPABBB_01660</i>, <i>ampE</i>, <i>ampD</i>, <i>nadC</i>, <i>pilE1</i>, <i>PHGPABBB_01665</i>, <i>epsF_2</i>, <i>outO</i>, <i>coaE</i>, <i>PHGPABBB_01669</i>, <i>yacG</i>, <i>PHGPABBB_01671</i>, <i>PHGPABBB_01672</i>, <i>PHGPABBB_01673</i>, <i>cpxR_1</i>, <i>rcsC_14</i>, <i>pldB</i>, <i>fieF</i>, <i>trmL</i>, <i>gpsA</i>, <i>secB</i>, <i>grxC</i>, <i>yibN</i>, <i>gpmI</i>, <i>envC</i>, <i>PHGPABBB_01685</i>, <i>PHGPABBB_01686</i>, <i>IMPDH_1</i>, <i>pepB</i>, <i>sfsA</i>, <i>dksA_1</i>, <i>gluQ</i>, <i>pcnB</i>, <i>folK</i>, <i>panB</i>, <i>panC</i>, <i>PHGPABBB_01696</i>, <i>pstS</i>, <i>phoR</i>, <i>phoB_1</i>, <i>PHGPABBB_01700</i>, <i>cbbA</i>, <i>pgk</i>, <i>epd</i>, <i>dinG_2</i>, <i>IMPDH_2</i>, <i>actP</i>, <i>PHGPABBB_01707</i>, <i>rcsC_15</i>, <i>purU</i>, <i>lnrK_1</i>, <i>acs</i>, <i>PHGPABBB_01712</i>, <i>kbl_2</i>, <i>arcB_2</i>, <i>mch</i>, <i>citE</i>, <i>PHGPABBB_01717</i>, <i>PHGPABBB_01718</i>, <i>PHGPABBB_01719</i>, <i>PHGPABBB_01720</i>, <i>recA</i>, <i>pncC</i>, <i>mutS</i>, <i>rpoS</i>, <i>nlpD</i>, <i>pcm</i>, <i>surE</i>, <i>truD</i>, <i>ispF</i>, <i>ispD</i>, <i>ftsB</i>, <i>PHGPABBB_01732</i>, <i>PHGPABBB_01733</i>, <i>PHGPABBB_01734</i>, <i>PHGPABBB_01735</i>, <i>PHGPABBB_01736</i>, <i>mdh</i>, <i>argR</i>, <i>yfeX</i>, <i>phnT</i>, <i>PHGPABBB_01741</i>, <i>futA1_1</i>, <i>PHGPABBB_01743</i>, <i>PHGPABBB_01744</i>, <i>PHGPABBB_01745</i>, <i>PHGPABBB_01746</i>, <i>lpdA</i>, <i>aceF</i>, <i>aceE</i>, <i>pdhR</i>, <i>PHGPABBB_01751</i>, <i>PHGPABBB_01752</i>, <i>ibpA_2</i>, <i>serB</i>, <i>PHGPABBB_01755</i>, <i>yjjV</i>, <i>pdxH</i>, <i>argS</i>, <i>prfC</i>, <i>PHGPABBB_01760</i>, <i>PHGPABBB_01761</i>, <i>PHGPABBB_01762</i>, <i>PHGPABBB_01763</i>, <i>PHGPABBB_01764</i>, <i>PHGPABBB_01765</i>, <i>PHGPABBB_01766</i>, <i>PHGPABBB_01767</i>, <i>PHGPABBB_01768</i>, <i>PHGPABBB_01769</i>, <i>PHGPABBB_01770</i>, <i>PHGPABBB_01771</i>, <i>PHGPABBB_01772</i>, <i>PHGPABBB_01773</i>, <i>PHGPABBB_01774</i>, <i>PHGPABBB_01775</i>, <i>PHGPABBB_01776</i>, <i>PHGPABBB_01777</i>, <i>PHGPABBB_01778</i>, <i>rcsC_16</i>, <i>PHGPABBB_01780</i>, <i>oadB</i>, <i>oadA</i>, <i>oadG</i>, <i>PHGPABBB_01784</i>, <i>csrA</i>, <i>lysC_1</i>, <i>alaS</i>, <i>recX</i>, <i>PHGPABBB_01789</i>, <i>PHGPABBB_01790</i>, <i>PHGPABBB_01791</i>, <i>PHGPABBB_01792</i>, <i>PHGPABBB_01793</i>, <i>PHGPABBB_01794</i>, <i>PHGPABBB_01795</i>, <i>PHGPABBB_01796</i>, <i>PHGPABBB_01797</i>, <i>PHGPABBB_01798</i>, <i>murR</i>, <i>PHGPABBB_01800</i>, <i>PHGPABBB_01801</i>, <i>PHGPABBB_01802</i>, <i>PHGPABBB_01803</i>, <i>PHGPABBB_01804</i>, <i>PHGPABBB_01805</i>, <i>PHGPABBB_01806</i>, <i>lysS</i>, <i>prfB</i>, <i>recJ</i>, <i>dsbC</i>, <i>xerD_2</i>, <i>fldB</i>, <i>PHGPABBB_01813</i>, <i>yfiC</i>, <i>srmB</i>, <i>hcnC</i>, <i>hcnB</i>, <i>hcnA</i>, <i>PHGPABBB_01819</i>, <i>rfnT</i>, <i>PHGPABBB_01821</i>, <i>yaaA</i>, <i>talB</i>, <i>PHGPABBB_01824</i>, <i>PHGPABBB_01825</i>, <i>PHGPABBB_01826</i>, <i>PHGPABBB_01827</i>, <i>ung</i>, <i>btuF</i>, <i>btuR</i>, <i>cobQ</i>, <i>cobP</i>, <i>cobS</i>, <i>cobT</i>, <i>hmuU_1</i>, <i>fepC</i>, <i>gpmA</i>, <i>PHGPABBB_01838</i>, <i>apbE</i>, <i>nqrF</i>, <i>nqrE</i>, <i>nqrD</i>, <i>nqrC</i>, <i>nqrB</i>, <i>nqrA</i>, <i>fabV</i>, <i>bolA</i>, <i>PHGPABBB_01848</i>, <i>rlmG</i>, <i>PHGPABBB_01850</i>, <i>PHGPABBB_01851</i>, <i>ampG</i>, <i>PHGPABBB_01853</i>, <i>PHGPABBB_01854</i>, <i>erpA</i>, <i>clcB</i>, <i>PHGPABBB_01857</i>, <i>pyrB</i>, <i>hemL</i>, <i>PHGPABBB_01860</i>, <i>mrcB</i>, <i>amt</i>, <i>glnB_2</i>, <i>pleD_1</i>, <i>PHGPABBB_01865</i>, <i>PHGPABBB_01866</i>, <i>IMPDH_3</i>, <i>PHGPABBB_01868</i>, <i>PHGPABBB_01869</i>, <i>dap_3</i>, <i>PHGPABBB_01871</i>, <i>rhtC</i>, <i>PHGPABBB_01873</i>, <i>PHGPABBB_01874</i>, <i>PHGPABBB_01875</i>, <i>rsuA</i>, <i>mcpP_2</i>, <i>PHGPABBB_01878</i>, <i>PHGPABBB_01879</i>, <i>dgoD</i>, <i>PHGPABBB_01881</i>, <i>PHGPABBB_01882</i>, <i>PHGPABBB_01883</i>, <i>ynfM</i>, <i>proX</i>, <i>PHGPABBB_01886</i>, <i>PHGPABBB_01887</i>, <i>nhaP2</i>, <i>PHGPABBB_01889</i>, <i>purA</i>, <i>hflC</i>, <i>hflK</i>, <i>hflX</i>, <i>hfq</i>, <i>miaA</i>, <i>mutL</i>, <i>amiB</i>, <i>tsaE</i>, <i>nnr</i>, <i>queG</i>, <i>cheB_4</i>, <i>rcsC_17</i>, <i>ywnH</i>, <i>btuE</i>, <i>ppiC_2</i>, <i>PHGPABBB_01906</i>, <i>PHGPABBB_01907</i>, <i>PHGPABBB_01908</i>, <i>PHGPABBB_01909</i>, <i>PHGPABBB_01910</i>, <i>thiK</i>, <i>ribM</i>, <i>PHGPABBB_01913</i>, <i>PHGPABBB_01914</i>, <i>nahK</i>, <i>PHGPABBB_01916</i>, <i>gabD</i>, <i>fdx</i>, <i>hscA</i>, <i>hscB</i>, <i>iscA</i>, <i>iscU</i>, <i>iscS_1</i>, <i>iscR</i>, <i>trmJ</i>, <i>suhB</i>, <i>PHGPABBB_01927</i>, <i>PHGPABBB_01928</i>, <i>PHGPABBB_01929</i>, <i>PHGPABBB_01930</i>, <i>cya</i>, <i>PHGPABBB_01932</i>, <i>PHGPABBB_01933</i>, <i>PHGPABBB_01934</i>, <i>PHGPABBB_01935</i>, <i>PHGPABBB_01936</i>, <i>PHGPABBB_01937</i>, <i>PHGPABBB_01938</i>, <i>PHGPABBB_01939</i>, <i>PHGPABBB_01940</i>, <i>PHGPABBB_01941</i>, <i>clpV1_1</i>, <i>PHGPABBB_01943</i>, <i>PHGPABBB_01944</i>, <i>PHGPABBB_01945</i>, <i>PHGPABBB_01946</i>, <i>PHGPABBB_01947</i>, <i>PHGPABBB_01948</i>, <i>PHGPABBB_01949</i>, <i>PHGPABBB_01950</i>, <i>PHGPABBB_01951</i>, <i>PHGPABBB_01952</i>, <i>PHGPABBB_01953</i>, <i>PHGPABBB_01954</i>, <i>PHGPABBB_01955</i>, <i>PHGPABBB_01956</i>, <i>PHGPABBB_01957</i>, <i>PHGPABBB_01958</i>, <i>PHGPABBB_01959</i>, <i>PHGPABBB_01960</i>, <i>PHGPABBB_01961</i>, <i>PHGPABBB_01962</i>, <i>pqqE</i>, <i>PHGPABBB_01964</i>, <i>PHGPABBB_01965</i>, <i>PHGPABBB_01966</i>, <i>PHGPABBB_01967</i>, <i>PHGPABBB_01968</i>, <i>PHGPABBB_01969</i>, <i>PHGPABBB_01970</i>, <i>rsmJ</i>, <i>cheB_5</i>, <i>prlC</i>, <i>gor</i>, <i>PHGPABBB_01975</i>, <i>PHGPABBB_01976</i>, <i>PHGPABBB_01977</i>, <i>PHGPABBB_01978</i>, <i>panP</i>, <i>PHGPABBB_01980</i>, <i>trmB_2</i>, <i>yadH</i>, <i>yadG</i>, <i>ubiX</i>, <i>mpl</i>, <i>pyrE</i>, <i>rph</i>, <i>PHGPABBB_01988</i>, <i>PHGPABBB_01989</i>, <i>intS</i>, <i>PHGPABBB_01991</i>, <i>PHGPABBB_01992</i>, <i>PHGPABBB_01993</i>, <i>PHGPABBB_01994</i>, <i>PHGPABBB_01995</i>, <i>PHGPABBB_01996</i>, <i>PHGPABBB_01997</i>, <i>PHGPABBB_01998</i>, <i>sufS_1</i>, <i>PHGPABBB_02000</i>, <i>acnB_1</i>, <i>rplQ</i>, <i>rpoA</i>, <i>rpsD</i>, <i>rpsK</i>, <i>rpsM</i>, <i>rpmJ</i>, <i>secY</i>, <i>rplO</i>, <i>rpmD</i>, <i>rpsE</i>, <i>rplR</i>, <i>rplF</i>, <i>rpsH</i>, <i>rpsN</i>, <i>rplE</i>, <i>rplX</i>, <i>rplN</i>, <i>pknD_1</i>, <i>PHGPABBB_02020</i>, <i>PHGPABBB_02021</i>, <i>PHGPABBB_02022</i>, <i>PHGPABBB_02023</i>, <i>PHGPABBB_02024</i>, <i>ydhF</i>, <i>purT</i>, <i>ycgM</i>, <i>PHGPABBB_02028</i>, <i>PHGPABBB_02029</i>, <i>PHGPABBB_02030</i>, <i>yiaD</i>, <i>PHGPABBB_02032</i>, <i>srpC</i>, <i>ybdG</i>, <i>yihG</i>, <i>speA</i>, <i>speE_2</i>, <i>hemE</i>, <i>rsd</i>, <i>fklB_1</i>, <i>PHGPABBB_02041</i>, <i>slyX</i>, <i>PHGPABBB_02043</i>, <i>yheS_1</i>, <i>PHGPABBB_02045</i>, <i>PHGPABBB_02046</i>, <i>PHGPABBB_02047</i>, <i>PHGPABBB_02048</i>, <i>PHGPABBB_02049</i>, <i>PHGPABBB_02050</i>, <i>PHGPABBB_02051</i>, <i>PHGPABBB_02052</i>, <i>PHGPABBB_02053</i>, <i>cysQ_1</i>, <i>nudE</i>, <i>yrfG</i>, <i>PHGPABBB_02057</i>, <i>PHGPABBB_02058</i>, <i>PHGPABBB_02059</i>, <i>PHGPABBB_02060</i>, <i>PHGPABBB_02061</i>, <i>PHGPABBB_02062</i>, <i>PHGPABBB_02063</i>, <i>PHGPABBB_02064</i>, <i>futA1_2</i>, <i>PHGPABBB_02066</i>, <i>PHGPABBB_02067</i>, <i>PHGPABBB_02068</i>, <i>menI</i>, <i>PHGPABBB_02070</i>, <i>lhgD</i>, <i>PHGPABBB_02072</i>, <i>cysH</i>, <i>cysI</i>, <i>cysJ_2</i>, <i>PHGPABBB_02076</i>, <i>PHGPABBB_02077</i>, <i>PHGPABBB_02078</i>, <i>PHGPABBB_02079</i>, <i>nucM</i>, <i>PHGPABBB_02081</i>, <i>PHGPABBB_02082</i>, <i>PHGPABBB_02083</i>, <i>entD</i>, <i>oprF</i>, <i>PHGPABBB_02086</i>, <i>selO</i>, <i>PHGPABBB_02088</i>, <i>PHGPABBB_02089</i></noscript><div id="gene_hide_DEL_37" class="hidden"><i>PHGPABBB_01512</i>, <i>PHGPABBB_01513</i>, <i>PHGPABBB_01514</i>, <i>PHGPABBB_01515</i>, <i>PHGPABBB_01516</i>, <i>PHGPABBB_01517</i>, <i>hchA_1</i>, <i>dap_2</i>, <i>PHGPABBB_01520</i>, <i>PHGPABBB_01521</i>, <i>PHGPABBB_01522</i>, <i>PHGPABBB_01523</i>, <i>dapH_2</i>, <i>lgrE_2</i>, <i>PHGPABBB_01526</i>, <i>PHGPABBB_01527</i>, <i>tycC_1</i>, <i>PHGPABBB_01529</i>, <i>valG</i>, <i>PHGPABBB_01531</i>, <i>PHGPABBB_01532</i>, <i>xecA1</i>, <i>PHGPABBB_01534</i>, <i>PHGPABBB_01535</i>, <i>PHGPABBB_01536</i>, <i>PHGPABBB_01537</i>, <i>PHGPABBB_01538</i>, <i>PHGPABBB_01539</i>, <i>PHGPABBB_01540</i>, <i>PHGPABBB_01541</i>, <i>PHGPABBB_01542</i>, <i>PHGPABBB_01543</i>, <i>phoP_2</i>, <i>rcsC_11</i>, <i>PHGPABBB_01546</i>, <i>PHGPABBB_01547</i>, <i>PHGPABBB_01548</i>, <i>PHGPABBB_01549</i>, <i>PHGPABBB_01550</i>, <i>PHGPABBB_01551</i>, <i>PHGPABBB_01552</i>, <i>PHGPABBB_01553</i>, <i>PHGPABBB_01554</i>, <i>PHGPABBB_01555</i>, <i>PHGPABBB_01556</i>, <i>PHGPABBB_01557</i>, <i>PHGPABBB_01558</i>, <i>PHGPABBB_01559</i>, <i>PHGPABBB_01560</i>, <i>PHGPABBB_01561</i>, <i>PHGPABBB_01562</i>, <i>PHGPABBB_01563</i>, <i>PHGPABBB_01564</i>, <i>PHGPABBB_01565</i>, <i>gcvP</i>, <i>gcvH</i>, <i>gcvT</i>, <i>PHGPABBB_01569</i>, <i>gltC_2</i>, <i>ubiI</i>, <i>ubiH</i>, <i>pepP</i>, <i>PHGPABBB_01574</i>, <i>rcsC_12</i>, <i>rimI</i>, <i>PHGPABBB_01577</i>, <i>PHGPABBB_01578</i>, <i>guaA</i>, <i>guaB</i>, <i>xseA</i>, <i>cysE_1</i>, <i>PHGPABBB_01583</i>, <i>PHGPABBB_01584</i>, <i>PHGPABBB_01585</i>, <i>rhlE_3</i>, <i>PHGPABBB_01587</i>, <i>gltX</i>, <i>PHGPABBB_01589</i>, <i>PHGPABBB_01590</i>, <i>proB_2</i>, <i>PHGPABBB_01592</i>, <i>PHGPABBB_01593</i>, <i>nfdA_1</i>, <i>PHGPABBB_01595</i>, <i>PHGPABBB_01596</i>, <i>PHGPABBB_01597</i>, <i>PHGPABBB_01598</i>, <i>parC</i>, <i>PHGPABBB_01600</i>, <i>parE</i>, <i>PHGPABBB_01602</i>, <i>cpdA</i>, <i>PHGPABBB_01604</i>, <i>nudF</i>, <i>tolC_1</i>, <i>lpxL</i>, <i>PHGPABBB_01608</i>, <i>glnE</i>, <i>PHGPABBB_01610</i>, <i>PHGPABBB_01611</i>, <i>rsmE</i>, <i>gshB_1</i>, <i>PHGPABBB_01614</i>, <i>yqgF</i>, <i>PHGPABBB_01616</i>, <i>pilT_1</i>, <i>pilT_2</i>, <i>yggS</i>, <i>proC</i>, <i>PHGPABBB_01621</i>, <i>PHGPABBB_01622</i>, <i>rdgB</i>, <i>hemW</i>, <i>PHGPABBB_01625</i>, <i>rcsC_13</i>, <i>PHGPABBB_01627</i>, <i>PHGPABBB_01628</i>, <i>lptG</i>, <i>lptF</i>, <i>pepA_3</i>, <i>holC</i>, <i>valS</i>, <i>PHGPABBB_01634</i>, <i>PHGPABBB_01635</i>, <i>PHGPABBB_01636</i>, <i>rraB</i>, <i>plsC</i>, <i>rpoH</i>, <i>ftsX</i>, <i>ftsE</i>, <i>ftsY_2</i>, <i>rsmD</i>, <i>rpsU</i>, <i>yqeY</i>, <i>dnaG</i>, <i>rpoD</i>, <i>prmA</i>, <i>dusB</i>, <i>fis</i>, <i>purH</i>, <i>PHGPABBB_01652</i>, <i>purD</i>, <i>PHGPABBB_01654</i>, <i>PHGPABBB_01655</i>, <i>rpiA</i>, <i>serA</i>, <i>PHGPABBB_01658</i>, <i>radA</i>, <i>PHGPABBB_01660</i>, <i>ampE</i>, <i>ampD</i>, <i>nadC</i>, <i>pilE1</i>, <i>PHGPABBB_01665</i>, <i>epsF_2</i>, <i>outO</i>, <i>coaE</i>, <i>PHGPABBB_01669</i>, <i>yacG</i>, <i>PHGPABBB_01671</i>, <i>PHGPABBB_01672</i>, <i>PHGPABBB_01673</i>, <i>cpxR_1</i>, <i>rcsC_14</i>, <i>pldB</i>, <i>fieF</i>, <i>trmL</i>, <i>gpsA</i>, <i>secB</i>, <i>grxC</i>, <i>yibN</i>, <i>gpmI</i>, <i>envC</i>, <i>PHGPABBB_01685</i>, <i>PHGPABBB_01686</i>, <i>IMPDH_1</i>, <i>pepB</i>, <i>sfsA</i>, <i>dksA_1</i>, <i>gluQ</i>, <i>pcnB</i>, <i>folK</i>, <i>panB</i>, <i>panC</i>, <i>PHGPABBB_01696</i>, <i>pstS</i>, <i>phoR</i>, <i>phoB_1</i>, <i>PHGPABBB_01700</i>, <i>cbbA</i>, <i>pgk</i>, <i>epd</i>, <i>dinG_2</i>, <i>IMPDH_2</i>, <i>actP</i>, <i>PHGPABBB_01707</i>, <i>rcsC_15</i>, <i>purU</i>, <i>lnrK_1</i>, <i>acs</i>, <i>PHGPABBB_01712</i>, <i>kbl_2</i>, <i>arcB_2</i>, <i>mch</i>, <i>citE</i>, <i>PHGPABBB_01717</i>, <i>PHGPABBB_01718</i>, <i>PHGPABBB_01719</i>, <i>PHGPABBB_01720</i>, <i>recA</i>, <i>pncC</i>, <i>mutS</i>, <i>rpoS</i>, <i>nlpD</i>, <i>pcm</i>, <i>surE</i>, <i>truD</i>, <i>ispF</i>, <i>ispD</i>, <i>ftsB</i>, <i>PHGPABBB_01732</i>, <i>PHGPABBB_01733</i>, <i>PHGPABBB_01734</i>, <i>PHGPABBB_01735</i>, <i>PHGPABBB_01736</i>, <i>mdh</i>, <i>argR</i>, <i>yfeX</i>, <i>phnT</i>, <i>PHGPABBB_01741</i>, <i>futA1_1</i>, <i>PHGPABBB_01743</i>, <i>PHGPABBB_01744</i>, <i>PHGPABBB_01745</i>, <i>PHGPABBB_01746</i>, <i>lpdA</i>, <i>aceF</i>, <i>aceE</i>, <i>pdhR</i>, <i>PHGPABBB_01751</i>, <i>PHGPABBB_01752</i>, <i>ibpA_2</i>, <i>serB</i>, <i>PHGPABBB_01755</i>, <i>yjjV</i>, <i>pdxH</i>, <i>argS</i>, <i>prfC</i>, <i>PHGPABBB_01760</i>, <i>PHGPABBB_01761</i>, <i>PHGPABBB_01762</i>, <i>PHGPABBB_01763</i>, <i>PHGPABBB_01764</i>, <i>PHGPABBB_01765</i>, <i>PHGPABBB_01766</i>, <i>PHGPABBB_01767</i>, <i>PHGPABBB_01768</i>, <i>PHGPABBB_01769</i>, <i>PHGPABBB_01770</i>, <i>PHGPABBB_01771</i>, <i>PHGPABBB_01772</i>, <i>PHGPABBB_01773</i>, <i>PHGPABBB_01774</i>, <i>PHGPABBB_01775</i>, <i>PHGPABBB_01776</i>, <i>PHGPABBB_01777</i>, <i>PHGPABBB_01778</i>, <i>rcsC_16</i>, <i>PHGPABBB_01780</i>, <i>oadB</i>, <i>oadA</i>, <i>oadG</i>, <i>PHGPABBB_01784</i>, <i>csrA</i>, <i>lysC_1</i>, <i>alaS</i>, <i>recX</i>, <i>PHGPABBB_01789</i>, <i>PHGPABBB_01790</i>, <i>PHGPABBB_01791</i>, <i>PHGPABBB_01792</i>, <i>PHGPABBB_01793</i>, <i>PHGPABBB_01794</i>, <i>PHGPABBB_01795</i>, <i>PHGPABBB_01796</i>, <i>PHGPABBB_01797</i>, <i>PHGPABBB_01798</i>, <i>murR</i>, <i>PHGPABBB_01800</i>, <i>PHGPABBB_01801</i>, <i>PHGPABBB_01802</i>, <i>PHGPABBB_01803</i>, <i>PHGPABBB_01804</i>, <i>PHGPABBB_01805</i>, <i>PHGPABBB_01806</i>, <i>lysS</i>, <i>prfB</i>, <i>recJ</i>, <i>dsbC</i>, <i>xerD_2</i>, <i>fldB</i>, <i>PHGPABBB_01813</i>, <i>yfiC</i>, <i>srmB</i>, <i>hcnC</i>, <i>hcnB</i>, <i>hcnA</i>, <i>PHGPABBB_01819</i>, <i>rfnT</i>, <i>PHGPABBB_01821</i>, <i>yaaA</i>, <i>talB</i>, <i>PHGPABBB_01824</i>, <i>PHGPABBB_01825</i>, <i>PHGPABBB_01826</i>, <i>PHGPABBB_01827</i>, <i>ung</i>, <i>btuF</i>, <i>btuR</i>, <i>cobQ</i>, <i>cobP</i>, <i>cobS</i>, <i>cobT</i>, <i>hmuU_1</i>, <i>fepC</i>, <i>gpmA</i>, <i>PHGPABBB_01838</i>, <i>apbE</i>, <i>nqrF</i>, <i>nqrE</i>, <i>nqrD</i>, <i>nqrC</i>, <i>nqrB</i>, <i>nqrA</i>, <i>fabV</i>, <i>bolA</i>, <i>PHGPABBB_01848</i>, <i>rlmG</i>, <i>PHGPABBB_01850</i>, <i>PHGPABBB_01851</i>, <i>ampG</i>, <i>PHGPABBB_01853</i>, <i>PHGPABBB_01854</i>, <i>erpA</i>, <i>clcB</i>, <i>PHGPABBB_01857</i>, <i>pyrB</i>, <i>hemL</i>, <i>PHGPABBB_01860</i>, <i>mrcB</i>, <i>amt</i>, <i>glnB_2</i>, <i>pleD_1</i>, <i>PHGPABBB_01865</i>, <i>PHGPABBB_01866</i>, <i>IMPDH_3</i>, <i>PHGPABBB_01868</i>, <i>PHGPABBB_01869</i>, <i>dap_3</i>, <i>PHGPABBB_01871</i>, <i>rhtC</i>, <i>PHGPABBB_01873</i>, <i>PHGPABBB_01874</i>, <i>PHGPABBB_01875</i>, <i>rsuA</i>, <i>mcpP_2</i>, <i>PHGPABBB_01878</i>, <i>PHGPABBB_01879</i>, <i>dgoD</i>, <i>PHGPABBB_01881</i>, <i>PHGPABBB_01882</i>, <i>PHGPABBB_01883</i>, <i>ynfM</i>, <i>proX</i>, <i>PHGPABBB_01886</i>, <i>PHGPABBB_01887</i>, <i>nhaP2</i>, <i>PHGPABBB_01889</i>, <i>purA</i>, <i>hflC</i>, <i>hflK</i>, <i>hflX</i>, <i>hfq</i>, <i>miaA</i>, <i>mutL</i>, <i>amiB</i>, <i>tsaE</i>, <i>nnr</i>, <i>queG</i>, <i>cheB_4</i>, <i>rcsC_17</i>, <i>ywnH</i>, <i>btuE</i>, <i>ppiC_2</i>, <i>PHGPABBB_01906</i>, <i>PHGPABBB_01907</i>, <i>PHGPABBB_01908</i>, <i>PHGPABBB_01909</i>, <i>PHGPABBB_01910</i>, <i>thiK</i>, <i>ribM</i>, <i>PHGPABBB_01913</i>, <i>PHGPABBB_01914</i>, <i>nahK</i>, <i>PHGPABBB_01916</i>, <i>gabD</i>, <i>fdx</i>, <i>hscA</i>, <i>hscB</i>, <i>iscA</i>, <i>iscU</i>, <i>iscS_1</i>, <i>iscR</i>, <i>trmJ</i>, <i>suhB</i>, <i>PHGPABBB_01927</i>, <i>PHGPABBB_01928</i>, <i>PHGPABBB_01929</i>, <i>PHGPABBB_01930</i>, <i>cya</i>, <i>PHGPABBB_01932</i>, <i>PHGPABBB_01933</i>, <i>PHGPABBB_01934</i>, <i>PHGPABBB_01935</i>, <i>PHGPABBB_01936</i>, <i>PHGPABBB_01937</i>, <i>PHGPABBB_01938</i>, <i>PHGPABBB_01939</i>, <i>PHGPABBB_01940</i>, <i>PHGPABBB_01941</i>, <i>clpV1_1</i>, <i>PHGPABBB_01943</i>, <i>PHGPABBB_01944</i>, <i>PHGPABBB_01945</i>, <i>PHGPABBB_01946</i>, <i>PHGPABBB_01947</i>, <i>PHGPABBB_01948</i>, <i>PHGPABBB_01949</i>, <i>PHGPABBB_01950</i>, <i>PHGPABBB_01951</i>, <i>PHGPABBB_01952</i>, <i>PHGPABBB_01953</i>, <i>PHGPABBB_01954</i>, <i>PHGPABBB_01955</i>, <i>PHGPABBB_01956</i>, <i>PHGPABBB_01957</i>, <i>PHGPABBB_01958</i>, <i>PHGPABBB_01959</i>, <i>PHGPABBB_01960</i>, <i>PHGPABBB_01961</i>, <i>PHGPABBB_01962</i>, <i>pqqE</i>, <i>PHGPABBB_01964</i>, <i>PHGPABBB_01965</i>, <i>PHGPABBB_01966</i>, <i>PHGPABBB_01967</i>, <i>PHGPABBB_01968</i>, <i>PHGPABBB_01969</i>, <i>PHGPABBB_01970</i>, <i>rsmJ</i>, <i>cheB_5</i>, <i>prlC</i>, <i>gor</i>, <i>PHGPABBB_01975</i>, <i>PHGPABBB_01976</i>, <i>PHGPABBB_01977</i>, <i>PHGPABBB_01978</i>, <i>panP</i>, <i>PHGPABBB_01980</i>, <i>trmB_2</i>, <i>yadH</i>, <i>yadG</i>, <i>ubiX</i>, <i>mpl</i>, <i>pyrE</i>, <i>rph</i>, <i>PHGPABBB_01988</i>, <i>PHGPABBB_01989</i>, <i>intS</i>, <i>PHGPABBB_01991</i>, <i>PHGPABBB_01992</i>, <i>PHGPABBB_01993</i>, <i>PHGPABBB_01994</i>, <i>PHGPABBB_01995</i>, <i>PHGPABBB_01996</i>, <i>PHGPABBB_01997</i>, <i>PHGPABBB_01998</i>, <i>sufS_1</i>, <i>PHGPABBB_02000</i>, <i>acnB_1</i>, <i>rplQ</i>, <i>rpoA</i>, <i>rpsD</i>, <i>rpsK</i>, <i>rpsM</i>, <i>rpmJ</i>, <i>secY</i>, <i>rplO</i>, <i>rpmD</i>, <i>rpsE</i>, <i>rplR</i>, <i>rplF</i>, <i>rpsH</i>, <i>rpsN</i>, <i>rplE</i>, <i>rplX</i>, <i>rplN</i>, <i>pknD_1</i>, <i>PHGPABBB_02020</i>, <i>PHGPABBB_02021</i>, <i>PHGPABBB_02022</i>, <i>PHGPABBB_02023</i>, <i>PHGPABBB_02024</i>, <i>ydhF</i>, <i>purT</i>, <i>ycgM</i>, <i>PHGPABBB_02028</i>, <i>PHGPABBB_02029</i>, <i>PHGPABBB_02030</i>, <i>yiaD</i>, <i>PHGPABBB_02032</i>, <i>srpC</i>, <i>ybdG</i>, <i>yihG</i>, <i>speA</i>, <i>speE_2</i>, <i>hemE</i>, <i>rsd</i>, <i>fklB_1</i>, <i>PHGPABBB_02041</i>, <i>slyX</i>, <i>PHGPABBB_02043</i>, <i>yheS_1</i>, <i>PHGPABBB_02045</i>, <i>PHGPABBB_02046</i>, <i>PHGPABBB_02047</i>, <i>PHGPABBB_02048</i>, <i>PHGPABBB_02049</i>, <i>PHGPABBB_02050</i>, <i>PHGPABBB_02051</i>, <i>PHGPABBB_02052</i>, <i>PHGPABBB_02053</i>, <i>cysQ_1</i>, <i>nudE</i>, <i>yrfG</i>, <i>PHGPABBB_02057</i>, <i>PHGPABBB_02058</i>, <i>PHGPABBB_02059</i>, <i>PHGPABBB_02060</i>, <i>PHGPABBB_02061</i>, <i>PHGPABBB_02062</i>, <i>PHGPABBB_02063</i>, <i>PHGPABBB_02064</i>, <i>futA1_2</i>, <i>PHGPABBB_02066</i>, <i>PHGPABBB_02067</i>, <i>PHGPABBB_02068</i>, <i>menI</i>, <i>PHGPABBB_02070</i>, <i>lhgD</i>, <i>PHGPABBB_02072</i>, <i>cysH</i>, <i>cysI</i>, <i>cysJ_2</i>, <i>PHGPABBB_02076</i>, <i>PHGPABBB_02077</i>, <i>PHGPABBB_02078</i>, <i>PHGPABBB_02079</i>, <i>nucM</i>, <i>PHGPABBB_02081</i>, <i>PHGPABBB_02082</i>, <i>PHGPABBB_02083</i>, <i>entD</i>, <i>oprF</i>, <i>PHGPABBB_02086</i>, <i>selO</i>, <i>PHGPABBB_02088</i>, <i>PHGPABBB_02089</i></div><input id="gene_hide_DEL_37_button" type="button" onclick="hideTog('gene_hide_DEL_37');showTog('gene_hide_DEL_37_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_195.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000016.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;203,006&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_02090</i>&#8211;<i>PHGPABBB_02242</i></td>
+<td align="left"><b>153 genes </b><noscript><i>PHGPABBB_02090</i>, <i>PHGPABBB_02091</i>, <i>PHGPABBB_02092</i>, <i>PHGPABBB_02093</i>, <i>PHGPABBB_02094</i>, <i>PHGPABBB_02095</i>, <i>PHGPABBB_02096</i>, <i>PHGPABBB_02097</i>, <i>nhaD_2</i>, <i>lysC_2</i>, <i>PHGPABBB_02100</i>, <i>PHGPABBB_02101</i>, <i>ndh</i>, <i>rhaR_1</i>, <i>btuB_12</i>, <i>PHGPABBB_02105</i>, <i>glcK</i>, <i>chb_2</i>, <i>ldhA</i>, <i>gpx1</i>, <i>garR_1</i>, <i>PHGPABBB_02111</i>, <i>PHGPABBB_02112</i>, <i>PHGPABBB_02113</i>, <i>PHGPABBB_02114</i>, <i>xerC_4</i>, <i>PHGPABBB_02116</i>, <i>PHGPABBB_02117</i>, <i>PHGPABBB_02118</i>, <i>PHGPABBB_02119</i>, <i>PHGPABBB_02120</i>, <i>PHGPABBB_02121</i>, <i>PHGPABBB_02122</i>, <i>PHGPABBB_02123</i>, <i>vspR</i>, <i>PHGPABBB_02125</i>, <i>PHGPABBB_02126</i>, <i>PHGPABBB_02127</i>, <i>PHGPABBB_02128</i>, <i>PHGPABBB_02129</i>, <i>PHGPABBB_02130</i>, <i>PHGPABBB_02131</i>, <i>PHGPABBB_02132</i>, <i>PHGPABBB_02133</i>, <i>PHGPABBB_02134</i>, <i>PHGPABBB_02135</i>, <i>PHGPABBB_02136</i>, <i>PHGPABBB_02137</i>, <i>garR_2</i>, <i>Hgd</i>, <i>PHGPABBB_02140</i>, <i>PHGPABBB_02141</i>, <i>PHGPABBB_02142</i>, <i>PHGPABBB_02143</i>, <i>PHGPABBB_02144</i>, <i>nrdB</i>, <i>nrdA</i>, <i>mupP_1</i>, <i>ubiG</i>, <i>gyrA</i>, <i>serC</i>, <i>aroA</i>, <i>cmk</i>, <i>rpsA</i>, <i>ihfB</i>, <i>lapA</i>, <i>lapB</i>, <i>pyrF</i>, <i>apaH_2</i>, <i>sbcB</i>, <i>PHGPABBB_02160</i>, <i>PHGPABBB_02161</i>, <i>PHGPABBB_02162</i>, <i>asnS</i>, <i>PHGPABBB_02164</i>, <i>ywqG</i>, <i>ogt_1</i>, <i>PHGPABBB_02167</i>, <i>PHGPABBB_02168</i>, <i>PHGPABBB_02169</i>, <i>PHGPABBB_02170</i>, <i>PHGPABBB_02171</i>, <i>PHGPABBB_02172</i>, <i>PHGPABBB_02173</i>, <i>PHGPABBB_02174</i>, <i>bioA</i>, <i>bioB</i>, <i>bioF_1</i>, <i>bioC</i>, <i>bioD1</i>, <i>PHGPABBB_02180</i>, <i>PHGPABBB_02181</i>, <i>PHGPABBB_02182</i>, <i>PHGPABBB_02183</i>, <i>PHGPABBB_02184</i>, <i>ybiT_1</i>, <i>purE</i>, <i>purK</i>, <i>PHGPABBB_02188</i>, <i>PHGPABBB_02189</i>, <i>PHGPABBB_02190</i>, <i>ggt</i>, <i>maeA</i>, <i>PHGPABBB_02193</i>, <i>PHGPABBB_02194</i>, <i>yecN</i>, <i>PHGPABBB_02196</i>, <i>PHGPABBB_02197</i>, <i>btuB_13</i>, <i>PHGPABBB_02199</i>, <i>PHGPABBB_02200</i>, <i>cvfB</i>, <i>cshA_1</i>, <i>PHGPABBB_02203</i>, <i>PHGPABBB_02204</i>, <i>PHGPABBB_02205</i>, <i>PHGPABBB_02206</i>, <i>fklB_2</i>, <i>PHGPABBB_02208</i>, <i>PHGPABBB_02209</i>, <i>udk_1</i>, <i>aofH</i>, <i>PHGPABBB_02212</i>, <i>rhtB_1</i>, <i>PHGPABBB_02214</i>, <i>PHGPABBB_02215</i>, <i>PHGPABBB_02216</i>, <i>natA_2</i>, <i>natB_2</i>, <i>lpxH_2</i>, <i>proS</i>, <i>trmO</i>, <i>PHGPABBB_02222</i>, <i>rcsC_18</i>, <i>PHGPABBB_02224</i>, <i>PHGPABBB_02225</i>, <i>dltA_1</i>, <i>PHGPABBB_02227</i>, <i>PHGPABBB_02228</i>, <i>pksE</i>, <i>PHGPABBB_02230</i>, <i>PHGPABBB_02231</i>, <i>PHGPABBB_02232</i>, <i>PHGPABBB_02233</i>, <i>PHGPABBB_02234</i>, <i>PHGPABBB_02235</i>, <i>PHGPABBB_02236</i>, <i>PHGPABBB_02237</i>, <i>PHGPABBB_02238</i>, <i>rhtB_2</i>, <i>PHGPABBB_02240</i>, <i>PHGPABBB_02241</i>, <i>PHGPABBB_02242</i></noscript><div id="gene_hide_DEL_38" class="hidden"><i>PHGPABBB_02090</i>, <i>PHGPABBB_02091</i>, <i>PHGPABBB_02092</i>, <i>PHGPABBB_02093</i>, <i>PHGPABBB_02094</i>, <i>PHGPABBB_02095</i>, <i>PHGPABBB_02096</i>, <i>PHGPABBB_02097</i>, <i>nhaD_2</i>, <i>lysC_2</i>, <i>PHGPABBB_02100</i>, <i>PHGPABBB_02101</i>, <i>ndh</i>, <i>rhaR_1</i>, <i>btuB_12</i>, <i>PHGPABBB_02105</i>, <i>glcK</i>, <i>chb_2</i>, <i>ldhA</i>, <i>gpx1</i>, <i>garR_1</i>, <i>PHGPABBB_02111</i>, <i>PHGPABBB_02112</i>, <i>PHGPABBB_02113</i>, <i>PHGPABBB_02114</i>, <i>xerC_4</i>, <i>PHGPABBB_02116</i>, <i>PHGPABBB_02117</i>, <i>PHGPABBB_02118</i>, <i>PHGPABBB_02119</i>, <i>PHGPABBB_02120</i>, <i>PHGPABBB_02121</i>, <i>PHGPABBB_02122</i>, <i>PHGPABBB_02123</i>, <i>vspR</i>, <i>PHGPABBB_02125</i>, <i>PHGPABBB_02126</i>, <i>PHGPABBB_02127</i>, <i>PHGPABBB_02128</i>, <i>PHGPABBB_02129</i>, <i>PHGPABBB_02130</i>, <i>PHGPABBB_02131</i>, <i>PHGPABBB_02132</i>, <i>PHGPABBB_02133</i>, <i>PHGPABBB_02134</i>, <i>PHGPABBB_02135</i>, <i>PHGPABBB_02136</i>, <i>PHGPABBB_02137</i>, <i>garR_2</i>, <i>Hgd</i>, <i>PHGPABBB_02140</i>, <i>PHGPABBB_02141</i>, <i>PHGPABBB_02142</i>, <i>PHGPABBB_02143</i>, <i>PHGPABBB_02144</i>, <i>nrdB</i>, <i>nrdA</i>, <i>mupP_1</i>, <i>ubiG</i>, <i>gyrA</i>, <i>serC</i>, <i>aroA</i>, <i>cmk</i>, <i>rpsA</i>, <i>ihfB</i>, <i>lapA</i>, <i>lapB</i>, <i>pyrF</i>, <i>apaH_2</i>, <i>sbcB</i>, <i>PHGPABBB_02160</i>, <i>PHGPABBB_02161</i>, <i>PHGPABBB_02162</i>, <i>asnS</i>, <i>PHGPABBB_02164</i>, <i>ywqG</i>, <i>ogt_1</i>, <i>PHGPABBB_02167</i>, <i>PHGPABBB_02168</i>, <i>PHGPABBB_02169</i>, <i>PHGPABBB_02170</i>, <i>PHGPABBB_02171</i>, <i>PHGPABBB_02172</i>, <i>PHGPABBB_02173</i>, <i>PHGPABBB_02174</i>, <i>bioA</i>, <i>bioB</i>, <i>bioF_1</i>, <i>bioC</i>, <i>bioD1</i>, <i>PHGPABBB_02180</i>, <i>PHGPABBB_02181</i>, <i>PHGPABBB_02182</i>, <i>PHGPABBB_02183</i>, <i>PHGPABBB_02184</i>, <i>ybiT_1</i>, <i>purE</i>, <i>purK</i>, <i>PHGPABBB_02188</i>, <i>PHGPABBB_02189</i>, <i>PHGPABBB_02190</i>, <i>ggt</i>, <i>maeA</i>, <i>PHGPABBB_02193</i>, <i>PHGPABBB_02194</i>, <i>yecN</i>, <i>PHGPABBB_02196</i>, <i>PHGPABBB_02197</i>, <i>btuB_13</i>, <i>PHGPABBB_02199</i>, <i>PHGPABBB_02200</i>, <i>cvfB</i>, <i>cshA_1</i>, <i>PHGPABBB_02203</i>, <i>PHGPABBB_02204</i>, <i>PHGPABBB_02205</i>, <i>PHGPABBB_02206</i>, <i>fklB_2</i>, <i>PHGPABBB_02208</i>, <i>PHGPABBB_02209</i>, <i>udk_1</i>, <i>aofH</i>, <i>PHGPABBB_02212</i>, <i>rhtB_1</i>, <i>PHGPABBB_02214</i>, <i>PHGPABBB_02215</i>, <i>PHGPABBB_02216</i>, <i>natA_2</i>, <i>natB_2</i>, <i>lpxH_2</i>, <i>proS</i>, <i>trmO</i>, <i>PHGPABBB_02222</i>, <i>rcsC_18</i>, <i>PHGPABBB_02224</i>, <i>PHGPABBB_02225</i>, <i>dltA_1</i>, <i>PHGPABBB_02227</i>, <i>PHGPABBB_02228</i>, <i>pksE</i>, <i>PHGPABBB_02230</i>, <i>PHGPABBB_02231</i>, <i>PHGPABBB_02232</i>, <i>PHGPABBB_02233</i>, <i>PHGPABBB_02234</i>, <i>PHGPABBB_02235</i>, <i>PHGPABBB_02236</i>, <i>PHGPABBB_02237</i>, <i>PHGPABBB_02238</i>, <i>rhtB_2</i>, <i>PHGPABBB_02240</i>, <i>PHGPABBB_02241</i>, <i>PHGPABBB_02242</i></div><input id="gene_hide_DEL_38_button" type="button" onclick="hideTog('gene_hide_DEL_38');showTog('gene_hide_DEL_38_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_196.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000017.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;186,460&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>leuE_2</i>&#8211;<i>PHGPABBB_02390</i></td>
+<td align="left"><b>148 genes </b><noscript><i>leuE_2</i>, <i>PHGPABBB_02244</i>, <i>PHGPABBB_02245</i>, <i>PHGPABBB_02246</i>, <i>PHGPABBB_02247</i>, <i>PHGPABBB_02248</i>, <i>PHGPABBB_02249</i>, <i>PHGPABBB_02250</i>, <i>PHGPABBB_02251</i>, <i>PHGPABBB_02252</i>, <i>PHGPABBB_02253</i>, <i>PHGPABBB_02254</i>, <i>allB</i>, <i>fur_1</i>, <i>PHGPABBB_02257</i>, <i>PHGPABBB_02258</i>, <i>PHGPABBB_02259</i>, <i>PHGPABBB_02260</i>, <i>mfd</i>, <i>PHGPABBB_02262</i>, <i>aguA</i>, <i>PHGPABBB_02264</i>, <i>bepE_2</i>, <i>bepD</i>, <i>rutR</i>, <i>PHGPABBB_02268</i>, <i>fur_2</i>, <i>fldA</i>, <i>ybfE</i>, <i>PHGPABBB_02272</i>, <i>ybfF</i>, <i>seqA</i>, <i>pgm</i>, <i>astE</i>, <i>bkdA1</i>, <i>bkdA2</i>, <i>pdhC</i>, <i>PHGPABBB_02280</i>, <i>PHGPABBB_02281</i>, <i>PHGPABBB_02282</i>, <i>cheY_5</i>, <i>PHGPABBB_02284</i>, <i>PHGPABBB_02285</i>, <i>tgpA</i>, <i>PHGPABBB_02287</i>, <i>ugd_2</i>, <i>gcvA_2</i>, <i>PHGPABBB_02290</i>, <i>rcsC_19</i>, <i>ybhK</i>, <i>PHGPABBB_02293</i>, <i>mshA_2</i>, <i>luxO_1</i>, <i>PHGPABBB_02296</i>, <i>PHGPABBB_02297</i>, <i>PHGPABBB_02298</i>, <i>pal_2</i>, <i>PHGPABBB_02300</i>, <i>PHGPABBB_02301</i>, <i>bshA</i>, <i>PHGPABBB_02303</i>, <i>PHGPABBB_02304</i>, <i>dapH_3</i>, <i>PHGPABBB_02306</i>, <i>PHGPABBB_02307</i>, <i>PHGPABBB_02308</i>, <i>tuaG</i>, <i>atoC_2</i>, <i>PHGPABBB_02311</i>, <i>PHGPABBB_02312</i>, <i>PHGPABBB_02313</i>, <i>PHGPABBB_02314</i>, <i>fabA</i>, <i>rmf</i>, <i>PHGPABBB_02317</i>, <i>etfA</i>, <i>etfB</i>, <i>PHGPABBB_02320</i>, <i>PHGPABBB_02321</i>, <i>rnhA_2</i>, <i>hutU</i>, <i>hutH</i>, <i>PHGPABBB_02325</i>, <i>nanM</i>, <i>PHGPABBB_02327</i>, <i>PHGPABBB_02328</i>, <i>PHGPABBB_02329</i>, <i>PHGPABBB_02330</i>, <i>PHGPABBB_02331</i>, <i>PHGPABBB_02332</i>, <i>PHGPABBB_02333</i>, <i>PHGPABBB_02334</i>, <i>PHGPABBB_02335</i>, <i>PHGPABBB_02336</i>, <i>PHGPABBB_02337</i>, <i>PHGPABBB_02338</i>, <i>PHGPABBB_02339</i>, <i>lhpI</i>, <i>PHGPABBB_02341</i>, <i>PHGPABBB_02342</i>, <i>PHGPABBB_02343</i>, <i>PHGPABBB_02344</i>, <i>PHGPABBB_02345</i>, <i>PHGPABBB_02346</i>, <i>PHGPABBB_02347</i>, <i>PHGPABBB_02348</i>, <i>PHGPABBB_02349</i>, <i>PHGPABBB_02350</i>, <i>serS</i>, <i>crcB</i>, <i>rarA</i>, <i>lolA</i>, <i>PHGPABBB_02355</i>, <i>lrp_2</i>, <i>ald</i>, <i>pctB_1</i>, <i>fhuA_1</i>, <i>PHGPABBB_02360</i>, <i>PHGPABBB_02361</i>, <i>PHGPABBB_02362</i>, <i>PHGPABBB_02363</i>, <i>PHGPABBB_02364</i>, <i>PHGPABBB_02365</i>, <i>PHGPABBB_02366</i>, <i>yddE_2</i>, <i>PHGPABBB_02368</i>, <i>ade</i>, <i>acnB_2</i>, <i>PHGPABBB_02371</i>, <i>PHGPABBB_02372</i>, <i>PHGPABBB_02373</i>, <i>PHGPABBB_02374</i>, <i>PHGPABBB_02375</i>, <i>speE_3</i>, <i>PHGPABBB_02377</i>, <i>PHGPABBB_02378</i>, <i>PHGPABBB_02379</i>, <i>mexB_1</i>, <i>mdtA_4</i>, <i>COQ3_2</i>, <i>PHGPABBB_02383</i>, <i>mdtA_5</i>, <i>mexB_2</i>, <i>tctD</i>, <i>sasA_9</i>, <i>spo0M_2</i>, <i>PHGPABBB_02389</i>, <i>PHGPABBB_02390</i></noscript><div id="gene_hide_DEL_39" class="hidden"><i>leuE_2</i>, <i>PHGPABBB_02244</i>, <i>PHGPABBB_02245</i>, <i>PHGPABBB_02246</i>, <i>PHGPABBB_02247</i>, <i>PHGPABBB_02248</i>, <i>PHGPABBB_02249</i>, <i>PHGPABBB_02250</i>, <i>PHGPABBB_02251</i>, <i>PHGPABBB_02252</i>, <i>PHGPABBB_02253</i>, <i>PHGPABBB_02254</i>, <i>allB</i>, <i>fur_1</i>, <i>PHGPABBB_02257</i>, <i>PHGPABBB_02258</i>, <i>PHGPABBB_02259</i>, <i>PHGPABBB_02260</i>, <i>mfd</i>, <i>PHGPABBB_02262</i>, <i>aguA</i>, <i>PHGPABBB_02264</i>, <i>bepE_2</i>, <i>bepD</i>, <i>rutR</i>, <i>PHGPABBB_02268</i>, <i>fur_2</i>, <i>fldA</i>, <i>ybfE</i>, <i>PHGPABBB_02272</i>, <i>ybfF</i>, <i>seqA</i>, <i>pgm</i>, <i>astE</i>, <i>bkdA1</i>, <i>bkdA2</i>, <i>pdhC</i>, <i>PHGPABBB_02280</i>, <i>PHGPABBB_02281</i>, <i>PHGPABBB_02282</i>, <i>cheY_5</i>, <i>PHGPABBB_02284</i>, <i>PHGPABBB_02285</i>, <i>tgpA</i>, <i>PHGPABBB_02287</i>, <i>ugd_2</i>, <i>gcvA_2</i>, <i>PHGPABBB_02290</i>, <i>rcsC_19</i>, <i>ybhK</i>, <i>PHGPABBB_02293</i>, <i>mshA_2</i>, <i>luxO_1</i>, <i>PHGPABBB_02296</i>, <i>PHGPABBB_02297</i>, <i>PHGPABBB_02298</i>, <i>pal_2</i>, <i>PHGPABBB_02300</i>, <i>PHGPABBB_02301</i>, <i>bshA</i>, <i>PHGPABBB_02303</i>, <i>PHGPABBB_02304</i>, <i>dapH_3</i>, <i>PHGPABBB_02306</i>, <i>PHGPABBB_02307</i>, <i>PHGPABBB_02308</i>, <i>tuaG</i>, <i>atoC_2</i>, <i>PHGPABBB_02311</i>, <i>PHGPABBB_02312</i>, <i>PHGPABBB_02313</i>, <i>PHGPABBB_02314</i>, <i>fabA</i>, <i>rmf</i>, <i>PHGPABBB_02317</i>, <i>etfA</i>, <i>etfB</i>, <i>PHGPABBB_02320</i>, <i>PHGPABBB_02321</i>, <i>rnhA_2</i>, <i>hutU</i>, <i>hutH</i>, <i>PHGPABBB_02325</i>, <i>nanM</i>, <i>PHGPABBB_02327</i>, <i>PHGPABBB_02328</i>, <i>PHGPABBB_02329</i>, <i>PHGPABBB_02330</i>, <i>PHGPABBB_02331</i>, <i>PHGPABBB_02332</i>, <i>PHGPABBB_02333</i>, <i>PHGPABBB_02334</i>, <i>PHGPABBB_02335</i>, <i>PHGPABBB_02336</i>, <i>PHGPABBB_02337</i>, <i>PHGPABBB_02338</i>, <i>PHGPABBB_02339</i>, <i>lhpI</i>, <i>PHGPABBB_02341</i>, <i>PHGPABBB_02342</i>, <i>PHGPABBB_02343</i>, <i>PHGPABBB_02344</i>, <i>PHGPABBB_02345</i>, <i>PHGPABBB_02346</i>, <i>PHGPABBB_02347</i>, <i>PHGPABBB_02348</i>, <i>PHGPABBB_02349</i>, <i>PHGPABBB_02350</i>, <i>serS</i>, <i>crcB</i>, <i>rarA</i>, <i>lolA</i>, <i>PHGPABBB_02355</i>, <i>lrp_2</i>, <i>ald</i>, <i>pctB_1</i>, <i>fhuA_1</i>, <i>PHGPABBB_02360</i>, <i>PHGPABBB_02361</i>, <i>PHGPABBB_02362</i>, <i>PHGPABBB_02363</i>, <i>PHGPABBB_02364</i>, <i>PHGPABBB_02365</i>, <i>PHGPABBB_02366</i>, <i>yddE_2</i>, <i>PHGPABBB_02368</i>, <i>ade</i>, <i>acnB_2</i>, <i>PHGPABBB_02371</i>, <i>PHGPABBB_02372</i>, <i>PHGPABBB_02373</i>, <i>PHGPABBB_02374</i>, <i>PHGPABBB_02375</i>, <i>speE_3</i>, <i>PHGPABBB_02377</i>, <i>PHGPABBB_02378</i>, <i>PHGPABBB_02379</i>, <i>mexB_1</i>, <i>mdtA_4</i>, <i>COQ3_2</i>, <i>PHGPABBB_02383</i>, <i>mdtA_5</i>, <i>mexB_2</i>, <i>tctD</i>, <i>sasA_9</i>, <i>spo0M_2</i>, <i>PHGPABBB_02389</i>, <i>PHGPABBB_02390</i></div><input id="gene_hide_DEL_39_button" type="button" onclick="hideTog('gene_hide_DEL_39');showTog('gene_hide_DEL_39_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_197.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000018.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;3,938&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_02391</i>&#8211;<i>PHGPABBB_02394</i></td>
+<td align="left"><i>PHGPABBB_02391</i>, <i>PHGPABBB_02392</i>, <i>PHGPABBB_02393</i>, <i>PHGPABBB_02394</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_198.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000019.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;583&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_199.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000020.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;4,093&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_02395</i>&#8211;<i>PHGPABBB_02398</i></td>
+<td align="left"><i>PHGPABBB_02395</i>, <i>PHGPABBB_02396</i>, <i>PHGPABBB_02397</i>, <i>PHGPABBB_02398</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_200.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000021.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;598,714&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_02399</i>&#8211;<i>PHGPABBB_02942</i></td>
+<td align="left"><b>544 genes </b><noscript><i>PHGPABBB_02399</i>, <i>PHGPABBB_02400</i>, <i>PHGPABBB_02401</i>, <i>PHGPABBB_02402</i>, <i>PHGPABBB_02403</i>, <i>PHGPABBB_02404</i>, <i>PHGPABBB_02405</i>, <i>PHGPABBB_02406</i>, <i>PHGPABBB_02407</i>, <i>PHGPABBB_02408</i>, <i>PHGPABBB_02409</i>, <i>clpV1_2</i>, <i>PHGPABBB_02411</i>, <i>PHGPABBB_02412</i>, <i>PHGPABBB_02413</i>, <i>hcpA</i>, <i>PHGPABBB_02415</i>, <i>PHGPABBB_02416</i>, <i>PHGPABBB_02417</i>, <i>PHGPABBB_02418</i>, <i>PHGPABBB_02419</i>, <i>PHGPABBB_02420</i>, <i>PHGPABBB_02421</i>, <i>PHGPABBB_02422</i>, <i>PHGPABBB_02423</i>, <i>PHGPABBB_02424</i>, <i>PHGPABBB_02425</i>, <i>PHGPABBB_02426</i>, <i>PHGPABBB_02427</i>, <i>PHGPABBB_02428</i>, <i>nmoA</i>, <i>PHGPABBB_02430</i>, <i>PHGPABBB_02431</i>, <i>betA</i>, <i>betB</i>, <i>betI</i>, <i>PHGPABBB_02435</i>, <i>cry2</i>, <i>ubiB_1</i>, <i>PHGPABBB_02438</i>, <i>PHGPABBB_02439</i>, <i>PHGPABBB_02440</i>, <i>upp</i>, <i>ydjA</i>, <i>PHGPABBB_02443</i>, <i>fadH</i>, <i>sppA</i>, <i>ansA</i>, <i>PHGPABBB_02447</i>, <i>PHGPABBB_02448</i>, <i>PHGPABBB_02449</i>, <i>PHGPABBB_02450</i>, <i>PHGPABBB_02451</i>, <i>PHGPABBB_02452</i>, <i>PHGPABBB_02453</i>, <i>PHGPABBB_02454</i>, <i>mtrA</i>, <i>PHGPABBB_02456</i>, <i>PHGPABBB_02457</i>, <i>PHGPABBB_02458</i>, <i>PHGPABBB_02459</i>, <i>PHGPABBB_02460</i>, <i>PHGPABBB_02461</i>, <i>PHGPABBB_02462</i>, <i>PHGPABBB_02463</i>, <i>PHGPABBB_02464</i>, <i>PHGPABBB_02465</i>, <i>rsmF</i>, <i>LhpG</i>, <i>PHGPABBB_02468</i>, <i>dapA_1</i>, <i>dadA1</i>, <i>PHGPABBB_02471</i>, <i>PHGPABBB_02472</i>, <i>map_2</i>, <i>PHGPABBB_02474</i>, <i>gndA</i>, <i>pykA</i>, <i>lytR</i>, <i>PHGPABBB_02478</i>, <i>bicA_2</i>, <i>decR</i>, <i>gloC</i>, <i>PHGPABBB_02482</i>, <i>PHGPABBB_02483</i>, <i>rplT</i>, <i>rpmI</i>, <i>infC</i>, <i>thrS</i>, <i>PHGPABBB_02488</i>, <i>PHGPABBB_02489</i>, <i>PHGPABBB_02490</i>, <i>PHGPABBB_02491</i>, <i>PHGPABBB_02492</i>, <i>glnS</i>, <i>PHGPABBB_02494</i>, <i>PHGPABBB_02495</i>, <i>sucD</i>, <i>sucC</i>, <i>PHGPABBB_02498</i>, <i>sucA</i>, <i>sdhB</i>, <i>sdhA</i>, <i>sdhD</i>, <i>PHGPABBB_02503</i>, <i>gltA</i>, <i>sufS_2</i>, <i>sufE</i>, <i>tcdA</i>, <i>PHGPABBB_02508</i>, <i>kdsB_3</i>, <i>PHGPABBB_02510</i>, <i>lpxK</i>, <i>msbA_1</i>, <i>PHGPABBB_02513</i>, <i>PHGPABBB_02514</i>, <i>PHGPABBB_02515</i>, <i>uup</i>, <i>PHGPABBB_02517</i>, <i>rlmL</i>, <i>zapC</i>, <i>pyrD</i>, <i>gdh</i>, <i>PHGPABBB_02522</i>, <i>hcf136</i>, <i>PHGPABBB_02524</i>, <i>PHGPABBB_02525</i>, <i>PHGPABBB_02526</i>, <i>pepN</i>, <i>mleN_1</i>, <i>prc</i>, <i>proQ</i>, <i>PHGPABBB_02531</i>, <i>msrC</i>, <i>PHGPABBB_02533</i>, <i>PHGPABBB_02534</i>, <i>PHGPABBB_02535</i>, <i>PHGPABBB_02536</i>, <i>PHGPABBB_02537</i>, <i>yccA</i>, <i>tusD</i>, <i>dsrF</i>, <i>PHGPABBB_02541</i>, <i>tusE</i>, <i>hutI_1</i>, <i>hutI_2</i>, <i>PHGPABBB_02545</i>, <i>PHGPABBB_02546</i>, <i>PHGPABBB_02547</i>, <i>PHGPABBB_02548</i>, <i>PHGPABBB_02549</i>, <i>ribC</i>, <i>mdtK_2</i>, <i>PHGPABBB_02552</i>, <i>PHGPABBB_02553</i>, <i>PHGPABBB_02554</i>, <i>PHGPABBB_02555</i>, <i>PHGPABBB_02556</i>, <i>yknY_1</i>, <i>PHGPABBB_02558</i>, <i>macB_1</i>, <i>PHGPABBB_02560</i>, <i>PHGPABBB_02561</i>, <i>dmlR_3</i>, <i>PHGPABBB_02563</i>, <i>secD_1</i>, <i>secF_1</i>, <i>pld_2</i>, <i>PHGPABBB_02567</i>, <i>PHGPABBB_02568</i>, <i>PHGPABBB_02569</i>, <i>PHGPABBB_02570</i>, <i>rimJ_1</i>, <i>PHGPABBB_02572</i>, <i>PHGPABBB_02573</i>, <i>PHGPABBB_02574</i>, <i>PHGPABBB_02575</i>, <i>PHGPABBB_02576</i>, <i>PHGPABBB_02577</i>, <i>hpxO</i>, <i>pgrR_4</i>, <i>PHGPABBB_02580</i>, <i>PHGPABBB_02581</i>, <i>PHGPABBB_02582</i>, <i>PHGPABBB_02583</i>, <i>PHGPABBB_02584</i>, <i>PHGPABBB_02585</i>, <i>PHGPABBB_02586</i>, <i>PHGPABBB_02587</i>, <i>PHGPABBB_02588</i>, <i>PHGPABBB_02589</i>, <i>PHGPABBB_02590</i>, <i>PHGPABBB_02591</i>, <i>PHGPABBB_02592</i>, <i>PHGPABBB_02593</i>, <i>PHGPABBB_02594</i>, <i>PHGPABBB_02595</i>, <i>PHGPABBB_02596</i>, <i>PHGPABBB_02597</i>, <i>PHGPABBB_02598</i>, <i>galR</i>, <i>yagG</i>, <i>bglB</i>, <i>fucP_2</i>, <i>nagZ</i>, <i>PHGPABBB_02604</i>, <i>PHGPABBB_02605</i>, <i>PHGPABBB_02606</i>, <i>PHGPABBB_02607</i>, <i>ohrB</i>, <i>ohrR</i>, <i>PHGPABBB_02610</i>, <i>PHGPABBB_02611</i>, <i>ybiT_2</i>, <i>PHGPABBB_02613</i>, <i>PHGPABBB_02614</i>, <i>sasA_10</i>, <i>PHGPABBB_02616</i>, <i>PHGPABBB_02617</i>, <i>speG</i>, <i>PHGPABBB_02619</i>, <i>PHGPABBB_02620</i>, <i>PHGPABBB_02621</i>, <i>PHGPABBB_02622</i>, <i>PHGPABBB_02623</i>, <i>PHGPABBB_02624</i>, <i>PHGPABBB_02625</i>, <i>PHGPABBB_02626</i>, <i>PHGPABBB_02627</i>, <i>dnaE2</i>, <i>PHGPABBB_02629</i>, <i>PHGPABBB_02630</i>, <i>mdrP</i>, <i>def2</i>, <i>PHGPABBB_02633</i>, <i>PHGPABBB_02634</i>, <i>rutD</i>, <i>panS_1</i>, <i>PHGPABBB_02637</i>, <i>PHGPABBB_02638</i>, <i>aspA_1</i>, <i>PHGPABBB_02640</i>, <i>PHGPABBB_02641</i>, <i>PHGPABBB_02642</i>, <i>PHGPABBB_02643</i>, <i>PHGPABBB_02644</i>, <i>PHGPABBB_02645</i>, <i>PHGPABBB_02646</i>, <i>PHGPABBB_02647</i>, <i>PHGPABBB_02648</i>, <i>rcsC_20</i>, <i>btuB_14</i>, <i>dmlR_4</i>, <i>PHGPABBB_02652</i>, <i>PHGPABBB_02653</i>, <i>PHGPABBB_02654</i>, <i>gap3</i>, <i>arsR2</i>, <i>PHGPABBB_02657</i>, <i>astB</i>, <i>PHGPABBB_02659</i>, <i>PHGPABBB_02660</i>, <i>PHGPABBB_02661</i>, <i>cueR_2</i>, <i>PHGPABBB_02663</i>, <i>PHGPABBB_02664</i>, <i>PHGPABBB_02665</i>, <i>PHGPABBB_02666</i>, <i>PHGPABBB_02667</i>, <i>xthA</i>, <i>PHGPABBB_02669</i>, <i>rlmA</i>, <i>PHGPABBB_02671</i>, <i>ackA</i>, <i>pta</i>, <i>PHGPABBB_02674</i>, <i>crr</i>, <i>yffB</i>, <i>dapE_2</i>, <i>PHGPABBB_02678</i>, <i>PHGPABBB_02679</i>, <i>alaA</i>, <i>PHGPABBB_02681</i>, <i>PHGPABBB_02682</i>, <i>PHGPABBB_02683</i>, <i>PHGPABBB_02684</i>, <i>dcd</i>, <i>apbC</i>, <i>metG</i>, <i>rcsC_21</i>, <i>PHGPABBB_02689</i>, <i>ycfH</i>, <i>PHGPABBB_02691</i>, <i>PHGPABBB_02692</i>, <i>tmk</i>, <i>mltG</i>, <i>pabC</i>, <i>fabF</i>, <i>acpP</i>, <i>fabG_2</i>, <i>fabD</i>, <i>plsX</i>, <i>rpmF</i>, <i>yceD</i>, <i>yceF</i>, <i>PHGPABBB_02704</i>, <i>rluC</i>, <i>rne</i>, <i>mltC_1</i>, <i>PHGPABBB_02708</i>, <i>PHGPABBB_02709</i>, <i>PHGPABBB_02710</i>, <i>PHGPABBB_02711</i>, <i>yejK_2</i>, <i>PHGPABBB_02713</i>, <i>PHGPABBB_02714</i>, <i>PHGPABBB_02715</i>, <i>aceK</i>, <i>syrM1</i>, <i>hrpB</i>, <i>PHGPABBB_02719</i>, <i>macB_2</i>, <i>PHGPABBB_02721</i>, <i>PHGPABBB_02722</i>, <i>metH_1</i>, <i>metH_2</i>, <i>metAS</i>, <i>PHGPABBB_02726</i>, <i>PHGPABBB_02727</i>, <i>PHGPABBB_02728</i>, <i>PHGPABBB_02729</i>, <i>PHGPABBB_02730</i>, <i>PHGPABBB_02731</i>, <i>PHGPABBB_02732</i>, <i>gpFI</i>, <i>PHGPABBB_02734</i>, <i>PHGPABBB_02735</i>, <i>PHGPABBB_02736</i>, <i>PHGPABBB_02737</i>, <i>PHGPABBB_02738</i>, <i>PHGPABBB_02739</i>, <i>PHGPABBB_02740</i>, <i>PHGPABBB_02741</i>, <i>PHGPABBB_02742</i>, <i>PHGPABBB_02743</i>, <i>PHGPABBB_02744</i>, <i>PHGPABBB_02745</i>, <i>PHGPABBB_02746</i>, <i>PHGPABBB_02747</i>, <i>PHGPABBB_02748</i>, <i>PHGPABBB_02749</i>, <i>PHGPABBB_02750</i>, <i>PHGPABBB_02751</i>, <i>PHGPABBB_02752</i>, <i>PHGPABBB_02753</i>, <i>PHGPABBB_02754</i>, <i>PHGPABBB_02755</i>, <i>PHGPABBB_02756</i>, <i>PHGPABBB_02757</i>, <i>PHGPABBB_02758</i>, <i>PHGPABBB_02759</i>, <i>PHGPABBB_02760</i>, <i>PHGPABBB_02761</i>, <i>PHGPABBB_02762</i>, <i>PHGPABBB_02763</i>, <i>PHGPABBB_02764</i>, <i>tycB</i>, <i>dltA_2</i>, <i>PHGPABBB_02767</i>, <i>yojI_1</i>, <i>PHGPABBB_02769</i>, <i>PHGPABBB_02770</i>, <i>PHGPABBB_02771</i>, <i>PHGPABBB_02772</i>, <i>PHGPABBB_02773</i>, <i>PHGPABBB_02774</i>, <i>PHGPABBB_02775</i>, <i>PHGPABBB_02776</i>, <i>PHGPABBB_02777</i>, <i>PHGPABBB_02778</i>, <i>PHGPABBB_02779</i>, <i>PHGPABBB_02780</i>, <i>PHGPABBB_02781</i>, <i>PHGPABBB_02782</i>, <i>PHGPABBB_02783</i>, <i>PHGPABBB_02784</i>, <i>PHGPABBB_02785</i>, <i>PHGPABBB_02786</i>, <i>PHGPABBB_02787</i>, <i>PHGPABBB_02788</i>, <i>PHGPABBB_02789</i>, <i>PHGPABBB_02790</i>, <i>PHGPABBB_02791</i>, <i>PHGPABBB_02792</i>, <i>PHGPABBB_02793</i>, <i>PHGPABBB_02794</i>, <i>PHGPABBB_02795</i>, <i>PHGPABBB_02796</i>, <i>PHGPABBB_02797</i>, <i>ettA</i>, <i>PHGPABBB_02799</i>, <i>PHGPABBB_02800</i>, <i>PHGPABBB_02801</i>, <i>PHGPABBB_02802</i>, <i>PHGPABBB_02803</i>, <i>alsT_1</i>, <i>PHGPABBB_02805</i>, <i>PHGPABBB_02806</i>, <i>PHGPABBB_02807</i>, <i>PHGPABBB_02808</i>, <i>PHGPABBB_02809</i>, <i>PHGPABBB_02810</i>, <i>PHGPABBB_02811</i>, <i>PHGPABBB_02812</i>, <i>PHGPABBB_02813</i>, <i>PHGPABBB_02814</i>, <i>PHGPABBB_02815</i>, <i>PHGPABBB_02816</i>, <i>PHGPABBB_02817</i>, <i>PHGPABBB_02818</i>, <i>PHGPABBB_02819</i>, <i>PHGPABBB_02820</i>, <i>PHGPABBB_02821</i>, <i>PHGPABBB_02822</i>, <i>PHGPABBB_02823</i>, <i>PHGPABBB_02824</i>, <i>PHGPABBB_02825</i>, <i>PHGPABBB_02826</i>, <i>PHGPABBB_02827</i>, <i>PHGPABBB_02828</i>, <i>PHGPABBB_02829</i>, <i>PHGPABBB_02830</i>, <i>PHGPABBB_02831</i>, <i>PHGPABBB_02832</i>, <i>PHGPABBB_02833</i>, <i>PHGPABBB_02834</i>, <i>PHGPABBB_02835</i>, <i>PHGPABBB_02836</i>, <i>PHGPABBB_02837</i>, <i>PHGPABBB_02838</i>, <i>PHGPABBB_02839</i>, <i>PHGPABBB_02840</i>, <i>PHGPABBB_02841</i>, <i>PHGPABBB_02842</i>, <i>PHGPABBB_02843</i>, <i>PHGPABBB_02844</i>, <i>PHGPABBB_02845</i>, <i>PHGPABBB_02846</i>, <i>PHGPABBB_02847</i>, <i>PHGPABBB_02848</i>, <i>PHGPABBB_02849</i>, <i>PHGPABBB_02850</i>, <i>PHGPABBB_02851</i>, <i>intA</i>, <i>PHGPABBB_02853</i>, <i>PHGPABBB_02854</i>, <i>PHGPABBB_02855</i>, <i>PHGPABBB_02856</i>, <i>PHGPABBB_02857</i>, <i>umuD</i>, <i>PHGPABBB_02859</i>, <i>umuC</i>, <i>PHGPABBB_02861</i>, <i>PHGPABBB_02862</i>, <i>PHGPABBB_02863</i>, <i>PHGPABBB_02864</i>, <i>PHGPABBB_02865</i>, <i>PHGPABBB_02866</i>, <i>PHGPABBB_02867</i>, <i>PHGPABBB_02868</i>, <i>PHGPABBB_02869</i>, <i>PHGPABBB_02870</i>, <i>scmP</i>, <i>recD</i>, <i>recB</i>, <i>recC</i>, <i>PHGPABBB_02875</i>, <i>PHGPABBB_02876</i>, <i>nemA</i>, <i>comR</i>, <i>PHGPABBB_02879</i>, <i>nadA</i>, <i>PHGPABBB_02881</i>, <i>PHGPABBB_02882</i>, <i>PHGPABBB_02883</i>, <i>PHGPABBB_02884</i>, <i>PHGPABBB_02885</i>, <i>PHGPABBB_02886</i>, <i>PHGPABBB_02887</i>, <i>PHGPABBB_02888</i>, <i>PHGPABBB_02889</i>, <i>cpoB</i>, <i>pal_3</i>, <i>tolB_2</i>, <i>PHGPABBB_02893</i>, <i>tolR_1</i>, <i>tolQ_1</i>, <i>ruvB_1</i>, <i>ruvA</i>, <i>ruvC</i>, <i>aspS</i>, <i>PHGPABBB_02900</i>, <i>PHGPABBB_02901</i>, <i>PHGPABBB_02902</i>, <i>ygjP</i>, <i>PHGPABBB_02904</i>, <i>cmoA_1</i>, <i>cmoB</i>, <i>purM</i>, <i>purN</i>, <i>PHGPABBB_02909</i>, <i>yafJ</i>, <i>PHGPABBB_02911</i>, <i>PHGPABBB_02912</i>, <i>PHGPABBB_02913</i>, <i>ybaB</i>, <i>ruvB_2</i>, <i>apt</i>, <i>PHGPABBB_02917</i>, <i>PHGPABBB_02918</i>, <i>PHGPABBB_02919</i>, <i>PHGPABBB_02920</i>, <i>dusC</i>, <i>PHGPABBB_02922</i>, <i>PHGPABBB_02923</i>, <i>PHGPABBB_02924</i>, <i>PHGPABBB_02925</i>, <i>tolR_2</i>, <i>tolQ_2</i>, <i>tolQ_3</i>, <i>PHGPABBB_02929</i>, <i>cat_2</i>, <i>ldh</i>, <i>fumB</i>, <i>pabB</i>, <i>nudL</i>, <i>sdaA</i>, <i>PHGPABBB_02936</i>, <i>cocE</i>, <i>PHGPABBB_02938</i>, <i>PHGPABBB_02939</i>, <i>PHGPABBB_02940</i>, <i>PHGPABBB_02941</i>, <i>PHGPABBB_02942</i></noscript><div id="gene_hide_DEL_43" class="hidden"><i>PHGPABBB_02399</i>, <i>PHGPABBB_02400</i>, <i>PHGPABBB_02401</i>, <i>PHGPABBB_02402</i>, <i>PHGPABBB_02403</i>, <i>PHGPABBB_02404</i>, <i>PHGPABBB_02405</i>, <i>PHGPABBB_02406</i>, <i>PHGPABBB_02407</i>, <i>PHGPABBB_02408</i>, <i>PHGPABBB_02409</i>, <i>clpV1_2</i>, <i>PHGPABBB_02411</i>, <i>PHGPABBB_02412</i>, <i>PHGPABBB_02413</i>, <i>hcpA</i>, <i>PHGPABBB_02415</i>, <i>PHGPABBB_02416</i>, <i>PHGPABBB_02417</i>, <i>PHGPABBB_02418</i>, <i>PHGPABBB_02419</i>, <i>PHGPABBB_02420</i>, <i>PHGPABBB_02421</i>, <i>PHGPABBB_02422</i>, <i>PHGPABBB_02423</i>, <i>PHGPABBB_02424</i>, <i>PHGPABBB_02425</i>, <i>PHGPABBB_02426</i>, <i>PHGPABBB_02427</i>, <i>PHGPABBB_02428</i>, <i>nmoA</i>, <i>PHGPABBB_02430</i>, <i>PHGPABBB_02431</i>, <i>betA</i>, <i>betB</i>, <i>betI</i>, <i>PHGPABBB_02435</i>, <i>cry2</i>, <i>ubiB_1</i>, <i>PHGPABBB_02438</i>, <i>PHGPABBB_02439</i>, <i>PHGPABBB_02440</i>, <i>upp</i>, <i>ydjA</i>, <i>PHGPABBB_02443</i>, <i>fadH</i>, <i>sppA</i>, <i>ansA</i>, <i>PHGPABBB_02447</i>, <i>PHGPABBB_02448</i>, <i>PHGPABBB_02449</i>, <i>PHGPABBB_02450</i>, <i>PHGPABBB_02451</i>, <i>PHGPABBB_02452</i>, <i>PHGPABBB_02453</i>, <i>PHGPABBB_02454</i>, <i>mtrA</i>, <i>PHGPABBB_02456</i>, <i>PHGPABBB_02457</i>, <i>PHGPABBB_02458</i>, <i>PHGPABBB_02459</i>, <i>PHGPABBB_02460</i>, <i>PHGPABBB_02461</i>, <i>PHGPABBB_02462</i>, <i>PHGPABBB_02463</i>, <i>PHGPABBB_02464</i>, <i>PHGPABBB_02465</i>, <i>rsmF</i>, <i>LhpG</i>, <i>PHGPABBB_02468</i>, <i>dapA_1</i>, <i>dadA1</i>, <i>PHGPABBB_02471</i>, <i>PHGPABBB_02472</i>, <i>map_2</i>, <i>PHGPABBB_02474</i>, <i>gndA</i>, <i>pykA</i>, <i>lytR</i>, <i>PHGPABBB_02478</i>, <i>bicA_2</i>, <i>decR</i>, <i>gloC</i>, <i>PHGPABBB_02482</i>, <i>PHGPABBB_02483</i>, <i>rplT</i>, <i>rpmI</i>, <i>infC</i>, <i>thrS</i>, <i>PHGPABBB_02488</i>, <i>PHGPABBB_02489</i>, <i>PHGPABBB_02490</i>, <i>PHGPABBB_02491</i>, <i>PHGPABBB_02492</i>, <i>glnS</i>, <i>PHGPABBB_02494</i>, <i>PHGPABBB_02495</i>, <i>sucD</i>, <i>sucC</i>, <i>PHGPABBB_02498</i>, <i>sucA</i>, <i>sdhB</i>, <i>sdhA</i>, <i>sdhD</i>, <i>PHGPABBB_02503</i>, <i>gltA</i>, <i>sufS_2</i>, <i>sufE</i>, <i>tcdA</i>, <i>PHGPABBB_02508</i>, <i>kdsB_3</i>, <i>PHGPABBB_02510</i>, <i>lpxK</i>, <i>msbA_1</i>, <i>PHGPABBB_02513</i>, <i>PHGPABBB_02514</i>, <i>PHGPABBB_02515</i>, <i>uup</i>, <i>PHGPABBB_02517</i>, <i>rlmL</i>, <i>zapC</i>, <i>pyrD</i>, <i>gdh</i>, <i>PHGPABBB_02522</i>, <i>hcf136</i>, <i>PHGPABBB_02524</i>, <i>PHGPABBB_02525</i>, <i>PHGPABBB_02526</i>, <i>pepN</i>, <i>mleN_1</i>, <i>prc</i>, <i>proQ</i>, <i>PHGPABBB_02531</i>, <i>msrC</i>, <i>PHGPABBB_02533</i>, <i>PHGPABBB_02534</i>, <i>PHGPABBB_02535</i>, <i>PHGPABBB_02536</i>, <i>PHGPABBB_02537</i>, <i>yccA</i>, <i>tusD</i>, <i>dsrF</i>, <i>PHGPABBB_02541</i>, <i>tusE</i>, <i>hutI_1</i>, <i>hutI_2</i>, <i>PHGPABBB_02545</i>, <i>PHGPABBB_02546</i>, <i>PHGPABBB_02547</i>, <i>PHGPABBB_02548</i>, <i>PHGPABBB_02549</i>, <i>ribC</i>, <i>mdtK_2</i>, <i>PHGPABBB_02552</i>, <i>PHGPABBB_02553</i>, <i>PHGPABBB_02554</i>, <i>PHGPABBB_02555</i>, <i>PHGPABBB_02556</i>, <i>yknY_1</i>, <i>PHGPABBB_02558</i>, <i>macB_1</i>, <i>PHGPABBB_02560</i>, <i>PHGPABBB_02561</i>, <i>dmlR_3</i>, <i>PHGPABBB_02563</i>, <i>secD_1</i>, <i>secF_1</i>, <i>pld_2</i>, <i>PHGPABBB_02567</i>, <i>PHGPABBB_02568</i>, <i>PHGPABBB_02569</i>, <i>PHGPABBB_02570</i>, <i>rimJ_1</i>, <i>PHGPABBB_02572</i>, <i>PHGPABBB_02573</i>, <i>PHGPABBB_02574</i>, <i>PHGPABBB_02575</i>, <i>PHGPABBB_02576</i>, <i>PHGPABBB_02577</i>, <i>hpxO</i>, <i>pgrR_4</i>, <i>PHGPABBB_02580</i>, <i>PHGPABBB_02581</i>, <i>PHGPABBB_02582</i>, <i>PHGPABBB_02583</i>, <i>PHGPABBB_02584</i>, <i>PHGPABBB_02585</i>, <i>PHGPABBB_02586</i>, <i>PHGPABBB_02587</i>, <i>PHGPABBB_02588</i>, <i>PHGPABBB_02589</i>, <i>PHGPABBB_02590</i>, <i>PHGPABBB_02591</i>, <i>PHGPABBB_02592</i>, <i>PHGPABBB_02593</i>, <i>PHGPABBB_02594</i>, <i>PHGPABBB_02595</i>, <i>PHGPABBB_02596</i>, <i>PHGPABBB_02597</i>, <i>PHGPABBB_02598</i>, <i>galR</i>, <i>yagG</i>, <i>bglB</i>, <i>fucP_2</i>, <i>nagZ</i>, <i>PHGPABBB_02604</i>, <i>PHGPABBB_02605</i>, <i>PHGPABBB_02606</i>, <i>PHGPABBB_02607</i>, <i>ohrB</i>, <i>ohrR</i>, <i>PHGPABBB_02610</i>, <i>PHGPABBB_02611</i>, <i>ybiT_2</i>, <i>PHGPABBB_02613</i>, <i>PHGPABBB_02614</i>, <i>sasA_10</i>, <i>PHGPABBB_02616</i>, <i>PHGPABBB_02617</i>, <i>speG</i>, <i>PHGPABBB_02619</i>, <i>PHGPABBB_02620</i>, <i>PHGPABBB_02621</i>, <i>PHGPABBB_02622</i>, <i>PHGPABBB_02623</i>, <i>PHGPABBB_02624</i>, <i>PHGPABBB_02625</i>, <i>PHGPABBB_02626</i>, <i>PHGPABBB_02627</i>, <i>dnaE2</i>, <i>PHGPABBB_02629</i>, <i>PHGPABBB_02630</i>, <i>mdrP</i>, <i>def2</i>, <i>PHGPABBB_02633</i>, <i>PHGPABBB_02634</i>, <i>rutD</i>, <i>panS_1</i>, <i>PHGPABBB_02637</i>, <i>PHGPABBB_02638</i>, <i>aspA_1</i>, <i>PHGPABBB_02640</i>, <i>PHGPABBB_02641</i>, <i>PHGPABBB_02642</i>, <i>PHGPABBB_02643</i>, <i>PHGPABBB_02644</i>, <i>PHGPABBB_02645</i>, <i>PHGPABBB_02646</i>, <i>PHGPABBB_02647</i>, <i>PHGPABBB_02648</i>, <i>rcsC_20</i>, <i>btuB_14</i>, <i>dmlR_4</i>, <i>PHGPABBB_02652</i>, <i>PHGPABBB_02653</i>, <i>PHGPABBB_02654</i>, <i>gap3</i>, <i>arsR2</i>, <i>PHGPABBB_02657</i>, <i>astB</i>, <i>PHGPABBB_02659</i>, <i>PHGPABBB_02660</i>, <i>PHGPABBB_02661</i>, <i>cueR_2</i>, <i>PHGPABBB_02663</i>, <i>PHGPABBB_02664</i>, <i>PHGPABBB_02665</i>, <i>PHGPABBB_02666</i>, <i>PHGPABBB_02667</i>, <i>xthA</i>, <i>PHGPABBB_02669</i>, <i>rlmA</i>, <i>PHGPABBB_02671</i>, <i>ackA</i>, <i>pta</i>, <i>PHGPABBB_02674</i>, <i>crr</i>, <i>yffB</i>, <i>dapE_2</i>, <i>PHGPABBB_02678</i>, <i>PHGPABBB_02679</i>, <i>alaA</i>, <i>PHGPABBB_02681</i>, <i>PHGPABBB_02682</i>, <i>PHGPABBB_02683</i>, <i>PHGPABBB_02684</i>, <i>dcd</i>, <i>apbC</i>, <i>metG</i>, <i>rcsC_21</i>, <i>PHGPABBB_02689</i>, <i>ycfH</i>, <i>PHGPABBB_02691</i>, <i>PHGPABBB_02692</i>, <i>tmk</i>, <i>mltG</i>, <i>pabC</i>, <i>fabF</i>, <i>acpP</i>, <i>fabG_2</i>, <i>fabD</i>, <i>plsX</i>, <i>rpmF</i>, <i>yceD</i>, <i>yceF</i>, <i>PHGPABBB_02704</i>, <i>rluC</i>, <i>rne</i>, <i>mltC_1</i>, <i>PHGPABBB_02708</i>, <i>PHGPABBB_02709</i>, <i>PHGPABBB_02710</i>, <i>PHGPABBB_02711</i>, <i>yejK_2</i>, <i>PHGPABBB_02713</i>, <i>PHGPABBB_02714</i>, <i>PHGPABBB_02715</i>, <i>aceK</i>, <i>syrM1</i>, <i>hrpB</i>, <i>PHGPABBB_02719</i>, <i>macB_2</i>, <i>PHGPABBB_02721</i>, <i>PHGPABBB_02722</i>, <i>metH_1</i>, <i>metH_2</i>, <i>metAS</i>, <i>PHGPABBB_02726</i>, <i>PHGPABBB_02727</i>, <i>PHGPABBB_02728</i>, <i>PHGPABBB_02729</i>, <i>PHGPABBB_02730</i>, <i>PHGPABBB_02731</i>, <i>PHGPABBB_02732</i>, <i>gpFI</i>, <i>PHGPABBB_02734</i>, <i>PHGPABBB_02735</i>, <i>PHGPABBB_02736</i>, <i>PHGPABBB_02737</i>, <i>PHGPABBB_02738</i>, <i>PHGPABBB_02739</i>, <i>PHGPABBB_02740</i>, <i>PHGPABBB_02741</i>, <i>PHGPABBB_02742</i>, <i>PHGPABBB_02743</i>, <i>PHGPABBB_02744</i>, <i>PHGPABBB_02745</i>, <i>PHGPABBB_02746</i>, <i>PHGPABBB_02747</i>, <i>PHGPABBB_02748</i>, <i>PHGPABBB_02749</i>, <i>PHGPABBB_02750</i>, <i>PHGPABBB_02751</i>, <i>PHGPABBB_02752</i>, <i>PHGPABBB_02753</i>, <i>PHGPABBB_02754</i>, <i>PHGPABBB_02755</i>, <i>PHGPABBB_02756</i>, <i>PHGPABBB_02757</i>, <i>PHGPABBB_02758</i>, <i>PHGPABBB_02759</i>, <i>PHGPABBB_02760</i>, <i>PHGPABBB_02761</i>, <i>PHGPABBB_02762</i>, <i>PHGPABBB_02763</i>, <i>PHGPABBB_02764</i>, <i>tycB</i>, <i>dltA_2</i>, <i>PHGPABBB_02767</i>, <i>yojI_1</i>, <i>PHGPABBB_02769</i>, <i>PHGPABBB_02770</i>, <i>PHGPABBB_02771</i>, <i>PHGPABBB_02772</i>, <i>PHGPABBB_02773</i>, <i>PHGPABBB_02774</i>, <i>PHGPABBB_02775</i>, <i>PHGPABBB_02776</i>, <i>PHGPABBB_02777</i>, <i>PHGPABBB_02778</i>, <i>PHGPABBB_02779</i>, <i>PHGPABBB_02780</i>, <i>PHGPABBB_02781</i>, <i>PHGPABBB_02782</i>, <i>PHGPABBB_02783</i>, <i>PHGPABBB_02784</i>, <i>PHGPABBB_02785</i>, <i>PHGPABBB_02786</i>, <i>PHGPABBB_02787</i>, <i>PHGPABBB_02788</i>, <i>PHGPABBB_02789</i>, <i>PHGPABBB_02790</i>, <i>PHGPABBB_02791</i>, <i>PHGPABBB_02792</i>, <i>PHGPABBB_02793</i>, <i>PHGPABBB_02794</i>, <i>PHGPABBB_02795</i>, <i>PHGPABBB_02796</i>, <i>PHGPABBB_02797</i>, <i>ettA</i>, <i>PHGPABBB_02799</i>, <i>PHGPABBB_02800</i>, <i>PHGPABBB_02801</i>, <i>PHGPABBB_02802</i>, <i>PHGPABBB_02803</i>, <i>alsT_1</i>, <i>PHGPABBB_02805</i>, <i>PHGPABBB_02806</i>, <i>PHGPABBB_02807</i>, <i>PHGPABBB_02808</i>, <i>PHGPABBB_02809</i>, <i>PHGPABBB_02810</i>, <i>PHGPABBB_02811</i>, <i>PHGPABBB_02812</i>, <i>PHGPABBB_02813</i>, <i>PHGPABBB_02814</i>, <i>PHGPABBB_02815</i>, <i>PHGPABBB_02816</i>, <i>PHGPABBB_02817</i>, <i>PHGPABBB_02818</i>, <i>PHGPABBB_02819</i>, <i>PHGPABBB_02820</i>, <i>PHGPABBB_02821</i>, <i>PHGPABBB_02822</i>, <i>PHGPABBB_02823</i>, <i>PHGPABBB_02824</i>, <i>PHGPABBB_02825</i>, <i>PHGPABBB_02826</i>, <i>PHGPABBB_02827</i>, <i>PHGPABBB_02828</i>, <i>PHGPABBB_02829</i>, <i>PHGPABBB_02830</i>, <i>PHGPABBB_02831</i>, <i>PHGPABBB_02832</i>, <i>PHGPABBB_02833</i>, <i>PHGPABBB_02834</i>, <i>PHGPABBB_02835</i>, <i>PHGPABBB_02836</i>, <i>PHGPABBB_02837</i>, <i>PHGPABBB_02838</i>, <i>PHGPABBB_02839</i>, <i>PHGPABBB_02840</i>, <i>PHGPABBB_02841</i>, <i>PHGPABBB_02842</i>, <i>PHGPABBB_02843</i>, <i>PHGPABBB_02844</i>, <i>PHGPABBB_02845</i>, <i>PHGPABBB_02846</i>, <i>PHGPABBB_02847</i>, <i>PHGPABBB_02848</i>, <i>PHGPABBB_02849</i>, <i>PHGPABBB_02850</i>, <i>PHGPABBB_02851</i>, <i>intA</i>, <i>PHGPABBB_02853</i>, <i>PHGPABBB_02854</i>, <i>PHGPABBB_02855</i>, <i>PHGPABBB_02856</i>, <i>PHGPABBB_02857</i>, <i>umuD</i>, <i>PHGPABBB_02859</i>, <i>umuC</i>, <i>PHGPABBB_02861</i>, <i>PHGPABBB_02862</i>, <i>PHGPABBB_02863</i>, <i>PHGPABBB_02864</i>, <i>PHGPABBB_02865</i>, <i>PHGPABBB_02866</i>, <i>PHGPABBB_02867</i>, <i>PHGPABBB_02868</i>, <i>PHGPABBB_02869</i>, <i>PHGPABBB_02870</i>, <i>scmP</i>, <i>recD</i>, <i>recB</i>, <i>recC</i>, <i>PHGPABBB_02875</i>, <i>PHGPABBB_02876</i>, <i>nemA</i>, <i>comR</i>, <i>PHGPABBB_02879</i>, <i>nadA</i>, <i>PHGPABBB_02881</i>, <i>PHGPABBB_02882</i>, <i>PHGPABBB_02883</i>, <i>PHGPABBB_02884</i>, <i>PHGPABBB_02885</i>, <i>PHGPABBB_02886</i>, <i>PHGPABBB_02887</i>, <i>PHGPABBB_02888</i>, <i>PHGPABBB_02889</i>, <i>cpoB</i>, <i>pal_3</i>, <i>tolB_2</i>, <i>PHGPABBB_02893</i>, <i>tolR_1</i>, <i>tolQ_1</i>, <i>ruvB_1</i>, <i>ruvA</i>, <i>ruvC</i>, <i>aspS</i>, <i>PHGPABBB_02900</i>, <i>PHGPABBB_02901</i>, <i>PHGPABBB_02902</i>, <i>ygjP</i>, <i>PHGPABBB_02904</i>, <i>cmoA_1</i>, <i>cmoB</i>, <i>purM</i>, <i>purN</i>, <i>PHGPABBB_02909</i>, <i>yafJ</i>, <i>PHGPABBB_02911</i>, <i>PHGPABBB_02912</i>, <i>PHGPABBB_02913</i>, <i>ybaB</i>, <i>ruvB_2</i>, <i>apt</i>, <i>PHGPABBB_02917</i>, <i>PHGPABBB_02918</i>, <i>PHGPABBB_02919</i>, <i>PHGPABBB_02920</i>, <i>dusC</i>, <i>PHGPABBB_02922</i>, <i>PHGPABBB_02923</i>, <i>PHGPABBB_02924</i>, <i>PHGPABBB_02925</i>, <i>tolR_2</i>, <i>tolQ_2</i>, <i>tolQ_3</i>, <i>PHGPABBB_02929</i>, <i>cat_2</i>, <i>ldh</i>, <i>fumB</i>, <i>pabB</i>, <i>nudL</i>, <i>sdaA</i>, <i>PHGPABBB_02936</i>, <i>cocE</i>, <i>PHGPABBB_02938</i>, <i>PHGPABBB_02939</i>, <i>PHGPABBB_02940</i>, <i>PHGPABBB_02941</i>, <i>PHGPABBB_02942</i></div><input id="gene_hide_DEL_43_button" type="button" onclick="hideTog('gene_hide_DEL_43');showTog('gene_hide_DEL_43_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_44.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,851</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F373F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_45.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,854</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1115&#8209;1116/1953&nbsp;nt)</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_46.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,881</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K363K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_47.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,893</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S359S</font>&nbsp;(TC<font class="mutation_in_codon">T</font>&rarr;TC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_48.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,896</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G358G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_49.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,905</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S355S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_50.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,914</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G352G</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_51.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,917</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T351T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_52.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,920</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V350I</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_53.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,922</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V350I</font>&nbsp;(<font class="mutation_in_codon">G</font>TG&rarr;<font class="mutation_in_codon">A</font>TT)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_54.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,926</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K348K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_55.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,938</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P344P</font>&nbsp;(CC<font class="mutation_in_codon">A</font>&rarr;CC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_56.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,941</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V343V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_57.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,950</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L340L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_58.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,953</td><!-- Position -->
+<td align="center">4&nbsp;bp&rarr;ACGC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1014&#8209;1017/1953&nbsp;nt)</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_59.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,959</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G337G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_60.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,962</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A336A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_61.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,971</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T333T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_62.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,977</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Y331Y</font>&nbsp;(TA<font class="mutation_in_codon">C</font>&rarr;TA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_63.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,983</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V329V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_64.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">266,995</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A325A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_65.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">267,004</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I322I</font>&nbsp;(AT<font class="mutation_in_codon">T</font>&rarr;AT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_66.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000022.1</td><!-- Seq_Id -->
+<td align="right">267,007</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L321L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>thiC</i>&nbsp;&larr;</td>
+<td align="left">Phosphomethylpyrimidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_67.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,740</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P310P</font>&nbsp;(CC<font class="mutation_in_codon">A</font>&rarr;CC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_68.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,745</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(924&#8209;925/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_69.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,749</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D307D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_70.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,752</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">T306T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_71.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,755</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L305L</font>&nbsp;(TT<font class="mutation_in_codon">G</font>&rarr;TT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_72.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,764</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A302A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_73.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,767</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P301P</font>&nbsp;(CC<font class="mutation_in_codon">A</font>&rarr;CC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_74.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,785</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I295I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_75.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,787</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;CA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(882&#8209;883/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_76.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,794</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">I292I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_77.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,797</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S291S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_78.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,803</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A289T</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;AC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_79.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,805</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A289T</font>&nbsp;(<font class="mutation_in_codon">G</font>CT&rarr;<font class="mutation_in_codon">A</font>CA)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_80.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,812</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S286S</font>&nbsp;(TC<font class="mutation_in_codon">G</font>&rarr;TC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_81.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,815</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A285A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_82.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,817</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;TA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(852&#8209;853/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_83.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,827</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q281Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_84.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,830</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L280L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_85.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,832</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(838/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_86.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,834</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(836/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_87.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,842</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E276E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_88.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,846</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GT</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(823&#8209;824/1386&nbsp;nt)</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_89.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,853</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L273L</font>&nbsp;(<font class="mutation_in_codon">C</font>TA&rarr;<font class="mutation_in_codon">T</font>TA)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_90.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,857</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P271P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_91.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000023.1</td><!-- Seq_Id -->
+<td align="right">319,860</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q270Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>atpD</i>&nbsp;&larr;</td>
+<td align="left">ATP synthase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_221.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000024.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;26,615&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_03567</i>&#8211;<i>PHGPABBB_03588</i></td>
+<td align="left"><b>22 genes </b><noscript><i>PHGPABBB_03567</i>, <i>PHGPABBB_03568</i>, <i>PHGPABBB_03569</i>, <i>PHGPABBB_03570</i>, <i>PHGPABBB_03571</i>, <i>PHGPABBB_03572</i>, <i>PHGPABBB_03573</i>, <i>PHGPABBB_03574</i>, <i>mdoC</i>, <i>PHGPABBB_03576</i>, <i>lnrK_2</i>, <i>PHGPABBB_03578</i>, <i>PHGPABBB_03579</i>, <i>PHGPABBB_03580</i>, <i>btuB_19</i>, <i>PHGPABBB_03582</i>, <i>mleN_2</i>, <i>dapB</i>, <i>carA</i>, <i>carB</i>, <i>greA</i>, <i>PHGPABBB_03588</i></noscript><div id="gene_hide_DEL_92" class="hidden"><i>PHGPABBB_03567</i>, <i>PHGPABBB_03568</i>, <i>PHGPABBB_03569</i>, <i>PHGPABBB_03570</i>, <i>PHGPABBB_03571</i>, <i>PHGPABBB_03572</i>, <i>PHGPABBB_03573</i>, <i>PHGPABBB_03574</i>, <i>mdoC</i>, <i>PHGPABBB_03576</i>, <i>lnrK_2</i>, <i>PHGPABBB_03578</i>, <i>PHGPABBB_03579</i>, <i>PHGPABBB_03580</i>, <i>btuB_19</i>, <i>PHGPABBB_03582</i>, <i>mleN_2</i>, <i>dapB</i>, <i>carA</i>, <i>carB</i>, <i>greA</i>, <i>PHGPABBB_03588</i></div><input id="gene_hide_DEL_92_button" type="button" onclick="hideTog('gene_hide_DEL_92');showTog('gene_hide_DEL_92_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_222.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000025.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;80,914&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_03589</i>&#8211;<i>gppA</i></td>
+<td align="left"><b>75 genes </b><noscript><i>PHGPABBB_03589</i>, <i>PHGPABBB_03590</i>, <i>fumC</i>, <i>PHGPABBB_03592</i>, <i>PHGPABBB_03593</i>, <i>PHGPABBB_03594</i>, <i>PHGPABBB_03595</i>, <i>rcsC_27</i>, <i>PHGPABBB_03597</i>, <i>PHGPABBB_03598</i>, <i>PHGPABBB_03599</i>, <i>yegS</i>, <i>PHGPABBB_03601</i>, <i>hisC_1</i>, <i>PHGPABBB_03603</i>, <i>PHGPABBB_03604</i>, <i>bsaA</i>, <i>dmlR_5</i>, <i>yqhD</i>, <i>PHGPABBB_03608</i>, <i>PHGPABBB_03609</i>, <i>PHGPABBB_03610</i>, <i>PHGPABBB_03611</i>, <i>PHGPABBB_03612</i>, <i>resA_2</i>, <i>yqaA</i>, <i>folX</i>, <i>folE</i>, <i>folM</i>, <i>PHGPABBB_03618</i>, <i>dapb3_2</i>, <i>nadE</i>, <i>PHGPABBB_03621</i>, <i>rcsC_28</i>, <i>acyII</i>, <i>PHGPABBB_03624</i>, <i>PHGPABBB_03625</i>, <i>PHGPABBB_03626</i>, <i>PHGPABBB_03627</i>, <i>PHGPABBB_03628</i>, <i>blaI_2</i>, <i>rluF</i>, <i>PHGPABBB_03631</i>, <i>PHGPABBB_03632</i>, <i>PHGPABBB_03633</i>, <i>rmlD</i>, <i>dtpT_2</i>, <i>yigB</i>, <i>xerC_5</i>, <i>PHGPABBB_03638</i>, <i>dapF</i>, <i>lysA</i>, <i>PHGPABBB_03641</i>, <i>cyaY</i>, <i>estB</i>, <i>PHGPABBB_03644</i>, <i>hemC</i>, <i>PHGPABBB_03646</i>, <i>PHGPABBB_03647</i>, <i>add</i>, <i>PHGPABBB_03649</i>, <i>fre</i>, <i>PHGPABBB_03651</i>, <i>ubiD</i>, <i>PHGPABBB_03653</i>, <i>PHGPABBB_03654</i>, <i>ywaD</i>, <i>dbpA</i>, <i>PHGPABBB_03657</i>, <i>rcsC_29</i>, <i>PHGPABBB_03659</i>, <i>rho</i>, <i>trxA</i>, <i>rhlB_1</i>, <i>gppA</i></noscript><div id="gene_hide_DEL_93" class="hidden"><i>PHGPABBB_03589</i>, <i>PHGPABBB_03590</i>, <i>fumC</i>, <i>PHGPABBB_03592</i>, <i>PHGPABBB_03593</i>, <i>PHGPABBB_03594</i>, <i>PHGPABBB_03595</i>, <i>rcsC_27</i>, <i>PHGPABBB_03597</i>, <i>PHGPABBB_03598</i>, <i>PHGPABBB_03599</i>, <i>yegS</i>, <i>PHGPABBB_03601</i>, <i>hisC_1</i>, <i>PHGPABBB_03603</i>, <i>PHGPABBB_03604</i>, <i>bsaA</i>, <i>dmlR_5</i>, <i>yqhD</i>, <i>PHGPABBB_03608</i>, <i>PHGPABBB_03609</i>, <i>PHGPABBB_03610</i>, <i>PHGPABBB_03611</i>, <i>PHGPABBB_03612</i>, <i>resA_2</i>, <i>yqaA</i>, <i>folX</i>, <i>folE</i>, <i>folM</i>, <i>PHGPABBB_03618</i>, <i>dapb3_2</i>, <i>nadE</i>, <i>PHGPABBB_03621</i>, <i>rcsC_28</i>, <i>acyII</i>, <i>PHGPABBB_03624</i>, <i>PHGPABBB_03625</i>, <i>PHGPABBB_03626</i>, <i>PHGPABBB_03627</i>, <i>PHGPABBB_03628</i>, <i>blaI_2</i>, <i>rluF</i>, <i>PHGPABBB_03631</i>, <i>PHGPABBB_03632</i>, <i>PHGPABBB_03633</i>, <i>rmlD</i>, <i>dtpT_2</i>, <i>yigB</i>, <i>xerC_5</i>, <i>PHGPABBB_03638</i>, <i>dapF</i>, <i>lysA</i>, <i>PHGPABBB_03641</i>, <i>cyaY</i>, <i>estB</i>, <i>PHGPABBB_03644</i>, <i>hemC</i>, <i>PHGPABBB_03646</i>, <i>PHGPABBB_03647</i>, <i>add</i>, <i>PHGPABBB_03649</i>, <i>fre</i>, <i>PHGPABBB_03651</i>, <i>ubiD</i>, <i>PHGPABBB_03653</i>, <i>PHGPABBB_03654</i>, <i>ywaD</i>, <i>dbpA</i>, <i>PHGPABBB_03657</i>, <i>rcsC_29</i>, <i>PHGPABBB_03659</i>, <i>rho</i>, <i>trxA</i>, <i>rhlB_1</i>, <i>gppA</i></div><input id="gene_hide_DEL_93_button" type="button" onclick="hideTog('gene_hide_DEL_93');showTog('gene_hide_DEL_93_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_223.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000026.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;48,157&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_03664</i>&#8211;<i>PHGPABBB_03702</i></td>
+<td align="left"><b>39 genes </b><noscript><i>PHGPABBB_03664</i>, <i>PHGPABBB_03665</i>, <i>PHGPABBB_03666</i>, <i>PHGPABBB_03667</i>, <i>PHGPABBB_03668</i>, <i>PHGPABBB_03669</i>, <i>pip</i>, <i>dtd</i>, <i>speE_4</i>, <i>PHGPABBB_03673</i>, <i>PHGPABBB_03674</i>, <i>PHGPABBB_03675</i>, <i>PHGPABBB_03676</i>, <i>nimR</i>, <i>PHGPABBB_03678</i>, <i>pgrR_5</i>, <i>mdtL_2</i>, <i>PHGPABBB_03681</i>, <i>PHGPABBB_03682</i>, <i>rdmC</i>, <i>PHGPABBB_03684</i>, <i>PHGPABBB_03685</i>, <i>susB</i>, <i>PHGPABBB_03687</i>, <i>PHGPABBB_03688</i>, <i>sthA</i>, <i>PHGPABBB_03690</i>, <i>fabR</i>, <i>PHGPABBB_03692</i>, <i>PHGPABBB_03693</i>, <i>PHGPABBB_03694</i>, <i>PHGPABBB_03695</i>, <i>PHGPABBB_03696</i>, <i>PHGPABBB_03697</i>, <i>leuA</i>, <i>leuB</i>, <i>leuC</i>, <i>leuD</i>, <i>PHGPABBB_03702</i></noscript><div id="gene_hide_DEL_94" class="hidden"><i>PHGPABBB_03664</i>, <i>PHGPABBB_03665</i>, <i>PHGPABBB_03666</i>, <i>PHGPABBB_03667</i>, <i>PHGPABBB_03668</i>, <i>PHGPABBB_03669</i>, <i>pip</i>, <i>dtd</i>, <i>speE_4</i>, <i>PHGPABBB_03673</i>, <i>PHGPABBB_03674</i>, <i>PHGPABBB_03675</i>, <i>PHGPABBB_03676</i>, <i>nimR</i>, <i>PHGPABBB_03678</i>, <i>pgrR_5</i>, <i>mdtL_2</i>, <i>PHGPABBB_03681</i>, <i>PHGPABBB_03682</i>, <i>rdmC</i>, <i>PHGPABBB_03684</i>, <i>PHGPABBB_03685</i>, <i>susB</i>, <i>PHGPABBB_03687</i>, <i>PHGPABBB_03688</i>, <i>sthA</i>, <i>PHGPABBB_03690</i>, <i>fabR</i>, <i>PHGPABBB_03692</i>, <i>PHGPABBB_03693</i>, <i>PHGPABBB_03694</i>, <i>PHGPABBB_03695</i>, <i>PHGPABBB_03696</i>, <i>PHGPABBB_03697</i>, <i>leuA</i>, <i>leuB</i>, <i>leuC</i>, <i>leuD</i>, <i>PHGPABBB_03702</i></div><input id="gene_hide_DEL_94_button" type="button" onclick="hideTog('gene_hide_DEL_94');showTog('gene_hide_DEL_94_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_190.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_190.html">*</a></td>
+<td><a href="evidence/MC_PLOT_190.html">&divide;</a></td>
+<td>NZ_AHBZ03000014.1</td>
+<td align="right">1</td>
+<td align="right">127164</td>
+<td align="right">127164</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[0]&nbsp;5</td>
+<td align="center"><i>PHGPABBB_00668&#8211;[icd2]</i></td>
+<td align="left">PHGPABBB_00668,PHGPABBB_00669,PHGPABBB_00670,PHGPABBB_00671,PHGPABBB_00672,btuB_4,PHGPABBB_00674,dcp_1,PHGPABBB_00676,PHGPABBB_00677,PHGPABBB_00678,PHGPABBB_00679,PHGPABBB_00680,PHGPABBB_00681,btuB_5,PHGPABBB_00683,rcsC_4,mdtA_3,czcA_2,PHGPABBB_00687,fadE_2,PHGPABBB_00689,PHGPABBB_00690,yxlF,PHGPABBB_00692,sohB,volA,yciK,rluB,scpB,scpA,yciO,yciV,trpE_1,trpG_1,trpGD,trpC,trpB,trpA,hupA,yciB,PHGPABBB_00709,PHGPABBB_00710,cspV_1,PHGPABBB_00712,PHGPABBB_00713,PHGPABBB_00714,PHGPABBB_00715,dpp5_1,PHGPABBB_00717,yciI,PHGPABBB_00719,phoP_1,sasA_5,PHGPABBB_00722,yhhT,PHGPABBB_00724,PHGPABBB_00725,PHGPABBB_00726,PHGPABBB_00727,desA3,PHGPABBB_00729,hdfR_2,rimK,PHGPABBB_00732,PHGPABBB_00733,mscK,zntB,PHGPABBB_00736,PHGPABBB_00737,fabG_1,mmsB,caiD,crt,acrC,mmsA,thlA,cueR_1,mmgC,PHGPABBB_00747,echA8,accA1,liuE,scoA,scoB,msrA,pepA_1,pxpB,pxpC,PHGPABBB_00757,PHGPABBB_00758,pcp,asnB,pssA,trxB,aat,bpt,infA,clpA,clpS,cspD,[icd2]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_191.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_191.html">*</a></td>
+<td><a href="evidence/MC_PLOT_191.html">&divide;</a></td>
+<td>NZ_AHBZ03000014.1</td>
+<td align="right">127385</td>
+<td align="right">128820</td>
+<td align="right">1436</td>
+<td align="center">7&nbsp;[0]</td>
+<td align="center">[0]&nbsp;3</td>
+<td align="center"><i>[icd2]&#8211;[mnmA]</i></td>
+<td align="left">[icd2],rluE,[mnmA]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_192.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_192.html">*</a></td>
+<td><a href="evidence/MC_PLOT_192.html">&divide;</a></td>
+<td>NZ_AHBZ03000014.1</td>
+<td align="right">128978</td>
+<td align="right">873799</td>
+<td align="right">744822</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[mnmA]&#8211;[infB]</i></td>
+<td align="left">[mnmA],hflD,purB,roxA,PHGPABBB_00775,PHGPABBB_00776,PHGPABBB_00777,cheY_1,PHGPABBB_00779,cheA_1,PHGPABBB_00781,PHGPABBB_00782,cheW_1,cheR_1,cheB_1,PHGPABBB_00786,lolE,lolD_1,lolC,bicA_1,pgrR_2,frmA,yeiG,PHGPABBB_00794,fabY,cdhR,PHGPABBB_00797,PHGPABBB_00798,PHGPABBB_00799,PHGPABBB_00800,btuB_6,PHGPABBB_00802,PHGPABBB_00803,btuB_7,PHGPABBB_00805,PHGPABBB_00806,dpp5_2,PHGPABBB_00808,PHGPABBB_00809,PHGPABBB_00810,PHGPABBB_00811,PHGPABBB_00812,PHGPABBB_00813,PHGPABBB_00814,PHGPABBB_00815,PHGPABBB_00816,PHGPABBB_00817,PHGPABBB_00818,xerD_1,PHGPABBB_00820,PHGPABBB_00821,PHGPABBB_00822,PHGPABBB_00823,PHGPABBB_00824,ccoN1,PHGPABBB_00826,PHGPABBB_00827,ccoP2,PHGPABBB_00829,copA,PHGPABBB_00831,PHGPABBB_00832,fnr,uspE,czcR_1,sasA_6,PHGPABBB_00837,PHGPABBB_00838,PHGPABBB_00839,ttcA,PHGPABBB_00841,ppiC_1,PHGPABBB_00843,PHGPABBB_00844,PHGPABBB_00845,PHGPABBB_00846,PHGPABBB_00847,PHGPABBB_00848,yceI,yceJ_1,PHGPABBB_00851,norR_1,PHGPABBB_00853,ppiB_2,PHGPABBB_00855,ywrO,yybR,PHGPABBB_00858,lvr,rppH_1,PHGPABBB_00861,PHGPABBB_00862,PHGPABBB_00863,PHGPABBB_00864,PHGPABBB_00865,PHGPABBB_00866,PHGPABBB_00867,PHGPABBB_00868,PHGPABBB_00869,PHGPABBB_00870,PHGPABBB_00871,gap2,PHGPABBB_00873,mlaC_2,PHGPABBB_00875,oqxB21,bepF_1,dmlR_1,PHGPABBB_00879,PHGPABBB_00880,PHGPABBB_00881,ccpA_1,glk,ascG,PHGPABBB_00885,PHGPABBB_00886,PHGPABBB_00887,PHGPABBB_00888,cga,PHGPABBB_00890,amy_1,prnA,PHGPABBB_00893,PHGPABBB_00894,malL,PHGPABBB_00896,PHGPABBB_00897,ftnA,PHGPABBB_00899,PHGPABBB_00900,PHGPABBB_00901,proA,proB_1,yddE_1,ihfA,pheT,pheS,hda,PHGPABBB_00909,PHGPABBB_00910,PHGPABBB_00911,PHGPABBB_00912,PHGPABBB_00913,gloA_1,PHGPABBB_00915,PHGPABBB_00916,PHGPABBB_00917,PHGPABBB_00918,PHGPABBB_00919,cysB,PHGPABBB_00921,adeP,PHGPABBB_00923,PHGPABBB_00924,PHGPABBB_00925,PHGPABBB_00926,PHGPABBB_00927,PHGPABBB_00928,PHGPABBB_00929,PHGPABBB_00930,PHGPABBB_00931,yedJ,rlmI_1,PHGPABBB_00934,mprA_2,PHGPABBB_00936,PHGPABBB_00937,iaaA,PHGPABBB_00939,rebH,btuB_8,pgl,zwf,pgi,degA_1,PHGPABBB_00946,PHGPABBB_00947,PHGPABBB_00948,bepA_1,yfgD,PHGPABBB_00951,PHGPABBB_00952,PHGPABBB_00953,PHGPABBB_00954,PHGPABBB_00955,bamC,PHGPABBB_00957,gcvR,bcp,metC,nudC,gamA,PHGPABBB_00963,agaAII,gspK_1,vldW,rcsC_5,rcsC_6,bepA_2,bcr,grpE,hrcA,nadK,PHGPABBB_00974,recN,gltD,gltB,grxD,sodB_1,PHGPABBB_00980,PHGPABBB_00981,PHGPABBB_00982,PHGPABBB_00983,cheB_2,tpx,PHGPABBB_00986,adk,htpG,PHGPABBB_00989,PHGPABBB_00990,PHGPABBB_00991,PHGPABBB_00992,recR,natB_1,natA_1,caeA,topA_1,PHGPABBB_00998,gltP_1,queE,queC,PHGPABBB_01002,PHGPABBB_01003,PHGPABBB_01004,rep_1,PHGPABBB_01006,secG,tpiA,glmM_2,folP,ftsH_1,rlmE,PHGPABBB_01013,ampC,PHGPABBB_01015,walR,rcsC_7,PHGPABBB_01018,elaA,spo0M_1,kefC,PHGPABBB_01022,mlaA,PHGPABBB_01024,PHGPABBB_01025,dsbE,ccmF,ccmE,PHGPABBB_01029,ccmC,ccmB,ccmA,PHGPABBB_01033,PHGPABBB_01034,PHGPABBB_01035,cheW_2,PHGPABBB_01037,soj_1,cheB1,cheA_2,cheZ,cheY_2,fliA,ylxH,ftsY_1,flhA,flhB,fliR,PHGPABBB_01049,fliP,PHGPABBB_01051,fliN,fliM,PHGPABBB_01054,PHGPABBB_01055,PHGPABBB_01056,fliI,fliH,fliG,fliF,fliE,atoC_1,sasA_7,tag,ntrC,hag,pseB,pseC,PHGPABBB_01069,lcfB,PHGPABBB_01071,PHGPABBB_01072,pseI,kdsB_2,galE_1,gmhA,rfbB,PHGPABBB_01078,COQ5_1,aptA,aptB,PHGPABBB_01082,PHGPABBB_01083,PHGPABBB_01084,moaA_1,cugP,PHGPABBB_01087,PHGPABBB_01088,PHGPABBB_01089,PHGPABBB_01090,hldE_1,hddC_2,PHGPABBB_01093,PHGPABBB_01094,PHGPABBB_01095,PHGPABBB_01096,PHGPABBB_01097,PHGPABBB_01098,PHGPABBB_01099,PHGPABBB_01100,neuA,fmt_1,legI,PHGPABBB_01104,arnA_1,legG,perA,PHGPABBB_01108,PHGPABBB_01109,PHGPABBB_01110,fliS,fliD,PHGPABBB_01113,fliC,flaD,flaC,PHGPABBB_01117,PHGPABBB_01118,flgJ,flgI,flgH,flgG,flgF,flgE,PHGPABBB_01125,flgC,flgB,cheR2,cheV_1,PHGPABBB_01130,PHGPABBB_01131,PHGPABBB_01132,PHGPABBB_01133,PHGPABBB_01134,PGdx_2,PHGPABBB_01136,PHGPABBB_01137,PHGPABBB_01138,btuB_9,PHGPABBB_01140,PHGPABBB_01141,PHGPABBB_01142,PHGPABBB_01143,PHGPABBB_01144,PHGPABBB_01145,PHGPABBB_01146,PHGPABBB_01147,PHGPABBB_01148,galU,thyA,lgt,PHGPABBB_01152,ptsP,rppH_2,mutH,eno,pyrG,mazG,relA,rlmD,barA,mscS_3,PHGPABBB_01163,PHGPABBB_01164,ppiD,hupB_1,lon_1,clpX,clpP,tig,PHGPABBB_01171,PHGPABBB_01172,PHGPABBB_01173,PHGPABBB_01174,PHGPABBB_01175,folD,PHGPABBB_01177,aroC,prmB,mutS2,rssB_2,PHGPABBB_01182,ahpC_1,fadR,dsbB,PHGPABBB_01186,PHGPABBB_01187,PHGPABBB_01188,aspC,PHGPABBB_01190,rcsC_8,PHGPABBB_01192,yciH,PHGPABBB_01194,pheA,tyrA,rplS,trmD,rimM,rpsP,ffh,ypjD,PHGPABBB_01203,PHGPABBB_01204,gshA,PHGPABBB_01206,aer_2,clpB,yfiH,rluD,bamD,glnB_1,PHGPABBB_01213,PHGPABBB_01214,pilE,PHGPABBB_01216,PHGPABBB_01217,PHGPABBB_01218,PHGPABBB_01219,btsR,PHGPABBB_01221,ispH,fkpB,lspA,ileS,ribF,murJ,rpsT,cheY_3,PHGPABBB_01230,PHGPABBB_01231,smrA,PHGPABBB_01233,ghrA,PHGPABBB_01235,resA_1,PHGPABBB_01237,grxA,deaD,adhB,PHGPABBB_01241,PHGPABBB_01242,PHGPABBB_01243,PHGPABBB_01244,PHGPABBB_01245,syd,queF,PHGPABBB_01248,PHGPABBB_01249,tamB,tamA,PHGPABBB_01252,radD,PHGPABBB_01254,cspV_2,pyrC,PHGPABBB_01257,metE,metR,PHGPABBB_01260,PHGPABBB_01261,PHGPABBB_01262,PHGPABBB_01263,PHGPABBB_01264,PHGPABBB_01265,bluF,PHGPABBB_01267,PHGPABBB_01268,PHGPABBB_01269,ttr,ygfF,tri1,PHGPABBB_01273,fkpA,lon_2,PHGPABBB_01276,leuS,lptE,holA,nadD,rsfS,rlmH,mrdA,mrdB,rlpA,dacA,PHGPABBB_01287,lipB,lipA,tyrP,PHGPABBB_01291,motB,pomA,xseB,ispA,dxs,PHGPABBB_01297,PHGPABBB_01298,pgpA,thiL,nusB,ribE_1,ribBA,ribE_2,ribD,nrdR,glyA,thrC,thrB,thrA,cheY_4,rcsC_9,rdgC,PHGPABBB_01314,PHGPABBB_01315,PHGPABBB_01316,PHGPABBB_01317,dap4,mcpP_1,pepA_2,cstA,dinB,tas,rppH_3,PHGPABBB_01325,PHGPABBB_01326,PHGPABBB_01327,patZ,PHGPABBB_01329,PHGPABBB_01330,PHGPABBB_01331,PHGPABBB_01332,PHGPABBB_01333,PHGPABBB_01334,PHGPABBB_01335,PHGPABBB_01336,zntR,PHGPABBB_01338,PHGPABBB_01339,rssB_3,rcsC_10,PHGPABBB_01342,rapA_1,PHGPABBB_01344,PHGPABBB_01345,rluA,PHGPABBB_01347,PHGPABBB_01348,PHGPABBB_01349,PHGPABBB_01350,PHGPABBB_01351,PHGPABBB_01352,PHGPABBB_01353,PHGPABBB_01354,PHGPABBB_01355,PHGPABBB_01356,phaB,PHGPABBB_01358,phaC,PHGPABBB_01360,ygaZ,rhaS_1,PHGPABBB_01363,PHGPABBB_01364,PHGPABBB_01365,PHGPABBB_01366,PHGPABBB_01367,PHGPABBB_01368,PHGPABBB_01369,PHGPABBB_01370,PHGPABBB_01371,PHGPABBB_01372,PHGPABBB_01373,PHGPABBB_01374,PHGPABBB_01375,lrp_1,putA,PHGPABBB_01378,PHGPABBB_01379,PHGPABBB_01380,cca,btuB_10,uppP,sulD,folB,plsY,tsaD,PHGPABBB_01388,PHGPABBB_01389,PHGPABBB_01390,PHGPABBB_01391,hdfR_3,ubiA,ubiC,PHGPABBB_01395,glpG,glpE_1,tdh,kbl_1,gmhB,rfaC,kdkA,hldE_2,gmhA1,PHGPABBB_01405,waaA,PHGPABBB_01407,PHGPABBB_01408,anoI,luxR,ppsC,PHGPABBB_01412,lgrE_1,PHGPABBB_01414,PHGPABBB_01415,ykfB,mprA_3,PHGPABBB_01418,PHGPABBB_01419,PHGPABBB_01420,cnoX,topB,PHGPABBB_01423,PHGPABBB_01424,PHGPABBB_01425,mcpU,mrpG,mrpF,mnhE1,mrpD,mnhC1,mrpA,PHGPABBB_01433,nlpI,pnp,rpsO,truB,rbfA,[infB]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_193.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_193.html">*</a></td>
+<td><a href="evidence/MC_PLOT_193.html">&divide;</a></td>
+<td>NZ_AHBZ03000014.1</td>
+<td align="right">873959</td>
+<td align="right">946721</td>
+<td align="right">72763</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[infB]&#8211;PHGPABBB_01511</i></td>
+<td align="left">[infB],nusA,rimP,PHGPABBB_01442,PHGPABBB_01443,PHGPABBB_01444,PHGPABBB_01445,cry1,phrB,PHGPABBB_01448,PHGPABBB_01449,PHGPABBB_01450,PHGPABBB_01451,PHGPABBB_01452,PHGPABBB_01453,PHGPABBB_01454,PHGPABBB_01455,purL,mltF,PHGPABBB_01458,tadA,gsk,glsA2,hpf_2,cheB_3,PHGPABBB_01464,PHGPABBB_01465,cof,PHGPABBB_01467,PHGPABBB_01468,PHGPABBB_01469,mepM_2,PHGPABBB_01471,gloA_2,PHGPABBB_01473,PHGPABBB_01474,PHGPABBB_01475,PHGPABBB_01476,PHGPABBB_01477,PHGPABBB_01478,PHGPABBB_01479,PHGPABBB_01480,speE_1,PHGPABBB_01482,PHGPABBB_01483,PHGPABBB_01484,PHGPABBB_01485,PHGPABBB_01486,PHGPABBB_01487,dmlR_2,PHGPABBB_01489,PHGPABBB_01490,PHGPABBB_01491,PHGPABBB_01492,PHGPABBB_01493,mprA_4,sasA_8,PHGPABBB_01496,PHGPABBB_01497,PHGPABBB_01498,PHGPABBB_01499,PHGPABBB_01500,PHGPABBB_01501,PHGPABBB_01502,PHGPABBB_01503,pgrR_3,PHGPABBB_01505,katG,btuB_11,PHGPABBB_01508,PHGPABBB_01509,PHGPABBB_01510,PHGPABBB_01511</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_201.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_201.html">*</a></td>
+<td><a href="evidence/MC_PLOT_201.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">1</td>
+<td align="right">238134</td>
+<td align="right">238134</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>PHGPABBB_02943&#8211;[groL]</i></td>
+<td align="left">PHGPABBB_02943,lasA,PHGPABBB_02945,secF_2,secD_2,yajC,tgt,queA,PHGPABBB_02951,PHGPABBB_02952,oxyR,pitA,PHGPABBB_02955,phoU,pstB3,PHGPABBB_02958,PHGPABBB_02959,PHGPABBB_02960,ppk,ppx,cdgJ_2,PHGPABBB_02964,rlmJ,PHGPABBB_02966,PHGPABBB_02967,PHGPABBB_02968,mltD_2,slyD_2,bacC,PHGPABBB_02972,PHGPABBB_02973,PHGPABBB_02974,PHGPABBB_02975,PHGPABBB_02976,PHGPABBB_02977,bepF_2,mexB_3,msrA2,btuB_15,PHGPABBB_02982,PHGPABBB_02983,panE,thiI,PHGPABBB_02986,coaD,PHGPABBB_02988,PHGPABBB_02989,PHGPABBB_02990,argH,argG,argF,argB,argC,argE,PHGPABBB_02997,fbp,PHGPABBB_02999,PHGPABBB_03000,PHGPABBB_03001,frcA,rbsC,PHGPABBB_03004,PHGPABBB_03005,sseA,rfaF,PHGPABBB_03008,PHGPABBB_03009,purC,PHGPABBB_03011,PHGPABBB_03012,PHGPABBB_03013,PHGPABBB_03014,PHGPABBB_03015,PHGPABBB_03016,PHGPABBB_03017,gshB_2,cpg2,mutM,PHGPABBB_03021,PHGPABBB_03022,ppaC,rhaS_2,PHGPABBB_03025,PHGPABBB_03026,PHGPABBB_03027,der,bamB,PHGPABBB_03030,hisS,ispG,rodZ,PHGPABBB_03034,rlmN,ndk,PHGPABBB_03037,yfhL,porB,hcaR,PHGPABBB_03041,rcsC_22,rarD,PHGPABBB_03044,recQ,PHGPABBB_03046,PHGPABBB_03047,PHGPABBB_03048,rpmG,rpmB,PHGPABBB_03051,coaBC,slmA,PHGPABBB_03054,gmk,rpoZ,spoT,yabJ_2,PHGPABBB_03059,PHGPABBB_03060,asnA,asnC_1,trmH,recG,galE_2,PHGPABBB_03066,cfxP,PHGPABBB_03068,yjjG,rlmB_2,rnr,PHGPABBB_03072,PHGPABBB_03073,rcsC_23,desR,desK,PHGPABBB_03077,glpQ,mcpH_2,epmA,efp,epmB,PHGPABBB_03083,PHGPABBB_03084,PHGPABBB_03085,PHGPABBB_03086,rhaR_2,PHGPABBB_03088,PHGPABBB_03089,PHGPABBB_03090,PHGPABBB_03091,mdtB,mdtA_6,PHGPABBB_03094,PHGPABBB_03095,PHGPABBB_03096,PHGPABBB_03097,PHGPABBB_03098,PHGPABBB_03099,PHGPABBB_03100,rsgA_1,msbA_2,lgrE_3,dltA_3,dltA_4,PHGPABBB_03106,cysE_2,PHGPABBB_03108,PHGPABBB_03109,PHGPABBB_03110,PHGPABBB_03111,PHGPABBB_03112,PHGPABBB_03113,[groL]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_202.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_202.html">*</a></td>
+<td><a href="evidence/MC_PLOT_202.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">238281</td>
+<td align="right">266831</td>
+<td align="right">28551</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[groL]&#8211;[thiC]</i></td>
+<td align="left">[groL],groS,PHGPABBB_03116,dsbD_1,aroQ,accB,accC,PHGPABBB_03121,PHGPABBB_03122,zur,PHGPABBB_03124,PHGPABBB_03125,alr&#8209;1,dnaB,PHGPABBB_03128,PHGPABBB_03129,sigW_2,PHGPABBB_03131,PHGPABBB_03132,PHGPABBB_03133,PHGPABBB_03134,PHGPABBB_03135,rplI,rpsR,priB,rpsF,PHGPABBB_03140,PHGPABBB_03141,PHGPABBB_03142,orn,rsgA_2,psd,moeB,thiE,thiG,PHGPABBB_03149,mnmC_2,[thiC]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_203.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_203.html">*</a></td>
+<td><a href="evidence/MC_PLOT_203.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">267043</td>
+<td align="right">327831</td>
+<td align="right">60789</td>
+<td align="center">3&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[thiC]&#8211;[rpsC]</i></td>
+<td align="left">[thiC],hslJ,PHGPABBB_03153,btuB_16,speD,yhfA,PHGPABBB_03157,astD,astA_1,aruC,PHGPABBB_03161,trpG_2,PHGPABBB_03163,PHGPABBB_03164,engB,cc4,PHGPABBB_03167,yihI,PHGPABBB_03169,polA,elbB,PHGPABBB_03172,PHGPABBB_03173,rep_2,rcsC_24,PHGPABBB_03176,PHGPABBB_03177,PHGPABBB_03178,ubiK,can,PHGPABBB_03181,PHGPABBB_03182,ilvA,ilvD,ilvE,ilvM,ilvG,PHGPABBB_03188,PHGPABBB_03189,rcsC_25,dapA_2,dapD_2,btrK,PHGPABBB_03194,PHGPABBB_03195,PHGPABBB_03196,PHGPABBB_03197,metL,metB,metJ,rpsQ,rpmC,rplP,[rpsC]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_204.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_204.html">*</a></td>
+<td><a href="evidence/MC_PLOT_204.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">327976</td>
+<td align="right">328751</td>
+<td align="right">776</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;3</td>
+<td align="center"><i>[rpsC]&#8211;rplV</i></td>
+<td align="left">[rpsC],rplV</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_205.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_205.html">*</a></td>
+<td><a href="evidence/MC_PLOT_205.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">329031</td>
+<td align="right">345627</td>
+<td align="right">16597</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[rpsS]&#8211;[typA]</i></td>
+<td align="left">[rpsS],rplB,rplW,rplD,rplC,rpsJ,plsB,tesB,PHGPABBB_03214,PHGPABBB_03215,PHGPABBB_03216,cheV_2,uvrD,tmcA,PHGPABBB_03220,PHGPABBB_03221,[typA]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_206.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_206.html">*</a></td>
+<td><a href="evidence/MC_PLOT_206.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">345784</td>
+<td align="right">355916&#8211;355496</td>
+<td align="right">9713&#8211;10133</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[typA]&#8211;glnG</i></td>
+<td align="left">[typA],glnA,PHGPABBB_03224,glnL,glnG</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_207.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_207.html">*</a></td>
+<td><a href="evidence/MC_PLOT_207.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">356138&#8211;357025</td>
+<td align="right">420184</td>
+<td align="right">63160&#8211;64047</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>PHGPABBB_03227&#8211;[ctaD]</i></td>
+<td align="left">PHGPABBB_03227,trpS,gph,rpe,PHGPABBB_03231,dam,damX,aroB,aroK,sctC,PHGPABBB_03237,PHGPABBB_03238,PHGPABBB_03239,ftsA_2,mrcA,maeB,rpmE,priA,ftsN,hslV,hslU,PHGPABBB_03248,PHGPABBB_03249,PHGPABBB_03250,PHGPABBB_03251,rraA,hutG,PHGPABBB_03254,hutI_3,PHGPABBB_03256,yeeZ,envZ_1,envZ_2,ompR,greB,yhgF,PHGPABBB_03263,PHGPABBB_03264,bioH,PHGPABBB_03266,PHGPABBB_03267,nfuA,PHGPABBB_03269,dinF,PHGPABBB_03271,cheB_6,cheD,cheR_2,PHGPABBB_03275,cheW_3,cheA_3,cheY_6,PHGPABBB_03279,PHGPABBB_03280,ctaB,ctaA,PHGPABBB_03283,PHGPABBB_03284,PHGPABBB_03285,ctaE,ctaG,[ctaD]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_208.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_208.html">*</a></td>
+<td><a href="evidence/MC_PLOT_208.html">&divide;</a></td>
+<td>NZ_AHBZ03000022.1</td>
+<td align="right">420370</td>
+<td align="right">423149</td>
+<td align="right">2780</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[ctaD]&#8211;lexA</i></td>
+<td align="left">[ctaD],PHGPABBB_03289,lexA</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_209.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_209.html">*</a></td>
+<td><a href="evidence/MC_PLOT_209.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">1</td>
+<td align="right">95466</td>
+<td align="right">95466</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>PHGPABBB_03291&#8211;[tufB_1]</i></td>
+<td align="left">PHGPABBB_03291,murI,PHGPABBB_03293,trmA,PHGPABBB_03295,dsbA_1,dsbA_2,srkA,PHGPABBB_03299,PHGPABBB_03300,PHGPABBB_03301,PHGPABBB_03302,PHGPABBB_03303,epsM,epsL,gspK_2,xcpW,xcpV,PHGPABBB_03309,pulG,epsF_3,epsE,epsD,epsC,hslR,hslO,pckA,PHGPABBB_03318,PHGPABBB_03319,PHGPABBB_03320,PHGPABBB_03321,PHGPABBB_03322,ltxD_1,ltxB,PHGPABBB_03325,PHGPABBB_03326,mcpH_3,hemN,yojI_2,PHGPABBB_03330,menF,entE,entB,dhbF,entA,pupA,tycC_2,dltA_5,btuB_17,bhuA_1,rhaS_3,PHGPABBB_03342,sdhC,PHGPABBB_03344,lgrD_1,mbtH,pvdQ,PHGPABBB_03348,PHGPABBB_03349,PHGPABBB_03350,[tufB_1]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_210.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_210.html">*</a></td>
+<td><a href="evidence/MC_PLOT_210.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">95628&#8211;95741</td>
+<td align="right">102422</td>
+<td align="right">6682&#8211;6795</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[tufB_1]&#8211;[rpoC]</i></td>
+<td align="left">[tufB_1],fusA_1,rpsG,rpsL,PHGPABBB_03355,PHGPABBB_03356,PHGPABBB_03357,[rpoC]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_211.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_211.html">*</a></td>
+<td><a href="evidence/MC_PLOT_211.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">102641</td>
+<td align="right">103399</td>
+<td align="right">759</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>rpoC</i></td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit beta'</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_212.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_212.html">*</a></td>
+<td><a href="evidence/MC_PLOT_212.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">103546</td>
+<td align="right">103809</td>
+<td align="right">264</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>rpoC</i></td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit beta'</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_213.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_213.html">*</a></td>
+<td><a href="evidence/MC_PLOT_213.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">104021</td>
+<td align="right">104479</td>
+<td align="right">459</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;3</td>
+<td align="center"><i>rpoC</i></td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit beta'</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_214.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_214.html">*</a></td>
+<td><a href="evidence/MC_PLOT_214.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">104628</td>
+<td align="right">107247</td>
+<td align="right">2620</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;3</td>
+<td align="center"><i>[rpoC]&#8211;[rpoB]</i></td>
+<td align="left">[rpoC],[rpoB]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_215.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_215.html">*</a></td>
+<td><a href="evidence/MC_PLOT_215.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">107469</td>
+<td align="right">110811</td>
+<td align="right">3343</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[rpoB]&#8211;[rplA]</i></td>
+<td align="left">[rpoB],rplL,rplJ,[rplA]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_216.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_216.html">*</a></td>
+<td><a href="evidence/MC_PLOT_216.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">110956</td>
+<td align="right">162555</td>
+<td align="right">51600</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[rplA]&#8211;[fusA_2]</i></td>
+<td align="left">[rplA],rplK,nusG,secE,PHGPABBB_03366,deoC,cysG,cysD,cysN,PHGPABBB_03371,cysC,cysQ_2,PHGPABBB_03374,nhoA,PHGPABBB_03376,tufB_2,PHGPABBB_03378,PHGPABBB_03379,PHGPABBB_03380,PHGPABBB_03381,coaX,birA,murB,PHGPABBB_03385,PHGPABBB_03386,PHGPABBB_03387,malT,rcsC_26,tolB_3,PHGPABBB_03391,yafV,ybdL,mtnB,mtnC,mtnD,dapb3_1,mtnA,mtnK,PHGPABBB_03400,vdcA_1,ubiE,ubiJ,ubiB_2,tatA,tatB,tatC,tatD,PHGPABBB_03409,hemB,PHGPABBB_03411,[fusA_2]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_217.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_217.html">*</a></td>
+<td><a href="evidence/MC_PLOT_217.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">162760</td>
+<td align="right">163747</td>
+<td align="right">988</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>fusA_2</i></td>
+<td align="left">Elongation factor G 1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_218.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_218.html">*</a></td>
+<td><a href="evidence/MC_PLOT_218.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">163907</td>
+<td align="right">319713</td>
+<td align="right">155807</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;4</td>
+<td align="center"><i>[fusA_2]&#8211;[atpD]</i></td>
+<td align="left">[fusA_2],PHGPABBB_03413,rbgA,yaeQ,PHGPABBB_03416,PHGPABBB_03417,PHGPABBB_03418,PHGPABBB_03419,dapb1,gbpA_1,ttgE,mdtA_7,PHGPABBB_03424,lolD_2,PHGPABBB_03426,PHGPABBB_03427,PHGPABBB_03428,PHGPABBB_03429,PHGPABBB_03430,PHGPABBB_03431,sasA_11,algB,yeaD,PHGPABBB_03435,PHGPABBB_03436,ybaN,PHGPABBB_03438,PHGPABBB_03439,PHGPABBB_03440,PHGPABBB_03441,rhlE_4,dksA_2,PHGPABBB_03444,PHGPABBB_03445,PHGPABBB_03446,PHGPABBB_03447,PHGPABBB_03448,glmS,srlR,PHGPABBB_03451,ttgH,mdtA_8,tycC_3,PHGPABBB_03455,lgrD_2,PHGPABBB_03457,sufS_3,PHGPABBB_03459,lgrD_3,tycC_4,yojI_3,grsB,PHGPABBB_03464,PHGPABBB_03465,PHGPABBB_03466,tolC_2,lgrE_4,PHGPABBB_03469,PHGPABBB_03470,yknY_2,PHGPABBB_03472,yknY_3,PHGPABBB_03474,zraR_1,sasA_12,PHGPABBB_03477,PHGPABBB_03478,PHGPABBB_03479,btuB_18,PHGPABBB_03481,PHGPABBB_03482,PHGPABBB_03483,PHGPABBB_03484,mltD_3,PHGPABBB_03486,PHGPABBB_03487,nisB,PHGPABBB_03489,PHGPABBB_03490,apxIB,cvaA,glmU,PHGPABBB_03494,PHGPABBB_03495,PHGPABBB_03496,PHGPABBB_03497,PHGPABBB_03498,PHGPABBB_03499,PHGPABBB_03500,PHGPABBB_03501,PHGPABBB_03502,PHGPABBB_03503,atpC,[atpD]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_219.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_219.html">*</a></td>
+<td><a href="evidence/MC_PLOT_219.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">319872</td>
+<td align="right">322303</td>
+<td align="right">2432</td>
+<td align="center">34&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>[atpD]&#8211;[atpA]</i></td>
+<td align="left">[atpD],atpG,[atpA]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_220.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_220.html">*</a></td>
+<td><a href="evidence/MC_PLOT_220.html">&divide;</a></td>
+<td>NZ_AHBZ03000023.1</td>
+<td align="right">322456</td>
+<td align="right">387644</td>
+<td align="right">65189</td>
+<td align="center">4&nbsp;[1]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[atpA]&#8211;yrdA</i></td>
+<td align="left">[atpA],atpH,atpF,atpE,atpB,PHGPABBB_03512,parB,soj_2,rsmG,mnmG,mioC,mnmE,PHGPABBB_03519,pqsA,trpE_2,trpG_3,menE_1,PHGPABBB_03524,PHGPABBB_03525,pqsC,pqsD,gloB_2,fabG_3,PHGPABBB_03530,PHGPABBB_03531,stoA,dsbD_2,yidC,rnpA,rpmH,dnaA,dnaN,recF,gyrB,glyQ,glyS,PHGPABBB_03543,tusA,fadA,fadB,slt,pepQ,yigZ,trkH,PHGPABBB_03551,trkA,rsmB_1,fmt_2,def_1,PHGPABBB_03556,PHGPABBB_03557,smg,topA_2,tsaC,hemF,PHGPABBB_03562,yjbI,aroE,PHGPABBB_03565,yrdA</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_224.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_224.html">*</a></td>
+<td><a href="evidence/MC_PLOT_224.html">&divide;</a></td>
+<td>NZ_AHBZ03000027.1</td>
+<td align="right">1</td>
+<td align="right">507881</td>
+<td align="right">507881</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>PHGPABBB_03703&#8211;[dnaK_2]</i></td>
+<td align="left">PHGPABBB_03703,PHGPABBB_03704,PHGPABBB_03705,PHGPABBB_03706,PHGPABBB_03707,yddE_3,PHGPABBB_03709,PHGPABBB_03710,PHGPABBB_03711,PHGPABBB_03712,PHGPABBB_03713,kynu,kynA,glcB_1,PHGPABBB_03717,ysnE_1,hcaB,PHGPABBB_03720,PHGPABBB_03721,PHGPABBB_03722,PHGPABBB_03723,PHGPABBB_03724,PHGPABBB_03725,PHGPABBB_03726,PHGPABBB_03727,cheB_7,rcp1,sasA_13,PHGPABBB_03731,puuB,PHGPABBB_03733,PHGPABBB_03734,PHGPABBB_03735,rsmB_2,PHGPABBB_03737,nupX,udk_2,deoB,deoD,PHGPABBB_03742,fpr,PHGPABBB_03744,PHGPABBB_03745,PHGPABBB_03746,PHGPABBB_03747,acuC,PHGPABBB_03749,baiA,PHGPABBB_03751,amy_2,PHGPABBB_03753,PHGPABBB_03754,PHGPABBB_03755,PHGPABBB_03756,PHGPABBB_03757,PHGPABBB_03758,PHGPABBB_03759,PHGPABBB_03760,PHGPABBB_03761,alsT_2,hchA_2,PHGPABBB_03764,PHGPABBB_03765,ltaE,PHGPABBB_03767,PHGPABBB_03768,PHGPABBB_03769,ptrB,PHGPABBB_03771,PHGPABBB_03772,PHGPABBB_03773,PHGPABBB_03774,PHGPABBB_03775,PHGPABBB_03776,PHGPABBB_03777,PHGPABBB_03778,PHGPABBB_03779,lnrK_3,lnrJ,hemH,aer_3,rssB_4,PHGPABBB_03785,PHGPABBB_03786,kinE,endo I_1,gbpA_2,chiA_1,PHGPABBB_03791,PHGPABBB_03792,rhlB_2,PHGPABBB_03794,anmK,PHGPABBB_03796,PHGPABBB_03797,PHGPABBB_03798,mcpA,qseF,PHGPABBB_03801,rcsC_30,PHGPABBB_03803,PHGPABBB_03804,PHGPABBB_03805,PHGPABBB_03806,PHGPABBB_03807,PHGPABBB_03808,PHGPABBB_03809,PHGPABBB_03810,PHGPABBB_03811,PHGPABBB_03812,PHGPABBB_03813,PHGPABBB_03814,PHGPABBB_03815,pknD_2,PHGPABBB_03817,PHGPABBB_03818,PHGPABBB_03819,PHGPABBB_03820,PHGPABBB_03821,PHGPABBB_03822,PHGPABBB_03823,PHGPABBB_03824,lodB_1,PHGPABBB_03826,PHGPABBB_03827,PHGPABBB_03828,yknY_4,PHGPABBB_03830,atoC_3,rcsC_31,PHGPABBB_03833,PHGPABBB_03834,rhtB_3,PHGPABBB_03836,mepA,norG_1,PHGPABBB_03839,PHGPABBB_03840,PHGPABBB_03841,PHGPABBB_03842,PHGPABBB_03843,PHGPABBB_03844,PHGPABBB_03845,PHGPABBB_03846,PHGPABBB_03847,rhlE_5,PHGPABBB_03849,PHGPABBB_03850,PHGPABBB_03851,PHGPABBB_03852,cusA,PHGPABBB_03854,PHGPABBB_03855,norG_2,yceJ_2,PHGPABBB_03858,cntO_2,rhaS_4,PHGPABBB_03861,PHGPABBB_03862,rhaS_5,mccF_2,vdcA_2,PHGPABBB_03866,PHGPABBB_03867,hldD,patA,PHGPABBB_03870,vlmH,arnA_2,mdtA_9,swrC,PHGPABBB_03875,aspA_2,fpvA,PHGPABBB_03878,ycaO,dmlR_6,PHGPABBB_03881,PHGPABBB_03882,PHGPABBB_03883,paiB,PHGPABBB_03885,tauR,PHGPABBB_03887,PHGPABBB_03888,PHGPABBB_03889,PHGPABBB_03890,pigC,COQ3_3,PHGPABBB_03893,yknY_5,PHGPABBB_03895,PHGPABBB_03896,PHGPABBB_03897,pigM,argD_1,redW,PHGPABBB_03901,pigI,pigH,PHGPABBB_03904,pigG,menE_2,PHGPABBB_03907,yknY_6,PHGPABBB_03909,PHGPABBB_03910,zraR_2,sasA_14,PHGPABBB_03913,rihB,PHGPABBB_03915,dpp5_3,PHGPABBB_03917,lodA,lodB_2,PHGPABBB_03920,PHGPABBB_03921,PHGPABBB_03922,PHGPABBB_03923,PHGPABBB_03924,PHGPABBB_03925,PHGPABBB_03926,PHGPABBB_03927,PHGPABBB_03928,PHGPABBB_03929,PHGPABBB_03930,PHGPABBB_03931,PHGPABBB_03932,PHGPABBB_03933,hmp,PHGPABBB_03935,PHGPABBB_03936,luxO_2,bfr_1,bfr_2,PHGPABBB_03940,PHGPABBB_03941,PHGPABBB_03942,rcsC_32,PHGPABBB_03944,PHGPABBB_03945,gltP_2,PHGPABBB_03947,PHGPABBB_03948,soxR,PHGPABBB_03950,btuB_20,exuR,PHGPABBB_03953,treF,PHGPABBB_03955,PHGPABBB_03956,dgcP,PHGPABBB_03958,tolB_4,PHGPABBB_03960,btuB_21,PHGPABBB_03962,mcpQ,PHGPABBB_03964,degA_2,PHGPABBB_03966,rhtA,PHGPABBB_03968,PHGPABBB_03969,PHGPABBB_03970,PHGPABBB_03971,ahpC_2,ahpF,PHGPABBB_03974,endo I_2,PHGPABBB_03976,chiA_2,PHGPABBB_03978,bhuA_2,pfeS,cpxR_2,ce2C,PHGPABBB_03983,qmcA,PHGPABBB_03985,nudB,PHGPABBB_03987,PHGPABBB_03988,PHGPABBB_03989,PHGPABBB_03990,PHGPABBB_03991,PHGPABBB_03992,PHGPABBB_03993,PHGPABBB_03994,PHGPABBB_03995,COQ3_4,PHGPABBB_03997,PHGPABBB_03998,PHGPABBB_03999,PHGPABBB_04000,PHGPABBB_04001,PHGPABBB_04002,PHGPABBB_04003,PHGPABBB_04004,yciC,PHGPABBB_04006,PHGPABBB_04007,PHGPABBB_04008,PHGPABBB_04009,dgt,PHGPABBB_04011,PHGPABBB_04012,PHGPABBB_04013,PHGPABBB_04014,PHGPABBB_04015,PHGPABBB_04016,PHGPABBB_04017,PHGPABBB_04018,PHGPABBB_04019,btuB_22,PHGPABBB_04021,PHGPABBB_04022,PHGPABBB_04023,PHGPABBB_04024,PHGPABBB_04025,PHGPABBB_04026,PHGPABBB_04027,PHGPABBB_04028,PHGPABBB_04029,PHGPABBB_04030,gcvA_3,PHGPABBB_04032,PHGPABBB_04033,PHGPABBB_04034,hxuC,PHGPABBB_04036,PHGPABBB_04037,pkwA,PHGPABBB_04039,PHGPABBB_04040,fhuA_2,sbmC,PHGPABBB_04043,PHGPABBB_04044,rcsC_33,rcsC_34,czcD,rcsC_35,PHGPABBB_04049,bfd,PHGPABBB_04051,cusB,czcA_3,PHGPABBB_04054,sodB_2,alkA,PHGPABBB_04057,tdk,rcsC_36,rlmF,PHGPABBB_04061,PHGPABBB_04062,btuB_23,PHGPABBB_04064,pepA_4,PHGPABBB_04066,pepD,fabH2,PHGPABBB_04069,regB,regA,PHGPABBB_04072,PHGPABBB_04073,PHGPABBB_04074,btuB_24,PHGPABBB_04076,PHGPABBB_04077,PHGPABBB_04078,sdcS,calB,esiB,PHGPABBB_04082,PHGPABBB_04083,PHGPABBB_04084,ppc,PHGPABBB_04086,cdd,udp,PHGPABBB_04089,speB,PHGPABBB_04091,PHGPABBB_04092,PHGPABBB_04093,PHGPABBB_04094,nagL,hmgA,slyA,PHGPABBB_04098,PHGPABBB_04099,PHGPABBB_04100,PHGPABBB_04101,PHGPABBB_04102,ushA,PHGPABBB_04104,PHGPABBB_04105,ptrA_2,PHGPABBB_04107,pqiB,pqiA,PHGPABBB_04110,[dnaK_2]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_225.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_225.html">*</a></td>
+<td><a href="evidence/MC_PLOT_225.html">&divide;</a></td>
+<td>NZ_AHBZ03000027.1</td>
+<td align="right">508205</td>
+<td align="right">715417</td>
+<td align="right">207213</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[dnaK_2]&#8211;[ppsA]</i></td>
+<td align="left">[dnaK_2],dnaJ,PHGPABBB_04113,ybaK,rhaS_6,PHGPABBB_04116,fadE_3,PHGPABBB_04118,PHGPABBB_04119,PHGPABBB_04120,PHGPABBB_04121,PHGPABBB_04122,btuB_25,PHGPABBB_04124,ykgO,rpmE2,PHGPABBB_04127,PHGPABBB_04128,dapA_3,rhlE_6,PHGPABBB_04131,mcpP_3,PHGPABBB_04133,zapE_2,PHGPABBB_04135,PHGPABBB_04136,PHGPABBB_04137,PHGPABBB_04138,gstB,abgT_2,PHGPABBB_04141,PHGPABBB_04142,rnz,PHGPABBB_04144,PHGPABBB_04145,astA_2,argD_2,asnC_2,PHGPABBB_04149,PHGPABBB_04150,PHGPABBB_04151,glgB,glgX,malP,glgC,glgA,cdgJ_3,PHGPABBB_04158,PHGPABBB_04159,PHGPABBB_04160,czcA_4,ttgG,PHGPABBB_04163,PHGPABBB_04164,PHGPABBB_04165,rpoE_2,chrR,PHGPABBB_04168,phrA,PHGPABBB_04170,PHGPABBB_04171,PHGPABBB_04172,PHGPABBB_04173,ufaA1,PHGPABBB_04175,hupB_2,ilvH,ilvI,icd,PHGPABBB_04180,PHGPABBB_04181,ygdG,ppnN,PHGPABBB_04184,PHGPABBB_04185,PHGPABBB_04186,PHGPABBB_04187,hisI,hisF,hisA,hisH,hisB,hisC_2,hisD,hisG,PHGPABBB_04196,PHGPABBB_04197,yoaA,tsaB,PHGPABBB_04200,PHGPABBB_04201,phoB_2,menH,fadD,rnd,minE,minD,minC,ycgL,PHGPABBB_04210,cydB,appC,PHGPABBB_04213,PHGPABBB_04214,PHGPABBB_04215,sasA_15,PHGPABBB_04217,PHGPABBB_04218,PHGPABBB_04219,PHGPABBB_04220,rcsC_37,scrK,yihS,fucP_3,PHGPABBB_04225,PHGPABBB_04226,pctB_2,PHGPABBB_04228,tolQ_4,PHGPABBB_04230,exbD,PHGPABBB_04232,PHGPABBB_04233,PHGPABBB_04234,PHGPABBB_04235,asd,PHGPABBB_04237,PHGPABBB_04238,PHGPABBB_04239,PHGPABBB_04240,PHGPABBB_04241,dgcM,PHGPABBB_04243,PHGPABBB_04244,PHGPABBB_04245,PHGPABBB_04246,PHGPABBB_04247,PHGPABBB_04248,PHGPABBB_04249,PHGPABBB_04250,PHGPABBB_04251,PHGPABBB_04252,PHGPABBB_04253,PHGPABBB_04254,PHGPABBB_04255,PHGPABBB_04256,PHGPABBB_04257,PHGPABBB_04258,PHGPABBB_04259,PHGPABBB_04260,PHGPABBB_04261,PHGPABBB_04262,PHGPABBB_04263,PHGPABBB_04264,PHGPABBB_04265,rapA_2,PHGPABBB_04267,PHGPABBB_04268,cshA_2,rep_3,xerC_6,PHGPABBB_04272,PHGPABBB_04273,[ppsA]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_226.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_226.html">*</a></td>
+<td><a href="evidence/MC_PLOT_226.html">&divide;</a></td>
+<td>NZ_AHBZ03000027.1</td>
+<td align="right">715564</td>
+<td align="right">1164454</td>
+<td align="right">448891</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[ppsA]&#8211;yhcG</i></td>
+<td align="left">[ppsA],ppsR,aroH,tus,PHGPABBB_04278,PHGPABBB_04279,PHGPABBB_04280,rapA_3,PHGPABBB_04282,baeR_2,PHGPABBB_04284,PHGPABBB_04285,rcsC_38,PHGPABBB_04287,glcB_2,dpp5_4,PHGPABBB_04290,resA_3,sasA_16,PHGPABBB_04293,PHGPABBB_04294,PHGPABBB_04295,rstA,rstB,arfB,PHGPABBB_04299,PHGPABBB_04300,yknY_7,PHGPABBB_04302,PHGPABBB_04303,rssB_5,PHGPABBB_04305,PHGPABBB_04306,nhaR,gcvA_4,PHGPABBB_04309,PHGPABBB_04310,PHGPABBB_04311,czcR_2,nfdA_2,PHGPABBB_04314,PHGPABBB_04315,PHGPABBB_04316,PHGPABBB_04317,PHGPABBB_04318,xerC_7,PHGPABBB_04320,rlmI_2,rcsC_39,inhA,dcp_2,pleD_2,PHGPABBB_04326,PHGPABBB_04327,PHGPABBB_04328,ysnE_2,PHGPABBB_04330,cheY_7,PHGPABBB_04332,PHGPABBB_04333,PHGPABBB_04334,PHGPABBB_04335,pcpR,PHGPABBB_04337,PHGPABBB_04338,PHGPABBB_04339,PHGPABBB_04340,PHGPABBB_04341,PHGPABBB_04342,PHGPABBB_04343,PHGPABBB_04344,blc,PHGPABBB_04346,PHGPABBB_04347,cheY_8,cmoA_2,smc_2,sbcD,PHGPABBB_04352,PHGPABBB_04353,mupP_2,yeeN,pxpA3,PHGPABBB_04357,PHGPABBB_04358,sasA_17,zraR_3,PHGPABBB_04361,yknY_8,PHGPABBB_04363,PHGPABBB_04364,PHGPABBB_04365,PHGPABBB_04366,hdfR_4,PHGPABBB_04368,yfcG,PHGPABBB_04370,PHGPABBB_04371,rhaS_7,PHGPABBB_04373,PHGPABBB_04374,PHGPABBB_04375,cas1,cas3,PHGPABBB_04378,csy1,csy2,csy3,cas6f,PHGPABBB_04383,PHGPABBB_04384,PHGPABBB_04385,sasA_18,PHGPABBB_04387,PHGPABBB_04388,PHGPABBB_04389,PHGPABBB_04390,PHGPABBB_04391,PHGPABBB_04392,COQ5_2,PHGPABBB_04394,dmlR_7,yheS_2,PHGPABBB_04397,vanX,bepA_3,PHGPABBB_04400,PHGPABBB_04401,PHGPABBB_04402,PHGPABBB_04403,PHGPABBB_04404,ugtP,moaA_2,PHGPABBB_04407,yojI_4,PHGPABBB_04409,PHGPABBB_04410,tobZ,lgrB,xerC_8,PHGPABBB_04414,PHGPABBB_04415,PHGPABBB_04416,PHGPABBB_04417,PHGPABBB_04418,PHGPABBB_04419,PHGPABBB_04420,PHGPABBB_04421,PHGPABBB_04422,PHGPABBB_04423,ltxD_2,ltxD_3,PHGPABBB_04426,PHGPABBB_04427,PHGPABBB_04428,PHGPABBB_04429,PHGPABBB_04430,PHGPABBB_04431,PHGPABBB_04432,PHGPABBB_04433,PHGPABBB_04434,PHGPABBB_04435,PHGPABBB_04436,PHGPABBB_04437,PHGPABBB_04438,PHGPABBB_04439,rimJ_2,PHGPABBB_04441,rhaR_3,pbpE,rhtB_4,PHGPABBB_04445,PHGPABBB_04446,PHGPABBB_04447,arsR1,arsH,PHGPABBB_04450,PHGPABBB_04451,mltC_2,besA,PHGPABBB_04454,def_2,PHGPABBB_04456,PHGPABBB_04457,bioF_2,PHGPABBB_04459,PHGPABBB_04460,PHGPABBB_04461,pqsH,ogt_2,PHGPABBB_04464,cntO_3,PHGPABBB_04466,PHGPABBB_04467,PHGPABBB_04468,yvbK,PHGPABBB_04470,PHGPABBB_04471,leuE_3,PHGPABBB_04473,PHGPABBB_04474,rcsC_40,PHGPABBB_04476,PHGPABBB_04477,PHGPABBB_04478,PHGPABBB_04479,xerC_9,PHGPABBB_04481,PHGPABBB_04482,PHGPABBB_04483,PHGPABBB_04484,PHGPABBB_04485,PHGPABBB_04486,PHGPABBB_04487,PHGPABBB_04488,PHGPABBB_04489,PHGPABBB_04490,xerD_3,PHGPABBB_04492,PHGPABBB_04493,PHGPABBB_04494,PHGPABBB_04495,PHGPABBB_04496,PHGPABBB_04497,PHGPABBB_04498,PHGPABBB_04499,dap_4,cpdB,PHGPABBB_04502,PHGPABBB_04503,PHGPABBB_04504,PHGPABBB_04505,PHGPABBB_04506,PHGPABBB_04507,PHGPABBB_04508,PHGPABBB_04509,PHGPABBB_04510,PHGPABBB_04511,PHGPABBB_04512,PHGPABBB_04513,glpE_2,PHGPABBB_04515,PHGPABBB_04516,PHGPABBB_04517,PHGPABBB_04518,PHGPABBB_04519,PHGPABBB_04520,rhaR_4,PHGPABBB_04522,clcD,PHGPABBB_04524,ydaF,bepE_3,mdtA_10,PHGPABBB_04528,PHGPABBB_04529,PHGPABBB_04530,PHGPABBB_04531,PHGPABBB_04532,PHGPABBB_04533,yiaA,PHGPABBB_04535,PHGPABBB_04536,PHGPABBB_04537,iscS_2,PHGPABBB_04539,pctB_3,PHGPABBB_04541,PHGPABBB_04542,PHGPABBB_04543,PHGPABBB_04544,PHGPABBB_04545,PHGPABBB_04546,lolD_3,PHGPABBB_04548,PHGPABBB_04549,PHGPABBB_04550,PHGPABBB_04551,sbnA,PHGPABBB_04553,PHGPABBB_04554,panS_2,PHGPABBB_04556,PHGPABBB_04557,PHGPABBB_04558,PHGPABBB_04559,PHGPABBB_04560,ftsH_2,PHGPABBB_04562,PHGPABBB_04563,PHGPABBB_04564,PHGPABBB_04565,PHGPABBB_04566,PHGPABBB_04567,PHGPABBB_04568,PHGPABBB_04569,PHGPABBB_04570,PHGPABBB_04571,PHGPABBB_04572,PHGPABBB_04573,PHGPABBB_04574,PHGPABBB_04575,PHGPABBB_04576,PHGPABBB_04577,PHGPABBB_04578,PHGPABBB_04579,PHGPABBB_04580,PHGPABBB_04581,PHGPABBB_04582,PHGPABBB_04583,PHGPABBB_04584,PHGPABBB_04585,PHGPABBB_04586,norR_2,PHGPABBB_04588,PHGPABBB_04589,PHGPABBB_04590,PHGPABBB_04591,PHGPABBB_04592,PHGPABBB_04593,PHGPABBB_04594,PHGPABBB_04595,PHGPABBB_04596,gcvA_5,azoR1,PHGPABBB_04599,PHGPABBB_04600,PHGPABBB_04601,PHGPABBB_04602,PHGPABBB_04603,PHGPABBB_04604,PHGPABBB_04605,PHGPABBB_04606,yeiP,lgrE_5,PHGPABBB_04609,hmuV,hmuU_2,hmuT,PHGPABBB_04613,tolQ_5,PHGPABBB_04615,tdhA,hemS,cspV_3,PHGPABBB_04619,PHGPABBB_04620,PHGPABBB_04621,PHGPABBB_04622,PHGPABBB_04623,gntR,prpB,prpC,acnD,prpF,PHGPABBB_04629,rcsC_41,ccpA_2,ttgF,mdtA_11,mdtC,PHGPABBB_04635,PHGPABBB_04636,PHGPABBB_04637,PHGPABBB_04638,PHGPABBB_04639,PHGPABBB_04640,PHGPABBB_04641,PHGPABBB_04642,PHGPABBB_04643,pphC,PHGPABBB_04645,PHGPABBB_04646,PHGPABBB_04647,PHGPABBB_04648,PHGPABBB_04649,PHGPABBB_04650,aspA_3,PHGPABBB_04652,PHGPABBB_04653,PHGPABBB_04654,PHGPABBB_04655,hisC_3,PHGPABBB_04657,PHGPABBB_04658,PHGPABBB_04659,yhcG</td>
+</tr>
+</table>
+</body></html>

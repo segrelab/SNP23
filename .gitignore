@@ -25,5 +25,13 @@ breseq_test/breseq_test/09-hot1a3-plasmidsaurus/*
 
 envs/*
 .vscode/*
-breseq_results/raw_files/*
 *.out
+
+# Ignore most of the breseq results except what is in the output directories
+# Ignore everything inside each sample's analysis (plasmidsaurus_vs_ref or neg_cntrl) directories
+breseq_results/raw_files/*/*/*
+# ...but DO NOT ignore the 'output' subdirectory itself
+!breseq_results/raw_files/*/*/output/
+# ...and also DO NOT ignore any of the files or folders inside 'output'
+!breseq_results/raw_files/*/*/output/**
+

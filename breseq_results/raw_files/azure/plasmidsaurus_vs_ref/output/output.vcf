@@ -1,0 +1,218 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=Ga0040639_1001,length=13710>
+##contig=<ID=Ga0040639_1002,length=45306>
+##contig=<ID=Ga0040639_1003,length=16009>
+##contig=<ID=Ga0040639_1004,length=87897>
+##contig=<ID=Ga0040639_1005,length=45199>
+##contig=<ID=Ga0040639_1006,length=11699>
+##contig=<ID=Ga0040639_1007,length=5821>
+##contig=<ID=Ga0040639_1008,length=69854>
+##contig=<ID=Ga0040639_1009,length=29538>
+##contig=<ID=Ga0040639_1010,length=148110>
+##contig=<ID=Ga0040639_1011,length=61248>
+##contig=<ID=Ga0040639_1012,length=81374>
+##contig=<ID=Ga0040639_1013,length=136718>
+##contig=<ID=Ga0040639_1014,length=57963>
+##contig=<ID=Ga0040639_1015,length=75903>
+##contig=<ID=Ga0040639_1016,length=107428>
+##contig=<ID=Ga0040639_1017,length=105333>
+##contig=<ID=Ga0040639_1018,length=54348>
+##contig=<ID=Ga0040639_1019,length=46099>
+##contig=<ID=Ga0040639_1020,length=51434>
+##contig=<ID=Ga0040639_1021,length=22276>
+##contig=<ID=Ga0040639_1022,length=23838>
+##contig=<ID=Ga0040639_1023,length=97452>
+##contig=<ID=Ga0040639_1024,length=94799>
+##contig=<ID=Ga0040639_1025,length=94638>
+##contig=<ID=Ga0040639_1026,length=91930>
+##contig=<ID=Ga0040639_1027,length=90921>
+##contig=<ID=Ga0040639_1028,length=87386>
+##contig=<ID=Ga0040639_1029,length=76059>
+##contig=<ID=Ga0040639_1030,length=6188>
+##contig=<ID=Ga0040639_1031,length=78909>
+##contig=<ID=Ga0040639_1032,length=74804>
+##contig=<ID=Ga0040639_1033,length=3027>
+##contig=<ID=Ga0040639_1034,length=74961>
+##contig=<ID=Ga0040639_1035,length=73786>
+##contig=<ID=Ga0040639_1036,length=66743>
+##contig=<ID=Ga0040639_1037,length=2769>
+##contig=<ID=Ga0040639_1038,length=69095>
+##contig=<ID=Ga0040639_1039,length=68735>
+##contig=<ID=Ga0040639_1040,length=67511>
+##contig=<ID=Ga0040639_1041,length=60692>
+##contig=<ID=Ga0040639_1042,length=5427>
+##contig=<ID=Ga0040639_1043,length=65488>
+##contig=<ID=Ga0040639_1044,length=64807>
+##contig=<ID=Ga0040639_1045,length=62818>
+##contig=<ID=Ga0040639_1046,length=61628>
+##contig=<ID=Ga0040639_1047,length=20688>
+##contig=<ID=Ga0040639_1048,length=40273>
+##contig=<ID=Ga0040639_1049,length=60185>
+##contig=<ID=Ga0040639_1050,length=59846>
+##contig=<ID=Ga0040639_1051,length=28046>
+##contig=<ID=Ga0040639_1052,length=30060>
+##contig=<ID=Ga0040639_1053,length=57489>
+##contig=<ID=Ga0040639_1054,length=55808>
+##contig=<ID=Ga0040639_1055,length=53370>
+##contig=<ID=Ga0040639_1056,length=53193>
+##contig=<ID=Ga0040639_1057,length=51581>
+##contig=<ID=Ga0040639_1058,length=44512>
+##contig=<ID=Ga0040639_1059,length=6868>
+##contig=<ID=Ga0040639_1060,length=50834>
+##contig=<ID=Ga0040639_1061,length=6682>
+##contig=<ID=Ga0040639_1062,length=42825>
+##contig=<ID=Ga0040639_1063,length=49281>
+##contig=<ID=Ga0040639_1064,length=11171>
+##contig=<ID=Ga0040639_1065,length=36620>
+##contig=<ID=Ga0040639_1066,length=36778>
+##contig=<ID=Ga0040639_1067,length=6197>
+##contig=<ID=Ga0040639_1068,length=2385>
+##contig=<ID=Ga0040639_1069,length=44024>
+##contig=<ID=Ga0040639_1070,length=43832>
+##contig=<ID=Ga0040639_1071,length=3761>
+##contig=<ID=Ga0040639_1072,length=34348>
+##contig=<ID=Ga0040639_1073,length=36901>
+##contig=<ID=Ga0040639_1074,length=3954>
+##contig=<ID=Ga0040639_1075,length=31207>
+##contig=<ID=Ga0040639_1076,length=35023>
+##contig=<ID=Ga0040639_1077,length=34132>
+##contig=<ID=Ga0040639_1078,length=33796>
+##contig=<ID=Ga0040639_1079,length=32789>
+##contig=<ID=Ga0040639_1080,length=29763>
+##contig=<ID=Ga0040639_1081,length=28285>
+##contig=<ID=Ga0040639_1082,length=26889>
+##contig=<ID=Ga0040639_1083,length=4680>
+##contig=<ID=Ga0040639_1084,length=21242>
+##contig=<ID=Ga0040639_1085,length=25723>
+##contig=<ID=Ga0040639_1086,length=25495>
+##contig=<ID=Ga0040639_1087,length=25460>
+##contig=<ID=Ga0040639_1088,length=25315>
+##contig=<ID=Ga0040639_1089,length=24633>
+##contig=<ID=Ga0040639_1090,length=20627>
+##contig=<ID=Ga0040639_1091,length=2413>
+##contig=<ID=Ga0040639_1092,length=9905>
+##contig=<ID=Ga0040639_1093,length=12707>
+##contig=<ID=Ga0040639_1094,length=22213>
+##contig=<ID=Ga0040639_1095,length=21577>
+##contig=<ID=Ga0040639_1096,length=21435>
+##contig=<ID=Ga0040639_1097,length=19913>
+##contig=<ID=Ga0040639_1098,length=19873>
+##contig=<ID=Ga0040639_1099,length=14031>
+##contig=<ID=Ga0040639_1100,length=5537>
+##contig=<ID=Ga0040639_1101,length=18194>
+##contig=<ID=Ga0040639_1102,length=17140>
+##contig=<ID=Ga0040639_1103,length=16579>
+##contig=<ID=Ga0040639_1104,length=6173>
+##contig=<ID=Ga0040639_1105,length=9799>
+##contig=<ID=Ga0040639_1106,length=8345>
+##contig=<ID=Ga0040639_1107,length=7504>
+##contig=<ID=Ga0040639_1108,length=9224>
+##contig=<ID=Ga0040639_1109,length=3276>
+##contig=<ID=Ga0040639_1110,length=12158>
+##contig=<ID=Ga0040639_1111,length=11731>
+##contig=<ID=Ga0040639_1112,length=1833>
+##contig=<ID=Ga0040639_1113,length=9282>
+##contig=<ID=Ga0040639_1114,length=10467>
+##contig=<ID=Ga0040639_1115,length=3556>
+##contig=<ID=Ga0040639_1116,length=6491>
+##contig=<ID=Ga0040639_1117,length=648>
+##contig=<ID=Ga0040639_1118,length=9287>
+##contig=<ID=Ga0040639_1119,length=9176>
+##contig=<ID=Ga0040639_1120,length=9155>
+##contig=<ID=Ga0040639_1121,length=8537>
+##contig=<ID=Ga0040639_1122,length=6731>
+##contig=<ID=Ga0040639_1123,length=1719>
+##contig=<ID=Ga0040639_1124,length=7864>
+##contig=<ID=Ga0040639_1125,length=7813>
+##contig=<ID=Ga0040639_1126,length=5905>
+##contig=<ID=Ga0040639_1127,length=1850>
+##contig=<ID=Ga0040639_1128,length=7575>
+##contig=<ID=Ga0040639_1129,length=7166>
+##contig=<ID=Ga0040639_1130,length=7139>
+##contig=<ID=Ga0040639_1131,length=6901>
+##contig=<ID=Ga0040639_1132,length=2205>
+##contig=<ID=Ga0040639_1133,length=4550>
+##contig=<ID=Ga0040639_1134,length=6124>
+##contig=<ID=Ga0040639_1135,length=1900>
+##contig=<ID=Ga0040639_1136,length=3361>
+##contig=<ID=Ga0040639_1137,length=5524>
+##contig=<ID=Ga0040639_1138,length=5500>
+##contig=<ID=Ga0040639_1139,length=5477>
+##contig=<ID=Ga0040639_1140,length=5868>
+##contig=<ID=Ga0040639_1141,length=2581>
+##contig=<ID=Ga0040639_1142,length=2112>
+##contig=<ID=Ga0040639_1143,length=4563>
+##contig=<ID=Ga0040639_1144,length=3477>
+##contig=<ID=Ga0040639_1145,length=3368>
+##contig=<ID=Ga0040639_1146,length=3207>
+##contig=<ID=Ga0040639_1147,length=2939>
+##contig=<ID=Ga0040639_1148,length=2305>
+##contig=<ID=Ga0040639_1149,length=2038>
+##contig=<ID=Ga0040639_1150,length=1382>
+##contig=<ID=Ga0040639_1151,length=1811>
+##contig=<ID=Ga0040639_1152,length=1055>
+##contig=<ID=Ga0040639_1153,length=577>
+##contig=<ID=Ga0040639_1154,length=984>
+##contig=<ID=Ga0040639_1155,length=593>
+##contig=<ID=Ga0040639_1156,length=1522>
+##contig=<ID=Ga0040639_1157,length=1499>
+##contig=<ID=Ga0040639_1158,length=1147>
+##contig=<ID=Ga0040639_1159,length=782>
+##contig=<ID=Ga0040639_1160,length=775>
+##contig=<ID=Ga0040639_1161,length=717>
+##contig=<ID=Ga0040639_1162,length=693>
+##contig=<ID=Ga0040639_1163,length=689>
+##contig=<ID=Ga0040639_1164,length=659>
+##contig=<ID=Ga0040639_1165,length=653>
+##contig=<ID=Ga0040639_1166,length=567>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+Ga0040639_1017	35628	.	G	A	60.4	PASS	AF=1.0000;AD=22;DP=22
+Ga0040639_1017	102792	.	A	T	108.5	PASS	AF=1.0000;AD=36;DP=36
+Ga0040639_1025	5814	.	G	A	622.3	PASS	AF=1.0000;AD=228;DP=281
+Ga0040639_1025	5826	.	A	G	595.9	PASS	AF=1.0000;AD=218;DP=270
+Ga0040639_1025	5838	.	A	G	727.5	PASS	AF=1.0000;AD=229;DP=256
+Ga0040639_1040	12927	.	C	A	84.9	PASS	AF=1.0000;AD=36;DP=43
+Ga0040639_1040	59277	.	T	A	110.7	PASS	AF=1.0000;AD=36;DP=36
+Ga0040639_1050	55271	.	C	T	140.2	PASS	AF=1.0000;AD=46;DP=46
+Ga0040639_1060	44079	.	A	G	144.9	PASS	AF=1.0000;AD=43;DP=43
+Ga0040639_1061	153	.	G	C	523.3	PASS	AF=1.0000;AD=171;DP=212
+Ga0040639_1069	112	.	A	G	355.6	PASS	AF=1.0000;AD=143;DP=178
+Ga0040639_1087	62	.	T	C	466.5	PASS	AF=1.0000;AD=180;DP=206
+Ga0040639_1095	14641	.	C	T	33.7	PASS	AF=1.0000;AD=13;DP=13
+Ga0040639_1095	14645	.	G	A	20.9	PASS	AF=1.0000;AD=10;DP=10
+Ga0040639_1099	2542	.	TGCTATAT	T	30.4	PASS	AF=1.0000;AD=10;DP=11
+Ga0040639_1116	3595	.	A	AA	379.4	PASS	AF=1.0000;AD=175;DP=177
+Ga0040639_1132	1863	.	G	A	623.8	PASS	AF=1.0000;AD=305;DP=332
+Ga0040639_1132	1986	.	C	T	305.8	PASS	AF=1.0000;AD=191;DP=218
+Ga0040639_1132	2049	.	T	C	361.1	PASS	AF=1.0000;AD=227;DP=260
+Ga0040639_1132	2105	.	C	A	394.7	PASS	AF=1.0000;AD=235;DP=292
+Ga0040639_1132	2151	.	G	A	674.7	PASS	AF=1.0000;AD=251;DP=281
+Ga0040639_1132	2157	.	A	G	642.0	PASS	AF=1.0000;AD=244;DP=274
+Ga0040639_1132	2193	.	A	T	516.2	PASS	AF=1.0000;AD=167;DP=188
+Ga0040639_1139	2007	.	AA	A	149.7	PASS	AF=1.0000;AD=34;DP=34
+Ga0040639_1140	541	.	G	A	724.3	PASS	AF=1.0000;AD=238;DP=266
+Ga0040639_1140	543	.	T	C	608.2	PASS	AF=1.0000;AD=218;DP=266
+Ga0040639_1147	94	.	A	G	337.5	PASS	AF=1.0000;AD=368;DP=464
+Ga0040639_1147	128	.	T	C	342.5	PASS	AF=1.0000;AD=402;DP=476
+Ga0040639_1147	154	.	T	C	360.3	PASS	AF=1.0000;AD=383;DP=421
+Ga0040639_1147	174	.	T	G	149.4	PASS	AF=1.0000;AD=213;DP=297
+Ga0040639_1147	183	.	T	A	197.5	PASS	AF=1.0000;AD=235;DP=288
+Ga0040639_1147	194	.	T	C	268.4	PASS	AF=1.0000;AD=235;DP=281
+Ga0040639_1147	246	.	G	A	237.4	PASS	AF=1.0000;AD=111;DP=136
+Ga0040639_1147	2574	.	G	A	185.4	PASS	AF=1.0000;AD=80;DP=99
+Ga0040639_1152	16	.	C	T	535.1	PASS	AF=1.0000;AD=186;DP=217
+Ga0040639_1153	27	.	AT	CC	751.5	PASS	AF=1.0000;AD=248;DP=281
+Ga0040639_1153	37	.	C	T	868.9	PASS	AF=1.0000;AD=298;DP=330
+Ga0040639_1153	159	.	C	T	632.2	PASS	AF=1.0000;AD=275;DP=308
+Ga0040639_1153	207	.	G	A	324.8	PASS	AF=1.0000;AD=170;DP=200
+Ga0040639_1153	370	.	C	T	179.7	PASS	AF=1.0000;AD=133;DP=161
+Ga0040639_1153	388	.	A	G	227.1	PASS	AF=1.0000;AD=160;DP=193
+Ga0040639_1153	482	.	T	G	198.6	PASS	AF=1.0000;AD=147;DP=196
+Ga0040639_1153	484	.	T	G	213.7	PASS	AF=1.0000;AD=171;DP=195
+Ga0040639_1164	231	.	G	T	269.3	PASS	AF=1.0000;AD=184;DP=213

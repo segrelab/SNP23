@@ -1,0 +1,3383 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_1.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">65,844</td><!-- Position -->
+<td align="center">3&nbsp;bp&rarr;TTT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;95/&#8209;617)</td>
+<td align="center"><i>CPLBBLMO_00056</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00057</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">65,861</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;112/&#8209;602)</td>
+<td align="center"><i>CPLBBLMO_00056</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00057</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">65,863</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;114/&#8209;600)</td>
+<td align="center"><i>CPLBBLMO_00056</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00057</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,715</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+1/&#8209;6)</td>
+<td align="center"><i>CPLBBLMO_00075</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00076</i></td>
+<td align="left">tRNA&#8209;Gln/tRNA&#8209;Leu</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,909</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+104/&#8209;69)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_6.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,917</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+112/&#8209;61)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_7.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,919</td><!-- Position -->
+<td align="center">+A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+114/&#8209;59)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_8.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,943</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+138/&#8209;35)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,944</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+139/&#8209;34)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_10.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,946</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+141/&#8209;32)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_11.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,949</td><!-- Position -->
+<td align="center">1&nbsp;bp&rarr;AA</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+144/&#8209;29)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_12.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,958</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+153/&#8209;20)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_13.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,971</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+166/&#8209;7)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_14.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,972</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+167/&#8209;6)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_15.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">87,977</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+172/&#8209;1)</td>
+<td align="center"><i>CPLBBLMO_00076</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00077</i></td>
+<td align="left">tRNA&#8209;Leu/tRNA&#8209;Gln</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">88,517</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+374/&#8209;173)</td>
+<td align="center"><i>CPLBBLMO_00078</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_00079</i></td>
+<td align="left">tRNA&#8209;Leu/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_17.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">110,844</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(52/375&nbsp;nt)</td>
+<td align="center"><i>farR</i>&nbsp;&rarr;</td>
+<td align="left">HTH&#8209;type transcriptional regulator FarR</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_18.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,187</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E524G</font>&nbsp;(G<font class="mutation_in_codon">A</font>A&rarr;G<font class="mutation_in_codon">G</font>A)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,203</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E529E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_20.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,215</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q533Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_21.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,234</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N540D</font>&nbsp;(<font class="mutation_in_codon">A</font>AT&rarr;<font class="mutation_in_codon">G</font>AT)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_22.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,239</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G541G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_23.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">186,257</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q547Q</font>&nbsp;(CA<font class="mutation_in_codon">A</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00164</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">206,284</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F67F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>tktA_1</i>&nbsp;&larr;</td>
+<td align="left">Transketolase 1</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_25.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000001.1</td><!-- Seq_Id -->
+<td align="right">206,296</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D63D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>tktA_1</i>&nbsp;&larr;</td>
+<td align="left">Transketolase 1</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,363</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+358/+456)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_27.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,367</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+362/+452)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_28.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,370</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GC</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+365/+448)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_29.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,376</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+371/+443)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,384</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+379/+435)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_31.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,386</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+381/+433)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_32.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,390</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+385/+429)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_33.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,399</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+394/+419)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_34.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,407</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+402/+412)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_35.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,453</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+448/+366)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_36.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">83,473</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+468/+346)</td>
+<td align="center"><i>pilT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00852</i></td>
+<td align="left">Twitching mobility protein/tRNA&#8209;Asp</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_37.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">329,870</td><!-- Position -->
+<td align="center">3&nbsp;bp&rarr;AAA</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+68/+640)</td>
+<td align="center"><i>CPLBBLMO_01073</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_01074</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_38.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000008.1</td><!-- Seq_Id -->
+<td align="right">329,875</td><!-- Position -->
+<td align="center">3&nbsp;bp&rarr;AAT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+73/+635)</td>
+<td align="center"><i>CPLBBLMO_01073</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_01074</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_39.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000050.1</td><!-- Seq_Id -->
+<td align="right">48,529</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+855/&#8209;137)</td>
+<td align="center"><i>CPLBBLMO_03268</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_03269</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_40.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000050.1</td><!-- Seq_Id -->
+<td align="right">48,549</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+875/&#8209;117)</td>
+<td align="center"><i>CPLBBLMO_03268</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_03269</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_41.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000055.1</td><!-- Seq_Id -->
+<td align="right">42,406</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R17R</font>&nbsp;(CG<font class="mutation_in_codon">T</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_03443</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_42.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000065.1</td><!-- Seq_Id -->
+<td align="right">14,511</td><!-- Position -->
+<td align="center">10&nbsp;bp&rarr;10&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;562/&#8209;285)</td>
+<td align="center"><i>guaD</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_03680</i></td>
+<td align="left">Guanine deaminase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1071.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000097.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;3,747&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>CPLBBLMO_04042</i>&#8211;<i>umuC_4</i></td>
+<td align="left"><i>CPLBBLMO_04042</i>, <i>umuC_4</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_44.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000105.1</td><!-- Seq_Id -->
+<td align="right">150</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1072.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000106.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,654&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>CPLBBLMO_04061</i></td>
+<td align="left">CPLBBLMO_04061</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1073.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000107.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,653&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>CPLBBLMO_04062</i></td>
+<td align="left">CPLBBLMO_04062</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1074.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000108.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;1,438&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>CPLBBLMO_04063</i></td>
+<td align="left">CPLBBLMO_04063</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_48.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_AXWP01000109.1</td><!-- Seq_Id -->
+<td align="right">111</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">&#8211;/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_49.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">9,585</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R314R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00418</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISShes9</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_50.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">12,789</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">G119D</font>&nbsp;(G<font class="mutation_in_codon">G</font>T&rarr;G<font class="mutation_in_codon">A</font>T)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00422</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_51.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">12,791</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A118A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00422</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_52.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">28,549</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">S73G</font>&nbsp;(<font class="mutation_in_codon">A</font>GT&rarr;<font class="mutation_in_codon">G</font>GT)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_00435</i>&nbsp;&rarr;</td>
+<td align="left">IS630 family transposase ISSpu23</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_53.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,918</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+234/+737)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_54.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,931</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+247/+724)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_55.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,971</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+287/+684)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_56.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,978</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+294/+677)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_57.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,997</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+313/+658)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_58.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">212,999</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+315/+656)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_59.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,013</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+329/+642)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_60.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,080</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+396/+575)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_61.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,097</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GT</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+413/+557)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_62.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,124</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+440/+531)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_63.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,126</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+442/+529)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_64.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">213,138</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+454/+517)</td>
+<td align="center"><i>ybiT_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>srpC</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_65.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">269,320</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+321/+97)</td>
+<td align="center"><i>adhE_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00651</i></td>
+<td align="left">Aldehyde&#8209;alcohol dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_66.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">269,346</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+347/+71)</td>
+<td align="center"><i>adhE_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00651</i></td>
+<td align="left">Aldehyde&#8209;alcohol dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_67.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">269,348</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+349/+69)</td>
+<td align="center"><i>adhE_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00651</i></td>
+<td align="left">Aldehyde&#8209;alcohol dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_68.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">269,361</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+362/+56)</td>
+<td align="center"><i>adhE_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_00651</i></td>
+<td align="left">Aldehyde&#8209;alcohol dehydrogenase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_69.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">395,600</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+467/+276)</td>
+<td align="center"><i>CPLBBLMO_00761</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>tufB</i></td>
+<td align="left">hypothetical protein/Elongation factor Tu 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_70.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">395,633</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+500/+243)</td>
+<td align="center"><i>CPLBBLMO_00761</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>tufB</i></td>
+<td align="left">hypothetical protein/Elongation factor Tu 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_1360.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">395,675</td><!-- Position -->
+<td align="center">28&nbsp;bp&rarr;37&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+542/+174)</td>
+<td align="center"><i>CPLBBLMO_00761</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>tufB</i></td>
+<td align="left">hypothetical protein/Elongation factor Tu 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_72.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">395,708</td><!-- Position -->
+<td align="center">C&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+575/+168)</td>
+<td align="center"><i>CPLBBLMO_00761</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>tufB</i></td>
+<td align="left">hypothetical protein/Elongation factor Tu 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_73.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519477.1</td><!-- Seq_Id -->
+<td align="right">395,734</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+601/+142)</td>
+<td align="center"><i>CPLBBLMO_00761</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>tufB</i></td>
+<td align="left">hypothetical protein/Elongation factor Tu 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_74.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">241</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;387)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01118</i></td>
+<td align="left">&#8211;/IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_75.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">531</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;97)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01118</i></td>
+<td align="left">&#8211;/IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_76.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">797</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">L57Q</font>&nbsp;(C<font class="mutation_in_codon">T</font>A&rarr;C<font class="mutation_in_codon">A</font>A)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_01118</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_77.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">815</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N63S</font>&nbsp;(A<font class="mutation_in_codon">A</font>T&rarr;A<font class="mutation_in_codon">G</font>T)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_01118</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_78.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">907</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">K94Q</font>&nbsp;(<font class="mutation_in_codon">A</font>AA&rarr;<font class="mutation_in_codon">C</font>AA)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_01118</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_1362.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">931</td><!-- Position -->
+<td align="center">(TACCAA)<sub>1&rarr;2</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(304/627&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01118</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_80.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">937</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">G104R</font>&nbsp;(<font class="mutation_in_codon">G</font>GC&rarr;<font class="mutation_in_codon">C</font>GC)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_01118</i>&nbsp;&rarr;</td>
+<td align="left">IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_81.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">8,171</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">T41I</font>&nbsp;(A<font class="mutation_in_codon">C</font>C&rarr;A<font class="mutation_in_codon">T</font>C)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_01124</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_82.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">48,391</td><!-- Position -->
+<td align="center">10&nbsp;bp&rarr;10&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(199&#8209;208/243&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01153</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_83.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,324</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D319N</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_84.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,326</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D319N</font>&nbsp;(<font class="mutation_in_codon">G</font>AT&rarr;<font class="mutation_in_codon">A</font>AC)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_85.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,332</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L317L</font>&nbsp;(<font class="mutation_in_codon">T</font>TA&rarr;<font class="mutation_in_codon">C</font>TA)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_86.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,345</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S312S</font>&nbsp;(TC<font class="mutation_in_codon">T</font>&rarr;TC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_87.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,350</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">L311L</font>&nbsp;(<font class="mutation_in_codon">T</font>TG&rarr;<font class="mutation_in_codon">C</font>TG)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_88.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">95,357</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S308S</font>&nbsp;(TC<font class="mutation_in_codon">T</font>&rarr;TC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>rpoA_1</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit alpha</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_89.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">96,381</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">F182F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>rpsD_1</i>&nbsp;&larr;</td>
+<td align="left">30S ribosomal protein S4</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_90.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">107,198</td><!-- Position -->
+<td align="center">10&nbsp;bp&rarr;10&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+539/+216)</td>
+<td align="center"><i>CPLBBLMO_01198</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>rpmJ</i></td>
+<td align="left">hypothetical protein/50S ribosomal protein L36</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_91.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">315,650</td><!-- Position -->
+<td align="center">7&nbsp;bp&rarr;7&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+510/+456)</td>
+<td align="center"><i>rseC</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>gdhB</i></td>
+<td align="left">Protein RseC/NAD&#8209;specific glutamate dehydrogenase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_92.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">354,116</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+521/&#8209;1706)</td>
+<td align="center"><i>gmhB</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01430</i></td>
+<td align="left">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose&#8209;1,7&#8209;bisphosphate 7&#8209;phosphatase/tRNA&#8209;Glu</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_93.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">354,118</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+523/&#8209;1704)</td>
+<td align="center"><i>gmhB</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01430</i></td>
+<td align="left">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose&#8209;1,7&#8209;bisphosphate 7&#8209;phosphatase/tRNA&#8209;Glu</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_94.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">355,705</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+2110/&#8209;117)</td>
+<td align="center"><i>gmhB</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01430</i></td>
+<td align="left">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose&#8209;1,7&#8209;bisphosphate 7&#8209;phosphatase/tRNA&#8209;Glu</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_95.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">355,709</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+2114/&#8209;113)</td>
+<td align="center"><i>gmhB</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01430</i></td>
+<td align="left">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose&#8209;1,7&#8209;bisphosphate 7&#8209;phosphatase/tRNA&#8209;Glu</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_96.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">355,913</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+16/&#8211;)</td>
+<td align="center"><i>CPLBBLMO_01430</i>&nbsp;&rarr;&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">tRNA&#8209;Glu/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_97.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">355,963</td><!-- Position -->
+<td align="center">(T)<sub>6&rarr;5</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+66/&#8211;)</td>
+<td align="center"><i>CPLBBLMO_01430</i>&nbsp;&rarr;&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">tRNA&#8209;Glu/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_1407.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">356,257</td><!-- Position -->
+<td align="center">69&nbsp;bp&rarr;22&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+360/&#8211;)</td>
+<td align="center"><i>CPLBBLMO_01430</i>&nbsp;&rarr;&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">tRNA&#8209;Glu/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_99.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519478.1</td><!-- Seq_Id -->
+<td align="right">356,331</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+434/&#8211;)</td>
+<td align="center"><i>CPLBBLMO_01430</i>&nbsp;&rarr;&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">tRNA&#8209;Glu/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1088.html">MC</a>&nbsp;<a href="evidence/JC_1420.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">28,104</td><!-- Position -->
+<td align="center">275&nbsp;bp&rarr;24&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+1/&#8209;2)</td>
+<td align="center"><i>CPLBBLMO_01451</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01452</i></td>
+<td align="left">tRNA&#8209;Val/tRNA&#8209;Val</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_101.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">81,669</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+490/&#8209;1001)</td>
+<td align="center"><i>CPLBBLMO_01490</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_01491</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_102.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">244,785</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">noncoding&nbsp;(42/76&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01618</i>&nbsp;&larr;</td>
+<td align="left">tRNA&#8209;Ala</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_103.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">244,786</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;AA</td><!-- Cell Mutation -->
+<td align="center">noncoding&nbsp;(40&#8209;41/76&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01618</i>&nbsp;&larr;</td>
+<td align="left">tRNA&#8209;Ala</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_104.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">244,789</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">noncoding&nbsp;(38/76&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01618</i>&nbsp;&larr;</td>
+<td align="left">tRNA&#8209;Ala</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_105.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">244,793</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center">noncoding&nbsp;(34/76&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01618</i>&nbsp;&larr;</td>
+<td align="left">tRNA&#8209;Ala</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_106.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519479.1</td><!-- Seq_Id -->
+<td align="right">244,796</td><!-- Position -->
+<td align="center">4&nbsp;bp&rarr;CGTC</td><!-- Cell Mutation -->
+<td align="center">noncoding&nbsp;(28&#8209;31/76&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01618</i>&nbsp;&larr;</td>
+<td align="left">tRNA&#8209;Ala</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_107.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519480.1</td><!-- Seq_Id -->
+<td align="right">7,518</td><!-- Position -->
+<td align="center">10&nbsp;bp&rarr;10&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(16&#8209;25/963&nbsp;nt)</td>
+<td align="center"><i>CPLBBLMO_01632</i>&nbsp;&rarr;</td>
+<td align="left">IS21 family transposase ISPpu7</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_108.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519481.1</td><!-- Seq_Id -->
+<td align="right">42,320</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;536/+357)</td>
+<td align="center"><i>dusC</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_01819</i></td>
+<td align="left">tRNA&#8209;dihydrouridine(16) synthase/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_109.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519488.1</td><!-- Seq_Id -->
+<td align="right">41,150</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+1280/&#8209;181)</td>
+<td align="center"><i>CPLBBLMO_03111</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>CPLBBLMO_03112</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_1108.html">MC</a>&nbsp;<a href="evidence/JC_1526.html">JC</a></td><!-- Evidence -->
+<td align="center">NZ_KI519488.1</td><!-- Seq_Id -->
+<td align="right">41,952</td><!-- Position -->
+<td align="center">&Delta;573&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+280/+881)</td>
+<td align="center"><i>CPLBBLMO_03112</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>CPLBBLMO_03113</i></td>
+<td align="left">hypothetical protein/Glycine betaine transporter 1</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_111.html">RA</a></td><!-- Evidence -->
+<td align="center">NZ_KI519493.1</td><!-- Seq_Id -->
+<td align="right">5,210</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">N56N</font>&nbsp;(AA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>CPLBBLMO_03875</i>&nbsp;&larr;</td>
+<td align="left">IS1595 family transposase ISPpr6</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1052.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1052.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1052.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">92284</td>
+<td align="right">92444&#8211;92367</td>
+<td align="right">84&#8211;161</td>
+<td align="center">236&nbsp;[226]</td>
+<td align="center">[231]&nbsp;240</td>
+<td align="center"><i>CPLBBLMO_00082/CPLBBLMO_00083</i></td>
+<td align="left">hypothetical protein/IS1182 family transposase ISMac1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1053.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1053.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1053.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">94970&#8211;97197</td>
+<td align="right">97314</td>
+<td align="right">118&#8211;2345</td>
+<td align="center">244&nbsp;[217]</td>
+<td align="center">[229]&nbsp;235</td>
+<td align="center"><i>CPLBBLMO_00085&#8211;CPLBBLMO_00087</i></td>
+<td align="left">CPLBBLMO_00085,CPLBBLMO_00086,CPLBBLMO_00087</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1054.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1054.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1054.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">128285&#8211;128383</td>
+<td align="right">128422</td>
+<td align="right">40&#8211;138</td>
+<td align="center">233&nbsp;[232]</td>
+<td align="center">[230]&nbsp;237</td>
+<td align="center"><i>CPLBBLMO_00116</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1055.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1055.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1055.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">207095</td>
+<td align="right">207184</td>
+<td align="right">90</td>
+<td align="center">457&nbsp;[0]</td>
+<td align="center">[230]&nbsp;233</td>
+<td align="center"><i>[CPLBBLMO_00182]</i></td>
+<td align="left">[CPLBBLMO_00182]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1056.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1056.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1056.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">230147&#8211;230449</td>
+<td align="right">230459</td>
+<td align="right">11&#8211;313</td>
+<td align="center">237&nbsp;[227]</td>
+<td align="center">[0]&nbsp;379</td>
+<td align="center"><i>[CPLBBLMO_00206]</i></td>
+<td align="left">[CPLBBLMO_00206]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1057.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1057.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1057.html">&divide;</a></td>
+<td>NZ_AXWP01000001.1</td>
+<td align="right">317925&#8211;318162</td>
+<td align="right">318433&#8211;318173</td>
+<td align="right">12&#8211;509</td>
+<td align="center">240&nbsp;[229]</td>
+<td align="center">[229]&nbsp;239</td>
+<td align="center"><i>[CPLBBLMO_00283]</i></td>
+<td align="left">[CPLBBLMO_00283]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1058.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1058.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1058.html">&divide;</a></td>
+<td>NZ_AXWP01000027.1</td>
+<td align="right">13573&#8211;13806</td>
+<td align="right">13875&#8211;13817</td>
+<td align="right">12&#8211;303</td>
+<td align="center">365&nbsp;[352]</td>
+<td align="center">[320]&nbsp;362</td>
+<td align="center"><i>yidZ/yrdA</i></td>
+<td align="left">HTH&#8209;type transcriptional regulator YidZ/Protein YrdA</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1059.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1059.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1059.html">&divide;</a></td>
+<td>NZ_AXWP01000038.1</td>
+<td align="right">64727&#8211;64748</td>
+<td align="right">65027&#8211;64759</td>
+<td align="right">12&#8211;301</td>
+<td align="center">362&nbsp;[361]</td>
+<td align="center">[361]&nbsp;364</td>
+<td align="center"><i>[CPLBBLMO_02819]</i></td>
+<td align="left">[CPLBBLMO_02819]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1060.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1060.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1060.html">&divide;</a></td>
+<td>NZ_AXWP01000038.1</td>
+<td align="right">77979</td>
+<td align="right">78045</td>
+<td align="right">67</td>
+<td align="center">439&nbsp;[1]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>malP_3/&#8211;</i></td>
+<td align="left">PTS system maltose&#8209;specific EIICB component/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1061.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1061.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1061.html">&divide;</a></td>
+<td>NZ_AXWP01000041.1</td>
+<td align="right">15511&#8211;15688</td>
+<td align="right">15698</td>
+<td align="right">11&#8211;188</td>
+<td align="center">285&nbsp;[273]</td>
+<td align="center">[0]&nbsp;379</td>
+<td align="center"><i>CPLBBLMO_02911/ubiX</i></td>
+<td align="left">hypothetical protein/Flavin prenyltransferase UbiX</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1062.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1062.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1062.html">&divide;</a></td>
+<td>NZ_AXWP01000045.1</td>
+<td align="right">7274</td>
+<td align="right">8534&#8211;8308</td>
+<td align="right">1035&#8211;1261</td>
+<td align="center">370&nbsp;[359]</td>
+<td align="center">[366]&nbsp;371</td>
+<td align="center"><i>[CPLBBLMO_03012]&#8211;[CPLBBLMO_03013]</i></td>
+<td align="left">[CPLBBLMO_03012],[CPLBBLMO_03013]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1063.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1063.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1063.html">&divide;</a></td>
+<td>NZ_AXWP01000051.1</td>
+<td align="right">10709&#8211;10873</td>
+<td align="right">10976</td>
+<td align="right">104&#8211;268</td>
+<td align="center">278&nbsp;[271]</td>
+<td align="center">[275]&nbsp;287</td>
+<td align="center"><i>CPLBBLMO_03284/CPLBBLMO_03285</i></td>
+<td align="left">Putative multidrug export ATP&#8209;binding/permease protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1064.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1064.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1064.html">&divide;</a></td>
+<td>NZ_AXWP01000055.1</td>
+<td align="right">31942</td>
+<td align="right">32372&#8211;32015</td>
+<td align="right">74&#8211;431</td>
+<td align="center">324&nbsp;[250]</td>
+<td align="center">[322]&nbsp;324</td>
+<td align="center"><i>CPLBBLMO_03433</i></td>
+<td align="left">CPLBBLMO_03433</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1065.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1065.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1065.html">&divide;</a></td>
+<td>NZ_AXWP01000056.1</td>
+<td align="right">1</td>
+<td align="right">284&#8211;16</td>
+<td align="right">16&#8211;284</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[222]&nbsp;240</td>
+<td align="center"><i>&#8211;/CPLBBLMO_03445</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1066.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1066.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1066.html">&divide;</a></td>
+<td>NZ_AXWP01000065.1</td>
+<td align="right">31249&#8211;31519</td>
+<td align="right">31524</td>
+<td align="right">6&#8211;276</td>
+<td align="center">394&nbsp;[339]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>baeR_3/&#8211;</i></td>
+<td align="left">Transcriptional regulatory protein BaeR/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1067.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1067.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1067.html">&divide;</a></td>
+<td>NZ_AXWP01000082.1</td>
+<td align="right">1</td>
+<td align="right">278&#8211;21</td>
+<td align="right">21&#8211;278</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[367]&nbsp;384</td>
+<td align="center"><i>&#8211;/CPLBBLMO_03951</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1068.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1068.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1068.html">&divide;</a></td>
+<td>NZ_AXWP01000083.1</td>
+<td align="right">1&#8211;249</td>
+<td align="right">249</td>
+<td align="right">1&#8211;249</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[295]&nbsp;311</td>
+<td align="center"><i>&#8211;/CPLBBLMO_03959</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1069.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1069.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1069.html">&divide;</a></td>
+<td>NZ_AXWP01000089.1</td>
+<td align="right">6291&#8211;6397</td>
+<td align="right">6402</td>
+<td align="right">6&#8211;112</td>
+<td align="center">329&nbsp;[327]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>CPLBBLMO_04012/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1070.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1070.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1070.html">&divide;</a></td>
+<td>NZ_AXWP01000093.1</td>
+<td align="right">4844&#8211;5114</td>
+<td align="right">5118</td>
+<td align="right">5&#8211;275</td>
+<td align="center">337&nbsp;[280]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>CPLBBLMO_04030/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1075.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1075.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1075.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">8358&#8211;8608</td>
+<td align="right">8636</td>
+<td align="right">29&#8211;279</td>
+<td align="center">290&nbsp;[288]</td>
+<td align="center">[232]&nbsp;308</td>
+<td align="center"><i>[CPLBBLMO_00417]</i></td>
+<td align="left">[CPLBBLMO_00417]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1076.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1076.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1076.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">28748</td>
+<td align="right">28786</td>
+<td align="right">39</td>
+<td align="center">450&nbsp;[2]</td>
+<td align="center">[0]&nbsp;584</td>
+<td align="center"><i>CPLBBLMO_00435<br>CPLBBLMO_00436</i></td>
+<td align="left">IS630 family transposase ISSpu23<br>hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1077.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1077.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1077.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">49765</td>
+<td align="right">49842</td>
+<td align="right">78</td>
+<td align="center">334&nbsp;[0]</td>
+<td align="center">[4]&nbsp;517</td>
+<td align="center"><i>CPLBBLMO_00458/nfo</i></td>
+<td align="left">IS4 family transposase ISVbsp1/Endonuclease 4</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1078.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1078.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1078.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">111160&#8211;111313</td>
+<td align="right">111503&#8211;111412</td>
+<td align="right">100&#8211;344</td>
+<td align="center">294&nbsp;[287]</td>
+<td align="center">[252]&nbsp;290</td>
+<td align="center"><i>[CPLBBLMO_00513]</i></td>
+<td align="left">[CPLBBLMO_00513]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1079.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1079.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1079.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">156624&#8211;156904</td>
+<td align="right">157159</td>
+<td align="right">256&#8211;536</td>
+<td align="center">297&nbsp;[276]</td>
+<td align="center">[0]&nbsp;644</td>
+<td align="center"><i>CPLBBLMO_00552/CPLBBLMO_00553</i></td>
+<td align="left">hypothetical protein/putative aminotransferase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1080.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1080.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1080.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">286038</td>
+<td align="right">286711</td>
+<td align="right">674</td>
+<td align="center">295&nbsp;[288]</td>
+<td align="center">[270]&nbsp;298</td>
+<td align="center"><i>[CPLBBLMO_00662]</i></td>
+<td align="left">[CPLBBLMO_00662]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1081.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1081.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1081.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">332655</td>
+<td align="right">334582</td>
+<td align="right">1928</td>
+<td align="center">311&nbsp;[281]</td>
+<td align="center">[286]&nbsp;290</td>
+<td align="center"><i>CPLBBLMO_00706/CPLBBLMO_00707</i></td>
+<td align="left">hypothetical protein/IS91 family transposase ISShvi3</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1082.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1082.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1082.html">&divide;</a></td>
+<td>NZ_KI519477.1</td>
+<td align="right">336704&#8211;338957</td>
+<td align="right">341008</td>
+<td align="right">2052&#8211;4305</td>
+<td align="center">303&nbsp;[285]</td>
+<td align="center">[288]&nbsp;291</td>
+<td align="center"><i>CPLBBLMO_00709&#8211;CPLBBLMO_00711</i></td>
+<td align="left">CPLBBLMO_00709,CPLBBLMO_00710,CPLBBLMO_00711</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1083.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1083.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1083.html">&divide;</a></td>
+<td>NZ_KI519478.1</td>
+<td align="right">8367</td>
+<td align="right">8482</td>
+<td align="right">116</td>
+<td align="center">441&nbsp;[0]</td>
+<td align="center">[306]&nbsp;312</td>
+<td align="center"><i>[CPLBBLMO_01124]</i></td>
+<td align="left">[CPLBBLMO_01124]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1084.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1084.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1084.html">&divide;</a></td>
+<td>NZ_KI519478.1</td>
+<td align="right">97319&#8211;97522</td>
+<td align="right">97899</td>
+<td align="right">378&#8211;581</td>
+<td align="center">314&nbsp;[305]</td>
+<td align="center">[285]&nbsp;334</td>
+<td align="center"><i>[rpsK]</i></td>
+<td align="left">[rpsK]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1085.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1085.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1085.html">&divide;</a></td>
+<td>NZ_KI519478.1</td>
+<td align="right">158048</td>
+<td align="right">158125</td>
+<td align="right">78</td>
+<td align="center">512&nbsp;[0]</td>
+<td align="center">[1]&nbsp;521</td>
+<td align="center"><i>CPLBBLMO_01253/CPLBBLMO_01254</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1086.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1086.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1086.html">&divide;</a></td>
+<td>NZ_KI519478.1</td>
+<td align="right">161421&#8211;161607</td>
+<td align="right">161617</td>
+<td align="right">11&#8211;197</td>
+<td align="center">309&nbsp;[303]</td>
+<td align="center">[0]&nbsp;645</td>
+<td align="center"><i>CPLBBLMO_01255/CPLBBLMO_01256</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1087.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1087.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1087.html">&divide;</a></td>
+<td>NZ_KI519478.1</td>
+<td align="right">269941</td>
+<td align="right">270355</td>
+<td align="right">415</td>
+<td align="center">533&nbsp;[46]</td>
+<td align="center">[306]&nbsp;311</td>
+<td align="center"><i>mioC/mtlA</i></td>
+<td align="left">Protein MioC/PTS system mannitol&#8209;specific EIICBA component</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1089.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1089.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1089.html">&divide;</a></td>
+<td>NZ_KI519479.1</td>
+<td align="right">30138</td>
+<td align="right">32411</td>
+<td align="right">2274</td>
+<td align="center">257&nbsp;[250]</td>
+<td align="center">[255]&nbsp;256</td>
+<td align="center"><i>CPLBBLMO_01452/CPLBBLMO_01453</i></td>
+<td align="left">tRNA&#8209;Val/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1090.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1090.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1090.html">&divide;</a></td>
+<td>NZ_KI519479.1</td>
+<td align="right">193621</td>
+<td align="right">194609</td>
+<td align="right">989</td>
+<td align="center">257&nbsp;[248]</td>
+<td align="center">[255]&nbsp;257</td>
+<td align="center"><i>opuAA/CPLBBLMO_01579</i></td>
+<td align="left">Glycine betaine transport ATP&#8209;binding protein OpuAA/IS4 family transposase ISPlu9</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1091.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1091.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1091.html">&divide;</a></td>
+<td>NZ_KI519479.1</td>
+<td align="right">197812</td>
+<td align="right">198533</td>
+<td align="right">722</td>
+<td align="center">256&nbsp;[253]</td>
+<td align="center">[240]&nbsp;257</td>
+<td align="center"><i>CPLBBLMO_01582</i></td>
+<td align="left">CPLBBLMO_01582</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1092.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1092.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1092.html">&divide;</a></td>
+<td>NZ_KI519480.1</td>
+<td align="right">1511</td>
+<td align="right">1986</td>
+<td align="right">476</td>
+<td align="center">288&nbsp;[280]</td>
+<td align="center">[0]&nbsp;609</td>
+<td align="center"><i>CPLBBLMO_01627/CPLBBLMO_01628</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1093.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1093.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1093.html">&divide;</a></td>
+<td>NZ_KI519480.1</td>
+<td align="right">11733</td>
+<td align="right">12052</td>
+<td align="right">320</td>
+<td align="center">588&nbsp;[0]</td>
+<td align="center">[271]&nbsp;287</td>
+<td align="center"><i>CPLBBLMO_01636/CPLBBLMO_01637</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1094.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1094.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1094.html">&divide;</a></td>
+<td>NZ_KI519480.1</td>
+<td align="right">16658&#8211;16956</td>
+<td align="right">17097</td>
+<td align="right">142&#8211;440</td>
+<td align="center">287&nbsp;[280]</td>
+<td align="center">[278]&nbsp;284</td>
+<td align="center"><i>CPLBBLMO_01641</i></td>
+<td align="left">CPLBBLMO_01641</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1095.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1095.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1095.html">&divide;</a></td>
+<td>NZ_KI519481.1</td>
+<td align="right">76568&#8211;76861</td>
+<td align="right">76971</td>
+<td align="right">111&#8211;404</td>
+<td align="center">292&nbsp;[253]</td>
+<td align="center">[252]&nbsp;264</td>
+<td align="center"><i>pctB/pepD</i></td>
+<td align="left">Methyl&#8209;accepting chemotaxis protein PctB/Cytosol non&#8209;specific dipeptidase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1096.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1096.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1096.html">&divide;</a></td>
+<td>NZ_KI519482.1</td>
+<td align="right">120055</td>
+<td align="right">120907</td>
+<td align="right">853</td>
+<td align="center">267&nbsp;[263]</td>
+<td align="center">[266]&nbsp;269</td>
+<td align="center"><i>CPLBBLMO_02041</i></td>
+<td align="left">CPLBBLMO_02041</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1097.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1097.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1097.html">&divide;</a></td>
+<td>NZ_KI519482.1</td>
+<td align="right">152804</td>
+<td align="right">154035</td>
+<td align="right">1232</td>
+<td align="center">284&nbsp;[253]</td>
+<td align="center">[252]&nbsp;279</td>
+<td align="center"><i>yfkN/&#8211;</i></td>
+<td align="left">Trifunctional nucleotide phosphoesterase protein YfkN/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1098.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1098.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1098.html">&divide;</a></td>
+<td>NZ_KI519483.1</td>
+<td align="right">1&#8211;151</td>
+<td align="right">151</td>
+<td align="right">1&#8211;151</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[224]&nbsp;231</td>
+<td align="center"><i>&#8211;/rnk_1</i></td>
+<td align="left">&#8211;/Regulator of nucleoside diphosphate kinase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1099.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1099.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1099.html">&divide;</a></td>
+<td>NZ_KI519483.1</td>
+<td align="right">16453&#8211;16604</td>
+<td align="right">16717</td>
+<td align="right">114&#8211;265</td>
+<td align="center">231&nbsp;[221]</td>
+<td align="center">[226]&nbsp;227</td>
+<td align="center"><i>[CPLBBLMO_02359]</i></td>
+<td align="left">[CPLBBLMO_02359]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1100.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1100.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1100.html">&divide;</a></td>
+<td>NZ_KI519484.1</td>
+<td align="right">13466</td>
+<td align="right">13954</td>
+<td align="right">489</td>
+<td align="center">235&nbsp;[228]</td>
+<td align="center">[229]&nbsp;232</td>
+<td align="center"><i>CPLBBLMO_02487/CPLBBLMO_02488</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1101.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1101.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1101.html">&divide;</a></td>
+<td>NZ_KI519485.1</td>
+<td align="right">6085</td>
+<td align="right">6453</td>
+<td align="right">369</td>
+<td align="center">339&nbsp;[317]</td>
+<td align="center">[0]&nbsp;486</td>
+<td align="center"><i>cpoB/CPLBBLMO_02555</i></td>
+<td align="left">Cell division coordinator CpoB/tRNA&#8209;Lys</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1102.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1102.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1102.html">&divide;</a></td>
+<td>NZ_KI519485.1</td>
+<td align="right">18471</td>
+<td align="right">18801</td>
+<td align="right">331</td>
+<td align="center">337&nbsp;[317]</td>
+<td align="center">[331]&nbsp;333</td>
+<td align="center"><i>CPLBBLMO_02565/rsxB</i></td>
+<td align="left">hypothetical protein/Ion&#8209;translocating oxidoreductase complex subunit B</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1103.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1103.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1103.html">&divide;</a></td>
+<td>NZ_KI519486.1</td>
+<td align="right">62814</td>
+<td align="right">65003&#8211;64739</td>
+<td align="right">1926&#8211;2190</td>
+<td align="center">985&nbsp;[0]</td>
+<td align="center">[258]&nbsp;269</td>
+<td align="center"><i>CPLBBLMO_02886/rnk_3</i></td>
+<td align="left">hypothetical protein/Regulator of nucleoside diphosphate kinase</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1104.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1104.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1104.html">&divide;</a></td>
+<td>NZ_KI519486.1</td>
+<td align="right">78748</td>
+<td align="right">78782</td>
+<td align="right">35</td>
+<td align="center">407&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[CPLBBLMO_02896]</i></td>
+<td align="left">[CPLBBLMO_02896]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1105.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1105.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1105.html">&divide;</a></td>
+<td>NZ_KI519487.1</td>
+<td align="right">34002</td>
+<td align="right">35411&#8211;35408</td>
+<td align="right">1407&#8211;1410</td>
+<td align="center">584&nbsp;[0]</td>
+<td align="center">[300]&nbsp;303</td>
+<td align="center"><i>mltF_5/impX</i></td>
+<td align="left">Membrane&#8209;bound lytic murein transglycosylase F/Riboflavin transporter ImpX</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1106.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1106.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1106.html">&divide;</a></td>
+<td>NZ_KI519487.1</td>
+<td align="right">37786</td>
+<td align="right">40229</td>
+<td align="right">2444</td>
+<td align="center">559&nbsp;[164]</td>
+<td align="center">[297]&nbsp;306</td>
+<td align="center"><i>impX/CPLBBLMO_02984</i></td>
+<td align="left">Riboflavin transporter ImpX/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1107.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1107.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1107.html">&divide;</a></td>
+<td>NZ_KI519488.1</td>
+<td align="right">31135&#8211;31223</td>
+<td align="right">31342&#8211;31230</td>
+<td align="right">8&#8211;208</td>
+<td align="center">246&nbsp;[242]</td>
+<td align="center">[239]&nbsp;281</td>
+<td align="center"><i>[CPLBBLMO_03103]</i></td>
+<td align="left">[CPLBBLMO_03103]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1109.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1109.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1109.html">&divide;</a></td>
+<td>NZ_KI519489.1</td>
+<td align="right">19413&#8211;19673</td>
+<td align="right">20198</td>
+<td align="right">526&#8211;786</td>
+<td align="center">266&nbsp;[257]</td>
+<td align="center">[240]&nbsp;266</td>
+<td align="center"><i>CPLBBLMO_03381/CPLBBLMO_03382</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1110.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1110.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1110.html">&divide;</a></td>
+<td>NZ_KI519490.1</td>
+<td align="right">1</td>
+<td align="right">273&#8211;2</td>
+<td align="right">2&#8211;273</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[334]&nbsp;338</td>
+<td align="center"><i>&#8211;/rcsC_9</i></td>
+<td align="left">&#8211;/Sensor histidine kinase RcsC</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1111.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1111.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1111.html">&divide;</a></td>
+<td>NZ_KI519490.1</td>
+<td align="right">11948</td>
+<td align="right">12252</td>
+<td align="right">305</td>
+<td align="center">495&nbsp;[0]</td>
+<td align="center">[0]&nbsp;349</td>
+<td align="center"><i>clsC_1/CPLBBLMO_03589</i></td>
+<td align="left">Cardiolipin synthase C/tRNA&#8209;Phe</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1112.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1112.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1112.html">&divide;</a></td>
+<td>NZ_KI519491.1</td>
+<td align="right">10975</td>
+<td align="right">11845&#8211;11716</td>
+<td align="right">742&#8211;871</td>
+<td align="center">329&nbsp;[327]</td>
+<td align="center">[306]&nbsp;333</td>
+<td align="center"><i>CPLBBLMO_03619/CPLBBLMO_03620</i></td>
+<td align="left">IS110 family transposase ISSba8/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1113.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1113.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1113.html">&divide;</a></td>
+<td>NZ_KI519492.1</td>
+<td align="right">14975</td>
+<td align="right">15457</td>
+<td align="right">483</td>
+<td align="center">418&nbsp;[0]</td>
+<td align="center">[292]&nbsp;304</td>
+<td align="center"><i>CPLBBLMO_03834/nhaP_2</i></td>
+<td align="left">hypothetical protein/Na(+)/H(+) antiporter NhaP</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1114.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1114.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1114.html">&divide;</a></td>
+<td>NZ_KI519492.1</td>
+<td align="right">20984&#8211;21273</td>
+<td align="right">21286</td>
+<td align="right">14&#8211;303</td>
+<td align="center">312&nbsp;[302]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>clsC_2/&#8211;</i></td>
+<td align="left">Cardiolipin synthase C/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1115.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1115.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1115.html">&divide;</a></td>
+<td>NZ_KI519493.1</td>
+<td align="right">5414</td>
+<td align="right">5927</td>
+<td align="right">514</td>
+<td align="center">406&nbsp;[0]</td>
+<td align="center">[368]&nbsp;370</td>
+<td align="center"><i>CPLBBLMO_03875/CPLBBLMO_03876</i></td>
+<td align="left">IS1595 family transposase ISPpr6/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1116.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1116.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1116.html">&divide;</a></td>
+<td>NZ_KI519493.1</td>
+<td align="right">7112&#8211;7287</td>
+<td align="right">7382</td>
+<td align="right">96&#8211;271</td>
+<td align="center">391&nbsp;[366]</td>
+<td align="center">[357]&nbsp;374</td>
+<td align="center"><i>CPLBBLMO_03876/CPLBBLMO_03877</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_1117.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_1117.html">*</a></td>
+<td><a href="evidence/MC_PLOT_1117.html">&divide;</a></td>
+<td>NZ_KI519493.1</td>
+<td align="right">15901&#8211;16226</td>
+<td align="right">16227</td>
+<td align="right">2&#8211;327</td>
+<td align="center">374&nbsp;[363]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>CPLBBLMO_03887/&#8211;</i></td>
+<td align="left">IS110 family transposase ISCps4/&#8211;</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1134.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1134.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">65790&nbsp;=</td><td align="center" class="junction_gene">80 (0.210)</td><td rowspan="2" align="center">79 (0.550)<br>+98 bp</td>
+<td rowspan="2" align="center">32/120</td>
+<td rowspan="2" align="center">1.3</td>
+<td rowspan="2" align="center">69.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;41/&#8209;673)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00056/CPLBBLMO_00057</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1134.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">=&nbsp;65840</td>
+<td align="center" class="junction_gene">102 (0.270)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;91/&#8209;623)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00056/CPLBBLMO_00057</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1138.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1138.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">88450&nbsp;=</td><td align="center" class="junction_gene">577 (1.530)</td><td rowspan="2" align="center">193 (1.240)<br>+93 bp</td>
+<td rowspan="2" align="center">42/130</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">47.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+307/&#8209;240)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00078/CPLBBLMO_00079</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1138.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">=&nbsp;88511</td>
+<td align="center" class="junction_gene">445 (1.180)</td><td align="center" class="junction_gene">intergenic&nbsp;(+368/&#8209;179)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00078/CPLBBLMO_00079</i></td>
+<td class="junction_gene">tRNA&#8209;Leu/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1141.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1141.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">206734&nbsp;=</td><td align="center" class="junction_gene">502 (1.330)</td><td rowspan="2" align="center">606 (1.380)<br>+A</td>
+<td rowspan="2" align="center">137/314</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">70.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;250/&#8209;71)</td>
+<td align="center" class="junction_gene"><i>tktA_1/CPLBBLMO_00182</i></td>
+<td class="junction_gene">Transketolase 1/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1141.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+16)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03406</i></td>
+<td class="junction_gene">&#8211;/IS630 family transposase ISShfr2</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1144.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1144.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_gene">230460&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">302 (0.870)</td>
+<td rowspan="2" align="center">90/278</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">64.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;218/+328)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00206/CPLBBLMO_00207</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1144.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">2244&nbsp;=</td>
+<td align="center" class="junction_gene">334 (0.910)</td><td align="center" class="junction_gene">intergenic&nbsp;(+797/&#8209;25)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01627/CPLBBLMO_01628</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1154.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1154.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_repeat">483242&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">298 (0.960)<br>+48 bp</td>
+<td rowspan="2" align="center">71/220</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+66/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_00411/&#8211;</i></td>
+<td class="junction_repeat">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1154.html">?</a></td><td rowspan="1" class="junction_repeat">NZ_AXWP01000030.1</td>
+<td align="center" class="junction_repeat">87736&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;17/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_02476/&#8211;</i></td>
+<td class="junction_repeat">tRNA&#8209;Thr/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1156.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1156.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000001.1</td>
+<td align="center" class="junction_repeat">483242&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">206 (0.620)<br>+29 bp</td>
+<td rowspan="2" align="center">70/258</td>
+<td rowspan="2" align="center">1.6</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+66/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_00411/&#8211;</i></td>
+<td class="junction_repeat">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1156.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000081.1</td>
+<td align="center" class="junction_gene">=&nbsp;13316</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+117/&#8211;)</td>
+<td align="center" class="junction_gene"><i>groL/&#8211;</i></td>
+<td class="junction_gene">60 kDa chaperonin/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1161.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1161.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">29497&nbsp;=</td><td align="center" class="junction_gene">288 (0.590)</td><td rowspan="2" align="center">234 (0.840)<br>+67 bp</td>
+<td rowspan="2" align="center">69/182</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">73.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1274/1299&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>eno</i></td>
+<td class="junction_gene">Enolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1161.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">=&nbsp;29591</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(163/198&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00807</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1162.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1162.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">29497&nbsp;=</td><td align="center" class="junction_gene">288 (0.590)</td><td rowspan="2" align="center">241 (0.850)<br>+66 bp</td>
+<td rowspan="2" align="center">62/184</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">74.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1274/1299&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>eno</i></td>
+<td class="junction_gene">Enolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1162.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">=&nbsp;29591</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(163/198&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00807</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1163.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1163.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">29497&nbsp;=</td><td align="center" class="junction_gene">288 (0.590)</td><td rowspan="2" align="center">235 (0.830)<br>+66 bp</td>
+<td rowspan="2" align="center">69/184</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">73.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1274/1299&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>eno</i></td>
+<td class="junction_gene">Enolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1163.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_gene">=&nbsp;29591</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(163/198&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00807</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1166.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1166.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000008.1</td>
+<td align="center" class="junction_repeat">=&nbsp;29916</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">529 (1.150)</td>
+<td rowspan="2" align="center">122/316</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">86.3%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;163/+124)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_00807/CPLBBLMO_00808</i></td>
+<td class="junction_repeat">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1166.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000052.1</td>
+<td align="center" class="junction_gene">=&nbsp;51122</td>
+<td align="center" class="junction_gene">84 (0.190)</td><td align="center" class="junction_gene">intergenic&nbsp;(+650/&#8211;)</td>
+<td align="center" class="junction_gene"><i>tcdA/&#8211;</i></td>
+<td class="junction_gene">tRNA threonylcarbamoyladenosine dehydratase/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1199.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1199.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000027.1</td>
+<td align="center" class="junction_gene">102923&nbsp;=</td><td align="center" class="junction_gene">601 (1.140)</td><td rowspan="2" align="center">336 (0.930)</td>
+<td rowspan="2" align="center">91/246</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">59.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+41/&#8211;)</td>
+<td align="center" class="junction_gene"><i>ascG/&#8211;</i></td>
+<td class="junction_gene">HTH&#8209;type transcriptional regulator AscG/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1199.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519486.1</td>
+<td align="center" class="junction_gene">=&nbsp;78747</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(231/258&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02896</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1209.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1209.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000030.1</td>
+<td align="center" class="junction_repeat">87736&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">879 (1.860)<br>+24 bp</td>
+<td rowspan="2" align="center">107/268</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">58.6%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;17/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_02476/&#8211;</i></td>
+<td class="junction_repeat">tRNA&#8209;Thr/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1209.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000091.1</td>
+<td align="center" class="junction_gene">216&nbsp;=</td>
+<td align="center" class="junction_gene">731 (1.230)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;604)</td>
+<td align="center" class="junction_gene"><i>&#8211;/hemC</i></td>
+<td class="junction_gene">&#8211;/Porphobilinogen deaminase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1221.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1221.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000038.1</td>
+<td align="center" class="junction_gene">64426&nbsp;=</td><td align="center" class="junction_gene">556 (1.070)</td><td rowspan="2" align="center">253 (0.840)</td>
+<td rowspan="2" align="center">69/182</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">61.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(527/561&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02818</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1221.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000038.1</td>
+<td align="center" class="junction_gene">=&nbsp;77978</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+365/&#8211;)</td>
+<td align="center" class="junction_gene"><i>malP_3/&#8211;</i></td>
+<td class="junction_gene">PTS system maltose&#8209;specific EIICB component/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1225.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1225.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000041.1</td>
+<td align="center" class="junction_gene">15699&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">270 (0.830)<br>+56 bp</td>
+<td rowspan="2" align="center">75/204</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">34.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+483/+337)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02911/ubiX</i></td>
+<td class="junction_gene">hypothetical protein/Flavin prenyltransferase UbiX</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1225.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">315529&nbsp;=</td>
+<td align="center" class="junction_gene">1592 (2.850)</td><td align="center" class="junction_gene">intergenic&nbsp;(+389/+583)</td>
+<td align="center" class="junction_gene"><i>rseC/gdhB</i></td>
+<td class="junction_gene">Protein RseC/NAD&#8209;specific glutamate dehydrogenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1227.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1227.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000045.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">378 (0.820)<br>+A</td>
+<td rowspan="2" align="center">118/314</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;188)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03005</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1227.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519486.1</td>
+<td align="center" class="junction_gene">=&nbsp;62813</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;176/&#8209;3389)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02886/rnk_3</i></td>
+<td class="junction_gene">hypothetical protein/Regulator of nucleoside diphosphate kinase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1228.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1228.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000045.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">606 (1.320)<br>+G</td>
+<td rowspan="2" align="center">150/314</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;188)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03005</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1228.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519486.1</td>
+<td align="center" class="junction_gene">=&nbsp;62813</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;176/&#8209;3389)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02886/rnk_3</i></td>
+<td class="junction_gene">hypothetical protein/Regulator of nucleoside diphosphate kinase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1251.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1251.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">284 (1.040)<br>+66 bp</td>
+<td rowspan="2" align="center">69/184</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">56.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+16)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03406</i></td>
+<td class="junction_gene">&#8211;/IS630 family transposase ISShfr2</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1251.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000058.1</td>
+<td align="center" class="junction_gene">36602&nbsp;=</td>
+<td align="center" class="junction_gene">766 (1.780)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;515/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03540/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1252.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1252.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">491 (0.900)</td>
+<td rowspan="2" align="center">115/312</td>
+<td rowspan="2" align="center">0.6</td>
+<td rowspan="2" align="center">66.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+16)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03406</i></td>
+<td class="junction_gene">&#8211;/IS630 family transposase ISShfr2</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1252.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000091.1</td>
+<td align="center" class="junction_gene">=&nbsp;472</td>
+<td align="center" class="junction_gene">492 (0.840)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;348)</td>
+<td align="center" class="junction_gene"><i>&#8211;/hemC</i></td>
+<td class="junction_gene">&#8211;/Porphobilinogen deaminase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1253.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1253.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_gene">=&nbsp;125</td><td align="center" class="junction_gene">914 (1.790)</td><td rowspan="2" align="center">452 (0.920)</td>
+<td rowspan="2" align="center">106/314</td>
+<td rowspan="2" align="center">1.1</td>
+<td rowspan="2" align="center">39.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(243/351&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03406</i></td>
+<td class="junction_gene">IS630 family transposase ISShfr2</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1253.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000059.1</td>
+<td align="center" class="junction_gene">36290&nbsp;=</td>
+<td align="center" class="junction_gene">480 (1.010)</td><td align="center" class="junction_gene">coding&nbsp;(1368/1386&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>aer_2</i></td>
+<td class="junction_gene">Aerotaxis receptor</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1254.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1254.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_repeat">=&nbsp;42529</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">446 (0.890)</td>
+<td rowspan="2" align="center">114/312</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">72.0%</td>
+<td align="center" class="junction_repeat">coding&nbsp;(174/342&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_03443</i></td>
+<td class="junction_repeat">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1254.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000055.1</td>
+<td align="center" class="junction_gene">42536&nbsp;=</td>
+<td align="center" class="junction_gene">176 (0.350)</td><td align="center" class="junction_gene">coding&nbsp;(181/342&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03443</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1265.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1265.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000057.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">396 (1.100)<br>+38 bp</td>
+<td rowspan="2" align="center">75/240</td>
+<td rowspan="2" align="center">0.9</td>
+<td rowspan="2" align="center">86.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+437)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03478</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1265.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519487.1</td>
+<td align="center" class="junction_gene">=&nbsp;37785</td>
+<td align="center" class="junction_gene">164 (0.370)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;1105/+2565)</td>
+<td align="center" class="junction_gene"><i>impX/CPLBBLMO_02984</i></td>
+<td class="junction_gene">Riboflavin transporter ImpX/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1275.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1275.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000058.1</td>
+<td align="center" class="junction_gene">36543&nbsp;=</td><td align="center" class="junction_gene">763 (1.770)</td><td rowspan="2" align="center">268 (0.820)<br>+38 bp</td>
+<td rowspan="2" align="center">63/240</td>
+<td rowspan="2" align="center">2.5</td>
+<td rowspan="2" align="center">35.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;456/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03540/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1275.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000058.1</td>
+<td align="center" class="junction_gene">=&nbsp;36693</td>
+<td align="center" class="junction_gene">496 (1.150)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;606/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03540/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1279.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1279.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000058.1</td>
+<td align="center" class="junction_gene">=&nbsp;36687</td><td align="center" class="junction_gene">561 (1.300)</td><td rowspan="2" align="center">324 (0.770)<br>+29 bp</td>
+<td rowspan="2" align="center">83/258</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">40.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;600/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03540/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1279.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000091.1</td>
+<td align="center" class="junction_gene">=&nbsp;456</td>
+<td align="center" class="junction_gene">599 (1.010)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;364)</td>
+<td align="center" class="junction_gene"><i>&#8211;/hemC</i></td>
+<td class="junction_gene">&#8211;/Porphobilinogen deaminase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1283.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1283.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000059.1</td>
+<td align="center" class="junction_gene">36287&nbsp;=</td><td align="center" class="junction_gene">487 (1.020)</td><td rowspan="2" align="center">441 (1.010)</td>
+<td rowspan="2" align="center">121/310</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">42.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1365/1386&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>aer_2</i></td>
+<td class="junction_gene">Aerotaxis receptor</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1283.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">3262&nbsp;=</td>
+<td align="center" class="junction_gene">697 (1.710)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1/&#8209;533)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01628/CPLBBLMO_01629</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1284.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1284.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000059.1</td>
+<td align="center" class="junction_gene">36414&nbsp;=</td><td align="center" class="junction_gene">2746 (5.760)</td><td rowspan="2" align="center">495 (1.040)</td>
+<td rowspan="2" align="center">126/314</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">23.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(218/327&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03579</i></td>
+<td class="junction_gene">IS630 family transposase ISShfr2</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1284.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">425179&nbsp;=</td>
+<td align="center" class="junction_gene">465 (0.970)</td><td align="center" class="junction_gene">intergenic&nbsp;(+91/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00788/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1295.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1295.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000071.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">547 (1.130)<br>+GAAGA</td>
+<td rowspan="2" align="center">139/306</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;32)</td>
+<td align="center" class="junction_gene"><i>&#8211;/intQ_3</i></td>
+<td class="junction_gene">&#8211;/Putative defective protein IntQ</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1295.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">28787&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(455/465&nbsp;nt)<br>coding&nbsp;(183/267&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00435<br>CPLBBLMO_00436</i></td>
+<td class="junction_gene">IS630 family transposase ISSpu23<br>hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1296.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1296.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000074.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">182 (0.740)<br>+52 bp</td>
+<td rowspan="2" align="center">54/212</td>
+<td rowspan="2" align="center">2.0</td>
+<td rowspan="2" align="center">59.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+7)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_03837</i></td>
+<td class="junction_gene">&#8211;/tRNA&#8209;Leu</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1296.html">?</a></td><td rowspan="1" class="junction_gene">NZ_AXWP01000074.1</td>
+<td align="center" class="junction_gene">=&nbsp;525</td>
+<td align="center" class="junction_gene">372 (1.010)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;99/&#8209;433)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03840/CPLBBLMO_03841</i></td>
+<td class="junction_gene">tRNA&#8209;Pro/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1311.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1311.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000081.1</td>
+<td align="center" class="junction_gene">13211&nbsp;=</td><td align="center" class="junction_gene">292 (0.660)</td><td rowspan="2" align="center">313 (0.860)<br>+31 bp</td>
+<td rowspan="2" align="center">67/254</td>
+<td rowspan="2" align="center">2.9</td>
+<td rowspan="2" align="center">57.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+12/&#8211;)</td>
+<td align="center" class="junction_gene"><i>groL/&#8211;</i></td>
+<td class="junction_gene">60 kDa chaperonin/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1311.html">?</a></td><td rowspan="1" class="junction_repeat">NZ_AXWP01000098.1</td>
+<td align="center" class="junction_repeat">3349&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+104/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>cobC/&#8211;</i></td>
+<td class="junction_repeat">Adenosylcobalamin/alpha&#8209;ribazole phosphatase/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1320.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1320.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000092.1</td>
+<td align="center" class="junction_gene">=&nbsp;970</td><td align="center" class="junction_gene">127 (0.300)</td><td rowspan="2" align="center">178 (0.600)<br>+55 bp</td>
+<td rowspan="2" align="center">53/206</td>
+<td rowspan="2" align="center">1.8</td>
+<td rowspan="2" align="center">81.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;5/+34)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_04023/CPLBBLMO_04024</i></td>
+<td class="junction_gene">tRNA&#8209;Gly/tRNA&#8209;Gly</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1320.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">286709&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+888/+1)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00661/CPLBBLMO_00662</i></td>
+<td class="junction_gene">hypothetical protein/tRNA&#8209;Gly</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1323.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1323.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000093.1</td>
+<td align="center" class="junction_repeat">=&nbsp;5094</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">3691 (8.690)</td>
+<td rowspan="2" align="center">124/268</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+290/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>CPLBBLMO_04030/&#8211;</i></td>
+<td class="junction_repeat">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1323.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;627)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_01118</i></td>
+<td class="junction_gene">&#8211;/IS66 family transposase ISMrsp5</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1328.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1328.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_AXWP01000098.1</td>
+<td align="center" class="junction_repeat">3349&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">334 (0.710)</td>
+<td rowspan="2" align="center">84/314</td>
+<td rowspan="2" align="center">2.6</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+104/&#8211;)</td>
+<td align="center" class="junction_repeat"><i>cobC/&#8211;</i></td>
+<td class="junction_repeat">Adenosylcobalamin/alpha&#8209;ribazole phosphatase/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1328.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">=&nbsp;49764</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+303/&#8209;184)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00458/nfo</i></td>
+<td class="junction_gene">IS4 family transposase ISVbsp1/Endonuclease 4</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1330.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1330.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000101.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">347 (0.940)</td>
+<td rowspan="2" align="center">95/258</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;387)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CPLBBLMO_04052</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1330.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">=&nbsp;28747</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(415/465&nbsp;nt)<br>coding&nbsp;(223/267&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00435<br>CPLBBLMO_00436</i></td>
+<td class="junction_gene">IS630 family transposase ISSpu23<br>hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1332.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1332.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_AXWP01000109.1</td>
+<td align="center" class="junction_gene">=&nbsp;1061</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">3452 (2.100)<br>+26 bp</td>
+<td rowspan="2" align="center">190/264</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8211;)</td>
+<td align="center" class="junction_gene"><i>&#8211;/&#8211;</i></td>
+<td class="junction_gene">&#8211;/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1332.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;356521</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+624/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01430/&#8211;</i></td>
+<td class="junction_gene">tRNA&#8209;Glu/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1334.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1334.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">=&nbsp;49474</td><td align="center" class="junction_gene">423 (0.880)</td><td rowspan="2" align="center">251 (0.940)</td>
+<td rowspan="2" align="center">66/176</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">68.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+13/&#8209;474)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00458/nfo</i></td>
+<td class="junction_gene">IS4 family transposase ISVbsp1/Endonuclease 4</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1334.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">49843&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+382/&#8209;105)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00458/nfo</i></td>
+<td class="junction_gene">IS4 family transposase ISVbsp1/Endonuclease 4</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1339.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1339.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">157160&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">396 (1.040)<br>+42 bp</td>
+<td rowspan="2" align="center">68/232</td>
+<td rowspan="2" align="center">1.7</td>
+<td rowspan="2" align="center">77.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+918/&#8209;417)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00552/CPLBBLMO_00553</i></td>
+<td class="junction_gene">hypothetical protein/putative aminotransferase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1339.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;97982</td>
+<td align="center" class="junction_gene">314 (0.560)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;633/+1766)</td>
+<td align="center" class="junction_gene"><i>rpsK/CPLBBLMO_01193</i></td>
+<td class="junction_gene">30S ribosomal protein S11/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1349.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1349.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">213370&nbsp;=</td><td align="center" class="junction_gene">267 (0.550)</td><td rowspan="2" align="center">318 (0.840)<br>+29 bp</td>
+<td rowspan="2" align="center">74/248</td>
+<td rowspan="2" align="center">1.6</td>
+<td rowspan="2" align="center">56.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+686/+285)</td>
+<td align="center" class="junction_gene"><i>ybiT_1/srpC</i></td>
+<td class="junction_gene">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1349.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">=&nbsp;213467</td>
+<td align="center" class="junction_gene">339 (0.730)</td><td align="center" class="junction_gene">intergenic&nbsp;(+783/+188)</td>
+<td align="center" class="junction_gene"><i>ybiT_1/srpC</i></td>
+<td class="junction_gene">putative ABC transporter ATP&#8209;binding protein YbiT/putative chromate transport protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1353.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1353.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519477.1</td>
+<td align="center" class="junction_gene">270543&nbsp;=</td><td align="center" class="junction_gene">461 (0.960)</td><td rowspan="2" align="center">280 (0.790)<br>+37 bp</td>
+<td rowspan="2" align="center">59/242</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">61.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;815/+152)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_00651/clsA</i></td>
+<td class="junction_gene">hypothetical protein/Cardiolipin synthase A</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1353.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519487.1</td>
+<td align="center" class="junction_gene">=&nbsp;34001</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+751/+1762)</td>
+<td align="center" class="junction_gene"><i>mltF_5/impX</i></td>
+<td class="junction_gene">Membrane&#8209;bound lytic murein transglycosylase F/Riboflavin transporter ImpX</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1384.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1384.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;156576</td><td align="center" class="junction_gene">528 (0.940)</td><td rowspan="2" align="center">259 (0.830)</td>
+<td rowspan="2" align="center">59/176</td>
+<td rowspan="2" align="center">1.1</td>
+<td rowspan="2" align="center">63.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(86/1206&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01252</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1384.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">158126&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;539/+263)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01253/CPLBBLMO_01254</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1386.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1386.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;158047</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">512 (0.920)</td>
+<td rowspan="2" align="center">98/316</td>
+<td rowspan="2" align="center">1.7</td>
+<td rowspan="2" align="center">59.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;460/+342)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01253/CPLBBLMO_01254</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1386.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">178749&nbsp;=</td>
+<td align="center" class="junction_gene">697 (1.250)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;79/+114)</td>
+<td align="center" class="junction_gene"><i>gntR_1/CPLBBLMO_01271</i></td>
+<td class="junction_gene">HTH&#8209;type transcriptional regulator GntR/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1387.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1387.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">161618&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">529 (1.180)<br>+31 bp</td>
+<td rowspan="2" align="center">115/254</td>
+<td rowspan="2" align="center">0.1</td>
+<td rowspan="2" align="center">65.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;337/+544)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01255/CPLBBLMO_01256</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1387.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;178852</td>
+<td align="center" class="junction_gene">704 (1.260)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;182/+11)</td>
+<td align="center" class="junction_gene"><i>gntR_1/CPLBBLMO_01271</i></td>
+<td class="junction_gene">HTH&#8209;type transcriptional regulator GntR/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1397.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1397.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;269940</td><td align="center" class="junction_gene">46 (0.080)</td><td rowspan="2" align="center">486 (0.880)<br>+GT</td>
+<td rowspan="2" align="center">104/312</td>
+<td rowspan="2" align="center">1.3</td>
+<td rowspan="2" align="center">36.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;429/&#8209;1874)</td>
+<td align="center" class="junction_gene"><i>mioC/mtlA</i></td>
+<td class="junction_gene">Protein MioC/PTS system mannitol&#8209;specific EIICBA component</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1397.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">315510&nbsp;=</td>
+<td align="center" class="junction_gene">1671 (2.990)</td><td align="center" class="junction_gene">intergenic&nbsp;(+370/+602)</td>
+<td align="center" class="junction_gene"><i>rseC/gdhB</i></td>
+<td class="junction_gene">Protein RseC/NAD&#8209;specific glutamate dehydrogenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1401.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1401.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">=&nbsp;315646</td><td align="center" class="junction_gene">31 (0.060)</td><td rowspan="2" align="center">3010 (5.490)</td>
+<td rowspan="2" align="center">191/310</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">92.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+506/+466)</td>
+<td align="center" class="junction_gene"><i>rseC/gdhB</i></td>
+<td class="junction_gene">Protein RseC/NAD&#8209;specific glutamate dehydrogenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1401.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519478.1</td>
+<td align="center" class="junction_gene">354116&nbsp;=</td>
+<td align="center" class="junction_gene">477 (0.870)</td><td align="center" class="junction_gene">intergenic&nbsp;(+521/&#8209;1706)</td>
+<td align="center" class="junction_gene"><i>gmhB/CPLBBLMO_01430</i></td>
+<td class="junction_gene">D&#8209;glycero&#8209;beta&#8209;D&#8209;manno&#8209;heptose&#8209;1,7&#8209;bisphosphate 7&#8209;phosphatase/tRNA&#8209;Glu</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1416.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1416.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519479.1</td>
+<td align="center" class="junction_gene">=&nbsp;28103</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">162 (0.580)<br>+44 bp</td>
+<td rowspan="2" align="center">59/228</td>
+<td rowspan="2" align="center">2.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(76/76&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01451</i></td>
+<td class="junction_gene">tRNA&#8209;Val</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1416.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519479.1</td>
+<td align="center" class="junction_gene">28379&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+276/&#8209;1)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01451/CPLBBLMO_01452</i></td>
+<td class="junction_gene">tRNA&#8209;Val/tRNA&#8209;Val</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1438.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1438.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">1987&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">465 (1.700)</td>
+<td rowspan="2" align="center">79/208</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+540/&#8209;282)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01627/CPLBBLMO_01628</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1438.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">=&nbsp;11732</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;340/&#8209;1697)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01636/CPLBBLMO_01637</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1440.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1440.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">=&nbsp;3415</td><td align="center" class="junction_gene">332 (0.800)</td><td rowspan="2" align="center">149 (0.960)<br>+99 bp</td>
+<td rowspan="2" align="center">38/118</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">55.3%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+154/&#8209;380)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01628/CPLBBLMO_01629</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1440.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">3417&nbsp;=</td>
+<td align="center" class="junction_gene">313 (0.750)</td><td align="center" class="junction_gene">intergenic&nbsp;(+156/&#8209;378)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01628/CPLBBLMO_01629</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1441.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1441.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">=&nbsp;3416</td><td align="center" class="junction_gene">313 (0.750)</td><td rowspan="2" align="center">146 (0.920)<br>+98 bp</td>
+<td rowspan="2" align="center">46/120</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">55.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+155/&#8209;379)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01628/CPLBBLMO_01629</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1441.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">3417&nbsp;=</td>
+<td align="center" class="junction_gene">313 (0.750)</td><td align="center" class="junction_gene">intergenic&nbsp;(+156/&#8209;378)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_01628/CPLBBLMO_01629</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1454.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1454.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">183484&nbsp;=</td><td align="center" class="junction_gene">177 (0.430)</td><td rowspan="2" align="center">365 (0.950)</td>
+<td rowspan="2" align="center">112/292</td>
+<td rowspan="2" align="center">0.2</td>
+<td rowspan="2" align="center">71.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+190/+124)</td>
+<td align="center" class="junction_gene"><i>yfgJ/CPLBBLMO_01781</i></td>
+<td class="junction_gene">putative protein YfgJ/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1454.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519480.1</td>
+<td align="center" class="junction_gene">=&nbsp;183546</td>
+<td align="center" class="junction_gene">132 (0.340)</td><td align="center" class="junction_gene">intergenic&nbsp;(+252/+62)</td>
+<td align="center" class="junction_gene"><i>yfgJ/CPLBBLMO_01781</i></td>
+<td class="junction_gene">putative protein YfgJ/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1487.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1487.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519484.1</td>
+<td align="center" class="junction_gene">=&nbsp;13426</td><td align="center" class="junction_gene">203 (0.590)</td><td rowspan="2" align="center">103 (1.110)<br>+115 bp</td>
+<td rowspan="2" align="center">24/86</td>
+<td rowspan="2" align="center">0.8</td>
+<td rowspan="2" align="center">65.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;62/&#8209;925)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02487/CPLBBLMO_02488</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1487.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519484.1</td>
+<td align="center" class="junction_gene">13431&nbsp;=</td>
+<td align="center" class="junction_gene">197 (0.580)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;67/&#8209;920)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02487/CPLBBLMO_02488</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1488.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1488.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519484.1</td>
+<td align="center" class="junction_gene">=&nbsp;13426</td><td align="center" class="junction_gene">203 (0.590)</td><td rowspan="2" align="center">85 (0.910)<br>+115 bp</td>
+<td rowspan="2" align="center">25/86</td>
+<td rowspan="2" align="center">0.7</td>
+<td rowspan="2" align="center">61.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;62/&#8209;925)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02487/CPLBBLMO_02488</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1488.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519484.1</td>
+<td align="center" class="junction_gene">13431&nbsp;=</td>
+<td align="center" class="junction_gene">197 (0.580)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;67/&#8209;920)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02487/CPLBBLMO_02488</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1501.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1501.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519485.1</td>
+<td align="center" class="junction_gene">6454&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">295 (0.820)<br>+41 bp</td>
+<td rowspan="2" align="center">73/234</td>
+<td rowspan="2" align="center">1.6</td>
+<td rowspan="2" align="center">77.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+636/&#8209;6)</td>
+<td align="center" class="junction_gene"><i>cpoB/CPLBBLMO_02555</i></td>
+<td class="junction_gene">Cell division coordinator CpoB/tRNA&#8209;Lys</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1501.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519485.1</td>
+<td align="center" class="junction_gene">=&nbsp;6538</td>
+<td align="center" class="junction_gene">237 (0.490)</td><td align="center" class="junction_gene">intergenic&nbsp;(+3/&#8209;101)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_02555/nadA</i></td>
+<td class="junction_gene">tRNA&#8209;Lys/Quinolinate synthase A</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1517.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1517.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519487.1</td>
+<td align="center" class="junction_gene">33831&nbsp;=</td><td align="center" class="junction_gene">649 (1.460)</td><td rowspan="2" align="center">379 (1.120)<br>+38 bp</td>
+<td rowspan="2" align="center">71/240</td>
+<td rowspan="2" align="center">1.2</td>
+<td rowspan="2" align="center">48.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+581/+1932)</td>
+<td align="center" class="junction_gene"><i>mltF_5/impX</i></td>
+<td class="junction_gene">Membrane&#8209;bound lytic murein transglycosylase F/Riboflavin transporter ImpX</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1517.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519487.1</td>
+<td align="center" class="junction_gene">=&nbsp;35629</td>
+<td align="center" class="junction_gene">432 (0.970)</td><td align="center" class="junction_gene">intergenic&nbsp;(+2379/+134)</td>
+<td align="center" class="junction_gene"><i>mltF_5/impX</i></td>
+<td class="junction_gene">Membrane&#8209;bound lytic murein transglycosylase F/Riboflavin transporter ImpX</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1525.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1525.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519488.1</td>
+<td align="center" class="junction_gene">=&nbsp;41681</td><td align="center" class="junction_gene">670 (1.830)</td><td rowspan="2" align="center">347 (0.980)<br>+CGCAGT</td>
+<td rowspan="2" align="center">105/304</td>
+<td rowspan="2" align="center">0.3</td>
+<td rowspan="2" align="center">36.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+9/+1724)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03112/CPLBBLMO_03113</i></td>
+<td class="junction_gene">hypothetical protein/Glycine betaine transporter 1</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1525.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519488.1</td>
+<td align="center" class="junction_gene">41720&nbsp;=</td>
+<td align="center" class="junction_gene">581 (1.580)</td><td align="center" class="junction_gene">intergenic&nbsp;(+48/+1685)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03112/CPLBBLMO_03113</i></td>
+<td class="junction_gene">hypothetical protein/Glycine betaine transporter 1</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1532.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1532.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519490.1</td>
+<td align="center" class="junction_gene">=&nbsp;11947</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">465 (1.010)</td>
+<td rowspan="2" align="center">101/294</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;338/+554)</td>
+<td align="center" class="junction_gene"><i>clsC_1/CPLBBLMO_03589</i></td>
+<td class="junction_gene">Cardiolipin synthase C/tRNA&#8209;Phe</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1532.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519490.1</td>
+<td align="center" class="junction_gene">12264&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;655/+237)</td>
+<td align="center" class="junction_gene"><i>clsC_1/CPLBBLMO_03589</i></td>
+<td class="junction_gene">Cardiolipin synthase C/tRNA&#8209;Phe</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1534.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1534.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519490.1</td>
+<td align="center" class="junction_gene">12253&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">322 (1.080)<br>+63 bp</td>
+<td rowspan="2" align="center">52/190</td>
+<td rowspan="2" align="center">2.4</td>
+<td rowspan="2" align="center">70.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;644/+248)</td>
+<td align="center" class="junction_gene"><i>clsC_1/CPLBBLMO_03589</i></td>
+<td class="junction_gene">Cardiolipin synthase C/tRNA&#8209;Phe</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1534.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519490.1</td>
+<td align="center" class="junction_gene">=&nbsp;12492</td>
+<td align="center" class="junction_gene">455 (0.920)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;883/+9)</td>
+<td align="center" class="junction_gene"><i>clsC_1/CPLBBLMO_03589</i></td>
+<td class="junction_gene">Cardiolipin synthase C/tRNA&#8209;Phe</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1537.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1537.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_KI519492.1</td>
+<td align="center" class="junction_gene">=&nbsp;14974</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">215 (0.790)<br>+56 bp</td>
+<td rowspan="2" align="center">53/204</td>
+<td rowspan="2" align="center">2.2</td>
+<td rowspan="2" align="center">89.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;2273/&#8209;1800)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03834/nhaP_2</i></td>
+<td class="junction_gene">hypothetical protein/Na(+)/H(+) antiporter NhaP</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1537.html">?</a></td><td rowspan="1" class="junction_gene">NZ_KI519492.1</td>
+<td align="center" class="junction_gene">15451&nbsp;=</td>
+<td align="center" class="junction_gene">76 (0.180)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;2750/&#8209;1323)</td>
+<td align="center" class="junction_gene"><i>CPLBBLMO_03834/nhaP_2</i></td>
+<td class="junction_gene">hypothetical protein/Na(+)/H(+) antiporter NhaP</td>
+</tr>
+</table>
+</body></html>

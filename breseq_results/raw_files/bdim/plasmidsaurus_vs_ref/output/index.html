@@ -1,0 +1,748 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="6" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_1.html">RA</a></td><!-- Evidence -->
+<td align="right">194,298</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+96/&#8209;60)</td>
+<td align="center"><i>NKGAAHME_00197</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_00198</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_2.html">RA</a></td><!-- Evidence -->
+<td align="right">264,599</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(924/1365&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00261</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_3.html">RA</a></td><!-- Evidence -->
+<td align="right">264,610</td><!-- Position -->
+<td align="center">+GG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(935/1365&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00261</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="right">264,611</td><!-- Position -->
+<td align="center">A&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R312R</font>&nbsp;(CG<font class="mutation_in_codon">A</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>NKGAAHME_00261</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_5.html">RA</a></td><!-- Evidence -->
+<td align="right">264,629</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(954/1365&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00261</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_6.html">RA</a></td><!-- Evidence -->
+<td align="right">264,640</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(965/1365&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00261</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_7.html">RA</a></td><!-- Evidence -->
+<td align="right">549,403</td><!-- Position -->
+<td align="center">+GG</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;465/&#8209;45)</td>
+<td align="center"><i>yadH_1</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_00582</i></td>
+<td align="left">Inner membrane transport permease YadH/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_8.html">RA</a></td><!-- Evidence -->
+<td align="right">573,694</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(507/648&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00611</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_9.html">RA</a></td><!-- Evidence -->
+<td align="right">573,708</td><!-- Position -->
+<td align="center">+AC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(493/648&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_00611</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_10.html">RA</a></td><!-- Evidence -->
+<td align="right">609,362</td><!-- Position -->
+<td align="center">+CG</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;38/+847)</td>
+<td align="center"><i>dnaA</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>rpsT</i></td>
+<td align="left">Chromosomal replication initiator protein DnaA/30S ribosomal protein S20</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_173.html">MC</a>&nbsp;<a href="evidence/JC_187.html">JC</a></td><!-- Evidence -->
+<td align="right">1,133,166</td><!-- Position -->
+<td align="center">&Delta;1,276&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[NKGAAHME_01154]</i>&#8211;<i>NKGAAHME_01156</i></td>
+<td align="left"><i>[NKGAAHME_01154]</i>, <i>NKGAAHME_01155</i>, <i>NKGAAHME_01156</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_12.html">RA</a></td><!-- Evidence -->
+<td align="right">1,226,278</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(721/1008&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01248</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_13.html">RA</a></td><!-- Evidence -->
+<td align="right">1,226,302</td><!-- Position -->
+<td align="center">+GC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(745/1008&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01248</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_14.html">RA</a></td><!-- Evidence -->
+<td align="right">1,226,314</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(757/1008&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01248</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_15.html">RA</a></td><!-- Evidence -->
+<td align="right">1,226,325</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(768/1008&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01248</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_16.html">RA</a></td><!-- Evidence -->
+<td align="right">1,237,950</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(738/819&nbsp;nt)</td>
+<td align="center"><i>phoC</i>&nbsp;&larr;</td>
+<td align="left">Major phosphate&#8209;irrepressible acid phosphatase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_17.html">RA</a></td><!-- Evidence -->
+<td align="right">1,283,476</td><!-- Position -->
+<td align="center">+GC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(746/1026&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01294</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_18.html">RA</a></td><!-- Evidence -->
+<td align="right">1,283,515</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(785/1026&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01294</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="right">1,283,534</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P268P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>NKGAAHME_01294</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_20.html">RA</a></td><!-- Evidence -->
+<td align="right">1,283,537</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(807/1026&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01294</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_21.html">RA</a></td><!-- Evidence -->
+<td align="right">1,341,582</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+296/&#8209;295)</td>
+<td align="center"><i>yadH_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01352</i></td>
+<td align="left">Inner membrane transport permease YadH/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_22.html">RA</a></td><!-- Evidence -->
+<td align="right">1,341,616</td><!-- Position -->
+<td align="center">+GC</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+330/&#8209;261)</td>
+<td align="center"><i>yadH_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01352</i></td>
+<td align="left">Inner membrane transport permease YadH/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_23.html">RA</a></td><!-- Evidence -->
+<td align="right">1,341,781</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+495/&#8209;96)</td>
+<td align="center"><i>yadH_2</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01352</i></td>
+<td align="left">Inner membrane transport permease YadH/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_24.html">RA</a></td><!-- Evidence -->
+<td align="right">1,342,244</td><!-- Position -->
+<td align="center">+GC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(368/543&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01352</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_25.html">RA</a></td><!-- Evidence -->
+<td align="right">1,342,260</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(384/543&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01352</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_192.html">JC</a></td><!-- Evidence -->
+<td align="right">1,362,616</td><!-- Position -->
+<td align="center">+TCCGGCG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(524/597&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_01380</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_27.html">RA</a></td><!-- Evidence -->
+<td align="right">1,367,575</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(269/1305&nbsp;nt)</td>
+<td align="center"><i>tilS</i>&nbsp;&rarr;</td>
+<td align="left">tRNA(Ile)&#8209;lysidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_28.html">RA</a></td><!-- Evidence -->
+<td align="right">1,367,595</td><!-- Position -->
+<td align="center">(CG)<sub>3&rarr;4</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(289/1305&nbsp;nt)</td>
+<td align="center"><i>tilS</i>&nbsp;&rarr;</td>
+<td align="left">tRNA(Ile)&#8209;lysidine synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_29.html">RA</a></td><!-- Evidence -->
+<td align="right">1,696,242</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+71/&#8209;110)</td>
+<td align="center"><i>NKGAAHME_01712</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01713</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="right">1,722,803</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+183/&#8209;300)</td>
+<td align="center"><i>dapb3_1</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01734</i></td>
+<td align="left">Dipeptidyl aminopeptidase BIII/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_31.html">RA</a></td><!-- Evidence -->
+<td align="right">1,876,022</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;28/&#8209;86)</td>
+<td align="center"><i>hit</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>NKGAAHME_01900</i></td>
+<td align="left">Protein hit/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_32.html">RA</a></td><!-- Evidence -->
+<td align="right">2,171,312</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GCA</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(668&#8209;669/708&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_02172</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_33.html">RA</a></td><!-- Evidence -->
+<td align="right">2,171,329</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(652/708&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_02172</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_174.html">MC</a>&nbsp;<a href="evidence/JC_209.html">JC</a></td><!-- Evidence -->
+<td align="right">2,653,404</td><!-- Position -->
+<td align="center">&Delta;1,544&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>[NKGAAHME_02626]</i>&#8211;<i>NKGAAHME_02628</i></td>
+<td align="left"><i>[NKGAAHME_02626]</i>, <i>NKGAAHME_02627</i>, <i>NKGAAHME_02628</i></td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_35.html">RA</a></td><!-- Evidence -->
+<td align="right">2,993,738</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V89I</font>&nbsp;(<font class="mutation_in_codon">G</font>TC&rarr;<font class="mutation_in_codon">A</font>TC)&nbsp;</td>
+<td align="center"><i>NKGAAHME_02976</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_36.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,319</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1260/1410&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_37.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,345</td><!-- Position -->
+<td align="center">+AAG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1234/1410&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_38.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,426</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1153/1410&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_39.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,431</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">P383R</font>&nbsp;(C<font class="mutation_in_codon">C</font>G&rarr;C<font class="mutation_in_codon">G</font>G)&nbsp;</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_40.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,433</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G382R</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_41.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,435</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">G382R</font>&nbsp;(<font class="mutation_in_codon">G</font>GG&rarr;<font class="mutation_in_codon">C</font>GA)&nbsp;</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_42.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,437</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">D381A</font>&nbsp;(G<font class="mutation_in_codon">A</font>C&rarr;G<font class="mutation_in_codon">C</font>C)&nbsp;</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_43.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,443</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1136/1410&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SUB_44.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,458</td><!-- Position -->
+<td align="center">2&nbsp;bp&rarr;GCC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(1120&#8209;1121/1410&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_45.html">RA</a></td><!-- Evidence -->
+<td align="right">3,066,494</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">S362N</font>&nbsp;(A<font class="mutation_in_codon">G</font>C&rarr;A<font class="mutation_in_codon">A</font>C)&nbsp;</td>
+<td align="center"><i>NKGAAHME_03035</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_46.html">RA</a></td><!-- Evidence -->
+<td align="right">3,189,840</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">M47T</font>&nbsp;(A<font class="mutation_in_codon">T</font>G&rarr;A<font class="mutation_in_codon">C</font>G)&nbsp;</td>
+<td align="center"><i>regA_2</i>&nbsp;&larr;</td>
+<td align="left">Photosynthetic apparatus regulatory protein RegA</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_47.html">RA</a></td><!-- Evidence -->
+<td align="right">3,367,372</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(327/423&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03311</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_48.html">RA</a></td><!-- Evidence -->
+<td align="right">3,423,284</td><!-- Position -->
+<td align="center">(C)<sub>5&rarr;6</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(79/1377&nbsp;nt)</td>
+<td align="center"><i>divJ</i>&nbsp;&rarr;</td>
+<td align="left">Histidine protein kinase DivJ</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_219.html">JC</a></td><!-- Evidence -->
+<td align="right">3,423,316</td><!-- Position -->
+<td align="center">+CGC</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(111/1377&nbsp;nt)</td>
+<td align="center"><i>divJ</i>&nbsp;&rarr;</td>
+<td align="left">Histidine protein kinase DivJ</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_50.html">RA</a></td><!-- Evidence -->
+<td align="right">3,451,675</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;194/+22)</td>
+<td align="center"><i>gdx_2</i>&nbsp;&larr;&nbsp;/&nbsp;&larr;&nbsp;<i>btuB_30</i></td>
+<td align="left">Guanidinium exporter/Vitamin B12 transporter BtuB</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_51.html">RA</a></td><!-- Evidence -->
+<td align="right">3,528,002</td><!-- Position -->
+<td align="center">+GGCG</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(940/2631&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03481</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_52.html">RA</a></td><!-- Evidence -->
+<td align="right">3,528,019</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(923/2631&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03481</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_53.html">RA</a></td><!-- Evidence -->
+<td align="right">3,528,048</td><!-- Position -->
+<td align="center">(GCG)<sub>2&rarr;3</sub></td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(894/2631&nbsp;nt)</td>
+<td align="center"><i>NKGAAHME_03481</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_191.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_191.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;1352916</td><td align="center" class="junction_gene">63 (0.410)</td><td rowspan="2" align="center">54 (0.380)</td>
+<td rowspan="2" align="center">25/296</td>
+<td rowspan="2" align="center">2.8</td>
+<td rowspan="2" align="center">41.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(531/936&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rihA</i></td>
+<td class="junction_gene">Pyrimidine&#8209;specific ribonucleoside hydrolase RihA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_191.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">1353046&nbsp;=</td>
+<td align="center" class="junction_gene">92 (0.650)</td><td align="center" class="junction_gene">coding&nbsp;(661/936&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rihA</i></td>
+<td class="junction_gene">Pyrimidine&#8209;specific ribonucleoside hydrolase RihA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_207.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_207.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">2253707&nbsp;=</td><td align="center" class="junction_gene">15 (0.100)</td><td rowspan="2" align="center">147 (0.990)<br>+GCA</td>
+<td rowspan="2" align="center">55/310</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">90.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1480/1581&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>rcsC_9</i></td>
+<td class="junction_gene">Sensor histidine kinase RcsC</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_207.html">?</a></td><td rowspan="1" class="junction_repeat">NZ_CP035093.1</td>
+<td align="center" class="junction_repeat">=&nbsp;2253715</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">coding&nbsp;(1472/1581&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>rcsC_9</i></td>
+<td class="junction_repeat">Sensor histidine kinase RcsC</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_218.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_218.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">=&nbsp;3389009</td><td align="center" class="junction_gene">134 (0.880)</td><td rowspan="2" align="center">55 (0.390)</td>
+<td rowspan="2" align="center">26/296</td>
+<td rowspan="2" align="center">2.6</td>
+<td rowspan="2" align="center">40.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;52/+206)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_03336/murG</i></td>
+<td class="junction_gene">hypothetical protein/UDP&#8209;N&#8209;acetylglucosamine&#8209;&#8209;N&#8209;acetylmuramyl&#8209; (pentapeptide) pyrophosphoryl&#8209;undecaprenol N&#8209;acetylglucosamine transferase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_218.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP035093.1</td>
+<td align="center" class="junction_gene">3389203&nbsp;=</td>
+<td align="center" class="junction_gene">39 (0.270)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;246/+12)</td>
+<td align="center" class="junction_gene"><i>NKGAAHME_03336/murG</i></td>
+<td class="junction_gene">hypothetical protein/UDP&#8209;N&#8209;acetylglucosamine&#8209;&#8209;N&#8209;acetylmuramyl&#8209; (pentapeptide) pyrophosphoryl&#8209;undecaprenol N&#8209;acetylglucosamine transferase</td>
+</tr>
+</table>
+</body></html>

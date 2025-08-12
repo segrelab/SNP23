@@ -1,0 +1,8 @@
+Thu Jul 24 10:29:01 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/GCF_000310085.1_ASM31008v1_genomic/GCF_000310085.1_ASM31008v1_genomic.gbk -o breseq_results/raw_files/de1/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R2_001.fastq.gz
+
+Sun Jul 27 15:28:37 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/GCF_000310085.1_ASM31008v1_genomic/GCF_000310085.1_ASM31008v1_genomic.gbk -o breseq_results/raw_files/de1/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R2_001.fastq.gz
+

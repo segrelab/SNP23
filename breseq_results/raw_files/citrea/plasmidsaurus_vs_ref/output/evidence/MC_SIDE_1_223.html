@@ -1,0 +1,105 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Evidence</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutation</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="MC_PLOT_223.html">MC</a></td><!-- Evidence -->
+<td align="center">NZ_AHBZ03000026.1</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;48,157&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>PHGPABBB_03664</i>&#8211;<i>PHGPABBB_03702</i></td>
+<td align="left"><b>39 genes </b><noscript><i>PHGPABBB_03664</i>, <i>PHGPABBB_03665</i>, <i>PHGPABBB_03666</i>, <i>PHGPABBB_03667</i>, <i>PHGPABBB_03668</i>, <i>PHGPABBB_03669</i>, <i>pip</i>, <i>dtd</i>, <i>speE_4</i>, <i>PHGPABBB_03673</i>, <i>PHGPABBB_03674</i>, <i>PHGPABBB_03675</i>, <i>PHGPABBB_03676</i>, <i>nimR</i>, <i>PHGPABBB_03678</i>, <i>pgrR_5</i>, <i>mdtL_2</i>, <i>PHGPABBB_03681</i>, <i>PHGPABBB_03682</i>, <i>rdmC</i>, <i>PHGPABBB_03684</i>, <i>PHGPABBB_03685</i>, <i>susB</i>, <i>PHGPABBB_03687</i>, <i>PHGPABBB_03688</i>, <i>sthA</i>, <i>PHGPABBB_03690</i>, <i>fabR</i>, <i>PHGPABBB_03692</i>, <i>PHGPABBB_03693</i>, <i>PHGPABBB_03694</i>, <i>PHGPABBB_03695</i>, <i>PHGPABBB_03696</i>, <i>PHGPABBB_03697</i>, <i>leuA</i>, <i>leuB</i>, <i>leuC</i>, <i>leuD</i>, <i>PHGPABBB_03702</i></noscript><div id="gene_hide_DEL_94" class="hidden"><i>PHGPABBB_03664</i>, <i>PHGPABBB_03665</i>, <i>PHGPABBB_03666</i>, <i>PHGPABBB_03667</i>, <i>PHGPABBB_03668</i>, <i>PHGPABBB_03669</i>, <i>pip</i>, <i>dtd</i>, <i>speE_4</i>, <i>PHGPABBB_03673</i>, <i>PHGPABBB_03674</i>, <i>PHGPABBB_03675</i>, <i>PHGPABBB_03676</i>, <i>nimR</i>, <i>PHGPABBB_03678</i>, <i>pgrR_5</i>, <i>mdtL_2</i>, <i>PHGPABBB_03681</i>, <i>PHGPABBB_03682</i>, <i>rdmC</i>, <i>PHGPABBB_03684</i>, <i>PHGPABBB_03685</i>, <i>susB</i>, <i>PHGPABBB_03687</i>, <i>PHGPABBB_03688</i>, <i>sthA</i>, <i>PHGPABBB_03690</i>, <i>fabR</i>, <i>PHGPABBB_03692</i>, <i>PHGPABBB_03693</i>, <i>PHGPABBB_03694</i>, <i>PHGPABBB_03695</i>, <i>PHGPABBB_03696</i>, <i>PHGPABBB_03697</i>, <i>leuA</i>, <i>leuB</i>, <i>leuC</i>, <i>leuD</i>, <i>PHGPABBB_03702</i></div><input id="gene_hide_DEL_94_button" type="button" onclick="hideTog('gene_hide_DEL_94');showTog('gene_hide_DEL_94_button')" value="Show" /></td>
+</tr>
+<!-- End Table Row -->
+</table><p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Missing coverage evidence...</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="MC_SIDE_1_223.html">*</a></td>
+<td><a href="MC_SIDE_2_223.html">*</a></td>
+<td><a href="MC_PLOT_223.html">&divide;</a></td>
+<td>NZ_AHBZ03000026.1</td>
+<td align="right">1</td>
+<td align="right">48157</td>
+<td align="right">48157</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>PHGPABBB_03664&#8211;PHGPABBB_03702</i></td>
+<td align="left">PHGPABBB_03664,PHGPABBB_03665,PHGPABBB_03666,PHGPABBB_03667,PHGPABBB_03668,PHGPABBB_03669,pip,dtd,speE_4,PHGPABBB_03673,PHGPABBB_03674,PHGPABBB_03675,PHGPABBB_03676,nimR,PHGPABBB_03678,pgrR_5,mdtL_2,PHGPABBB_03681,PHGPABBB_03682,rdmC,PHGPABBB_03684,PHGPABBB_03685,susB,PHGPABBB_03687,PHGPABBB_03688,sthA,PHGPABBB_03690,fabR,PHGPABBB_03692,PHGPABBB_03693,PHGPABBB_03694,PHGPABBB_03695,PHGPABBB_03696,PHGPABBB_03697,leuA,leuB,leuC,leuD,PHGPABBB_03702</td>
+</tr>
+</table>
+<p>No reads uniquely aligned to region.<br></body></html>

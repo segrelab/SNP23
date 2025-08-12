@@ -1,0 +1,180 @@
+{
+  "options": {
+    "alignment_resolution": {
+      "add_split_junction_sides": true,
+      "junction_allow_suboptimal_matches": false,
+      "junction_minimum_side_match": 1,
+      "junction_pos_hash_neg_log10_p_value_cutoff": 3.0,
+      "minimum_alignment_resolution_pos_hash_score": 3,
+      "minimum_pr_no_read_start_per_position": 0.1
+    },
+    "candidate_junction": {
+      "highly_redundant_junction_ignore_passed_pair_limit": 200,
+      "maximum_candidate_junction_length_factor": 0.1,
+      "maximum_candidate_junctions": 5000,
+      "maximum_junction_sequence_insertion_length": 0,
+      "maximum_junction_sequence_negative_overlap_length_fraction": 0.4,
+      "maximum_junction_sequence_negative_overlap_length_minimum": 12,
+      "maximum_junction_sequence_overlap_length": 0,
+      "maximum_junction_sequence_passed_alignment_pairs_to_consider": 100000,
+      "maximum_junction_sequence_positive_overlap_length_fraction": 0.4,
+      "maximum_junction_sequence_positive_overlap_length_minimum": 12,
+      "minimum_candidate_junction_pos_hash_score": 2,
+      "minimum_candidate_junctions": 100,
+      "preprocess_junction_min_indel_split_length": 3,
+      "required_both_unique_length_per_side": 1,
+      "required_both_unique_length_per_side_fraction": 0.2,
+      "required_one_unique_length_per_side": 0,
+      "unmatched_end_length_factor": 0.1,
+      "unmatched_end_minimum_read_length": 50
+    },
+    "mutation_identification": {
+      "base_quality_cutoff": 3,
+      "consensus_frequency_cutoff": 0.8,
+      "consensus_minimum_total_coverage": 0,
+      "consensus_minimum_total_coverage_each_strand": 0,
+      "consensus_minimum_variant_coverage": 0,
+      "consensus_minimum_variant_coverage_each_strand": 0,
+      "consensus_reject_indel_homopolymer_length": 2248998784,
+      "consensus_reject_surrounding_homopolymer_length": 32764,
+      "deletion_coverage_propagation_cutoff": 0.0,
+      "deletion_coverage_seed_cutoff": 0.0,
+      "mixed_base_prediction": true,
+      "mutation_log10_e_value_cutoff": 10.0,
+      "no_indel_polymorphisms": false,
+      "polymorphism_bias_p_value_cutoff": 0.0,
+      "polymorphism_frequency_cutoff": 0.2,
+      "polymorphism_log10_e_value_cutoff": 10.0,
+      "polymorphism_minimum_total_coverage": 0,
+      "polymorphism_minimum_total_coverage_each_strand": 0,
+      "polymorphism_minimum_variant_coverage": 0,
+      "polymorphism_minimum_variant_coverage_each_strand": 0,
+      "polymorphism_prediction": false,
+      "polymorphism_reject_indel_homopolymer_length": 0,
+      "polymorphism_reject_surrounding_homopolymer_length": 0,
+      "print_mutation_identification_per_position_file": false,
+      "quality_score_trim": 0,
+      "targeted_sequencing": false,
+      "user_evidence_genome_diff_file_name": ""
+    },
+    "mutation_prediction": {
+      "size_cutoff_AMP_becomes_INS_DEL_mutation": 50
+    },
+    "output": {
+      "header_genome_diff_file_name": "",
+      "hide_circular_genome_junctions": true,
+      "max_displayed_reads": 100,
+      "max_nucleotides_to_show_in_tables": 20,
+      "max_rejected_junction_evidence_to_show": 10,
+      "max_rejected_read_alignment_evidence_to_show": 20,
+      "no_javascript": false
+    },
+    "read_alignment": {
+      "bowtie2_genome_maximum_alignments_to_consider_per_read": 2000,
+      "bowtie2_junction": "--local -i S,1,0.25 --score-min L,1,0.70 -k 2000",
+      "bowtie2_junction_maximum_alignments_to_consider_per_read": 2000,
+      "bowtie2_scoring": "--ma 1 --mp 3 --np 0 --rdg 2,3 --rfg 2,3 --ignore-quals",
+      "bowtie2_stage1": "--local -i S,1,0.25 --score-min L,1,0.9 -k 2000",
+      "bowtie2_stage2": "--local -i S,1,0.25 --score-min L,6,0.2 -k 2000",
+      "maximum_read_mismatches": -1,
+      "minimum_mapping_quality": 0,
+      "require_match_fraction": 0.9,
+      "require_match_length": 0
+    },
+    "read_file": {
+      "aligned_sam_mode": false,
+      "read_file_coverage_fold_limit": 0.0,
+      "read_file_max_N_fraction": 0.5,
+      "read_file_max_same_base_fraction": 0.9,
+      "read_file_read_length_min": 18
+    },
+    "workflow": {
+      "custom_run_name": "",
+      "genbank_field_for_seq_id": "AUTOMATIC",
+      "num_processors": 1,
+      "skip_alignment_or_plot_generation": false,
+      "skip_missing_coverage_prediction": false,
+      "skip_new_junction_prediction": false,
+      "skip_read_alignment_and_missing_coverage_prediction": false,
+      "skip_read_filtering": false
+    }
+  },
+  "reads": {
+    "read_file": {
+      "B9NRXP_16_S120_R1_001": {
+        "fraction_aligned_bases": 0.967794081015955,
+        "fraction_aligned_reads": 0.967794081015955,
+        "max_quality_score": 40,
+        "min_quality_score": 2,
+        "num_aligned_bases": 982859295,
+        "num_aligned_reads": 6181505,
+        "num_bases": 1015566549,
+        "num_filtered_same_base_reads": 20,
+        "num_filtered_too_many_N_reads": 0,
+        "num_filtered_too_short_reads": 0,
+        "num_original_bases": 1015569729,
+        "num_original_reads": 6387231,
+        "num_reads": 6387211,
+        "quality_format": "SANGER",
+        "quality_format_original": "SANGER",
+        "read_length_avg": 159.0,
+        "read_length_max": 159,
+        "read_length_min": 159
+      },
+      "B9NRXP_16_S120_R2_001": {
+        "fraction_aligned_bases": 0.958189236161327,
+        "fraction_aligned_reads": 0.958189236161327,
+        "max_quality_score": 40,
+        "min_quality_score": 2,
+        "num_aligned_bases": 969179889,
+        "num_aligned_reads": 6095471,
+        "num_bases": 1011470232,
+        "num_filtered_same_base_reads": 25783,
+        "num_filtered_too_many_N_reads": 0,
+        "num_filtered_too_short_reads": 0,
+        "num_original_bases": 1015569729,
+        "num_original_reads": 6387231,
+        "num_reads": 6361448,
+        "quality_format": "SANGER",
+        "quality_format_original": "SANGER",
+        "read_length_avg": 159.0,
+        "read_length_max": 159,
+        "read_length_min": 159
+      }
+    },
+    "total_aligned_bases": 1952039184,
+    "total_aligned_reads": 12276976,
+    "total_bases": 2027036781,
+    "total_fraction_aligned_bases": 0.963001363515959,
+    "total_fraction_aligned_reads": 0.963001363515959,
+    "total_reads": 12748659
+  },
+  "references": {
+    "reference": {
+      "Oweho_Contig158.1": {
+        "coverage_average": 486.5309,
+        "coverage_deletion_coverage_propagation_cutoff": 221.0,
+        "coverage_deletion_coverage_seed_cutoff": 0.0,
+        "coverage_dispersion": 12.94239,
+        "coverage_group": 0,
+        "coverage_nbinom_dispersion": 13.5160260583799,
+        "coverage_nbinom_mean_parameter": 485.3984,
+        "coverage_nbinom_prob_parameter": 0.073986243861967,
+        "coverage_nbinom_size_parameter": 38.78215,
+        "coverage_nbinom_variance": 6560.65742309593,
+        "coverage_variance": 6296.873,
+        "junction_only": false,
+        "length": 4000057,
+        "num_bases_mapped_to_reference": 1948071132.44701,
+        "num_features": 7100,
+        "num_genes": 3548,
+        "num_reads_mapped_to_reference": 12266547.0000381,
+        "num_repeats": 0
+      }
+    },
+    "total_features": 7100,
+    "total_genes": 3548,
+    "total_length": 4000057,
+    "total_repeats": 0
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Summary Statistics</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<h2>Read File Information</h2>
+<table border="0" cellspace="1" cellpadding="5">
+<tr ><th></th><th>read file</th><th>reads</th><th>bases</th><th>passed&nbsp;filters</th><th>average</th><th>longest</th><th>mapped</th></tr>
+<tr ><td><a href="calibration/TKDHS4_21_S53_R1_001.error_rates.pdf">errors</a></td><td>TKDHS4_21_S53_R1_001</td><td align="right">809,456</td><td align="right">128,703,504</td><td align="right">100.0%</td><td align="right">159.0&nbsp;bases</td><td align="right">159&nbsp;bases</td><td align="right">95.6%</td></tr><tr ><td><a href="calibration/TKDHS4_21_S53_R2_001.error_rates.pdf">errors</a></td><td>TKDHS4_21_S53_R2_001</td><td align="right">805,657</td><td align="right">128,099,463</td><td align="right">99.5%</td><td align="right">159.0&nbsp;bases</td><td align="right">159&nbsp;bases</td><td align="right">93.9%</td></tr><tr class="highlight_table_row"><td></td><td><b>total</b></td><td align="right"><b>1,615,113</b></td><td align="right"><b>256,802,967</b></td><td align="right">99.8%</td><td align="right">159.0&nbsp;bases</td><td align="right"><b>159</b>&nbsp;bases</td><td align="right">94.8%</td></tr></table><h2>Reference Sequence Information</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5" >
+<tr><th></th><th></th><th>seq id</th><th>length</th><th align="center">fit mean</th><th align="center">fit dispersion</th><th align="center">% mapped reads</th><th align="left">description</th></tr>
+<tr><td><a href="evidence/Ga0104642_101.overview.png">coverage</a></td><td><a href="calibration/0.unique_coverage.pdf">distribution</a></td><td>Ga0104642_101</td><td align="right">805,289</td><td align="center">30.3</td><td align="center">2.1</td><td align="center">9.9%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_102.overview.png">coverage</a></td><td><a href="calibration/1.unique_coverage.pdf">distribution</a></td><td>Ga0104642_102</td><td align="right">766,006</td><td align="center">30.5</td><td align="center">2.3</td><td align="center">9.6%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_103.overview.png">coverage</a></td><td><a href="calibration/2.unique_coverage.pdf">distribution</a></td><td>Ga0104642_103</td><td align="right">532,875</td><td align="center">32.7</td><td align="center">2.1</td><td align="center">7.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_104.overview.png">coverage</a></td><td><a href="calibration/3.unique_coverage.pdf">distribution</a></td><td>Ga0104642_104</td><td align="right">416,065</td><td align="center">33.7</td><td align="center">2.4</td><td align="center">5.7%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_105.overview.png">coverage</a></td><td><a href="calibration/4.unique_coverage.pdf">distribution</a></td><td>Ga0104642_105</td><td align="right">399,789</td><td align="center">32.9</td><td align="center">2.2</td><td align="center">5.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_106.overview.png">coverage</a></td><td><a href="calibration/5.unique_coverage.pdf">distribution</a></td><td>Ga0104642_106</td><td align="right">373,316</td><td align="center">33.3</td><td align="center">2.4</td><td align="center">5.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_107.overview.png">coverage</a></td><td><a href="calibration/6.unique_coverage.pdf">distribution</a></td><td>Ga0104642_107</td><td align="right">357,714</td><td align="center">31.4</td><td align="center">2.1</td><td align="center">4.6%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_108.overview.png">coverage</a></td><td><a href="calibration/7.unique_coverage.pdf">distribution</a></td><td>Ga0104642_108</td><td align="right">325,146</td><td align="center">34.2</td><td align="center">2.3</td><td align="center">4.6%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_109.overview.png">coverage</a></td><td><a href="calibration/8.unique_coverage.pdf">distribution</a></td><td>Ga0104642_109</td><td align="right">288,338</td><td align="center">31.9</td><td align="center">2.1</td><td align="center">3.8%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_110.overview.png">coverage</a></td><td><a href="calibration/9.unique_coverage.pdf">distribution</a></td><td>Ga0104642_110</td><td align="right">275,910</td><td align="center">33.6</td><td align="center">2.2</td><td align="center">3.8%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_111.overview.png">coverage</a></td><td><a href="calibration/10.unique_coverage.pdf">distribution</a></td><td>Ga0104642_111</td><td align="right">266,161</td><td align="center">30.8</td><td align="center">2.0</td><td align="center">3.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_112.overview.png">coverage</a></td><td><a href="calibration/11.unique_coverage.pdf">distribution</a></td><td>Ga0104642_112</td><td align="right">233,195</td><td align="center">32.7</td><td align="center">2.3</td><td align="center">3.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_113.overview.png">coverage</a></td><td><a href="calibration/12.unique_coverage.pdf">distribution</a></td><td>Ga0104642_113</td><td align="right">201,699</td><td align="center">33.6</td><td align="center">2.5</td><td align="center">2.8%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_114.overview.png">coverage</a></td><td><a href="calibration/13.unique_coverage.pdf">distribution</a></td><td>Ga0104642_114</td><td align="right">192,020</td><td align="center">33.6</td><td align="center">2.1</td><td align="center">2.7%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_115.overview.png">coverage</a></td><td><a href="calibration/14.unique_coverage.pdf">distribution</a></td><td>Ga0104642_115</td><td align="right">186,477</td><td align="center">30.5</td><td align="center">2.0</td><td align="center">2.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_116.overview.png">coverage</a></td><td><a href="calibration/15.unique_coverage.pdf">distribution</a></td><td>Ga0104642_116</td><td align="right">167,348</td><td align="center">32.7</td><td align="center">2.5</td><td align="center">2.2%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_117.overview.png">coverage</a></td><td><a href="calibration/16.unique_coverage.pdf">distribution</a></td><td>Ga0104642_117</td><td align="right">166,348</td><td align="center">31.7</td><td align="center">2.0</td><td align="center">2.4%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_118.overview.png">coverage</a></td><td><a href="calibration/17.unique_coverage.pdf">distribution</a></td><td>Ga0104642_118</td><td align="right">145,385</td><td align="center">34.7</td><td align="center">2.6</td><td align="center">2.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_119.overview.png">coverage</a></td><td><a href="calibration/18.unique_coverage.pdf">distribution</a></td><td>Ga0104642_119</td><td align="right">140,658</td><td align="center">36.8</td><td align="center">2.8</td><td align="center">2.2%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_120.overview.png">coverage</a></td><td><a href="calibration/19.unique_coverage.pdf">distribution</a></td><td>Ga0104642_120</td><td align="right">127,391</td><td align="center">33.9</td><td align="center">2.7</td><td align="center">1.7%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_121.overview.png">coverage</a></td><td><a href="calibration/20.unique_coverage.pdf">distribution</a></td><td>Ga0104642_121</td><td align="right">126,746</td><td align="center">58.4</td><td align="center">2.4</td><td align="center">3.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_122.overview.png">coverage</a></td><td><a href="calibration/21.unique_coverage.pdf">distribution</a></td><td>Ga0104642_122</td><td align="right">96,350</td><td align="center">31.5</td><td align="center">2.3</td><td align="center">1.2%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_123.overview.png">coverage</a></td><td><a href="calibration/22.unique_coverage.pdf">distribution</a></td><td>Ga0104642_123</td><td align="right">78,706</td><td align="center">60.3</td><td align="center">2.5</td><td align="center">1.9%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_124.overview.png">coverage</a></td><td><a href="calibration/23.unique_coverage.pdf">distribution</a></td><td>Ga0104642_124</td><td align="right">67,578</td><td align="center">33.5</td><td align="center">2.3</td><td align="center">0.9%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_125.overview.png">coverage</a></td><td><a href="calibration/24.unique_coverage.pdf">distribution</a></td><td>Ga0104642_125</td><td align="right">59,427</td><td align="center">37.9</td><td align="center">2.7</td><td align="center">0.9%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_126.overview.png">coverage</a></td><td><a href="calibration/25.unique_coverage.pdf">distribution</a></td><td>Ga0104642_126</td><td align="right">59,111</td><td align="center">40.1</td><td align="center">1.9</td><td align="center">1.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_127.overview.png">coverage</a></td><td><a href="calibration/26.unique_coverage.pdf">distribution</a></td><td>Ga0104642_127</td><td align="right">48,088</td><td align="center">58.2</td><td align="center">2.6</td><td align="center">1.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_128.overview.png">coverage</a></td><td><a href="calibration/27.unique_coverage.pdf">distribution</a></td><td>Ga0104642_128</td><td align="right">47,628</td><td align="center">34.0</td><td align="center">2.0</td><td align="center">0.7%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_129.overview.png">coverage</a></td><td><a href="calibration/28.unique_coverage.pdf">distribution</a></td><td>Ga0104642_129</td><td align="right">42,897</td><td align="center">30.5</td><td align="center">2.2</td><td align="center">0.5%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_130.overview.png">coverage</a></td><td><a href="calibration/29.unique_coverage.pdf">distribution</a></td><td>Ga0104642_130</td><td align="right">42,300</td><td align="center">34.2</td><td align="center">2.2</td><td align="center">0.6%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_131.overview.png">coverage</a></td><td><a href="calibration/30.unique_coverage.pdf">distribution</a></td><td>Ga0104642_131</td><td align="right">34,982</td><td align="center">34.8</td><td align="center">2.2</td><td align="center">0.5%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_132.overview.png">coverage</a></td><td><a href="calibration/31.unique_coverage.pdf">distribution</a></td><td>Ga0104642_132</td><td align="right">29,047</td><td align="center">31.3</td><td align="center">2.2</td><td align="center">0.4%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_133.overview.png">coverage</a></td><td><a href="calibration/32.unique_coverage.pdf">distribution</a></td><td>Ga0104642_133</td><td align="right">23,143</td><td align="center">39.2</td><td align="center">1.2</td><td align="center">0.4%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_134.overview.png">coverage</a></td><td><a href="calibration/33.unique_coverage.pdf">distribution</a></td><td>Ga0104642_134</td><td align="right">18,570</td><td align="center">32.7</td><td align="center">2.1</td><td align="center">0.2%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_135.overview.png">coverage</a></td><td><a href="calibration/34.unique_coverage.pdf">distribution</a></td><td>Ga0104642_135</td><td align="right">17,491</td><td align="center">39.6</td><td align="center">1.6</td><td align="center">0.3%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_136.overview.png">coverage</a></td><td><a href="calibration/35.unique_coverage.pdf">distribution</a></td><td>Ga0104642_136</td><td align="right">8,443</td><td align="center">38.5</td><td align="center">2.1</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_137.overview.png">coverage</a></td><td><a href="calibration/36.unique_coverage.pdf">distribution</a></td><td>Ga0104642_137</td><td align="right">7,006</td><td align="center">39.7</td><td align="center">1.0</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_138.overview.png">coverage</a></td><td><a href="calibration/37.unique_coverage.pdf">distribution</a></td><td>Ga0104642_138</td><td align="right">6,728</td><td align="center">51.8</td><td align="center">2.9</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_139.overview.png">coverage</a></td><td><a href="calibration/38.unique_coverage.pdf">distribution</a></td><td>Ga0104642_139</td><td align="right">6,482</td><td align="center">41.5</td><td align="center">2.5</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_140.overview.png">coverage</a></td><td><a href="calibration/39.unique_coverage.pdf">distribution</a></td><td>Ga0104642_140</td><td align="right">5,346</td><td align="center">225.0</td><td align="center">4.0</td><td align="center">0.5%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_141.overview.png">coverage</a></td><td><a href="calibration/40.unique_coverage.pdf">distribution</a></td><td>Ga0104642_141</td><td align="right">4,848</td><td align="center">115.6</td><td align="center">4.1</td><td align="center">0.2%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_142.overview.png">coverage</a></td><td><a href="calibration/41.unique_coverage.pdf">distribution</a></td><td>Ga0104642_142</td><td align="right">4,374</td><td align="center">44.4</td><td align="center">1.3</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_143.overview.png">coverage</a></td><td><a href="calibration/42.unique_coverage.pdf">distribution</a></td><td>Ga0104642_143</td><td align="right">2,571</td><td align="center">119.6</td><td align="center">4.2</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_144.overview.png">coverage</a></td><td><a href="calibration/43.unique_coverage.pdf">distribution</a></td><td>Ga0104642_144</td><td align="right">2,543</td><td align="center">38.4</td><td align="center">1.0</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_145.overview.png">coverage</a></td><td><a href="calibration/44.unique_coverage.pdf">distribution</a></td><td>Ga0104642_145</td><td align="right">2,358</td><td align="center">59.3</td><td align="center">2.5</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_146.overview.png">coverage</a></td><td><a href="calibration/45.unique_coverage.pdf">distribution</a></td><td>Ga0104642_146</td><td align="right">2,298</td><td align="center">38.2</td><td align="center">5.8</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_147.overview.png">coverage</a></td><td><a href="calibration/46.unique_coverage.pdf">distribution</a></td><td>Ga0104642_147</td><td align="right">1,832</td><td align="center">111.2</td><td align="center">1.5</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_148.overview.png">coverage</a></td><td><a href="calibration/47.unique_coverage.pdf">distribution</a></td><td>Ga0104642_148</td><td align="right">1,547</td><td align="center">57.5</td><td align="center">1.0</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_149.overview.png">coverage</a></td><td><a href="calibration/48.unique_coverage.pdf">distribution</a></td><td>Ga0104642_149</td><td align="right">1,385</td><td align="center">89.5</td><td align="center">1.7</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_150.overview.png">coverage</a></td><td><a href="calibration/49.unique_coverage.pdf">distribution</a></td><td>Ga0104642_150</td><td align="right">1,216</td><td align="center">42.1</td><td align="center">2.3</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_151.overview.png">coverage</a></td><td><a href="calibration/50.unique_coverage.pdf">distribution</a></td><td>Ga0104642_151</td><td align="right">1,115</td><td align="center">66.4</td><td align="center">2.8</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_152.overview.png">coverage</a></td><td><a href="calibration/51.unique_coverage.pdf">distribution</a></td><td>Ga0104642_152</td><td align="right">1,102</td><td align="center">303.9</td><td align="center">5.1</td><td align="center">0.1%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_153.overview.png">coverage</a></td><td><a href="calibration/52.unique_coverage.pdf">distribution</a></td><td>Ga0104642_153</td><td align="right">1,051</td><td align="center">51.6</td><td align="center">1.2</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr><td><a href="evidence/Ga0104642_154.overview.png">coverage</a></td><td><a href="calibration/53.unique_coverage.pdf">distribution</a></td><td>Ga0104642_154</td><td align="right">1,012</td><td align="center">78.8</td><td align="center">1.0</td><td align="center">0.0%</td><td>Genus species strain strain.</td></tr><tr class="highlight_table_row"><td></td><td></td><td><b>total</b></td><td align="right"><b>7,222,451</b></td><td></td><td></td><td align="center">100.0%</td><td></td></tr>
+</table>
+<p><b>fit dispersion</b> is the ratio of the variance to the mean for the negative binomial fit. It is =1 for Poisson and >1 for over-dispersed data.
+<h2>New Junction Evidence</h2>
+<p>
+<h3>Junction Candidates Tested</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">limit</th><th align="center">actual</th></tr><tr><td>Number of alignment pairs examined for constructing junction candidates</td><td align="center">&le;&nbsp;100000</td><td align="center">6421</td></tr><tr><td>Coverage evenness (position-hash) score of junction candidates</td><td align="center">&ge;&nbsp;2</td><td align="center">&ge;&nbsp;2</td></tr><tr><td>Test this many junction candidates (n). May be smaller if not enough passed the coverage evenness threshold</td><td align="center">100&nbsp;&le;&nbsp;n&nbsp;&le;&nbsp;5000</td><td align="center">373</td></tr><tr><td>Total length of all junction candidates (factor times the reference genome length)</td><td align="center">&le;&nbsp;0.1</td><td align="center">0.017</td></tr></table>
+<h3>Junction Skew Score Calculation</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr ><th>reference sequence</th><th>pr(no read start)</th></tr>
+<tr >
+<td>Ga0104642_101</td><td align="center">0.93188</td></tr><tr >
+<td>Ga0104642_102</td><td align="center">0.93098</td></tr><tr >
+<td>Ga0104642_103</td><td align="center">0.92716</td></tr><tr >
+<td>Ga0104642_104</td><td align="center">0.92581</td></tr><tr >
+<td>Ga0104642_105</td><td align="center">0.92770</td></tr><tr >
+<td>Ga0104642_106</td><td align="center">0.92409</td></tr><tr >
+<td>Ga0104642_107</td><td align="center">0.92983</td></tr><tr >
+<td>Ga0104642_108</td><td align="center">0.92414</td></tr><tr >
+<td>Ga0104642_109</td><td align="center">0.92875</td></tr><tr >
+<td>Ga0104642_110</td><td align="center">0.92567</td></tr><tr >
+<td>Ga0104642_111</td><td align="center">0.93103</td></tr><tr >
+<td>Ga0104642_112</td><td align="center">0.92700</td></tr><tr >
+<td>Ga0104642_113</td><td align="center">0.92603</td></tr><tr >
+<td>Ga0104642_114</td><td align="center">0.92506</td></tr><tr >
+<td>Ga0104642_115</td><td align="center">0.93216</td></tr><tr >
+<td>Ga0104642_116</td><td align="center">0.92815</td></tr><tr >
+<td>Ga0104642_117</td><td align="center">0.92409</td></tr><tr >
+<td>Ga0104642_118</td><td align="center">0.92398</td></tr><tr >
+<td>Ga0104642_119</td><td align="center">0.91814</td></tr><tr >
+<td>Ga0104642_120</td><td align="center">0.92739</td></tr><tr >
+<td>Ga0104642_121</td><td align="center">0.88466</td></tr><tr >
+<td>Ga0104642_122</td><td align="center">0.93099</td></tr><tr >
+<td>Ga0104642_123</td><td align="center">0.88141</td></tr><tr >
+<td>Ga0104642_124</td><td align="center">0.92699</td></tr><tr >
+<td>Ga0104642_125</td><td align="center">0.91916</td></tr><tr >
+<td>Ga0104642_126</td><td align="center">0.91298</td></tr><tr >
+<td>Ga0104642_127</td><td align="center">0.88591</td></tr><tr >
+<td>Ga0104642_128</td><td align="center">0.92438</td></tr><tr >
+<td>Ga0104642_129</td><td align="center">0.93141</td></tr><tr >
+<td>Ga0104642_130</td><td align="center">0.92467</td></tr><tr >
+<td>Ga0104642_131</td><td align="center">0.92376</td></tr><tr >
+<td>Ga0104642_132</td><td align="center">0.92961</td></tr><tr >
+<td>Ga0104642_133</td><td align="center">0.91444</td></tr><tr >
+<td>Ga0104642_134</td><td align="center">0.92671</td></tr><tr >
+<td>Ga0104642_135</td><td align="center">0.91573</td></tr><tr >
+<td>Ga0104642_136</td><td align="center">0.91762</td></tr><tr >
+<td>Ga0104642_137</td><td align="center">0.91293</td></tr><tr >
+<td>Ga0104642_138</td><td align="center">0.90117</td></tr><tr >
+<td>Ga0104642_139</td><td align="center">0.91230</td></tr><tr >
+<td>Ga0104642_140</td><td align="center">0.72737</td></tr><tr >
+<td>Ga0104642_141</td><td align="center">0.81353</td></tr><tr >
+<td>Ga0104642_142</td><td align="center">0.91202</td></tr><tr >
+<td>Ga0104642_143</td><td align="center">0.81641</td></tr><tr >
+<td>Ga0104642_144</td><td align="center">0.92175</td></tr><tr >
+<td>Ga0104642_145</td><td align="center">0.89483</td></tr><tr >
+<td>Ga0104642_146</td><td align="center">0.92549</td></tr><tr >
+<td>Ga0104642_147</td><td align="center">0.83024</td></tr><tr >
+<td>Ga0104642_148</td><td align="center">0.88462</td></tr><tr >
+<td>Ga0104642_149</td><td align="center">0.85415</td></tr><tr >
+<td>Ga0104642_150</td><td align="center">0.92621</td></tr><tr >
+<td>Ga0104642_151</td><td align="center">0.88117</td></tr><tr >
+<td>Ga0104642_152</td><td align="center">0.72641</td></tr><tr >
+<td>Ga0104642_153</td><td align="center">0.90818</td></tr><tr >
+<td>Ga0104642_154</td><td align="center">0.87401</td></tr></table><p><b>pr(no read start)</b> is the probability that there will not be an aligned read whose first base matches a given position on a given strand.
+<h3>Final Junction Predictions</h3>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th align="center">option</th><th align="center">value</th></tr><tr><td>Coverage evenness (position-hash) score of predicted junctions must be</td><td align="center">&ge;&nbsp;3</td></tr><tr><td>Minimum probablilty assigned that no mapped read will start at a given position and strand for junction prediction</td><td align="center">0.1</td></tr><tr><td>Junction allow suboptimal matches</td><td align="center">FALSE</td></tr><tr><td>Skew score of predicted junction (&minus;log10 probability of unusual coverage evenness) must be</td><td align="center">&le;&nbsp;3</td></tr><tr><td>Number of bases that at least one read must overlap each uniquely aligned side of a predicted junction</td><td align="center">&ge;&nbsp;1</td></tr></table>
+<h2>Read Alignment Evidence</h2>
+<p>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>option</th><th>value</th></tr><tr><td>Mode</td><td>Consensus/Mixed Base</td></tr><tr><td>Ploidy</td><td>1 (haploid)</td></tr><tr><td>Consensus mutation E-value cutoff</td><td>10</td></tr><tr><td>Consensus frequency cutoff</td><td>0.8</td></tr><tr><td>Consensus minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Consensus minimum variant coverage</td><td>OFF</td></tr><tr><td>Consensus minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism E-value cutoff</td><td>10</td></tr><tr><td>Polymorphism frequency cutoff</td><td>0.2</td></tr><tr><td>Polymorphism minimum variant coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage each strand</td><td>OFF</td></tr><tr><td>Polymorphism minimum variant coverage</td><td>OFF</td></tr><tr><td>Polymorphism minimum total coverage</td><td>OFF</td></tr><tr><td>Polymorphism bias cutoff</td><td>OFF</td></tr><tr><td>Predict indel polymorphisms</td><td>YES</td></tr><tr><td>Skip indel polymorphisms in homopolymers runs of</td><td>OFF</td></tr><tr><td>Skip base substitutions when they create a homopolymer flanked on each side by</td><td>OFF</td></tr></table><p>
+<h2>Software Versions</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>program</th><th>version</th></tr>
+<tr><td>bowtie2</td><td>2.4.1</td></tr>
+<tr><td>R</td><td>4.3.1</td></tr>
+</table><p>
+<h2>Execution Times</h2>
+<table border="0" cellspacing="1" cellpadding="5">
+<tr><th>step</th><th>start</th><th>end</th><th>elapsed</th></tr>
+<tr><td>Read and reference sequence file input</td><td>09:53:34&nbsp;24&nbsp;Jul&nbsp;2025</td><td>09:53:57&nbsp;24&nbsp;Jul&nbsp;2025</td><td>23&nbsp;seconds</td></tr>
+<tr><td>Read alignment to reference genome</td><td>09:53:57&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:00:10&nbsp;24&nbsp;Jul&nbsp;2025</td><td>6&nbsp;minutes&nbsp;13&nbsp;seconds</td></tr>
+<tr><td>Preprocessing alignments for candidate junction identification</td><td>10:00:10&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:00:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>20&nbsp;seconds</td></tr>
+<tr><td>Preliminary analysis of coverage distribution</td><td>10:00:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:01:52&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;minute&nbsp;22&nbsp;seconds</td></tr>
+<tr><td>Identifying junction candidates</td><td>10:01:52&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:02:06&nbsp;24&nbsp;Jul&nbsp;2025</td><td>14&nbsp;seconds</td></tr>
+<tr><td>Re-alignment to junction candidates</td><td>10:02:06&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:03:35&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;minute&nbsp;29&nbsp;seconds</td></tr>
+<tr><td>Resolving best read alignments</td><td>10:03:35&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:04:04&nbsp;24&nbsp;Jul&nbsp;2025</td><td>29&nbsp;seconds</td></tr>
+<tr><td>Creating BAM files</td><td>10:04:04&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:04:53&nbsp;24&nbsp;Jul&nbsp;2025</td><td>49&nbsp;seconds</td></tr>
+<tr><td>Tabulating error counts</td><td>10:04:53&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:05:17&nbsp;24&nbsp;Jul&nbsp;2025</td><td>24&nbsp;seconds</td></tr>
+<tr><td>Re-calibrating base error rates</td><td>10:05:17&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:05:42&nbsp;24&nbsp;Jul&nbsp;2025</td><td>25&nbsp;seconds</td></tr>
+<tr><td>Examining read alignment evidence</td><td>10:05:42&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:10:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>4&nbsp;minutes&nbsp;47&nbsp;seconds</td></tr>
+<tr><td>Polymorphism statistics</td><td>10:10:29&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;second</td></tr>
+<tr><td>Output</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:11:36&nbsp;24&nbsp;Jul&nbsp;2025</td><td>1&nbsp;minute&nbsp;6&nbsp;seconds</td></tr>
+<tr><td>Output :: Mutation Prediction</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr><td>Output :: Mutation Annotation</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>10:10:30&nbsp;24&nbsp;Jul&nbsp;2025</td><td>0&nbsp;seconds</td></tr>
+<tr class="highlight_table_row">
+<td colspan="3" ><b>Total</b></td>
+<td><b>18&nbsp;minutes&nbsp;2&nbsp;seconds</b></td>
+</tr>
+</table></body></html>

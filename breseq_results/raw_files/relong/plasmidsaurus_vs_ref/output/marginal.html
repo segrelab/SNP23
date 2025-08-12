@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 113 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_636.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,473</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">67.5%
+</td><td align="center">68.0
+/&nbsp;122.6
+</td><td align="center">167</td><td align="center"><font class="snp_type_synonymous">A156A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00728</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_851.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">2,332,862</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">61.5%
+</td><td align="center">&#8209;3.9
+/&nbsp;10.7
+</td><td align="center">14</td><td align="center">intergenic&nbsp;(+64/&#8209;170)</td><td align="center"><i>CEIEPPOK_02356/cysE</i></td><td align="left">hypothetical protein/Serine acetyltransferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_992.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">2,782,312</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">61.3%
+</td><td align="center">7.1
+/&nbsp;26.3
+</td><td align="center">34</td><td align="center">intergenic&nbsp;(+34/&#8209;137)</td><td align="center"><i>ccmE/CEIEPPOK_02833</i></td><td align="left">Cytochrome c&#8209;type biogenesis protein CcmE/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_625.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,362</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">59.7%
+</td><td align="center">51.2
+/&nbsp;191.6
+</td><td align="center">188</td><td align="center"><font class="snp_type_nonsynonymous">T16M</font>&nbsp;(A<font class="mutation_in_codon">C</font>G&rarr;A<font class="mutation_in_codon">T</font>G)&nbsp;</td><td align="center"><i>CEIEPPOK_00727</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_639.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,479</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">59.0%
+</td><td align="center">17.5
+/&nbsp;138.3
+</td><td align="center">169</td><td align="center"><font class="snp_type_synonymous">E154E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00728</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1124.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,413,027</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">58.6%
+</td><td align="center">137.6
+/&nbsp;inf
+</td><td align="center">346</td><td align="center"><font class="snp_type_nonsynonymous">H183Q</font>&nbsp;(CA<font class="mutation_in_codon">T</font>&rarr;CA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03440</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_632.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,432</td><td align="right">0</td><td align="center">C</td><td align="center">.</td><td align="right">55.5%
+</td><td align="center">104.9
+/&nbsp;inf
+</td><td align="center">203</td><td align="center">coding&nbsp;(509/516&nbsp;nt)</td><td align="center"><i>CEIEPPOK_00728</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_628.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,379</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">54.5%
+</td><td align="center">77.2
+/&nbsp;219.9
+</td><td align="center">208</td><td align="center"><font class="snp_type_nonsynonymous">D10E</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00727</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1160.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,766</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">53.9%
+</td><td align="center">19.9
+/&nbsp;241.0
+</td><td align="center">180</td><td align="center"><font class="snp_type_synonymous">E295E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_626.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,370</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">51.6%
+</td><td align="center">83.4
+/&nbsp;201.2
+</td><td align="center">192</td><td align="center"><font class="snp_type_synonymous">A13A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00727</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_627.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,373</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">50.3%
+</td><td align="center">100.2
+/&nbsp;222.3
+</td><td align="center">196</td><td align="center"><font class="snp_type_nonsynonymous">E12D</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00727</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_759.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">1,773,508</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">50.0%
+</td><td align="center">232.1
+/&nbsp;206.2
+</td><td align="center">126</td><td align="center">noncoding&nbsp;(77/77&nbsp;nt)</td><td align="center"><i>CEIEPPOK_01785</i></td><td align="left">tRNA&#8209;His</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1151.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,709</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">49.6%
+</td><td align="center">38.1
+/&nbsp;178.3
+</td><td align="center">121</td><td align="center"><font class="snp_type_synonymous">E276E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1157.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,754</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">49.1%
+</td><td align="center">89.0
+/&nbsp;223.1
+</td><td align="center">161</td><td align="center"><font class="snp_type_synonymous">E291E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1158.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,757</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">48.4%
+</td><td align="center">103.7
+/&nbsp;205.0
+</td><td align="center">161</td><td align="center"><font class="snp_type_synonymous">E292E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1159.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,760</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">47.8%
+</td><td align="center">123.4
+/&nbsp;208.5
+</td><td align="center">161</td><td align="center"><font class="snp_type_synonymous">P293P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_635.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,464</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">46.8%
+</td><td align="center">44.4
+/&nbsp;223.8
+</td><td align="center">178</td><td align="center"><font class="snp_type_nonsynonymous">E159D</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00728</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_643.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">733,548</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">45.0%
+</td><td align="center">127.8
+/&nbsp;213.8
+</td><td align="center">158</td><td align="center"><font class="snp_type_synonymous">T131T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_00728</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_782.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">1,893,415</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">44.9%
+</td><td align="center">43.9
+/&nbsp;38.4
+</td><td align="center">83</td><td align="center">intergenic&nbsp;(+116/+6)</td><td align="center"><i>CEIEPPOK_01917/purK</i></td><td align="left">hypothetical protein/N5&#8209;carboxyaminoimidazole ribonucleotide synthase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1152.html">*</a></td><td align="center">NZ_CP004372.1</td><td align="right">3,473,715</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">44.6%
+</td><td align="center">99.7
+/&nbsp;164.6
+</td><td align="center">130</td><td align="center"><font class="snp_type_synonymous">G278G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CEIEPPOK_03503</i></td><td align="left">hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 44 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1181.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1181.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">733299&nbsp;=</td><td align="center" class="junction_gene">167 (0.870)</td><td rowspan="2" align="center">46 (0.350)<br>+50 bp</td>
+<td rowspan="2" align="center">17/216</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">32.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(110/405&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00727</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1181.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;733564</td>
+<td align="center" class="junction_gene">118 (0.610)</td><td align="center" class="junction_gene">coding&nbsp;(377/516&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00728</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1180.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1180.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">733239&nbsp;=</td><td align="center" class="junction_gene">110 (0.570)</td><td rowspan="2" align="center">30 (0.160)</td>
+<td rowspan="2" align="center">22/300</td>
+<td rowspan="2" align="center">4.8</td>
+<td rowspan="2" align="center">20.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(170/405&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00727</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1180.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;733599</td>
+<td align="center" class="junction_gene">123 (0.670)</td><td align="center" class="junction_gene">coding&nbsp;(342/516&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00728</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1219.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1219.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">3473581&nbsp;=</td><td align="center" class="junction_gene">157 (0.810)</td><td rowspan="2" align="center">59 (0.310)</td>
+<td rowspan="2" align="center">20/312</td>
+<td rowspan="2" align="center">5.5</td>
+<td rowspan="2" align="center">24.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(700/1431&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_03503</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1219.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;3473868</td>
+<td align="center" class="junction_gene">202 (1.060)</td><td align="center" class="junction_gene">coding&nbsp;(987/1431&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_03503</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1183.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1183.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;733521</td><td align="center" class="junction_gene">180 (0.930)</td><td rowspan="2" align="center">5 (0.060)<br>+90 bp</td>
+<td rowspan="2" align="center">3/136</td>
+<td rowspan="2" align="center">7.0</td>
+<td rowspan="2" align="center">6.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(420/516&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00728</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1183.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">733564&nbsp;=</td>
+<td align="center" class="junction_gene">161 (0.840)</td><td align="center" class="junction_gene">coding&nbsp;(377/516&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00728</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1217.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1217.html">?</a></td>
+<td rowspan="1" class="junction_repeat">NZ_CP004372.1</td>
+<td align="center" class="junction_repeat">3400327&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">15 (0.080)<br>+A</td>
+<td rowspan="2" align="center">13/314</td>
+<td rowspan="2" align="center">7.7</td>
+<td rowspan="2" align="center">36.7%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;915/&#8209;35)</td>
+<td align="center" class="junction_repeat"><i>xerC_2/CEIEPPOK_03429</i></td>
+<td class="junction_repeat">Tyrosine recombinase XerC/IS3 family transposase ISMamg1</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1217.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;3555081</td>
+<td align="center" class="junction_gene">26 (0.130)</td><td align="center" class="junction_gene">intergenic&nbsp;(+22/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_03588/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1189.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1189.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;1190983</td><td align="center" class="junction_gene">57 (0.300)</td><td rowspan="2" align="center">11 (0.060)</td>
+<td rowspan="2" align="center">10/298</td>
+<td rowspan="2" align="center">8.5</td>
+<td rowspan="2" align="center">14.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+39/&#8209;70)</td>
+<td align="center" class="junction_gene"><i>cca/eamB_1</i></td>
+<td class="junction_gene">CCA&#8209;adding enzyme/Cysteine/O&#8209;acetylserine efflux protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1189.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">1191030&nbsp;=</td>
+<td align="center" class="junction_gene">76 (0.420)</td><td align="center" class="junction_gene">intergenic&nbsp;(+86/&#8209;23)</td>
+<td align="center" class="junction_gene"><i>cca/eamB_1</i></td>
+<td class="junction_gene">CCA&#8209;adding enzyme/Cysteine/O&#8209;acetylserine efflux protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1182.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1182.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">733383&nbsp;=</td><td align="center" class="junction_gene">207 (1.070)</td><td rowspan="2" align="center">9 (0.070)<br>+44 bp</td>
+<td rowspan="2" align="center">5/220</td>
+<td rowspan="2" align="center">8.8</td>
+<td rowspan="2" align="center">5.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(26/405&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00727</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1182.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;733386</td>
+<td align="center" class="junction_gene">204 (1.090)</td><td align="center" class="junction_gene">coding&nbsp;(23/405&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00727</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1177.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1177.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">516476&nbsp;=</td><td align="center" class="junction_gene">202 (1.050)</td><td rowspan="2" align="center">10 (0.060)</td>
+<td rowspan="2" align="center">7/276</td>
+<td rowspan="2" align="center">9.3</td>
+<td rowspan="2" align="center">5.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;309/+961)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00522/mshA_1</i></td>
+<td class="junction_gene">hypothetical protein/D&#8209;inositol&#8209;3&#8209;phosphate glycosyltransferase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1177.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;516471</td>
+<td align="center" class="junction_gene">166 (0.990)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;304/+966)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_00522/mshA_1</i></td>
+<td class="junction_gene">hypothetical protein/D&#8209;inositol&#8209;3&#8209;phosphate glycosyltransferase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1176.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1176.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">=&nbsp;461436</td><td align="center" class="junction_gene">202 (1.050)</td><td rowspan="2" align="center">9 (0.050)</td>
+<td rowspan="2" align="center">7/292</td>
+<td rowspan="2" align="center">9.7</td>
+<td rowspan="2" align="center">4.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(137/1656&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ettA</i></td>
+<td class="junction_gene">Energy&#8209;dependent translational throttle protein EttA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1176.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">462370&nbsp;=</td>
+<td align="center" class="junction_gene">225 (1.260)</td><td align="center" class="junction_gene">coding&nbsp;(1071/1656&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>ettA</i></td>
+<td class="junction_gene">Energy&#8209;dependent translational throttle protein EttA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1187.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1187.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">1163307&nbsp;=</td><td align="center" class="junction_gene">258 (1.340)</td><td rowspan="2" align="center">11 (0.060)</td>
+<td rowspan="2" align="center">7/300</td>
+<td rowspan="2" align="center">9.9</td>
+<td rowspan="2" align="center">4.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;356/&#8209;257)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_01141/gtaB_2</i></td>
+<td class="junction_gene">hypothetical protein/UTP&#8209;&#8209;glucose&#8209;1&#8209;phosphate uridylyltransferase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1187.html">?</a></td><td rowspan="1" class="junction_gene">NZ_CP004372.1</td>
+<td align="center" class="junction_gene">1163330&nbsp;=</td>
+<td align="center" class="junction_gene">264 (1.440)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;379/&#8209;234)</td>
+<td align="center" class="junction_gene"><i>CEIEPPOK_01141/gtaB_2</i></td>
+<td class="junction_gene">hypothetical protein/UTP&#8209;&#8209;glucose&#8209;1&#8209;phosphate uridylyltransferase</td>
+</tr>
+</table>
+</body></html>

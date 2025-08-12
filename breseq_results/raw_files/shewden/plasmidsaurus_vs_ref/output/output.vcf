@@ -1,0 +1,14 @@
+##fileformat=VCFv4.1
+##fileDate
+##source=breseq_GD2VCF_converterter
+##contig=<ID=Shewanella,length=4545906>
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##INFO=<ID=AD,Number=1,Type=Float,Description="Allele Depth (avg read count)">
+##INFO=<ID=DP,Number=1,Type=Float,Description="Total Depth (avg read count)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+Shewanella	188272	.	GTA	G	15.9	PASS	AF=1.0000;AD=9;DP=9
+Shewanella	4277723	.	G	A	95.4	PASS	AF=1.0000;AD=71;DP=71
+Shewanella	4277768	.	A	G	32.2	PASS	AF=1.0000;AD=30;DP=30
+Shewanella	4277772	.	T	G	31.8	PASS	AF=1.0000;AD=30;DP=30
+Shewanella	4277778	.	T	C	26.2	PASS	AF=1.0000;AD=25;DP=25

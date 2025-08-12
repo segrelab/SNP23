@@ -1,0 +1,4 @@
+Fri Aug  8 17:28:35 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/Roseovarius_mucosus_SMR3/Roseovarius_mucosus_SMR3.gbk -o breseq_results/raw_files/roseo/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/NDPXLJ_polished_results/NDPXLJ_7_polish/NDPXLJ_7_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/NDPXLJ_polished_results/NDPXLJ_7_polish/NDPXLJ_7_R2_001.fastq.gz
+

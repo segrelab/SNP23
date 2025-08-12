@@ -1,0 +1,226 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_15.html">*</a></td><td align="center">S_flavimaris_SMR4y_SMR4y.chrom3479724</td><td align="right">3,225,254</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">68.8%
+</td><td align="center">36.8
+/&nbsp;16.6
+</td><td align="center">16</td><td align="center">intergenic&nbsp;(&#8209;73/+90)</td><td align="center"><i>valS/PCIMFOBJ_03145</i></td><td align="left">Valine&#8209;&#8209;tRNA ligase/putative enoyl&#8209;CoA hydratase echA17</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_12.html">*</a></td><td align="center">S_flavimaris_SMR4y_SMR4y.chrom3479724</td><td align="right">1,649,618</td><td align="right">0</td><td align="center">G</td><td align="center">.</td><td align="right">43.8%
+</td><td align="center">22.8
+/&nbsp;28.0
+</td><td align="center">16</td><td align="center">intergenic&nbsp;(+1/+23)</td><td align="center"><i>PCIMFOBJ_01573/PCIMFOBJ_01574</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_10.html">*</a></td><td align="center">S_flavimaris_SMR4y_SMR4y.chrom3479724</td><td align="right">1,230,352</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">33.3%
+</td><td align="center">14.8
+/&nbsp;12.5
+</td><td align="center">18</td><td align="center"><font class="snp_type_nonsynonymous">A573T</font>&nbsp;(<font class="mutation_in_codon">G</font>CC&rarr;<font class="mutation_in_codon">A</font>CC)&nbsp;</td><td align="center"><i>fhuA</i></td><td align="left">Ferrichrome outer membrane transporter/phage receptor</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_13.html">*</a></td><td align="center">S_flavimaris_SMR4y_SMR4y.chrom3479724</td><td align="right">2,952,313</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">33.3%
+</td><td align="center">1.7
+/&nbsp;11.4
+</td><td align="center">24</td><td align="center">intergenic&nbsp;(&#8209;114/+15)</td><td align="center"><i>glpX/hom</i></td><td align="left">Fructose&#8209;1,6&#8209;bisphosphatase class 2/Homoserine dehydrogenase</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (sorted from low to high skew)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_20.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_20.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1457838</td><td align="center" class="junction_gene">30 (1.150)</td><td rowspan="2" align="center">7 (0.300)</td>
+<td rowspan="2" align="center">6/288</td>
+<td rowspan="2" align="center">1.7</td>
+<td rowspan="2" align="center">19.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;22/+50)</td>
+<td align="center" class="junction_gene"><i>PCIMFOBJ_01387/rhlG_2</i></td>
+<td class="junction_gene">hypothetical protein/Rhamnolipids biosynthesis 3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_20.html">?</a></td><td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1457846</td>
+<td align="center" class="junction_gene">31 (1.310)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;30/+42)</td>
+<td align="center" class="junction_gene"><i>PCIMFOBJ_01387/rhlG_2</i></td>
+<td class="junction_gene">hypothetical protein/Rhamnolipids biosynthesis 3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_22.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_22.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;2061683</td><td align="center" class="junction_gene">31 (1.190)</td><td rowspan="2" align="center">5 (0.210)</td>
+<td rowspan="2" align="center">4/294</td>
+<td rowspan="2" align="center">2.3</td>
+<td rowspan="2" align="center">13.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;49/+43)</td>
+<td align="center" class="junction_gene"><i>azoR/yhhW</i></td>
+<td class="junction_gene">FMN&#8209;dependent NADH&#8209;azoreductase/Quercetin 2,3&#8209;dioxygenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_22.html">?</a></td><td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;2061701</td>
+<td align="center" class="junction_gene">35 (1.450)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;67/+25)</td>
+<td align="center" class="junction_gene"><i>azoR/yhhW</i></td>
+<td class="junction_gene">FMN&#8209;dependent NADH&#8209;azoreductase/Quercetin 2,3&#8209;dioxygenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_21.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_21.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1498384</td><td align="center" class="junction_gene">38 (1.460)</td><td rowspan="2" align="center">3 (0.120)</td>
+<td rowspan="2" align="center">3/296</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">7.6%</td>
+<td align="center" class="junction_gene">coding&nbsp;(657/711&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>COQ3</i></td>
+<td class="junction_gene">Ubiquinone biosynthesis O&#8209;methyltransferase, mitochondrial</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_21.html">?</a></td><td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1498388</td>
+<td align="center" class="junction_gene">37 (1.520)</td><td align="center" class="junction_gene">coding&nbsp;(661/711&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>COQ3</i></td>
+<td class="junction_gene">Ubiquinone biosynthesis O&#8209;methyltransferase, mitochondrial</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_23.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_23.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">3039268&nbsp;=</td><td align="center" class="junction_gene">25 (0.960)</td><td rowspan="2" align="center">3 (0.120)</td>
+<td rowspan="2" align="center">3/300</td>
+<td rowspan="2" align="center">2.8</td>
+<td rowspan="2" align="center">12.3%</td>
+<td align="center" class="junction_gene">coding&nbsp;(11/468&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>PCIMFOBJ_02964</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_23.html">?</a></td><td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">3039293&nbsp;=</td>
+<td align="center" class="junction_gene">19 (0.770)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;15/&#8209;155)</td>
+<td align="center" class="junction_gene"><i>PCIMFOBJ_02964/mhpA</i></td>
+<td class="junction_gene">hypothetical protein/3&#8209;(3&#8209;hydroxy&#8209;phenyl)propionate/3&#8209;hydroxycinnamic acid hydroxylase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_19.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_19.html">?</a></td>
+<td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1441557</td><td align="center" class="junction_gene">29 (1.110)</td><td rowspan="2" align="center">3 (0.120)</td>
+<td rowspan="2" align="center">3/304</td>
+<td rowspan="2" align="center">2.8</td>
+<td rowspan="2" align="center">9.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(202/2418&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>btuB_9</i></td>
+<td class="junction_gene">Vitamin B12 transporter BtuB</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_19.html">?</a></td><td rowspan="1" class="junction_gene">S_flavimaris_SMR4y_SMR4y.chrom3479724</td>
+<td align="center" class="junction_gene">=&nbsp;1441570</td>
+<td align="center" class="junction_gene">31 (1.240)</td><td align="center" class="junction_gene">coding&nbsp;(189/2418&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>btuB_9</i></td>
+<td class="junction_gene">Vitamin B12 transporter BtuB</td>
+</tr>
+</table>
+</body></html>

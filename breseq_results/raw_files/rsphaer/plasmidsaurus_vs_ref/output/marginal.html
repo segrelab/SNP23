@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 68 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_108.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,333</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">63.6%
+</td><td align="center">489.5
+/&nbsp;inf
+</td><td align="center">433</td><td align="center"><font class="snp_type_synonymous">T534T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_109.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,399</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">62.1%
+</td><td align="center">368.0
+/&nbsp;inf
+</td><td align="center">414</td><td align="center"><font class="snp_type_synonymous">F556F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_110.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,402</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">60.8%
+</td><td align="center">382.7
+/&nbsp;inf
+</td><td align="center">422</td><td align="center"><font class="snp_type_synonymous">A557A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_69.html">*</a></td><td align="center">NC_007493.2</td><td align="right">2,129,112</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">47.8%
+</td><td align="center">19.8
+/&nbsp;14.6
+</td><td align="center">25</td><td align="center">intergenic&nbsp;(&#8209;104/+19)</td><td align="center"><i>dnaG/gdhA</i></td><td align="left">DNA primase/Glutamate dehydrogenase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_40.html">*</a></td><td align="center">NC_007493.2</td><td align="right">170,588</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">44.4%
+</td><td align="center">20.5
+/&nbsp;20.3
+</td><td align="center">53</td><td align="center">intergenic&nbsp;(+77/+46)</td><td align="center"><i>lrp_1/yfiH</i></td><td align="left">Leucine&#8209;responsive regulatory protein/Polyphenol oxidase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_121.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,695</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">43.2%
+</td><td align="center">191.3
+/&nbsp;inf
+</td><td align="center">390</td><td align="center"><font class="snp_type_nonsynonymous">A655V</font>&nbsp;(G<font class="mutation_in_codon">C</font>T&rarr;G<font class="mutation_in_codon">T</font>T)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_120.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,651</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">42.7%
+</td><td align="center">237.4
+/&nbsp;inf
+</td><td align="center">364</td><td align="center"><font class="snp_type_synonymous">A640A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_118.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,639</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">42.7%
+</td><td align="center">212.2
+/&nbsp;inf
+</td><td align="center">361</td><td align="center"><font class="snp_type_synonymous">Q636Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_119.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,645</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">42.0%
+</td><td align="center">228.7
+/&nbsp;inf
+</td><td align="center">367</td><td align="center"><font class="snp_type_synonymous">I638I</font>&nbsp;(AT<font class="mutation_in_codon">C</font>&rarr;AT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_122.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,697</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">41.9%
+</td><td align="center">295.1
+/&nbsp;inf
+</td><td align="center">400</td><td align="center"><font class="snp_type_nonsynonymous">A656S</font>&nbsp;(<font class="mutation_in_codon">G</font>CA&rarr;<font class="mutation_in_codon">T</font>CA)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_114.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,609</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">41.6%
+</td><td align="center">261.6
+/&nbsp;inf
+</td><td align="center">339</td><td align="center"><font class="snp_type_synonymous">R626R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_116.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,630</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">40.6%
+</td><td align="center">237.5
+/&nbsp;inf
+</td><td align="center">357</td><td align="center"><font class="snp_type_synonymous">T633T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_68.html">*</a></td><td align="center">NC_007493.2</td><td align="right">2,122,891</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">40.4%
+</td><td align="center">58.2
+/&nbsp;12.7
+</td><td align="center">64</td><td align="center"><font class="snp_type_nonsynonymous">R327L</font>&nbsp;(C<font class="mutation_in_codon">G</font>C&rarr;C<font class="mutation_in_codon">T</font>C)&nbsp;</td><td align="center"><i>ribD</i></td><td align="left">Riboflavin biosynthesis protein RibD</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_115.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,620</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">40.3%
+</td><td align="center">345.4
+/&nbsp;inf
+</td><td align="center">382</td><td align="center"><font class="snp_type_nonsynonymous">A630E</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_117.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,633</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">40.2%
+</td><td align="center">286.6
+/&nbsp;inf
+</td><td align="center">362</td><td align="center"><font class="snp_type_synonymous">P634P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_112.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,588</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">39.4%
+</td><td align="center">203.1
+/&nbsp;inf
+</td><td align="center">353</td><td align="center"><font class="snp_type_synonymous">G619G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_113.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,594</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">38.7%
+</td><td align="center">341.0
+/&nbsp;inf
+</td><td align="center">362</td><td align="center"><font class="snp_type_synonymous">V621V</font>&nbsp;(GT<font class="mutation_in_codon">G</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_111.html">*</a></td><td align="center">NC_009007.1</td><td align="right">75,585</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">38.3%
+</td><td align="center">270.7
+/&nbsp;inf
+</td><td align="center">371</td><td align="center"><font class="snp_type_synonymous">L618L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_123.html">*</a></td><td align="center">NC_009007.1</td><td align="right">76,097</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">38.2%
+</td><td align="center">304.8
+/&nbsp;inf
+</td><td align="center">354</td><td align="center"><font class="snp_type_synonymous">E29E</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>recD2_2</i></td><td align="left">ATP&#8209;dependent RecD&#8209;like DNA helicase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_105.html">*</a></td><td align="center">NC_009007.1</td><td align="right">73,966</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">34.1%
+</td><td align="center">447.9
+/&nbsp;inf
+</td><td align="center">382</td><td align="center"><font class="snp_type_nonsynonymous">I79V</font>&nbsp;(<font class="mutation_in_codon">A</font>TC&rarr;<font class="mutation_in_codon">G</font>TC)&nbsp;</td><td align="center"><i>CJPOCLCA_04026</i></td><td align="left">hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 59 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_195.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_195.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_009007.1</td>
+<td align="center" class="junction_gene">291&nbsp;=</td><td align="center" class="junction_gene">3 (0.010)</td><td rowspan="2" align="center">70 (0.280)<br>+GATCGCGGGCGG</td>
+<td rowspan="2" align="center">28/292</td>
+<td rowspan="2" align="center">3.7</td>
+<td rowspan="2" align="center">96.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(138/1686&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_03957</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_195.html">?</a></td><td rowspan="1" class="junction_gene">NC_009007.1</td>
+<td align="center" class="junction_gene">=&nbsp;114029</td>
+<td align="center" class="junction_gene">2 (0.010)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;306/&#8211;)</td>
+<td align="center" class="junction_gene"><i>kpsM/&#8211;</i></td>
+<td class="junction_gene">Polysialic acid transport protein KpsM/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_152.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_152.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">1435195&nbsp;=</td><td align="center" class="junction_gene">158 (0.990)</td><td rowspan="2" align="center">39 (0.190)<br>+CCGCA</td>
+<td rowspan="2" align="center">19/306</td>
+<td rowspan="2" align="center">4.0</td>
+<td rowspan="2" align="center">18.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+296/+147)</td>
+<td align="center" class="junction_gene"><i>pasT/CJPOCLCA_01412</i></td>
+<td class="junction_gene">Persistence and stress&#8209;resistance toxin PasT/ISNCY family transposase ISRel26</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_152.html">?</a></td><td rowspan="1" class="junction_gene">NC_009007.1</td>
+<td align="center" class="junction_gene">72767&nbsp;=</td>
+<td align="center" class="junction_gene">210 (0.780)</td><td align="center" class="junction_gene">coding&nbsp;(806/822&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_04025</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_139.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_139.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007489.1</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">634 (3.420)</td>
+<td rowspan="2" align="center">21/316</td>
+<td rowspan="2" align="center">4.6</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+43)</td>
+<td align="center" class="junction_gene"><i>&#8211;/CJPOCLCA_04166</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_139.html">?</a></td><td rowspan="1" class="junction_gene">NC_007489.1</td>
+<td align="center" class="junction_gene">=&nbsp;105284</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(+149/&#8211;)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_04263/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_171.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_171.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">2800857&nbsp;=</td><td align="center" class="junction_gene">168 (1.050)</td><td rowspan="2" align="center">23 (0.150)</td>
+<td rowspan="2" align="center">13/304</td>
+<td rowspan="2" align="center">5.4</td>
+<td rowspan="2" align="center">11.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(179/786&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>atpB_1</i></td>
+<td class="junction_gene">ATP synthase subunit a</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_171.html">?</a></td><td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">2800880&nbsp;=</td>
+<td align="center" class="junction_gene">184 (1.200)</td><td align="center" class="junction_gene">coding&nbsp;(156/786&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>atpB_1</i></td>
+<td class="junction_gene">ATP synthase subunit a</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_159.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_159.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">1696903&nbsp;=</td><td align="center" class="junction_gene">327 (2.050)</td><td rowspan="2" align="center">20 (0.130)</td>
+<td rowspan="2" align="center">12/298</td>
+<td rowspan="2" align="center">5.6</td>
+<td rowspan="2" align="center">6.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;645/&#8209;474)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_01636/CJPOCLCA_01637</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_159.html">?</a></td><td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">1696931&nbsp;=</td>
+<td align="center" class="junction_gene">259 (1.720)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;673/&#8209;446)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_01636/CJPOCLCA_01637</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_201.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_201.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_009007.1</td>
+<td align="center" class="junction_gene">=&nbsp;86548</td><td align="center" class="junction_gene">234 (0.860)</td><td rowspan="2" align="center">21 (0.080)</td>
+<td rowspan="2" align="center">18/302</td>
+<td rowspan="2" align="center">5.8</td>
+<td rowspan="2" align="center">8.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;956/&#8209;113)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_04033/CJPOCLCA_04034</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_201.html">?</a></td><td rowspan="1" class="junction_gene">NC_009007.1</td>
+<td align="center" class="junction_gene">86595&nbsp;=</td>
+<td align="center" class="junction_gene">235 (0.910)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;1003/&#8209;66)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_04033/CJPOCLCA_04034</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_170.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_170.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">2490606&nbsp;=</td><td align="center" class="junction_gene">204 (1.280)</td><td rowspan="2" align="center">21 (0.140)</td>
+<td rowspan="2" align="center">10/296</td>
+<td rowspan="2" align="center">6.2</td>
+<td rowspan="2" align="center">10.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+23/&#8209;77)</td>
+<td align="center" class="junction_gene"><i>phaA/phaB</i></td>
+<td class="junction_gene">Acetyl&#8209;CoA acetyltransferase/Acetoacetyl&#8209;CoA reductase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_170.html">?</a></td><td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">2490631&nbsp;=</td>
+<td align="center" class="junction_gene">180 (1.200)</td><td align="center" class="junction_gene">intergenic&nbsp;(+48/&#8209;52)</td>
+<td align="center" class="junction_gene"><i>phaA/phaB</i></td>
+<td class="junction_gene">Acetyl&#8209;CoA acetyltransferase/Acetoacetyl&#8209;CoA reductase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_180.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_180.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007494.2</td>
+<td align="center" class="junction_gene">=&nbsp;101394</td><td align="center" class="junction_gene">98 (0.620)</td><td rowspan="2" align="center">14 (0.100)</td>
+<td rowspan="2" align="center">9/284</td>
+<td rowspan="2" align="center">6.6</td>
+<td rowspan="2" align="center">13.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(46/657&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_03181</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_180.html">?</a></td><td rowspan="1" class="junction_gene">NC_007494.2</td>
+<td align="center" class="junction_gene">=&nbsp;101378</td>
+<td align="center" class="junction_gene">91 (0.640)</td><td align="center" class="junction_gene">coding&nbsp;(30/657&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_03181</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_173.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_173.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">=&nbsp;3071505</td><td align="center" class="junction_gene">221 (1.380)</td><td rowspan="2" align="center">17 (0.110)</td>
+<td rowspan="2" align="center">8/300</td>
+<td rowspan="2" align="center">7.0</td>
+<td rowspan="2" align="center">7.7%</td>
+<td align="center" class="junction_gene">coding&nbsp;(750/1671&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_02977</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_173.html">?</a></td><td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">=&nbsp;3071520</td>
+<td align="center" class="junction_gene">195 (1.290)</td><td align="center" class="junction_gene">coding&nbsp;(765/1671&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_02977</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_145.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_145.html">?</a></td>
+<td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">=&nbsp;221163</td><td align="center" class="junction_gene">272 (1.700)</td><td rowspan="2" align="center">9 (0.060)</td>
+<td rowspan="2" align="center">8/302</td>
+<td rowspan="2" align="center">7.1</td>
+<td rowspan="2" align="center">3.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(64/1059&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_00204</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_145.html">?</a></td><td rowspan="1" class="junction_gene">NC_007493.2</td>
+<td align="center" class="junction_gene">=&nbsp;221168</td>
+<td align="center" class="junction_gene">258 (1.690)</td><td align="center" class="junction_gene">coding&nbsp;(59/1059&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>CJPOCLCA_00204</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+</table>
+</body></html>

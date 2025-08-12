@@ -1,0 +1,8 @@
+Thu Jul 24 10:38:39 2025
+
+breseq -r /GCA_000020585.gbk -o breseq_results/raw_files/de1/pos_cntrl /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R2_001.fastq.gz
+
+Sun Jul 27 15:28:37 2025
+
+breseq -r /GCA_000020585.gbk -o breseq_results/raw_files/de1/pos_cntrl /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/B9NRXP_polished_results/B9NRXP_8_polish/B9NRXP_8_S112_R2_001.fastq.gz
+

@@ -1,0 +1,517 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_1.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_deg7180000000005.32580</td><!-- Seq_Id -->
+<td align="right">193</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;614)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>MAGALPDN_03154</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_2.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_deg7180000000005.32580</td><!-- Seq_Id -->
+<td align="right">423</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;384)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>MAGALPDN_03154</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_3.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_deg7180000000005.32580</td><!-- Seq_Id -->
+<td align="right">950</td><!-- Position -->
+<td align="center">+C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+33/+385)</td>
+<td align="center"><i>MAGALPDN_03154</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>MAGALPDN_03155</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_4.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_deg7180000000005.32580</td><!-- Seq_Id -->
+<td align="right">1,145</td><!-- Position -->
+<td align="center">(A)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+228/+190)</td>
+<td align="center"><i>MAGALPDN_03154</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>MAGALPDN_03155</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_5.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_deg7180000000005.32580</td><!-- Seq_Id -->
+<td align="right">1,349</td><!-- Position -->
+<td align="center">+T</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(97/111&nbsp;nt)</td>
+<td align="center"><i>MAGALPDN_03155</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_scf7180000000006_quiver.13078684</td><!-- Seq_Id -->
+<td align="right">57,047</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">Y105H</font>&nbsp;(<font class="mutation_in_codon">T</font>AT&rarr;<font class="mutation_in_codon">C</font>AT)&nbsp;</td>
+<td align="center"><i>MAGALPDN_00076</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_scf7180000000006_quiver.13078684</td><!-- Seq_Id -->
+<td align="right">114,987</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E72D</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>MAGALPDN_00142</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_8.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_scf7180000000006_quiver.13078684</td><!-- Seq_Id -->
+<td align="right">2,082,206</td><!-- Position -->
+<td align="center">+G</td><!-- Cell Mutation -->
+<td align="center">coding&nbsp;(380/390&nbsp;nt)</td>
+<td align="center"><i>clpB_1</i>&nbsp;&rarr;</td>
+<td align="left">Chaperone protein ClpB</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/INS_9.html">RA</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_scf7180000000006_quiver.13078684</td><!-- Seq_Id -->
+<td align="right">2,258,880</td><!-- Position -->
+<td align="center">(G)<sub>6&rarr;7</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+424/&#8209;150)</td>
+<td align="center"><i>MAGALPDN_02274</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>MAGALPDN_02275</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/MC_PLOT_41.html">MC</a></td><!-- Evidence -->
+<td align="center">P403DRAFT_scf7180000000007_quiver.28140</td><!-- Seq_Id -->
+<td align="right">1</td><!-- Position -->
+<td align="center">&Delta;8,140&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center"></td>
+<td align="center"><i>MAGALPDN_03144</i>&#8211;<i>tcdA_3</i></td>
+<td align="left"><i>MAGALPDN_03144</i>, <i>yrrB_2</i>, <i>mnmA_2</i>, <i>nifS_2</i>, <i>iscS_2</i>, <i>cymR_2</i>, <i>ruvB_4</i>, <i>MAGALPDN_03151</i>, <i>tcdA_2</i>, <i>tcdA_3</i></td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_21.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_21.html">*</a></td>
+<td><a href="evidence/MC_PLOT_21.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">331</td>
+<td align="right">392</td>
+<td align="right">62</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>nhaK</i></td>
+<td align="left">Sodium, potassium, lithium and rubidium/H(+) antiporter</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_22.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_22.html">*</a></td>
+<td><a href="evidence/MC_PLOT_22.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">122205</td>
+<td align="right">122226</td>
+<td align="right">22</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_00152</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_23.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_23.html">*</a></td>
+<td><a href="evidence/MC_PLOT_23.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">150543</td>
+<td align="right">150561</td>
+<td align="right">19</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>ypwA</i></td>
+<td align="left">Carboxypeptidase 1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_24.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_24.html">*</a></td>
+<td><a href="evidence/MC_PLOT_24.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">153289</td>
+<td align="right">153339</td>
+<td align="right">51</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_00186</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_25.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_25.html">*</a></td>
+<td><a href="evidence/MC_PLOT_25.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">186343</td>
+<td align="right">186364</td>
+<td align="right">22</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>corA_1</i></td>
+<td align="left">Cobalt/magnesium transport protein CorA</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_26.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_26.html">*</a></td>
+<td><a href="evidence/MC_PLOT_26.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">194888</td>
+<td align="right">194905</td>
+<td align="right">18</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_00223</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_27.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_27.html">*</a></td>
+<td><a href="evidence/MC_PLOT_27.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">760720</td>
+<td align="right">760764</td>
+<td align="right">45</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>tyrS1</i></td>
+<td align="left">Tyrosine&#8209;&#8209;tRNA ligase 1</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_28.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_28.html">*</a></td>
+<td><a href="evidence/MC_PLOT_28.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">1428697</td>
+<td align="right">1428720</td>
+<td align="right">24</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>ybiT_1/MAGALPDN_01454</i></td>
+<td align="left">putative ABC transporter ATP&#8209;binding protein YbiT/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_29.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_29.html">*</a></td>
+<td><a href="evidence/MC_PLOT_29.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2550796</td>
+<td align="right">2550955</td>
+<td align="right">160</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_02598</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_30.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_30.html">*</a></td>
+<td><a href="evidence/MC_PLOT_30.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2551115</td>
+<td align="right">2551158</td>
+<td align="right">44</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_02598</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_31.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_31.html">*</a></td>
+<td><a href="evidence/MC_PLOT_31.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2551470</td>
+<td align="right">2551536</td>
+<td align="right">67</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_02598</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_32.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_32.html">*</a></td>
+<td><a href="evidence/MC_PLOT_32.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2643938</td>
+<td align="right">2643959</td>
+<td align="right">22</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>rcsC_6</i></td>
+<td align="left">Sensor histidine kinase RcsC</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_33.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_33.html">*</a></td>
+<td><a href="evidence/MC_PLOT_33.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2744457</td>
+<td align="right">2744507</td>
+<td align="right">51</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_02789</i></td>
+<td align="left">putative cation efflux system protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_34.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_34.html">*</a></td>
+<td><a href="evidence/MC_PLOT_34.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2866408</td>
+<td align="right">2866468</td>
+<td align="right">61</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_02911</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_35.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_35.html">*</a></td>
+<td><a href="evidence/MC_PLOT_35.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2957304</td>
+<td align="right">2957356</td>
+<td align="right">53</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>ytcD_2</i></td>
+<td align="left">putative HTH&#8209;type transcriptional regulator YtcD</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_36.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_36.html">*</a></td>
+<td><a href="evidence/MC_PLOT_36.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2972877</td>
+<td align="right">2972939</td>
+<td align="right">63</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>cntD</i></td>
+<td align="left">Metal&#8209;staphylopine import system ATP&#8209;binding protein CntD</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_37.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_37.html">*</a></td>
+<td><a href="evidence/MC_PLOT_37.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2973222</td>
+<td align="right">2973259</td>
+<td align="right">38</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>cntD</i></td>
+<td align="left">Metal&#8209;staphylopine import system ATP&#8209;binding protein CntD</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_38.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_38.html">*</a></td>
+<td><a href="evidence/MC_PLOT_38.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">2977197</td>
+<td align="right">2977247</td>
+<td align="right">51</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>MAGALPDN_03036</i></td>
+<td align="left">hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_39.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_39.html">*</a></td>
+<td><a href="evidence/MC_PLOT_39.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">3074491</td>
+<td align="right">3074529</td>
+<td align="right">39</td>
+<td align="center">2&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>entS_4</i></td>
+<td align="left">Enterobactin exporter EntS</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_40.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_40.html">*</a></td>
+<td><a href="evidence/MC_PLOT_40.html">&divide;</a></td>
+<td>P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="right">3074736</td>
+<td align="right">3074753</td>
+<td align="right">18</td>
+<td align="center">3&nbsp;[1]</td>
+<td align="center">[1]&nbsp;2</td>
+<td align="center"><i>entS_4</i></td>
+<td align="left">Enterobactin exporter EntS</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_43.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_43.html">?</a></td>
+<td rowspan="1" class="junction_repeat">P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="center" class="junction_repeat">=&nbsp;1310326</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">4 (0.320)</td>
+<td rowspan="2" align="center">4/304</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(+3540/+16)</td>
+<td align="center" class="junction_repeat"><i>MAGALPDN_01325/MAGALPDN_01326</i></td>
+<td class="junction_repeat">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_43.html">?</a></td><td rowspan="1" class="junction_repeat">P403DRAFT_scf7180000000006_quiver.13078684</td>
+<td align="center" class="junction_repeat">=&nbsp;1310331</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">intergenic&nbsp;(+3545/+11)</td>
+<td align="center" class="junction_repeat"><i>MAGALPDN_01325/MAGALPDN_01326</i></td>
+<td class="junction_repeat">hypothetical protein/hypothetical protein</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 176 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_87.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,777,565</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">71.2%
+</td><td align="center">152.1
+/&nbsp;266.4
+</td><td align="center">305</td><td align="center"><font class="snp_type_synonymous">T522T</font>&nbsp;(AC<font class="mutation_in_codon">C</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_86.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,777,562</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">63.4%
+</td><td align="center">6.7
+/&nbsp;inf
+</td><td align="center">342</td><td align="center"><font class="snp_type_synonymous">P523P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_85.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,777,558</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">62.9%
+</td><td align="center">7.7
+/&nbsp;inf
+</td><td align="center">346</td><td align="center"><font class="snp_type_nonsynonymous">V525I</font>&nbsp;(<font class="mutation_in_codon">G</font>TT&rarr;<font class="mutation_in_codon">A</font>TT)&nbsp;&Dagger;</td><td align="center"><i>HFCGLBLA_01631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_84.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,777,557</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">62.7%
+</td><td align="center">4.1
+/&nbsp;inf
+</td><td align="center">346</td><td align="center"><font class="snp_type_nonsynonymous">V525A</font>&nbsp;(G<font class="mutation_in_codon">T</font>T&rarr;G<font class="mutation_in_codon">C</font>T)&nbsp;&Dagger;</td><td align="center"><i>HFCGLBLA_01631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_83.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,777,556</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">61.9%
+</td><td align="center">93.1
+/&nbsp;inf
+</td><td align="center">352</td><td align="center"><font class="snp_type_synonymous">V525V</font>&nbsp;(GT<font class="mutation_in_codon">T</font>&rarr;GT<font class="mutation_in_codon">A</font>)&nbsp;&Dagger;</td><td align="center"><i>HFCGLBLA_01631</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_184.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">3,907,110</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">37.8%
+</td><td align="center">667.3
+/&nbsp;145.0
+</td><td align="center">475</td><td align="center"><font class="snp_type_nonsynonymous">T1083P</font>&nbsp;(<font class="mutation_in_codon">A</font>CT&rarr;<font class="mutation_in_codon">C</font>CT)&nbsp;</td><td align="center"><i>HFCGLBLA_03469</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_12.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">222,972</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">37.7%
+</td><td align="center">609.3
+/&nbsp;172.7
+</td><td align="center">438</td><td align="center"><font class="snp_type_nonsynonymous">I17R</font>&nbsp;(A<font class="mutation_in_codon">T</font>A&rarr;A<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>HFCGLBLA_00206</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_81.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,722,297</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">37.2%
+</td><td align="center">658.1
+/&nbsp;185.3
+</td><td align="center">532</td><td align="center"><font class="snp_type_synonymous">T101T</font>&nbsp;(AC<font class="mutation_in_codon">T</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01582</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_71.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,427,019</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">37.0%
+</td><td align="center">575.2
+/&nbsp;160.1
+</td><td align="center">395</td><td align="center"><font class="snp_type_nonsynonymous">F411L</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01308</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_38.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">737,897</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">36.0%
+</td><td align="center">490.4
+/&nbsp;223.2
+</td><td align="center">419</td><td align="center"><font class="snp_type_nonsynonymous">S52N</font>&nbsp;(A<font class="mutation_in_codon">G</font>C&rarr;A<font class="mutation_in_codon">A</font>C)&nbsp;</td><td align="center"><i>fabG_1</i></td><td align="left">3&#8209;oxoacyl&#8209;[acyl&#8209;carrier&#8209;protein] reductase FabG</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_49.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,049,839</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">35.7%
+</td><td align="center">644.8
+/&nbsp;168.1
+</td><td align="center">376</td><td align="center">intergenic&nbsp;(&#8209;5/&#8209;136)</td><td align="center"><i>hdc/lrp</i></td><td align="left">Histidine decarboxylase/Leucine&#8209;responsive regulatory protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_133.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">2,801,794</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">34.9%
+</td><td align="center">813.9
+/&nbsp;161.4
+</td><td align="center">463</td><td align="center">intergenic&nbsp;(&#8209;174/+83)</td><td align="center"><i>czcO/HFCGLBLA_02507</i></td><td align="left">putative oxidoreductase CzcO/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_104.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">2,142,048</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">34.2%
+</td><td align="center">626.7
+/&nbsp;105.4
+</td><td align="center">429</td><td align="center"><font class="snp_type_nonsynonymous">H186P</font>&nbsp;(C<font class="mutation_in_codon">A</font>T&rarr;C<font class="mutation_in_codon">C</font>T)&nbsp;</td><td align="center"><i>HFCGLBLA_01937</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_100.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">2,005,555</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">33.7%
+</td><td align="center">717.8
+/&nbsp;235.7
+</td><td align="center">527</td><td align="center"><font class="snp_type_synonymous">K383K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01815</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_29.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">694,556</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">33.2%
+</td><td align="center">588.3
+/&nbsp;166.4
+</td><td align="center">406</td><td align="center"><font class="snp_type_nonsynonymous">D5N</font>&nbsp;(<font class="mutation_in_codon">G</font>AT&rarr;<font class="mutation_in_codon">A</font>AT)&nbsp;</td><td align="center"><i>HFCGLBLA_00652</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_165.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">3,669,441</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">31.6%
+</td><td align="center">711.2
+/&nbsp;108.6
+</td><td align="center">378</td><td align="center"><font class="snp_type_nonsynonymous">L116F</font>&nbsp;(TT<font class="mutation_in_codon">A</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>thpR</i></td><td align="left">RNA 2',3'&#8209;cyclic phosphodiesterase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_93.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,828,037</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">31.3%
+</td><td align="center">857.1
+/&nbsp;133.6
+</td><td align="center">485</td><td align="center"><font class="snp_type_synonymous">G172G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_01675</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_80.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">1,722,289</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">31.1%
+</td><td align="center">820.7
+/&nbsp;115.2
+</td><td align="center">561</td><td align="center"><font class="snp_type_nonsense">L104*</font>&nbsp;(T<font class="mutation_in_codon">T</font>A&rarr;T<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>HFCGLBLA_01582</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_35.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">725,199</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">31.0%
+</td><td align="center">649.8
+/&nbsp;66.8
+</td><td align="center">374</td><td align="center"><font class="snp_type_synonymous">L160L</font>&nbsp;(CT<font class="mutation_in_codon">A</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_00682</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_171.html">*</a></td><td align="center">Oweho_Contig158.1</td><td align="right">3,679,177</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">30.9%
+</td><td align="center">1181.6
+/&nbsp;inf
+</td><td align="center">737</td><td align="center"><font class="snp_type_synonymous">T1754T</font>&nbsp;(AC<font class="mutation_in_codon">T</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>HFCGLBLA_03275</i></td><td align="left">hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 545 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_572.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_572.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2939335&nbsp;=</td><td align="center" class="junction_gene">580 (1.200)</td><td rowspan="2" align="center">69 (0.160)</td>
+<td rowspan="2" align="center">37/280</td>
+<td rowspan="2" align="center">6.3</td>
+<td rowspan="2" align="center">12.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(95/870&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02616</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_572.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2939353&nbsp;=</td>
+<td align="center" class="junction_gene">477 (1.110)</td><td align="center" class="junction_gene">coding&nbsp;(113/870&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02616</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_468.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_468.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127353&nbsp;=</td><td align="center" class="junction_gene">168 (0.350)</td><td rowspan="2" align="center">78 (0.200)</td>
+<td rowspan="2" align="center">32/252</td>
+<td rowspan="2" align="center">6.4</td>
+<td rowspan="2" align="center">35.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_468.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2194311&nbsp;=</td>
+<td align="center" class="junction_gene">145 (0.380)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01986</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_320.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_320.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;1056254</td><td align="center" class="junction_gene">127 (0.260)</td><td rowspan="2" align="center">83 (0.220)</td>
+<td rowspan="2" align="center">32/252</td>
+<td rowspan="2" align="center">6.4</td>
+<td rowspan="2" align="center">38.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_00969</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_320.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127385&nbsp;=</td>
+<td align="center" class="junction_gene">168 (0.440)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_198.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_198.html">?</a></td>
+<td rowspan="1" class="junction_repeat">Oweho_Contig158.1</td>
+<td align="center" class="junction_repeat">77369&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">100 (0.260)</td>
+<td rowspan="2" align="center">32/252</td>
+<td rowspan="2" align="center">6.4</td>
+<td rowspan="2" align="center">NA</td>
+<td align="center" class="junction_repeat">coding&nbsp;(265/267&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>HFCGLBLA_00076</i></td>
+<td class="junction_repeat">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_198.html">?</a></td><td rowspan="1" class="junction_repeat">Oweho_Contig158.1</td>
+<td align="center" class="junction_repeat">77401&nbsp;=</td>
+<td align="center" class="junction_repeat">NA (NA)</td><td align="center" class="junction_repeat">coding&nbsp;(233/267&nbsp;nt)</td>
+<td align="center" class="junction_repeat"><i>HFCGLBLA_00076</i></td>
+<td class="junction_repeat">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_471.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_471.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127353&nbsp;=</td><td align="center" class="junction_gene">168 (0.350)</td><td rowspan="2" align="center">76 (0.200)</td>
+<td rowspan="2" align="center">31/252</td>
+<td rowspan="2" align="center">6.6</td>
+<td rowspan="2" align="center">24.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_471.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;3360908</td>
+<td align="center" class="junction_gene">337 (0.870)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02968</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_470.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_470.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127353&nbsp;=</td><td align="center" class="junction_gene">168 (0.350)</td><td rowspan="2" align="center">83 (0.220)</td>
+<td rowspan="2" align="center">31/252</td>
+<td rowspan="2" align="center">6.6</td>
+<td rowspan="2" align="center">39.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_470.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2272469&nbsp;=</td>
+<td align="center" class="junction_gene">117 (0.300)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02056</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_362.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_362.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;1393066</td><td align="center" class="junction_gene">136 (0.280)</td><td rowspan="2" align="center">78 (0.200)</td>
+<td rowspan="2" align="center">31/252</td>
+<td rowspan="2" align="center">6.6</td>
+<td rowspan="2" align="center">36.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01284</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_362.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127385&nbsp;=</td>
+<td align="center" class="junction_gene">168 (0.440)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_469.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_469.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2127353&nbsp;=</td><td align="center" class="junction_gene">168 (0.350)</td><td rowspan="2" align="center">86 (0.220)</td>
+<td rowspan="2" align="center">30/252</td>
+<td rowspan="2" align="center">6.9</td>
+<td rowspan="2" align="center">33.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01922</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_469.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;2248359</td>
+<td align="center" class="junction_gene">208 (0.540)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02030</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_321.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_321.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;1056254</td><td align="center" class="junction_gene">127 (0.260)</td><td rowspan="2" align="center">79 (0.200)</td>
+<td rowspan="2" align="center">30/252</td>
+<td rowspan="2" align="center">6.9</td>
+<td rowspan="2" align="center">39.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_00969</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_321.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2194311&nbsp;=</td>
+<td align="center" class="junction_gene">145 (0.380)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01986</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_488.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_488.html">?</a></td>
+<td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">2194279&nbsp;=</td><td align="center" class="junction_gene">145 (0.300)</td><td rowspan="2" align="center">72 (0.190)</td>
+<td rowspan="2" align="center">29/252</td>
+<td rowspan="2" align="center">7.1</td>
+<td rowspan="2" align="center">24.1%</td>
+<td align="center" class="junction_gene">coding&nbsp;(819/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_01986</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_488.html">?</a></td><td rowspan="1" class="junction_gene">Oweho_Contig158.1</td>
+<td align="center" class="junction_gene">=&nbsp;3360908</td>
+<td align="center" class="junction_gene">337 (0.870)</td><td align="center" class="junction_gene">coding&nbsp;(851/852&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>HFCGLBLA_02968</i></td>
+<td class="junction_gene">IS3 family transposase ISShes13</td>
+</tr>
+</table>
+</body></html>

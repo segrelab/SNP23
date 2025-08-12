@@ -1,0 +1,105 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_8.html">*</a></td><td align="center">NZ_CM001024.1</td><td align="right">128,506</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">42.9%
+</td><td align="center">4.4
+/&nbsp;11.3
+</td><td align="center">14</td><td align="center"><font class="snp_type_nonsynonymous">D12E</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>paaG_1</i></td><td align="left">1,2&#8209;epoxyphenylacetyl&#8209;CoA isomerase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_13.html">*</a></td><td align="center">NZ_CM001024.1</td><td align="right">2,444,035</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">34.8%
+</td><td align="center">65.5
+/&nbsp;31.0
+</td><td align="center">46</td><td align="center"><font class="snp_type_nonsynonymous">A61E</font>&nbsp;(G<font class="mutation_in_codon">C</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td><td align="center"><i>EDAPKOMK_02521</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_12.html">*</a></td><td align="center">NZ_CM001024.1</td><td align="right">2,406,515</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">28.6%
+</td><td align="center">23.7
+/&nbsp;13.3
+</td><td align="center">14</td><td align="center">coding&nbsp;(664/2685&nbsp;nt)</td><td align="center"><i>menF_1</i></td><td align="left">Isochorismate synthase MenF</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_10.html">*</a></td><td align="center">NZ_CM001024.1</td><td align="right">1,074,067</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">23.1%
+</td><td align="center">47.0
+/&nbsp;12.2
+</td><td align="center">26</td><td align="center">intergenic&nbsp;(+5114/&#8209;634)</td><td align="center"><i>tyrS/EDAPKOMK_01139</i></td><td align="left">Tyrosine&#8209;&#8209;tRNA ligase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_9.html">*</a></td><td align="center">NZ_CM001024.1</td><td align="right">1,074,057</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">20.0%
+</td><td align="center">63.8
+/&nbsp;13.7
+</td><td align="center">25</td><td align="center">intergenic&nbsp;(+5104/&#8209;644)</td><td align="center"><i>tyrS/EDAPKOMK_01139</i></td><td align="left">Tyrosine&#8209;&#8209;tRNA ligase/hypothetical protein</td></tr>
+</table>
+
+</body></html>

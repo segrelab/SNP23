@@ -1,0 +1,138 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Evidence</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Missing coverage evidence...</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="MC_SIDE_1_192.html">*</a></td>
+<td><a href="MC_SIDE_2_192.html">*</a></td>
+<td><a href="MC_PLOT_192.html">&divide;</a></td>
+<td>NZ_AHBZ03000014.1</td>
+<td align="right">128978</td>
+<td align="right">873799</td>
+<td align="right">744822</td>
+<td align="center">2&nbsp;[0]</td>
+<td align="center">[0]&nbsp;2</td>
+<td align="center"><i>[mnmA]&#8211;[infB]</i></td>
+<td align="left">[mnmA],hflD,purB,roxA,PHGPABBB_00775,PHGPABBB_00776,PHGPABBB_00777,cheY_1,PHGPABBB_00779,cheA_1,PHGPABBB_00781,PHGPABBB_00782,cheW_1,cheR_1,cheB_1,PHGPABBB_00786,lolE,lolD_1,lolC,bicA_1,pgrR_2,frmA,yeiG,PHGPABBB_00794,fabY,cdhR,PHGPABBB_00797,PHGPABBB_00798,PHGPABBB_00799,PHGPABBB_00800,btuB_6,PHGPABBB_00802,PHGPABBB_00803,btuB_7,PHGPABBB_00805,PHGPABBB_00806,dpp5_2,PHGPABBB_00808,PHGPABBB_00809,PHGPABBB_00810,PHGPABBB_00811,PHGPABBB_00812,PHGPABBB_00813,PHGPABBB_00814,PHGPABBB_00815,PHGPABBB_00816,PHGPABBB_00817,PHGPABBB_00818,xerD_1,PHGPABBB_00820,PHGPABBB_00821,PHGPABBB_00822,PHGPABBB_00823,PHGPABBB_00824,ccoN1,PHGPABBB_00826,PHGPABBB_00827,ccoP2,PHGPABBB_00829,copA,PHGPABBB_00831,PHGPABBB_00832,fnr,uspE,czcR_1,sasA_6,PHGPABBB_00837,PHGPABBB_00838,PHGPABBB_00839,ttcA,PHGPABBB_00841,ppiC_1,PHGPABBB_00843,PHGPABBB_00844,PHGPABBB_00845,PHGPABBB_00846,PHGPABBB_00847,PHGPABBB_00848,yceI,yceJ_1,PHGPABBB_00851,norR_1,PHGPABBB_00853,ppiB_2,PHGPABBB_00855,ywrO,yybR,PHGPABBB_00858,lvr,rppH_1,PHGPABBB_00861,PHGPABBB_00862,PHGPABBB_00863,PHGPABBB_00864,PHGPABBB_00865,PHGPABBB_00866,PHGPABBB_00867,PHGPABBB_00868,PHGPABBB_00869,PHGPABBB_00870,PHGPABBB_00871,gap2,PHGPABBB_00873,mlaC_2,PHGPABBB_00875,oqxB21,bepF_1,dmlR_1,PHGPABBB_00879,PHGPABBB_00880,PHGPABBB_00881,ccpA_1,glk,ascG,PHGPABBB_00885,PHGPABBB_00886,PHGPABBB_00887,PHGPABBB_00888,cga,PHGPABBB_00890,amy_1,prnA,PHGPABBB_00893,PHGPABBB_00894,malL,PHGPABBB_00896,PHGPABBB_00897,ftnA,PHGPABBB_00899,PHGPABBB_00900,PHGPABBB_00901,proA,proB_1,yddE_1,ihfA,pheT,pheS,hda,PHGPABBB_00909,PHGPABBB_00910,PHGPABBB_00911,PHGPABBB_00912,PHGPABBB_00913,gloA_1,PHGPABBB_00915,PHGPABBB_00916,PHGPABBB_00917,PHGPABBB_00918,PHGPABBB_00919,cysB,PHGPABBB_00921,adeP,PHGPABBB_00923,PHGPABBB_00924,PHGPABBB_00925,PHGPABBB_00926,PHGPABBB_00927,PHGPABBB_00928,PHGPABBB_00929,PHGPABBB_00930,PHGPABBB_00931,yedJ,rlmI_1,PHGPABBB_00934,mprA_2,PHGPABBB_00936,PHGPABBB_00937,iaaA,PHGPABBB_00939,rebH,btuB_8,pgl,zwf,pgi,degA_1,PHGPABBB_00946,PHGPABBB_00947,PHGPABBB_00948,bepA_1,yfgD,PHGPABBB_00951,PHGPABBB_00952,PHGPABBB_00953,PHGPABBB_00954,PHGPABBB_00955,bamC,PHGPABBB_00957,gcvR,bcp,metC,nudC,gamA,PHGPABBB_00963,agaAII,gspK_1,vldW,rcsC_5,rcsC_6,bepA_2,bcr,grpE,hrcA,nadK,PHGPABBB_00974,recN,gltD,gltB,grxD,sodB_1,PHGPABBB_00980,PHGPABBB_00981,PHGPABBB_00982,PHGPABBB_00983,cheB_2,tpx,PHGPABBB_00986,adk,htpG,PHGPABBB_00989,PHGPABBB_00990,PHGPABBB_00991,PHGPABBB_00992,recR,natB_1,natA_1,caeA,topA_1,PHGPABBB_00998,gltP_1,queE,queC,PHGPABBB_01002,PHGPABBB_01003,PHGPABBB_01004,rep_1,PHGPABBB_01006,secG,tpiA,glmM_2,folP,ftsH_1,rlmE,PHGPABBB_01013,ampC,PHGPABBB_01015,walR,rcsC_7,PHGPABBB_01018,elaA,spo0M_1,kefC,PHGPABBB_01022,mlaA,PHGPABBB_01024,PHGPABBB_01025,dsbE,ccmF,ccmE,PHGPABBB_01029,ccmC,ccmB,ccmA,PHGPABBB_01033,PHGPABBB_01034,PHGPABBB_01035,cheW_2,PHGPABBB_01037,soj_1,cheB1,cheA_2,cheZ,cheY_2,fliA,ylxH,ftsY_1,flhA,flhB,fliR,PHGPABBB_01049,fliP,PHGPABBB_01051,fliN,fliM,PHGPABBB_01054,PHGPABBB_01055,PHGPABBB_01056,fliI,fliH,fliG,fliF,fliE,atoC_1,sasA_7,tag,ntrC,hag,pseB,pseC,PHGPABBB_01069,lcfB,PHGPABBB_01071,PHGPABBB_01072,pseI,kdsB_2,galE_1,gmhA,rfbB,PHGPABBB_01078,COQ5_1,aptA,aptB,PHGPABBB_01082,PHGPABBB_01083,PHGPABBB_01084,moaA_1,cugP,PHGPABBB_01087,PHGPABBB_01088,PHGPABBB_01089,PHGPABBB_01090,hldE_1,hddC_2,PHGPABBB_01093,PHGPABBB_01094,PHGPABBB_01095,PHGPABBB_01096,PHGPABBB_01097,PHGPABBB_01098,PHGPABBB_01099,PHGPABBB_01100,neuA,fmt_1,legI,PHGPABBB_01104,arnA_1,legG,perA,PHGPABBB_01108,PHGPABBB_01109,PHGPABBB_01110,fliS,fliD,PHGPABBB_01113,fliC,flaD,flaC,PHGPABBB_01117,PHGPABBB_01118,flgJ,flgI,flgH,flgG,flgF,flgE,PHGPABBB_01125,flgC,flgB,cheR2,cheV_1,PHGPABBB_01130,PHGPABBB_01131,PHGPABBB_01132,PHGPABBB_01133,PHGPABBB_01134,PGdx_2,PHGPABBB_01136,PHGPABBB_01137,PHGPABBB_01138,btuB_9,PHGPABBB_01140,PHGPABBB_01141,PHGPABBB_01142,PHGPABBB_01143,PHGPABBB_01144,PHGPABBB_01145,PHGPABBB_01146,PHGPABBB_01147,PHGPABBB_01148,galU,thyA,lgt,PHGPABBB_01152,ptsP,rppH_2,mutH,eno,pyrG,mazG,relA,rlmD,barA,mscS_3,PHGPABBB_01163,PHGPABBB_01164,ppiD,hupB_1,lon_1,clpX,clpP,tig,PHGPABBB_01171,PHGPABBB_01172,PHGPABBB_01173,PHGPABBB_01174,PHGPABBB_01175,folD,PHGPABBB_01177,aroC,prmB,mutS2,rssB_2,PHGPABBB_01182,ahpC_1,fadR,dsbB,PHGPABBB_01186,PHGPABBB_01187,PHGPABBB_01188,aspC,PHGPABBB_01190,rcsC_8,PHGPABBB_01192,yciH,PHGPABBB_01194,pheA,tyrA,rplS,trmD,rimM,rpsP,ffh,ypjD,PHGPABBB_01203,PHGPABBB_01204,gshA,PHGPABBB_01206,aer_2,clpB,yfiH,rluD,bamD,glnB_1,PHGPABBB_01213,PHGPABBB_01214,pilE,PHGPABBB_01216,PHGPABBB_01217,PHGPABBB_01218,PHGPABBB_01219,btsR,PHGPABBB_01221,ispH,fkpB,lspA,ileS,ribF,murJ,rpsT,cheY_3,PHGPABBB_01230,PHGPABBB_01231,smrA,PHGPABBB_01233,ghrA,PHGPABBB_01235,resA_1,PHGPABBB_01237,grxA,deaD,adhB,PHGPABBB_01241,PHGPABBB_01242,PHGPABBB_01243,PHGPABBB_01244,PHGPABBB_01245,syd,queF,PHGPABBB_01248,PHGPABBB_01249,tamB,tamA,PHGPABBB_01252,radD,PHGPABBB_01254,cspV_2,pyrC,PHGPABBB_01257,metE,metR,PHGPABBB_01260,PHGPABBB_01261,PHGPABBB_01262,PHGPABBB_01263,PHGPABBB_01264,PHGPABBB_01265,bluF,PHGPABBB_01267,PHGPABBB_01268,PHGPABBB_01269,ttr,ygfF,tri1,PHGPABBB_01273,fkpA,lon_2,PHGPABBB_01276,leuS,lptE,holA,nadD,rsfS,rlmH,mrdA,mrdB,rlpA,dacA,PHGPABBB_01287,lipB,lipA,tyrP,PHGPABBB_01291,motB,pomA,xseB,ispA,dxs,PHGPABBB_01297,PHGPABBB_01298,pgpA,thiL,nusB,ribE_1,ribBA,ribE_2,ribD,nrdR,glyA,thrC,thrB,thrA,cheY_4,rcsC_9,rdgC,PHGPABBB_01314,PHGPABBB_01315,PHGPABBB_01316,PHGPABBB_01317,dap4,mcpP_1,pepA_2,cstA,dinB,tas,rppH_3,PHGPABBB_01325,PHGPABBB_01326,PHGPABBB_01327,patZ,PHGPABBB_01329,PHGPABBB_01330,PHGPABBB_01331,PHGPABBB_01332,PHGPABBB_01333,PHGPABBB_01334,PHGPABBB_01335,PHGPABBB_01336,zntR,PHGPABBB_01338,PHGPABBB_01339,rssB_3,rcsC_10,PHGPABBB_01342,rapA_1,PHGPABBB_01344,PHGPABBB_01345,rluA,PHGPABBB_01347,PHGPABBB_01348,PHGPABBB_01349,PHGPABBB_01350,PHGPABBB_01351,PHGPABBB_01352,PHGPABBB_01353,PHGPABBB_01354,PHGPABBB_01355,PHGPABBB_01356,phaB,PHGPABBB_01358,phaC,PHGPABBB_01360,ygaZ,rhaS_1,PHGPABBB_01363,PHGPABBB_01364,PHGPABBB_01365,PHGPABBB_01366,PHGPABBB_01367,PHGPABBB_01368,PHGPABBB_01369,PHGPABBB_01370,PHGPABBB_01371,PHGPABBB_01372,PHGPABBB_01373,PHGPABBB_01374,PHGPABBB_01375,lrp_1,putA,PHGPABBB_01378,PHGPABBB_01379,PHGPABBB_01380,cca,btuB_10,uppP,sulD,folB,plsY,tsaD,PHGPABBB_01388,PHGPABBB_01389,PHGPABBB_01390,PHGPABBB_01391,hdfR_3,ubiA,ubiC,PHGPABBB_01395,glpG,glpE_1,tdh,kbl_1,gmhB,rfaC,kdkA,hldE_2,gmhA1,PHGPABBB_01405,waaA,PHGPABBB_01407,PHGPABBB_01408,anoI,luxR,ppsC,PHGPABBB_01412,lgrE_1,PHGPABBB_01414,PHGPABBB_01415,ykfB,mprA_3,PHGPABBB_01418,PHGPABBB_01419,PHGPABBB_01420,cnoX,topB,PHGPABBB_01423,PHGPABBB_01424,PHGPABBB_01425,mcpU,mrpG,mrpF,mnhE1,mrpD,mnhC1,mrpA,PHGPABBB_01433,nlpI,pnp,rpsO,truB,rbfA,[infB]</td>
+</tr>
+</table>
+<p>
+<style>
+.NC {color: rgb(0,0,0); background-color: rgb(255,255,255)}
+.AM {color: rgb(0,0,0); background-color: rgb(210,210,210)}
+.AO {color: rgb(0,0,0); background-color: rgb(255,205,204)}
+.AP {color: rgb(0,0,0); background-color: rgb(255,229,204)}
+.UN {color: rgb(120,120,120); background-color: rgb(255,255,255)}
+.GAP {color: rgb(255,255,255); background-color: rgb(128,0,128)}
+.R0 {color: rgb(170,170,170); background-color: rgb(255,255,175)}
+.R1 {color: rgb(170,170,170); background-color: rgb(240,240,240)}
+.R2 {color: rgb(135,135,135); background-color: rgb(240,240,240)}
+.R3 {color: rgb(90,90,90); background-color: rgb(240,240,240)}
+.R4 {color: rgb(45,45,45); background-color: rgb(240,240,240)}
+.R5 {color: rgb(0,0,0); background-color: rgb(240,240,240)}
+.A0{color: rgb(120,120,120); background-color:rgb(255,255,0)}
+.A1{color: rgb(255,255,255); background-color:rgb(255,210,210)}
+.A2{color: rgb(255,255,255); background-color:rgb(255,180,180)}
+.A3{color: rgb(255,255,255); background-color:rgb(255,100,100)}
+.A4{color: rgb(255,255,255); background-color:rgb(255,20,20)}
+.A5{color: rgb(255,255,255); background-color:rgb(200,0,0)}
+.C0{color: rgb(120,120,120); background-color:rgb(255,255,0)}
+.C1{color: rgb(255,255,255); background-color:rgb(160,160,255)}
+.C2{color: rgb(255,255,255); background-color:rgb(120,120,255)}
+.C3{color: rgb(255,255,255); background-color:rgb(60,60,255)}
+.C4{color: rgb(255,255,255); background-color:rgb(20,20,255)}
+.C5{color: rgb(255,255,255); background-color:rgb(0,0,150)}
+.G0{color: rgb(120,120,120); background-color:rgb(255,255,0)}
+.G1{color: rgb(255,255,255); background-color:rgb(230,230,230)}
+.G2{color: rgb(255,255,255); background-color:rgb(210,210,210)}
+.G3{color: rgb(255,255,255); background-color:rgb(140,140,140)}
+.G4{color: rgb(255,255,255); background-color:rgb(70,70,70)}
+.G5{color: rgb(255,255,255); background-color:rgb(0,0,0)}
+.T0{color: rgb(120,120,120); background-color:rgb(255,255,0)}
+.T1{color: rgb(255,255,255); background-color:rgb(210,255,210)}
+.T2{color: rgb(255,255,255); background-color:rgb(180,255,180)}
+.T3{color: rgb(255,255,255); background-color:rgb(100,255,100)}
+.T4{color: rgb(255,255,255); background-color:rgb(20,255,20)}
+.T5{color: rgb(255,255,255); background-color:rgb(0,200,0)}
+CODE {font-family:Monaco, monospace; font-size: 85%;}
+</style>
+<table style="background-color: rgb(255,255,255)"><tr ><td style="font-size:10pt">
+
+<!-- Reference Begin --><CODE><font class="C5">C</font><font class="A5">A</font><font class="C5">CC</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="A5">A</font><font class="C5">CC</font><font class="A5">A</font><font class="C5">C</font><font class="A5">A</font><font class="T5">TT</font><font class="C5">CC</font><font class="A5">A</font><font class="T5">T</font><font class="G5">G</font><font class="C5">CC</font><font class="G5">G</font><font class="T5">TT</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="T5">TT</font><font class="C5">C</font><font class="T5">TT</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="NC">&#8209;</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="C5">C</font><font class="T5">TTT</font><font class="A5">AAA</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">T</font><font class="G5">G</font><font class="A5">A</font><font class="C5">C</font><font class="T5">T</font><font class="C5">C</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">TT</font><font class="C5">C</font><font class="A5">A</font><font class="C5">CC</font><font class="T5">TT</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="A5">AA</font><font class="C5">CC</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="T5">TTTT</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="G5">GG</font><font class="A5">A</font><font class="T5">TT</font><font class="G5">GG</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="T5">TT</font><font class="A5">AA</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="G5">G</font><font class="C5">CC</font><font class="T5">TT</font><font class="C5">C</font><font class="T5">T</font><font class="G5">G</font><font class="T5">T</font><font class="A5">AA</font><font class="C5">CC</font><font class="A5">A</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="A5">AA</font><font class="C5">CCC</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<font class="NC">NZ_AHBZ03000014.1/873800&#8209;873958</font></CODE><BR>
+<!-- Reference End -->
+<CODE><font class="|5">|</font><font class=" 5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></CODE><BR>
+
+<!-- Reads Begin --><CODE><font class="R2">cacCGATACCACATTC</font><font class="R1">C</font><font class="R2">ATGCCGTTA</font><font class="R1">C</font><font class="R2">G</font><font class="G2">G</font><font class="R2">ACTTC</font><font class="GAP">&#8209;</font><font class="A2">A</font><font class="R2">GTA</font><font class="G2">G</font><font class="R2">C</font><font class="A2">A</font><font class="R2">TC</font><font class="A2">A</font><font class="R2">TCTTT</font><font class="G2">G</font><font class="R2">AAGCG</font><font class="G2">G</font><font class="R2">CG</font><font class="T2">T</font><font class="C1">C</font><font class="A2">A</font><font class="R2">TGACTCAAG</font><font class="C2">C</font><font class="R2">TCAC</font><font class="R1">C</font><font class="R2">TTC</font><font class="A2">A</font><font class="R2">TAGATAAC</font><font class="R0">N</font><font class="R2">ACGTT</font><font class="G2">G</font><font class="R2">TCACG</font><font class="T2">T</font><font class="R2">AG</font><font class="A2">A</font><font class="R2">ACACGGATTGGCGCGCT</font><font class="G2">G</font><font class="R2">CGCTTAACGAT</font><font class="A2">A</font><font class="R2">CCTTC</font><font class="A2">A</font><font class="R2">GT</font><font class="C2">C</font><font class="R2">ACCATACAA</font><font class="R1">C</font><font class="R2">CCGCGa</font>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<font class="NC">2:8236775/1&#8209;159</font>&nbsp;(MQ=255)</CODE><BR><CODE><font class="R2">cacCGAT</font><font class="R1">A</font><font class="R2">CCACATTCCATGCCGTTACG</font><font class="G2">G</font><font class="R2">ACTTC</font><font class="GAP">&#8209;</font><font class="A2">A</font><font class="R2">GTA</font><font class="G2">G</font><font class="R2">C</font><font class="A2">A</font><font class="R2">TC</font><font class="A2">A</font><font class="R2">TCTTT</font><font class="G2">G</font><font class="R2">AAGCG</font><font class="G2">G</font><font class="R2">CG</font><font class="T2">T</font><font class="R2">A</font><font class="A2">A</font><font class="R2">TGACTCAAG</font><font class="C2">C</font><font class="R2">TCACCTTC</font><font class="A2">A</font><font class="R2">TAG</font><font class="R1">A</font><font class="R2">TAAC</font><font class="R0">N</font><font class="R2">ACGTT</font><font class="G2">G</font><font class="R2">TCACG</font><font class="T2">T</font><font class="R2">AG</font><font class="A2">A</font><font class="R2">ACACGGATTGGCGCGCT</font><font class="G2">G</font><font class="R2">CGCTTAACGAT</font><font class="A2">A</font><font class="R2">CCTTC</font><font class="A2">A</font><font class="R2">GT</font><font class="C2">C</font><font class="R2">ACCATACAACCCGCGa</font>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<font class="NC">2:8236398/1&#8209;159</font>&nbsp;(MQ=255)</CODE><BR>
+<!-- Reads End -->
+<CODE><font class="|5">|</font><font class=" 5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></CODE><BR>
+
+<!-- Reference Begin --><CODE><font class="C5">C</font><font class="A5">A</font><font class="C5">CC</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="A5">A</font><font class="C5">CC</font><font class="A5">A</font><font class="C5">C</font><font class="A5">A</font><font class="T5">TT</font><font class="C5">CC</font><font class="A5">A</font><font class="T5">T</font><font class="G5">G</font><font class="C5">CC</font><font class="G5">G</font><font class="T5">TT</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="T5">TT</font><font class="C5">C</font><font class="T5">TT</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="NC">&#8209;</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="C5">C</font><font class="T5">TTT</font><font class="A5">AAA</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">T</font><font class="G5">G</font><font class="A5">A</font><font class="C5">C</font><font class="T5">T</font><font class="C5">C</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">TT</font><font class="C5">C</font><font class="A5">A</font><font class="C5">CC</font><font class="T5">TT</font><font class="C5">C</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="A5">AA</font><font class="C5">CC</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="T5">TTTT</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="A5">AA</font><font class="G5">G</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="A5">A</font><font class="C5">C</font><font class="G5">GG</font><font class="A5">A</font><font class="T5">TT</font><font class="G5">GG</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="G5">G</font><font class="C5">C</font><font class="T5">TT</font><font class="A5">AA</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font><font class="T5">T</font><font class="G5">G</font><font class="C5">CC</font><font class="T5">TT</font><font class="C5">C</font><font class="T5">T</font><font class="G5">G</font><font class="T5">T</font><font class="A5">AA</font><font class="C5">CC</font><font class="A5">A</font><font class="T5">T</font><font class="A5">A</font><font class="C5">C</font><font class="A5">AA</font><font class="C5">CCC</font><font class="G5">G</font><font class="C5">C</font><font class="G5">G</font><font class="A5">A</font>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<font class="NC">NZ_AHBZ03000014.1/873800&#8209;873958</font></CODE><BR>
+<!-- Reference End -->
+
+</td></tr></table>
+
+<!-- Legend Begin --><br><table border="0" cellspacing="1" cellpadding="3" style="font-size:10pt"><tr><th align="left">Alignment Legend</th></tr><tr ><td >Aligned&nbsp;base&nbsp;mismatch/match&nbsp;(shaded&nbsp;by&nbsp;quality&nbsp;score):&nbsp;<CODE><font class="A0">A</font><font class="T0">T</font><font class="C0">C</font><font class="G0">G</font><font class="NC">/</font><font class="R0">ATCG</font></CODE><CODE>&nbsp;&lt;&nbsp;3&nbsp;&le;&nbsp;</CODE><CODE><font class="A1">A</font><font class="T1">T</font><font class="C1">C</font><font class="G1">G</font><font class="NC">/</font><font class="R1">ATCG</font></CODE><CODE>&nbsp;&lt;&nbsp;40&nbsp;&le;&nbsp;</CODE><CODE><font class="A2">A</font><font class="T2">T</font><font class="C2">C</font><font class="G2">G</font><font class="NC">/</font><font class="R2">ATCG</font></CODE></td></tr><tr ><td >Unaligned&nbsp;base:&nbsp;<code>atcg</code>&nbsp;&nbsp;&nbsp;&nbsp;Masked&nbsp;matching&nbsp;base:&nbsp;<CODE><font class="R5">atcg</font></CODE>&nbsp;&nbsp;&nbsp;&nbsp;Alignment&nbsp;gap:&nbsp;<CODE><font class="NC">&#8209;</font></CODE>&nbsp;&nbsp;&nbsp;&nbsp;Deleted&nbsp;base:&nbsp;<CODE><font class="GAP">&#8209;</font></CODE></td></tr></table>
+<!-- Legend End -->
+
+</body></html>

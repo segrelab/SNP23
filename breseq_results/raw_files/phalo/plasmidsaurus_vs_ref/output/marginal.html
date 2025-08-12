@@ -1,0 +1,227 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 42 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_276.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,662,155</td><td align="right">0</td><td align="center">T</td><td align="center">A</td><td align="right">56.7%
+</td><td align="center">30.7
+/&nbsp;106.9
+</td><td align="center">60</td><td align="center"><font class="snp_type_synonymous">T39T</font>&nbsp;(AC<font class="mutation_in_codon">A</font>&rarr;AC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_249.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,352,187</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">54.5%
+</td><td align="center">3.1
+/&nbsp;12.0
+</td><td align="center">11</td><td align="center"><font class="snp_type_nonsynonymous">D24E</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>BOOJCNFG_01346</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_244.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,190,388</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">51.1%
+</td><td align="center">9.6
+/&nbsp;67.5
+</td><td align="center">49</td><td align="center"><font class="snp_type_nonsynonymous">G182A</font>&nbsp;(G<font class="mutation_in_codon">G</font>C&rarr;G<font class="mutation_in_codon">C</font>C)&nbsp;</td><td align="center"><i>nodD2_1</i></td><td align="left">Nodulation protein D 2</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_302.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">2,268,651</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">50.0%
+</td><td align="center">&#8209;2.5
+/&nbsp;13.4
+</td><td align="center">14</td><td align="center">intergenic&nbsp;(&#8209;137/+232)</td><td align="center"><i>BOOJCNFG_02250/BOOJCNFG_02251</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_303.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">2,268,671</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">50.0%
+</td><td align="center">0.0
+/&nbsp;22.9
+</td><td align="center">16</td><td align="center">intergenic&nbsp;(&#8209;157/+212)</td><td align="center"><i>BOOJCNFG_02250/BOOJCNFG_02251</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_274.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,661,876</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">48.8%
+</td><td align="center">&#8209;1.7
+/&nbsp;63.5
+</td><td align="center">43</td><td align="center"><font class="snp_type_synonymous">V132V</font>&nbsp;(GT<font class="mutation_in_codon">C</font>&rarr;GT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_226.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">764,775</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">48.1%
+</td><td align="center">14.7
+/&nbsp;36.8
+</td><td align="center">27</td><td align="center">intergenic&nbsp;(+157/&#8209;338)</td><td align="center"><i>BOOJCNFG_00782/BOOJCNFG_00783</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_211.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">615,409</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">48.0%
+</td><td align="center">11.4
+/&nbsp;32.9
+</td><td align="center">25</td><td align="center"><font class="snp_type_nonsynonymous">T97A</font>&nbsp;(<font class="mutation_in_codon">A</font>CG&rarr;<font class="mutation_in_codon">G</font>CG)&nbsp;</td><td align="center"><i>BOOJCNFG_00620</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_270.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,661,266</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">47.4%
+</td><td align="center">&#8209;3.8
+/&nbsp;58.0
+</td><td align="center">38</td><td align="center"><font class="snp_type_synonymous">R336R</font>&nbsp;(<font class="mutation_in_codon">A</font>GG&rarr;<font class="mutation_in_codon">C</font>GG)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_271.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,661,267</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">47.4%
+</td><td align="center">8.1
+/&nbsp;48.9
+</td><td align="center">38</td><td align="center"><font class="snp_type_synonymous">F335F</font>&nbsp;(TT<font class="mutation_in_codon">T</font>&rarr;TT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_272.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,661,270</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">47.4%
+</td><td align="center">8.5
+/&nbsp;53.0
+</td><td align="center">38</td><td align="center"><font class="snp_type_synonymous">Y334Y</font>&nbsp;(TA<font class="mutation_in_codon">C</font>&rarr;TA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_275.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,662,023</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">47.2%
+</td><td align="center">3.1
+/&nbsp;48.9
+</td><td align="center">36</td><td align="center"><font class="snp_type_synonymous">P83P</font>&nbsp;(CC<font class="mutation_in_codon">T</font>&rarr;CC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_223.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">764,761</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">46.4%
+</td><td align="center">37.0
+/&nbsp;57.8
+</td><td align="center">29</td><td align="center">intergenic&nbsp;(+143/&#8209;352)</td><td align="center"><i>BOOJCNFG_00782/BOOJCNFG_00783</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_347.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">3,192,080</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">45.9%
+</td><td align="center">34.1
+/&nbsp;97.9
+</td><td align="center">62</td><td align="center">intergenic&nbsp;(&#8209;99/&#8209;245)</td><td align="center"><i>BOOJCNFG_03165/cynT</i></td><td align="left">hypothetical protein/Carbonic anhydrase 1</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_346.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">3,192,079</td><td align="right">0</td><td align="center">T</td><td align="center">.</td><td align="right">45.2%
+</td><td align="center">100.2
+/&nbsp;118.4
+</td><td align="center">62</td><td align="center">intergenic&nbsp;(&#8209;98/&#8209;246)</td><td align="center"><i>BOOJCNFG_03165/cynT</i></td><td align="left">hypothetical protein/Carbonic anhydrase 1</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_224.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">764,761</td><td align="right">2</td><td align="center">.</td><td align="center">G</td><td align="right">44.8%
+</td><td align="center">38.5
+/&nbsp;59.1
+</td><td align="center">29</td><td align="center">intergenic&nbsp;(+143/&#8209;352)</td><td align="center"><i>BOOJCNFG_00782/BOOJCNFG_00783</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_225.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">764,761</td><td align="right">3</td><td align="center">.</td><td align="center">C</td><td align="right">44.8%
+</td><td align="center">38.7
+/&nbsp;54.7
+</td><td align="center">29</td><td align="center">intergenic&nbsp;(+143/&#8209;352)</td><td align="center"><i>BOOJCNFG_00782/BOOJCNFG_00783</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_228.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">765,040</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">44.8%
+</td><td align="center">24.8
+/&nbsp;46.1
+</td><td align="center">29</td><td align="center">intergenic&nbsp;(+422/&#8209;73)</td><td align="center"><i>BOOJCNFG_00782/BOOJCNFG_00783</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_348.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">3,192,082</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">44.4%
+</td><td align="center">4.7
+/&nbsp;88.0
+</td><td align="center">63</td><td align="center">intergenic&nbsp;(&#8209;101/&#8209;243)</td><td align="center"><i>BOOJCNFG_03165/cynT</i></td><td align="left">hypothetical protein/Carbonic anhydrase 1</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_273.html">*</a></td><td align="center">GCA_000230555.CP0030753944837</td><td align="right">1,661,746</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">44.2%
+</td><td align="center">14.0
+/&nbsp;66.9
+</td><td align="center">52</td><td align="center"><font class="snp_type_synonymous">L176L</font>&nbsp;(<font class="mutation_in_codon">T</font>TG&rarr;<font class="mutation_in_codon">C</font>TG)&nbsp;</td><td align="center"><i>tufA_1</i></td><td align="left">Elongation factor Tu</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (sorted from low to high skew)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_429.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_429.html">?</a></td>
+<td rowspan="1" class="junction_gene">GCA_000230555.CP0030753944837</td>
+<td align="center" class="junction_gene">=&nbsp;505323</td><td align="center" class="junction_gene">24 (0.850)</td><td rowspan="2" align="center">5 (0.190)</td>
+<td rowspan="2" align="center">4/300</td>
+<td rowspan="2" align="center">2.6</td>
+<td rowspan="2" align="center">17.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;36/+34)</td>
+<td align="center" class="junction_gene"><i>yabJ/atpF_1</i></td>
+<td class="junction_gene">2&#8209;iminobutanoate/2&#8209;iminopropanoate deaminase/ATP synthase subunit b</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_429.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000230555.CP0030753944837</td>
+<td align="center" class="junction_gene">=&nbsp;505327</td>
+<td align="center" class="junction_gene">24 (0.900)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;40/+30)</td>
+<td align="center" class="junction_gene"><i>yabJ/atpF_1</i></td>
+<td class="junction_gene">2&#8209;iminobutanoate/2&#8209;iminopropanoate deaminase/ATP synthase subunit b</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_448.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_448.html">?</a></td>
+<td rowspan="1" class="junction_gene">GCA_000230555.CP0030753944837</td>
+<td align="center" class="junction_gene">2438954&nbsp;=</td><td align="center" class="junction_gene">17 (0.600)</td><td rowspan="2" align="center">5 (0.190)</td>
+<td rowspan="2" align="center">3/300</td>
+<td rowspan="2" align="center">3.0</td>
+<td rowspan="2" align="center">36.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;656/+404)</td>
+<td align="center" class="junction_gene"><i>BOOJCNFG_02410/ftsH_1</i></td>
+<td class="junction_gene">hypothetical protein/ATP&#8209;dependent zinc metalloprotease FtsH</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_448.html">?</a></td><td rowspan="1" class="junction_gene">GCA_000230555.CP0030753944837</td>
+<td align="center" class="junction_gene">=&nbsp;3126863</td>
+<td align="center" class="junction_gene">1 (0.040)</td><td align="center" class="junction_gene">coding&nbsp;(175/228&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>BOOJCNFG_03100</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+</table>
+</body></html>

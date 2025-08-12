@@ -1,0 +1,8 @@
+Thu Jul 24 11:37:49 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/GCF_000154725.1_ASM15472v1_genomic/GCF_000154725.1_ASM15472v1_genomic.gbk -o breseq_results/raw_files/kordia/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_6_polish/TKDHS4_6_S38_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_6_polish/TKDHS4_6_S38_R2_001.fastq.gz
+
+Sun Jul 27 15:28:39 2025
+
+breseq -r /projectnb/hfsp/IAMM_reference_files/prokka_results/GCF_000154725.1_ASM15472v1_genomic/GCF_000154725.1_ASM15472v1_genomic.gbk -o breseq_results/raw_files/kordia/plasmidsaurus_vs_ref /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_6_polish/TKDHS4_6_S38_R1_001.fastq.gz /projectnb/hfsp/Plasmidsaurus25/archive/TKDHS4_polished_results/TKDHS4_6_polish/TKDHS4_6_S38_R2_001.fastq.gz
+

@@ -1,0 +1,294 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="6" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="right">1,988</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;3506)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>LPGDONMM_00001</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="right">2,594</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8211;/&#8209;2900)</td>
+<td align="center"><i>&#8211;</i>&nbsp;/&nbsp;&rarr;&nbsp;<i>LPGDONMM_00001</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="right">13,284</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+5616/&#8209;4654)</td>
+<td align="center"><i>LPGDONMM_00003</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>LPGDONMM_00004</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="right">32,759</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">R1249P</font>&nbsp;(C<font class="mutation_in_codon">G</font>A&rarr;C<font class="mutation_in_codon">C</font>A)&nbsp;</td>
+<td align="center"><i>rpoB</i>&nbsp;&larr;</td>
+<td align="left">DNA&#8209;directed RNA polymerase subunit beta</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="right">316,918</td><!-- Position -->
+<td align="center">G&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">T137S</font>&nbsp;(A<font class="mutation_in_codon">C</font>T&rarr;A<font class="mutation_in_codon">G</font>T)&nbsp;</td>
+<td align="center"><i>coxM</i>&nbsp;&larr;</td>
+<td align="left">Alternative cytochrome c oxidase subunit 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="right">947,369</td><!-- Position -->
+<td align="center">C&rarr;G</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+26/+32)</td>
+<td align="center"><i>LPGDONMM_00841</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>dxs_1</i></td>
+<td align="left">hypothetical protein/1&#8209;deoxy&#8209;D&#8209;xylulose&#8209;5&#8209;phosphate synthase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="right">1,476,078</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">G240S</font>&nbsp;(<font class="mutation_in_codon">G</font>GT&rarr;<font class="mutation_in_codon">A</font>GT)&nbsp;</td>
+<td align="center"><i>gdhA_2</i>&nbsp;&rarr;</td>
+<td align="left">Glutamate dehydrogenase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="right">2,203,760</td><!-- Position -->
+<td align="center">A&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">V409E</font>&nbsp;(G<font class="mutation_in_codon">T</font>G&rarr;G<font class="mutation_in_codon">A</font>G)&nbsp;</td>
+<td align="center"><i>bepE</i>&nbsp;&larr;</td>
+<td align="left">Efflux pump membrane transporter BepE</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/DEL_9.html">RA</a></td><!-- Evidence -->
+<td align="right">2,797,038</td><!-- Position -->
+<td align="center">&Delta;1&nbsp;bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;94/&#8209;62)</td>
+<td align="center"><i>LPGDONMM_02572</i>&nbsp;&larr;&nbsp;/&nbsp;&rarr;&nbsp;<i>putC</i></td>
+<td align="left">hypothetical protein/1&#8209;pyrroline&#8209;5&#8209;carboxylate dehydrogenase 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_443.html">JC</a></td><!-- Evidence -->
+<td align="right">2,876,595</td><!-- Position -->
+<td align="center">(GTTAAACCTCA)<sub>2&rarr;1</sub></td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+103/+88)</td>
+<td align="center"><i>LPGDONMM_02643</i>&nbsp;&rarr;&nbsp;/&nbsp;&larr;&nbsp;<i>LPGDONMM_02644</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_11.html">RA</a></td><!-- Evidence -->
+<td align="right">2,952,800</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V45V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>sdrD</i>&nbsp;&larr;</td>
+<td align="left">Serine&#8209;aspartate repeat&#8209;containing protein D</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_12.html">RA</a></td><!-- Evidence -->
+<td align="right">2,952,878</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G19G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>sdrD</i>&nbsp;&larr;</td>
+<td align="left">Serine&#8209;aspartate repeat&#8209;containing protein D</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_153.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_153.html">*</a></td>
+<td><a href="evidence/MC_PLOT_153.html">&divide;</a></td>
+<td>CA2559_HTCC2559.1</td>
+<td align="right">1&#8211;455</td>
+<td align="right">455</td>
+<td align="right">1&#8211;455</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[82]&nbsp;86</td>
+<td align="center"><i>&#8211;/LPGDONMM_00001</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_154.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_154.html">*</a></td>
+<td><a href="evidence/MC_PLOT_154.html">&divide;</a></td>
+<td>CA2559_HTCC2559.1</td>
+<td align="right">1255849&#8211;1260279</td>
+<td align="right">1261122&#8211;1260284</td>
+<td align="right">6&#8211;5274</td>
+<td align="center">85&nbsp;[84]</td>
+<td align="center">[81]&nbsp;85</td>
+<td align="center"><i>LPGDONMM_01123&#8211;LPGDONMM_01125</i></td>
+<td align="left">LPGDONMM_01123,LPGDONMM_01124,LPGDONMM_01125</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_171.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_171.html">?</a></td>
+<td rowspan="1" class="junction_gene">CA2559_HTCC2559.1</td>
+<td align="center" class="junction_gene">=&nbsp;4475</td><td align="center" class="junction_gene">183 (1.100)</td><td rowspan="2" align="center">125 (0.840)<br>+TACTCCATCAGAGATG</td>
+<td rowspan="2" align="center">54/284</td>
+<td rowspan="2" align="center">0.8</td>
+<td rowspan="2" align="center">44.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;1019)</td>
+<td align="center" class="junction_gene"><i>&#8211;/LPGDONMM_00001</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_171.html">?</a></td><td rowspan="1" class="junction_gene">CA2559_HTCC2559.1</td>
+<td align="center" class="junction_gene">2950366&nbsp;=</td>
+<td align="center" class="junction_gene">161 (0.970)</td><td align="center" class="junction_gene">coding&nbsp;(1400/4944&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>LPGDONMM_02720</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 1400 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1677.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">251,927</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">79.0%
+</td><td align="center">227.3
+/&nbsp;48.3
+</td><td align="center">114</td><td align="center"><font class="snp_type_synonymous">D180D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_481.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">2,711,476</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">77.7%
+</td><td align="center">179.3
+/&nbsp;68.0
+</td><td align="center">121</td><td align="center"><font class="snp_type_synonymous">G513G</font>&nbsp;(GG<font class="mutation_in_codon">G</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>EGCLNINO_03805</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1676.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">251,924</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">77.4%
+</td><td align="center">236.8
+/&nbsp;47.7
+</td><td align="center">115</td><td align="center"><font class="snp_type_synonymous">A181A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_482.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">2,711,515</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">77.3%
+</td><td align="center">143.0
+/&nbsp;61.3
+</td><td align="center">121</td><td align="center"><font class="snp_type_synonymous">G526G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>EGCLNINO_03805</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_619.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">3,388,171</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">76.7%
+</td><td align="center">80.2
+/&nbsp;21.8
+</td><td align="center">43</td><td align="center"><font class="snp_type_synonymous">A461A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>EGCLNINO_04464</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_487.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">2,711,683</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">76.7%
+</td><td align="center">164.1
+/&nbsp;54.2
+</td><td align="center">104</td><td align="center"><font class="snp_type_synonymous">A582A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>EGCLNINO_03805</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1675.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">251,876</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">75.9%
+</td><td align="center">190.1
+/&nbsp;59.4
+</td><td align="center">119</td><td align="center"><font class="snp_type_synonymous">L197L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1678.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">252,008</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">75.6%
+</td><td align="center">176.3
+/&nbsp;65.4
+</td><td align="center">116</td><td align="center"><font class="snp_type_synonymous">A153A</font>&nbsp;(GC<font class="mutation_in_codon">A</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1679.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">252,011</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">74.4%
+</td><td align="center">160.8
+/&nbsp;67.1
+</td><td align="center">117</td><td align="center"><font class="snp_type_synonymous">S152S</font>&nbsp;(AG<font class="mutation_in_codon">T</font>&rarr;AG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_484.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">2,711,521</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">72.9%
+</td><td align="center">122.6
+/&nbsp;73.4
+</td><td align="center">129</td><td align="center"><font class="snp_type_synonymous">L528L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>EGCLNINO_03805</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_479.html">*</a></td><td align="center">NZ_DS022276.1</td><td align="right">2,711,458</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">72.2%
+</td><td align="center">138.3
+/&nbsp;81.6
+</td><td align="center">133</td><td align="center"><font class="snp_type_synonymous">L507L</font>&nbsp;(CT<font class="mutation_in_codon">T</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>EGCLNINO_03805</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_880.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">474,342</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">71.8%
+</td><td align="center">242.3
+/&nbsp;100.4
+</td><td align="center">163</td><td align="center"><font class="snp_type_synonymous">G189G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>algA</i></td><td align="left">Alginate biosynthesis protein AlgA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_774.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">472,453</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">71.8%
+</td><td align="center">189.8
+/&nbsp;75.5
+</td><td align="center">124</td><td align="center"><font class="snp_type_synonymous">L327L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>glmM_1</i></td><td align="left">Phosphoglucosamine mutase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_775.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">472,458</td><td align="right">0</td><td align="center">A</td><td align="center">T</td><td align="right">71.8%
+</td><td align="center">222.5
+/&nbsp;107.2
+</td><td align="center">124</td><td align="center"><font class="snp_type_nonsynonymous">S326T</font>&nbsp;(<font class="mutation_in_codon">T</font>CG&rarr;<font class="mutation_in_codon">A</font>CG)&nbsp;</td><td align="center"><i>glmM_1</i></td><td align="left">Phosphoglucosamine mutase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_841.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">473,514</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">71.5%
+</td><td align="center">166.3
+/&nbsp;71.4
+</td><td align="center">125</td><td align="center"><font class="snp_type_synonymous">Y465Y</font>&nbsp;(TA<font class="mutation_in_codon">C</font>&rarr;TA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>algA</i></td><td align="left">Alginate biosynthesis protein AlgA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_1674.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">251,870</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">71.4%
+</td><td align="center">131.2
+/&nbsp;68.8
+</td><td align="center">105</td><td align="center"><font class="snp_type_synonymous">K199K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>noc_3</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_986.html">*</a></td><td align="center">NZ_DS022278.1</td><td align="right">143,243</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">71.3%
+</td><td align="center">268.5
+/&nbsp;122.6
+</td><td align="center">188</td><td align="center"><font class="snp_type_nonsynonymous">S244N</font>&nbsp;(A<font class="mutation_in_codon">G</font>C&rarr;A<font class="mutation_in_codon">A</font>C)&nbsp;</td><td align="center"><i>EGCLNINO_00395</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_773.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">472,447</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">71.2%
+</td><td align="center">159.1
+/&nbsp;84.7
+</td><td align="center">125</td><td align="center"><font class="snp_type_synonymous">T329T</font>&nbsp;(AC<font class="mutation_in_codon">A</font>&rarr;AC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>glmM_1</i></td><td align="left">Phosphoglucosamine mutase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_808.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">472,903</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">70.6%
+</td><td align="center">149.3
+/&nbsp;69.8
+</td><td align="center">109</td><td align="center"><font class="snp_type_synonymous">L177L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>glmM_1</i></td><td align="left">Phosphoglucosamine mutase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_797.html">*</a></td><td align="center">NZ_DS022277.1</td><td align="right">472,777</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">70.6%
+</td><td align="center">206.5
+/&nbsp;106.6
+</td><td align="center">136</td><td align="center"><font class="snp_type_synonymous">A219A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>glmM_1</i></td><td align="left">Phosphoglucosamine mutase</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (sorted from low to high skew)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_2100.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2100.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;442304</td><td align="center" class="junction_gene">50 (1.260)</td><td rowspan="2" align="center">7 (0.180)</td>
+<td rowspan="2" align="center">6/302</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">12.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;25/&#8209;483)</td>
+<td align="center" class="junction_gene"><i>rplJ/EGCLNINO_01651</i></td>
+<td class="junction_gene">50S ribosomal protein L10/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2100.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;442307</td>
+<td align="center" class="junction_gene">51 (1.350)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;28/&#8209;480)</td>
+<td align="center" class="junction_gene"><i>rplJ/EGCLNINO_01651</i></td>
+<td class="junction_gene">50S ribosomal protein L10/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_2099.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2099.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;327601</td><td align="center" class="junction_gene">64 (1.610)</td><td rowspan="2" align="center">6 (0.180)</td>
+<td rowspan="2" align="center">5/272</td>
+<td rowspan="2" align="center">2.7</td>
+<td rowspan="2" align="center">10.5%</td>
+<td align="center" class="junction_gene">noncoding&nbsp;(54/77&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_01531</i></td>
+<td class="junction_gene">tRNA&#8209;Met</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2099.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">328703&nbsp;=</td>
+<td align="center" class="junction_gene">47 (1.380)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1079/&#8209;373)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_01531/EGCLNINO_01532</i></td>
+<td class="junction_gene">tRNA&#8209;Met/IS256 family transposase ISPebe1</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_2134.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2134.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022277.1</td>
+<td align="center" class="junction_gene">45587&nbsp;=</td><td align="center" class="junction_gene">64 (1.590)</td><td rowspan="2" align="center">5 (0.130)</td>
+<td rowspan="2" align="center">4/306</td>
+<td rowspan="2" align="center">3.4</td>
+<td rowspan="2" align="center">6.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;20/&#8209;110)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_00572/btuD_5</i></td>
+<td class="junction_gene">hypothetical protein/Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2134.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022277.1</td>
+<td align="center" class="junction_gene">45612&nbsp;=</td>
+<td align="center" class="junction_gene">76 (1.950)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;45/&#8209;85)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_00572/btuD_5</i></td>
+<td class="junction_gene">hypothetical protein/Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_2130.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2130.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;3487497</td><td align="center" class="junction_gene">37 (0.930)</td><td rowspan="2" align="center">3 (0.080)</td>
+<td rowspan="2" align="center">3/304</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">8.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;1396/+63)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_04553/eno</i></td>
+<td class="junction_gene">tRNA&#8209;Ala/Enolase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2130.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;3487510</td>
+<td align="center" class="junction_gene">33 (0.860)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;1409/+50)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_04553/eno</i></td>
+<td class="junction_gene">tRNA&#8209;Ala/Enolase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_2120.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2120.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">2510635&nbsp;=</td><td align="center" class="junction_gene">16 (0.400)</td><td rowspan="2" align="center">3 (0.080)</td>
+<td rowspan="2" align="center">3/304</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">14.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;9/+72)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_03626/EGCLNINO_03627</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2120.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">2510659&nbsp;=</td>
+<td align="center" class="junction_gene">20 (0.520)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;33/+48)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_03626/EGCLNINO_03627</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_2112.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2112.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">=&nbsp;1690140</td><td align="center" class="junction_gene">19 (0.480)</td><td rowspan="2" align="center">3 (0.080)</td>
+<td rowspan="2" align="center">3/304</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">14.9%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;121/&#8209;27)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_02844/EGCLNINO_02845</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2112.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">2510641&nbsp;=</td>
+<td align="center" class="junction_gene">16 (0.420)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;15/+66)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_03626/EGCLNINO_03627</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_2108.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_2108.html">?</a></td>
+<td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">1262742&nbsp;=</td><td align="center" class="junction_gene">20 (0.500)</td><td rowspan="2" align="center">3 (0.080)</td>
+<td rowspan="2" align="center">3/304</td>
+<td rowspan="2" align="center">3.9</td>
+<td rowspan="2" align="center">14.5%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;27/&#8209;447)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_02456/EGCLNINO_02457</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_2108.html">?</a></td><td rowspan="1" class="junction_gene">NZ_DS022276.1</td>
+<td align="center" class="junction_gene">2510641&nbsp;=</td>
+<td align="center" class="junction_gene">16 (0.420)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;15/+66)</td>
+<td align="center" class="junction_gene"><i>EGCLNINO_03626/EGCLNINO_03627</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 171 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="normal_table_row"><td><a href="evidence/RA_431.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">273,183</td><td align="right">2</td><td align="center">.</td><td align="center">G</td><td align="right">80.0%
+</td><td align="center">125.0
+/&nbsp;28.2
+</td><td align="center">50</td><td align="center">coding&nbsp;(29/1008&nbsp;nt)</td><td align="center"><i>tdcG</i></td><td align="left">L&#8209;serine dehydratase TdcG</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_430.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">273,183</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">79.6%
+</td><td align="center">140.4
+/&nbsp;28.7
+</td><td align="center">50</td><td align="center">coding&nbsp;(29/1008&nbsp;nt)</td><td align="center"><i>tdcG</i></td><td align="left">L&#8209;serine dehydratase TdcG</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_474.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">846,063</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">79.5%
+</td><td align="center">113.4
+/&nbsp;21.8
+</td><td align="center">39</td><td align="center">intergenic&nbsp;(+59/+215)</td><td align="center"><i>thiE/EEBHKDBK_00827</i></td><td align="left">Thiamine&#8209;phosphate synthase/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_466.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">690,869</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">77.8%
+</td><td align="center">69.5
+/&nbsp;14.1
+</td><td align="center">28</td><td align="center">intergenic&nbsp;(+66/&#8209;56)</td><td align="center"><i>EEBHKDBK_00669/EEBHKDBK_00670</i></td><td align="left">hypothetical protein/IS200/IS605 family transposase ISW1</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_479.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">878,649</td><td align="right">1</td><td align="center">.</td><td align="center">G</td><td align="right">65.4%
+</td><td align="center">52.0
+/&nbsp;27.6
+</td><td align="center">27</td><td align="center">coding&nbsp;(46/2319&nbsp;nt)</td><td align="center"><i>sasA_5</i></td><td align="left">Adaptive&#8209;response sensory&#8209;kinase SasA</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_658.html">*</a></td><td align="center">B10&#8209;chromosome</td><td align="right">2,995,775</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">56.2%
+</td><td align="center">4.4
+/&nbsp;14.1
+</td><td align="center">16</td><td align="center">intergenic&nbsp;(+81/+82)</td><td align="center"><i>zapE/ubiL_2</i></td><td align="left">Cell division protein ZapE/Ubiquinone hydroxylase UbiL</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_939.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,779</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">53.5%
+</td><td align="center">8.4
+/&nbsp;119.0
+</td><td align="center">87</td><td align="center"><font class="snp_type_nonsynonymous">A148S</font>&nbsp;(<font class="mutation_in_codon">G</font>CC&rarr;<font class="mutation_in_codon">T</font>CC)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_769.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,847</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">50.0%
+</td><td align="center">&#8209;1.3
+/&nbsp;166.4
+</td><td align="center">115</td><td align="center"><font class="snp_type_synonymous">F68F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_940.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,783</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">49.4%
+</td><td align="center">2.1
+/&nbsp;151.1
+</td><td align="center">90</td><td align="center"><font class="snp_type_synonymous">T146T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_768.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,841</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">49.1%
+</td><td align="center">11.8
+/&nbsp;157.7
+</td><td align="center">109</td><td align="center"><font class="snp_type_synonymous">N70N</font>&nbsp;(AA<font class="mutation_in_codon">T</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_772.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,883</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">49.0%
+</td><td align="center">1.2
+/&nbsp;158.7
+</td><td align="center">103</td><td align="center"><font class="snp_type_synonymous">A56A</font>&nbsp;(GC<font class="mutation_in_codon">C</font>&rarr;GC<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_937.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,762</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">48.8%
+</td><td align="center">5.9
+/&nbsp;129.0
+</td><td align="center">84</td><td align="center"><font class="snp_type_synonymous">R153R</font>&nbsp;(CG<font class="mutation_in_codon">T</font>&rarr;CG<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_938.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,768</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">48.8%
+</td><td align="center">&#8209;6.3
+/&nbsp;116.4
+</td><td align="center">83</td><td align="center"><font class="snp_type_synonymous">K151K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_773.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,892</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">47.6%
+</td><td align="center">31.7
+/&nbsp;173.7
+</td><td align="center">105</td><td align="center"><font class="snp_type_synonymous">A53A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_941.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,789</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">46.8%
+</td><td align="center">14.0
+/&nbsp;130.9
+</td><td align="center">94</td><td align="center"><font class="snp_type_synonymous">G144G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_943.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,807</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">46.5%
+</td><td align="center">22.5
+/&nbsp;163.0
+</td><td align="center">99</td><td align="center"><font class="snp_type_synonymous">T138T</font>&nbsp;(AC<font class="mutation_in_codon">G</font>&rarr;AC<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_942.html">*</a></td><td align="center">B10&#8209;replicon_3</td><td align="right">225,798</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">45.8%
+</td><td align="center">21.9
+/&nbsp;130.9
+</td><td align="center">96</td><td align="center"><font class="snp_type_synonymous">K141K</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>noc_4</i></td><td align="left">Nucleoid occlusion protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_770.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,868</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">45.8%
+</td><td align="center">21.4
+/&nbsp;160.4
+</td><td align="center">119</td><td align="center"><font class="snp_type_synonymous">F61F</font>&nbsp;(TT<font class="mutation_in_codon">C</font>&rarr;TT<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_771.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,874</td><td align="right">0</td><td align="center">T</td><td align="center">C</td><td align="right">45.1%
+</td><td align="center">36.2
+/&nbsp;150.3
+</td><td align="center">113</td><td align="center"><font class="snp_type_synonymous">S59S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_765.html">*</a></td><td align="center">B10&#8209;replicon_1</td><td align="right">94,778</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">44.5%
+</td><td align="center">49.0
+/&nbsp;165.0
+</td><td align="center">119</td><td align="center"><font class="snp_type_synonymous">A91A</font>&nbsp;(GC<font class="mutation_in_codon">G</font>&rarr;GC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>EEBHKDBK_03972</i></td><td align="left">hypothetical protein</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 11 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1021.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1021.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;3646336</td><td align="center" class="junction_gene">36 (0.710)</td><td rowspan="2" align="center">5 (0.110)</td>
+<td rowspan="2" align="center">5/280</td>
+<td rowspan="2" align="center">3.7</td>
+<td rowspan="2" align="center">13.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(776/972&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_03658</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1021.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;3646318</td>
+<td align="center" class="junction_gene">32 (0.720)</td><td align="center" class="junction_gene">coding&nbsp;(794/972&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_03658</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1012.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1012.html">?</a></td>
+<td rowspan="1" class="junction_repeat">B10&#8209;chromosome</td>
+<td align="center" class="junction_repeat">=&nbsp;33832</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">4 (0.080)</td>
+<td rowspan="2" align="center">4/314</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">8.0%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;271/&#8209;192)</td>
+<td align="center" class="junction_repeat"><i>EEBHKDBK_00044/nrdR</i></td>
+<td class="junction_repeat">hypothetical protein/Transcriptional repressor NrdR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1012.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_10</td>
+<td align="center" class="junction_gene">=&nbsp;20950</td>
+<td align="center" class="junction_gene">46 (0.820)</td><td align="center" class="junction_gene">coding&nbsp;(244/1683&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>virD4_1</i></td>
+<td class="junction_gene">Protein VirD4</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1011.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1011.html">?</a></td>
+<td rowspan="1" class="junction_repeat">B10&#8209;chromosome</td>
+<td align="center" class="junction_repeat">=&nbsp;33831</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">10 (0.210)</td>
+<td rowspan="2" align="center">4/312</td>
+<td rowspan="2" align="center">4.5</td>
+<td rowspan="2" align="center">27.3%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;270/&#8209;193)</td>
+<td align="center" class="junction_repeat"><i>EEBHKDBK_00044/nrdR</i></td>
+<td class="junction_repeat">hypothetical protein/Transcriptional repressor NrdR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1011.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_5</td>
+<td align="center" class="junction_gene">49554&nbsp;=</td>
+<td align="center" class="junction_gene">27 (0.570)</td><td align="center" class="junction_gene">coding&nbsp;(483/1044&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>uxuA_2</i></td>
+<td class="junction_gene">Mannonate dehydratase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1019.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1019.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;3360785</td><td align="center" class="junction_gene">62 (1.230)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/290</td>
+<td rowspan="2" align="center">4.7</td>
+<td rowspan="2" align="center">4.9%</td>
+<td align="center" class="junction_gene">coding&nbsp;(516/1635&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>bicA</i></td>
+<td class="junction_gene">Bicarbonate transporter BicA</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1019.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">3361203&nbsp;=</td>
+<td align="center" class="junction_gene">60 (1.300)</td><td align="center" class="junction_gene">coding&nbsp;(934/1635&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>bicA</i></td>
+<td class="junction_gene">Bicarbonate transporter BicA</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1018.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1018.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">2607592&nbsp;=</td><td align="center" class="junction_gene">54 (1.070)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/292</td>
+<td rowspan="2" align="center">4.8</td>
+<td rowspan="2" align="center">5.5%</td>
+<td align="center" class="junction_gene">coding&nbsp;(87/495&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_02605</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1018.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;2607588</td>
+<td align="center" class="junction_gene">54 (1.160)</td><td align="center" class="junction_gene">coding&nbsp;(83/495&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_02605</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1013.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1013.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;551831</td><td align="center" class="junction_gene">31 (0.610)</td><td rowspan="2" align="center">3 (0.060)</td>
+<td rowspan="2" align="center">3/314</td>
+<td rowspan="2" align="center">5.0</td>
+<td rowspan="2" align="center">6.8%</td>
+<td align="center" class="junction_gene">coding&nbsp;(2026/2160&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>purL</i></td>
+<td class="junction_gene">Phosphoribosylformylglycinamidine synthase subunit PurL</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1013.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;chromosome</td>
+<td align="center" class="junction_gene">552789&nbsp;=</td>
+<td align="center" class="junction_gene">52 (1.040)</td><td align="center" class="junction_gene">coding&nbsp;(1068/2160&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>purL</i></td>
+<td class="junction_gene">Phosphoribosylformylglycinamidine synthase subunit PurL</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1034.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1034.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;replicon_4</td>
+<td align="center" class="junction_gene">81655&nbsp;=</td><td align="center" class="junction_gene">52 (1.060)</td><td rowspan="2" align="center">5 (0.110)</td>
+<td rowspan="2" align="center">3/302</td>
+<td rowspan="2" align="center">5.1</td>
+<td rowspan="2" align="center">10.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(304/582&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_04948</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1034.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_4</td>
+<td align="center" class="junction_gene">81736&nbsp;=</td>
+<td align="center" class="junction_gene">40 (0.850)</td><td align="center" class="junction_gene">coding&nbsp;(223/582&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_04948</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1023.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1023.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;replicon_1</td>
+<td align="center" class="junction_gene">94967&nbsp;=</td><td align="center" class="junction_gene">110 (1.370)</td><td rowspan="2" align="center">18 (0.250)</td>
+<td rowspan="2" align="center">5/310</td>
+<td rowspan="2" align="center">5.2</td>
+<td rowspan="2" align="center">14.4%</td>
+<td align="center" class="junction_gene">coding&nbsp;(84/930&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_03972</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1023.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_3</td>
+<td align="center" class="junction_gene">220630&nbsp;=</td>
+<td align="center" class="junction_gene">106 (1.620)</td><td align="center" class="junction_gene">coding&nbsp;(2189/2325&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>EEBHKDBK_04792</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1026.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1026.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;292669</td><td align="center" class="junction_gene">121 (1.510)</td><td rowspan="2" align="center">9 (0.120)</td>
+<td rowspan="2" align="center">7/296</td>
+<td rowspan="2" align="center">5.5</td>
+<td rowspan="2" align="center">7.6%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;48/+25)</td>
+<td align="center" class="junction_gene"><i>cpnA/EEBHKDBK_04170</i></td>
+<td class="junction_gene">Cyclopentanol dehydrogenase/Baeyer&#8209;Villiger monooxygenase</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1026.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;292679</td>
+<td align="center" class="junction_gene">106 (1.410)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;58/+15)</td>
+<td align="center" class="junction_gene"><i>cpnA/EEBHKDBK_04170</i></td>
+<td class="junction_gene">Cyclopentanol dehydrogenase/Baeyer&#8209;Villiger monooxygenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1027.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1027.html">?</a></td>
+<td rowspan="1" class="junction_gene">B10&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;352297</td><td align="center" class="junction_gene">79 (0.990)</td><td rowspan="2" align="center">3 (0.040)</td>
+<td rowspan="2" align="center">3/298</td>
+<td rowspan="2" align="center">7.6</td>
+<td rowspan="2" align="center">4.0%</td>
+<td align="center" class="junction_gene">coding&nbsp;(879/954&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>nphR</i></td>
+<td class="junction_gene">Transcriptional activator NphR</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1027.html">?</a></td><td rowspan="1" class="junction_gene">B10&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;352306</td>
+<td align="center" class="junction_gene">71 (0.940)</td><td align="center" class="junction_gene">coding&nbsp;(888/954&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>nphR</i></td>
+<td class="junction_gene">Transcriptional activator NphR</td>
+</tr>
+</table>
+</body></html>

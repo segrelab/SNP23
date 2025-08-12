@@ -1,0 +1,839 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Mutation Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<!--Mutation Predictions -->
+<p>
+<!--Output Html_Mutation_Table_String-->
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="7" align="left" class="mutation_header_row">Predicted mutations</th></tr><tr>
+<th>evidence</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>mutation</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+
+<!-- Item Lines -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_1.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_0.1282200</td><!-- Seq_Id -->
+<td align="right">159,792</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(+69/&#8209;19)</td>
+<td align="center"><i>GIHMMLFK_00160</i>&nbsp;&rarr;&nbsp;/&nbsp;&rarr;&nbsp;<i>GIHMMLFK_00161</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_2.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_1.2281151</td><!-- Seq_Id -->
+<td align="right">222,797</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">Y97C</font>&nbsp;(T<font class="mutation_in_codon">A</font>T&rarr;T<font class="mutation_in_codon">G</font>T)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_00485</i>&nbsp;&rarr;</td>
+<td align="left">GTP cyclohydrolase 1 type 2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_3.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_10.1198990</td><!-- Seq_Id -->
+<td align="right">98,031</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A109V</font>&nbsp;(G<font class="mutation_in_codon">C</font>T&rarr;G<font class="mutation_in_codon">T</font>T)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01954</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_4.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">236</td><!-- Position -->
+<td align="center">N&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><span style="white-space: nowrap"><font class="snp_type_nonsynonymous">?71G</font>&nbsp;(GG<font class="mutation_in_codon">N</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</span></td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_5.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">257</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">S78S</font>&nbsp;(TC<font class="mutation_in_codon">A</font>&rarr;TC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_6.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">291</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">E90K</font>&nbsp;(<font class="mutation_in_codon">G</font>AG&rarr;<font class="mutation_in_codon">A</font>AG)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_7.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">386</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V121V</font>&nbsp;(GT<font class="mutation_in_codon">T</font>&rarr;GT<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_8.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">425</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">Q134Q</font>&nbsp;(CA<font class="mutation_in_codon">G</font>&rarr;CA<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_9.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">434</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K137K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_10.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">440</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">R139R</font>&nbsp;(CG<font class="mutation_in_codon">C</font>&rarr;CG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_11.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">446</td><!-- Position -->
+<td align="center">G&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">K141N</font>&nbsp;(AA<font class="mutation_in_codon">G</font>&rarr;AA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_12.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">464</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">E147E</font>&nbsp;(GA<font class="mutation_in_codon">A</font>&rarr;GA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_13.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">491</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D156D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_14.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">521</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G166G</font>&nbsp;(GG<font class="mutation_in_codon">C</font>&rarr;GG<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_15.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_11.1287663</td><!-- Seq_Id -->
+<td align="right">554</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">A177A</font>&nbsp;(GC<font class="mutation_in_codon">T</font>&rarr;GC<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_01955</i>&nbsp;&rarr;</td>
+<td align="left">IS5 family transposase ISNoc2</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_16.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_12.1382347</td><!-- Seq_Id -->
+<td align="right">295</td><!-- Position -->
+<td align="center">N&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><span style="white-space: nowrap"><font class="snp_type_nonsynonymous">?4R</font>&nbsp;(C<font class="mutation_in_codon">N</font>A&rarr;C<font class="mutation_in_codon">G</font>A)&nbsp;</span></td>
+<td align="center"><i>GIHMMLFK_02037</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_17.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_15.1656293</td><!-- Seq_Id -->
+<td align="right">56,117</td><!-- Position -->
+<td align="center">T&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">G58G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02360</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_18.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_15.1656293</td><!-- Seq_Id -->
+<td align="right">56,156</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V45V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02360</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_19.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_15.1656293</td><!-- Seq_Id -->
+<td align="right">56,159</td><!-- Position -->
+<td align="center">T&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V44V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02360</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_20.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_2.3252644</td><!-- Seq_Id -->
+<td align="right">24,780</td><!-- Position -->
+<td align="center">N&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><span style="white-space: nowrap"><font class="snp_type_nonsynonymous">?175L</font>&nbsp;(CT<font class="mutation_in_codon">N</font>&rarr;CT<font class="mutation_in_codon">T</font>)&nbsp;</span></td>
+<td align="center"><i>GIHMMLFK_00559</i>&nbsp;&larr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_21.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,361</td><!-- Position -->
+<td align="center">N&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><span style="white-space: nowrap"><font class="snp_type_nonsynonymous">?419D</font>&nbsp;(<font class="mutation_in_codon">N</font>AT&rarr;<font class="mutation_in_codon">G</font>AT)&nbsp;</span></td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_22.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,411</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D435D</font>&nbsp;(GA<font class="mutation_in_codon">T</font>&rarr;GA<font class="mutation_in_codon">C</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_23.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,417</td><!-- Position -->
+<td align="center">C&rarr;T</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">D437D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_24.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,432</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">K442K</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_25.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,438</td><!-- Position -->
+<td align="center">A&rarr;G</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">V444V</font>&nbsp;(GT<font class="mutation_in_codon">A</font>&rarr;GT<font class="mutation_in_codon">G</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_26.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_25.2623266</td><!-- Seq_Id -->
+<td align="right">1,442</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">A446T</font>&nbsp;(<font class="mutation_in_codon">G</font>CT&rarr;<font class="mutation_in_codon">A</font>CT)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_02652</i>&nbsp;&rarr;</td>
+<td align="left">hypothetical protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/JC_265.html">JC</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_27.2820099</td><!-- Seq_Id -->
+<td align="right">20,095</td><!-- Position -->
+<td align="center">+132 bp</td><!-- Cell Mutation -->
+<td align="center">intergenic&nbsp;(&#8209;327/&#8211;)</td>
+<td align="center"><i>GIHMMLFK_02709</i>&nbsp;&larr;&nbsp;/&nbsp;<i>&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_28.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_3.4207228</td><!-- Seq_Id -->
+<td align="right">187,846</td><!-- Position -->
+<td align="center">G&rarr;A</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_synonymous">P100P</font>&nbsp;(CC<font class="mutation_in_codon">G</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td>
+<td align="center"><i>GIHMMLFK_00935</i>&nbsp;&rarr;</td>
+<td align="left">L&#8209;gulono&#8209;1,4&#8209;lactone dehydrogenase</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_29.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_3.4207228</td><!-- Seq_Id -->
+<td align="right">189,975</td><!-- Position -->
+<td align="center">N&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><span style="white-space: nowrap"><font class="snp_type_nonsynonymous">?301L</font>&nbsp;(<font class="mutation_in_codon">N</font>TT&rarr;<font class="mutation_in_codon">C</font>TT)&nbsp;</span></td>
+<td align="center"><i>oppA_1</i>&nbsp;&rarr;</td>
+<td align="left">Periplasmic oligopeptide&#8209;binding protein</td>
+</tr>
+<!-- End Table Row -->
+
+<!-- Print The Table Row -->
+<tr class="normal_table_row">
+<td align="center"><a href="evidence/SNP_30.html">RA</a></td><!-- Evidence -->
+<td align="center">A37QDRAFT_scaffold_6.7175206</td><!-- Seq_Id -->
+<td align="right">99,485</td><!-- Position -->
+<td align="center">T&rarr;C</td><!-- Cell Mutation -->
+<td align="center"><font class="snp_type_nonsynonymous">N125S</font>&nbsp;(A<font class="mutation_in_codon">A</font>C&rarr;A<font class="mutation_in_codon">G</font>C)&nbsp;</td>
+<td align="center"><i>bcr_3</i>&nbsp;&larr;</td>
+<td align="left">Bicyclomycin resistance protein</td>
+</tr>
+<!-- End Table Row -->
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+<tr><th colspan="11" align="left" class="missing_coverage_header_row">Unassigned missing coverage evidence</th></tr>
+<tr><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>seq&nbsp;id</th>
+<th>start</th>
+<th>end</th>
+<th>size</th>
+<th>&larr;reads</th>
+<th>reads&rarr;</th>
+<th>gene</th>
+<th width="100%">description</th>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_155.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_155.html">*</a></td>
+<td><a href="evidence/MC_PLOT_155.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_0.1282200</td>
+<td align="right">1</td>
+<td align="right">357&#8211;4</td>
+<td align="right">4&#8211;357</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[71]&nbsp;74</td>
+<td align="center"><i>&#8211;/GIHMMLFK_00001</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_156.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_156.html">*</a></td>
+<td><a href="evidence/MC_PLOT_156.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_16.1751277</td>
+<td align="right">1</td>
+<td align="right">121&#8211;2</td>
+<td align="right">2&#8211;121</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[72]&nbsp;77</td>
+<td align="center"><i>&#8211;/GIHMMLFK_02361</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_157.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_157.html">*</a></td>
+<td><a href="evidence/MC_PLOT_157.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_23.2427593</td>
+<td align="right">1&#8211;191</td>
+<td align="right">191</td>
+<td align="right">1&#8211;191</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[74]&nbsp;75</td>
+<td align="center"><i>&#8211;/GIHMMLFK_02605</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_158.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_158.html">*</a></td>
+<td><a href="evidence/MC_PLOT_158.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_28.2919030</td>
+<td align="right">18822&#8211;19030</td>
+<td align="right">19030</td>
+<td align="right">1&#8211;209</td>
+<td align="center">148&nbsp;[132]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>traN/&#8211;</i></td>
+<td align="left">Mating pair stabilization protein TraN/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_159.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_159.html">*</a></td>
+<td><a href="evidence/MC_PLOT_159.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_29.3015278</td>
+<td align="right">15054&#8211;15276</td>
+<td align="right">15278</td>
+<td align="right">3&#8211;225</td>
+<td align="center">84&nbsp;[81]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>leuC/&#8211;</i></td>
+<td align="left">3&#8209;isopropylmalate dehydratase large subunit/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_160.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_160.html">*</a></td>
+<td><a href="evidence/MC_PLOT_160.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_3.4207228</td>
+<td align="right">1682</td>
+<td align="right">2071</td>
+<td align="right">390</td>
+<td align="center">74&nbsp;[71]</td>
+<td align="center">[0]&nbsp;83</td>
+<td align="center"><i>GIHMMLFK_00757/GIHMMLFK_00758</i></td>
+<td align="left">hypothetical protein/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_161.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_161.html">*</a></td>
+<td><a href="evidence/MC_PLOT_161.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_3.4207228</td>
+<td align="right">207018&#8211;207226</td>
+<td align="right">207228</td>
+<td align="right">3&#8211;211</td>
+<td align="center">74&nbsp;[72]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>GIHMMLFK_00951/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_162.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_162.html">*</a></td>
+<td><a href="evidence/MC_PLOT_162.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_30.3110384</td>
+<td align="right">10181&#8211;10384</td>
+<td align="right">10384</td>
+<td align="right">1&#8211;204</td>
+<td align="center">83&nbsp;[82]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>anmK/&#8211;</i></td>
+<td align="left">Anhydro&#8209;N&#8209;acetylmuramic acid kinase/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_163.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_163.html">*</a></td>
+<td><a href="evidence/MC_PLOT_163.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_31.328353</td>
+<td align="right">1</td>
+<td align="right">212&#8211;2</td>
+<td align="right">2&#8211;212</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[83]&nbsp;86</td>
+<td align="center"><i>&#8211;/GIHMMLFK_02740</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_164.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_164.html">*</a></td>
+<td><a href="evidence/MC_PLOT_164.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_5.6181296</td>
+<td align="right">180940&#8211;181293</td>
+<td align="right">181296</td>
+<td align="right">4&#8211;357</td>
+<td align="center">74&nbsp;[69]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>metH/&#8211;</i></td>
+<td align="left">Methionine synthase/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_165.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_165.html">*</a></td>
+<td><a href="evidence/MC_PLOT_165.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_6.7175206</td>
+<td align="right">175018&#8211;175206</td>
+<td align="right">175206</td>
+<td align="right">1&#8211;189</td>
+<td align="center">70&nbsp;[69]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>GIHMMLFK_01490/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_166.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_166.html">*</a></td>
+<td><a href="evidence/MC_PLOT_166.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_7.8155932</td>
+<td align="right">1&#8211;213</td>
+<td align="right">213</td>
+<td align="right">1&#8211;213</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[79]&nbsp;85</td>
+<td align="center"><i>&#8211;/GIHMMLFK_01491</i></td>
+<td align="left">&#8211;/hypothetical protein</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_167.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_167.html">*</a></td>
+<td><a href="evidence/MC_PLOT_167.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_8.9138458</td>
+<td align="right">1&#8211;265</td>
+<td align="right">265</td>
+<td align="right">1&#8211;265</td>
+<td align="center">NA&nbsp;[0]</td>
+<td align="center">[69]&nbsp;70</td>
+<td align="center"><i>[proP_4]</i></td>
+<td align="left">[proP_4]</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_168.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_168.html">*</a></td>
+<td><a href="evidence/MC_PLOT_168.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_8.9138458</td>
+<td align="right">138249&#8211;138458</td>
+<td align="right">138458</td>
+<td align="right">1&#8211;210</td>
+<td align="center">70&nbsp;[69]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>GIHMMLFK_01766/&#8211;</i></td>
+<td align="left">hypothetical protein/&#8211;</td>
+</tr>
+<tr>
+<td><a href="evidence/MC_SIDE_1_169.html">*</a></td>
+<td><a href="evidence/MC_SIDE_2_169.html">*</a></td>
+<td><a href="evidence/MC_PLOT_169.html">&divide;</a></td>
+<td>A37QDRAFT_scaffold_9.10119140</td>
+<td align="right">114019&#8211;118982</td>
+<td align="right">119140</td>
+<td align="right">159&#8211;5122</td>
+<td align="center">77&nbsp;[76]</td>
+<td align="center">[0]&nbsp;NA</td>
+<td align="center"><i>[GIHMMLFK_01869]</i></td>
+<td align="left">[GIHMMLFK_01869]</td>
+</tr>
+</table>
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Unassigned new junction evidence</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_180.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_180.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_0.1282200</td>
+<td align="center" class="junction_gene">281989&nbsp;=</td><td align="center" class="junction_gene">162 (1.280)</td><td rowspan="2" align="center">647 (5.330)</td>
+<td rowspan="2" align="center">131/302</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">82.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;768/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_00267/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_180.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_15.1656293</td>
+<td align="center" class="junction_gene">56060&nbsp;=</td>
+<td align="center" class="junction_gene">113 (0.930)</td><td align="center" class="junction_gene">coding&nbsp;(231/1701&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02360</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_181.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_181.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_0.1282200</td>
+<td align="center" class="junction_gene">=&nbsp;282200</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">409 (3.820)<br>+25 bp</td>
+<td rowspan="2" align="center">105/266</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;979/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_00267/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_181.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_15.1656293</td>
+<td align="center" class="junction_gene">=&nbsp;56293</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;3/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02360/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_182.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_182.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_0.1282200</td>
+<td align="center" class="junction_gene">=&nbsp;282200</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">291 (2.720)<br>+25 bp</td>
+<td rowspan="2" align="center">99/266</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;979/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_00267/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_182.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_15.1656293</td>
+<td align="center" class="junction_gene">=&nbsp;56293</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;3/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02360/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_194.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_194.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_14.1576687</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">259 (0.870)<br>+T</td>
+<td rowspan="2" align="center">94/314</td>
+<td rowspan="2" align="center">0.4</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/+195)</td>
+<td align="center" class="junction_gene"><i>&#8211;/GIHMMLFK_02206</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_194.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_32.337638</td>
+<td align="center" class="junction_gene">1&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;189)</td>
+<td align="center" class="junction_gene"><i>&#8211;/GIHMMLFK_02746</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_248.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_248.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_21.2231063</td>
+<td align="center" class="junction_gene">=&nbsp;31063</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">119 (0.820)</td>
+<td rowspan="2" align="center">48/198</td>
+<td rowspan="2" align="center">0.5</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+270/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02583/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_248.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_27.2820099</td>
+<td align="center" class="junction_gene">=&nbsp;20040</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;272/&#8211;)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02709/&#8211;</i></td>
+<td class="junction_gene">hypothetical protein/&#8211;</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_257.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_257.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_25.2623266</td>
+<td align="center" class="junction_gene">1&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">396 (2.800)<br>+24 bp</td>
+<td rowspan="2" align="center">104/268</td>
+<td rowspan="2" align="center">0.0</td>
+<td rowspan="2" align="center">88.2%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;106)</td>
+<td align="center" class="junction_gene"><i>&#8211;/GIHMMLFK_02652</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_257.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_25.2623266</td>
+<td align="center" class="junction_gene">=&nbsp;1446</td>
+<td align="center" class="junction_gene">125 (0.750)</td><td align="center" class="junction_gene">coding&nbsp;(1340/2964&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02652</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_259.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_259.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_25.2623266</td>
+<td align="center" class="junction_gene">=&nbsp;1446</td><td align="center" class="junction_gene">125 (0.750)</td><td rowspan="2" align="center">82 (0.840)<br>+55 bp</td>
+<td rowspan="2" align="center">20/206</td>
+<td rowspan="2" align="center">2.9</td>
+<td rowspan="2" align="center">48.2%</td>
+<td align="center" class="junction_gene">coding&nbsp;(1340/2964&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_02652</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_259.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_9.10119140</td>
+<td align="center" class="junction_gene">=&nbsp;230</td>
+<td align="center" class="junction_gene">145 (1.100)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8211;/&#8209;611)</td>
+<td align="center" class="junction_gene"><i>&#8211;/GIHMMLFK_01767</i></td>
+<td class="junction_gene">&#8211;/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_271.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_271.html">?</a></td>
+<td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_3.4207228</td>
+<td align="center" class="junction_gene">2072&nbsp;=</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">80 (0.740)</td>
+<td rowspan="2" align="center">41/270</td>
+<td rowspan="2" align="center">1.0</td>
+<td rowspan="2" align="center">66.1%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;596/&#8209;96)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_00757/GIHMMLFK_00758</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_271.html">?</a></td><td rowspan="1" class="junction_gene">A37QDRAFT_scaffold_3.4207228</td>
+<td align="center" class="junction_gene">=&nbsp;2197</td>
+<td align="center" class="junction_gene">82 (0.750)</td><td align="center" class="junction_gene">coding&nbsp;(30/321&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>GIHMMLFK_00758</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+</table>
+</body></html>

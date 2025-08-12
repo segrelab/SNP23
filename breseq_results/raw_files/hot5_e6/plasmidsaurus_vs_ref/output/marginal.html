@@ -1,0 +1,395 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
+<head>
+<title>BRESEQ :: Marginal Predictions</title>
+<style type = "text/css">
+body {font-family: sans-serif; font-size: 11pt;}
+th {background-color: rgb(0,0,0); color: rgb(255,255,255);}
+table {background-color: rgb(1,0,0); color: rgb(0,0,0);}
+tr {background-color: rgb(255,255,255);}
+.mutation_in_codon {color:red; text-decoration : underline;}
+.snp_type_synonymous{color:green;}
+.snp_type_nonsynonymous{color:blue;}
+.snp_type_nonsense{color:red;}
+.mutation_header_row {background-color: rgb(0,130,0);}
+.read_alignment_header_row {background-color: rgb(255,0,0);}
+.missing_coverage_header_row {background-color: rgb(0,100,100);}
+.new_junction_header_row {background-color: rgb(0,0,155);}
+.copy_number_header_row {background-color: rgb(153,102,0);}
+.alternate_table_row_0 {background-color: rgb(255,255,255);}
+.alternate_table_row_1 {background-color: rgb(235,235,235);}
+.gray_table_row {background-color: rgb(230,230,245);}
+.polymorphism_table_row {background-color: rgb(160,255,160);}
+.highlight_table_row {background-color: rgb(192,255,255);}
+.reject_table_row {background-color: rgb(255,200,165);}
+.user_defined_table_row {background-color: rgb(255,255,0);}
+.information_table_row {background-color: rgb(200,255,255);}
+.junction_repeat {background-color: rgb(255,165,0)}
+.junction_gene {}
+.hidden { display: none; }
+.unhidden { display: block; }
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+  function hideTog(divID) {
+    var item = document.getElementById(divID);
+    if (item) {
+      item.className=(item.className=='hidden')?'unhidden':'hidden';
+    }
+  }
+  function showTog(butID) {
+    var button = document.getElementById(butID);
+    if (button) {
+      button.value=(button.value=='Show')?'Hide':'Show';
+    }
+  }
+</script>
+
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="3">
+<tr>
+<td><a href="http://barricklab.org/breseq"><img src="evidence/breseq_small.png" /></a></td>
+<td width="100%">
+<b><i>breseq</i></b>&nbsp;&nbsp;version 0.36.0&nbsp;&nbsp;
+<br><a href="index.html">mutation predictions</a> | 
+<a href="marginal.html">marginal predictions</a> | 
+<a href="summary.html">summary statistics</a> | 
+<a href="output.gd">genome diff</a> | 
+<a href="log.txt">command line log</a>
+</td></tr></table>
+
+<p>
+<p>
+<table border="0" cellspacing="1", cellpadding="3">
+<tr><th colspan="12" align="left" class="read_alignment_header_row">Marginal read alignment evidence (highest frequency 20 of 85 shown, sorted by frequency from high to low)</th></tr>
+<tr>
+<th>&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th colspan="2">position</th>
+<th>ref</th>
+<th>new</th>
+<th>freq</th>
+<th>score&nbsp;(cons/poly)</th>
+<th>reads</th>
+<th>annotation</th>
+<th>genes</th>
+<th width="100%">product</th>
+</tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_955.html">*</a></td><td align="center">E06&#8209;replicon_7</td><td align="right">69</td><td align="right">1</td><td align="center">.</td><td align="center">C</td><td align="right">65.8%
+</td><td align="center">494.7
+/&nbsp;240.2
+</td><td align="center">199</td><td align="center">coding&nbsp;(127/138&nbsp;nt)</td><td align="center"><i>AOPCEJKL_05222</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_456.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">128,955</td><td align="right">0</td><td align="center">A</td><td align="center">G</td><td align="right">47.4%
+</td><td align="center">30.3
+/&nbsp;22.1
+</td><td align="center">58</td><td align="center"><font class="snp_type_nonsynonymous">L273P</font>&nbsp;(C<font class="mutation_in_codon">T</font>G&rarr;C<font class="mutation_in_codon">C</font>G)&nbsp;</td><td align="center"><i>arnB_1</i></td><td align="left">UDP&#8209;4&#8209;amino&#8209;4&#8209;deoxy&#8209;L&#8209;arabinose&#8209;&#8209;oxoglutarate aminotransferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_457.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">128,965</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">44.7%
+</td><td align="center">23.9
+/&nbsp;24.0
+</td><td align="center">56</td><td align="center"><font class="snp_type_nonsynonymous">R270G</font>&nbsp;(<font class="mutation_in_codon">C</font>GC&rarr;<font class="mutation_in_codon">G</font>GC)&nbsp;</td><td align="center"><i>arnB_1</i></td><td align="left">UDP&#8209;4&#8209;amino&#8209;4&#8209;deoxy&#8209;L&#8209;arabinose&#8209;&#8209;oxoglutarate aminotransferase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_473.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,121</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">36.9%
+</td><td align="center">79.6
+/&nbsp;inf
+</td><td align="center">321</td><td align="center"><font class="snp_type_synonymous">G65G</font>&nbsp;(GG<font class="mutation_in_codon">A</font>&rarr;GG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_474.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,123</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">36.2%
+</td><td align="center">101.7
+/&nbsp;inf
+</td><td align="center">321</td><td align="center"><font class="snp_type_nonsynonymous">K66T</font>&nbsp;(A<font class="mutation_in_codon">A</font>A&rarr;A<font class="mutation_in_codon">C</font>A)&nbsp;&Dagger;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_475.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,124</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">36.2%
+</td><td align="center">87.7
+/&nbsp;inf
+</td><td align="center">321</td><td align="center"><font class="snp_type_nonsynonymous">K66N</font>&nbsp;(AA<font class="mutation_in_codon">A</font>&rarr;AA<font class="mutation_in_codon">C</font>)&nbsp;&Dagger;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_476.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,125</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">36.2%
+</td><td align="center">106.3
+/&nbsp;inf
+</td><td align="center">323</td><td align="center"><font class="snp_type_nonsynonymous">S67A</font>&nbsp;(<font class="mutation_in_codon">T</font>CC&rarr;<font class="mutation_in_codon">G</font>CC)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_773.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">3,164,649</td><td align="right">0</td><td align="center">G</td><td align="center">A</td><td align="right">36.1%
+</td><td align="center">76.7
+/&nbsp;17.8
+</td><td align="center">62</td><td align="center">intergenic&nbsp;(+47/&#8209;37)</td><td align="center"><i>AOPCEJKL_03203/mhpA</i></td><td align="left">hypothetical protein/3&#8209;(3&#8209;hydroxy&#8209;phenyl)propionate/3&#8209;hydroxycinnamic acid hydroxylase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_472.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,109</td><td align="right">0</td><td align="center">G</td><td align="center">T</td><td align="right">34.3%
+</td><td align="center">575.3
+/&nbsp;226.1
+</td><td align="center">345</td><td align="center"><font class="snp_type_nonsynonymous">E61D</font>&nbsp;(GA<font class="mutation_in_codon">G</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_657.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">2,112,881</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">30.2%
+</td><td align="center">291.5
+/&nbsp;45.1
+</td><td align="center">256</td><td align="center">intergenic&nbsp;(+16/&#8209;74)</td><td align="center"><i>fusA/tufA_2</i></td><td align="left">Elongation factor G/Elongation factor Tu</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_485.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">250,342</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">30.1%
+</td><td align="center">153.4
+/&nbsp;17.8
+</td><td align="center">123</td><td align="center"><font class="snp_type_nonsynonymous">V307G</font>&nbsp;(G<font class="mutation_in_codon">T</font>A&rarr;G<font class="mutation_in_codon">G</font>A)&nbsp;</td><td align="center"><i>dinF</i></td><td align="left">DNA damage&#8209;inducible protein F</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_458.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,038</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">30.0%
+</td><td align="center">571.1
+/&nbsp;157.4
+</td><td align="center">308</td><td align="center"><font class="snp_type_nonsynonymous">H38N</font>&nbsp;(<font class="mutation_in_codon">C</font>AC&rarr;<font class="mutation_in_codon">A</font>AC)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_459.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,043</td><td align="right">0</td><td align="center">T</td><td align="center">G</td><td align="right">29.9%
+</td><td align="center">241.1
+/&nbsp;268.3
+</td><td align="center">308</td><td align="center"><font class="snp_type_synonymous">G39G</font>&nbsp;(GG<font class="mutation_in_codon">T</font>&rarr;GG<font class="mutation_in_codon">G</font>)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_914.html">*</a></td><td align="center">E06&#8209;replicon_4</td><td align="right">93,997</td><td align="right">0</td><td align="center">A</td><td align="center">C</td><td align="right">29.8%
+</td><td align="center">120.8
+/&nbsp;16.9
+</td><td align="center">130</td><td align="center">intergenic&nbsp;(&#8209;257/+112)</td><td align="center"><i>AOPCEJKL_04816/AOPCEJKL_04817</i></td><td align="left">hypothetical protein/hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_446.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">53,831</td><td align="right">0</td><td align="center">C</td><td align="center">G</td><td align="right">28.8%
+</td><td align="center">72.4
+/&nbsp;19.3
+</td><td align="center">71</td><td align="center"><font class="snp_type_synonymous">L119L</font>&nbsp;(CT<font class="mutation_in_codon">G</font>&rarr;CT<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>AOPCEJKL_00050</i></td><td align="left">hypothetical protein</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_469.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,094</td><td align="right">0</td><td align="center">C</td><td align="center">T</td><td align="right">28.7%
+</td><td align="center">458.8
+/&nbsp;240.3
+</td><td align="center">321</td><td align="center"><font class="snp_type_synonymous">D56D</font>&nbsp;(GA<font class="mutation_in_codon">C</font>&rarr;GA<font class="mutation_in_codon">T</font>)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_899.html">*</a></td><td align="center">E06&#8209;replicon_3</td><td align="right">97,848</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">28.7%
+</td><td align="center">330.1
+/&nbsp;40.6
+</td><td align="center">181</td><td align="center"><font class="snp_type_synonymous">L777L</font>&nbsp;(CT<font class="mutation_in_codon">C</font>&rarr;CT<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>copA_2</i></td><td align="left">Copper&#8209;exporting P&#8209;type ATPase</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_471.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,096</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">28.7%
+</td><td align="center">557.7
+/&nbsp;281.3
+</td><td align="center">312</td><td align="center"><font class="snp_type_nonsynonymous">R57P</font>&nbsp;(C<font class="mutation_in_codon">G</font>G&rarr;C<font class="mutation_in_codon">C</font>G)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_464.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">132,061</td><td align="right">0</td><td align="center">G</td><td align="center">C</td><td align="right">28.7%
+</td><td align="center">599.2
+/&nbsp;302.5
+</td><td align="center">323</td><td align="center"><font class="snp_type_synonymous">R45R</font>&nbsp;(CG<font class="mutation_in_codon">G</font>&rarr;CG<font class="mutation_in_codon">C</font>)&nbsp;</td><td align="center"><i>nodM</i></td><td align="left">Glutamine&#8209;&#8209;fructose&#8209;6&#8209;phosphate aminotransferase [isomerizing]</td></tr>
+<tr class="polymorphism_table_row"><td><a href="evidence/RA_672.html">*</a></td><td align="center">E06&#8209;chromosome</td><td align="right">2,217,949</td><td align="right">0</td><td align="center">C</td><td align="center">A</td><td align="right">28.6%
+</td><td align="center">374.9
+/&nbsp;13.5
+</td><td align="center">204</td><td align="center"><font class="snp_type_synonymous">P195P</font>&nbsp;(CC<font class="mutation_in_codon">C</font>&rarr;CC<font class="mutation_in_codon">A</font>)&nbsp;</td><td align="center"><i>priA</i></td><td align="left">Primosomal protein N'</td></tr>
+</table>
+
+<p>
+<table border="0" cellspacing="1" cellpadding="3">
+<tr><th colspan="12" align="left" class="new_junction_header_row">Marginal new junction evidence (lowest skew 10 of 245 shown)</th></tr>
+<!-- Header Lines for New Junction -->
+<tr>
+<th colspan="2">&nbsp;</th>
+<th>seq&nbsp;id</th>
+<th>position</th>
+<th>reads&nbsp;(cov)</th>
+<th>reads&nbsp;(cov)</th>
+<th>score</th>
+<th>skew</th>
+<th>freq</th>
+<th>annotation</th>
+<th>gene</th>
+<th width="100%">product</th>
+</tr>
+
+<!-- Item Lines for New Junction -->
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1208.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1208.html">?</a></td>
+<td rowspan="1" class="junction_gene">E06&#8209;replicon_4</td>
+<td align="center" class="junction_gene">=&nbsp;127588</td><td align="center" class="junction_gene">0 (0.000)</td><td rowspan="2" align="center">192 (0.540)</td>
+<td rowspan="2" align="center">52/312</td>
+<td rowspan="2" align="center">4.6</td>
+<td rowspan="2" align="center">100%</td>
+<td align="center" class="junction_gene">coding&nbsp;(25/795&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_04846</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1208.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_4</td>
+<td align="center" class="junction_gene">127592&nbsp;=</td>
+<td align="center" class="junction_gene">0 (0.000)</td><td align="center" class="junction_gene">coding&nbsp;(21/795&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_04846</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1003.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1003.html">?</a></td>
+<td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;187755</td><td align="center" class="junction_gene">272 (1.060)</td><td rowspan="2" align="center">34 (0.150)</td>
+<td rowspan="2" align="center">24/274</td>
+<td rowspan="2" align="center">6.0</td>
+<td rowspan="2" align="center">11.8%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;206/&#8209;162)</td>
+<td align="center" class="junction_gene"><i>nrdR/AOPCEJKL_00187</i></td>
+<td class="junction_gene">Transcriptional repressor NrdR/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1003.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">225928&nbsp;=</td>
+<td align="center" class="junction_gene">275 (1.230)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1030/+48)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_00235/AOPCEJKL_00236</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_998.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_998.html">?</a></td>
+<td rowspan="1" class="junction_repeat">E06&#8209;chromosome</td>
+<td align="center" class="junction_repeat">187724&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">43 (0.170)</td>
+<td rowspan="2" align="center">28/316</td>
+<td rowspan="2" align="center">6.2</td>
+<td rowspan="2" align="center">11.5%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;175/&#8209;193)</td>
+<td align="center" class="junction_repeat"><i>nrdR/AOPCEJKL_00187</i></td>
+<td class="junction_repeat">Transcriptional repressor NrdR/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_998.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;225906</td>
+<td align="center" class="junction_gene">332 (1.290)</td><td align="center" class="junction_gene">intergenic&nbsp;(+1008/+70)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_00235/AOPCEJKL_00236</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1040.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1040.html">?</a></td>
+<td rowspan="1" class="junction_repeat">E06&#8209;chromosome</td>
+<td align="center" class="junction_repeat">=&nbsp;719055</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">51 (0.200)</td>
+<td rowspan="2" align="center">25/316</td>
+<td rowspan="2" align="center">6.9</td>
+<td rowspan="2" align="center">29.8%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;272/&#8209;257)</td>
+<td align="center" class="junction_repeat"><i>AOPCEJKL_00745/AOPCEJKL_00746</i></td>
+<td class="junction_repeat">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1040.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">2345645&nbsp;=</td>
+<td align="center" class="junction_gene">120 (0.470)</td><td align="center" class="junction_gene">coding&nbsp;(2450/2517&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_02367</i></td>
+<td class="junction_gene">hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1014.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1014.html">?</a></td>
+<td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;225907</td><td align="center" class="junction_gene">351 (1.360)</td><td rowspan="2" align="center">36 (0.140)</td>
+<td rowspan="2" align="center">24/314</td>
+<td rowspan="2" align="center">7.1</td>
+<td rowspan="2" align="center">11.4%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+1009/+69)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_00235/AOPCEJKL_00236</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1014.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;266530</td>
+<td align="center" class="junction_gene">213 (0.830)</td><td align="center" class="junction_gene">coding&nbsp;(111/1332&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>hpsN_3</i></td>
+<td class="junction_gene">Sulfopropanediol 3&#8209;dehydrogenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1013.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1013.html">?</a></td>
+<td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">=&nbsp;225907</td><td align="center" class="junction_gene">351 (1.360)</td><td rowspan="2" align="center">33 (0.130)</td>
+<td rowspan="2" align="center">23/314</td>
+<td rowspan="2" align="center">7.3</td>
+<td rowspan="2" align="center">11.0%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(+1009/+69)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_00235/AOPCEJKL_00236</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1013.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_1</td>
+<td align="center" class="junction_gene">=&nbsp;30918</td>
+<td align="center" class="junction_gene">184 (0.710)</td><td align="center" class="junction_gene">coding&nbsp;(511/1869&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>btuD_7</i></td>
+<td class="junction_gene">Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1000.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1000.html">?</a></td>
+<td rowspan="1" class="junction_repeat">E06&#8209;chromosome</td>
+<td align="center" class="junction_repeat">187740&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">32 (0.120)</td>
+<td rowspan="2" align="center">23/316</td>
+<td rowspan="2" align="center">7.4</td>
+<td rowspan="2" align="center">12.7%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;191/&#8209;177)</td>
+<td align="center" class="junction_repeat"><i>nrdR/AOPCEJKL_00187</i></td>
+<td class="junction_repeat">Transcriptional repressor NrdR/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1000.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_1</td>
+<td align="center" class="junction_gene">266527&nbsp;=</td>
+<td align="center" class="junction_gene">221 (0.850)</td><td align="center" class="junction_gene">coding&nbsp;(114/1332&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>hpsN_3</i></td>
+<td class="junction_gene">Sulfopropanediol 3&#8209;dehydrogenase</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_999.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_999.html">?</a></td>
+<td rowspan="1" class="junction_repeat">E06&#8209;chromosome</td>
+<td align="center" class="junction_repeat">187740&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">35 (0.140)</td>
+<td rowspan="2" align="center">22/316</td>
+<td rowspan="2" align="center">7.7</td>
+<td rowspan="2" align="center">16.1%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;191/&#8209;177)</td>
+<td align="center" class="junction_repeat"><i>nrdR/AOPCEJKL_00187</i></td>
+<td class="junction_repeat">Transcriptional repressor NrdR/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_999.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_1</td>
+<td align="center" class="junction_gene">30915&nbsp;=</td>
+<td align="center" class="junction_gene">182 (0.700)</td><td align="center" class="junction_gene">coding&nbsp;(508/1869&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>btuD_7</i></td>
+<td class="junction_gene">Vitamin B12 import ATP&#8209;binding protein BtuD</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="2"><a href="evidence/JC_1140.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1140.html">?</a></td>
+<td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">3575340&nbsp;=</td><td align="center" class="junction_gene">348 (1.350)</td><td rowspan="2" align="center">36 (0.150)</td>
+<td rowspan="2" align="center">19/302</td>
+<td rowspan="2" align="center">8.1</td>
+<td rowspan="2" align="center">9.7%</td>
+<td align="center" class="junction_gene">intergenic&nbsp;(&#8209;160/&#8209;331)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_03573/AOPCEJKL_03574</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_0">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1140.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;chromosome</td>
+<td align="center" class="junction_gene">3575363&nbsp;=</td>
+<td align="center" class="junction_gene">337 (1.370)</td><td align="center" class="junction_gene">intergenic&nbsp;(&#8209;183/&#8209;308)</td>
+<td align="center" class="junction_gene"><i>AOPCEJKL_03573/AOPCEJKL_03574</i></td>
+<td class="junction_gene">hypothetical protein/hypothetical protein</td>
+</tr>
+<!-- Side 1 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="2"><a href="evidence/JC_1001.html">*</a></td>
+<td rowspan="1"><a href="evidence/JC_SIDE_1_1001.html">?</a></td>
+<td rowspan="1" class="junction_repeat">E06&#8209;chromosome</td>
+<td align="center" class="junction_repeat">187740&nbsp;=</td><td align="center" class="junction_repeat">NA (NA)</td><td rowspan="2" align="center">29 (0.120)</td>
+<td rowspan="2" align="center">20/316</td>
+<td rowspan="2" align="center">8.2</td>
+<td rowspan="2" align="center">12.8%</td>
+<td align="center" class="junction_repeat">intergenic&nbsp;(&#8209;191/&#8209;177)</td>
+<td align="center" class="junction_repeat"><i>nrdR/AOPCEJKL_00187</i></td>
+<td class="junction_repeat">Transcriptional repressor NrdR/hypothetical protein</td>
+</tr>
+<!-- Side 2 Item Lines for New Junction -->
+<tr class="mutation_table_row_1">
+<td rowspan="1"><a href="evidence/JC_SIDE_2_1001.html">?</a></td><td rowspan="1" class="junction_gene">E06&#8209;replicon_9</td>
+<td align="center" class="junction_gene">78777&nbsp;=</td>
+<td align="center" class="junction_gene">198 (0.900)</td><td align="center" class="junction_gene">coding&nbsp;(114/1332&nbsp;nt)</td>
+<td align="center" class="junction_gene"><i>hpsN_4</i></td>
+<td class="junction_gene">Sulfopropanediol 3&#8209;dehydrogenase</td>
+</tr>
+</table>
+</body></html>
