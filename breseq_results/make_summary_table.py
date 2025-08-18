@@ -215,6 +215,23 @@ def analyze_breseq_outputs(base_dir, output_csv_path, meta_file_path, gbk_base_d
 
     if summary_data:
         summary_df = pd.DataFrame(summary_data)
+
+        # Load the sourmash results and merge on sample_id to add the sourmash results
+        try:
+            sourmash_df = pd.read_csv(sourmash_results)
+            if 'ds_strain_id' in sourmash_df.columns:
+                summary_df = pd.merge(summary_df, sourmash_df, left_on='sample_id', right_on='ds_strain_id', how='left')
+                # Remove the 'ds_strain_id' column and the unimportant sourmash results after merging
+                summary_df.drop(columns=['ds_strain_id', 'element', 'basepairs'], inplace=True)
+                print("Successfully merged sourmash species data.")
+            else:
+                print("  - WARNING: 'ds_strain_id' column missing in sourmash results. Skipping merge.")
+        except FileNotFoundError:
+            print(f"  - WARNING: Sourmash results file not found at {sourmash_results}. Skipping merge.")
+        except Exception as e:
+            print(f"  - WARNING: Could not load or process sourmash results. Error: {e}")
+
+        # Save the final summary DataFrame to CSV
         summary_df.to_csv(output_csv_path, index=False)
         print(f"\nAnalysis complete. Summary saved to: {output_csv_path}")
     else:
@@ -224,6 +241,7 @@ if __name__ == "__main__":
     breseq_base_dir = "/projectnb/hfsp/SNP23/breseq_results/raw_files"
     meta_file = "/projectnb/hfsp/SNP23/breseq_results/merged_metafiles.csv"
     gbk_dir = "/projectnb/hfsp/IAMM_reference_files/prokka_results"
+    sourmash_results = "/projectnb/hfsp/SNP23/sourmash_results.csv"
     summary_output_file = "/projectnb/hfsp/SNP23/breseq_results/snp_summary.csv"
     detailed_dir = "/projectnb/hfsp/SNP23/breseq_results/detailed_length_reports"
     
