@@ -1,0 +1,65 @@
+ds_strain_id,element,basepairs,lineage,% match,,Manual Check if needed
+sflavi,Contig 1,"3,479,116",Aureimonas sp. AU20 plasmid pAU20rrn,88.8,Sourmash Fail,"*FastANI to Ref genome 266812.6; SMY4 is 99.998%, ok"
+vcamp,Contig 2,"3,777,378",Vibrio harveyi ATCC BAA-1116 chromosome I,97.9,,
+vnat,Contig 1,"3,250,914",Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 chromosome 1,98,,
+bermu,Contig 2,"4,078,191",Roseovarius sp. HTCC2601 scf_1100011001367 genomic scaffold (DSM 26914 https://bacdive.dsmz.de/strain/23230),98.6,,Name note: Salipiger bermudensis (Cho and Giovannoni 2006) Wirth and Whitman 2018
+bs11,Contig 3,"2,487,739",Alteromonas macleodii str. ‘Black Sea 11,97.2,,
+kordia,Contig 1,"4,970,918",Kordia algicida OT-1 1103813601120 genomic scaffold,100,,
+hot1a3,Contig 1,"4,654,310",Alteromonas macleodii strain HOT1A3,99.8,,*Contig 2 plasmid is same
+pgall,Contig 1,"3,739,577",Phaeobacter gallaeciensis DSM 26640,99.1,,
+citrea,Contig 2,"4,227,832",Formosa agariphila KMM 3901 strain type strain: KMM 3901 chromosome I,100,,Rename?
+brown-dss3,Contig 1,"1,956,703",Shewanella denitrificans OS217,,,TUBE SWAP?
+shewden,Contig 2,"3,407,735",Ponticaulis koreensis DSM 19734 G523DRAFT_scaffold00001.1_C,95.8,,TUBE SWAP?
+koree,Contig 1,"3,407,729",NZ_ATVJ01000001.1 Ponticaulis koreensis DSM 19734 G523DRAFT_scaffold00001.1_C,100,,TUBE SWAP?
+dss-3,Contig 1,"4,109,315",Ruegeria pomeroyi DSS-3,99.5,,
+t6c,Contig 1,"5,187,005",Pseudoalteromonas atlantica T6c,100,,
+pinhib,Contig 1,"3,821,832",Phaeobacter inhibens DSM 17395,99.5,,
+phalo,Contig 1,"3,955,256",Pelagibacterium halotolerans B2 plasmid pPHB2,100,,
+cstat,Contig 1,"2,791,007",Corynebacterium stationis strain 622=DSM 20302,99.9,,
+serr,Contig 2,"2,176,991",Serratia sp. ATCC 39006 ctg1,96.2,,
+fors,,,,,,
+hot5_c3,Contig 1,"4,046,979",Xuhuaishuia manganoxidans strain DY6-4 plasmid sequence,90.4,Sourmash fail,"*FastANI to Nanopore C03 from Eddie Fadeev is 99.91%, ok"
+abie,Contig 1,"7,020,761",Pseudomonas abietaniphila strain ATCC 700689,99.9,,
+dsm26499,Contig 2,"4,505,265",Alteromonas macleodii str. ‘Aegean Sea MED64’,99.9,,
+eryth,Contig 3,"3,867,574",Rhodococcus erythropolis PR4 DNA,97.4,,
+aalgi,Contig 1,"5,824,608",Arenibacter algicola strain TG409,97.39,,
+hot5_e6,Contig 3,"3,751,869",Marinovum algicola strain FF3,97.89,,
+luca8,Contig 2,"2,477,317",Aureimonas sp. AU20 plasmid pAU20rrn,88.2,Sourmash Fail,ANI mismatch
+ksed,,,,,,
+fagar,Contig 2,"3,796,452",Formosa agariphila KMM 3901 strain type strain: KMM 3901 chromosome I,99.5,,
+roseo,Contig 1,"3,745,912",NZ_ABCL01000015.1 Roseovarius sp. TM1035 1101493006640,97.89,,TUBE SWAP?
+hot5_f3,Contig 4,"3,249,725",Marinovum algicola strain FF3,97,,TUBE SWAP?
+b2china,Contig 1,"3,955,250",Pelagibacterium halotolerans B2 plasmid pPHB2,100,,
+azure,Contig 1,"3,064,301",Vibrio azureus NBRC 104587 DNA,97.8,,
+atlcs,Contig 1,"2,957,06",Croceibacter atlanticus HTCC2559,100,NC_014230.1,
+atcc27126,Contig 1,"4,627,922",Alteromonas macleodii ATCC 27126,100,NC_018632.1,
+hot5_b10,Contig 2,"3,266,258",Marinovum algicola strain FF3,97,NZ_FNYY01000061.1,
+parctic,Contig 1,"4,904,768",Psychromonas arctica DSM 14288 H592DRAFT_scaffold00001.1_C,100,NZ_AXWP01000001.1,
+crono,Contig 2,"2,624,214",Cronobacter universalis NCTC 9529,97.6,NZ_CP012257.1,
+dfl-12,Contig 4,"3,789,579",Dinoroseobacter shibae DFL 12,99.4,NC_009952.1,
+exig,,,,,,
+hp15,Contig 1,"4,422,639",Marinobacter adhaerens HP15,99.8,NC_017506.1,
+mre600,,,,,,
+de1,Contig 1,"4,486,231",Alteromonas macleodii str. ‘Deep ecotype’,100,NC_011138.3,mediteranea is the newer name https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1004786
+pr1red,Contig 1,"4,794,676",Algoriphagus sp. PR1 chromosome,100,NZ_CM001023.1,
+cip,,,,,,
+bdim,Contig 1,"2,090,499",Brevundimonas diminuta strain XGC1 scaffolds_1,95.6,NZ_LBNT01000001.1,our strain ATCC 19146
+sflavi-2,,,,,,
+atcc25922,,,,,,
+fang,Contig 2,"1,857,542",Fangia hongkongensis DSM 21703 genomic scaffold A37QDRAFT_scaffold_0.1,97.9,NZ_KB902239.1,
+kuro,,,,,,
+nitzsch,Contig 1,"3,572,444",Aureimonas sp. AU20 plasmid pAU20rrn,88,Sourmash fail,ANI mismatch
+salex,Contig 1,"3,984,519",Haliea salexigens DSM 19537 G533DRAFT_scaffold00001.1_C,99.6,NZ_AUHJ01000001.1,
+pr1white,Contig 1,"3,595,547",Paracoccus yeei ATCC BAA-599 BU28DRAFT_scaffold00001.1_C,98.1,NZ_JHWH01000001.1,Same result as Konrad Herbst
+owen,Contig 1,"4,013,335",Owenweeksia hongkongensis DSM 17368,100,NC_016599.1,
+woodyi,,,,,,
+relong,,,,,,
+rsphaer,Contig 7,"3,188,530",Rhodobacter sphaeroides strain MBTLJ-13 chromosome 1,98.2,NZ_CP015210.1,
+plank,,,,,,
+t2,,,,,,
+hot5_b8,Contig 1,"4,169,885",Xuhuaishuia manganoxidans strain DY6-4 plasmid sequence,91.3,Sourmash Fail,"*FastANI to Nanopore B08 from Eddie Fadeev is 99.98%, ok"
+dies,Contig 3,"1,698,306",Alcanivorax dieselolei B5,95,NC_018691.1,
+salin,,,,,,
+sedthio,Contig 1,"1,037,233",NZ_CP011412.1 Sedimenticola thiotaurini strain SIP-G1,,,
+rbalt,,,,,,
+bork,,,,,,
