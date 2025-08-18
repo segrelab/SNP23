@@ -1,4 +1,4 @@
-ds_strain_id,element,basepairs,lineage,% match,,Manual Check if needed
+ds_strain_id,element,basepairs,lineage,% match,sourmash_res_unknown_col,Manual Check if needed
 sflavi,Contig 1,"3,479,116",Aureimonas sp. AU20 plasmid pAU20rrn,88.8,Sourmash Fail,"*FastANI to Ref genome 266812.6; SMY4 is 99.998%, ok"
 vcamp,Contig 2,"3,777,378",Vibrio harveyi ATCC BAA-1116 chromosome I,97.9,,
 vnat,Contig 1,"3,250,914",Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 chromosome 1,98,,
